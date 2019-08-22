@@ -1,7 +1,7 @@
 ---
 layout: page
 type: element
-title: Metadata Identifier
+title: Abstract
 ---
 #  Abstract ★★★★★
 *In order to quickly find, catagorise and evaluate the fitness of a resource to our needs it is usefull to include in our metadata a human readable narrative description of the resource. This is often the most important tool to users for first pass evaluation.*
