@@ -1,9 +1,9 @@
 ---
 layout: page
 type: element
-title: Metadata Identifier
+title: Resource Status
 ---
-#  Resource Status ★★★★
+# Resource Status ★★★★
 *In order to quickly find, catagorise and evaluate the fitness of a resource to our needs it is usefull to include in our metadata a high level description of the progress status of the resource our metadata descibes.*
 
 - **Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.status*
