@@ -1,7 +1,7 @@
 ---
 layout: page
 type: element
-title: Metadata Identifier
+title: Resource Default Locale
 ---
 #  Resource Default Locale ★★★★
 *Most spatial resources contain some textual information written in particular languages. For users it is important that the language of the resource be shared. Default Locale provide a way to record the primary language of the metadata.*
