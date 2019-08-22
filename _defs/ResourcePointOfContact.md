@@ -1,7 +1,7 @@
 ---
 layout: page
 type: element
-title: Metadata Identifier
+title: Resource Point of Contact 
 ---
 #  Resource Point of Contact  ★★★★★
 *One of the most important pieces of information that can be shared in a metadata record is the resource Point of Contact.  By retrieving the means to access the party responsible for questions about the resource, all other information should be able to be obtained even if it is not in the metadata.*
