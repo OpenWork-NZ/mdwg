@@ -1,7 +1,7 @@
 ---
 layout: page
 type: element
-title: Metadata Identifier
+title: Additional Documentation
 ---
 # Additional Documentation ★★★
 *A cited resource may have any number of related documents such as articles, publications, user guides, data dictionaries that are useful in applying the resource to desired purposes. Often these are difficult to discover and manage. Capturing these in the metadata is recommended.*
