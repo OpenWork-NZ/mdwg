@@ -1,7 +1,7 @@
 ---
 layout: page
 type: element
-title: Metadata Identifier
+title: Metadata Scope
 ---
 #  Metadata Scope ★★★★
 *In order to quickly find, catagorise and evaluate the fitness of a resource to our needs it is usefull to include in our metadata a high level description of the scope of the resource our metadata is describing.*
