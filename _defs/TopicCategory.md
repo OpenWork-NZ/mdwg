@@ -1,9 +1,9 @@
 ---
 layout: page
 type: element
-title: Metadata Identifier
+title: Topic Category
 ---
-#  Topic Category ★★★★★
+# Topic Category ★★★★★
 *Categorisation of a resource against a standardised thematic keyword list provides a useful way to filter and discover resources.*
 
 - **Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.topicCategory*
