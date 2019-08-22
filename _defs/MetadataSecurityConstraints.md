@@ -1,7 +1,7 @@
 ---
 layout: page
 type: element
-title: Metadata Identifier
+title: Metadata Security Constraints
 ---
 #  Metadata Security Constraints ★★
 *The presence (or absence) of security restrictions on a metadata record is important to document. Potential users need to be informed of any restrictions and responsibilities that apply to the use of such metadata.*
