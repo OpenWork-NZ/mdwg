@@ -11,7 +11,7 @@ title: Table of contents
 
 ## Metadata for Metadata
 - [Class - MD_Metadata](https://www.loomio.org/d/AniV8zO3/class-md_metadata)
-- [Metadata Identifier](https://www.loomio.org/d/eAo6MDlO/md_metadata-metadata-identifier)
+- [Metadata Identifier](MetadataIdentifier)
 - [Metadata Linkage](https://www.loomio.org/d/fXArOlER/md_metadata-metadata-linkage)
 - [Metadata Date](https://www.loomio.org/d/c7m9GKE1/md_metadata-dateinfo)
 - [Metadata Responsible Party](https://www.loomio.org/d/Z2mY9yaF/md_metadata-contact-responsible-party-)
