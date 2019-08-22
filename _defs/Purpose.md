@@ -1,7 +1,7 @@
 ---
 layout: page
 type: element
-title: Metadata Identifier
+title: Purpose
 ---
 #  Purpose ★★★★★
 *One of the useful ways to evaluate the fitness of a resource to our needs is to examine the purpose for which the resource was created and how well it fulfilled its intended purpose.  The *MD_DataIdentification.purpose* element is designed to hold such information.*
