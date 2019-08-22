@@ -11,19 +11,19 @@ title: Table of contents
 
 ## Metadata for Metadata
 - [Class - MD_Metadata](https://www.loomio.org/d/AniV8zO3/class-md_metadata)
-- [Metadata Identifier](.MetadataIdentifier)
-- [Metadata Linkage](.MetadataLinkage)
-- [Metadata Date](.MetadataDate)
-- [Metadata Responsible Party](.MetadataContact)
-- [Metadata Default Locale](.MetadataLocale)
-- [Resource Scope](.MetadataScope)
-- [Metadata Legal Constraints](.MetadataLegalConstraints) - Includes:
+- [Metadata Identifier](MetadataIdentifier)
+- [Metadata Linkage](MetadataLinkage)
+- [Metadata Date](MetadataDate)
+- [Metadata Responsible Party](MetadataContact)
+- [Metadata Default Locale](MetadataLocale)
+- [Resource Scope](./MetadataScope)
+- [Metadata Legal Constraints](./MetadataLegalConstraints) - Includes:
   - Legal constraints
   - Reference for legal
-- [Metadata Security Constraints](.MetadataSecurityConstraints) - Includes:
+- [Metadata Security Constraints](./MetadataSecurityConstraints) - Includes:
   - Security constraints
   - Reference for security
-- [Parent Metadata](.ParentMetadata)
+- [Parent Metadata](./ParentMetadata)
 
 ## Metadata for Data Resources
 - Package [Identification Information](https://www.loomio.org/d/oqKd8GHM/class-md_dataidentification)
