@@ -1,7 +1,7 @@
 ---
 layout: page
 type: element
-title: Metadata Identifier
+title: Metadata Default Locale
 ---
 # Metadata Default Locale ★★★★
 *Metadata may be captured in different languages in different locations. For users it is important that the language of the metadata be known. MD_Metadata.defaultLocale provide a way to record the primary language of the metadata.*
