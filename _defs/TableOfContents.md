@@ -7,7 +7,7 @@ title: Table of contents
 
 ## Guidance
 - [Introduction](GuidanceIntro)
-- [Pattern guide](https://www.loomio.org/d/3IQdapFA/pattern-guide)
+- [Pattern guide](PatternGuide)
 
 ## Metadata for Metadata
 - [Class - MD_Metadata](https://www.loomio.org/d/AniV8zO3/class-md_metadata)
