@@ -6,11 +6,11 @@ title: Table of contents
 #  ICSM Metadata Good Practice - Table of Contents
 
 ## Guidance
-- [Introduction](GuidanceIntro)
-- [Pattern guide](PatternGuide)
+- [Introduction](./GuidanceIntro)
+- [Pattern guide](./PatternGuide)
 
 ## Metadata for Metadata
-- [Class - MD_Metadata](https://www.loomio.org/d/AniV8zO3/class-md_metadata)
+- [Class - MD_Metadata](./class-MD_Metadata)
 - [Metadata Identifier](./MetadataIdentifier)
 - [Metadata Linkage](./MetadataLinkage)
 - [Metadata Date](./MetadataDate)
