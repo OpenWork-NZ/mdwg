@@ -94,7 +94,7 @@ title: Table of contents
 - [MD_DataIdentification](./class-MD_DataIdentification)
 - [MD_Metadata](./class-MD_Metadata)
 - [MD_Identification](./class-MD_Identification)
-- [MD_Identifier](https://www.loomio.org/d/zlScHYdN/class-md_identifier)
+- [MD_Identifier](./class-MD_Identifier)
 - [MD_LegalConstraints](https://www.loomio.org/d/ugevCYJD/class-md_legalconstraints)
 - [MD_Scope](https://www.loomio.org/d/bEL0fUhA/class-md_scope) 
 - [MD_SecurityConstraints](https://www.loomio.org/d/1jaxGSgR/class-md_securityconstraints)
