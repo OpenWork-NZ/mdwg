@@ -6,7 +6,7 @@ title: Table of contents
 #  ICSM Metadata Good Practice - Table of Contents
 
 ## Guidance
-- [Introduction](https://www.loomio.org/d/tTOvq8iC/guidanceintro)
+- [Introduction](GuidanceIntro)
 - [Pattern guide](https://www.loomio.org/d/3IQdapFA/pattern-guide)
 
 ## Metadata for Metadata
