@@ -96,6 +96,6 @@ title: Table of contents
 - [MD_Identification](./class-MD_Identification)
 - [MD_Identifier](./class-MD_Identifier)
 - [MD_LegalConstraints](./class-MD_LegalConstraints)
-- [MD_Scope](https://www.loomio.org/d/bEL0fUhA/class-md_scope) 
+- [MD_Scope](./class-MD_Scope) 
 - [MD_SecurityConstraints](https://www.loomio.org/d/1jaxGSgR/class-md_securityconstraints)
 - [PT_Locale](https://www.loomio.org/d/Y8IlUVRL/class-pt_locale)
