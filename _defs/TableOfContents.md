@@ -26,7 +26,7 @@ title: Table of contents
 - [Parent Metadata](./ParentMetadata)
 
 ## Metadata for Data Resources
-- Package [Identification Information](./class-MD_DataIdentification)
+- Package [Identification Information](https://www.loomio.org/d/oqKd8GHM/class-md_dataidentification)
   - [Resource Default locale](./ResourceLocale)
   - [Abstract](./Abstract)
   - [Purpose](./Purpose)
@@ -85,12 +85,12 @@ title: Table of contents
     - Offline Resource
 
 ## Classes 
-- [CI_Citation](https://www.loomio.org/d/Iei80UQH/class-ci_citation)
+- [CI_Citation](./class-CI_Citation)
 - [CI_Date](https://www.loomio.org/d/9Q8mJuea/class-ci_date)
 - [CI_OnlineResource](https://www.loomio.org/d/rpyv8EnG/class-ci_onlineresource)
 - [CI_Responsibility](https://www.loomio.org/d/r5blTcY0/class-ci_responsibility)
 - [MD_BrowseGraphic](https://www.loomio.org/d/FVwTt5qo/class-md_browsegraphic)
-- [MD_Constraints](https://www.loomio.org/d/TqdZp04C/class-md_constraints)
+- [MD_Constraints](./class-md_constraints)
 - [MD_DataIdentification](https://www.loomio.org/d/oqKd8GHM/class-md_dataidentification)
 - [MD_Metadata](https://www.loomio.org/d/AniV8zO3/class-md_metadata)
 - [MD_Identification](https://www.loomio.org/d/bziX9e1l/class-md_identification)
