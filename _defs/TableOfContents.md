@@ -88,7 +88,7 @@ title: Table of contents
 - [CI_Citation](./class-CI_Citation)
 - [CI_Date](./class-CI_Date)
 - [CI_OnlineResource](./class-CI_OnlineResource)
-- [CI_Responsibility](https://www.loomio.org/d/r5blTcY0/class-ci_responsibility)
+- [CI_Responsibility](./class-CI_Responsibility)
 - [MD_BrowseGraphic](https://www.loomio.org/d/FVwTt5qo/class-md_browsegraphic)
 - [MD_Constraints](./class-md_constraints)
 - [MD_DataIdentification](https://www.loomio.org/d/oqKd8GHM/class-md_dataidentification)
