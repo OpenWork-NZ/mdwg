@@ -98,4 +98,4 @@ title: Table of contents
 - [MD_LegalConstraints](./class-MD_LegalConstraints)
 - [MD_Scope](./class-MD_Scope) 
 - [MD_SecurityConstraints](./class-MD_SecurityConstraints)
-- [PT_Locale](https://www.loomio.org/d/Y8IlUVRL/class-pt_locale)
+- [PT_Locale](./class-PT_Locale)
