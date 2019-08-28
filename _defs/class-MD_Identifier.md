@@ -41,4 +41,4 @@ It is recommended that the MDWG develop general advise on the use of MD_Identifi
 
 Recommended elements highlighted in Yellow
 
-![MDIdentifier](../images/class-MD_Identifier)
+![MDIdentifier](../images/class-MD_Identifier.png)
