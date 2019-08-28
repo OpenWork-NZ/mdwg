@@ -181,4 +181,4 @@ There are several elements outside the keywords class that are in effect keyword
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![keywords](https://loomio-uploads.s3.amazonaws.com/documents/files/000/203/451/original/1561609309750)
+![keywords](../KeywordsUML.png)
