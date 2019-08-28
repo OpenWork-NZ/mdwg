@@ -116,4 +116,4 @@ Maps to `Description 'lineage'`
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![resourceLineage](https://loomio-uploads.s3.amazonaws.com/documents/files/000/203/436/original/1561601793757)
+![resourceLineage](../images/ResourceLineageUML.png)
