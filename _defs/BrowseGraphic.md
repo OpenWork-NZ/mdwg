@@ -120,4 +120,4 @@ Therefore - in order to provide a quick way for users to discover and identify t
 ## UML diagrams
 
 Recommended elements highlighted in Yellow
-![browseGraphic](https://loomio-uploads.s3.amazonaws.com/documents/files/000/203/428/original/1561598895277)
+![browseGraphic](../images/BrowseGraphicUML.png)
