@@ -245,4 +245,4 @@ Recommended property to meet data citation requirement
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![MetdataConstraints_Legal](https://loomio-uploads.s3.amazonaws.com/documents/files/000/199/693/web/1559098154718)
+![MetdataConstraints_Legal](../images/DistributionInfoUML.md)
