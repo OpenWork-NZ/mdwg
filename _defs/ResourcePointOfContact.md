@@ -115,4 +115,4 @@ Maps to `Related Party`
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![Responsibility](https://loomio-uploads.s3.amazonaws.com/documents/files/000/201/162/original/1560134782326)
+![Responsibility](../images/ResourcePointOfContactUML.png)
