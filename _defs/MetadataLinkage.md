@@ -98,4 +98,5 @@ May map to `Key Identifier` if `metadataIdentifier` is unresolvable
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
+
 ![MDLinkage](../images/MetadataLinkageUML.png)
