@@ -11,7 +11,7 @@ title: Spatial Reference System
   - Common (for acceptable CRS registries)
   - Domain (for acceptable values within a community of users)
 - **Primary use -** *Usage, Fitness*
-- **Audience - ** 
+- **Audience -** 
   - machine resource - ⭑⭑⭑⭑
   - general - ⭑⭑
   - data manager - ⭑⭑⭑⭑
@@ -133,4 +133,5 @@ Maps to the aggregate element `Coverage/Spatial`
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
+
 ![SpatRefSys](../images/SpatialReferenceSystemUML.png)
