@@ -75,4 +75,4 @@ MD_DataIdentification/spatialRepresentationType moved from MD_DataIdentification
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![spatialRepresentationType](https://loomio-uploads.s3.amazonaws.com/documents/files/000/201/169/original/1560140881205)
+![spatialRepresentationType](../images/SpatialRepresentationTypeUML.md)
