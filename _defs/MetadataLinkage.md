@@ -98,4 +98,4 @@ May map to `Key Identifier` if `metadataIdentifier` is unresolvable
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![MDLinkage](https://loomio-uploads.s3.amazonaws.com/documents/files/000/200/477/web/1559620711926)
+![MDLinkage](../images/MetadataLinkageUML.png)
