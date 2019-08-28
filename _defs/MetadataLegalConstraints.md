@@ -183,4 +183,4 @@ Agregated into `Description 'notes'`
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![MetdataConstraints_Legal](https://loomio-uploads.s3.amazonaws.com/documents/files/000/199/130/original/1558674590315)
+![MetdataConstraints_Legal](./1563769608103.png)
