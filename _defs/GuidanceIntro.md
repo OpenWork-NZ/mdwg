@@ -84,9 +84,10 @@ Each entry closes with an example section.  It is hoped that contents here grow 
 
 An example of how this document might be used to provide guidance by an organisation on the use of ISO19115-1 is given below. This example is of how we might use this to provide a user support for capturing discovery level metadata as guided by the document “AS/NZS ISO 19115.1:2015 Amendment No. 1 appended”. The following was extracted from “Annex F Table F.1 — Metadata for the discovery of geographic datasets and series.”
 
-| Metadata for discovery of geographic datasets   - guidance
-|------------------------------------------------------------------------------------------------------------------| 
+**Metadata for discovery of geographic datasets - guidance**
+
 | **Metadata element** | **Guidance Link** | 
+| ____________________ | _________________ |
 | Metadata reference information: | [Metadata Identifier](https://www.loomio.org/d/eAo6MDlO/md_metadata-metadata-identifier)|                      
 | Resource title: | [Resource Title](https://www.loomio.org/d/yIYmrKV0/md_identification-citation-title-definition)|
 | Resource reference date: | [Resource Date](https://www.loomio.org/d/wo72czua/md_identification-date-definition) | 
