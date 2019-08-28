@@ -113,4 +113,4 @@ Maps to `@dateAccessioned`
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![dateInfo](https://loomio-uploads.s3.amazonaws.com/documents/files/000/199/900/web/1559187694554)
+![dateInfo](../images/MetadataDateUML.png)
