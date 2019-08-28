@@ -155,4 +155,4 @@ Maps to `Rights/@licence`
 ## UML diagrams
 
 Recommended elements highlighted in Yellow
-![resourceLegalConstraints](https://loomio-uploads.s3.amazonaws.com/documents/files/000/203/431/web/1561600459253)
+![resourceLegalConstraints](../images/ResourceLegalConstraintsUML.png)
