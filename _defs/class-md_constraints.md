@@ -78,4 +78,4 @@ Currently there are no clear methods to apply different constraints to different
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![MD_Constraints](https://loomio-uploads.s3.amazonaws.com/documents/files/000/206/384/original/1563758807496)
+![MD_Constraints](../images/MD_ConstraintsUML.png)
