@@ -124,4 +124,4 @@ Maps to `Coverage/Spatial`
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![ExVertical]({http://path.to.image/of/UML})
+![ExVertical](../images/EX_Vertical.png)
