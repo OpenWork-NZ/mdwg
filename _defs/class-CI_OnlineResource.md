@@ -60,4 +60,4 @@ The `function` element, while optional, can ususally be populated through automa
 
 Recommended elements highlighted in Yellow
 
-![CI_OnlineResource](https://loomio-uploads.s3.amazonaws.com/documents/files/000/199/000/web/1558582856320)! > FIX ME
+![CI_OnlineResource](../images/class-CI_OnlineResources.png)! 
