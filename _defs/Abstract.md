@@ -21,7 +21,7 @@ title: Abstract
 **A brief narrative summary of the cited resource.**
 
 ## ISO Obligation 
-- There must be one and only one [1..1] *abstract* entries for the resource in the metadata  *[MD_DataIdentification](https://www.loomio.org/d/oqKd8GHM/class-md_dataidentification)* package of type *character String* in a metadata record.
+- There must be one and only one [1..1] *abstract* entries for the resource in the metadata  *[MD_DataIdentification](./class-MD_DataIdentification)* package of type *character String* in a metadata record.
 
 ## ICSM Good Practice 
   - Provide enough narative to give the reader a good understanding of the nature of the resource. Use common language for at least the first few statements.
@@ -63,7 +63,7 @@ Maps to `dct.description`
 Maps to `Description 'full'`
 
 # Also Consider
-- **[Purpose -](https://www.loomio.org/d/YLMjrbJs/md_identification-purpose-definition)** provides A brief summary of the intentions with which the resource was developed. Some overlap of usage with `abstract` may exist. The MDWG should provide some guidance as to what belongs in `abstract` and what belongs in `purpose`
+- **[Purpose -](./Purpose.md)** provides A brief summary of the intentions with which the resource was developed. Some overlap of usage with `abstract` may exist. The MDWG should provide some guidance as to what belongs in `abstract` and what belongs in `purpose`
 - **MD_DataIdentification.supplimentalInformation -** provides a description of the resource in the producer's processing environment, including items such as the software, the computer operating system, file name, and the dataset size. 
 
 # Examples
