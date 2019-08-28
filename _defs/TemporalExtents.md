@@ -106,4 +106,4 @@ Mapping to CKAN and Dublin core elements, particularly as used by data.gov.au ne
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![temporalExtent](https://loomio-uploads.s3.amazonaws.com/documents/files/000/203/462/original/1561611943452)
+![temporalExtent](../images/TemporalExtentsUML.png)
