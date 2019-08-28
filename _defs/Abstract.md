@@ -121,4 +121,4 @@ All products must include an appropriate copyright statement.*
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![abstract](../AbstractUML.png)
+![abstract](../images/AbstractUML.png)
