@@ -79,4 +79,4 @@ Maps to `Coverage/Spatial`
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![geographicExtent](https://loomio-uploads.s3.amazonaws.com/documents/files/000/203/460/original/1561611558760)
+![geographicExtent](../images/GeographicExtentUML.png)
