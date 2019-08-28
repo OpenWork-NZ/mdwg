@@ -133,4 +133,4 @@ Maps to the aggregate element `Coverage/Spatial`
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![SpatRefSys](https://loomio-uploads.s3.amazonaws.com/documents/files/000/203/457/original/1561609951423)
+![SpatRefSys](../images/SpatialReferenceSystemUML.png)
