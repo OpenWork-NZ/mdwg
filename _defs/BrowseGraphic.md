@@ -9,7 +9,7 @@ title: Resource Graphic Overview
 - **Path** -  *MD_Metadata.identificationInfo>MD_DataIdentification.graphicOverview*
 - **Governance** -  *Agency, Domain*
 - **Purpose -** *Discovery*
-- **Audience - ** 
+- **Audience -** 
   - machine resource - ⭑ 
   - general - ⭑⭑⭑⭑⭑
   - resource manager - ⭑ ⭑ 
@@ -120,4 +120,5 @@ Therefore - in order to provide a quick way for users to discover and identify t
 ## UML diagrams
 
 Recommended elements highlighted in Yellow
+
 ![browseGraphic](../images/BrowseGraphicUML.png)
