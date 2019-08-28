@@ -45,4 +45,4 @@ Therefore - given the location and area of influence of ICSM, for `language`, th
 
 Recommended elements highlighted in Yellow
 
-![PT_Locale](https://loomio-uploads.s3.amazonaws.com/documents/files/000/199/000/web/1558582856320)! > FIX ME
+![PT_Locale](../images/PT_Locale.png)! 
