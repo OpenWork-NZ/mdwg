@@ -136,4 +136,4 @@ Maps to ?
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![spatialResolution](https://loomio-uploads.s3.amazonaws.com/documents/files/000/201/323/original/1560215776643)
+![spatialResolution](../images/SpatialResolutionUML.png)

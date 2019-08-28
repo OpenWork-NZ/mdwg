@@ -93,4 +93,4 @@ Maps to `data status`
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![status](https://loomio-uploads.s3.amazonaws.com/documents/files/000/201/173/original/1560142590920)
+![status](../images/StatusUML.png)
