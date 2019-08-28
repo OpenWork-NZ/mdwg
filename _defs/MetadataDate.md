@@ -113,4 +113,5 @@ Maps to `@dateAccessioned`
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
+
 ![dateInfo](../images/MetadataDateUML.png)
