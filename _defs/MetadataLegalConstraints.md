@@ -9,7 +9,7 @@ title: Metadata Legal Constraints
 - **Path** - *MD_Metadata.metadataConstraints>MD_LegalConstraints*
 - **Governance** - *Agency*
 - **Purpose -** *Resource use* 
-- **Audience - ** 
+- **Audience -** 
   - machine resource - ⭑ 
   - general - ⭑⭑⭑⭑⭑
   - data manager - ⭑⭑⭑⭑
