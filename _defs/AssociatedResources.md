@@ -119,4 +119,4 @@ Maps to "Related Information"
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![associateResource](https://loomio-uploads.s3.amazonaws.com/documents/files/000/203/427/original/1561598660206)
+![associateResource](../images/AssociatedResourcesUML.png)
