@@ -86,9 +86,8 @@ An example of how this document might be used to provide guidance by an organisa
 
 **Metadata for discovery of geographic datasets - guidance**
 
-
 | **Metadata element** | **Guidance Link** | 
-| ____________________ | _________________ |
+| --- | --- |
 | Metadata reference information: | [Metadata Identifier](https://www.loomio.org/d/eAo6MDlO/md_metadata-metadata-identifier)|                      
 | Resource title: | [Resource Title](https://www.loomio.org/d/yIYmrKV0/md_identification-citation-title-definition)|
 | Resource reference date: | [Resource Date](https://www.loomio.org/d/wo72czua/md_identification-date-definition) | 
@@ -105,3 +104,4 @@ An example of how this document might be used to provide guidance by an organisa
 | Constraints on resource access and use: | [Resource Constraints](https://www.loomio.org/d/61RkY0WK/md_identification-constraints-definition)   | 
 | Metadata date stamp:  | [Metadata Date](https://www.loomio.org/d/c7m9GKE1/md_metadata-dateinfo)  | 
 |Metadata point of contact: | [Metadata Responsible Party](https://www.loomio.org/d/Z2mY9yaF/md_metadata-contact-responsible-party-)  |
+
