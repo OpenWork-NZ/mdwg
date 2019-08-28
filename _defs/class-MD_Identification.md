@@ -85,4 +85,4 @@ There must be at least one (and usually just one) `identificationInfo` packages 
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![MD_Identification](https://loomio-uploads.s3.amazonaws.com/documents/files/000/207/346/original/1564375841709)
+![MD_Identification](../images/MD_IdentificationUML.png)
