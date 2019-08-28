@@ -87,4 +87,4 @@ Maps to `Version`
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![edition](https://loomio-uploads.s3.amazonaws.com/documents/files/000/201/369/original/1560235173033)
+![edition](../images/ResourceEditionUML.png)

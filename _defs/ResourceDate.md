@@ -124,4 +124,4 @@ Maps to `Date`
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![resourceDate](https://loomio-uploads.s3.amazonaws.com/documents/files/000/201/363/original/1560233439471)
+![resourceDate](../images/ResourceDateUML.png)
