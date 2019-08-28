@@ -39,10 +39,10 @@ Identification information about a resource is of high importance to document as
 
 # Recommendations 
 # Related Classes
-- ** [MD_Identification](https://www.loomio.org/d/bziX9e1l/class-md_identification)** the abstract parent class to `MD_DataIdentification`
+- **[MD_Identification](https://www.loomio.org/d/bziX9e1l/class-md_identification)** the abstract parent class to `MD_DataIdentification`
 - See guidances for the composite elements.
 
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![MD_DataIdentification](../images/MD_DataIdentificationUML.png)
+![MD_DataIdentification](../images/class-MD_DataIdentification.png)
