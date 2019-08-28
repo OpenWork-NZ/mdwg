@@ -102,4 +102,4 @@ Maps to `RelatedInfo/relation='partOf'`
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![ParentMetadata](https://loomio-uploads.s3.amazonaws.com/documents/files/000/199/911/original/1559192315135)
+![ParentMetadata](../images/ParentMetadataUML.png)
