@@ -121,4 +121,4 @@ All products must include an appropriate copyright statement.*
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![abstract](https://loomio-uploads.s3.amazonaws.com/documents/files/000/201/312/original/1560206695936)
+![abstract](../AbstractUML.png)
