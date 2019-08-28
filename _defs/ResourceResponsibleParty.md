@@ -177,4 +177,4 @@ Maps to `Publisher`
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![ResourceCitation](https://loomio-uploads.s3.amazonaws.com/documents/files/000/200/787/original/1559798269312)
+![ResourceCitation](../images/ResourceResponsiblePartyUML.png)
