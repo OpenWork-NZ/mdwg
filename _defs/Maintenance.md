@@ -94,4 +94,4 @@ Maps to `Description 'lineage'`
 ## UML diagrams
 
 Recommended elements highlighted in Yellow
-![resourceMaintenance](https://loomio-uploads.s3.amazonaws.com/documents/files/000/203/437/original/1561602284765)
+![resourceMaintenance](../images/MaintenanceUML.png)
