@@ -114,4 +114,4 @@ URN:UUID (example 559708e5-480e-4f94-8429-c49571e82761)
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![resourceIdentifier](https://loomio-uploads.s3.amazonaws.com/documents/files/000/201/334/original/1560225617486)
+![resourceIdentifier](../images/ResourceIdentifierUML.png)
