@@ -102,4 +102,4 @@ mapping as yet unknown
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![resourceFormat](https://loomio-uploads.s3.amazonaws.com/documents/files/000/203/446/original/1561604944255)
+![resourceFormat](../images/ResourceFormatUML.png)
