@@ -81,7 +81,7 @@ Identification information about a resource is of high importance to document as
 There must be at least one (and usually just one) `identificationInfo` packages in a metadata record that contains the substantive  information about a cited resource.
 
 # Related Classes
-- **[MD_DataIdentification](https://www.loomio.org/d/oqKd8GHM/class-md_dataidentification) An instantiation of the abstract calss for data resource metadata
+- **[MD_DataIdentification](https://www.loomio.org/d/oqKd8GHM/class-md_dataidentification)** An instantiation of the abstract calss for data resource metadata
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
