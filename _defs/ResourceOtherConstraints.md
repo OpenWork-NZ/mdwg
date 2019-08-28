@@ -132,4 +132,4 @@ Maps to the agregate `Rights/@accessRights`
 ## UML diagrams
 
 Recommended elements highlighted in Yellow
-![constraints](https://loomio-uploads.s3.amazonaws.com/documents/files/000/203/432/original/1561600679022)
+![constraints](../images/ResourceOtherConstraintsUML.png)
