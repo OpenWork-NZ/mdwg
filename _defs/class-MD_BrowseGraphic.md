@@ -56,4 +56,4 @@ browseGraphic is a new package in iso19115-1. New elements include:
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![browseGraphic](https://loomio-uploads.s3.amazonaws.com/documents/files/000/207/632/original/1564550060181)
+![browseGraphic](../images/BrowseGraphicUML.png)
