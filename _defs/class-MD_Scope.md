@@ -96,4 +96,4 @@ HierarchyLevel attributes were replaced by an MD_Scope class to improve the desc
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![MD_Scope](https://loomio-uploads.s3.amazonaws.com/documents/files/000/198/726/web/1558404613424)
+![MD_Scope](../images/MD_ScopeUML.png)
