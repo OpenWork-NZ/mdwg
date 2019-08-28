@@ -183,4 +183,4 @@ Agregated into `Description 'notes'`
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![MetdataConstraints_Legal](../images/1563769608103.png)
+![MetdataConstraints_Legal](../images/MD_LegalConstraintsUML.png)
