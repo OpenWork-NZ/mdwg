@@ -129,4 +129,4 @@ Maps to *Subject*
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![topicCategory](https://loomio-uploads.s3.amazonaws.com/documents/files/000/201/326/original/1560220465098)
+![topicCategory](../images/TopicCategoryUML.png)
