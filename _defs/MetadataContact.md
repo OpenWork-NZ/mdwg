@@ -107,4 +107,4 @@ Maps to `Related Party`
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![Responsibility](https://loomio-uploads.s3.amazonaws.com/documents/files/000/198/726/web/1558404613424)
+![Responsibility](../images/MetadataContactUML.png)
