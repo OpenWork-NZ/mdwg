@@ -116,4 +116,4 @@ http://data.gov.au/dataset/559708e5-480e-4f94-8429-c49571e82761
 
 Recommended elements highlighted in Yellow
 
-![MDIdentifier](https://loomio-uploads.s3.amazonaws.com/documents/files/000/205/043/original/1562815998377)
+![MDIdentifier](../images/MetadataIdentifierUML.png)
