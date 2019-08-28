@@ -89,4 +89,4 @@ The data resulting from this program are known as GEODATA. Each GEODATA product 
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![purpose](https://loomio-uploads.s3.amazonaws.com/documents/files/000/201/316/original/1560208769514)
+![purpose](../images/PurposeUML.png)
