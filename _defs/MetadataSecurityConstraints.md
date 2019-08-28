@@ -9,7 +9,7 @@ title: Metadata Security Constraints
 - **Path** - MD_Metadata.metadataConstraints>MD_SecurityConstraints*
 - **Governance** - *National, Agency*
 - **Purpose -** *Resource use* 
-- **Audience - ** 
+- **Audience -** 
   - machine resource - ⭑ 
   - general - ⭑⭑⭑⭑⭑
   - data manager - ⭑⭑⭑⭑
@@ -100,4 +100,5 @@ Includes reference to the constraint document - Australia Protective Security Po
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![MetdataConstraints_Legal](https://loomio-uploads.s3.amazonaws.com/documents/files/000/199/130/original/1558674590315)
+
+![MetdataSecurityConstraints_Legal](../images/MD_SecurityConstraints.png)
