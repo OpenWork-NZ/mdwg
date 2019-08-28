@@ -119,4 +119,5 @@ Maps to "Related Information"
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
+
 ![associateResource](../images/AssociatedResourcesUML.png)
