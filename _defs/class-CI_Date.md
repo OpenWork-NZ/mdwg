@@ -51,4 +51,4 @@ Therefore - in order to provide the consistancy needed to avoid confusion for bo
 
 Recommended elements highlighted in Yellow
 
-![CI_Date](https://loomio-uploads.s3.amazonaws.com/documents/files/000/199/000/web/1558582856320)! > FIX ME
+![CI_Date](../images/class-CI_Date.png)! > FIX ME
