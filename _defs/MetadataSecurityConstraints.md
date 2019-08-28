@@ -101,4 +101,4 @@ Includes reference to the constraint document - Australia Protective Security Po
 ## UML diagrams
 Recommended elements highlighted in Yellow
 
-![MetdataSecurityConstraints_Legal](../images/MD_SecurityConstraints.png)
+![MetdataSecurityConstraints](../images/MD_SecurityConstraints.png)
