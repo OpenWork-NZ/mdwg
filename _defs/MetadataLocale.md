@@ -86,4 +86,4 @@ No identified mapping
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![MDdefaultLocale](https://loomio-uploads.s3.amazonaws.com/documents/files/000/200/038/web/1559256047055)
+![MDdefaultLocale](../images/MetadataLocaleUML.png)
