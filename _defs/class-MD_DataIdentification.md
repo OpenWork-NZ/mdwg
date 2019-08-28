@@ -45,4 +45,4 @@ Identification information about a resource is of high importance to document as
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![MD_DataIdentification](https://loomio-uploads.s3.amazonaws.com/documents/files/000/207/346/original/1564375841709)
+![MD_DataIdentification](../images/MD_DataIdentification.png)
