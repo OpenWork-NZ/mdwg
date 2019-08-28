@@ -99,4 +99,5 @@ May map to `Key Identifier` if `metadataIdentifier` is unresolvable
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![metadataScope](../images/MetadataScopeUML.png)
+
+![metadataScope](../images/MD_Scope.png)
