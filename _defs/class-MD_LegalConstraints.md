@@ -57,4 +57,4 @@ See guidance provided in [MD_Constraints](https://www.loomio.org/d/TqdZp04C/clas
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![MD_Constraints](../images/MD_LegalConstraintsUML.png)
+![MD_Constraints](../images/MD_LegalConstraints.png)
