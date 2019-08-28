@@ -86,6 +86,7 @@ An example of how this document might be used to provide guidance by an organisa
 
 **Metadata for discovery of geographic datasets - guidance**
 
+
 | **Metadata element** | **Guidance Link** | 
 | ____________________ | _________________ |
 | Metadata reference information: | [Metadata Identifier](https://www.loomio.org/d/eAo6MDlO/md_metadata-metadata-identifier)|                      
