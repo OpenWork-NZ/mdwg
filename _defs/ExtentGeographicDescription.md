@@ -126,4 +126,4 @@ Mapping geographic extents to CKAN and Dublin core elements, particularly as use
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![ExGeoDescription](../images/ExtentGeoDescription.png)
+![ExGeoDescription](../images/EX_GeoDescription.png)
