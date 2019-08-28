@@ -245,4 +245,5 @@ Recommended property to meet data citation requirement
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![MetdataConstraints_Legal](../images/MD_Distribution.md)
+
+![Distribution](../images/MD_Distribution.png)
