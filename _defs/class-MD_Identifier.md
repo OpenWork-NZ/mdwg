@@ -41,4 +41,4 @@ It is recommended that the MDWG develop general advise on the use of MD_Identifi
 
 Recommended elements highlighted in Yellow
 
-![MDIdentifier](https://loomio-uploads.s3.amazonaws.com/documents/files/000/199/000/web/1558582856320)!
+![MDIdentifier](../images/class-MD_Identifier)
