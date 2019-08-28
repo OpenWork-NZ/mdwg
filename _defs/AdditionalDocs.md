@@ -148,4 +148,5 @@ Maps to `Description 'notes'`
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
+
 ![additionalDoc](../images/AdditionalDocsUML.png)
