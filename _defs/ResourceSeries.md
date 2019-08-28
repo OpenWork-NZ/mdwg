@@ -98,4 +98,4 @@ Maps to `Context`
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![dataCitationSeries](https://loomio-uploads.s3.amazonaws.com/documents/files/000/201/341/original/1560229348108)
+![dataCitationSeries](../images/ResourceSeriesUML.png)
