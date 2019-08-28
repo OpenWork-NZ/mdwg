@@ -106,4 +106,4 @@ Maps to the aggregate element `Coverage/Spatial`
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![EXBoundBox](https://loomio-uploads.s3.amazonaws.com/documents/files/000/203/459/original/1561611375053)
+![EXBoundBox](../images/ExtentBoundingBoxUML.png)
