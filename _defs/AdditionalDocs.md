@@ -148,4 +148,4 @@ Maps to `Description 'notes'`
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
-![additionalDoc](https://loomio-uploads.s3.amazonaws.com/documents/files/000/203/458/original/1561610871839)
+![additionalDoc](../AdditionalDocsUML.png)
