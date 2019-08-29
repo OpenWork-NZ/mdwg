@@ -21,7 +21,7 @@ title: Resource Reference Date
 **A named and dated event associated with the cited resource (in ISO 8601 format).**
 
 ## ISO Obligation 
-- There can be zero to many [0..`*`] *Resource reference date* entries for the cited resource in the  *[MD_DataIdentification.citation](https://www.loomio.org/d/2mHdNrUR/md_identification-citation)* package of class *[CI_Date](https://www.loomio.org/d/9Q8mJuea/class-ci_date)* in a metadata record.  One of these must be of `dateType` *creation*.
+- There can be zero to many [0..`*`] *Resource reference date* entries for the cited resource in the  *[MD_DataIdentification.citation](./ResourceCitation)* package of class *[CI_Date](./class-CI_Date)* in a metadata record.  One of these must be of `dateType` *creation*.
 
 ## ICSM Good Practice  
 - There should be multiple entries for the Resource reference date in a metadata record.  These should include:
@@ -31,7 +31,7 @@ title: Resource Reference Date
   - All updates to metadata should be include the date of last revision to the metadata. This can be an automated process.
 
 ## Recommended Sub-Elements   
-Follow the general guidance for [class - CI_Date](https://www.loomio.org/d/9Q8mJuea/class-ci_date) with the following additional guidance:
+Follow the general guidance for [class - CI_Date](./class-CI_Date) with the following additional guidance:
 - **[dateType](http://wiki.esipfed.org/index.php/ISO_19115-3_Codelists#CI_DateTypeCode) -**  There should be an entries of value *creation*, *publication* and *lastUpdate*
 
 # Discussion 
@@ -75,9 +75,9 @@ Maps to `dct:issued* and *dct:modified`
 Maps to `Date`
 
 # Also Consider
-- **[Metadata Date](https://www.loomio.org/d/c7m9GKE1/md_metadata-dateinfo)** - for sdates related to the metadata record itself and not the cited resource
-- **[CI_Date -](https://www.loomio.org/d/9Q8mJuea/class-ci_date)** for general information about the class CI_Date
-- **[Resource  Citation](https://www.loomio.org/d/2mHdNrUR/md_identification-citation)** - parent to this element
+- **[Metadata Date](./MetadataDate)** - for sdates related to the metadata record itself and not the cited resource
+- **[CI_Date -](./class-CI_Date)** for general information about the class CI_Date
+- **[Resource  Citation](./ResourceCitation)** - parent to this element
 
 # Examples
 
