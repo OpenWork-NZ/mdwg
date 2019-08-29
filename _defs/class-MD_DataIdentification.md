@@ -22,24 +22,24 @@ It is a child of
 - MD_Metadata.identificationInfo
 
 ## Atributes and packages
-the following provides additional gauidance to [MD_Identification](https://www.loomio.org/d/bziX9e1l/class-md_identification).
+the following provides additional gauidance to [MD_Identification](./class-MD_Identification).
 
 ### MDWG Recomended - 
-In addition to all the attributes of [MD_Identification](https://www.loomio.org/d/bziX9e1l/class-md_identification), the additional recommended elements apply - 
-- **[Locale -](https://www.loomio.org/d/Hx9IsE7Q/md_identification-default-locale-definition)** *(class - [PT_Locale](https://www.loomio.org/d/Y8IlUVRL/class-pt_locale))* [0..1] 
-- **[Extents -](https://www.loomio.org/d/ilObJX24/md_identification-extent-definition)** *(class - [EX_Extent](http://wiki.esipfed.org/index.php/EX_Extent))* [0..\*]  High-level thematic classifications to assist in the grouping and searching of data. Required when the hierarchyLevelName scopeCode is 'dataset'.
+In addition to all the attributes of [MD_Identification](./class-MD_Identification), the additional recommended elements apply - 
+- **[Locale -](./ResourceLocale)** *(class - [PT_Locale](./PT_Locale))* [0..1] 
+- **[Extents -](./ResourceExtent)** *(class - [EX_Extent](http://wiki.esipfed.org/index.php/EX_Extent))* [0..\*]  High-level thematic classifications to assist in the grouping and searching of data. Required when the hierarchyLevelName scopeCode is 'dataset'.
 
 ### Additional optional attributes
-- **[otherLocale -](https://www.loomio.org/d/Hx9IsE7Q/md_identification-default-locale-definition)** *(class - [PT_Locale](https://www.loomio.org/d/Y8IlUVRL/class-pt_locale))* [0..\*] 
+- **[otherLocale -](./ResourceLocale)** *(class - [PT_Locale](./PT_Locale))* [0..\*] 
 - **environmentDescription -** *(type - charStr)* [0..1] description of the resource in the producer's processing environment, including items such as the software, the computer operating system, file name, and the dataset size
 - **supplementalInformation -** *(type - charStr)*[0..1] any other descriptive information about the resource
 
 # Discussion
-Identification information about a resource is of high importance to document as this information strongly impacts on the ability of a user to asses the resource fitness to use. MD_DataIdentification instantiates the abstract class [MD_Identification](https://www.loomio.org/d/bziX9e1l/class-md_identification)  for use with data resources.
+Identification information about a resource is of high importance to document as this information strongly impacts on the ability of a user to asses the resource fitness to use. MD_DataIdentification instantiates the abstract class [MD_Identification](./class-MD_Identification)  for use with data resources.
 
 # Recommendations 
 # Related Classes
-- **[MD_Identification](https://www.loomio.org/d/bziX9e1l/class-md_identification)** the abstract parent class to `MD_DataIdentification`
+- **[MD_Identification](./class-MD_Identification)** the abstract parent class to `MD_DataIdentification`
 - See guidances for the composite elements.
 
 
