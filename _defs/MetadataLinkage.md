@@ -22,13 +22,13 @@ title: Metadata Linkage
 **Allows unambiguous specification of the online location where the metadata is available.**
 
 ## ISO Obligation 
-- There should be zero to many [0..\*] *metadataLinkage* elements for the cited resource in the  *[MD_Metadata](https://www.loomio.org/d/AniV8zO3/class-md_metadata)* package of class *[CI_OnlineResource](https://www.loomio.org/d/rpyv8EnG/class-ci_onlineresource)* in a metadata record.
+- There should be zero to many [0..\*] *metadataLinkage* elements for the cited resource in the  *[MD_Metadata](./class-MD_Metadata)* package of class *[CI_OnlineResource](./class-CI_OnlineResource)* in a metadata record.
 
 ## ICSM Good Practice  
 - If posible, one instance of this element must be populated in all metadata records with a link to the source "point of truth" metadata record.
 
 ### Recommended Sub-Elements  
-Follow the general guidance for [class - CI_OnlineResource](https://www.loomio.org/d/rpyv8EnG/class-ci_onlineresource) with the following additional guidance:
+Follow the general guidance for [class - CI_OnlineResource](./class-CI_OnlineResource) with the following additional guidance:
 - **description -** (*type - charStr*) [0..1] when `metadataLinkage` is used as a "point of truth" location of the authoritative metadata, use this field to indicate this.
 - **function -** *(codelist - [CI_OnlineFunctionCode](http://wiki.esipfed.org/index.php/ISO_19115-3_Codelists#CI_OnLineFunctionCode))* [0..1] This should be populated with the value "completeMetadata".
 
@@ -37,7 +37,7 @@ The most common use of `metadataLinkage` is to record a "point of truth" locatio
 
 Alternatively, `metadataLiunkage` may be used to record the location of the metadata in its current catalogue. The Discription field should be used to indicate if this differs from other instances of the metadata record that may reside elsewhere. However, if alternate versions are not in ISO19115 format, such locations should be captured in `alternativeMetadataReference`.
 
-The use of this field to hold the local of the metadata record in the local catalogue could be better accomplished through the options provided in [metadataIdentifier](https://www.loomio.org/d/eAo6MDlO/md_metadata-metadata-identifier).
+The use of this field to hold the local of the metadata record in the local catalogue could be better accomplished through the options provided in [metadataIdentifier](./MetadataIdentifier).
 
 ## Outstanding Issues
 
@@ -66,10 +66,10 @@ May map to `dct:identifier` if `metadataIdentifier` is unresolvable
 May map to `Key Identifier` if `metadataIdentifier` is unresolvable
 
 # Also Consider
-- **[onlineResource -](https://www.loomio.org/d/G6oHphty/md_metadata-distribution)** (MD_Distribution.transferOptions>MD_DigitalTransferOptions.online) is used to provide online linage to the resource. 
-- **[MetadataIdentifier -](https://www.loomio.org/d/eAo6MDlO/md_metadata-metadata-identifier)** is the preferred element to be used to provide linkage to the metadata record.
+- **[onlineResource -](./DistributionInfo)** (MD_Distribution.transferOptions>MD_DigitalTransferOptions.online) is used to provide online linage to the resource. 
+- **[MetadataIdentifier -](./MetadataIdentifier)** is the preferred element to be used to provide linkage to the metadata record.
 - **[alternativeMetadataReference](http://geos.whu.edu.cn/ont/iso19115/metadata.html#d4e52) -** *(class - CI_Citation)*[0..\*] *Page 37 - ISO 19115.1:2015* - reference to alternative metadata, e.g Dublin Core, FGDC, or metadata in a non-ISO standard for the same resource
-- **[class - CI_OnlineResource -](https://www.loomio.org/d/rpyv8EnG/class-ci_onlineresource)** provides a standardised way of collecting links to online resources 
+- **[class - CI_OnlineResource -](./class-CI_OnlineResource)** provides a standardised way of collecting links to online resources 
 
 
 # Examples
