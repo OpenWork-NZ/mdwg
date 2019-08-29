@@ -21,7 +21,7 @@ title: Spatial Representation Type
 **The method used by the resource to spatially represent geographic information.**
 
 ## ISO Obligation 
-- There can be zero to many [0..\*] *spatialRepresentationType* entries for the cited resource in the  *[MD_DataIdentification](https://www.loomio.org/d/oqKd8GHM/class-md_dataidentification)* package selected from codelist *[MD_SpatialRepresentationTypeCode](http://wiki.esipfed.org/index.php/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_SpatialRepresentationTypeCode)*.
+- There can be zero to many [0..\*] *spatialRepresentationType* entries for the cited resource in the  *[MD_DataIdentification](./class-MD_DataIdentification)* package selected from codelist *[MD_SpatialRepresentationTypeCode](http://wiki.esipfed.org/index.php/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_SpatialRepresentationTypeCode)*.
 
 ## ICSM Good Practice 
 - At least one instance of this element should be populated in all metadata records containing spatial information.
