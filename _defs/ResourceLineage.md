@@ -21,18 +21,18 @@ title: Resource Lineage
 **Information about the provenance, source(s), and/or the production process(es) applied to the resource.**
 
 ## ISO Obligation 
-- A metadata record should contain zero to many [0..\*] *resourceLineage* packages for the cited resource in the  *[MD_Metadata](https://www.loomio.org/d/AniV8zO3/class-md_metadata)* package of class *[LI_Lineage](http://wiki.esipfed.org/index.php/LI_Lineage)*. 
+- A metadata record should contain zero to many [0..\*] *resourceLineage* packages for the cited resource in the  *[MD_Metadata](./class-MD_Metadata)* package of class *[LI_Lineage](http://wiki.esipfed.org/index.php/LI_Lineage)*. 
 
 ## ICSM Good Practice 
-- Lineage information should be documented and include a descriptive statement of the resource provenance and its scope as an level from a hiearchy *[MD_Scope](https://www.loomio.org/d/bEL0fUhA/class-md_scope)*.
+- Lineage information should be documented and include a descriptive statement of the resource provenance and its scope as an level from a hiearchy *[MD_Scope](./class-MD_Scope)*.
 
 ### Recommended Sub-Elements 
 - **statement -** *(type - charstr)* 0 to 1 - Recommended by MDWG. A general explanation of the data producer's knowledge about the lineage of a resource. 
 - **source -** *(class - [LI_Source](http://wiki.esipfed.org/index.php/LI_Source))* 0 to many - information about the source resource used in creating the data specified by the scope
 - **description -** *(type - CharStr)* 0 to 1 - detailed description of the source
-- **scope -** *(class - [MD_Scope](https://www.loomio.org/d/bEL0fUhA/class-md_scope))*  optional - 0 to many - type of resource and/or extent to which the lineage information applies
+- **scope -** *(class - [MD_Scope](./class-MD_Scope))*  optional - 0 to many - type of resource and/or extent to which the lineage information applies
   - **level -** *(class - [MD_ScopeCode](http://wiki.esipfed.org/index.php/ISO_19115-3_Codelists#MD_ScopeCode))* target resource covered
-  - **extent -** *(class -  [EX_Extent](https://www.loomio.org/d/ilObJX24/md_identification-extent-definition))* Information about the horizontal, vertical and temporal extent of the resource specified by the scope
+  - **extent -** *(class -  [EX_Extent](./ResourceExtent))* Information about the horizontal, vertical and temporal extent of the resource specified by the scope
   - **levelDescription -** *(class - [MD_ScopeDescription](http://wiki.esipfed.org/index.php/MD_ScopeDescription))* detailed description/listing of the items specified by the level
 
 # Discussion  
@@ -52,21 +52,21 @@ Therefore - It is strongly recommended, particularly when the resource is author
 New attributes were added to improve the description of *LI_Source* and *LI_ProcessStep*.
 - **MD_Metadata.resourceLineage** *(class - [LI_Lineage](http://wiki.esipfed.org/index.php/LI_Lineage)*)
   - *LI_Lineage( to be included in the metadata without Data Quality information. The Data Quality model was removed in this revision to ISO 19157.
-- **LI_Lineage.scope** *(class - [MD_Scope](https://www.loomio.org/d/bEL0fUhA/class-md_scope))*
+- **LI_Lineage.scope** *(class - [MD_Scope](./class-MD_Scope))*
   - This element allows the description of the type and/or extent of the lineage information. DQ_Data-Quality/scope was moved to ISO 19157.
-- **LI_Lineage.additionalDocumentation** *(class - [CI_Citation](https://www.loomio.org/d/Iei80UQH/class-ci_citation))*
+- **LI_Lineage.additionalDocumentation** *(class - [CI_Citation](./class-CI_Citation))*
   - This new element cites a publication that documents the process to produce the resource.
 - **LI_Source.sourceSpatialResolution** (class - [MD_Resolution](http://wiki.esipfed.org/index.php/MD_Resolution))* [0..1]
   - This new element replaces scaleDenominator inorder to allow more flexibility in the specification of the source spatial resolution.
-- **LI_source.scope** *(class - [MD_Scope](https://www.loomio.org/d/bEL0fUhA/class-md_scope))* [0..1] 
+- **LI_source.scope** *(class - [MD_Scope](./class-MD_Scope))* [0..1] 
   - This new element was added in order to allow description of more details of the scope of a lineage section. This was required, in part, to replace the DQ_Scope from the DQ_DataQuality class that was moved from 19115 to the new data quality standard (ISO 19157).
-- **LI_Source.sourceMetadata** *(class -  [CI_Citation](https://www.loomio.org/d/Iei80UQH/class-ci_citation))* [0..\*]
+- **LI_Source.sourceMetadata** *(class -  [CI_Citation](./class-CI_Citation))* [0..\*]
   - This new element was added in order to allow an unambiguous reference to the metadata for the source. The sourceCitation now provides a clear reference to the source resource.
 - **LI_ProcessStep.stepDateTime** *(type - TM_Primitive)*
   - This new element replaces dateTime in order to provide more flexible specification of process step times.
-- **LI_ProcessStep.reference** *(class -  [CI_Citation](https://www.loomio.org/d/Iei80UQH/class-ci_citation))*
+- **LI_ProcessStep.reference** *(class -  [CI_Citation](./class-CI_Citation))*
   - This new element was added in order to allow references to more detailed information about a process step.
-- **LI_ProcessStep.scope** (class - MD_Scope](https://www.loomio.org/d/bEL0fUhA/class-md_scope))* 
+- **LI_ProcessStep.scope** (class - MD_Scope](./class-MD_Scope))* 
   - This new element was added in order to allow description of the scope of a process step independently from the scope of the entire lineage section. This was required, in part, to replace the DQ_Scope from the DQ_DataQuality class that was moved from 19115 to the new data quality standard (ISO 19157).
 
 ### DCAT 
@@ -77,9 +77,9 @@ New attributes were added to improve the description of *LI_Source* and *LI_Proc
 Maps to `Description 'lineage'`
 
 # Also Consider
-- **[AssociatedResource](https://www.loomio.org/d/HGSVeBfw/md_identification-associatedresource-definition)** - contains information about resources related to the creation or use of the cited resource.
-- **[Abstract](https://www.loomio.org/d/f2lFqJTE/md_identification-abstract-definition)** and
-- **[Purpose](https://www.loomio.org/d/YLMjrbJs/md_identification-purpose-definition)** - often contain some brief lineage information
+- **[AssociatedResource](./AssociatedResources)** - contains information about resources related to the creation or use of the cited resource.
+- **[Abstract](./Abstract)** and
+- **[Purpose](./Purpose)** - often contain some brief lineage information
 
 
 # Examples
