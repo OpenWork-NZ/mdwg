@@ -31,15 +31,15 @@ It is a child of
 - **Service Identification -** *(class SV_ServiceIdentification)* > To Be Completed at later date
 
 ### MDWG recommended MD_Identification packages
-- **[resourceLineage -](https://www.loomio.org/d/ifwCE2kg/md_identification-resourcelineage-definition)** *(class - Li_Lineage)* [0..\*]
+- **[resourceLineage -](./ResourceLineage)** *(class - Li_Lineage)* [0..\*]
 - **[referenceSystemInfo -](https://www.loomio.org/d/4SliNjWE/md_metadata-md_referencesystem-definition)** *(class - MD_ReferenceSystem)*
-- **metadataConstraints -** *( abstract class [MD_Constraints](https://www.loomio.org/d/TqdZp04C/class-md_constraints))* [0..\*] see
-- **[Metadata Security Constraints](https://www.loomio.org/d/hovXfng5/md_metadata-md_securityconstraints-definition)**
-- **[Metadata Legal Constraints](https://www.loomio.org/d/G8d21r6z/md_metadata-md_legalconstraints-definition)** 
+- **metadataConstraints -** *( abstract class [MD_Constraints](./class-md_constraints))* [0..\*] see
+- **[Metadata Security Constraints](./MetadataSecurityConstraints)**
+- **[Metadata Legal Constraints](./MetadataLegalConstraints)** 
 -  **indentificationInfo -** *(abstract class - MD_Identification)* [1..\*] see:
 - **Data Identification -** *(class MD_DataIdentification)* > ?create Entry?
 - **Service Identification -** *(class SV_ServiceIdentification)* > To Be Completed
-- **[distributionInfo -](https://www.loomio.org/d/G6oHphty/md_metadata-distribution)** *(class - MD_Distribution)* [0..\*]
+- **[distributionInfo -](./DistributionInfo)** *(class - MD_Distribution)* [0..\*]
 
 ### Other packages - not yet addressed by MDWG
 - **metadataMaintenance -** *(class MD_MaintenanceInformation)* [0..1]
@@ -53,22 +53,22 @@ It is a child of
 ## Atributes and packages
 ### MDWG Recommended  
 Click on the attribute name for guidance.
-- **[abstract -](https://www.loomio.org/d/f2lFqJTE/md_identification-abstract-definition)** *(type - charStr)* [1..\*] 
-- **[purpose -](https://www.loomio.org/d/YLMjrbJs/md_identification-purpose-definition)** *(type - charStr))* [0..1] 
-- **[status -](https://www.loomio.org/d/8DrQPWdH/md_identification-status-definition)** *(codelist - [MD_ProgressCode](http://wiki.esipfed.org/index.php/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_ProgressCode))*[0..1]
-- **[topicCategory -](https://www.loomio.org/d/d25q1xUO/md_identification-topic-category-definition)** *(enumeration - [MD_TopicCategoryCode](http://wiki.esipfed.org/index.php/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_TopicCategoryCode))*[0..\*]
-- **[pointOfContact -](https://www.loomio.org/d/t6o5IsjM/md_idenitification-point_of_contact-definition)** *(class -  [CI_Responsibility](https://www.loomio.org/d/r5blTcY0/class-ci_responsibility))* [0..1]
-- **[spatialRepresentationType -](https://www.loomio.org/d/7Fjy0C4l/md_identification-spatial-representation-type-definition)** *(codelist - MD_SpatialRepresentationTypeCode)*[0..\*]
-- **[spatialResolution](https://www.loomio.org/d/SeUHYkXC/md_identification-spatial-resolution-definition) -**  *(class - [MD Resolution](http://wiki.esipfed.org/index.php/MD_Resolution))* [0..\*] 
-- **[additionalDocumentation](https://www.loomio.org/d/At7CL4Fv/md_identification-additionaldocs-definition) -**  *(class - [CI_Citation](https://www.loomio.org/d/Iei80UQH/class-ci_citation))* [0..\*] 
-- **[associatedResource](https://www.loomio.org/d/HGSVeBfw/md_identification-associatedresource-definition) -**  *(class - [MD AssociatedResource](http://wiki.esipfed.org/index.php/MD_AssociatedResource))* [0..\*] 
-- **[Citation -]()** *(class - [CI_Citation](https://www.loomio.org/d/Iei80UQH/class-ci_citation) 
-- **[Extents -](https://www.loomio.org/d/ilObJX24/md_identification-extent-definition)** *(class - [EX_Extent](http://wiki.esipfed.org/index.php/EX_Extent))* [0..\*]  High-level thematic classifications to assist in the grouping and searching of data.
+- **[abstract -](./Abstract)** *(type - charStr)* [1..\*] 
+- **[purpose -](./Purpose)** *(type - charStr))* [0..1] 
+- **[status -](./Status)** *(codelist - [MD_ProgressCode](http://wiki.esipfed.org/index.php/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_ProgressCode))*[0..1]
+- **[topicCategory -](./TopicCategory)** *(enumeration - [MD_TopicCategoryCode](http://wiki.esipfed.org/index.php/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_TopicCategoryCode))*[0..\*]
+- **[pointOfContact -](./PointOfContact)** *(class -  [CI_Responsibility](./class-CI_Responsibility))* [0..1]
+- **[spatialRepresentationType -](./SpatialRepresentationType)** *(codelist - MD_SpatialRepresentationTypeCode)*[0..\*]
+- **[spatialResolution](./SpatialResolution) -**  *(class - [MD Resolution](http://wiki.esipfed.org/index.php/MD_Resolution))* [0..\*] 
+- **[additionalDocumentation](./AdditionalDocs) -**  *(class - [CI_Citation](./class-CI_Citation))* [0..\*] 
+- **[associatedResource](./AssociatedResources) -**  *(class - [MD AssociatedResource](http://wiki.esipfed.org/index.php/MD_AssociatedResource))* [0..\*] 
+- **[Citation -]()** *(class - [CI_Citation](./class-CI_Citation) 
+- **[Extents -](./ResourceExtents)** *(class - [EX_Extent](http://wiki.esipfed.org/index.php/EX_Extent))* [0..\*]  High-level thematic classifications to assist in the grouping and searching of data.
 
 ### Others - not yet addressed by MDWG
 - **credit -** *(type - charStr)* [0..\*] Recognition of those who contributed to the dataset. Do not include URLs here. Provide full citations in MD_AssociatedResource section.
 - **temporalResolution -** *(class - [TM_PeriodDuration](http://wiki.esipfed.org/index.php/TM_PeriodDuration)* [0..\*]   The temporal resolution (level of temporal detail) of the dataset.
-- **processingLevel -** *(class - [MD_Identifier](https://www.loomio.org/d/zlScHYdN/class-md_identifier))* [0..\*]   An identifier code that identifies the level of processing in the producers coding system.
+- **processingLevel -** *(class - [MD_Identifier](./class-MD_Identifier))* [0..\*]   An identifier code that identifies the level of processing in the producers coding system.
 - **resourceSpecificUsage -** *(class - [MD_Usage](http://wiki.esipfed.org/index.php/MD_Usage))* [0..\*] Basic information about specific application(s) for which the resource(s) has been or is being used by different users.
 
 
@@ -81,7 +81,7 @@ Identification information about a resource is of high importance to document as
 There must be at least one (and usually just one) `identificationInfo` packages in a metadata record that contains the substantive  information about a cited resource.
 
 # Related Classes
-- **[MD_DataIdentification](https://www.loomio.org/d/oqKd8GHM/class-md_dataidentification)** An instantiation of the abstract calss for data resource metadata
+- **[MD_DataIdentification](./class-MD_DataIdentification)** An instantiation of the abstract calss for data resource metadata
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
