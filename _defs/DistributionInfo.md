@@ -22,7 +22,7 @@ title: Distribution Info
 **information about the distributor of and options for obtaining the resource**
 
 ## ISO Obligation -
-- There should be zero to many [0..\*] *distributionInfo* packages for the cited resource in the  *[MD_Metadata](https://www.loomio.org/d/AniV8zO3/class-md_metadata)* package of class *[MD_Distribution](http://wiki.esipfed.org/index.php/MD_Distribution)* in a metadata record.
+- There should be zero to many [0..\*] *distributionInfo* packages for the cited resource in the  *[MD_Metadata](./class-MD_Metadata)* package of class *[MD_Distribution](http://wiki.esipfed.org/index.php/MD_Distribution)* in a metadata record.
 
 ## ICSM Good Practice 
   - The *distributionInfo* package should be populated in all metadata records unless it obviously has no resource to be distributed, e.g. metadata for a series where resources are accessed via the children.
@@ -30,16 +30,16 @@ title: Distribution Info
 ### ICSM Recommended Sub-Elements 
 - **description -** *(type - charStr)*[0..1] (highly recommended when more than one distributionInfo package is present) a brief description of a set of distribution options 
 - **distributor -** *(class - [MD_Distributor](http://wiki.esipfed.org/index.php/MD_Distributor))* [0..*] Name, contact information, and role of the organisation from which this distribution of this cited resource may be obtained.
-  - **distributorContact -** *(class - [CI_Responsibility](https://www.loomio.org/d/r5blTcY0/class-ci_responsibility))* [0..*] (Highly recommended - CI_RoleCode should be *distributor*) party from whom the resource may be obtained. This list need not be exhaustive
+  - **distributorContact -** *(class - [CI_Responsibility](./class-CI_Responsibility))* [0..*] (Highly recommended - CI_RoleCode should be *distributor*) party from whom the resource may be obtained. This list need not be exhaustive
   - **distributionOrderProcess -** *(class - [MD_StandardOrderProcess](http://wiki.esipfed.org/index.php/MD_StandardOrderProcess))* [0..*] (recommended when useful)  provides information about how the resource may be obtained, and related instructions and fee information
 - **transferOptions -** *(class - [MD_DigitalTransferOptions](http://wiki.esipfed.org/index.php/MD_DigitalTransferOptions))* [0..*] technical means and media by which a resource is obtained from the distributor
-  - **onLine -** *(class - [CI_OnlineResource](https://www.loomio.org/d/rpyv8EnG/class-ci_onlineresource))* [0..*]   information about online sources from which the resource can be obtained. > TODO Link to CI_OnlineResource discusion
+  - **onLine -** *(class - [CI_OnlineResource](./class-CI_OnlineResource))* [0..*]   information about online sources from which the resource can be obtained. > TODO Link to CI_OnlineResource discusion
     - **linkage -** *(type - charStr)* [1..1] (required for each online resource) address for on-line access using a URL/URI or similar addressing scheme
     -  **protocol -** *(type - charStr)*[0..1] (optional) to document the connection type used.
     - **applicationProfile -** *(type - charStr)*[0..1] (optional) may be useful when the application of this distribution is limited.  The name of an application profile that can be used with the online resource
   - **offline -** *(class - [MD_Medium](http://wiki.esipfed.org/index.php/MD_Medium))* [0..*] information about offline media on which the resource can be obtained > TODO Link to MD_Medium discusion
   - **distributionFormat -** *(class - [MD_Format](http://wiki.esipfed.org/index.php/MD_Format))* [0..*] The name and version of the specification for the data format by which a distribution of this cited resource is provided
-    - **formatSpecificationCitation -** *(class - [CI_Citation](https://www.loomio.org/d/Iei80UQH/class-ci_citation))* [1..1]   citation/URL of the specification for the format
+    - **formatSpecificationCitation -** *(class - [CI_Citation](./class-CI_Citation))* [1..1]   citation/URL of the specification for the format
       - **title -** *(type - charStr)*[1..1] name of the data format in which the resource is distributed
       - **edition -** *(type - charStr)*[0..1] version of the distribution format used
 
@@ -77,7 +77,7 @@ There may also be instances where anonymous free online distribution is not desi
 - The cardinality of **MD_Metadata.distributionInfo** was increased to [0..*] in order to allow more flexibility in defining distribution information.
 - The new element **MD_Distribution.description** was added to allow a description of distribution options.
 - **MD_Format.name**, **MD_Format.version** and **MD_Format.specification** were deleted and replace with:
-  -  **MD_Format.formatSpecificationCitation** *(class - [CI_Citation](https://www.loomio.org/d/Iei80UQH/class-ci_citation))* 
+  -  **MD_Format.formatSpecificationCitation** *(class - [CI_Citation](./class-CI_Citation))* 
   - This new element was added in order to allow more precise descriptions of formats and versions and to allow references to the full specifications of those formats.
 - **MD_Format.medium** 
   - This new element was added in order to facilitate more precise associations between formats and distribution media.
@@ -109,9 +109,9 @@ Recommended property to meet data citation requirement
 - `OnlineResource` *(MD_DigitalTransferOptions.online)* maps to `Location/Electronic/@url`
 
 # Also Consider
-- **[metadataLinkage -](https://www.loomio.org/d/At7CL4Fv/md_identification-additionaldocs-definition)**  for links that provide a download of the metadata
-- **[resourceLineage -](https://www.loomio.org/d/ifwCE2kg/md_identification-resourcelineage-definition)** Information about the provenance, source(s), and/or the production process(es) applied to the resource.
-- **[browseGraphic -](https://www.loomio.org/d/MDiF0QYb/md_identification-browsegraphic-definition)**  associates to a large number of packages to provide linkage to associated image files, such as business or product icons and logos
+- **[metadataLinkage -](./AdditionalDocs)**  for links that provide a download of the metadata
+- **[resourceLineage -](./ResourceLineage)** Information about the provenance, source(s), and/or the production process(es) applied to the resource.
+- **[browseGraphic -](./BrowseGraphic)**  associates to a large number of packages to provide linkage to associated image files, such as business or product icons and logos
 
 # Examples
 
