@@ -21,7 +21,7 @@ title: Extent Bounding Box
 **A minimal set of geographic coordinates describing the geographic position of the resource. This is only an approximate reference so specifying the coordinate reference system is unnecessary and need only be provided with a precision of up to two decimal places** 
 
 ## ISO Obligation 
-- A metadata record may have zero to many  [0..\*] *geographicIdentifier* elements for the cited resource in the  *[GeographicExtent](https://www.loomio.org/d/VFGfYESU/md_identification-geoextent-definition)* package of class *EX_GeographicBoundingBox* that described the geographic extent of a cited resource.
+- A metadata record may have zero to many  [0..\*] *geographicIdentifier* elements for the cited resource in the  *[GeographicExtent](./GeographicExtent)* package of class *EX_GeographicBoundingBox* that described the geographic extent of a cited resource.
 
 ## ICSM Good Practice - 
 - The MDWG recommends populating as many instances of Geographical Extent packages as need to give a common understanding of the spatial coverage of the cited resource.
@@ -64,12 +64,12 @@ Maps to `dct.spatial`
 Maps to the aggregate element `Coverage/Spatial`
 
 # Also Consider
-- **[EX_Extent](https://www.loomio.org/d/ilObJX24/md_identification-extent-definition)** The class that contains all extent information about the cited resource - vertical, geographical or temporal.
-- **[EX_GeographicExtents](https://www.loomio.org/d/VFGfYESU/md_identification-geoextent-definition)** is an abstract class and the parent of **EX_GeographicBoundingBox**
-- **[EX_GeographicDescription -](https://www.loomio.org/d/WR9u6kAL/md_identification-geoextent-description-definition)**  a sibling to this element.
+- **[EX_Extent](./ResourceExtent)** The class that contains all extent information about the cited resource - vertical, geographical or temporal.
+- **[EX_GeographicExtents](./GeographicExtent)** is an abstract class and the parent of **EX_GeographicBoundingBox**
+- **[EX_GeographicDescription -](./ExtentGeographicDescription)**  a sibling to this element.
 - **EX_BoundingPolygon**  While very useful, particularly in describing irregular areas, this element is not described by the MDWG as a recommended element due to the difficult that many systems have in implementing it.
-- **[EX_TemporalExtent](https://www.loomio.org/d/M7qGg35u/md_identification-temporal-extent-definition)** Contains temporal extent information for the cited resource
-- **[EX_VerticalExtent -](https://www.loomio.org/d/wZKcHJgW/md_identification-vertical-extent-definition)**  captures the vertical range of a resource.
+- **[EX_TemporalExtent](./TemporalExtents)** Contains temporal extent information for the cited resource
+- **[EX_VerticalExtent -](./VerticalExtent)**  captures the vertical range of a resource.
 
 
 ## XML 
