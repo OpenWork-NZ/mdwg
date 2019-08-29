@@ -4,7 +4,7 @@ type: element
 title: Resource Identifier
 ---
 # Resource Identifier ★★★★
-*An important component of the [Resource Citation](https://www.loomio.org/d/Iei80UQH/class-ci_citation) is the resource identification element.  Similar to the [Metadata Identifier](https://www.loomio.org/d/eAo6MDlO/md_metadata-metadata-identifier), this element hold a code that uniquely identifies the resource and differentiates it from all others. With this, machines and humans can differentiate, reference and link to the resource without ambiguity*
+*An important component of the [Resource Citation](./class-CI_Citation) is the resource identification element.  Similar to the [Metadata Identifier](./MetadataIdentifier), this element hold a code that uniquely identifies the resource and differentiates it from all others. With this, machines and humans can differentiate, reference and link to the resource without ambiguity*
 
 - **Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.citation>CI_Citation.identifier*
 - **Governance** -  *Common, Agency, Domain*
@@ -21,13 +21,13 @@ title: Resource Identifier
 **Alphanumeric identifier uniquely identifying this cited resource.**
 
 ## ISO Obligation 
-- This is an ISO optional element. There may be zero or many [0..\*] *identifier* entries for the cited resource in the  *[MD_DataIdentification.citation](https://www.loomio.org/d/2mHdNrUR/md_identification-citation)* package of class *[MD_Identifier](https://www.loomio.org/d/zlScHYdN/class-md_identifier)*  in a metadata record.
+- This is an ISO optional element. There may be zero or many [0..\*] *identifier* entries for the cited resource in the  *[MD_DataIdentification.citation](./ResourceCitation)* package of class *[MD_Identifier](./class-MD_Identifier)*  in a metadata record.
 
 ##  ICSM Good Practice 
 - The MDWG recommends this element be populated in all metadata records, preferably with a resolvable URI that points to a landing page for the resource. This landing page may be the authoritative metadata record.
 
 ### Recommended Sub-Elements
-Follow the general guidance for **[MD_Identifier](https://www.loomio.org/d/zlScHYdN/class-md_identifier)** with emphasis on the following elements:
+Follow the general guidance for **[MD_Identifier](./class-MD_Identifier)** with emphasis on the following elements:
 - **code -** (*type - charstr*) [1..1] A mandataroy alphanumeric value identifying an instance in the namespace, 
 - **codespace -** *(type - charstr)* [0..1] An optional but recommended namespace in which the code is valid. Ideally a  URL  path by which, when combined with the uuid, the full path to the resource landing page is provided.
 - **description -** (*type - charstr*) [0..1] An optional but recommended natural language description of the meaning of the code value. Usually prepopulated in the metadata template.
@@ -63,9 +63,9 @@ Maps to `dcat:identifier`
 Maps to `Identifier` 
 
 # Also Consider
-- **[onlineResource -](https://www.loomio.org/d/G6oHphty/md_metadata-distribution)** (MD_Distribution.transferOptions>MD_DigitalTransferOptions.online) is used to provide online linage to the resource. 
-- **[MetadataIdentifier -](https://www.loomio.org/d/eAo6MDlO/md_metadata-metadata-identifier)** is the preferred element to be used to provide linkage to the metadata record.
-- **[Resource  Citation](https://www.loomio.org/d/2mHdNrUR/md_identification-citation)** - parent to this element
+- **[onlineResource -](./DistributionInfo)** (MD_Distribution.transferOptions>MD_DigitalTransferOptions.online) is used to provide online linage to the resource.
+- **[MetadataIdentifier -](./MetadataIdentifier)** is the preferred element to be used to provide linkage to the metadata record.
+- **[Resource  Citation](./ResourceCitation)** - parent to this element
 
 # Examples
 
