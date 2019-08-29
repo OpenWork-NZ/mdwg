@@ -21,34 +21,34 @@ title: Resource Citation
 **Citation information for the resource.**
 
 ## ISO Obligation 
-- There must be one and only one [1..1] *MD_Metadata,indentificationInfo>MD_Identification.citation* package for the cited resource in the  *[MD_DataIdentification](https://www.loomio.org/d/oqKd8GHM/class-md_dataidentification)* package in a metadata record. this must be of of class *[CI_Citation](https://www.loomio.org/d/Iei80UQH/class-ci_citation)*.
+- There must be one and only one [1..1] *MD_Metadata,indentificationInfo>MD_Identification.citation* package for the cited resource in the  *[MD_DataIdentification](./class-MD_DataIdentification)* package in a metadata record. this must be of of class *[CI_Citation](./class-CI_Citation)*.
 
 ##  ICSM Good Practice 
 - This element should be populated in all metadata records with a minimum of `title`, `identifier`, `date` and `citedResponsibleParty`.
 
 ### Recommended Sub-Elements 
-Follow the general guidance for **[CI_Citation](https://www.loomio.org/d/Iei80UQH/class-ci_citation)** with emphasis on the following elements:
-- **[title](https://www.loomio.org/d/yIYmrKV0/md_identification-citation-title-definition) -** *(type - charStr)*[1..1] Mandatory - name by which the cited resource is known
-- **[date](https://www.loomio.org/d/wo72czua/md_identification-date-definition) -** *(class - [CI_Date](https://www.loomio.org/d/9Q8mJuea/class-ci_date))*  [0..\*]  reference date for the cited resource. Should include at a minimum, the creation date for the resource.
-- **[edition](https://www.loomio.org/d/0bwIpPdO/md_identification-citation-edition-definition) -** *(type - charStr)* [0..1] version of the cited resource if appropriate
-- **[identifier](https://www.loomio.org/d/g01HSKVO/md_identification-citation-indentifer-definition) -** *(class - [MD_Identifier](https://www.loomio.org/d/zlScHYdN/class-md_identifier))* [0..\*] value uniquely identifying an object within a namespace. Recommend provision of a resolvable URI following the MD_Identifier guidance.
-- **[citedResponsibleParty](https://www.loomio.org/d/VvqjwcIS/md_identification-citation-cited-responsible-party-definition) -** *(class - CI_Responsibility)*[0..\*] roles, name, contact, and position information for an individual or organisation that is responsible for the resource. It is recommended that a party with the role "Point of Contact" be provided as well as an entry for "publisher".
-- **[series](https://www.loomio.org/d/dCu8Swbr/md_identification-citation-series-definition) -**  *(class - CI_Series)* [0..1] If needed, information about the series, or aggregate resource, of which the resource is a part should be included.
+Follow the general guidance for **[CI_Citation](./class-CI_Citation)** with emphasis on the following elements:
+- **[title](./ResourceTitle) -** *(type - charStr)*[1..1] Mandatory - name by which the cited resource is known
+- **[date](./ResourceDate) -** *(class - [CI_Date](./class-CI_Date))*  [0..\*]  reference date for the cited resource. Should include at a minimum, the creation date for the resource.
+- **[edition](./ResourceEdition) -** *(type - charStr)* [0..1] version of the cited resource if appropriate
+- **[identifier](./ResourceIdentifier) -** *(class - [MD_Identifier](./class-MD_Identifier))* [0..\*] value uniquely identifying an object within a namespace. Recommend provision of a resolvable URI following the MD_Identifier guidance.
+- **[citedResponsibleParty](./ResourceResponsibleParty) -** *(class - CI_Responsibility)*[0..\*] roles, name, contact, and position information for an individual or organisation that is responsible for the resource. It is recommended that a party with the role "Point of Contact" be provided as well as an entry for "publisher".
+- **[series](./ResourceSeries) -**  *(class - CI_Series)* [0..1] If needed, information about the series, or aggregate resource, of which the resource is a part should be included.
 
 # Discussion 
-The citation package contains multiple elements from [CI_Citation](https://www.loomio.org/d/Iei80UQH/class-ci_citation). Only child elements contain content. Follow the links on the child elements above for further discussion. Aspects of the contents of this package may be governed at different levels.
+The citation package contains multiple elements from [CI_Citation](./class-CI_Citation). Only child elements contain content. Follow the links on the child elements above for further discussion. Aspects of the contents of this package may be governed at different levels.
 
 # Recommendations 
 
-Therefore - because many of the elements of MD_Identification.citation are mandatory and are important for identification and harvesting of metadata, it is recommended the the guidance provided in each of these six child elements be followed. Other availble [CI_Citation](https://www.loomio.org/d/Iei80UQH/class-ci_citation) elements should be used if needed to properly document your resource. Consult your metadata governance team on such use.
+Therefore - because many of the elements of MD_Identification.citation are mandatory and are important for identification and harvesting of metadata, it is recommended the the guidance provided in each of these six child elements be followed. Other availble [CI_Citation](./class-CI_Citation) elements should be used if needed to properly document your resource. Consult your metadata governance team on such use.
 
 # Also Consider
-- **[title](https://www.loomio.org/d/yIYmrKV0/md_identification-citation-title-definition)** 
-- **[date](https://www.loomio.org/d/wo72czua/md_identification-date-definition)**
-- **[edition](https://www.loomio.org/d/0bwIpPdO/md_identification-citation-edition-definition)**
-- **[identifier](https://www.loomio.org/d/g01HSKVO/md_identification-citation-indentifer-definition)**
-- **[citedResponsibleParty](https://www.loomio.org/d/VvqjwcIS/md_identification-citation-cited-responsible-party-definition)**
-- **[series](https://www.loomio.org/d/dCu8Swbr/md_identification-citation-series-definition)**
+- **[title](./ResourceTitle)** 
+- **[date](./ResourceDate)**
+- **[edition](./ResourceEdition)**
+- **[identifier](./ResourceIdentifier)**
+- **[citedResponsibleParty](./ResourceResponsibleParty)**
+- **[series](./ResourceSeries)**
 
 
 # Examples
