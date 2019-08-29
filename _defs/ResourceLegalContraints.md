@@ -22,13 +22,13 @@ When constraints ([MD_Constraints]) on a spatial resource [MD_Identification]  a
 **Legal restrictions on the access and use of this cited resource e.g. copyright**
 
 ## ISO Obligation 
-- There may be zero  to many [0..\*] *legalConstraints* recorded for the cited resource in the  *[MD_DataIdentification](https://www.loomio.org/d/oqKd8GHM/class-md_dataidentification)* package of class *[MD_LegalConstraints](https://www.loomio.org/d/ugevCYJD/class-md_legalconstraints)* in a metadata record,  
+- There may be zero  to many [0..\*] *legalConstraints* recorded for the cited resource in the  *[MD_DataIdentification](./class-MD_DataIdentification)* package of class *[MD_LegalConstraints](./class-MD_LegalConstraints)* in a metadata record,  
 
 ## ICSM Good Practice  
 - The MDWG highly recommends populating this element `legalConstraints`  to sufficient level to determine the legal rights, responsibilities and restrictions on a cited resource.
 
 ### Recommended Sub-Elements   
-Follow the general guidance for [MD_LegalConstraints](https://www.loomio.org/d/ugevCYJD/class-md_legalconstraints)
+Follow the general guidance for [MD_LegalConstraints](./class-MD_LegalConstraints)
 
 # Discussion  
 Almost all spatial resources carry some legal rights, restrictions and responsibility regarding their access and use.  For instance, in most jurisdictions, copyright is automatically granted to the creator of a creative work (which includes spatial resources).  These legal restrictions such as licences and end user agreements, need be documented for users and resource managers along with the identity of the holder of these rights.  Each agency needs to develop consistent guidance on the use of such statement and share clear understanding of their meaning.  This is often done by reference to a external body that manages the definitions of the legal constraints applied.
@@ -55,7 +55,7 @@ Therefore - It is important to capture all legal constraints that apply to a spa
 ## Crosswalk considerations 
 
 ### ISO19139 
-See guidance provided in [MD_Constraints](https://www.loomio.org/d/TqdZp04C/class-md_constraints) and [MD_LegalConstraints](https://www.loomio.org/d/TqdZp04C/class-md_constraints)
+See guidance provided in [MD_Constraints](./class-md_constraints) and [MD_LegalConstraints](./class-MD_LegalConstraints)
 
 ### Dublin core / CKAN / data.govt.nz 
 Maps to `rights`
@@ -69,8 +69,8 @@ Maps to `dct.rights` as does `metadata legal constraints` > Note BC 22-7: Does D
 Maps to `Rights/@licence`
 
 # Also Consider
-- **[Resource Security Constraints](https://www.loomio.org/d/gxbVXJdF/md_identification-resourcesecurityconstraints-definition)** - contains security restrictions that apply to the resource cited by the metadata
-- **[Metadata Legal Constraints](https://www.loomio.org/d/G8d21r6z/md_metadata-md_legalconstraints-definition)** - A sibling to metadata legal constraints. Contains information regarding any security restriction on the metadata.
+- **[Resource Security Constraints](./ResourceSecurityConstraints)** - contains security restrictions that apply to the resource cited by the metadata
+- **[Metadata Legal Constraints](./MetadataLegalConstraints)** - A sibling to metadata legal constraints. Contains information regarding any security restriction on the metadata.
 
 # Examples
 
