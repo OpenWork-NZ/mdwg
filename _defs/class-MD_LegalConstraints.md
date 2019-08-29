@@ -52,7 +52,7 @@ Therefore - It is important to capture all legal constraints that apply to a res
 See guidance provided in [MD_Constraints](./class-md_constraints) 
 
 # Related Classes
-- **[MD_Constraints](https://www.loomio.org/d/TqdZp04C/class-md_constraints)** the Superclass to `MD_LegalConstraints`. `MD_LegalConstraints` implements all the properties of `MD_Constraints`.  Full guidance of the associated elements are discussed there.
+- **[MD_Constraints](./class-md_constraints)** the Superclass to `MD_LegalConstraints`. `MD_LegalConstraints` implements all the properties of `MD_Constraints`.  Full guidance of the associated elements are discussed there.
 - **[MD_SecurityConstraints](path)** A sibling to `MD_LegalConstraints` and an extension to `MD_Constraints` for constraints applied for security purposes.
 
 ## UML diagrams
