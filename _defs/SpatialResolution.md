@@ -21,7 +21,7 @@ title: Spatial Resolution
 **The nominal scale and/or spatial resolution of the resource.**
 
 ## ISO Obligation 
-- There may zero to many [0..\*] *spatialResolution* entries for the cited resource in the  *[MD_DataIdentification](https://www.loomio.org/d/oqKd8GHM/class-md_dataidentification)* package of class *[MD_Resolution](http://wiki.esipfed.org/index.php/MD_Resolution)* in a metadata record.
+- There may zero to many [0..\*] *spatialResolution* entries for the cited resource in the  *[MD_DataIdentification](./class-MD_DataIdentification)* package of class *[MD_Resolution](http://wiki.esipfed.org/index.php/MD_Resolution)* in a metadata record.
 
 ## ICSM Good Practice 
 - The *spatialReolution* package should be populated with enough information to give the reader a good understanding of the spatial scale at which the resource was designed to be used.
@@ -79,7 +79,7 @@ Maps to ?
 
 # Also Consider
 
-- **[Spatial Representation Type](https://www.loomio.org/d/7Fjy0C4l/md_identification-spatial-representation-type-definition)** Documents the method used to spatially represent geographic information
+- **[Spatial Representation Type](./SpatialRepresentationType)** Documents the method used to spatially represent geographic information
 - **dataQualityInfo>MD_DataQuality -** TBD - From ISO19157 - quality information for the data specified by a data quality scope 
 
 # Examples
