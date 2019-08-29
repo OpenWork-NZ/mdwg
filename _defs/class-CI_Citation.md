@@ -50,17 +50,17 @@ In order to provide a standardised way of capturing information related to the v
 ### Recomended Attributes - 
 - **title -** *(type - charStr)*[1..1] Mandatory - name by which the cited resource is known
 - **alternateTitle -** *(type - charStr)* [0..\*] short name or other language name by which the cited information is known. Example: DCW as an alternative title for Digital Chart of the World. Recommended whenever there are alternate names commonly in use.
-- **date -** *(class - [CI_Date](https://www.loomio.org/d/9Q8mJuea/class-ci_date))*  [0..\*]  reference date for the cited resource
+- **date -** *(class - [CI_Date](./class-CI_Date))*  [0..\*]  reference date for the cited resource
 - **edition -** *(type - charStr)* [0..1] version of the cited resource
 - **editionDate -** *(type - DateTime)*[0..1] date of the edition
-- **identifier -** *(class - [MD_Identifier](https://www.loomio.org/d/zlScHYdN/class-md_identifier))* [0..\*] value uniquely identifying an object within a namespace
-- **citedResponsibleParty -** *(class - [CI_Responsibility](https://www.loomio.org/d/r5blTcY0/class-ci_responsibility))*[0..\*] roles, name, contact, and position information for an individual or organisation that is responsible for the resource
+- **identifier -** *(class - [MD_Identifier](./class-MD_Identifier))* [0..\*] value uniquely identifying an object within a namespace
+- **citedResponsibleParty -** *(class - [CI_Responsibility](./class-CI_Responsibility))*[0..\*] roles, name, contact, and position information for an individual or organisation that is responsible for the resource
 - **presentationForm -**  *(class - [CI_PresentationFormCode](http://wiki.esipfed.org/index.php/ISO_19115-3_Codelists#CI_PresentationFormCode))* [0..\*] mode in which the resource is represented
 - **series -**  *(class - [CI_Series](http://wiki.esipfed.org/index.php/CI_Series))* [0..1] information about the series, or aggregate resource, of which the resource is a part
 - **otherCitationDetails -**  *(type - charStr)* [0..\*] other information required to complete the citation that is not recorded elsewhere
 - **ISBN -**  *(type - charStr)* [0..1] international Standard Book Number
 - **ISSN -**  *(type - charStr)* [0..1] international Standard Serial Number
-- **onlineResource -**  *(class -  [CI_OnlineResource](https://www.loomio.org/d/rpyv8EnG/class-ci_onlineresource))* [0..\*] online reference to the cited resource
+- **onlineResource -**  *(class -  [CI_OnlineResource](./class-CI_OnlineResource))* [0..\*] online reference to the cited resource
 - **graphic -**  *(class - [MD_BrowseGraphic](http://wiki.esipfed.org/index.php/MD_BrowseGraphic))* [0..\*] citation graphic or logo for cited party
 
 

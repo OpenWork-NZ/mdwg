@@ -51,7 +51,7 @@ CI_Responsibility has at its core three elements:
   - *contributor -* party contributing to the resource
   - *funder -* party providing monetary support for the resource
   - *stakeholder -* party who has an interest in the resource or the use of the resource
-- **extent -** *(class - [Extent](https://www.loomio.org/d/ilObJX24/md_identification-extent-definition))* [0..\*]  spatial or temporal extent of the role
+- **extent -** *(class - [Extent](./ResourceExtent))* [0..\*]  spatial or temporal extent of the role
 - **party -** *(abstract class - [CI_Party]*(http://wiki.esipfed.org/index.php/CI_Party)* [1..\*]  Required - information about the individual and/or organisation of the party. Instantiated as *CI_Individual* or *CI_Organisation*.
   - **name -** *(type - charStr)* [0..1]   name of the party (individual or organization)
   - **contactInfo -** *(class - CI_Contact)* [0..\*] contact information for the party
@@ -65,11 +65,11 @@ CI_Responsibility has at its core three elements:
         - **country -** *(type - charStr)* [0..\*] country of the physical address
         - **electronicMailAddress -** *(type - charStr)* [0..\*] address of the electronic mailbox of the responsible organisation or individual
         
-      - **onlineResource -** *(class - [CI_OnlineResource](https://www.loomio.org/d/rpyv8EnG/class-ci_onlineresource))* [0..\*]
+      - **onlineResource -** *(class - [CI_OnlineResource](./class-CI_OnlineResource))* [0..\*]
       - **contactInstructions -** *(type - charStr)* [0..\*] supplemental instructions on how or when to contact the individual or organisation
       - **contactType -** *(type - charStr)* [0..\*] type of contact
       
-    - **partyIdentifier -** *(class - [MD_Identifier](https://www.loomio.org/d/zlScHYdN/class-md_identifier))* [0..\*]   identifier for the party
+    - **partyIdentifier -** *(class - [MD_Identifier](./class-MD_Identifier))* [0..\*]   identifier for the party
 
 ### Associated Classes to CI_Party
 - **CI_Individual -** information about the party if the party is an individual
