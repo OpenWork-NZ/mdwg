@@ -92,4 +92,5 @@ Location of Medicare Offices
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
+
 ![title](../images/ResourceTitle.png)
