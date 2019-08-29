@@ -25,7 +25,7 @@ title: MD_Scope
 
 ## Attributes - 
 - **level -** *(codelist - MD_ScopeCode)* [1..1] Mandatory when using MD_Scope - target resource covered
-- **extent -** *(class - [EX_Extent](https://www.loomio.org/d/ilObJX24/md_identification-extent-definition))* [0..\*] Information about the horizontal, vertical and temporal extent of the resource specified by the scope
+- **extent -** *(class - [EX_Extent](./ResourceExtent))* [0..\*] Information about the horizontal, vertical and temporal extent of the resource specified by the scope
 - **levelDescription -** *(codelist - MD_ScopeDescription)* [0..\*] detailed description/listing of the items specified by the level
 
 ## Associated Classes, Codelists and Unions

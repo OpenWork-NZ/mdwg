@@ -5,7 +5,7 @@ title: MD_SecurityConstraints
 ---
 
 #  Class - MD_SecurityConstraints
-When constraints information *([MD_Constraints](https://www.loomio.org/d/TqdZp04C/class-md_constraints))* concern security issues they should be captured using the class *MD_SecurityConstraints*.
+When constraints information *([MD_Constraints](./class-md_constraints))* concern security issues they should be captured using the class *MD_SecurityConstraints*.
 
 - **Governance** -  *ISO, Common, Agency*
 - **Metadata type -** *structural*
@@ -15,11 +15,11 @@ When constraints information *([MD_Constraints](https://www.loomio.org/d/TqdZp04
 **Handling restrictions imposed on the resource or metadata for national security or similar security concerns.**
 
 ## ISO Associations  
-The class, *MD_SecurityConstraints* is an specialisation of [MD_Constraints](https://www.loomio.org/d/TqdZp04C/class-md_constraints). Follow the guidance provided for that class plus the following additional guidance.
+The class, *MD_SecurityConstraints* is an specialisation of [MD_Constraints](./class-md_constraints). Follow the guidance provided for that class plus the following additional guidance.
 
 ## Attributes - 
-*MD_SecurityConstraints* has all the attributes of [MD_Constraints](https://www.loomio.org/d/TqdZp04C/class-md_constraints) plus the following:
-- **classification -** *(codelist - [MD_RestrictionCode](https://www.loomio.org/d/TqdZp04C/class-md_constraints#MD_RestrictionCode---codelist))* [0..\*] Mandatory when using `MD_SecurityConstraints` - the name of the handling restrictions on the resource or metadata
+*MD_SecurityConstraints* has all the attributes of [MD_Constraints](./class-md_constraints) plus the following:
+- **classification -** *(codelist - [MD_RestrictionCode](./class-md_constraints#MD_RestrictionCode---codelist))* [0..\*] Mandatory when using `MD_SecurityConstraints` - the name of the handling restrictions on the resource or metadata
 - **userNote -** *(type - charStr)* [0..1] explanation of the application of the legal constraints or other restrictions and legal prerequisites for obtaining and using the resource or metadata
 - **classificationSystem -** *(type - charStr)* [0..1]  name of the classification system
 - **handlingDescription -** *(type - charStr)* [0..1]  additional information about the restrictions on handling the resource or metadata
@@ -60,11 +60,11 @@ At a minimum the Name (primary and alternate) and version by which this security
 ## Crosswalk considerations
 
 ### ISO19139
-See guidance provided in [MD_Constraints](https://www.loomio.org/d/TqdZp04C/class-md_constraints) 
+See guidance provided in [MD_Constraints](./class-md_constraints) 
 
 # Related Classes
-- **[MD_Constraints](https://www.loomio.org/d/TqdZp04C/class-md_constraints)** the Superclass to `MD_LegalConstraints`. `MD_LegalConstraints` implements all the properties of `MD_Constraints`.  Full guidance of the associated elements are discussed there.
-- **[MD_LegalConstraints](https://www.loomio.org/d/ugevCYJD/class-md_legalconstraints)** A sibling to `MD_SecurityConstraints` and an extension to `MD_Constraints` for constraints applied for legal purposes.
+- **[MD_Constraints](./class-md_constraints)** the Superclass to `MD_LegalConstraints`. `MD_LegalConstraints` implements all the properties of `MD_Constraints`.  Full guidance of the associated elements are discussed there.
+- **[MD_LegalConstraints](./class-MD_LegalConstraints)** A sibling to `MD_SecurityConstraints` and an extension to `MD_Constraints` for constraints applied for legal purposes.
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
