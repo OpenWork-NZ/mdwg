@@ -4,7 +4,7 @@ type: element
 title: Resource Format
 ---
 # Resource Format  ★★★
-*Information about how a cited spatial resource is kept on the host system can be useful to individuals such as subject matter specialist and data managers. General audiences will be more interested in the [distribution format](https://www.loomio.org/d/G6oHphty/md_metadata-distribution)*.
+*Information about how a cited spatial resource is kept on the host system can be useful to individuals such as subject matter specialist and data managers. General audiences will be more interested in the [distribution format](./DistribitionInfo)*.
 
 - **Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.resourceFormat*
 - **Governance** - *Agency*
@@ -20,14 +20,14 @@ title: Resource Format
 **Description of the computer language construct that specifies the representation of the data objects in a record, file, message, storage device, or transmission channel**
 
 ## ISO Obligation 
-There may be zero or many [0..\*] *resourceFormats* for the cited resource in the  *[MD_DataIdentification](https://www.loomio.org/d/oqKd8GHM/class-md_dataidentification)* package of class *[MD_Format](https://www.isotc211.org/hmmg/HTML/ConceptualModels/EARoot/EA1/EA13/EA2/EA10/EA4323.htm)* desrcibed in a metadata record.
+There may be zero or many [0..\*] *resourceFormats* for the cited resource in the  *[MD_DataIdentification](./class-MD_DataIdentification)* package of class *[MD_Format](https://www.isotc211.org/hmmg/HTML/ConceptualModels/EARoot/EA1/EA13/EA2/EA10/EA4323.htm)* desrcibed in a metadata record.
 
 ##  ICSM Good Practice 
 This element should be populated in all metadata records with information about the format in which the resource is stored and managed within the agency,  This is not about the format inwhich the resource is distributed which often differs.
 
 ### Recommended Sub-Elements  
 From class - *[MD_Format](http://wiki.esipfed.org/index.php/MD_Format)*
-* **formatSpecificationCitation -** *(class - [CI_Citation](https://www.loomio.org/d/Iei80UQH/class-ci_citation))* citation/URL of the specification for the format
+* **formatSpecificationCitation -** *(class - [CI_Citation](./class-CI_Citation))* citation/URL of the specification for the format
 * **medium -** *(class - [MD_Medium](http://wiki.esipfed.org/index.php/MD_Medium))*  medium used by the format
 
 # Discussion  
@@ -46,7 +46,7 @@ This element makes more sense when applied to service metadata.  In that case th
 
 Therefore - it is recommended that format information about a resource be captured in the metadata. The details to include are to be at the best judgement of the managers and direct users of the resource.
 
-It is not recommended, except in the case of service information metadata, that this element be used to hold distribution format information. That is better conveyed in distributionFormat element under [MD_Distribution]((https://www.loomio.org/d/G6oHphty/md_metadata-distribution) ).
+It is not recommended, except in the case of service information metadata, that this element be used to hold distribution format information. That is better conveyed in distributionFormat element under [MD_Distribution](./DistributionInfo).
 
 
 ## Crosswalk considerations 
@@ -58,7 +58,7 @@ likely unneeded unless a service
 mapping as yet unknown
 
 # Also Consider
-- **[MD_Distribution.distributionFormat -]((https://www.loomio.org/d/G6oHphty/md_metadata-distribution) )**  holds information about the format in which the data is distributed.
+- **[MD_Distribution.distributionFormat -](./DistributionInfo)**  holds information about the format in which the data is distributed.
 
 
 # Examples
