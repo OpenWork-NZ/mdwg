@@ -5,7 +5,7 @@ title: MD_LegalConstraints
 ---
 
 #  Class - MD_LegalConstraints
-When constraint ([MD_Constraints](https://www.loomio.org/d/TqdZp04C/class-md_constraints)) are of a legal nature they should be captured using the class **MD_LegalConstrints**.
+When constraint ([MD_Constraints](./class-md_constraints)) are of a legal nature they should be captured using the class **MD_LegalConstrints**.
 
 - **Governance** -  *ISO*
 - **Metadata type -** *structural*
@@ -15,15 +15,15 @@ When constraint ([MD_Constraints](https://www.loomio.org/d/TqdZp04C/class-md_con
 **restrictions and legal prerequisites for accessing and using the resource or metadata.**
 
 ## ISO Associations  
-The class, *MD_LegalConstraints* is an specialisation of *[MD_Constraints](https://www.loomio.org/d/TqdZp04C/class-md_constraints)*. Follow the guidance provided for that class plus the following additional guidance.
+The class, *MD_LegalConstraints* is an specialisation of *[MD_Constraints](./class-md_constraints)*. Follow the guidance provided for that class plus the following additional guidance.
 
 ### ISO Constraints 
 When `MD_LegalConstraints` is used the at least one of the elements  `accessConstraints`, `useConstraints`, `useLimitation`,  `releasability` and `otherConstraints` must be present.  When using `otherConstraints`, either `accessConstraints` or `useConstrants` must equal `otherRestrictions`.
 
 ### Attributes  
-Has all the attributes of [MD_Constraints](https://www.loomio.org/d/TqdZp04C/class-md_constraints) plus the following:
-- **accessConstraints -** *(codelist - [MD_RestrictionCode](https://www.loomio.org/d/TqdZp04C/class-md_constraints#MD_RestrictionCode---codelist))* [0..\*] access constraints applied to assure the protection of privacy or intellectual property, and any special restrictions or limitations on obtaining the resource or metadata
-- **useConstraints -** *(codelist - [MD_RestrictionCode](https://www.loomio.org/d/TqdZp04C/class-md_constraints#MD_RestrictionCode---codelist))* [0..\*] constraints applied to assure the protection of privacy or intellectual property, and any special restrictions or limitations or warnings on using the resource or metadata
+Has all the attributes of [MD_Constraints](./class-md_constraints) plus the following:
+- **accessConstraints -** *(codelist - [MD_RestrictionCode](./class-md_constraints#MD_RestrictionCode---codelist))* [0..\*] access constraints applied to assure the protection of privacy or intellectual property, and any special restrictions or limitations on obtaining the resource or metadata
+- **useConstraints -** *(codelist - [MD_RestrictionCode](./class-md_constraints#MD_RestrictionCode---codelist))* [0..\*] constraints applied to assure the protection of privacy or intellectual property, and any special restrictions or limitations or warnings on using the resource or metadata
 - **otherConstraints -** *(type - charStr)* [0..\*]  other restrictions and legal prerequisites for accessing and using the resource or metadata
 
 
@@ -49,7 +49,7 @@ Therefore - It is important to capture all legal constraints that apply to a res
 ## Crosswalk considerations
 
 ### ISO19139
-See guidance provided in [MD_Constraints](https://www.loomio.org/d/TqdZp04C/class-md_constraints) 
+See guidance provided in [MD_Constraints](./class-md_constraints) 
 
 # Related Classes
 - **[MD_Constraints](https://www.loomio.org/d/TqdZp04C/class-md_constraints)** the Superclass to `MD_LegalConstraints`. `MD_LegalConstraints` implements all the properties of `MD_Constraints`.  Full guidance of the associated elements are discussed there.
