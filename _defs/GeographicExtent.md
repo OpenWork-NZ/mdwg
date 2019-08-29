@@ -22,15 +22,15 @@ title: Geographic Extent
 **A description of the spatial area of the resource. These may be of the type Bounding Box, Geographic Description, or Bounding Polygon.**
 
 ## ISO Obligation 
-- There can be zero to many [0..\*] *Geographical Extent* packages for the cited resource in the  *[Resource Extent](https://www.loomio.org/d/ilObJX24/md_identification-extent-definition)* package. These may be of the type *Bounding Box* (EX_GeographicBoundingBox), *Geographic Description* (EX_GeographicDescription), or *Bounding Polygon* (EX_BoundingPolygon).
+- There can be zero to many [0..\*] *Geographical Extent* packages for the cited resource in the  *[Resource Extent](./ResourceExtent)* package. These may be of the type *Bounding Box* (EX_GeographicBoundingBox), *Geographic Description* (EX_GeographicDescription), or *Bounding Polygon* (EX_BoundingPolygon).
 
 ## ICSM Good Practice - 
 - The MDWG recommends populating as many instances of Geographical Extent packages as need to give a common understanding of the spatial coverage of the cited resource.
 
 ### Recommended Sub Types 
 **EX_GeographicExtent** is an abstrat class that is expressed by one of the three options
-- **[Geographic Bounding Box](https://www.loomio.org/d/rzZg1mDR/md_identification-geoextent-boundbox-definition)** - *(class - EX_GeographicBoundingBox)* highly recommended for resources with geographic extent.  An approximate geographic position of the resource using EPSG 4326 coordinate pairs with a precision of up to two decimal places
-- **[Geographic Description](https://www.loomio.org/d/WR9u6kAL/md_identification-geoextent-description-definition)** - *(class - EX_GeographicDescription)* highly recommended for resources with geographic extent. A description of the geographic area using identifiers 
+- **[Geographic Bounding Box](./ExtentBoundingBox)** - *(class - EX_GeographicBoundingBox)* highly recommended for resources with geographic extent.  An approximate geographic position of the resource using EPSG 4326 coordinate pairs with a precision of up to two decimal places
+- **[Geographic Description](./ExtentGeographicDescription)** - *(class - EX_GeographicDescription)* highly recommended for resources with geographic extent. A description of the geographic area using identifiers 
 - **Bounding Polygon** - *(class EX_BoundingPolygon)* optional - not recommended by MDWG except in cases where the other options do not suit 
 Use **extentTypeCode** *(Boolean)* [0..1] witha value of "0" to indicate exclusions
 
@@ -68,12 +68,12 @@ Maps to `Coverage/Spatial`
 
 # Also Consider
 - **EX_GeographicExtents** is an abstract class that can be express three ways:
-  - **[EX_GeographicBoundingBox -](https://www.loomio.org/d/rzZg1mDR/md_identification-geoextent-boundbox-definition)**  at least one of these should be present for resources that describe geographic resources
-  - **[EX_GeographicDescription -](https://www.loomio.org/d/WR9u6kAL/md_identification-geoextent-description-definition)**  One of these should be present for resources that describe geographic resources
+  - **[EX_GeographicBoundingBox -](./ExtentBoundingBox)**  at least one of these should be present for resources that describe geographic resources
+  - **[EX_GeographicDescription -](./ExtentGeographicDescription)**  One of these should be present for resources that describe geographic resources
   - **EX_BoundingPolygon**  While very useful, particularly in describing irregular areas, this element is not described by the MDWG as a recommended element due to the difficult that many systems have in implementing it.
-- **[EX_Extent](https://www.loomio.org/d/ilObJX24/md_identification-extent-definition)** The class that contains all extent information about the cited resource - vertical, geographical or temporal.
-- **[EX_TemporalExtent](https://www.loomio.org/d/M7qGg35u/md_identification-temporal-extent-definition)** Contains temporal extent information for the cited resource
-- **[EX_VerticalExtent -]((https://www.loomio.org/d/wZKcHJgW/md_identification-vertical-extent-definition))**  captures the vertical range of a resource.
+- **[EX_Extent](./ResourceExtent)** The class that contains all extent information about the cited resource - vertical, geographical or temporal.
+- **[EX_TemporalExtent](./TemporalExtents)** Contains temporal extent information for the cited resource
+- **[EX_VerticalExtent -](./VerticalExtent)**  captures the vertical range of a resource.
 
 # Examples
 
