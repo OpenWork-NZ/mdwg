@@ -5,7 +5,7 @@ title: Metadata Identifier
 ---
 #  Metadata Identifier ★★★★★
 
-*In order for machines and people to distinguish a metadata record from all others a Metadata record [MD_Metadata](https://www.loomio.org/d/AniV8zO3/class-md_metadata) needs a unique identifier.*
+*In order for machines and people to distinguish a metadata record from all others a Metadata record [MD_Metadata](./class-MD_Metadata) needs a unique identifier.*
 
 - **Path** - *MD_Metadata.metadataIdentifier>MD_Identifier*
 - **Governance** -  *Common ICSM*
@@ -22,18 +22,18 @@ title: Metadata Identifier
 **The persistent unique alphanumeric identifier for the metadata record that describes a resource.**
 
 ## ISO Obligation 
-- There should be zero or one [0..1] metadataIdentifier for the cited resource in the  *[MD_Metadata](https://www.loomio.org/d/AniV8zO3/class-md_metadata)* package of class *[MD_Identifier](https://www.loomio.org/d/zlScHYdN/class-md_identifier)*.
+- There should be zero or one [0..1] metadataIdentifier for the cited resource in the  *[MD_Metadata](./class-MD_Metadata)* package of class *[MD_Identifier](./class-MD_Identifier)*.
 
 ## ICSM Good Practice 
   - This element should be populated in all metadata records
 
 ### Recommended Sub-Elements  
-From class *[MD_Identifier](https://www.loomio.org/d/zlScHYdN/class-md_identifier)* 
+From class *[MD_Identifier](./class-MD_Identifier)* 
 - **code -** (*type - charStr*) [1..1] a UUID, mandatory when identifier is provided
 - **codespace -** *(type - charStr)* [0..1] ideally a  URL  path by which, when combined with the uuid, the full metadata can be retrieved.
-- **authority -** *(class - [CI_Citation](https://www.loomio.org/d/Iei80UQH/class-ci_citation))* [0..1] optional, the provider of the UUID
+- **authority -** *(class - [CI_Citation](./class-CI_Citation))* [0..1] optional, the provider of the UUID
 
-# Discussion 
+# Discussion
 Every metadata record needs a unique identifier so as to provide certain of the identity of the record and to provide a primary key for linkages. This element should hold UUID, preferably in the form of a resolvable URI. This provides the machine readable (and human) ability to determine if this is the same or different to other metadata records. It is useful in machine to machine activities such as metadata harvesting. It is also at times useful to data managers and others to determine if a record is the same as another.
 
 This identifier must never change, irrespective of where that metadata record is stored. This allows linkages to a metadata record to persist.
@@ -82,10 +82,10 @@ Maps to `dct:identifier`
 Maps to `Key Identifier`
 
 # Also Consider
-- **[Resource Identifier](https://www.loomio.org/d/g01HSKVO/md_identification-citation-indentifer-definition) -** provides unique identifier to the resource. This may be the same as the metadata identifier when the metadata resource in a catalogue serves as the landing page for a resource.
-- **[Metadata Linkage](https://www.loomio.org/d/fXArOlER/md_metadata-metadata-linkage)** - is most often used to provide a point of truth linkage to the metadata record.
-- **[CI_Citation](https://www.loomio.org/d/Iei80UQH/class-ci_citation) (Authority) -** Information authority responsible for minting the UUID, be it the software package or other mechanism, may be captured in the Authority subelement using the CI_Citation package general guidance.
-- **[MD_Identifier](https://www.loomio.org/d/zlScHYdN/class-md_identifier)** General Guidance for the package used to hold the metadata identifier information. This package can be used to provide identity to a large number of other metadata elements.
+- **[Resource Identifier](./ResourceIdentifier) -** provides unique identifier to the resource. This may be the same as the metadata identifier when the metadata resource in a catalogue serves as the landing page for a resource.
+- **[Metadata Linkage](./MetadataLinkage)** - is most often used to provide a point of truth linkage to the metadata record.
+- **[CI_Citation](./class-CI_Citation) (Authority) -** Information authority responsible for minting the UUID, be it the software package or other mechanism, may be captured in the Authority subelement using the CI_Citation package general guidance.
+- **[MD_Identifier](./class-MD_Identifier)** General Guidance for the package used to hold the metadata identifier information. This package can be used to provide identity to a large number of other metadata elements.
 
 # Examples
 
