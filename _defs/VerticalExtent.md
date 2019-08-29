@@ -22,7 +22,7 @@ title: Vertical Extent
 **Provides vertical component of the extent of the referring object.**
 
 ## ISO Obligation 
-- There can be zero to many [0..\*] *verticalElements* packages for the cited resource in the *[Resource Extent](https://www.loomio.org/d/ilObJX24/md_identification-extent-definition)* package of class *[EX_VerticalExtent](http://wiki.esipfed.org/index.php/EX_VerticalExtent)* for a resource cited in a metadata record. 
+- There can be zero to many [0..\*] *verticalElements* packages for the cited resource in the *[Resource Extent](./ResourceExtent)* package of class *[EX_VerticalExtent](http://wiki.esipfed.org/index.php/EX_VerticalExtent)* for a resource cited in a metadata record. 
 
 ## ICSM Good Practice  
 - The MDWG recommends, when the heights and depths of a resource are important to the resource, populating as many instances of Vertical Extent packages as need to give a common understanding of the depth and elevation coverage of the cited resource.
@@ -64,12 +64,12 @@ Maps to `dct.spatial`
 Maps to `Coverage/Spatial`
 
 # Also Consider
-- **[EX_Extent](https://www.loomio.org/d/ilObJX24/md_identification-extent-definition)** The class that contains all extent information about the cited resource - vertical, geographical or temporal.
+- **[EX_Extent](./ResourceExtent)** The class that contains all extent information about the cited resource - vertical, geographical or temporal.
 - **EX_GeographicExtents** is an abstract class that can be express three ways:
-  - **[EX_GeographicBoundingBox -](https://www.loomio.org/d/rzZg1mDR/md_identification-geoextent-boundbox-definition)**  at least one of these should be present for resources that describe geographic resources
-  - **[EX_GeographicDescription -](https://www.loomio.org/d/WR9u6kAL/md_identification-geoextent-description-definition)**  One of these should be present for resources that describe geographic resources
+  - **[EX_GeographicBoundingBox -](./ExtentBoundingBox)**  at least one of these should be present for resources that describe geographic resources
+  - **[EX_GeographicDescription -](./ExtentGeographicDescription)**  One of these should be present for resources that describe geographic resources
   - **EX_BoundingPolygon**  While very useful, particularly in describing irregular areas, this element is not described by the MDWG as a recommended element due to the difficult that many systems have in implementing it.
-- **[EX_TemporalExtent](https://www.loomio.org/d/M7qGg35u/md_identification-temporal-extent-definition)** Contains temporal extent information for the cited resource
+- **[EX_TemporalExtent](./TemporalExtents)** Contains temporal extent information for the cited resource
 
 # Examples
 
