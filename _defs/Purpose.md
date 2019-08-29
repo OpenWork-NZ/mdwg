@@ -21,7 +21,7 @@ title: Purpose
 **A brief summary of the intentions with which the resource was developed**
 
 ## ISO Obligation 
-- There may be no more than one [0..1] *purpose* entries for the resource in the   *[MD_DataIdentification](https://www.loomio.org/d/oqKd8GHM/class-md_dataidentification)* package of type *character string* in a metadata record.
+- There may be no more than one [0..1] *purpose* entries for the resource in the   *[MD_DataIdentification](./class-MD_DataIdentification)* package of type *character string* in a metadata record.
 
 ## ICSM Good Practice 
 - Populate the *purpose* element and provide enough narrative to give the reader a good understanding of the intent for which the resource was created. Use common language as far as possible as the readers may come from a different domain.
@@ -57,9 +57,9 @@ Maps to *dct.description* (as does *abstract*)
 Maps to *dct.description*
 
 # Also Consider
-- **[Abstract](https://www.loomio.org/d/f2lFqJTE/md_identification-abstract-definition)** provides somewhat more lengthy verbal summary description of the resource. Some overlap of usage with `purpose` may exist. The MDWG should provide some guidance as to what belongs in `abstract` and what belongs in `purpose`
+- **[Abstract](./Abstract)** provides somewhat more lengthy verbal summary description of the resource. Some overlap of usage with `purpose` may exist. The MDWG should provide some guidance as to what belongs in `abstract` and what belongs in `purpose`
 - **MD_DataIdentification.supplimentalInformation -** provides a description of the resource in the producer's processing environment, including items such as the software, the computer operating system, file name, and the dataset size. 
-- **[Resource Lineage](https://www.loomio.org/d/ifwCE2kg/md_identification-resourcelineage-definition)** may contain information related to purpose.
+- **[Resource Lineage](./ResourceLineage)** may contain information related to purpose.
 
 # Examples
 
