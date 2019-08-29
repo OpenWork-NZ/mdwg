@@ -21,15 +21,15 @@ title: Resource Point of Contact
 **The name and contact information for the organisation, role and/or individual that serves as the point of contact for the cited resource.**
 
 ## ISO Obligation 
-- There may be one or more [0..\*] *pointOfContact* packages for the cited resource in the  *[MD_DataIdentification](https://www.loomio.org/d/oqKd8GHM/class-md_dataidentification)* package  for those responsible for the resource. These will be of class *[CI_Responsibility](https://www.loomio.org/d/r5blTcY0/class-ci_responsibility)*.
+- There may be one or more [0..\*] *pointOfContact* packages for the cited resource in the  *[MD_DataIdentification](./class-MD_DataIdentification)* package  for those responsible for the resource. These will be of class *[CI_Responsibility](./class-CI_Responsibility)*.
 
 ##  ICSM Good Practice recommendation  
 - This element should be populated in all metadata records with a minimum of `role` , `name` (of organisation preferred), `positionName` and `electrronicMailAddress` for rgw primary contact for more information about the cited resource. Use 'partyIdentifier' where possible.
 
 ### Recommended Sub-Elements   
-Follow the general guidance for [CI_Responsibility](https://www.loomio.org/d/r5blTcY0/class-ci_responsibility).
+Follow the general guidance for [CI_Responsibility](./class-CI_Responsibility).
 - One value of `role` should be "Point of Contact", but may be another depending on agency guidance, e.g. if a custodian is also the primary point of contact, *custodian* may be the most appropriate choice for `role`.
-- **partyIdentifier -** *(class - [MD_Identifier](https://www.loomio.org/d/zlScHYdN/class-md_identifier))* [0..\*]   identifier for the party, usual a URI such as an ORCID. Use of this package is recommended when the option exist.
+- **partyIdentifier -** *(class - [MD_Identifier](./class-MD_Identifier))* [0..\*]   identifier for the party, usual a URI such as an ORCID. Use of this package is recommended when the option exist.
 > Note BC 30-7: Do we have some regional alternatives to ORCID to recommend?
 
 # Discussion 
@@ -45,7 +45,7 @@ The use of the new `partyIdentifier` element added in the 2018 ammendment to the
 ## Crosswalk considerations
 
 ### ISO19139
-See discussion at [CI_Responsibility](https://www.loomio.org/d/r5blTcY0/class-ci_responsibility)
+See discussion at [CI_Responsibility](./class-CI_Responsibility)
 
 ### Dublin core / CKAN / data.govt.nz
 Maps to `contact` 
@@ -58,9 +58,9 @@ Maps to `dcat:contactPoint`
 Maps to `Related Party`
 
 # Also Consider
-- **[Metadata Responsible Party](https://www.loomio.org/d/Z2mY9yaF/md_metadata-contact-responsible-party-)** Contact information for the recommended party to contact about the metadata
-- **[Resource Cited Reponsible Party](https://www.loomio.org/d/VvqjwcIS/md_identification-citation-cited-responsible-party-definition)** contact information for the parties otherwise responsible for aspects of the the resource creation and maintenance.
-- **[DistributionInfo](https://www.loomio.org/d/G6oHphty/md_metadata-distribution)** Includes Distributor contact information.
+- **[Metadata Responsible Party](./MetadataContact)** Contact information for the recommended party to contact about the metadata
+- **[Resource Cited Reponsible Party](./ResourceResponsibleParty)** contact information for the parties otherwise responsible for aspects of the the resource creation and maintenance.
+- **[DistributionInfo](./DistributionInfo)** Includes Distributor contact information.
 
 # Examples
 ## XML 
