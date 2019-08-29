@@ -21,13 +21,13 @@ title: Metadata Default Locale
 **Language and character set used for documenting metadata.**
 
 ## ISO Obligation 
-- There can be one and only one [1..1] *defaultLocale* entries for the cited resource in the  *[MD_Metadata](https://www.loomio.org/d/AniV8zO3/class-md_metadata)* package in the metadata record of class *[PT_Locale](https://www.loomio.org/d/Y8IlUVRL/class-pt_locale)*.  
+- There can be one and only one [1..1] *defaultLocale* entries for the cited resource in the  *[MD_Metadata](./class-MD_Metadata)* package in the metadata record of class *[PT_Locale](./PT_Locale)*.
 
 ## ICSM Good Practice  
   - The default language in our region is English and it is recommended to be used as the language in metadata records using the 3 letter code "eng".
 
 ### Recommended Sub-Elements 
-Follow the general guidance for [class - PT_Locale](https://www.loomio.org/d/Y8IlUVRL/class-pt_locale) 
+Follow the general guidance for [class - PT_Locale](./PT_Locale) 
 
 ### Recommended Sibling Elements -  
 - **otherLocale -** *[class - PT_Locale]* [0..\*] when a metadata record has information in additional languages
@@ -59,7 +59,7 @@ No identified mapping
 
 # Also Consider
 - **MD_Metadata.otherLocale -** *(codelist - PT_Locale)* [0..\*] provides information about alternatively used localised character strings provides information about alternatively used localised character strings
-- **[MD_DataIdentification.defaultLocale](https://www.loomio.org/d/Hx9IsE7Q/md_identification-default-locale-definition)** *(codelist - PT_Locale)* [0..1]  contains the  language and character set used within the resource, such as map labels or other text.
+- **[MD_DataIdentification.defaultLocale](./ResourceLocale)** *(codelist - PT_Locale)* [0..1]  contains the  language and character set used within the resource, such as map labels or other text.
 - **MD_DataIdentification.otherLocale -**  *(codelist - PT_Locale)* [0..\*] alternate localised language(s) and character set (s) used within the resource
 
 # Examples
