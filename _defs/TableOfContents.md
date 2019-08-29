@@ -26,7 +26,7 @@ title: Table of contents
 - [Parent Metadata](./ParentMetadata)
 
 ## Metadata for Data Resources
-- Package [Identification Information](https://www.loomio.org/d/oqKd8GHM/class-md_dataidentification)
+- Package [Identification Information](./class-MD_DataIdentification)
   - [Resource Default locale](./ResourceLocale)
   - [Abstract](./Abstract)
   - [Purpose](./Purpose)
