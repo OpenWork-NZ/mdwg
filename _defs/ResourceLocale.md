@@ -21,17 +21,17 @@ title: Resource Default Locale
 **Designation of the language used within the cited resource.**
 
 ## ISO Obligation 
-- There may be only one [0..1] *defaultLocale* entries for the resource in the metadata  *[MD_DataIdentification](https://www.loomio.org/d/oqKd8GHM/class-md_dataidentification)* package. This must be of class *[PT_Locale](https://www.loomio.org/d/Y8IlUVRL/class-pt_locale)*.  
+- There may be only one [0..1] *defaultLocale* entries for the resource in the metadata  *[MD_DataIdentification](./class-MD_DataIdentification)* package. This must be of class *[PT_Locale](./PT_Locale)*.
 
 ## ICSM Good Practice  
 - The default language in our region is English and it is recommended to be used as the language in metadata records using the 3 letter code "eng".
 
 ### Recommended Sub-Elements   
-- Follow the general guidance for *[class - PT_Locale](https://www.loomio.org/d/Y8IlUVRL/class-pt_locale)* 
+- Follow the general guidance for *[class - PT_Locale](./PT_Locale)*
 
 ### Recommended Sibling Elements   
 - **otherLocale -** *[class - PT_Locale]* [0..\*] when a resource has information in additional languages
-  - Follow the general guidance for [class - PT_Locale](https://www.loomio.org/d/Y8IlUVRL/class-pt_locale) 
+  - Follow the general guidance for [class - PT_Locale](./PT_Locale)
 
 # Discussion 
 There may be only one default locale for a resource identified in a metadata record.
@@ -59,7 +59,7 @@ No identified mapping
 
 # Also Consider
 - **MD_DataIdentification.otherLocale -**  *(codelist - PT_Locale)* [0..\*] alternate localised language(s) and character set (s) used within the resource
-- **[Metadata Default Locale](https://www.loomio.org/d/HfkuWCaI/md_metadata-default-locale)** *(codelist - PT_Locale)* [0..1]  contains the  language and character set used in the metadata
+- **[Metadata Default Locale](./MetadataLocale)** *(codelist - PT_Locale)* [0..1]  contains the  language and character set used in the metadata
 - **MD_Metadata.otherLocale -** *(codelist - PT_Locale)* [0..\*] provides information about alternatively used localised character strings provides information about alternatively used localised character strings
 
 # Examples
