@@ -88,20 +88,20 @@ An example of how this document might be used to provide guidance by an organisa
 
 | **Metadata element** | **Guidance Link** | 
 | --- | --- |
-| Metadata reference information: | [Metadata Identifier](https://www.loomio.org/d/eAo6MDlO/md_metadata-metadata-identifier)|                      
-| Resource title: | [Resource Title](https://www.loomio.org/d/yIYmrKV0/md_identification-citation-title-definition)|
-| Resource reference date: | [Resource Date](https://www.loomio.org/d/wo72czua/md_identification-date-definition) | 
-| Resource identifier: | [Resource Identifier](https://www.loomio.org/d/g01HSKVO/md_identification-citation-indentifer-definition) | 
-| Resource point of contact:  | [Resource Point of Contact](https://www.loomio.org/d/t6o5IsjM/md_idenitification-point_of_contact-definition)| 
-| Geographic location: | [Extent Bounding Box](https://www.loomio.org/d/rzZg1mDR/md_identification-geoextent-boundbox-definition) | 
-| Resource language:  | [Resource Default locale](https://www.loomio.org/d/Hx9IsE7Q/md_identification-default-locale-definition)  | 
-| Resource topic category: | [Topic Category](https://www.loomio.org/d/d25q1xUO/md_identification-topic-category-definition)    | 
-| Spatial resolution:   | [Spatial Resolution](https://www.loomio.org/d/SeUHYkXC/md_identification-spatial-resolution-definition) | 
-| Resource type:  | [Resource Scope](https://www.loomio.org/d/6i2CwDIM/md_metadata-md_metadatascope)  | 
-| Resource abstract:   | [Abstract](https://www.loomio.org/d/f2lFqJTE/md_identification-abstract-definition) | 
-| Resource lineage: | [Resource Lineage](https://www.loomio.org/d/ifwCE2kg/md_identification-resourcelineage-definition)  | 
-| Keywords:   | [Keywords](https://www.loomio.org/d/SPHb8Vkj/md_identification-keywords-definition)  | 
-| Constraints on resource access and use: | [Resource Constraints](https://www.loomio.org/d/61RkY0WK/md_identification-constraints-definition)   | 
-| Metadata date stamp:  | [Metadata Date](https://www.loomio.org/d/c7m9GKE1/md_metadata-dateinfo)  | 
-|Metadata point of contact: | [Metadata Responsible Party](https://www.loomio.org/d/Z2mY9yaF/md_metadata-contact-responsible-party-)  |
+| Metadata reference information: | [Metadata Identifier](./MetadataIdentifier)|
+| Resource title: | [Resource Title](./ResourceTitle)|
+| Resource reference date: | [Resource Date](./ResourceDate) |
+| Resource identifier: | [Resource Identifier](./ResourceIdentifier) |
+| Resource point of contact:  | [Resource Point of Contact](./ResourcePointOfContact)|
+| Geographic location: | [Extent Bounding Box](./ExtentBoundingBox) |
+| Resource language:  | [Resource Default locale](./ResourceLocale)  |
+| Resource topic category: | [Topic Category](./TopicCategory)    |
+| Spatial resolution:   | [Spatial Resolution](./SpatialResolution) |
+| Resource type:  | [Resource Scope](./MetadataScope)  |
+| Resource abstract:   | [Abstract](./Abstract) |
+| Resource lineage: | [Resource Lineage](./ResourceLineage)  |
+| Keywords:   | [Keywords](./Keywords)  |
+| Constraints on resource access and use: | [Resource Constraints](./ResourceOtherConstraints)   |
+| Metadata date stamp:  | [Metadata Date](./MetadataDate)  |
+|Metadata point of contact: | [Metadata Responsible Party](./MetadataContact)  |
 
