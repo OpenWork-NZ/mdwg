@@ -21,10 +21,10 @@ title: Resource Edition
 **Version of the cited resource.**
 
 ## ISO Obligation 
-- There can be at most one [0..1] *edition* entries for the cited resource in the  *[MD_DataIdentification.citation](https://www.loomio.org/d/2mHdNrUR/md_identification-citation)* package in a metadata record. These are of type *character string*.
+- There can be at most one [0..1] *edition* entries for the cited resource in the  *[MD_DataIdentification.citation](./ResourceCitation)* package in a metadata record. These are of type *character string*.
 
 ##  ICSM Good Practice 
-- When a new edition of a resource is created, a new metadata record needs to be created. This new metadata record needs the *resource edition* element populated with the edition name or identifier.  When such is the case, the sibling [CI_Citation](https://www.loomio.org/d/Iei80UQH/class-ci_citation).editionDate field should also be populated.
+- When a new edition of a resource is created, a new metadata record needs to be created. This new metadata record needs the *resource edition* element populated with the edition name or identifier.  When such is the case, the sibling [CI_Citation](./class-CI_Citation).editionDate field should also be populated.
 
 ### Recommended Sibling Elements 
 - **editionDate -** *(type - DateTime)*[0..1] date of the edition. Should be populated with the date of  the publication of the new edition.
@@ -56,9 +56,9 @@ Maps to `dct:confirmsTo`
 Maps to `Version`
 
 # Also Consider
-- **[Resource Date](https://www.loomio.org/d/wo72czua/md_identification-date-definition) -** and `dateType` field.
-- **[Metadata Date](https://www.loomio.org/d/c7m9GKE1/md_metadata-dateinfo) -** and `dateType` field.
-- **[Resource  Citation](https://www.loomio.org/d/2mHdNrUR/md_identification-citation)** - parent to this element
+- **[Resource Date](./ResourceDate) -** and `dateType` field.
+- **[Metadata Date](./MetadataDate) -** and `dateType` field.
+- **[Resource  Citation](./ResourceCitation)** - parent to this element
 
 ## XML 
 ```
