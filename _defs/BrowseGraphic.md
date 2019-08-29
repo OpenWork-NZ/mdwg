@@ -27,7 +27,7 @@ EXAMPLE - A dataset, an organisation logo, security constraint or citation graph
 
 ## ISO Obligation
 
-In a metadata record there should be zero to many [0..\*] *graphicOverview* packages for the cited resource in the  *[MD_DataIdentification](https://www.loomio.org/d/oqKd8GHM/class-md_dataidentification)* package of class *[MD_BrowseGraphic](http://wiki.esipfed.org/index.php/MD_BrowseGraphic)* in a metadata record. 
+In a metadata record there should be zero to many [0..\*] *graphicOverview* packages for the cited resource in the  *[MD_DataIdentification](./class-MD_DataIdentification)* package of class *[MD_BrowseGraphic](http://wiki.esipfed.org/index.php/MD_BrowseGraphic)* in a metadata record.
 
 ## ICSM Good Practice 
 A graphic overview image of the resource should be included in the metadata and typically include the name linkage to the graphic.
@@ -35,11 +35,11 @@ A graphic overview image of the resource should be included in the metadata and 
 ### Recommended Sub-Elements 
 From class *[MD_BrowseGraphic](http://wiki.esipfed.org/index.php/MD_BrowseGraphic)*
 - **fileName -** *(type - CharStr)* [1..1] Mandatory for browse graphic elements - name of the file that contains a graphic that provides an illustration of the resource. 
-- **linkage -** *(class - [CI_OnlineResource](https://www.loomio.org/d/rpyv8EnG/class-ci_onlineresource))*  [0..\*] - link to browse graphic.
+- **linkage -** *(class - [CI_OnlineResource](./class-CI_OnlineResource))*  [0..\*] - link to browse graphic.
 - Optional:
-  - **imageConstraints -** *(class - [MD_Constraints](https://www.loomio.org/d/TqdZp04C/class-md_constraints))*  [0..\*]  - restriction on access and/or use of browse graphic
+  - **imageConstraints -** *(class - [MD_Constraints](./class-MD_Constraints))*  [0..\*]  - restriction on access and/or use of browse graphic
   - **fileType -** *(type - CharStr)* [0..\*]  - format in which the illustration is encoded (e.g.: EPS, GIF, JPEG, PBM, PS, TIFF, PDF)
-  - **extent -** *(class -  [EX_Extent](https://www.loomio.org/d/ilObJX24/md_identification-extent-definition))* [0..\*] Information about the horizontal, vertical and temporal extent of the resource specified by the scope
+  - **extent -** *(class -  [EX_Extent](./ResourceExtent))* [0..\*] Information about the horizontal, vertical and temporal extent of the resource specified by the scope
 
 # Discussion  
 
@@ -60,9 +60,9 @@ Therefore - in order to provide a quick way for users to discover and identify t
 ### ISO19139 
 
 **browseGraphic** is a new package in iso19115-1. New elements include:
-- **MD_BrowseGraphic.imageConstraint** *(class - [MD_Constraints](https://www.loomio.org/d/TqdZp04C/class-md_constraints))
+- **MD_BrowseGraphic.imageConstraint** *(class - [MD_Constraints](./class-md_constraints))
   - This new element was added in order to allow the specification of constraints on a browse graphic associated with a resource.
-- **MD_BrowseGraphic.linkage** *(class - [CI_OnlineResource](https://www.loomio.org/d/rpyv8EnG/class-ci_onlineresource))
+- **MD_BrowseGraphic.linkage** *(class - [CI_OnlineResource](./class-CI_OnlineResource))
   - This new element was added in order to allow a straightforward specification of the link to the browse graphic and the capability to add additionalinformation (name, description, …) about that graphic.
 
 
