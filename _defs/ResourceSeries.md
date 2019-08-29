@@ -21,7 +21,7 @@ title: Resource Series
 **Information about the series, or aggregate resource, of which the resource is a part.**
 
 ## ISO Obligation 
-- There may be one  [0..1] *series* package for the cited resource in the  *[MD_DataIdentification.citation](https://www.loomio.org/d/2mHdNrUR/md_identification-citation)* package  of class *[CI_Series](http://wiki.esipfed.org/index.php/CI_Series)* in a metadata record.
+- There may be one  [0..1] *series* package for the cited resource in the  *[MD_DataIdentification.citation](./ResourceCitation)* package  of class *[CI_Series](http://wiki.esipfed.org/index.php/CI_Series)* in a metadata record.
 
 ##  ICSM Good Practice 
 - This element should be populated in all metadata records where the resource is one part of a series.
@@ -60,9 +60,9 @@ Maps to `prov:wasMemberOf`
 Maps to `Context` 
 
 # Also Consider
-- **[Parent Metadata](https://www.loomio.org/d/lvQGeSKT/md_metadata-parent-metadata)** - hierarchical relations of metadata records
-- **[AssociatedResource](https://www.loomio.org/d/HGSVeBfw/md_identification-associatedresource-definition)** information about aggregate data and related resources
-- **[Resource  Citation](https://www.loomio.org/d/2mHdNrUR/md_identification-citation)** - parent to this element
+- **[Parent Metadata](./ParentMetadata)** - hierarchical relations of metadata records
+- **[AssociatedResource](./AssociatedResources)** information about aggregate data and related resources
+- **[Resource  Citation](./ResourceCitation)** - parent to this element
 
 # Examples
 
