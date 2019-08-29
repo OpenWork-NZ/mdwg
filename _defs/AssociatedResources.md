@@ -22,7 +22,7 @@ title: Associated Resource
 **An entity to indicate association between resources and records related to the resources**
 
 ## ISO Obligation -
-  - In a metadata record there should be zero to many [0..\*] *associatedResources* packages for the cited resource in the  *[MD_DataIdentification](https://www.loomio.org/d/oqKd8GHM/class-md_dataidentification)* package of class *[MD_AssociatedResource](http://wiki.esipfed.org/index.php/MD_AssociatedResource)* that relate a resource to other resources. These should be of type *[DS_AssociationTypeCode](http://wiki.esipfed.org/index.php/ISO_19115-3_Codelists#DS_AssociationTypeCode)*.
+  - In a metadata record there should be zero to many [0..\*] *associatedResources* packages for the cited resource in the  *[MD_DataIdentification](./class-MD_DataIdentification)* package of class *[MD_AssociatedResource](http://wiki.esipfed.org/index.php/MD_AssociatedResource)* that relate a resource to other resources. These should be of type *[DS_AssociationTypeCode](http://wiki.esipfed.org/index.php/ISO_19115-3_Codelists#DS_AssociationTypeCode)*.
 
 ### ICSM Recommended Sub-Elements 
 * **associationType -** *(codelist - [DS_AssociationTypeCode](http://wiki.esipfed.org/index.php/ISO_19115-3_Codelists#DS_AssociationTypeCode))* [1..1] Mandatory for associated resource citations - one name for the type of relationship
@@ -35,10 +35,10 @@ title: Associated Resource
   * series - associated through a common heritage such as produced to a common product specification
   * dependency - associated through a dependency
   * revisionOf - resource is a revision of associated resource
-* **name -** *(class - [CI_Citation](https://www.loomio.org/d/Iei80UQH/class-ci_citation))*  {0..\*]} - citation information about the associated resource
+* **name -** *(class - [CI_Citation](./class-CI_Citation))*  {0..\*]} - citation information about the associated resource
 * *Optional sub elements*
   * **initiativeType -** *(codelist - [DS_InitiativeTypeCode](http://wiki.esipfed.org/index.php/ISO_19115-3_Codelists#DS_InitiativeTypeCode))*  [0..1] - type of initiative under which the associated resource was produced 
-  * **metadataReference -** *(class - [CI_Citation](https://www.loomio.org/d/Iei80UQH/class-ci_citation))*  [0..1] - reference to the metadata of the associated resource
+  * **metadataReference -** *(class - [CI_Citation](./class-CI_Citation))*  [0..1] - reference to the metadata of the associated resource
 
 # Discussion  
 
@@ -80,9 +80,9 @@ Maps to dct:relation
 Maps to "Related Information"
 
 # Also Consider
-- **[additionalDocumentation -](https://www.loomio.org/d/At7CL4Fv/md_identification-additionaldocs-definition)**  other documentation associated with the resource, e.g. related articles, publications, user guides, data dictionaries.
-- **[resourceLineage -](https://www.loomio.org/d/ifwCE2kg/md_identification-resourcelineage-definition)** Information about the provenance, source(s), and/or the production process(es) applied to the resource.
-- **[browseGraphic -](https://www.loomio.org/d/MDiF0QYb/md_identification-browsegraphic-definition)**  associates to a large number of packages to provide linkage to associated image files, such as business or product icons and logos
+- **[additionalDocumentation -](./AdditionalDocs)**  other documentation associated with the resource, e.g. related articles, publications, user guides, data dictionaries.
+- **[resourceLineage -](./ResourceLineage)** Information about the provenance, source(s), and/or the production process(es) applied to the resource.
+- **[browseGraphic -](./BrowseGraphic)**  associates to a large number of packages to provide linkage to associated image files, such as business or product icons and logos
 - **[supplementalInformation -](https://www.isotc211.org/hmmg/HTML/ConceptualModels/EARoot/EA1/EA13/EA2/EA12/EA4420.htm)**   a free text field that is defined as "any other descriptive information about the resource". 
 
 # Examples
