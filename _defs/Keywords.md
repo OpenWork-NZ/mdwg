@@ -21,7 +21,7 @@ title: Keywords
 **Words or phrases describing the resource to be indexed and searched.**
 
 ## ISO Obligation
-- There can be zero or many [0..\*] descriptive keywords for the cited resource in the  *[MD_DataIdentification](https://www.loomio.org/d/oqKd8GHM/class-md_dataidentification)* package of class *[MD_Keywords](http://wiki.esipfed.org/index.php/MD_Keywords)* in a metadata record.
+- There can be zero or many [0..\*] descriptive keywords for the cited resource in the  *[MD_DataIdentification](./class-MD_DataIdentification)* package of class *[MD_Keywords](http://wiki.esipfed.org/index.php/MD_Keywords)* in a metadata record.
 
 ## ICSM Good Practice 
 - There should be multiple keywords selected from a referenced thesaurus present in a metadata record for a spatial resource.
@@ -45,11 +45,11 @@ From class *[MD_Keywords](http://wiki.esipfed.org/index.php/MD_Keywords)*
   - *service* - keyword identifies an activity carried out by one party for the benefit of another 
   - *subTopicCategory* - refinement of a topic category for the purpose of geographic data classification   
   - *taxon* - keyword identifies a taxonomy of the resource 
-* **thesaurusName -** *(class - [CI_Citation](https://www.loomio.org/d/Iei80UQH/class-ci_citation))* highly recommended if thesaurus is used. Must include at minimum the title of the thesaurus.
+* **thesaurusName -** *(class - [CI_Citation](./class-CI_Citation))* highly recommended if thesaurus is used. Must include at minimum the title of the thesaurus.
 * **keywordClass -** *(class - [MD_KeywordClass](http://wiki.esipfed.org/index.php/MD_KeywordClass))* recommended for enhanced ontology support. Includes the following subelements
   - **className -** *(type - charStr)* [1..1] Mandatory for MD_KeywordClass. A character string to label the keyword category in natural language
   - **conceptIdentifier -** *(type - URI)* [0..1]  Recommended. URI of concept in ontology specified by the ontology attribute; this concept is labeled by the className: CharacterString.
-  - **ontology -** *(class - [CI_Citation](https://www.loomio.org/d/Iei80UQH/class-ci_citation))* [1..1] Mandatory for MD_KeywordClass. A reference that binds the keyword class to a formal conceptualisation of a knowledge domain for use in semantic processing. NOTE: Keywords in the associated MD_Keywords keyword list must be within the scope of this ontology
+  - **ontology -** *(class - [CI_Citation](./class-CI_Citation))* [1..1] Mandatory for MD_KeywordClass. A reference that binds the keyword class to a formal conceptualisation of a knowledge domain for use in semantic processing. NOTE: Keywords in the associated MD_Keywords keyword list must be within the scope of this ontology
 
 
 # Discussion
@@ -100,9 +100,9 @@ ISO 19115 can groups keywords according to type (theme, place, temporal, discipl
 
 # Also Consider
 There are several elements outside the keywords class that are in effect keywords. These include:
-- **[Topic Category](https://www.loomio.org/d/d25q1xUO/md_identification-topic-category-definition)** - The main themes of the resource populated from a fixed domain of values mandated by ISO19115-1
-- **[Extent Geographic Description](https://www.loomio.org/d/WR9u6kAL/md_identification-geoextent-description-definition)** - verbal description of place by names
-- **[Spatial Representation Type](https://www.loomio.org/d/7Fjy0C4l/md_identification-spatial-representation-type-definition)** - holds a set of values from a domain that provides keyword values about the technical method used by the resource to spatially represent geographic information.
+- **[Topic Category](./TopicCategory)** - The main themes of the resource populated from a fixed domain of values mandated by ISO19115-1
+- **[Extent Geographic Description](./ExtentGeographicDescription)** - verbal description of place by names
+- **[Spatial Representation Type](./SpatialRepresentationType)** - holds a set of values from a domain that provides keyword values about the technical method used by the resource to spatially represent geographic information.
 
 # Examples
 
