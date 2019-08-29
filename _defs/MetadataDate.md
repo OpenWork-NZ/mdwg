@@ -21,13 +21,13 @@ title: Metadata Date Info
 **A named and dated event associated with the metadata record. (In ISO 8601 format).**
 
 ## ISO Obligation 
-- There can be one to many [1..\*] *dateInfo* entries for the cited resource in the  *[MD_Metadata](https://www.loomio.org/d/AniV8zO3/class-md_metadata)* package of class *[CI_Date](https://www.loomio.org/d/9Q8mJuea/class-ci_date)* in a metadata record.  One of these must be of `dateType` *creation*.
+- There can be one to many [1..\*] *dateInfo* entries for the cited resource in the  *[MD_Metadata](./class-MD_Metadata)* package of class *[CI_Date](./class-CI_Date)* in a metadata record.  One of these must be of `dateType` *creation*.
 
 ## ICSM Good Practice  
 - All updates to metadata should be include the date of last revision to the metadata. This can be an automated process.
 
 ### Recommended Sub-Elements   
-Follow the general guidance for [class - CI_Date](https://www.loomio.org/d/9Q8mJuea/class-ci_date) with the following additional guidance:
+Follow the general guidance for [class - CI_Date](./class-CI_Date) with the following additional guidance:
 - **dateType -**  One entry must be of this value *creation*. 
 
 # Discussion 
@@ -58,7 +58,7 @@ It is recommended that `dateInfo include -
 - *dateType* - (Mandatory for Creation) the event type to which the date refers. Populated from the CI_DateTypeCode codelist.
 - *dateType* - (Mandatory for Revision when a revision is made) the event type to which the date refers. Populated from the CI_DateTypeCode codelist.
 
-This element should be updated in a consistent yet to be agreed upon manor.  We recommend GeoNetwork's current approach.  GeoNetwork updates the **revision date** for the metadata record automatically on every save. This supports systems such as notifications and harvesting regimes that  rely on the capture of the date that a metadata record was last modified.  
+This element should be updated in a consistent yet to be agreed upon manor.  We recommend GeoNetwork's current approach.  GeoNetwork updates the **revision date** for the metadata record automatically on every save. This supports systems such as notifications and harvesting regimes that  rely on the capture of the date that a metadata record was last modified.
 
 ## Crosswalk considerations
 
@@ -75,8 +75,8 @@ Maps to `dct:issued` and `dct:modified`
 Maps to `@dateAccessioned`
 
 # Also Consider
- - **[Resource Date](https://www.loomio.org/d/wo72czua/md_identification-date-definition) -** Dates associated with the resource
-- **[CI_Date -](https://www.loomio.org/d/9Q8mJuea/class-ci_date)** the class by which dates are expressed
+ - **[Resource Date](./ResourceDate) -** Dates associated with the resource
+- **[CI_Date -](./class-CI_Date)** the class by which dates are expressed
 
 
 # Examples
