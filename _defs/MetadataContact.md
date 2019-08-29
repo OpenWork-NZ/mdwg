@@ -22,13 +22,13 @@ title: Metadata Responsible Party
 **Name and contact information about the organisation, role and individual who is responsible for the metadata record.**
 
 ## ISO Obligation 
-- There must be one or more [1..\*] *contact* packages for the cited resource in the  *[MD_Metadata](https://www.loomio.org/d/AniV8zO3/class-md_metadata)* package provided in a metadata record for those responsible for the metadata itself. These will be of class *[CI_Responsibility](https://www.loomio.org/d/r5blTcY0/class-ci_responsibility)*.
+- There must be one or more [1..\*] *contact* packages for the cited resource in the  *[MD_Metadata](./class-MD_Metadata)* package provided in a metadata record for those responsible for the metadata itself. These will be of class *[CI_Responsibility](./class-CI_Responsibility)*.
 
 ##  ICSM Good Practice recommendation  
-- This element should be populated in all metadata records with a minimum of `role` , `name` (of organisation preferred), `positionName` and `electrronicMailAddress`.
+- This element should be populated in all metadata records with a minimum of `role` , `name` (of organisation preferred), `positionName` and `electronicMailAddress`.
 
 ### Recommended Sub-Elements   
-Follow the general guidance for [CI_Responsibility](https://www.loomio.org/d/r5blTcY0/class-ci_responsibility).
+Follow the general guidance for [CI_Responsibility](./class-CI_Responsibility).
 - One value of `role` should be "Point of Contact".
 
 # Discussion 
@@ -44,7 +44,7 @@ The use of the new `partyIdentifier` element added in the 2018 ammendment to the
 ## Crosswalk considerations
 
 ### ISO19139
-See discussion at [CI_Responsibility](https://www.loomio.org/d/r5blTcY0/class-ci_responsibility)
+See discussion at [CI_Responsibility](./class-CI_Responsibility)
 
 ### Dublin core / CKAN / data.govt.nz
 Maps to `contact`
@@ -56,9 +56,9 @@ Maps to `dcat:contactPoint`
 Maps to `Related Party`
 
 # Also Consider
-- **[Resource Point of Contact](https://www.loomio.org/d/t6o5IsjM/md_idenitification-point_of_contact-definition)** Contact information for the recommended party to contact about the resource
-- **[Resource Cited Reponsible Party](https://www.loomio.org/d/VvqjwcIS/md_identification-citation-cited-responsible-party-definition)** contact information for the parties otherwise responsible for aspects of the the resource creation and maintenance.
-- **[DistributionInfo](https://www.loomio.org/d/G6oHphty/md_metadata-distribution)** Includes Distributor contact information.
+- **[Resource Point of Contact](./ResourcePointOfContact)** Contact information for the recommended party to contact about the resource
+- **[Resource Cited Reponsible Party](./ResourceResponsibleParty)** contact information for the parties otherwise responsible for aspects of the the resource creation and maintenance.
+- **[DistributionInfo](./DistributionInfo)** Includes Distributor contact information.
 
 # Examples
 ## XML -
