@@ -21,14 +21,14 @@ title: Metadata Scope
 **A resource code identifying the type of resource, e.g. service, a collection, an application which the metadata describes**
 
 ## ISO Obligation 
-- There can be zero to many [0..\*] *metadataScope* entries for the cited resource in the  *[MD_Metadata](https://www.loomio.org/d/AniV8zO3/class-md_metadata)* package of class *[MD_MetadataScope](http://wiki.esipfed.org/index.php/MD_MetadataScope)* for the metadata record.
+- There can be zero to many [0..\*] *metadataScope* entries for the cited resource in the  *[MD_Metadata](./class-MD_Metadata)* package of class *[MD_MetadataScope](http://wiki.esipfed.org/index.php/MD_MetadataScope)* for the metadata record.
 
 ## ICSM Good Practice  
 - At least one instance of this element should be populated in all metadata records.
 
 ## Recommended Sub-Elements 
 From class - *[MD_MetadataScope](http://wiki.esipfed.org/index.php/MD_MetadataScope)* 
-- **resourceScope -** *(codelist - MD_ScopeCode)* [1..1] Madatory when using `MD_MetadataScope`. Default value "dataset". See [MD_Scope](https://www.loomio.org/d/bEL0fUhA/class-md_scope#undefinedmd_scopecode-codelist) for more value options
+- **resourceScope -** *(codelist - MD_ScopeCode)* [1..1] Madatory when using `MD_MetadataScope`. Default value "dataset". See [MD_Scope](./class-MD_Scope#md_scopecode-codelist) for more value options
 - **name -** *(type - charStr)* [0..1] description of the scope.  Mandatory if resourceScope not equal "dataset"
 
 # Discussion 
@@ -71,8 +71,8 @@ May map to  `dct:identifier` if `metadataIdentifier` is unresolvable
 May map to `Key Identifier` if `metadataIdentifier` is unresolvable
 
 # Also Consider
-- **[keywords -](https://www.loomio.org/d/SPHb8Vkj/md_identification-keywords-definition)** - Words or phrases describing the resource to be indexed and searched by web crawlers
-- **[Topic Category -](https://www.loomio.org/d/d25q1xUO/md_identification-topic-category-definition)** is the preferred element to be used to provide linkage to the metadata record.
+- **[keywords -](./Keywords)** - Words or phrases describing the resource to be indexed and searched by web crawlers
+- **[Topic Category -](./TopicCategory)** is the preferred element to be used to provide linkage to the metadata record.
 
 
 # Examples
