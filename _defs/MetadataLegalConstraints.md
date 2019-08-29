@@ -22,13 +22,13 @@ title: Metadata Legal Constraints
 **Legal restrictions on the access and use of this metadata record e.g. copyright.**
 
 ## ISO Obligation 
-- There may be zero  to many [0..\*] *metadataConstraints* entries for the cited resource in the  *[MD_Metadata](https://www.loomio.org/d/AniV8zO3/class-md_metadata)* package of class *[MD_LegalConstraints](https://www.loomio.org/d/ugevCYJD/class-md_legalconstraints)* applied to a  a metadata record,  
+- There may be zero  to many [0..\*] *metadataConstraints* entries for the cited resource in the  *[MD_Metadata](./class-MD_Metadata)* package of class *[MD_LegalConstraints](./class-MD_LegalConstraints)* applied to a  a metadata record,  
 
 ## ICSM Good Practice  
 - The MDWG recommends populating this element `metadataConstraints`  with legal constraint information to sufficient level to determine the legal rights, responsibilities and restrictions on a metadata record.
 
 ### Recommended Sub-Elements   
-Follow the general guidance for [MD_LegalConstraints](https://www.loomio.org/d/ugevCYJD/class-md_legalconstraints).
+Follow the general guidance for [MD_LegalConstraints](./class-MD_LegalConstraints).
 
 # Discussion
 Information about constraints on the access and use of a resource or its metadata is of high importance to document as this information strongly impacts on the usability of the resource to the user. Constraints may be security (*MD_SecurityConstraints*), legal (*MD_LegalConstraints*) or other (*MD_Constraints*).
@@ -39,7 +39,7 @@ Almost all created resources (including metadata) carry some legal rights, restr
 
 There is often general confusion over the restraints fields and to what they apply = metadata, resource, distribution, etc. A major topic needing clarification. In ISO 19115-1 two types of constraints are recognised metadataConstraints (restrictions on the access and use of metadata) and resourceConstraints (information about constraints which apply to the resources). Here we are only address constraints on Metadata.
 
-For more discussion on the types of common legal restrictions see [Resource Legal Constraints](https://www.loomio.org/d/kA6QOfgR/md_identification-resourcelegalconstraints#undefinedcopyright).
+For more discussion on the types of common legal restrictions see [Resource Legal Constraints](./ResourceLegalConstraints#copyright).
 
 ## Outstanding Issues
 > **Are legal restictions on metadata useful?**
@@ -55,7 +55,7 @@ Therefore - It is important to capture any legal constraints that apply to a met
 ## Crosswalk considerations
 
 ### ISO19139
-See guidance provided in [MD_Constraints](https://www.loomio.org/d/TqdZp04C/class-md_constraints) 
+See guidance provided in [MD_Constraints](./class-MD_Constraints)
 
 ### DCAT
 Maps to `dct.rights` as does resource legal constraints. > Note BC 22-7: Does DCAT make a distinction?
@@ -64,8 +64,8 @@ Maps to `dct.rights` as does resource legal constraints. > Note BC 22-7: Does DC
 Agregated into `Description 'notes'`
 
 # Also Consider
-- **[Resource Legal Constraints](https://www.loomio.org/d/G8d21r6z/md_metadata-md_legalconstraints-definition)** contains legal restrictions that apply to the resource cited by the metadata
-- **[Metadata Security Constraints](https://www.loomio.org/d/G8d21r6z/md_metadata-md_legalconstraints-definition)** A sibling to metadata legal constraints. Contains information regarding any security restriction on the metadata.
+- **[Resource Legal Constraints](./ResourceLegalConstraints)** contains legal restrictions that apply to the resource cited by the metadata
+- **[Metadata Security Constraints](./MetadataSecurityConstraints)** A sibling to metadata legal constraints. Contains information regarding any security restriction on the metadata.
 
 # Examples
 ## XML -
