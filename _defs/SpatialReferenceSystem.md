@@ -23,19 +23,19 @@ title: Spatial Reference System
 **The information about the reference system that define the system use to describe spatial position descriptions in a resource.**
 
 ## ISO Obligation  
-- There should be zero or many [0..\*] *spatialReferenceInfo* packages for the cited resource in the  *[MD_Metadata](https://www.loomio.org/d/AniV8zO3/class-md_metadata)* package of class *[MD_ReferenceSystem](http://wiki.esipfed.org/index.php/MD_ReferenceSystem)* in a metadata record for spatial resources.
+- There should be zero or many [0..\*] *spatialReferenceInfo* packages for the cited resource in the  *[MD_Metadata](./class-MD_Metadata)* package of class *[MD_ReferenceSystem](http://wiki.esipfed.org/index.php/MD_ReferenceSystem)* in a metadata record for spatial resources.
 
 ## ICSM Good Practice 
 - There should be at least one instance of spatialReferenceInfo for every dataset that contains spatial information referenced to a datum.
 
 ### Recommended Sub-Classes  
 * **referenceSystemType -** (*codelist - [MD_ReferenceSystemTypeCode](http://wiki.esipfed.org/index.php/ISO_19115-3_Codelists#MD_ReferenceSystemTypeCode)*) 0 to 1 - to describe the type of system used.
-* **referenceSystemIdentifier -** *(class - [MD_Identifier](https://www.loomio.org/d/zlScHYdN/class-md_identifier))* mandatory - identifier, codespace and authority information for reference system
+* **referenceSystemIdentifier -** *(class - [MD_Identifier](./class-MD_Identifier))* mandatory - identifier, codespace and authority information for reference system
   * *code -* (type - charStr) mandatory - alphanumeric value identifying an instance in the namespace, e.g. '4283', '4326'
   * *codespace -* (type - charStr) strongly recommended - 	Identifier or namespace in which the code is valid, e.g. EPSG
   * *version -* (type - charStr) optional - use if needed to distinguish a code
   * *description -* (type - charStr) optional - Common language description of the reference system, e.g. 'WGS84 - World Geodetic System 1984, used in GPS', 'NZTM'
-  * *authority -* (class - [CI_Citation](https://www.loomio.org/d/Iei80UQH/class-ci_citation)) optional (GA, ABARES - conditional?) - Information about the party responsible for the spatial or temporal reference system used in this cited resource.
+  * *authority -* (class - [CI_Citation](./class-CI_Citation)) optional (GA, ABARES - conditional?) - Information about the party responsible for the spatial or temporal reference system used in this cited resource.
   
 ### Related Codelists
 **MD_ReferenceSystemTypeCode**
