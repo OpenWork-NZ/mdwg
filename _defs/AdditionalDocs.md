@@ -21,20 +21,20 @@ title: Additional Documentation
 **Citation of other documentation associated with the resource, e.g. related articles, publications, user guides, data dictionaries.**
 
 ## ISO Obligation 
-There may be zero to many [0..\*] *additionalDocumentation* packages for the cited resource in the  *[MD_DataIdentification](https://www.loomio.org/d/oqKd8GHM/class-md_dataidentification)* package of class [CI_Citation](https://www.loomio.org/d/Iei80UQH/class-ci_citation) in the metadata record. 
+There may be zero to many [0..\*] *additionalDocumentation* packages for the cited resource in the  *[MD_DataIdentification](./class-MD_DataIdentification)* package of class [CI_Citation](./class-CI_Citation) in the metadata record. 
 
-##  ICSM Good Practice recommendation  
+##  ICSM Good Practice recommendation
 This element should be populated in all metadata records with a minimum of `title`, `identifier`, `date` and `citedResponsibleParty`. If posible, use the link to the metadata for the cited additional documentation as its landing page.
 
-### Recommended Sub-Elements  
+### Recommended Sub-Elements
 * **title -** *(type - charStr)* [1..1] mandatory for citations, the name by which the cited resource is known
-* **date -** *(class - [CI_Date](https://www.loomio.org/d/9Q8mJuea/class-ci_date))* recommended, the reference date for the cited resource. 
+* **date -** *(class - [CI_Date](./class-CI_Date))* recommended, the reference date for the cited resource. 
 In addition, some direction should be given about how to access the cited additional resource.
-* **onlineResource -** *(class [CI_OnlineResource](https://www.loomio.org/d/rpyv8EnG/class-ci_onlineresource))* [0..\*] a description of how to access the cited additional resource online
-* **citedResponsibleParty -** *(class [CI_Responsibility](https://www.loomio.org/d/r5blTcY0/class-ci_responsibility))* [0..\*] contact information for someone who can give guidance about accessing the cited additional resource
+* **onlineResource -** *(class [CI_OnlineResource](./class-CI_OnlineResource))* [0..\*] a description of how to access the cited additional resource online
+* **citedResponsibleParty -** *(class [CI_Responsibility](./class-CI_Responsibility))* [0..\*] contact information for someone who can give guidance about accessing the cited additional resource
 
 
-# Discussion  
+# Discussion
 To make best use of a given resource, additional documentation may be useful or required. Providing instructions for accessing these documents can greatly enhance the value of a resource to its users and providers. Capturing these additional documents in the metadata is also helpful to resource managers who need to properly track the linkages between a resource and its documentation.
 
 ## Outstanding Issues
