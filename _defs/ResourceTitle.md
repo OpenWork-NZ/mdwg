@@ -4,7 +4,7 @@ type: element
 title: Resource Title
 ---
 # Resource Title ★★★★★
-*The most important component of the [Resource Citation](https://www.loomio.org/d/Iei80UQH/class-ci_citation) is the **title** element. In order to easily communicate about a resource and at least locally differentiate it from others, it is useful that the resource has  a common name. This name is captured in the [Resource Citation](https://www.loomio.org/d/2mHdNrUR/md_identification-citation) *title* element.*
+*The most important component of the [Resource Citation](./class-CI_Citation) is the **title** element. In order to easily communicate about a resource and at least locally differentiate it from others, it is useful that the resource has  a common name. This name is captured in the [Resource Citation](./ResourceCitation) *title* element.*
 
 - **Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.citation>CI_Citation.title*
 - **Governance** -  *Common ICSM, Agency, Domain*
@@ -21,7 +21,7 @@ title: Resource Title
 **The most common useful name by which the resource is known.**
 
 ## ISO Obligation 
-- There must be one and only one [1..1] *title* element for the cited resource in the  *[MD_DataIdentification.citation](https://www.loomio.org/d/2mHdNrUR/md_identification-citation)* package in a metadata record of type *charater string*. 
+- There must be one and only one [1..1] *title* element for the cited resource in the  *[MD_DataIdentification.citation](./ResourceCitation)* package in a metadata record of type *charater string*. 
 
 ##  ICSM Good Practice 
 - All metadata records must have the element *MD_Metadata,indentificationInfo>MD_Identification.citation>CI_Citation.title* populated with the most common useful name by which the resource is known.
@@ -51,7 +51,7 @@ Maps to `Title`
 
 # Also Consider
 - **alternateTitle -** *(type - charStr)* [0..\*] Sibling to `title`. A short name or other language name by which the cited information is known. Example: DCW as an alternative title for Digital Chart of the World. Recommended whenever there are alternate names commonly in use.
-- **[Resource  Citation](https://www.loomio.org/d/2mHdNrUR/md_identification-citation)** - parent to this element
+- **[Resource  Citation](./ResourceCitation)** - parent to this element
 
 # Examples
 
