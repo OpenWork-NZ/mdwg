@@ -21,7 +21,7 @@ title: Topic Category
 **The main themes of the resource populated from a fixed domain of values**
 
 ## ISO Obligation 
-- There may zero to many [0..\*] *topicCategory* entries for the cited resource in the  *[MD_DataIdentification](https://www.loomio.org/d/oqKd8GHM/class-md_dataidentification)* package in a metadata record selected from the enumeration *MD_TopicCategoryCode*.
+- There may zero to many [0..\*] *topicCategory* entries for the cited resource in the  *[MD_DataIdentification](./class-MD_DataIdentification)* package in a metadata record selected from the enumeration *MD_TopicCategoryCode*.
 
 ## ICSM Good Practice 
 - Populate of the *topicCategory* element as many times as useful for search and categorisation of the resource.  Values are restricted to those provided by *MD_TopicCategoryCode*
@@ -72,7 +72,7 @@ The Resource Topic Category is recommended in ISO 19115.1-2015 as a metadata ele
 
 Many resources may fit into multiple categories.  ISO199115-1 allows multiple instances of `topicCategory` to accomodate such instances.  Discussions need be made as to when an aspect of the resource is too minor to include an instance of the `MD_TopicCategoryCode` value.
 
-Topic categories are essentially keywords, but of a particular enumeration. Like other keywords, search engines and indices use these to provide search support.  If a topic category code satisfies the need for a particular keyword, it is probably unbeneficial to include that value as part of your [Keywords](https://www.loomio.org/d/SPHb8Vkj/md_identification-keywords-definition).
+Topic categories are essentially keywords, but of a particular enumeration. Like other keywords, search engines and indices use these to provide search support.  If a topic category code satisfies the need for a particular keyword, it is probably unbeneficial to include that value as part of your [Keywords](./Keywords).
 
 ## Outstanding Issues
 > **GeoNetwork issues**
@@ -98,9 +98,9 @@ Maps to *dcat:keyword*
 Maps to *Subject*
 
 # Also Consider
-- **[Keywords](https://www.loomio.org/d/SPHb8Vkj/md_identification-keywords-definition)** provides a more lengthy flexible system to attach keywords - including from custom thesari and free text.
-- **[Resource Scope](https://www.loomio.org/d/6i2CwDIM/md_metadata-md_metadatascope)** holds keyword  identifying the type of resource, e.g. service, a collection, an application which the metadata describes
-- **[Spatial Representation Type](https://www.loomio.org/d/7Fjy0C4l/md_identification-spatial-representation-type-definition)** holds keywords related to the spatial type of the resource, such as vector, grid, tin, etc.
+- **[Keywords](./Keywords)** provides a more lengthy flexible system to attach keywords - including from custom thesari and free text.
+- **[Resource Scope](./ResourceScope)** holds keyword  identifying the type of resource, e.g. service, a collection, an application which the metadata describes
+- **[Spatial Representation Type](./SpatialRepresentationType)** holds keywords related to the spatial type of the resource, such as vector, grid, tin, etc.
 
 # Examples
 
