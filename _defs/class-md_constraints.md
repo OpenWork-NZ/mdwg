@@ -22,30 +22,30 @@ title: MD_Constraints
 
 ### Attributes - 
 - **useLimitation -** *(type - charStr)* [0..\*] limitation affecting the fitness for use of the resource or metadata. Example, "not to be used for navigation"
-- **constraintApplicationScope -** *(class - [MD_Scope](https://www.loomio.org/d/bEL0fUhA/class-md_scope))* [0..1] the target resource and physical extent for which information is reported
+- **constraintApplicationScope -** *(class - [MD_Scope](./class-MD_Scope))* [0..1] the target resource and physical extent for which information is reported
 - **graphic -** *(class - [MD_BrowseGraphic](http://wiki.esipfed.org/index.php/MD_BrowseGraphic))* [0..\*]  graphic /symbol indicating the constraint 
-- **reference -** *(class - [CI_Citation](https://www.loomio.org/d/Iei80UQH/class-ci_citation))* [0..\*] citation/URL for the limitation or constraint, eg. copyright statement, license agreement, etc 
+- **reference -** *(class - [CI_Citation](./class-CI_Citation))* [0..\*] citation/URL for the limitation or constraint, eg. copyright statement, license agreement, etc 
 - **releasability -** *(class - MD_Releasability)*  [0..1]  Requires an addressee or statement - information concerning the parties to whom the resource can or cannot be released
-  - **addressee -** *(class - [CI_Responsibility](https://www.loomio.org/d/r5blTcY0/class-ci_responsibility))* [0..\*]   party to which the release statement applies
+  - **addressee -** *(class - [CI_Responsibility](./class-CI_Responsibility))* [0..\*]   party to which the release statement applies
   - **statement -** *(type - charStr))* [0..1]   release statement
   - **disseminationConstraints -** *(codelist - [MD_RestrictionCode](http://wiki.esipfed.org/index.php/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_RestrictionCode))* [0..\*] component in determining releasability. 
-- **responsibleParty -** *(class - [CI_Responsibility](https://www.loomio.org/d/r5blTcY0/class-ci_responsibility))* [0..\*] party responsible for the resource constraints
+- **responsibleParty -** *(class - [CI_Responsibility](./class-CI_Responsibility))* [0..\*] party responsible for the resource constraints
 
 ## Associated Classes, Codelists and Unions
 ### MD_Scope - class 
-See [MD_Scope](https://www.loomio.org/d/bEL0fUhA/class-md_scope)
+See [MD_Scope](./class-MD_Scope)
 
 ### MD_BrowseGraphic - class
 - **fileName -** *(type - charStr)* Mandatory when using `MD_BrowseGraphic` - name of the file that contains a graphic that provides an illustration of the resource. 
-- **linkage -** *(class - [CI_OnlineResource](https://www.loomio.org/d/rpyv8EnG/class-ci_onlineresource))*  0 to many - link to browse graphic.
-- **imageConstraints -** *(class - [MD_Constraints](https://www.loomio.org/d/TqdZp04C/class-md_constraints))*  0 to many - restriction on access and/or use of browse graphic
+- **linkage -** *(class - [CI_OnlineResource](./class-CI_OnlineResource))*  0 to many - link to browse graphic.
+- **imageConstraints -** *(class - [MD_Constraints](./class-md_constraints))*  0 to many - restriction on access and/or use of browse graphic
 - **fileType -** *(type - charStr)* f0 to 1 - format in which the illustration is encoded (e.g.: EPS, GIF, JPEG, PBM, PS, TIFF, PDF)
-- **extent -** *(class -  [Extent](https://www.loomio.org/d/ilObJX24/md_identification-extent-definition))* Information about the horizontal, vertical and temporal extent of the resource specified by the scope
+- **extent -** *(class -  [Extent](./ResourceExtent))* Information about the horizontal, vertical and temporal extent of the resource specified by the scope
 
 ## Generalisations of MD_Constraints
 MD_Constraints may be expressed as:
-- **[MD_LegalConstraints](https://www.loomio.org/d/ugevCYJD/class-md_legalconstraints)**
-- **[MD_SecurityConstraints](https://www.loomio.org/d/1jaxGSgR/class-md_securityconstraints)**
+- **[MD_LegalConstraints](./class-MD_LegalConstraints)**
+- **[MD_SecurityConstraints](./class-MD_SecurityConstraints)**
  
 
 # Discussion
@@ -73,8 +73,8 @@ Currently there are no clear methods to apply different constraints to different
 - *MD_Releasability* - This new class was added to provide information about resource release constraints
 
 # Related Classes
-- **[MD_LegalConstraints](https://www.loomio.org/d/ugevCYJD/class-md_legalconstraints) An extension to MD_Constraints for constraints applied for legal reasons.
-- **[MD_SecurityConstraints](https://www.loomio.org/d/1jaxGSgR/class-md_securityconstraints) An extension to MD_Constraints for constraints applied for security purposes.
+- **[MD_LegalConstraints](./class-MD_LegalConstraints) An extension to MD_Constraints for constraints applied for legal reasons.
+- **[MD_SecurityConstraints](./class-MD_SecurityConstraints) An extension to MD_Constraints for constraints applied for security purposes.
 
 ## UML diagrams
 Recommended elements highlighted in Yellow
