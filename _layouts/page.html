@@ -4,7 +4,21 @@
 <html>
 <head>
   <title>{{ page.title|xml_escape }}</title>
+  <style>
+    body {font: medium sans-serif}
+    main {
+      max-width: 800px;
+      margin: 10px auto;
+    }
+    aside {
+      float: left;
+      width: 100px;
+    }
+  </style>
 </head>
 <body>
+  <main>
   {{ content }}
+  </main>
 </body>
+</html>
