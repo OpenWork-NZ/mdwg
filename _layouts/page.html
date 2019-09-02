@@ -17,8 +17,13 @@
   </style>
 </head>
 <body>
+  <aside>
+    <ul>{% for def in site.defs %}
+      <li><a href="{{ def.url | relative_url }}">{{ def.title }}</a></li>
+    {% endfor %}</ul>
+  </aside>
   <main>
-  {{ content }}
+    {{ content }}
   </main>
 </body>
 </html>
