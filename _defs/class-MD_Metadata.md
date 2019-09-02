@@ -71,6 +71,6 @@ Therefore - It is recommended that all spatial metadata utilise the structure pr
 
 Recommended elements highlighted in Yellow
 
-![image-20190711170142639](../images/image-20190711170142639.png)
+![image-20190711170142639](../images/class-MD_Metadata.png)
 
-![image-20190711170734419](/Users/COGS/Library/Application Support/typora-user-images/image-20190711170734419.png)
+
