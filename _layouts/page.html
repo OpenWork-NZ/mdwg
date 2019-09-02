@@ -18,13 +18,21 @@
       padding: 0;
       margin: 15px;
     }
+    aside h2 {font-size: 1em}
+    aside h3 {font-size: 1em; font-weight: normal}
   </style>
 </head>
 <body>
   <aside>
-    <ul>{% for def in site.defs %}
+    <h2>Elements</h2>
+    <ul>{% for def in site.defs %}{% if def.type == "element" %}
       <li><a href="{{ def.url | relative_url }}">{{ def.title }}</a></li>
-    {% endfor %}</ul>
+    {% endif %}{% endfor %}</ul>
+
+    <h2>Classes</h2>
+    <ul>{% for def in site.defs %}{% if def.type == "class" %}
+      <li><a href="{{ def.url | relative_url }}">{{ def.title }}</a></li>
+    {% endif %}{% endfor %}</ul>
   </aside>
   <main>
     {{ content }}
