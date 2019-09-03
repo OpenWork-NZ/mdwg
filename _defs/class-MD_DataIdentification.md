@@ -1,6 +1,7 @@
 ---
 layout: page
 type: class
+section: resource
 title: MD_DataIdentification
 ---
 
