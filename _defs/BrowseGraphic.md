@@ -2,6 +2,7 @@
 layout: page
 type: element
 section: identification
+rank: 40
 title: Resource Graphic Overview
 ---
 # Resource Graphic Overview ★★★

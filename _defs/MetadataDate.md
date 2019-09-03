@@ -2,6 +2,7 @@
 layout: page
 type: element
 section: metadata
+rank: 30
 title: Metadata Date Info
 ---
 #  Metadata Date Info ★★★★★

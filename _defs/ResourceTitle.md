@@ -2,6 +2,7 @@
 layout: page
 type: element
 section: identification
+rank: 10
 title: Resource Title
 ---
 # Resource Title ★★★★★

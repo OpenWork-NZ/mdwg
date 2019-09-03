@@ -2,6 +2,7 @@
 layout: page
 type: element
 section: identification
+rank: 60
 title: Resource Series
 ---
 #  Resource Series ★★★

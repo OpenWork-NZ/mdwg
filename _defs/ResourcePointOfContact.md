@@ -2,6 +2,7 @@
 layout: page
 type: element
 section: identification
+rank: 40
 title: Resource Point of Contact 
 ---
 #  Resource Point of Contact  ★★★★★

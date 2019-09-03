@@ -2,6 +2,7 @@
 layout: page
 type: element
 section: metadata
+rank: 50
 title: Metadata Default Locale
 ---
 # Metadata Default Locale ★★★★

@@ -2,6 +2,7 @@
 layout: page
 type: element
 section: identification
+rank: 30
 title: Resource Status
 ---
 # Resource Status ★★★★

@@ -2,6 +2,7 @@
 layout: page
 type: element
 section: extent
+rank: 80
 title: Temporal Extents
 ---
 # Temporal Extents ★★★

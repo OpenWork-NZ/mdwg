@@ -1,7 +1,8 @@
 ---
 layout: page
-type: elemen
+type: element
 section: constraints
+rank: 60
 title: Resource Legal Constraints
 ---
 # Resource Legal Constraints ★★★★★

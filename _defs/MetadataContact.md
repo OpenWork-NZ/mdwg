@@ -2,6 +2,7 @@
 layout: page
 type: element
 section: metadata
+rank: 40
 title: Metadata Responsible Party
 ---
 #  Metadata Responsible Party ★★★★★

@@ -2,6 +2,7 @@
 layout: page
 type: element
 section: metadata
+rank: 10
 title: Metadata Identifier
 ---
 #  Metadata Identifier ★★★★★

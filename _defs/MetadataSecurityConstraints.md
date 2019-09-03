@@ -2,6 +2,7 @@
 layout: page
 type: element
 section: metadata
+rank: 70
 title: Metadata Security Constraints
 ---
 #  Metadata Security Constraints ★★

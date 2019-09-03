@@ -2,6 +2,7 @@
 layout: page
 type: element
 section: identification
+rank: 50
 title: Resource Responsible Party
 ---
 # Resource Responsible Party ★★★★★

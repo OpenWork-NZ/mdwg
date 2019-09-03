@@ -2,6 +2,7 @@
 layout: page
 type: element
 section: metadata
+rank: 90
 title: Metadata Parent Metadata
 ---
 #  Parent Metadata ★★
