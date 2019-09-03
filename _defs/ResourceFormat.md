@@ -1,7 +1,7 @@
 ---
 layout: page
 type: element
-section: identification
+section: Data Identification
 rank: 60
 title: Resource Format
 ---
