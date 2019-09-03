@@ -37,15 +37,15 @@
       <summary>Sections</summary>
       <ul>{% for def in site.defs %}{% if def.section == "section" %}
         <li><a href="{{ def.url | relative_url }}">{{ def.title }}</a></li>
-      {% endfor %}</ul>
+      {% endif %}{% endfor %}</ul>
     </details>{% endif %}
     
     {% if page.section != "class" %}<details>
       <summary>Classes</summary>
       <ul>{% for def in site.defs %}{% if def.section == "class" %}
         <li><a href="{{ def.url | relative_url }}">{{ def.title }}</a></li>
-      {% endfor %}</ul>
-    </details>{% endif %}
+      {% endif %}{% endfor %}</ul>
+    </details>
   </aside>
 
   <main>
