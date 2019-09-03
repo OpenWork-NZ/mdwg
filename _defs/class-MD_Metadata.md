@@ -3,7 +3,7 @@ layout: page
 type: section
 section: root
 rank: 10
-title: MD_Metadata
+title: Metadata Info
 ---
 
 # class - MD_Metadata 

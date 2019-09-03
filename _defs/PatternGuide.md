@@ -1,7 +1,7 @@
 ---
 layout: page
 type: page
-section: guidance
+section: Guidance
 title: Pattern Guide
 ---
 

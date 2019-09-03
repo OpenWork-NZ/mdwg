@@ -1,6 +1,7 @@
 ---
 layout: page
 type: page
+section: Guidance
 title: Table of contents
 ---
 #  ICSM Metadata Good Practice - Table of Contents

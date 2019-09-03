@@ -3,7 +3,7 @@ layout: page
 type: section
 section: resource
 rank: 20
-title: MD_DataIdentification
+title: Data Identification
 ---
 
 #  Class - MD_DataIdentification 
