@@ -1,7 +1,7 @@
 ---
 layout: page
 type: element
-section: identification
+section: Resource Citation
 rank: 20
 title: Resource Identifier
 ---

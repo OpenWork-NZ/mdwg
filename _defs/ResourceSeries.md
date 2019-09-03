@@ -1,7 +1,7 @@
 ---
 layout: page
 type: element
-section: identification
+section: Resource Citation
 rank: 60
 title: Resource Series
 ---
