@@ -33,16 +33,16 @@
       <li><a href="{{ def.url | relative_url }}">{{ def.title }}</a></li>
     {% endif %}{% endfor %}</ul>
 
-    {% if page.section != "section" %}<details>
+    <details>
       <summary>Sections</summary>
-      <ul>{% for def in site.defs %}{% if def.section == "section" %}
+      <ul>{% for def in site.defs %}{% if def.type == "section" %}
         <li><a href="{{ def.url | relative_url }}">{{ def.title }}</a></li>
       {% endif %}{% endfor %}</ul>
-    </details>{% endif %}
+    </details>
     
     {% if page.section != "class" %}<details>
       <summary>Classes</summary>
-      <ul>{% for def in site.defs %}{% if def.section == "class" %}
+      <ul>{% for def in site.defs %}{% if def.type == "class" %}
         <li><a href="{{ def.url | relative_url }}">{{ def.title }}</a></li>
       {% endif %}{% endfor %}</ul>
     </details>{% endif %}
