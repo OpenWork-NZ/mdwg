@@ -45,7 +45,7 @@
       <ul>{% for def in site.defs %}{% if def.section == "class" %}
         <li><a href="{{ def.url | relative_url }}">{{ def.title }}</a></li>
       {% endif %}{% endfor %}</ul>
-    </details>
+    </details>{% endif %}
   </aside>
 
   <main>
