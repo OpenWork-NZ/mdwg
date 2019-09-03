@@ -1,6 +1,7 @@
 ---
 layout: page
 type: element
+section: extent
 title: Extent Bounding Box
 ---
 # Extent Bounding Box ★★★★

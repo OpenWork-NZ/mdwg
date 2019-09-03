@@ -1,6 +1,7 @@
 ---
 layout: page
 type: element
+section: identification
 title: Associated Resource
 ---
 # Associated Resource ★★★

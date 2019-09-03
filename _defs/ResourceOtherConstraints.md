@@ -1,6 +1,7 @@
 ---
 layout: page
 type: element
+section: constraints
 title: Resource Other Constraints
 ---
 # Resource Other Constraints ★★★★

@@ -1,6 +1,7 @@
 ---
 layout: page
 type: element
+section: resource
 title: Spatial Reference System
 ---
 # Spatial Reference System ★★★★

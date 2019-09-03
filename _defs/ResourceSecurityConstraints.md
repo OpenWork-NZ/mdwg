@@ -1,6 +1,7 @@
 ---
 layout: page
 type: element
+section: constraints
 title: Resource Security Constraints
 ---
 # Resource Security Constraints ★★★★★

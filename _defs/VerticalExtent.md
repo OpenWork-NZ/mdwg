@@ -1,6 +1,7 @@
 ---
 layout: page
 type: element
+section: extents
 title: Vertical Extent
 ---
 # Vertical Extent ★★★

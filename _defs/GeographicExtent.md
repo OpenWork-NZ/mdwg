@@ -1,6 +1,7 @@
 ---
 layout: page
 type: element
+section: extent
 title: Geographic Extent
 ---
 # Geographic Extent ★★★★

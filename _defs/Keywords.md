@@ -1,6 +1,7 @@
 ---
 layout: page
 type: element
+section: resource
 title: Keywords
 ---
 # Keywords ★★★★★

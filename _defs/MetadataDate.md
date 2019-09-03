@@ -1,6 +1,7 @@
 ---
 layout: page
 type: element
+section: metadata
 title: Metadata Date Info
 ---
 #  Metadata Date Info ★★★★★

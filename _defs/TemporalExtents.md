@@ -1,6 +1,7 @@
 ---
 layout: page
 type: element
+section: extent
 title: Temporal Extents
 ---
 # Temporal Extents ★★★

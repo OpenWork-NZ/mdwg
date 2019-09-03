@@ -1,6 +1,7 @@
 ---
 layout: page
 type: element
+section: resource
 title: Distribution Info
 ---
 #  Distribution Info ★★★★★
