@@ -28,11 +28,25 @@
   <h1><a href="https://openwork-nz.github.io/mdwg/defs/TableOfContents">ICSM Metadata Good Practices</a></h1>
   </header>
 
-  {% if page.section %}<aside>
+  <aside>
     <ul>{% for def in site.defs %}{% if def.section == page.section %}
       <li><a href="{{ def.url | relative_url }}">{{ def.title }}</a></li>
     {% endif %}{% endfor %}</ul>
-  </aside>{% endif %}
+
+    {% if page.section != "section" %}<details>
+      <summary>Sections</summary>
+      <ul>{% for def in site.defs %}{% if def.section == "section" %}
+        <li><a href="{{ def.url | relative_url }}">{{ def.title }}</a></li>
+      {% endfor %}</ul>
+    </details>{% endif %}
+    
+    {% if page.section != "class" %}<details>
+      <summary>Classes</summary>
+      <ul>{% for def in site.defs %}{% if def.section == "class" %}
+        <li><a href="{{ def.url | relative_url }}">{{ def.title }}</a></li>
+      {% endfor %}</ul>
+    </details>{% endif %}
+  </aside>
 
   <main>
     {{ content }}
