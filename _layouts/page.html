@@ -20,11 +20,13 @@
     }
     aside h2 {font-size: 1em}
     aside h3 {font-size: 1em; font-weight: normal}
+    header {text-align: center; border-bottom: thin solid gray}
   </style>
 </head>
 <body>
-  <h1><a href="https://openwork-nz.github.io/mdwg/defs/TableOfContents">ICSM Good Practices</a></h1>
-  <hr />
+  <header>
+  <h1><a href="https://openwork-nz.github.io/mdwg/defs/TableOfContents">ICSM Metadata Good Practices</a></h1>
+  </header>
 
   {% if page.section %}<aside>
     <ul>{% for def in site.defs %}{% if def.section == page.section %}
