@@ -1,7 +1,8 @@
 ---
 layout: page
-type: element
+type: section
 section: resource
+rank: 40
 title: Maintenance
 ---
 # Resource Maintenance ★★★★

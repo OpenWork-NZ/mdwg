@@ -1,6 +1,7 @@
 ---
 layout: page
 type: page
+section: guidance
 title: Pattern Guide
 ---
 

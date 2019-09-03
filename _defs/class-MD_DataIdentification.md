@@ -1,7 +1,8 @@
 ---
 layout: page
-type: class
+type: section
 section: resource
+rank: 20
 title: MD_DataIdentification
 ---
 

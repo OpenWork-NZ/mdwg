@@ -1,10 +1,12 @@
 ---
 layout: page
 type: class
+section: constraints
+rank: 50
 title: MD_Constraints
 ---
 
-#  Class - MD_Constraints
+#  class - MD_Constraints
 *When constraints are palced on a spatial resource or its metadata, it is important to document these.. Potential users need to be informed of rights, restricutions and responsibilities (or lack thereof) that apply to the use of such resources.*
 
 - **Governance** -  *ISO, National*

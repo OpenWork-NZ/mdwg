@@ -1,6 +1,8 @@
 ---
 layout: page
-type: element
+type: section
+section: resource
+rank: 60
 title: Resource Extent
 ---
 # Resource Extent ★★★★

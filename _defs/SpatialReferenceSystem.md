@@ -1,7 +1,8 @@
 ---
 layout: page
-type: element
+type: section
 section: resource
+rank: 80
 title: Spatial Reference System
 ---
 # Spatial Reference System ★★★★

@@ -1,6 +1,8 @@
 ---
 layout: page
-type: class
+type: section
+section: root
+rank: 10
 title: MD_Metadata
 ---
 
@@ -9,7 +11,7 @@ title: MD_Metadata
 *In order to create consistent structured metadata, we need a schema to provide a structure and a class to hold it.  MD_Metadata provides this for ISO19115-1.*
 
 - **Governance** -  *ISO*
-- **Metadat Type -** *structural*
+- **Metadata Type -** *structural*
 - *ICSM Level of Agreement* - ⭑⭑
 
 # Definition 

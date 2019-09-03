@@ -1,7 +1,8 @@
 ---
 layout: page
-type: element
+type: section
 section: resource
+rank: 30
 title: Keywords
 ---
 # Keywords ★★★★★

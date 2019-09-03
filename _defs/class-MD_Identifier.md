@@ -1,6 +1,8 @@
 ---
 layout: page
 type: class
+section: class
+rank: 50
 title: MD_Identifier
 ---
 

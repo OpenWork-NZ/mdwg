@@ -1,7 +1,8 @@
 ---
 layout: page
-type: element
+type: section
 section: resource
+rank: 70
 title: Resource Lineage
 ---
 # Resource Lineage ★★★★
