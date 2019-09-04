@@ -1,7 +1,7 @@
 ---
 layout: page
 type: section
-section: Exents
+section: Extents
 rank: 60
 title: Resource Extent
 ---
