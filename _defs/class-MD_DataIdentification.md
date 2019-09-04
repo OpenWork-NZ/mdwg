@@ -7,7 +7,7 @@ title: Data Identification
 ---
 
 #  Class - MD_DataIdentification 
-*When capturing information on a spatial cataresource, it is important to identify and categorise information as pertaining to the data resource and to distinguish these information from that which applies to the metadata itself or service resources. MD_DataIdentification extends the abstract class MD_Identification to document a spatial data resource.*
+*When capturing information on a spatial resource, it is important to identify and categorise information as pertaining to the data resource and to distinguish these information from that which applies to the metadata itself or service resources. MD_DataIdentification extends the abstract class MD_Identification to document a spatial data resource.*
 
 - **Governance** -  *ISO*
 - **Metadata Type -** *structural*
