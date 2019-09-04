@@ -2,7 +2,7 @@
 layout: page
 type: section
 section: Resource Citation
-rank: 40
+rank: 30
 title: Resource Citation
 ---
 #  Resource Citation ★★★★★

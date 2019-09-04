@@ -2,7 +2,7 @@
 layout: page
 type: section
 section: Keywords
-rank: 30
+rank: 40
 title: Keywords
 ---
 # Keywords ★★★★★
