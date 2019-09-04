@@ -2,7 +2,7 @@
 layout: page
 type: element
 section: Data Identification
-rank: 40
+rank: 20
 title: Purpose
 ---
 #  Purpose ★★★★★

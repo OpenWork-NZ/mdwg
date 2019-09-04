@@ -2,7 +2,7 @@
 layout: page
 type: element
 section: Data Identification
-rank: 60
+rank: 95
 title: Associated Resource
 ---
 # Associated Resource ★★★

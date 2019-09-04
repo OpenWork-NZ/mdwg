@@ -2,7 +2,7 @@
 layout: page
 type: element
 section: Data Identification
-rank: 30
+rank: 50
 title: Resource Status
 ---
 # Resource Status ★★★★

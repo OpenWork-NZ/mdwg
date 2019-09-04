@@ -2,7 +2,7 @@
 layout: page
 type: element
 section: Data Identification
-rank: 40
+rank: 45
 title: Topic Category
 ---
 # Topic Category ★★★★★

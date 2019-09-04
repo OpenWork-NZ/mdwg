@@ -2,7 +2,7 @@
 layout: page
 type: element
 section: Metadata Info
-rank: 40
+rank: 20
 title: Metadata Linkage
 ---
 # Metadata Linkage ★★★★★

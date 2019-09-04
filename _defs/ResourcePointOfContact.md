@@ -2,7 +2,7 @@
 layout: page
 type: element
 section: Data Identification
-rank: 40
+rank: 30
 title: Resource Point of Contact 
 ---
 #  Resource Point of Contact  ★★★★★

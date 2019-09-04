@@ -2,7 +2,7 @@
 layout: page
 type: element
 section: Data Identification
-rank: 30
+rank: 40
 title: Resource Default Locale
 ---
 #  Resource Default Locale ★★★★

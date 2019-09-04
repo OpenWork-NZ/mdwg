@@ -2,7 +2,7 @@
 layout: page
 type: element
 section: Data Identification
-rank: 20
+rank: 10
 title: Abstract
 ---
 #  Abstract ★★★★★
