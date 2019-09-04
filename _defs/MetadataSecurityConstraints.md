@@ -1,7 +1,7 @@
 ---
 layout: page
 type: element
-section: metadata
+section: Metadata Info
 rank: 70
 title: Metadata Security Constraints
 ---

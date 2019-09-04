@@ -1,7 +1,7 @@
 ---
 layout: page
 type: element
-section: metadata
+section: Metadata Info
 rank: 10
 title: Metadata Identifier
 ---

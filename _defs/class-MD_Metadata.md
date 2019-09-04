@@ -1,7 +1,7 @@
 ---
 layout: page
 type: section
-section: root
+section: Metadata Info
 rank: 10
 title: Metadata Info
 ---

@@ -1,7 +1,7 @@
 ---
 layout: page
 type: section
-section: resource
+section: Distribution Info
 rank: 90
 title: Distribution Info
 ---
