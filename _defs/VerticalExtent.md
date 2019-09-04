@@ -1,7 +1,7 @@
 ---
 layout: page
 type: element
-section: extents
+section: Extents
 rank: 70
 title: Vertical Extent
 ---

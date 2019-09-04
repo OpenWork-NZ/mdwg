@@ -1,7 +1,7 @@
 ---
 layout: page
 type: element
-section: extent
+section: Extents
 rank: 80
 title: Temporal Extents
 ---

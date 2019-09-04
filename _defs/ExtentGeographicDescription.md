@@ -1,7 +1,7 @@
 ---
 layout: page
 type: element
-section: extent
+section: Extents
 rank: 30
 title: Extent Geographic Description
 ---

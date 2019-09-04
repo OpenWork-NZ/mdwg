@@ -1,7 +1,7 @@
 ---
 layout: page
 type: section
-section: resource
+section: Lineage
 rank: 70
 title: Resource Lineage
 ---

@@ -1,7 +1,7 @@
 ---
 layout: page
 type: section
-section: constraints
+section: Constraints
 rank: 50
 title: Resource Constraints
 ---

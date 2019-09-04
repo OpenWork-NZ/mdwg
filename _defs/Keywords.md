@@ -1,7 +1,7 @@
 ---
 layout: page
 type: section
-section: resource
+section: Keywords
 rank: 30
 title: Keywords
 ---

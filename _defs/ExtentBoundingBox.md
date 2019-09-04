@@ -1,7 +1,7 @@
 ---
 layout: page
 type: element
-section: extent
+section: Extents
 rank: 20
 title: Extent Bounding Box
 ---

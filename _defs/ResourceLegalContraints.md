@@ -1,7 +1,7 @@
 ---
 layout: page
 type: element
-section: constraints
+section: Constraints
 rank: 60
 title: Resource Legal Constraints
 ---

@@ -1,7 +1,7 @@
 ---
 layout: page
 type: class
-section: constraints
+section: class
 rank: 50
 title: MD_Constraints
 ---

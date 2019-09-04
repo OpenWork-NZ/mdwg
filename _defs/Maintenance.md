@@ -1,7 +1,7 @@
 ---
 layout: page
 type: section
-section: resource
+section: Maintenance
 rank: 40
 title: Maintenance
 ---
