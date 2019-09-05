@@ -10,16 +10,16 @@ title: Resource Security Constraints
 
 - **Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.resourceConstraints>MD_SecurityConstraints*
 - **Governance** - *National, Agency*
-- **Purpose -** *Resource use* 
-- **Audience - ** 
-  - machine resource - ⭑ 
+- **Purpose -** *Resource use*
+- **Audience - **
+  - machine resource - ⭑
   - general - ⭑⭑⭑⭑⭑
   - data manager - ⭑⭑⭑⭑
   - specialist - ⭑⭑
 - **Metadata type -** *administrative*
 - *ICSM Level of Agreement* - ⭑⭑⭑
 
-# Definition 
+# Definition
 **Handling restrictions imposed on this cited resource for national security or similar concerns e.g. commercial sensitivity, privacy considerations.**
 
 ## ISO Obligation
@@ -28,7 +28,7 @@ title: Resource Security Constraints
 ## ICSM Good Practice
 - The MDWG recommends populating  `resourceConstraints`  with security constraint information to sufficient level to determine the security structures and  restrictions on a cited resource.
 
-### Recommended Sub-Elements 
+### Recommended Sub-Elements
 - **useLimitation -** (*type - charstr*) [0..\*] when a limitation(s) affecting the fitness for use of the resource is of a security nature. 
 - **classification -** *(codelist - [MD_RestrictionCode](./class-MD_SecurityConstraints#md_restrictioncode)* [0..\*] name of the handling restrictions on the resource
 - **userNote -** *(type - charstr)*  0 to 1 - explanation of the application of the legal constraints or other restrictions and legal prerequisites for obtaining and using the resource or metadata. Use when needed
@@ -39,7 +39,7 @@ title: Resource Security Constraints
   - **releasability -** *(class - [MD_Releasability](http://wiki.esipfed.org/index.php/MD_Releasability))* [0..\*] use when some parties have special considerations for use or access of the cited resource
   - **responsibleParty -** *(class [CI_Responsibility](./class-CI_Responsibility))* [0..\*] contact information for those responsible for managing the security of the cited resource.
 
-# Discussion  
+# Discussion
 Many spatial resources carry some security restrictions regarding their access and use, such as national security, financial or commercial sensitivity, or privacy concerns as is common with census data. These security restrictions  need be documented for users and resource managers along with the identity of the applier of these constraints.  Each agency needs to develop consistent guidance on the use of such statement and share clear understanding of their meaning.  This is often done by reference to a external body that manages the definitions of the security constraints applied.
 
 ## Outstanding Issues
@@ -50,18 +50,22 @@ The official codes used in Australia as mandated by Australian [Protective Secur
 > **Other security frameworks support**
 There will be cases where other security frameworks and classification systems need be cited, such as for New Zealand Defence. Instructions for how to include these are needed. Should such guidance be prescriptive or general?
 
-# Recommendations 
+# Recommendations
 Therefore - It is important to capture all security constraints that apply to a spatial resource. If there be none it may be useful to capture such, particularly if your organisation does regularly handle sensitive resources. Agencies should develop consistent guidance on the use of security classifications and share clear understanding of their meaning with users. 
 
 At a minimum the name (primary and alternate) and version by which this security restriction on the access and use of this cited resource is known should be captured along with the classification value selected from the codelist - [MD_RestrictionCode](./class-MD_SecurityConstraints#md_restrictioncode), or the codelist mandated by your agency, e.g. Australian [Protective Security Policy Framework](https://www.protectivesecurity.gov.au/Pages/default.aspx)
 
-## Crosswalk considerations 
+## Crosswalk considerations
+
+<details>
 
 ### ISO19139
 See guidance provided in [MD_Constraints](./class-md_constraints)
 
 ### RIF-CS
 Maps to the agregate `Rights/@accessRights`
+
+</details>
 
 # Also Consider
 - **[Metadata Security Constraints](./MetadataSecurityConstraints)** contains security restriction information that apply to the metadata that cites the resource.
@@ -70,7 +74,9 @@ Maps to the agregate `Rights/@accessRights`
 
 # Examples
 
-## XML 
+<details>
+
+## XML
 
 ```
 <mdb:MD_Metadata>
@@ -140,3 +146,5 @@ Maps to the agregate `Rights/@accessRights`
 
 Recommended elements highlighted in Yellow
 ![resourceSecurityConstraints](../images/ResourceSecurityConstraintsUML.png)
+
+</details>
