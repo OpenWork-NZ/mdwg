@@ -2,7 +2,7 @@
 layout: page
 type: page
 section: Guidance
-title: ICSM ISO19115-1 Metadata Good Practice Guide 
+title: Introduction
 ---
 
 # ICSM ISO19115-1 Metadata Good Practice Guide
