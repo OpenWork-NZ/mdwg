@@ -54,8 +54,8 @@ The contents of an abstract should address the 5Ws What is it; Who generated it;
 > Note BC 18-7 - The compilation of best practice Abstracts as examples to guide metadata authors in writing abstracts in a consistent manner would be of high utility.
 
 <details>
-
-<summary>Crosswalk considerations</summary>
+<summary>Crosswalk considerations
+</summary>
 
 ### Dublin core / CKAN / data.govt.nz
 Maps to `description`
@@ -73,8 +73,8 @@ Maps to `Description 'full'`
 - **MD_DataIdentification.supplimentalInformation -** provides a description of the resource in the producer's processing environment, including items such as the software, the computer operating system, file name, and the dataset size.
 
 <details>
-
-<summary>Examples</summary>
+<summary>Examples
+</summary>
 
 ## ABARES
 > *TOPO_2.5M is a national seamless data product aimed at regional or national applications. 
