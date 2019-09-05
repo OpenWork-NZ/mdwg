@@ -2,13 +2,14 @@
 layout: page
 type: page
 section: Guidance
-title: Table of contents
+title: Table of Contents
 ---
 #  ICSM Metadata Good Practice - Table of Contents
 
 ## Guidance
 - [Introduction](./GuidanceIntro)
 - [Pattern guide](./PatternGuide)
+- [Template](./Template)
 
 ## Metadata for Metadata
 - [Class - MD_Metadata](./class-MD_Metadata)
