@@ -1,7 +1,9 @@
 title: MDWG
 description: Good practice documentation for the use of ISO19115-3.2018 metadata standard for ANZLIC/ICSM
 
-markdown: CommonMarkGHPages
+markdown: kramdown
+kramdown:
+  parse_block_html: true
 
 exclude: [README.md]
 collections:
