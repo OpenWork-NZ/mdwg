@@ -59,7 +59,9 @@ Notes - *Use only if more specific subproperty is not available. Sub-properties 
 Therefore - in order to provide an effective way to document, preserve and provide discovery of associated resources, these relations should be documented in the metadata.  At a minimum this should include a name, description of the relationship and link to the to the resource or its metadata. In contraxt to `additionalDocumentation` which can be thought of as outputs used to describe and understand a cited resource, an `associatedResource` is something that is of a piece of, or an input to, the cited resource.
 
 
-## Crosswalk considerations 
+## Crosswalk considerations
+
+<details>
 
 ### ISO19139 
 MD_AssociatedResource replaces MD_AggregateInformation to clarify its
@@ -81,6 +83,8 @@ Maps to dct:relation
 ### RIF-CS
 Maps to "Related Information"
 
+</details>
+
 # Also Consider
 - **[additionalDocumentation -](./AdditionalDocs)**  other documentation associated with the resource, e.g. related articles, publications, user guides, data dictionaries.
 - **[resourceLineage -](./ResourceLineage)** Information about the provenance, source(s), and/or the production process(es) applied to the resource.
@@ -88,6 +92,8 @@ Maps to "Related Information"
 - **[supplementalInformation -](https://www.isotc211.org/hmmg/HTML/ConceptualModels/EARoot/EA1/EA13/EA2/EA12/EA4420.htm)**   a free text field that is defined as "any other descriptive information about the resource". 
 
 # Examples
+
+<details>
 
 ## XML 
 ```
@@ -123,3 +129,5 @@ Maps to "Related Information"
 Recommended elements highlighted in Yellow
 
 ![associateResource](../images/AssociatedResourcesUML.png)
+
+</details>
