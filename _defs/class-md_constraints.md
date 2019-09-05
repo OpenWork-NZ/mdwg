@@ -13,7 +13,7 @@ title: MD_Constraints
 - **Metadata Type -** *structural*
 - *ICSM Level of Agreement* - ⭑⭑
 
-# Definition 
+# Definition
 
 **restrictions on the access and use of a resource or metadata.**
 
@@ -22,7 +22,7 @@ title: MD_Constraints
 - MD_Identification.resourceConstraints
 - MD_BrowseGraphic.imageConstraints
 
-### Attributes - 
+### Attributes -
 - **useLimitation -** *(type - charStr)* [0..\*] limitation affecting the fitness for use of the resource or metadata. Example, "not to be used for navigation"
 - **constraintApplicationScope -** *(class - [MD_Scope](./class-MD_Scope))* [0..1] the target resource and physical extent for which information is reported
 - **graphic -** *(class - [MD_BrowseGraphic](http://wiki.esipfed.org/index.php/MD_BrowseGraphic))* [0..\*]  graphic /symbol indicating the constraint 
@@ -34,7 +34,7 @@ title: MD_Constraints
 - **responsibleParty -** *(class - [CI_Responsibility](./class-CI_Responsibility))* [0..\*] party responsible for the resource constraints
 
 ## Associated Classes, Codelists and Unions
-### MD_Scope - class 
+### MD_Scope - class
 See [MD_Scope](./class-MD_Scope)
 
 ### MD_BrowseGraphic - class
@@ -62,8 +62,10 @@ There is a need to gain greater consensus as to the general use of MD_Constraint
 > Distribution Constraints
 Currently there are no clear methods to apply different constraints to different distributions. This may be an ISO issue to address. We should develop use cases.
 
-# Recommendations 
+# Recommendations
 ## Crosswalk considerations
+
+<details>
 
 ### ISO19139
 - *MD_BrowseGraphic.imageConstraint* - This new element was added in order to allow the specification of constraints on a browse graphic associated with a resource.
@@ -73,6 +75,8 @@ Currently there are no clear methods to apply different constraints to different
 - *MD_Constraints.releasability* -  This new element was added in order to allow specification of constraints that apply to specific people or organizations.
 - *MD_Constraints.responsibleParty* - This new element was added in order to allow specification of people or organisations responsible for the constraints.
 - *MD_Releasability* - This new class was added to provide information about resource release constraints
+
+</details>
 
 # Related Classes
 - **[MD_LegalConstraints](./class-MD_LegalConstraints) An extension to MD_Constraints for constraints applied for legal reasons.
