@@ -51,17 +51,23 @@ Therefore to make best use of a given resource capturing the the links to additi
 
 ## Crosswalk considerations 
 
+<details>
+
 ### DCAT 
 Maps to `dct.description` free-text 
 
 ### RIF-CS 
 Maps to `Description 'notes'`
 
+</details>
+
 # Also Consider 
 - **[MD_DataIdentification.supplementalInformation -](https://www.isotc211.org/hmmg/HTML/ConceptualModels/EARoot/EA1/EA13/EA2/EA12/EA4420.htm)**  is defined as "any other descriptive information about the resource". 
 - **[MD_AssociatedResource -](https://www.isotc211.org/hmmg/HTML/ConceptualModels/EARoot/EA1/EA13/EA2/EA12/EA4419.htm)**  contains information about resources of which this resource is a piece. Association types are taken from the [DS_AssociationTypeCode](https://www.isotc211.org/hmmg/HTML/ConceptualModels/EARoot/EA1/EA13/EA2/EA12/EA4378.htm).
 
 # Examples
+
+<details>
 
 ## XML 
 ```
@@ -152,3 +158,5 @@ Maps to `Description 'notes'`
 Recommended elements highlighted in Yellow
 
 ![additionalDoc](../images/AdditionalDocsUML.png)
+
+</details>

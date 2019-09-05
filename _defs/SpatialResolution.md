@@ -11,7 +11,7 @@ title: Spatial Resolution
 - **Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.spatialResolution*
 - **Governance** -  *Common ICSM*
 - **Purpose -** *discovery, evaluation*
-- **Audience -** 
+- **Audience -**
   - machine resource - ⭑⭑
   - general - ⭑⭑⭑⭑⭑
   - data manager - ⭑⭑⭑
@@ -19,16 +19,16 @@ title: Spatial Resolution
 - **Metadata type -** *structural*
 - *ICSM Level of Agreement* - ⭑⭑⭑
 
-# Definition 
+# Definition
 **The nominal scale and/or spatial resolution of the resource.**
 
-## ISO Obligation 
+## ISO Obligation
 - There may zero to many [0..\*] *spatialResolution* entries for the cited resource in the  *[MD_DataIdentification](./class-MD_DataIdentification)* package of class *[MD_Resolution](http://wiki.esipfed.org/index.php/MD_Resolution)* in a metadata record.
 
-## ICSM Good Practice 
+## ICSM Good Practice
 - The *spatialReolution* package should be populated with enough information to give the reader a good understanding of the spatial scale at which the resource was designed to be used.
 
-### Recommended Sub-Elements  
+### Recommended Sub-Elements
 **MD_Resolution** [1..1] is a class of type *Union* (meaning only one attribute from the available list can be used) that provides level of detail expressed as a scale factor, a distance or an angle. Similar to codelist, one and only one [1..1] must be chosen per `spatailResolution` instance. Possible attribute choice include:
 - **equivalentScale -** *(class - [MD_RepresentativeFraction](http://wiki.esipfed.org/index.php/MD_RepresentativeFraction))* 
   - level of detail expressed as the scale of a comparable hardcopy map or chart
@@ -49,7 +49,7 @@ title: Spatial Resolution
 - **levelOfDetail -** *(type - charStr)* 
   - brief textual description of the spatial resolution of the resource
 
-# Discussion 
+# Discussion
 *SpatialResolution* is most commonly represented as a factor which provides a general understanding of the density of spatial data in the resource or describes the range of resolutions in which a digital resource may be used.  This element should be repeated when describing upper and lower range.
 
 *SpatialResolution* is recommended in ISO 19115.1-2015 as a metadata element to be used for discovery of geospatial resources.
@@ -61,7 +61,7 @@ title: Spatial Resolution
 The most common way of capturing spatial resolution is as a denominator value using `equivalentScale`.  While this made intuitive sense in the days of paper maps printed at a particular size, scales such as 1 : 20,000 have little real meaning when the size of a map is totally dependent on the display sceen. Will younger spatial professionals who may only have passing knowledge of fixed scale maps relate to this value? Will it have meaning to the young neo-geo? It would be useful to work towards expressing scale, a fundamental concept in geospatial data, in a more digitally friendly way.  Perhaps something like standardised zoom levels?
 Would "distance", sampling size be of greater use? Most relatable would be something like "zoom level" which could be captured in "level of detail" but there is currently a lack of standardisation as to what terms like "zoom level" mean. Also, he levelOfDetail option lacks citation support that would be needed to make this usable in such a manner. Work on Discreet Global Grid Systems (DGGS) may provide some guidance to this topic.
 
-# Recommendations 
+# Recommendations
 Therefore - capture the spatial resolution of a resource as it is useful information for determining the fitness to purpose of geospatial data. Data gathered at too high or too low a resolution may make it unfit to your needs. Mixing data of different resolutions can give uncertain results. Spatial resolution provides a rough guide to the precision and accuracy of a resource. (Data quality elements should be used to document precision and accuracy more fully.)
 
 Spatial resolution can be documented in many ways. For ISO19115-1, these are limited to the methods itemised in the class MD_Resolution and documented above. Equivalent scale is the default of many systems, including supplied templates in GeoNetwork. It is captured with a single denominator value such as "20,000" as in a 1:20,000 map.
@@ -69,6 +69,8 @@ Spatial resolution can be documented in many ways. For ISO19115-1, these are lim
 > Note BC 19-7: Do we recommend equivalent scale as default?
 
 ## Crosswalk considerations
+
+<details>
 
 ### Dublin core / CKAN / data.govt.nz
 Maps to ?
@@ -79,12 +81,16 @@ Maps to ?
 ### RIF-CS
 Maps to ?
 
+</details>
+
 # Also Consider
 
 - **[Spatial Representation Type](./SpatialRepresentationType)** Documents the method used to spatially represent geographic information
 - **dataQualityInfo>MD_DataQuality -** TBD - From ISO19157 - quality information for the data specified by a data quality scope 
 
 # Examples
+
+<details>
 
 ## ABARES
 ```
@@ -139,3 +145,5 @@ Maps to ?
 ## UML diagrams
 Recommended elements highlighted in Yellow
 ![spatialResolution](../images/SpatialResolutionUML.png)
+
+</details>

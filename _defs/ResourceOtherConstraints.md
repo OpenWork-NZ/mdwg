@@ -11,8 +11,8 @@ title: Resource Constraints
 - **Path** -  *MD_Metadata.identificationInfo>MD_DataIdentification.resourceConstraints*
 - **Governance** - *Agency*
 - **Primary use -** *Resource use* 
-- **Audience -** 
-  - machine resource - ⭑ 
+- **Audience -**
+  - machine resource - ⭑
   - general - ⭑⭑⭑⭑⭑
   - data manager - ⭑⭑⭑⭑
   - specialist - ⭑⭑
@@ -22,13 +22,13 @@ title: Resource Constraints
 # Definition -
 **Rights, restrictions, and responsibilities for the access and use of this cited resource.  While these may optionally be of subtypes legal ([MD_LegalConstraints](./class-MD_LegalConstraints)) or security ([MD_SecurityConstraints](./class-MD_SecurityConstraints)) there are other types of constraints to consider that exist under the more general class [MD_Constraints](./class-md_constraints) including *useLimitations* and *releasability* restrictions** 
 
-## ISO Obligation 
-- There should be zero to many [0..\*] *resourceConstraints* recorded for the cited resource in the  *[MD_DataIdentification](./class-MD_Dataidentification)* package of class [MD_Constraints](./class-md_constraints) in a metadata record, 
+## ISO Obligation
+- There should be zero to many [0..\*] *resourceConstraints* recorded for the cited resource in the  *[MD_DataIdentification](./class-MD_Dataidentification)* package of class [MD_Constraints](./class-md_constraints) in a metadata record,
 
-## ICSM Good Practice  
+## ICSM Good Practice
 - The MDWG recommends populating  `resourceConstraints`  with `useLimitation`, `releasability` and other constraint information to sufficient level to determine the limits and restrictions on a cited resource.
 
-### Recommended Sub-Elements 
+### Recommended Sub-Elements
 - **useLimitation -** (*type - charstr*) [0..\*] limitation(s) affecting the fitness for use of the resource or metadata. Example, "not to be used for navigation".  If legal by nature, use as parent subtype [MD_LegalConstraints](./ResourceLegalConstraints). If security by nature, use as parent subtype [MD_SecurityConstraints](./MetadataSecurityConstraints). Otherwise, use  MD_Constraint.
 - **reference -** *(class - [CI_Citation](./class-CI_Citation))* [0..\*] citation/URL for the limitation or constraint, eg. copyright statement, license agreement, security classification system, etc.
   - **title** - *(type - charstr)*  [1..1] Madatory for `CI_Citation` The name of the constraint.
@@ -41,19 +41,23 @@ title: Resource Constraints
   - **disseminationConstraints -** *(codelist - [MD_RestrictionCode](./class-md_constraints#MD_RestrictionCode---codelist))* [0..\*] component in determining releasability. A Limitation placed upon the access or use of the data
   - **responsibleParty -** *(class [CI_Responsibility](./class-CI_Responsibility))* [0..\*] contact information for those responsible for managing the security of the cited resource.
 
-# Discussion  
+# Discussion
 Almost all spatial resources carry some rights, restrictions and responsibility regarding their access and use.  These may be legal, security or other.  It is important that these be recorded and shared with existing and potential users.  Each agency needs to develop consistant guidance on the use of such statements and share clear understanding of their meaning.  This is often done by reference to a external body that manages the definitions of the constraints applied.
 
-# Recommendations 
+# Recommendations
 Therefore - In order for users to understand the administrative constraints applied to a cited resource, the details of these constraints, together with sufficient information and linkages to provide access to further information as to the deeper meaning and implications of such constraints, needs to be capture in the metadata about the resource.
 
-## Crosswalk considerations 
+## Crosswalk considerations
 
-### ISO19139 
+<details>
+
+### ISO19139
 See guidance provided in *[MD_Constraints](./class-md_constraints)*
 
 ### RIF-CS
 Maps to the agregate `Rights/@accessRights`
+
+</details>
 
 # Also Consider
 - **[Resource Security Constraints](./ResourceSecurityConstraints)** contains security restrictions that apply to the resource cited by the metadata
@@ -61,7 +65,9 @@ Maps to the agregate `Rights/@accessRights`
 
 # Examples
 
-## XML 
+<details>
+
+## XML
 
 ```
 <mdb:MD_Metadata>
@@ -135,3 +141,5 @@ Maps to the agregate `Rights/@accessRights`
 
 Recommended elements highlighted in Yellow
 ![constraints](../images/ResourceOtherConstraintsUML.png)
+
+</details>

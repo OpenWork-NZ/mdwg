@@ -11,7 +11,7 @@ title: Extent Bounding Box
 - **Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.extent>EX_Extent.geographicElement>EX_GeographicBoundingBox*
 - **Governance** - *Common ICSM*
 - **Purpose** - *Discovery*
-- **Audience -** 
+- **Audience -**
   - machine resource - ⭑⭑⭑⭑
   - general - ⭑⭑⭑
   - data manager - ⭑⭑
@@ -19,16 +19,16 @@ title: Extent Bounding Box
   - **Metadata type -** *descriptive*
 - *ICSM Level of Agreement* - ⭑⭑⭑⭑
 
-# Definition 
+# Definition
 **A minimal set of geographic coordinates describing the geographic position of the resource. This is only an approximate reference so specifying the coordinate reference system is unnecessary and need only be provided with a precision of up to two decimal places** 
 
-## ISO Obligation 
+## ISO Obligation
 - A metadata record may have zero to many  [0..\*] *geographicIdentifier* elements for the cited resource in the  *[GeographicExtent](./GeographicExtent)* package of class *EX_GeographicBoundingBox* that described the geographic extent of a cited resource.
 
-## ICSM Good Practice - 
+## ICSM Good Practice -
 - The MDWG recommends populating as many instances of Geographical Extent packages as need to give a common understanding of the spatial coverage of the cited resource.
 
-### Recommended Sub Elements  
+### Recommended Sub Elements
 Use **extentTypeCode** *(Boolean)* [0..1] with a value of "0" to indicate exclusions
 All four following subelements must be included in a bounding box description
 * **westBoundLongitude** - *(type - Decimal)* western-most coordinate of the limit of the resource extent, expressed in longitude in decimal degrees (positive east - WGS 84)
@@ -36,7 +36,7 @@ All four following subelements must be included in a bounding box description
 * **southBoundLatitude** - *(type - Decimal)* southern-most coordinate of the limit of the resource extent, expressed in latitude in decimal degrees (positive north - WGS 84)
 * **eastBoundLongitude** - *(type - Decimal)* northern-most, coordinate of the limit of the resource extent expressed in latitude in decimal degrees (positive north - WGS 84)
 
-# Discussion  
+# Discussion
 Every metadata record describing geographic resources should contain a bounding box description that covers the location which describes the area of interest of the resource. Those searching for resources can be provided a quick visual of the usable location of the resource. Catalogue software can use these boxes to do overlay analyses and narrow searches to particular areas of interest. To ensure ease of use with metadata from other sources that may contain data in any number of projections, these bounding box needs to be expresses in a common WGS 84 projection. 
 
 Because of the simple mathematics involed in calculating overlap with two coordinate pairs, bounding box descriptions provide a lightwieght way that those without GIS tools can tell if the resource overlaps with anaother.
@@ -50,13 +50,15 @@ Geospatial data may be held and maintained by an organisation in any number of p
 > **180 degree problem**
 To capture a bounding box that describes the area of the country of New Zealand, one must draw across 180 degree Longitude. This creates an issue with most software descriptions of bounding boxes and results in a bounding box that circles the world and excludes New Zealand. One common solution is to split into two such bounding boxes at +/-180 degree latitude.
 
-# Recommendations 
+# Recommendations
 
 Therefore - It is strongly recommended that to support discovery of resources, every metadata record that describes a geographic resource contains at a minimum one bounding box description of the resource area of interest. To ensure commonality with other catalogued data, the coordinates of such need be captured in WGS 84.  If there be any exclusion areas, the use of the boolean extentTypeCode (set to "0") is recommended.
 
-## Crosswalk considerations 
+## Crosswalk considerations
 
-### Dublin core / CKAN / data.govt.nz 
+<details>
+
+### Dublin core / CKAN / data.govt.nz
 Maps to `geospatial coverage`
 
 ### DCAT 
@@ -64,6 +66,8 @@ Maps to `dct.spatial`
 
 ### RIF-CS
 Maps to the aggregate element `Coverage/Spatial`
+
+</details>
 
 # Also Consider
 - **[EX_Extent](./ResourceExtent)** The class that contains all extent information about the cited resource - vertical, geographical or temporal.
@@ -73,8 +77,11 @@ Maps to the aggregate element `Coverage/Spatial`
 - **[EX_TemporalExtent](./TemporalExtents)** Contains temporal extent information for the cited resource
 - **[EX_VerticalExtent -](./VerticalExtent)**  captures the vertical range of a resource.
 
+# Examples
 
-## XML 
+<details>
+
+## XML
 ```
 <mdb:MD_Metadata>
 ....
@@ -109,3 +116,5 @@ Maps to the aggregate element `Coverage/Spatial`
 ## UML diagrams
 Recommended elements highlighted in Yellow
 ![EXBoundBox](../images/ExtentBoundingBoxUML.png)
+
+</details>

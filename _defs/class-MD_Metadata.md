@@ -6,7 +6,7 @@ rank: 10
 title: Metadata Info
 ---
 
-# class - MD_Metadata 
+# class - MD_Metadata
 
 *In order to create consistent structured metadata, we need a schema to provide a structure and a class to hold it.  MD_Metadata provides this for ISO19115-1.*
 
@@ -14,11 +14,11 @@ title: Metadata Info
 - **Metadata Type -** *structural*
 - *ICSM Level of Agreement* - ⭑⭑
 
-# Definition 
+# Definition
 
 **Root entity which defines metadata about a resource or resources**
 
-## Child packages  
+## Child packages
 ### MDWG recommended
 - **[resourceLineage -](./ResourceLineage)** *(class - Li_Lineage)* [0..\*]
 - **[referenceSystemInfo -](https://www.loomio.org/d/4SliNjWE/md_metadata-md_referencesystem-definition)** *(class - MD_ReferenceSystem)*
@@ -41,7 +41,7 @@ title: Metadata Info
 - **dataQualityInfo -** *(class - DQ_DataQuality (from ISO19157))* [0..\*]
 
 ## Atributes
-### MDWG Recomended Attributes - 
+### MDWG Recomended Attributes -
 - **[metadataIdentifier -](./MetadataIdentifier)** (*class - [MD_Identifier](./class-MD_Identifier)*) [0..1]
 - **[dateInfo -](./MetadataDate)** *(class - [CI_Date](./class-CI_Date))* [1..\*] 
 - **[contact -](./MetadataContact)** *(class - [CI_Responsibility](./class-CI_Responsibility))* [0..1] 

@@ -11,7 +11,7 @@ title: Resource Responsible Party
 - **Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.citation>CI_Citation.citedResponsibleParty*
 - **Governance** -  *Common ICSM, Agency, Domain*
 - **Purpose -** *discovery, identification, communication*
-- **Audience -** 
+- **Audience -**
   - machine resource - ⭑⭑
   - general - ⭑⭑⭑⭑⭑
   - data manager - ⭑⭑⭑⭑
@@ -19,30 +19,32 @@ title: Resource Responsible Party
 - **Metadata type -** *descriptive, administrative*
 - *ICSM Level of Agreement* - ⭑⭑⭑⭑
 
-# Definition 
+# Definition
 **Name, role, and instructions for contacting the organisation, role and/or individual responsible for the cited resource.**
 
-## ISO Obligation 
+## ISO Obligation
 - There may be zero or more [0..\*] *citedResponsibleParties* provided for the cited resource in the  *[MD_DataIdentification.citation](./ResourceCitation)* package. These will be of class [CI_Responsibility](./class-CI_Responsibility).
 
-##  ICSM Good Practice 
+##  ICSM Good Practice
 - This element should be populated in all metadata records with a minimum of `role` , `name` (of organisation preferred), `positionName` and `electronicMailAddress`.
 
-### Recommended Sub-Elements   
+### Recommended Sub-Elements
 Follow the general guidance for [CI_Responsibility](./class-CI_Responsibility).
 - Recommended `role` values should include (but not be limited to) "author" and "publisher".
 
-# Discussion 
+# Discussion
 This element captures contact information for those parties responsible for various aspects of the cited resource.. It does not refer to the party responsible for the metadata record itself.  General contact information for the resource should be captured in [Resource Point of Contact](./ResourcePointOfContact).
 
 There may be multiple responsible parties who hold different responsibilities. The responsibility of each party is captured in the element CI_Responsibility > role. Entries for "author" and "publisher" are recommended. 
 
-# Recommendations 
+# Recommendations
 
 Therefore - In order to meet ICSM good practice, in all metadata records, contact information should be given for the parties responsible for different aspects of the creation, management and maintenace of the resource. Entries for "author" and "publisher" should be provided.  In addition, for minimal conformity, `name` (of organisation preferred), `positionName` and `electrronicMailAddress` should also be popiulated.
 The use of the new `partyIdentifier` element added in the 2018 ammendment to the standard is encouraged by all parties.
 
 ## Crosswalk considerations
+
+<details>
 
 ### ISO19139
 See discussion at [CI_Responsibility](./class-CI_Responsibility)
@@ -56,6 +58,8 @@ Maps to `dct:publisher`
 ### RIF-CS
 Maps to `Publisher`
 
+</details>
+
 # Also Consider
 - **[Resource Point of Contact](./ResourcePointOfContact)** Contact information for the recommended party to contact about the resource
 - **[Metadata Responsible Party](./MetadataContact)** Contact information for the recommended party to contact about the metadata
@@ -65,7 +69,9 @@ Maps to `Publisher`
 
 # Examples
 
-## XML 
+<details>
+
+## XML
 
 ```
 <mdb:MD_Metadata>
@@ -180,3 +186,5 @@ Maps to `Publisher`
 ## UML diagrams
 Recommended elements highlighted in Yellow
 ![ResourceCitation](../images/ResourceResponsiblePartyUML.png)
+
+</details>

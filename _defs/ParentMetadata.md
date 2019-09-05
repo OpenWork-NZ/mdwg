@@ -11,7 +11,7 @@ title: Parent Metadata
 - **Path** - *MD_Metadata.parentMetadata*
 - **Governance** -  *Agency, Domain*
 - **Purpose -** *discovery, data management*
-- **Audience -** 
+- **Audience -**
   - machine resource - ⭑⭑⭑
   - general - ⭑⭑⭑
   - data manager - ⭑⭑⭑⭑⭑
@@ -19,19 +19,19 @@ title: Parent Metadata
 - **Metadata type -** *discovery, administrative*
 - *ICSM Level of Agreement* - ⭑⭑
 
-# Definition 
+# Definition
 **Citation to a parent metadata record, to enable construction of hierarchical relations.**
 
-## ISO Obligation 
+## ISO Obligation
 - There may be zero or one [0..1] *MD_Metadata.parentMetadata* entries for the cited resource in the  *[MD_Metadata](./class-MD_Metadata)* package of class *[CI_Citation](https://./class-CI_Citation)* in a metadata record.
 
-## ICSM Good Practice  
+## ICSM Good Practice
 - The element `parentMetadata` should be populated to sufficient level to allow discovery if the metadata has a child relationship to another metadata record.
 
-### Recommended Sub-Elements   
+### Recommended Sub-Elements
 Follow the general guidance for [CI_Citation](./class-CI_Citation)
 
-# Discussion 
+# Discussion
 There currently exists very little guidance for what qualifies as a parent metadata and when this element should be used. This could work well for feature level metadata where the parent is a dataset and the child a feature. Or a map series where the series is the parent and the tiles the children. Does the parent child hierarchical relation exist between the resources or the metadata records? (One metadata record could inherit attributes from a parent without such a relation between the resources being documented.)
 The cardinality rules only allow one parent, but it is concievable that a metadata record could inherit parts from multiple  parents.
 
@@ -40,7 +40,7 @@ The cardinality rules only allow one parent, but it is concievable that a metada
 If we include this as a recommended element, the MDWG should provide some guidance as to what qualifies as a parent metadata record. This is a CI_Citation element so it has the all the capabilities of that package. We need to decide which fields are necessary given that a requirement should be a link to the parent metadata record.
 
 
-# Recommendations 
+# Recommendations
 TBD - insufficient clarity exist as to what qualifies a metadata record as "parent". Use cases need to be defined to illustrate yet to be determined good practice for parentMetadata.
 
 ## Crosswalk considerations
@@ -57,6 +57,8 @@ Maps to `RelatedInfo/relation='partOf'`
 
 
 # Examples
+
+<details>
 
 ## Example Current Use
 
@@ -105,3 +107,5 @@ Maps to `RelatedInfo/relation='partOf'`
 ## UML diagrams
 Recommended elements highlighted in Yellow
 ![ParentMetadata](../images/ParentMetadataUML.png)
+
+</details>

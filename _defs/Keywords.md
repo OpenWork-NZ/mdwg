@@ -25,10 +25,10 @@ title: Keywords
 ## ISO Obligation
 - There can be zero or many [0..\*] descriptive keywords for the cited resource in the  *[MD_DataIdentification](./class-MD_DataIdentification)* package of class *[MD_Keywords](http://wiki.esipfed.org/index.php/MD_Keywords)* in a metadata record.
 
-## ICSM Good Practice 
+## ICSM Good Practice
 - There should be multiple keywords selected from a referenced thesaurus present in a metadata record for a spatial resource.
 
-### Recommended Sub-Elements 
+### Recommended Sub-Elements
 From class *[MD_Keywords](http://wiki.esipfed.org/index.php/MD_Keywords)*
 * **keyword -** *(type - charStr) Mandatory, preferably chosen from a thesaurus
 * **type -** *(codelist - [MD_KeywordTypeCode](http://wiki.esipfed.org/index.php/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_KeywordTypeCode))* highly recommended - 15 options (substantial increase from iso19139)
@@ -91,6 +91,8 @@ The new `keywordClass` package should be explored to allow the greater use of se
 
 ## Crosswalk considerations
 
+<details>
+
 ### ISO19139
 MD_KeywordClass was added to allow further categorisation of keywords
 
@@ -100,6 +102,8 @@ Mapping not yet discussed.
 ### DCAT
 ISO 19115 can groups keywords according to type (theme, place, temporal, discipline and stratum), or according to thesaurus; this information is lost in DCAT. DCAT keywords are mapped to ISO 19115 keywords without type or thesaurus.
 
+</details>
+
 # Also Consider
 There are several elements outside the keywords class that are in effect keywords. These include:
 - **[Topic Category](./TopicCategory)** - The main themes of the resource populated from a fixed domain of values mandated by ISO19115-1
@@ -108,6 +112,7 @@ There are several elements outside the keywords class that are in effect keyword
 
 # Examples
 
+<details>
 
 ## XML -
 ```
@@ -184,3 +189,5 @@ There are several elements outside the keywords class that are in effect keyword
 ## UML diagrams
 Recommended elements highlighted in Yellow
 ![keywords](../images/KeywordsUML.png)
+
+</details>

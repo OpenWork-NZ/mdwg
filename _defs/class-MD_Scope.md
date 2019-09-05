@@ -6,7 +6,7 @@ rank: 50
 title: MD_Scope
 ---
 
-#  Class MD_Scope 
+#  Class MD_Scope
 
 *The capture of information about the physical extents of the resource is needed under many packeges of inforation about a cited reosurce.  A standarised way of this scope is useful.  This function is provided by the class **MD_Scope**.*
 
@@ -14,18 +14,18 @@ title: MD_Scope
 - **Metadata type -** *structural*
 - *ICSM Level of Agreement* - ⭑⭑
 
-# Definition 
+# Definition
 
 **the target resource and physical extent for which information is reported.**
 
-## ISO Associations (May be found in) 
+## ISO Associations (May be found in)
 - MD_Constraints.constraintApplicationScope
 - LI_Lineage.scope
 - LI_ProcessStep.scope
 - LI_Source.scope
 - MD_MaintenanceInformation.maintenanceScope
 
-## Attributes - 
+## Attributes -
 - **level -** *(codelist - MD_ScopeCode)* [1..1] Mandatory when using MD_Scope - target resource covered
 - **extent -** *(class - [EX_Extent](./ResourceExtent))* [0..\*] Information about the horizontal, vertical and temporal extent of the resource specified by the scope
 - **levelDescription -** *(codelist - MD_ScopeDescription)* [0..\*] detailed description/listing of the items specified by the level
@@ -76,8 +76,10 @@ Information about scope of a citation of an aspect of a resource or its maintena
 
 The MD_Scope is used to describe the breadth and or type of the resource that a metadata record or class describes. It includes a MD_ScopeCode as a brief indicator of the scope which can be useful in search and presentation applications and a MD_ScopeDescription in order to provide more detail. The values in the MD_ScopeCode list are intentionally general and details of their application are left to the data provider. In order to foster interoperability, the usage of the scope codes should be carefully documented in any community of practice. Clause E.5 outlines possible applications of codes from the MD_ScopeCode codelist and related codes included in ISO/TS 19139 as part of the MX_ScopeCode list. These examples are meant to provide reasonable starting points and are certainly not exhaustive.
 
-# Recommendations 
+# Recommendations
 ## Crosswalk considerations
+
+<details>
 
 ### ISO19139
 HierarchyLevel attributes were replaced by an MD_Scope class to improve the description of the scope of the metadata;
@@ -92,7 +94,9 @@ HierarchyLevel attributes were replaced by an MD_Scope class to improve the desc
   - This new element was added in order to allow description of the scope of a process step independently from the scope of the entire lineage section. This was required, in part, to replace the DQ_Scope from the DQ_DataQuality class that was moved from 19115 to the new data quality standard (ISO 19157).
 - `MD_MaintenanceInformation.updateScope` and `MD_MaintenanceInformation.updateScopeDescription` (Replaced by) `MD_MaintenanceInformation.maintenanceScope`
   - These two roles were combined into maintenance-Scope: MD_Scope [0..\*] in order to allow specifying a scope that includes a spatial and temporal extent
-  
+
+</details>
+
 ## Related Links
 - [ESIP MD_Scope](http://wiki.esipfed.org/index.php/MD_Scope)
 

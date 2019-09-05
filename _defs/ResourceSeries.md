@@ -11,7 +11,7 @@ title: Resource Series
 - **Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.citation>CI_Citation.series*
 - **Governance** -  *Agency, Domain*
 - **Purpose -** *Discovery, identification*
-- **Audience -** 
+- **Audience -**
   - machine resource - ⭑⭑⭑
   - general - ⭑⭑⭑⭑⭑
   - data manager - ⭑⭑⭑⭑
@@ -19,27 +19,27 @@ title: Resource Series
 - **Metadata type -** *descriptive*
 - *ICSM Level of Agreement* - ⭑⭑
 
-# Definition 
+# Definition
 **Information about the series, or aggregate resource, of which the resource is a part.**
 
-## ISO Obligation 
+## ISO Obligation
 - There may be one  [0..1] *series* package for the cited resource in the  *[MD_DataIdentification.citation](./ResourceCitation)* package  of class *[CI_Series](http://wiki.esipfed.org/index.php/CI_Series)* in a metadata record.
 
-##  ICSM Good Practice 
+##  ICSM Good Practice
 - This element should be populated in all metadata records where the resource is one part of a series.
 
-### Recommended Sub Elements 
+### Recommended Sub Elements
 From class *[CI_Series](http://wiki.esipfed.org/index.php/CI_Series)*
 - **name -** *(type - charStr)* [0..1] name of the series, or aggregate resource, of which the resource is a part
 - **issueIdentification -**  *(type - charStr)*  [0..1]  information identifying the issue of the series
 - **page -** *(type - charStr)* [0..1] Mostly not recommended as not common. Details on which pages of the publication the article was published
 
-# Discussion 
+# Discussion
 The content of all three *CI_Series* elements are free text and optional. How one would link back to the Series metadata is unclear. It could be captured in "Name" as a resolvable URI. Perhaps through the Parent Metadata element? What is the relation between "Series" and "Parent Metadata"
 
 It Is conceivable that there may be more than one series to which a dataset may belong. The dataset may be part of a time series while also part of a thematic series. But, by the standard, a resource may only belong to one cited series. Guidance needs to be developed for users on this topic.
 
-# Recommendations 
+# Recommendations
 **Series** has proven to be a difficult element to pin down for a number of reasons. Below is a list of issues that should be included in good practice guidance on this element:
 
 * Definition of this element needs to be expanded to include a definition of "Series" in our context.
@@ -55,11 +55,15 @@ It may be better to use other elements such as `parentMetadata` or `associatedRe
 
 ## Crosswalk considerations
 
+<details>
+
 ### DCAT
-Maps to `prov:wasMemberOf` 
+Maps to `prov:wasMemberOf`
 
 ### RIF-CS
-Maps to `Context` 
+Maps to `Context`
+
+</details>
 
 # Also Consider
 - **[Parent Metadata](./ParentMetadata)** - hierarchical relations of metadata records
@@ -68,7 +72,9 @@ Maps to `Context`
 
 # Examples
 
-## XML 
+<details>
+
+## XML
 ```
 <mdb:MD_Metadata>
 ....
@@ -101,3 +107,5 @@ Maps to `Context`
 ## UML diagrams
 Recommended elements highlighted in Yellow
 ![dataCitationSeries](../images/ResourceSeriesUML.png)
+
+</details>

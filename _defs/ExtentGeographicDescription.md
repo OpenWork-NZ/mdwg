@@ -11,7 +11,7 @@ title: Extent Geographic Description
 - **Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.extent >EX_Extent.geographicElement>EX_GeographicDescription.geographicIdentifier*
 - **Governance** - *Common, Domain*
 - **Purpose** - *Discovery*
-- **Audience -** 
+- **Audience -**
   - machine resource - ⭑⭑
   - general - ⭑⭑⭑⭑
   - data manager - ⭑⭑
@@ -19,24 +19,24 @@ title: Extent Geographic Description
 - **Metadata type -** *descriptive*
 - *ICSM Level of Agreement* - ⭑⭑⭑
 
-# Definition 
+# Definition
 **A Geographic description which describes the location of the resource.**
 
 
-## ISO Obligation 
+## ISO Obligation
 - A metadata record may have zero to many  [0..\*] *geographicIdentifier* elements for the cited resource in the  *[GeographicExtent](./GeographicExtent)* package of class *EX_GeographicDescription* that described the geographic extent of a cited resource.
 
-## ICSM Good Practice  
+## ICSM Good Practice
 - The MDWG recommends including as many instances of Geographical Extent packages as useful to give a common understanding of the spatial coverage of the cited resource. These names may be particular to your domain.
 
-### Recommended Sub-Elements  
+### Recommended Sub-Elements
 Use **extentTypeCode** *(type - Boolean)* [0..1] with a value of "0" to indicate exclusions
 class MD_Identifier
 * **code -** *(type - charStr)* mandatory for MD_Identifier
 * **codespace -** *(type - charStr)*  ?a codelist that contains the code?
 * **authority -** *(class - [CI_Citation](./class-CI_Citation))* optional, may contain the provider of the codelist of placenames
 
-# Discussion  
+# Discussion
 In order to provide a quick guide as tothe spatial area of interest for a cite resource, every metadata record describing geographic resources should contain a descriptor that indicates the location of the area of interest of the resource.  Catalogue software can use this information to analyse and narrow searches to particular areas of interest. 
 
 The use of multiple descriptor is recommended for more complicated geometries, including exclusion areas.
@@ -46,14 +46,18 @@ The use of multiple descriptor is recommended for more complicated geometries, i
 The *"description"* element of EX_Extent offers a freeform way of describing the extent of a resource. GeoNetwork uses it to provide a codelist delimited set of values by which the EX_GeographicBoundingBox elements are populated in addition. It would seem more correct to use EX_GeographicDescription and its MD_Identifier element to this purpose.
 
 
-# Recommendations 
+# Recommendations
 Therefore - It is highly recommended that to support discovery of resources, every metadata record that describes a geographic resource contains geographic descriptions of the area of interest for the resource. This description must contain a *code* that holds the value of the geographic descriptor and should contain in the *codespace* the codelist or domain from which it was derived. The *authority* element may contain additional documentation of the codelist.
 
 
-## Crosswalk considerations 
+## Crosswalk considerations
+
+<details>
 
 ### Dublin core / CKAN / data.govt.nz {if any}
 Mapping geographic extents to CKAN and Dublin core elements, particularly as used by data.gov.au needs discussion
+
+</details>
 
 # Also Consider
 - **[EX_Extent](./ResourceExtent)** The class that contains all extent information about the cited resource - vertical, geographical or temporal.
@@ -66,8 +70,9 @@ Mapping geographic extents to CKAN and Dublin core elements, particularly as use
 
 # Examples
 
+<details>
 
-## XML 
+## XML
 ```
 <mdb:MD_Metadata>
 ....
@@ -129,3 +134,5 @@ Mapping geographic extents to CKAN and Dublin core elements, particularly as use
 ## UML diagrams
 Recommended elements highlighted in Yellow
 ![ExGeoDescription](../images/EX_GeoDescription.png)
+
+</details>

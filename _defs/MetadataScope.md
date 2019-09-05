@@ -11,7 +11,7 @@ title: Metadata Scope
 - **Path** - *MD_Metadata.metadataScope*
 - **Governance** -  *Common ICSM*
 - **Purpose -** *discovery*
-- **Audience -** 
+- **Audience -**
   - machine resource - ⭑⭑⭑
   - general - ⭑⭑⭑⭑
   - data manager - ⭑⭑⭑⭑
@@ -19,21 +19,21 @@ title: Metadata Scope
 - **Metadata type -** *descriptiive*
 - *ICSM Level of Agreement* - ⭑⭑⭑
 
-# Definition 
+# Definition
 **A resource code identifying the type of resource, e.g. service, a collection, an application which the metadata describes**
 
-## ISO Obligation 
+## ISO Obligation
 - There can be zero to many [0..\*] *metadataScope* entries for the cited resource in the  *[MD_Metadata](./class-MD_Metadata)* package of class *[MD_MetadataScope](http://wiki.esipfed.org/index.php/MD_MetadataScope)* for the metadata record.
 
-## ICSM Good Practice  
+## ICSM Good Practice
 - At least one instance of this element should be populated in all metadata records.
 
-## Recommended Sub-Elements 
-From class - *[MD_MetadataScope](http://wiki.esipfed.org/index.php/MD_MetadataScope)* 
+## Recommended Sub-Elements
+From class - *[MD_MetadataScope](http://wiki.esipfed.org/index.php/MD_MetadataScope)*
 - **resourceScope -** *(codelist - MD_ScopeCode)* [1..1] Madatory when using `MD_MetadataScope`. Default value "dataset". See [MD_Scope](./class-MD_Scope#md_scopecode-codelist) for more value options
 - **name -** *(type - charStr)* [0..1] description of the scope.  Mandatory if resourceScope not equal "dataset"
 
-# Discussion 
+# Discussion
 MetadataScope contains information that describes the scope of the resource that this metadata record documents. The standard allows multiple scopes per metadata record, but we have no examples to date to illustrate this use. Current thought is that ICSM recommendation would be one and only one entry for `metadataScope`.
 MetadataScope replaces hierarchyLevel in the previous version of ISO19115. This was done to avoid ambiguity in cases where multiple scope codes and names are associated with a single record. The word hierarchy was dropped from the names because scopes can be
 used in non-hierarchical structures.
@@ -50,11 +50,13 @@ The values in the MD_ScopeCode list are intentionally general and details of the
 Typically, the subject will be represented using keywords, key phrases, or classification codes. Recommended best practice is to use a controlled vocabulary.
 
 
-# Recommendations 
+# Recommendations
 
 Therefore - In order to provide top level categorisation of entries in a catalogue, it is recommended that `metadataScope` be populated.  The default value of `MD_MetadataScope.resourceScope` should be *dataset*. When the value of `resourceScope` is other than dataset, `MD_MetadataScope.name` must be populated.
 
 ## Crosswalk considerations
+
+<details>
 
 ### ISO19139
 MetadataScope replaces hierarchyLevel in the previous version of ISO19115. This was done to avoid ambiguity in cases where multiple scope codes and names are associated with a single record. The word hierarchy was dropped from the names because scopes can be
@@ -72,12 +74,16 @@ May map to  `dct:identifier` if `metadataIdentifier` is unresolvable
 ### RIF-CS
 May map to `Key Identifier` if `metadataIdentifier` is unresolvable
 
+</details>
+
 # Also Consider
 - **[keywords -](./Keywords)** - Words or phrases describing the resource to be indexed and searched by web crawlers
 - **[Topic Category -](./TopicCategory)** is the preferred element to be used to provide linkage to the metadata record.
 
 
 # Examples
+
+<details>
 
 ## XML -
 
@@ -103,3 +109,5 @@ May map to `Key Identifier` if `metadataIdentifier` is unresolvable
 Recommended elements highlighted in Yellow
 
 ![metadataScope](../images/MD_Scope.png)
+
+</details>
