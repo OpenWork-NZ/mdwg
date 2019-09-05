@@ -13,14 +13,14 @@ title: MD_Identification
 - **Metadata Type -** *structural*
 - *ICSM Level of Agreement* - ⭑
 
-# Definition 
+# Definition
 
 **basic information required to uniquely identify a resource or resources.**
 
 ## ISO Requirements
 At least one [1..\*] [MD_Identification](http://wiki.esipfed.org/index.php/MD_Identification)  must be present in a metadata record. This must be instantiated as a `MD_DataIdentification` or `SV_ServiceIdentification` instance.
 
-## ISO Associations 
+## ISO Associations
 **[MD_Identification](http://wiki.esipfed.org/index.php/MD_Identification)** is an abstract class that can be instantiated as either
 - MD_DataIdentification
 - SV_ServiceIdentification
@@ -53,7 +53,7 @@ It is a child of
 - **dataQualityInfo -** *(class - DQ_DataQuality (from ISO19157))* [0..\*]
 
 ## Atributes and packages
-### MDWG Recommended  
+### MDWG Recommended
 Click on the attribute name for guidance.
 - **[abstract -](./Abstract)** *(type - charStr)* [1..\*] 
 - **[purpose -](./Purpose)** *(type - charStr))* [0..1] 

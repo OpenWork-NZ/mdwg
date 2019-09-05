@@ -6,7 +6,7 @@ rank: 20
 title: Data Identification
 ---
 
-#  Class - MD_DataIdentification 
+#  Class - MD_DataIdentification
 *When capturing information on a spatial resource, it is important to identify and categorise information as pertaining to the data resource and to distinguish these information from that which applies to the metadata itself or service resources. MD_DataIdentification extends the abstract class MD_Identification to document a spatial data resource.*
 
 - **Governance** -  *ISO*
@@ -26,7 +26,7 @@ It is a child of
 ## Atributes and packages
 the following provides additional gauidance to [MD_Identification](./class-MD_Identification).
 
-### MDWG Recomended - 
+### MDWG Recomended -
 In addition to all the attributes of [MD_Identification](./class-MD_Identification), the additional recommended elements apply - 
 - **[Locale -](./ResourceLocale)** *(class - [PT_Locale](./PT_Locale))* [0..1] 
 - **[Extents -](./ResourceExtent)** *(class - [EX_Extent](http://wiki.esipfed.org/index.php/EX_Extent))* [0..\*]  High-level thematic classifications to assist in the grouping and searching of data. Required when the hierarchyLevelName scopeCode is 'dataset'.
@@ -39,7 +39,7 @@ In addition to all the attributes of [MD_Identification](./class-MD_Identificati
 # Discussion
 Identification information about a resource is of high importance to document as this information strongly impacts on the ability of a user to asses the resource fitness to use. MD_DataIdentification instantiates the abstract class [MD_Identification](./class-MD_Identification)  for use with data resources.
 
-# Recommendations 
+# Recommendations
 # Related Classes
 - **[MD_Identification](./class-MD_Identification)** the abstract parent class to `MD_DataIdentification`
 - See guidances for the composite elements.

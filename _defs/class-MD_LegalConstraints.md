@@ -13,16 +13,16 @@ When constraint ([MD_Constraints](./class-md_constraints)) are of a legal nature
 - **Metadata type -** *structural*
 - *ICSM Level of Agreement* - ⭑⭑
 
-# Definition 
+# Definition
 **restrictions and legal prerequisites for accessing and using the resource or metadata.**
 
-## ISO Associations  
+## ISO Associations
 The class, *MD_LegalConstraints* is an specialisation of *[MD_Constraints](./class-md_constraints)*. Follow the guidance provided for that class plus the following additional guidance.
 
-### ISO Constraints 
+### ISO Constraints
 When `MD_LegalConstraints` is used the at least one of the elements  `accessConstraints`, `useConstraints`, `useLimitation`,  `releasability` and `otherConstraints` must be present.  When using `otherConstraints`, either `accessConstraints` or `useConstrants` must equal `otherRestrictions`.
 
-### Attributes  
+### Attributes
 Has all the attributes of [MD_Constraints](./class-md_constraints) plus the following:
 - **accessConstraints -** *(codelist - [MD_RestrictionCode](./class-md_constraints#MD_RestrictionCode---codelist))* [0..\*] access constraints applied to assure the protection of privacy or intellectual property, and any special restrictions or limitations on obtaining the resource or metadata
 - **useConstraints -** *(codelist - [MD_RestrictionCode](./class-md_constraints#MD_RestrictionCode---codelist))* [0..\*] constraints applied to assure the protection of privacy or intellectual property, and any special restrictions or limitations or warnings on using the resource or metadata
@@ -45,7 +45,7 @@ There is a need to gain greater consensus as to the general use of MD_LegalConst
 > Distribution Constraints
 Currently there are no clear methods to apply different legal constraints to different distributions. This may be an ISO issue to address. We should develop use cases.
 
-# Recommendations 
+# Recommendations
 Therefore - It is important to capture all legal constraints that apply to a resource. This should include licences, end user agreements, etc. If the resource is public domain, this should be cited appropriately. Many juristrictions encourage the use of open data and Creative Commons license. This should be encouraged through the use of copyright licenses such as CC0 or CC By. Provide the user links to additional information about such constraints, there use and meaning. In addition, document the holder of such rights and how to contact for more information.
 
 ## Crosswalk considerations
