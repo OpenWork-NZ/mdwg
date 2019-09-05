@@ -13,9 +13,9 @@ title: Guidance Introduction
 
 This guide is intended to provide a resource for those wishing to implement the AS/NZS ISO 19115.1:2015 metadata standard (including the 2018 Amendment No.1) in the Australia and New Zealand region. While this has been the officially endorsed metadata standard for Australia and New Zealand since 2015, consistency of implementation and the slow development of tools to support this standard have been problems. The development of this document has been undertaken to alleviate these issues and to provide a basis for further work.
 
-This guide is meant to be a living document. At times it does not always provide strong guidance on the use of an element as MDWG discussion about the element usage has need to continue and mature. This document is meant to evolve as use and understanding of the standard matures. It is meant to be an online active resource that can be referenced and grow as needed. 
+This guide is meant to be a living document. At times it does not always provide strong guidance on the use of an element as MDWG discussion about the element usage has need to continue and mature. This document is meant to evolve as use and understanding of the standard matures. It is meant to be an online active resource that can be referenced and grow as needed.
 
-As we are human, absolute agreement about the use of the metadata and elements is not achievable.  But we can narrow the difference in understanding through the use of definitions and guidance. 
+As we are human, absolute agreement about the use of the metadata and elements is not achievable.  But we can narrow the difference in understanding through the use of definitions and guidance.
 
 ## Approach
 
@@ -23,7 +23,7 @@ Building on previous work by the Metadata Working Group of the ICSM (MDWG), elem
 
 ## Elements as Patterns
 
-A design pattern is a general, reusable solution to a commonly occurring problem within a given context. In our case, these are the elements of ISO19115-1 metadata records. 
+A design pattern is a general, reusable solution to a commonly occurring problem within a given context. In our case, these are the elements of ISO19115-1 metadata records.
 
 ### Meaningful Name
 
@@ -63,7 +63,9 @@ Finally, we come to the recommendations. These are statements capture the what, 
 
 #### Crosswalks
 
-Included in the Recommendation section are crosswalk concerns when translating metadata between four different standards: ISO19139, Dublin core/CKAN/data.govt.nz, DCAT, and RIF-CS. 
+<details>
+
+Included in the Recommendation section are crosswalk concerns when translating metadata between four different standards: ISO19139, Dublin core/CKAN/data.govt.nz, DCAT, and RIF-CS.
 
 ISO19139 is the previous standard that ISO19115-3 replaced. It is also the parent to widely used metadata profiles such as ANZLIC and MCP. Many geospatial practitioners currently have metadata in this standard and need to know how to migrate.
 
@@ -73,13 +75,19 @@ DCAT is a newer metadata standard developed by the W3C and based on linked data 
 
 RIF-CS stands for Registry Interchange Format - Collections and Services. It is an XML vocabulary for representing metadata about data collections and related entities based on ISO 2146. Similar to how MARC standards are used by library systems to describe books, RIF-CS is used to describe data collections. For example, a RIF-CS record can describe a spreadsheet containing experimental results: it might contain the title, description, creator, keywords, date the experiment was conducted and a URL to obtain the actual spreadsheet. RIF-CS is the format required by Research Data Australia.
 
+</details>
+
 ### Related Links
 
 Related links are captured in a section titled “Also Consider”. This section contains references to additional useful information. Usually, these are other elements, packages and classes in this good practice document. But these may also be links to other external related resources.
 
 ### Examples
 
+<details>
+
 Each entry closes with an example section.  It is hoped that contents here grow over time as more exemplars are contributed. When available, contributing organisations are cited and the example is given.  Almost all entries include a reference example in XML.  This section and the document closes with a UML diagram captured from the official ISO TC211 conceptual model repository at https://www.isotc211.org/hmmg/HTML/ConceptualModels/.
+
+</details>
 
 ## How To Use This Document
 
