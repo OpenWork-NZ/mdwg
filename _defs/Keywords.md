@@ -90,8 +90,6 @@ The new `keywordClass` package should be explored to allow the greater use of se
 
 
 ## Crosswalk considerations
-<details>
-  <summary>Click to expand!</summary>
 
 ### ISO19139
 MD_KeywordClass was added to allow further categorisation of keywords
@@ -101,7 +99,6 @@ Mapping not yet discussed.
 
 ### DCAT
 ISO 19115 can groups keywords according to type (theme, place, temporal, discipline and stratum), or according to thesaurus; this information is lost in DCAT. DCAT keywords are mapped to ISO 19115 keywords without type or thesaurus.
-</details>
 
 # Also Consider
 There are several elements outside the keywords class that are in effect keywords. These include:
