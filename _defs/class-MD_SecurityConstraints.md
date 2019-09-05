@@ -13,13 +13,13 @@ When constraints information *([MD_Constraints](./class-md_constraints))* concer
 - **Metadata type -** *structural*
 - *ICSM Level of Agreement* - ⭑⭑
 
-# Definition 
+# Definition
 **Handling restrictions imposed on the resource or metadata for national security or similar security concerns.**
 
-## ISO Associations  
+## ISO Associations
 The class, *MD_SecurityConstraints* is an specialisation of [MD_Constraints](./class-md_constraints). Follow the guidance provided for that class plus the following additional guidance.
 
-## Attributes - 
+## Attributes -
 *MD_SecurityConstraints* has all the attributes of [MD_Constraints](./class-md_constraints) plus the following:
 - **classification -** *(codelist - [MD_RestrictionCode](./class-md_constraints#MD_RestrictionCode---codelist))* [0..\*] Mandatory when using `MD_SecurityConstraints` - the name of the handling restrictions on the resource or metadata
 - **userNote -** *(type - charStr)* [0..1] explanation of the application of the legal constraints or other restrictions and legal prerequisites for obtaining and using the resource or metadata
@@ -54,7 +54,7 @@ There is a need to gain greater consensus as to the general use of MD_SecurityCo
 > Australia Protective Security Policy Framework
 A best practice method of using the new Australia Protective Security Policy Framework in ISO 19115-1 must be created by the MDWG. While `classificationSystem` allows use to declare the security framework we are using, it does not do so as a citation whick limits our ability to document our reference properly. Also, how to include the values in the framework is not clear.  Extending `MD_RestrictionCode` seems the most obvious, but is changing an ISO codelist the best approach given we want our recommendations not to change the underlying ISO 19115-1.
 
-# Recommendations 
+# Recommendations
 Therefore - It is important to capture all security constraints that apply to a resource, including its metadata. If there be none then it may be useful to state this fact through the use of the `unclassified` value of `MD_RestrictionCode`, particularly if your organisation does regularly handle sensitive resources. Agencies should develop consistent guidance on the use of security classifications and share clear understanding of their meaning with users.
 
 At a minimum the Name (primary and alternate) and version by which this security restriction on the access and use of this cited resource is known should be captured along with the classification value selected from the codelist - MD_ClassificationCode.
