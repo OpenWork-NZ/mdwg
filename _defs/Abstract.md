@@ -64,11 +64,11 @@ Maps to `dct.description`
 ### RIF-CS
 Maps to `Description 'full'`
 
+</details>
+
 # Also Consider
 - **[Purpose -](./Purpose.md)** provides A brief summary of the intentions with which the resource was developed. Some overlap of usage with `abstract` may exist. The MDWG should provide some guidance as to what belongs in `abstract` and what belongs in `purpose`
 - **MD_DataIdentification.supplimentalInformation -** provides a description of the resource in the producer's processing environment, including items such as the software, the computer operating system, file name, and the dataset size.
-
-</details>
 
 <detials><summary>Examples</summary>
 
