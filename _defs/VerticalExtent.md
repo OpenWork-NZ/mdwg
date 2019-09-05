@@ -12,7 +12,7 @@ title: Vertical Extent
 - **Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.extent >EX_Extent.verticalElement*
 - **Governance** - *Common ICSM, Domain*
 - **Purpose** - *Discovery*
-- **Audience -** 
+- **Audience -**
   - machine resource - ⭑⭑⭑⭑
   - general - ⭑⭑⭑⭑
   - data manager - ⭑⭑
@@ -20,22 +20,22 @@ title: Vertical Extent
 - **Metadata type -** *descriptive*
 - *ICSM Level of Agreement* - ⭑⭑⭑
 
-# Definition 
+# Definition
 **Provides vertical component of the extent of the referring object.**
 
-## ISO Obligation 
+## ISO Obligation
 - There can be zero to many [0..\*] *verticalElements* packages for the cited resource in the *[Resource Extent](./ResourceExtent)* package of class *[EX_VerticalExtent](http://wiki.esipfed.org/index.php/EX_VerticalExtent)* for a resource cited in a metadata record. 
 
-## ICSM Good Practice  
+## ICSM Good Practice
 - The MDWG recommends, when the heights and depths of a resource are important to the resource, populating as many instances of Vertical Extent packages as need to give a common understanding of the depth and elevation coverage of the cited resource.
 
-### Recommended Sub-Elements  
+### Recommended Sub-Elements
 - **minimumValue -** *(type - Real)* The minimum vertical extent to which the resource is designed to be used
 - **maximumValue -** *(type - Real)* The maimum vertical extent to which the resource is designed to be used
 - **verticalCRSId -** *(class - [SC_VerticalCRS](http://wiki.esipfed.org/index.php/VerticalCRS)
 )* Identifies the vertical coordinate reference system used for the minimum and maximum values
 
-# Discussion  
+# Discussion
 Every metadata record describing resources which contain height or depth information, should describe the limits of that extent. These extents descriptions should include units of measure and other information yso that those searching for resources can be provided a quick idea of the vertical range of the resource. 
 
 The use of multiple vertical extents is useful for describing more complicated resources.
@@ -51,19 +51,23 @@ These are not specified.  I would suggest that we use metres realtive to sea lev
 > **Datum Issues**
 What is "zero" is an open question. There may be little common between domains. In 3D cadaster the level above ground may be the measure. There also is no agreement between land vertical datums and those for sea.
 
-# Recommendations 
+# Recommendations
 Therefore - It is strongly recommended that to support discovery of resources, every metadata record contains, as needed vertical extent description of the resource area of interest.  Cpature the units of measure and the datum used.
 
-## Crosswalk considerations 
+## Crosswalk considerations
+
+<details>
 
 ### Dublin core / CKAN / data.govt.nz {if any}
 Mapping to CKAN and Dublin core elements, particularly as used by data.gov.au needs discussion
 
-### DCAT 
+### DCAT
 Maps to `dct.spatial`
 
 ### RIF-CS
 Maps to `Coverage/Spatial`
+
+</details>
 
 # Also Consider
 - **[EX_Extent](./ResourceExtent)** The class that contains all extent information about the cited resource - vertical, geographical or temporal.
@@ -75,7 +79,9 @@ Maps to `Coverage/Spatial`
 
 # Examples
 
-## XML 
+<details>
+
+## XML
 ```
 <mdb:MD_Metadata>
 ....
@@ -127,3 +133,5 @@ Maps to `Coverage/Spatial`
 ## UML diagrams
 Recommended elements highlighted in Yellow
 ![ExVertical](../images/EX_Vertical.png)
+
+</details>
