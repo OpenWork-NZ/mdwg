@@ -6,7 +6,7 @@ rank: 50
 title: CI_Citation
 ---
 
-# class - CI_Citation 
+# class - CI_Citation
 
 In order to provide a standardised way of capturing information related to the various citations described in a metadata record, a shema, by way of the CI_Citation is provided. The provision of a consitant way of structuring this information make it easier to capture and understand.
 
@@ -14,7 +14,7 @@ In order to provide a standardised way of capturing information related to the v
 - **Metadata Type -** *structural*
 - *ICSM Level of Agreement* - ⭑⭑
 
-# Definition 
+# Definition
 
 **A standardized resource reference framework.**
 
@@ -49,7 +49,7 @@ In order to provide a standardised way of capturing information related to the v
 - MD_Identifier.authority
 - 
 
-### Recomended Attributes - 
+### Recomended Attributes -
 - **title -** *(type - charStr)*[1..1] Mandatory - name by which the cited resource is known
 - **alternateTitle -** *(type - charStr)* [0..\*] short name or other language name by which the cited information is known. Example: DCW as an alternative title for Digital Chart of the World. Recommended whenever there are alternate names commonly in use.
 - **date -** *(class - [CI_Date](./class-CI_Date))*  [0..\*]  reference date for the cited resource
