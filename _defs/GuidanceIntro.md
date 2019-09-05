@@ -19,7 +19,7 @@ As we are human, absolute agreement about the use of the metadata and elements i
 
 ## Background
 
-On the 13th June 2018, the Australian and New Zealand, Location Information Metadata Working Group (ANZ MDWG) was re-established by request of the ANZLIC – the Spatial Information Council (ANZLIC) and the Intergovernmental Committee on Surveying and Mapping (ICSM).
+On the 13th June 2018, the Australian and New Zealand, Location Information Metadata Working Group (ANZ MDWG) was re-established by request of the [ANZLIC](https://www.anzlic.gov.au/) – the Spatial Information Council (ANZLIC) and the Intergovernmental Committee on Surveying and Mapping ([ICSM](https://www.icsm.gov.au/)).
 
 The working group will support a wider understanding and consistent application of location information metadata, based on agreed standards.
 
