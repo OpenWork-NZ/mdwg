@@ -10,26 +10,26 @@ title: Metadata Security Constraints
 
 - **Path** - MD_Metadata.metadataConstraints>MD_SecurityConstraints*
 - **Governance** - *National, Agency*
-- **Purpose -** *Resource use* 
-- **Audience -** 
-  - machine resource - ⭑ 
+- **Purpose -** *Resource use*
+- **Audience -**
+  - machine resource - ⭑
   - general - ⭑⭑⭑⭑⭑
   - data manager - ⭑⭑⭑⭑
   - specialist - ⭑⭑
 - **Metadata type -** *adminsitrative*
 - *ICSM Level of Agreement* - ⭑⭑⭑
 
-# Definition 
+# Definition
 
 **Handling restrictions imposed on this metadata record for national security or similar concerns e.g. commercial sensitivity, privacy considerations.**
 
-## ISO Obligation 
+## ISO Obligation
 - There may be zero  to many [0..\*] *metadataConstraints* entries for the cited resource in the  *[MD_Metadata](./class-MD_Metadata)* package of class *[MD_SecurityConstraints](./class-MD_SecurityConstraints)* applied to a  a metadata record,
 
-## ICSM Good Practice  
+## ICSM Good Practice
 - The MDWG recommends populating this element `metadataConstraints`  with security constraint information to sufficient level to determine the security structures and  restrictions on a metadata record.
 
-### Recommended Sub-Elements   
+### Recommended Sub-Elements
 Follow the general guidance for [MD_SecurityConstraints](./class-MD_SecurityConstraints).
 
 # Discussion
@@ -45,12 +45,12 @@ A strong use case need be cited for putting security restraints on metadata to i
 > **Other security frameworks support**
 There will be cases where other security frameworks and classification systems need be cited, such as for New Zealand Defence. Instructions for how to include these are needed.  Should such guidance be perscriptive or general?
 
-# Recommendations 
+# Recommendations
 Therefore - when needed, it is important to capture any security constraints that apply to a metadata resord. Provide the user links to additional information about such constraints, their use and meaning. Include the Name (primary and alternate) and version by which this security restriction on the access and use of this metadata record is known. For example when using the Australian [Protective Security Policy Framework](https://www.protectivesecurity.gov.au/Pages/default.aspx), provide access to materials from this linked website to explain this framework.  (https://www.protectivesecurity.gov.au/Pages/default.aspx). In addition, document the holder of such rights and how to contact for more information. If your agency has requirements for stating that the metadata has no security constraints, do so in this element.
 
 ## Crosswalk considerations
 
-### RIF-CS 
+### RIF-CS
 Agregated into `Description 'notes'`
 
 # Also Consider
@@ -60,6 +60,7 @@ Agregated into `Description 'notes'`
 
 # Examples
 
+<details>
 
 ## XML - Geoscience Australia
 Includes reference to the constraint document - Australia Protective Security Policy Framework
@@ -104,3 +105,5 @@ Includes reference to the constraint document - Australia Protective Security Po
 Recommended elements highlighted in Yellow
 
 ![MetdataSecurityConstraints](../images/MD_SecurityConstraints.png)
+
+</details>
