@@ -22,6 +22,18 @@
     aside h2 {font-size: 1em}
     aside h3 {font-size: 1em; font-weight: normal}
     header {text-align: center; border-bottom: thin solid gray}
+    
+    /* style as draft */
+    main::after {
+      font: 500px sans-serif;
+      color: #9999;
+      position: fixed;
+      left: 500px;
+      top: 500px;
+      content: "Draft";
+      border: thick solid #9999;
+      transform: rotate(45deg);
+    }
   </style>
 </head>
 <body>
