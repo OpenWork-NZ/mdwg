@@ -5,11 +5,15 @@
 <head>
   <title>{{ page.title|xml_escape }}</title>
   <style>
-    body {font: medium sans-serif}
+    body {
+        font: medium sans-serif;
+        background: url({{ "images/IMG_1251.JPG"|relative_url }}) top center no-repeat;
+    }
     main {
       max-width: 750px;
       margin: 10px auto;
     }
+    aside, main {padding-top: 500px}
     aside {
       float: left;
       width: 200px;
