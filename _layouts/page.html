@@ -7,14 +7,14 @@
   <style>
     body {
         font: medium sans-serif;
-        background: url({{ "images/IMG_1251.JPG"|relative_url }}) top center no-repeat;
+        background: url({{ "images/IMG_1251.JPG"|relative_url }}) top center contain no-repeat;
     }
     main {
       max-width: 750px;
       margin: 10px auto;
       position: relative; /* For positioning the watermark */
     }
-    aside, main {padding-top: 500px}
+    aside, main {padding-top: 200px}
     aside {
       float: left;
       width: 200px;
@@ -27,7 +27,7 @@
     aside h2 {font-size: 1em}
     aside h3 {font-size: 1em; font-weight: normal}
     header {text-align: center; border-bottom: thin solid gray}
-    
+
     /* style as draft */
     main::after {
       font: 100px sans-serif;
