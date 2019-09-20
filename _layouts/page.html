@@ -12,6 +12,7 @@
     main {
       max-width: 750px;
       margin: 10px auto;
+      position: relative; /* For positioning the watermark */
     }
     aside, main {padding-top: 500px}
     aside {
@@ -22,14 +23,28 @@
       padding: 0;
       margin: 15px;
     }
+    aside ul:nth-of-type(2n) {list-style-type: square}
     aside h2 {font-size: 1em}
     aside h3 {font-size: 1em; font-weight: normal}
     header {text-align: center; border-bottom: thin solid gray}
+    
+    /* style as draft */
+    main::after {
+      font: 100px sans-serif;
+      color: #bbbb;
+      position: absolute;
+      left: 100px;
+      top: 100px;
+      content: "Draft";
+      border: thick solid #9999;
+      transform: rotate(45deg);
+      z-index: -999;
+    }
   </style>
 </head>
 <body>
   <header>
-  <h1><a href="https://openwork-nz.github.io/mdwg/defs/TableOfContents">ICSM Metadata Good Practices</a></h1>
+  <h1><a href="/mdwg/">ICSM Metadata Good Practices</a></h1>
   </header>
 
   <aside>
