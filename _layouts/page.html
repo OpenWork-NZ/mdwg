@@ -7,14 +7,15 @@
   <style>
     body {
         font: medium sans-serif;
-        background: url({{ "images/IMG_1251.JPG"|relative_url }}) top center / contain no-repeat;
+        background: linear-gradient(to bottom, #fff0, #ffff, #ffff),
+            url({{ "images/IMG_1251.JPG"|relative_url }}) top center / contain no-repeat;
     }
     main {
       max-width: 750px;
       margin: 10px auto;
       position: relative; /* For positioning the watermark */
     }
-    aside, main {padding-top: 200px}
+    aside, main {margin-top: 300px}
     aside {
       float: left;
       width: 200px;
