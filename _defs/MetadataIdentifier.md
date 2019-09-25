@@ -20,29 +20,29 @@ title: Metadata Identifier
 - **Metadata type -** *administrative*
 - *ICSM Level of Agreement* - ⭑⭑⭑⭑
 
-# Definition
+## Definition
 **The persistent unique alphanumeric identifier for the metadata record that describes a resource.**
 
-## ISO Obligation
+### ISO Obligation
 - There should be zero or one [0..1] metadataIdentifier for the cited resource in the  *[MD_Metadata](./class-MD_Metadata)* package of class *[MD_Identifier](./class-MD_Identifier)*.
 
-## ICSM Good Practice
+### ICSM Good Practice
   - This element should be populated in all metadata records
 
-### Recommended Sub-Elements
+#### Recommended Sub-Elements
 From class *[MD_Identifier](./class-MD_Identifier)* 
 - **code -** (*type - charStr*) [1..1] a UUID, mandatory when identifier is provided
 - **codespace -** *(type - charStr)* [0..1] ideally a  URL  path by which, when combined with the uuid, the full metadata can be retrieved.
 - **authority -** *(class - [CI_Citation](./class-CI_Citation))* [0..1] optional, the provider of the UUID
 
-# Discussion
+## Discussion
 Every metadata record needs a unique identifier so as to provide certain of the identity of the record and to provide a primary key for linkages. This element should hold UUID, preferably in the form of a resolvable URI. This provides the machine readable (and human) ability to determine if this is the same or different to other metadata records. It is useful in machine to machine activities such as metadata harvesting. It is also at times useful to data managers and others to determine if a record is the same as another.
 
 This identifier must never change, irrespective of where that metadata record is stored. This allows linkages to a metadata record to persist.
 
 Equivalent of this field was recommended as mandatory in the previous ANZLIC Standard. Common practice is to record a UUID in this field.
 
-## Outstanding Issues
+### Outstanding Issues
 
 > **CORE ISSUE:**
 In ISO the identifier for the Metadata can differ from that of the data. This is not necessarily the case in other metadata standards such as Dublin Core or DCAT.
@@ -56,7 +56,7 @@ In practice metadataLinkage (Link) often contains the online linkage (to the poi
 > **Geonetwork usage**
  By default GeoNetwork calculates a unique value for the subelement *code* and populates the *codespace* element with “urn::uuid”. These fields are not editable once generated.
 
-### Other discussion
+#### Other discussion
 
 > **DCAT Notes**
 See long discussion at https://github.com/w3c/dxwg/issues/53 on how to represent the identifier scheme and authority; currently unresolved
@@ -65,43 +65,43 @@ See long discussion at https://github.com/w3c/dxwg/issues/53 on how to represent
 The fileIdentifier for a metadata record must never change, irrespective of where that metadata record is stored. Should be system generated. In CKANs case the UUID is common to dataset and metadata record, and takes the UUID with it across new systems.
 Automatically generated unique ID. Decided against DOI as unique ID already generated in CKAN. DOI records created in ANDS can be leveraged for those who want them given data.gov.au metadata to be harvested by ANDS.
 
-# Recommendations
+## Recommendations
 
 Therefore - It is Highly Recommended that every metadata record should have one and only one metadata identifier (MD_Metadata > mdb:metadataIdentifier > MD_Identifier). The child element `<mcc:code>` should contain the persistent uuid for the metadata record. While the child element `<mcc:codespace>` should contain the reference URL path by which, when combined with the uuid, this metadata record can be retrieved. It is beneficial to populate other sibling elements as needed such as `<mcc:authority>` to indicated the authority that minted the uuid.
 
-## Crosswalk considerations
+### Crosswalk considerations
 
 <details>
 
-### ISO19139
+#### ISO19139
 In iso19115-1 Data type `CI_ResponsibleParty` (iso19115:2004) changed to type `CI_Responsibility` such as in `MD_Metadata.contact`, `MD_DataIdentification.pointOfContact`, or `CI_Citation.citedResponsibleParty`
 
-### Dublin core / CKAN / data.govt.nz
+#### Dublin core / CKAN / data.govt.nz
 Maps to `metadata URI`
 
-### DCAT
+#### DCAT
 Maps to `dct:identifier`
 
-### RIF-CS
+#### RIF-CS
 Maps to `Key Identifier`
 
 </details>
 
-# Also Consider
+## Also Consider
 - **[Resource Identifier](./ResourceIdentifier) -** provides unique identifier to the resource. This may be the same as the metadata identifier when the metadata resource in a catalogue serves as the landing page for a resource.
 - **[Metadata Linkage](./MetadataLinkage)** - is most often used to provide a point of truth linkage to the metadata record.
 - **[CI_Citation](./class-CI_Citation) (Authority) -** Information authority responsible for minting the UUID, be it the software package or other mechanism, may be captured in the Authority subelement using the CI_Citation package general guidance.
 - **[MD_Identifier](./class-MD_Identifier)** General Guidance for the package used to hold the metadata identifier information. This package can be used to provide identity to a large number of other metadata elements.
 
-# Examples
+## Examples
 
 <details>
 
-## Other
-### data.govt.au
+### Other
+#### data.govt.au
 http://data.gov.au/dataset/559708e5-480e-4f94-8429-c49571e82761
 
-## XML
+### XML
 
 ```
 <mdb:MD_Metadata>
@@ -120,7 +120,7 @@ http://data.gov.au/dataset/559708e5-480e-4f94-8429-c49571e82761
 </mdb:MD_Metadata>
 ```
 
-## UML diagrams
+### UML diagrams
 
 Recommended elements highlighted in Yellow
 

@@ -5,7 +5,6 @@ section: Metadata Info
 rank: 10
 title: Metadata Info
 ---
-
 # class - MD_Metadata
 
 *In order to create consistent structured metadata, we need a schema to provide a structure and a class to hold it.  MD_Metadata provides this for ISO19115-1.*
@@ -14,12 +13,12 @@ title: Metadata Info
 - **Metadata Type -** *structural*
 - *ICSM Level of Agreement* - ⭑⭑
 
-# Definition
+## Definition
 
 **Root entity which defines metadata about a resource or resources**
 
-## Child packages
-### MDWG recommended
+### Child packages
+#### MDWG recommended
 - **[resourceLineage -](./ResourceLineage)** *(class - Li_Lineage)* [0..\*]
 - **[referenceSystemInfo -](https://www.loomio.org/d/4SliNjWE/md_metadata-md_referencesystem-definition)** *(class - MD_ReferenceSystem)*
 - **metadataConstraints -** *( abstract class [MD_Constraints](./class-md_constraints))* [0..\*] see
@@ -31,7 +30,7 @@ title: Metadata Info
   - **Service Identification -** *(class SV_ServiceIdentification)* > To Be Completed
 - **[distributionInfo -](./DistributionInfo)** *(class - MD_Distribution)* [0..\*]
   
-### Other packages - not yet addressed by MDWG
+#### Other packages - not yet addressed by MDWG
 - **metadataMaintenance -** *(class MD_MaintenanceInformation)* [0..1]
 - **spatialRepresentationInfo -** *(abstract class - MD_SpatialRepresentation)* [0..\*]
 - **metadataExtensionInfo -** *(class - MD_MetadataExtensionInformation)* [0..\*]
@@ -40,8 +39,8 @@ title: Metadata Info
 - **contentInfo -** *(abstract class - MD_ContentInformation)* [0..\*]
 - **dataQualityInfo -** *(class - DQ_DataQuality (from ISO19157))* [0..\*]
 
-## Atributes
-### MDWG Recomended Attributes -
+### Atributes
+#### MDWG Recomended Attributes -
 - **[metadataIdentifier -](./MetadataIdentifier)** (*class - [MD_Identifier](./class-MD_Identifier)*) [0..1]
 - **[dateInfo -](./MetadataDate)** *(class - [CI_Date](./class-CI_Date))* [1..\*] 
 - **[contact -](./MetadataContact)** *(class - [CI_Responsibility](./class-CI_Responsibility))* [0..1] 
@@ -52,24 +51,24 @@ title: Metadata Info
 - **metadataStandard -**  *(class - [CI_Citation](./class-CI_Citation))* [0..\*] AS/NZS ISO 19115-3  > recommnded but not yet detailed by MDWG
 - **metadataProfile -**  *(class - [CI_Citation](./class-CI_Citation))* [0..\*] >  recommnded butnot yet detailed by MDWG
 
-### Other attributes - not yet addressed by MDWG
+#### Other attributes - not yet addressed by MDWG
 - **otherLocale -** *(class - [PT_Locale](./PT_Locale))*[0..\*]
 - **alternativeMetadataReference -** *(class - [CI_Citation](./class-CI_Citation)* [0..\*]
   
 
-# Discussion
+## Discussion
 
 The MD_Metadata package defines the schema for describing the complete metadata about a resource and metadata about the metadata itself. It is composed through an aggregate of 12 additional metadata classes as shown above. The MD_Metadata class also contains attributes providing information about the metadata. Those recommnded attributes are covered in other sections as cited above
 
 
 
-# Recommendations 
+## Recommendations 
 
 Therefore - It is recommended that all spatial metadata utilise the structure provided by the ISO19115-1 MD_Metadata class and follow the guidance provided.
 
 
 
-## UML diagrams
+### UML diagrams
 
 Recommended elements highlighted in Yellow
 

@@ -5,7 +5,6 @@ section: class
 rank: 50
 title: CI_Date
 ---
-
 #  class - CI_Date
 To support and maintain the recording of temporal elements in the metadata it is important to provide consistency of use. The class CI_Date provides this for all temporal elements in a ISO 19115-1 metadata record.
 
@@ -13,17 +12,17 @@ To support and maintain the recording of temporal elements in the metadata it is
 - **Metadata type -** *administrative*
 - *ICSM Level of Agreement* - ⭑⭑⭑
 
-# Definition
+## Definition
 
 **A reference date and event used to describe it**
 
-## ISO Associations -
+### ISO Associations -
 - MD_Metadata.dateInfo
 - CI_Citation.date
 - MD_MaintenanceInformation.maintenanceDate
 - PT_LocaleContainer.date
 
-### ICSM Recommended Sub-Elements
+#### ICSM Recommended Sub-Elements
 For class CI_OnlineResource 
 - **date -** *(type - DateTime)* [1..1] Madatory for CI_OnlineResource instances. Must be in ISO 8601 format
 - **dateType -** *(codelist - [CI_DateTypeCode](https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_DateTypeCode))* [1..1] Madatory for CI_OnlineResource instances. Event used for reference date. Options include:
@@ -44,12 +43,12 @@ For class CI_OnlineResource
   - released - the date that the resource shall be released for public access
   - distribution - date identifies when an instance of the resource was distributed
 
-# Recommendations
+## Recommendations
 
 Therefore - in order to provide the consistancy needed to avoid confusion for both machines and humans, it is recommended that all dates included in a metadata record implement the class CI_Date and follow the guidance provided by ISO and ICSM.
 
 
-## UML diagrams
+### UML diagrams
 
 Recommended elements highlighted in Yellow
 

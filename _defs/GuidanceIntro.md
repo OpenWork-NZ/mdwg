@@ -4,12 +4,11 @@ type: page
 section: Guidance
 title: Introduction
 ---
-
 # ICSM ISO19115-1 Metadata Good Practice Guide
 
 
 
-## Introduction
+### Introduction
 
 This guide is intended to provide a resource for those wishing to implement the AS/NZS ISO 19115.1:2015 metadata standard (including the 2018 Amendment No.1) in the Australia and New Zealand region. While this has been the officially endorsed metadata standard for Australia and New Zealand since 2015, consistency of implementation and the slow development of tools to support this standard have been problems. The development of this document has been undertaken to alleviate these issues and to provide a basis for further work.
 
@@ -17,7 +16,7 @@ This guide is meant to be a living document. At times it does not always provide
 
 As we are human, absolute agreement about the use of the metadata and elements is not achievable.  But we can narrow the difference in understanding through the use of definitions and guidance.
 
-## Background
+### Background
 
 On the 13th June 2018, the Australian and New Zealand, Location Information Metadata Working Group (ANZ MDWG) was re-established by request of the [ANZLIC](https://www.anzlic.gov.au/) – the Spatial Information Council (ANZLIC) and the Intergovernmental Committee on Surveying and Mapping ([ICSM](https://www.icsm.gov.au/)).
 

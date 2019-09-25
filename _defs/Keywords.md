@@ -19,16 +19,16 @@ title: Keywords
 - **Metadata type -** *descriptive*
 - *ICSM Level of Agreement* - ⭑⭑⭑
 
-# Definition -
+## Definition -
 **Words or phrases describing the resource to be indexed and searched.**
 
-## ISO Obligation
+### ISO Obligation
 - There can be zero or many [0..\*] descriptive keywords for the cited resource in the  *[MD_DataIdentification](./class-MD_DataIdentification)* package of class *[MD_Keywords](http://wiki.esipfed.org/index.php/MD_Keywords)* in a metadata record.
 
-## ICSM Good Practice
+### ICSM Good Practice
 - There should be multiple keywords selected from a referenced thesaurus present in a metadata record for a spatial resource.
 
-### Recommended Sub-Elements
+#### Recommended Sub-Elements
 From class *[MD_Keywords](http://wiki.esipfed.org/index.php/MD_Keywords)*
 * **keyword -** *(type - charStr) Mandatory, preferably chosen from a thesaurus
 * **type -** *(codelist - [MD_KeywordTypeCode](http://wiki.esipfed.org/index.php/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_KeywordTypeCode))* highly recommended - 15 options (substantial increase from iso19139)
@@ -54,7 +54,7 @@ From class *[MD_Keywords](http://wiki.esipfed.org/index.php/MD_Keywords)*
   - **ontology -** *(class - [CI_Citation](./class-CI_Citation))* [1..1] Mandatory for MD_KeywordClass. A reference that binds the keyword class to a formal conceptualisation of a knowledge domain for use in semantic processing. NOTE: Keywords in the associated MD_Keywords keyword list must be within the scope of this ontology
 
 
-# Discussion
+## Discussion
 Keywords are a foundational technology for organising and discovering resources. ISO19115-1 provides powerful tools to expand on these capabilities but these tools are most often very lightly used. The use of thesauri to normalise and standardise terms helps greatly. Ontologies and registries in which the definitions of these terms may be stored and linked help ensure consistent use and understanding. In Australia several agencies have developed and implemented thesauri and mandated their use. These include:
 * *"ABS Field of Research* - The Australian and New Zealand Standard Research Classification (ANZSRC), 2008 defined field or fields of research relevant to the dataset.
 * *ABARES Keywords* - (Need Definition)
@@ -63,11 +63,11 @@ Keywords are a foundational technology for organising and discovering resources.
 
 NOTE - When the resource described is a service, one instance of `MD_Keyword` should refer to the service taxonomy defined in ISO 19119.
 
-### Ontology support with keywordClass
+#### Ontology support with keywordClass
 A `keywordClass` role is an association of a `MD_Keywords` instance with a `MD_KeywordClass` used to provide user-defined categorisation of groups of keywords that extend or are orthogonal to the standardised `KeywordTypeCodes` and are associated with an ontology that allows additional semantic query processing.
 The thesaurus citation specifies a collection of instances from some ontology, but is not an ontology. It might be a list of places that include rivers, mountains, counties and cities. There might be a Laconte county, the city of Laconte, the Laconte River, and Mt. Laconte; when searching it is useful for the user to be able to restrict the search to only rivers. the addition of `keywordClass` provides support for this functionality.
 
-## Outstanding Issues
+### Outstanding Issues
 
 > **CORE ISSUE:**
 Current practice in most agencies in use of keywords is not good.  Thesauri are too often not used. Comma delimited list are common in some shops where others have separate entries. Good practice guidance development and training is needed and should be a special focus area.
@@ -78,7 +78,7 @@ What is important to capture beside the mandatory title element in the citation 
 > **Tech issue needs fix - GN Thesaurus builder**
 References the old KeywordTypeCode list
 
-# Recommendations
+## Recommendations
 
 Therefore - It is highly recommended that the metadata for spatial resources contains as many keywords as needed to provide ease of discovery and improved data management practices. Capture keywords for multiple audiences, general, domain or agency specific to aid the different users of the resource. However, excessive use of keywords that target minor aspects of a resource should be avoided. Consider providing a limit to the number of keywords used and focus on those of most importance.
 
@@ -89,32 +89,32 @@ In addition, while free text keywords are allowed, it is recommended that well m
 The new `keywordClass` package should be explored to allow the greater use of semantic principles in search and data management.
 
 
-## Crosswalk considerations
+### Crosswalk considerations
 
 <details>
 
-### ISO19139
+#### ISO19139
 MD_KeywordClass was added to allow further categorisation of keywords
 
-### Dublin core / CKAN / data.govt.nz
+#### Dublin core / CKAN / data.govt.nz
 Mapping not yet discussed.
 
-### DCAT
+#### DCAT
 ISO 19115 can groups keywords according to type (theme, place, temporal, discipline and stratum), or according to thesaurus; this information is lost in DCAT. DCAT keywords are mapped to ISO 19115 keywords without type or thesaurus.
 
 </details>
 
-# Also Consider
+## Also Consider
 There are several elements outside the keywords class that are in effect keywords. These include:
 - **[Topic Category](./TopicCategory)** - The main themes of the resource populated from a fixed domain of values mandated by ISO19115-1
 - **[Extent Geographic Description](./ExtentGeographicDescription)** - verbal description of place by names
 - **[Spatial Representation Type](./SpatialRepresentationType)** - holds a set of values from a domain that provides keyword values about the technical method used by the resource to spatially represent geographic information.
 
-# Examples
+## Examples
 
 <details>
 
-## XML -
+### XML -
 ```
 <mdb:MD_Metadata>
 ....
@@ -186,7 +186,7 @@ There are several elements outside the keywords class that are in effect keyword
 </mdb:MD_Metadata>
 ```
 
-## UML diagrams
+### UML diagrams
 Recommended elements highlighted in Yellow
 ![keywords](../images/KeywordsUML.png)
 

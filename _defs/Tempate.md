@@ -4,7 +4,6 @@ type: page
 section: Guidance
 title: Template
 ---
-
 # {Element or Package Title}  ★★★★★ {stars indicate level of ICSM importance / priority}
 *{A brief description about the problem this element addresses - why we need it. Where it sits in the metadata hierarchy.}*
 
@@ -19,17 +18,17 @@ title: Template
 - **Metadata type -** *{descriptive, sturctural, or administrative}*
 - *ICSM Level of Agreement* - ⭑⭑⭑ {5 star max. How close to consensus the MDWG is on the description of this item. Low number of stars usually indicates lack of process progress rather than disagreement.}
 
-# Definition  
+## Definition  
 **{In context definition}**
 
-## ISO Requirements
+### ISO Requirements
 
 {Verbal description with links of the cardinality (e.g. [1-*]) and obligation of the element and its class}
 
-## ICSM Good Practice 
+### ICSM Good Practice 
 {A brief statement of MDWG guidance on use of this element}
 
-### Recommended Sub-Elements 
+#### Recommended Sub-Elements 
 {MDWG recommended sub-elements and how to populate them. May be nested.}
 - **{sub-elementName} -** *(type - {name of type})* [{cardinality}] - {brief guidance statement} 
 - **{sub-elementName} -** *(codelist - {name of codelist})* [{cardinality}] - {brief guidance statement} 
@@ -38,7 +37,7 @@ title: Template
   - **{sub-elementName for above class} -** *(codelist - {name of codelist})* [{cardinality}] - {brief guidance statement} 
   - **{sub-elementName for above class} -** *(class - {name of class})* [{cardinality}] - {brief guidance statement} 
 
-# Discussion  
+## Discussion  
 {This section captures the thinking behind the use of this element. The following aspects in this order are considered:
 - Why this element is import?
 - What we need it for?
@@ -47,7 +46,7 @@ title: Template
 - When should the information be captured? 
 - Where is it important, with what resource?}
 
-## Outstanding Issues
+### Outstanding Issues
 {Unresolved issues of discussion are captured here in Markdown Notes format}
 
 > **CORE ISSUE:**  
@@ -57,7 +56,7 @@ title: Template
 {Issue discussion points and items which need resolution}
 
 
-### Other discussion 
+#### Other discussion 
 {from other sources of note - other standards and implementations. In Markdown Notes format. Such as:}
 > **{DCAT Notes}** -
 {Discussion of issue}
@@ -66,42 +65,42 @@ title: Template
 
 
 
-# Recommendations 
+## Recommendations 
 
 {Therefore - Statement about what, why, who, when and how MDWG recommend this element be used}
 
-## Crosswalk considerations 
+### Crosswalk considerations 
 
-### ISO19139 
+#### ISO19139 
 {Discussion of issues, if any, to guide migration from ISO19139}
 
-### Dublin core / CKAN / data.govt.nz {if any}
+#### Dublin core / CKAN / data.govt.nz {if any}
 {mapping to `DC element` and discussion}
 
-### DCAT 
+#### DCAT 
 {mapping to `DCAT element` and discussion, if any}
 
-### RIF-CS
+#### RIF-CS
 {mapping to `RIF-CS element` and discussion, if any}
 
-# Also Consider
+## Also Consider
 {Links to additional useful information. Usually other elements, packages and classes in this good pratice document. May also link to other external resources.}
 **[{element name} -]({https://path to element})**  {description of importance and utility with any links}
 **[{element name} -]({https://path to element})**  {description of importance and utility with any links}
 **[{class name} -]({https://path to class})**  {description of importance and utility with any links}
 
-# Examples
+## Examples
 
-## GA
+### GA
 {example - if any useful}
 
-## ABARES
+### ABARES
 {example - if any useful}
 
-## Others
+### Others
 {### who - example - if any useful}}
 
-## XML -
+### XML -
 
 ```
 <mdb:MD_Metadata>
@@ -111,7 +110,7 @@ title: Template
 </mdb:MD_Metadata>
 ```
 
-## UML diagrams
+### UML diagrams
 {Captured from official ISO documentation at https://www.isotc211.org/hmmg/HTML/ConceptualModels/index.htm?goto=1:12:2:4095}
 Recommended elements highlighted in Yellow
 ![{Name}](/%7Bhttp:/path.to.image/of/UML%7D)

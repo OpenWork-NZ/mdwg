@@ -19,20 +19,20 @@ title: Metadata Legal Constraints
 - **Metadata type -** *adminsitrative*
 - *ICSM Level of Agreement* - ⭑⭑⭑
 
-# Definition
+## Definition
 
 **Legal restrictions on the access and use of this metadata record e.g. copyright.**
 
-## ISO Obligation
+### ISO Obligation
 - There may be zero  to many [0..\*] *metadataConstraints* entries for the cited resource in the  *[MD_Metadata](./class-MD_Metadata)* package of class *[MD_LegalConstraints](./class-MD_LegalConstraints)* applied to a  a metadata record,
 
-## ICSM Good Practice
+### ICSM Good Practice
 - The MDWG recommends populating this element `metadataConstraints`  with legal constraint information to sufficient level to determine the legal rights, responsibilities and restrictions on a metadata record.
 
-### Recommended Sub-Elements
+#### Recommended Sub-Elements
 Follow the general guidance for [MD_LegalConstraints](./class-MD_LegalConstraints).
 
-# Discussion
+## Discussion
 Information about constraints on the access and use of a resource or its metadata is of high importance to document as this information strongly impacts on the usability of the resource to the user. Constraints may be security (*MD_SecurityConstraints*), legal (*MD_LegalConstraints*) or other (*MD_Constraints*).
 
 A restriction may be applicable to a particular aspect of the resource. In this case capture this scope in *constraintApplicationScope* using a value from *MD_Scope*
@@ -43,7 +43,7 @@ There is often general confusion over the restraints fields and to what they app
 
 For more discussion on the types of common legal restrictions see [Resource Legal Constraints](./ResourceLegalConstraints#copyright).
 
-## Outstanding Issues
+### Outstanding Issues
 > **Are legal restictions on metadata useful?**
 Some good legal advice on this would be very helpful!
 I  am having some difficulty understanding the value on capturing legal restrictions on the metadata record itself. To restrict a metadata record in a catalogue largely defeats its purpose and if not open to be freely copied may be contrary to itself.  What happens if a restricted metadata record is harvested? By putting a metadata record in a public catalogue are you not effectively negating any restriction on that metadata record? Boiler plate stating the openness of the metadata would be useful.
@@ -51,33 +51,33 @@ I  am having some difficulty understanding the value on capturing legal restrict
 > Note BC 5-7:  The issue of automated harvesters gathering metadata that by legal restriction should not (a rare case I would hope) could possibly be addressed by recommending appropriate filters on the harvesters.  This would need research..
 
 
-# Recommendations
+## Recommendations
 Therefore - It is important to capture any legal constraints that apply to a metadata resord. This should include licences, end user agreements, etc. If the resource is public domain, this should be cited appropriately. Many juristrictions encourage the use of open data and Creative Commons license. This should be encouraged through the use of copyright licenses such as CC0 or CC By. Provide the user links to additional information about such constraints, there use and meaning. In addition, document the holder of such rights and how to contact for more information. As legal restrictions such as copyright are tied to the creator of an intellectual resource, make are that users have access to their information.
 
-## Crosswalk considerations
+### Crosswalk considerations
 
 <details>
 
-### ISO19139
+#### ISO19139
 See guidance provided in [MD_Constraints](./class-MD_Constraints)
 
-### DCAT
+#### DCAT
 Maps to `dct.rights` as does resource legal constraints. > Note BC 22-7: Does DCAT make a distinction?
 
-### RIF-CS
+#### RIF-CS
 Agregated into `Description 'notes'`
 
 </details>
 
-# Also Consider
+## Also Consider
 - **[Resource Legal Constraints](./ResourceLegalConstraints)** contains legal restrictions that apply to the resource cited by the metadata
 - **[Metadata Security Constraints](./MetadataSecurityConstraints)** A sibling to metadata legal constraints. Contains information regarding any security restriction on the metadata.
 
-# Examples
+## Examples
 
 <details>
 
-## XML -
+### XML -
 ```
 <mdb:MD_Metadata>
 ....
@@ -190,7 +190,7 @@ Agregated into `Description 'notes'`
 </mdb:MD_Metadata>
 ```
 
-## UML diagrams
+### UML diagrams
 Recommended elements highlighted in Yellow
 ![MetdataConstraints_Legal](../images/MD_LegalConstraints.png)
 

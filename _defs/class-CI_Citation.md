@@ -5,7 +5,6 @@ section: class
 rank: 50
 title: CI_Citation
 ---
-
 # class - CI_Citation
 
 In order to provide a standardised way of capturing information related to the various citations described in a metadata record, a shema, by way of the CI_Citation is provided. The provision of a consitant way of structuring this information make it easier to capture and understand.
@@ -14,11 +13,11 @@ In order to provide a standardised way of capturing information related to the v
 - **Metadata Type -** *structural*
 - *ICSM Level of Agreement* - ⭑⭑
 
-# Definition
+## Definition
 
 **A standardized resource reference framework.**
 
-## ISO Associations (May be found in) -
+### ISO Associations (May be found in) -
 - MD_Metadata.parentMetadata 
 - MD_Metadata.metadataStandard
 - MD_Metadata.metadataProfile
@@ -49,7 +48,7 @@ In order to provide a standardised way of capturing information related to the v
 - MD_Identifier.authority
 - 
 
-### Recomended Attributes -
+#### Recomended Attributes -
 - **title -** *(type - charStr)*[1..1] Mandatory - name by which the cited resource is known
 - **alternateTitle -** *(type - charStr)* [0..\*] short name or other language name by which the cited information is known. Example: DCW as an alternative title for Digital Chart of the World. Recommended whenever there are alternate names commonly in use.
 - **date -** *(class - [CI_Date](./class-CI_Date))*  [0..\*]  reference date for the cited resource
@@ -67,23 +66,23 @@ In order to provide a standardised way of capturing information related to the v
 
 
 
-# Discussion
+## Discussion
 Citations are used to provide information about citing the resource being described in the metadata or to refer to resources outside of the metadata record.
 Citations use CI_Citation and cite the party responsible using CI_Responsibility. CI_Responsibility may be used without CI_Citation. CI_Responsibility is an aggregate of one or more parties (CI_Party). CI_Party may be specified as CI_Individual and/or CI_Organisation.
 
-# Recommendations 
+## Recommendations 
 
 Therefore - It is recommended that all citation instances follow the general guidance of ISO 19115-1 unless directed otherwise. The mandatory element `title` must be populated in all instances noting the the type and form of the contents in this field is dependent on location in the metadata record.
 
 > Note BC 18-7 - MDWG may wish to further standardise the use of CI_Citation
 
-## References
+### References
 
 http://wiki.esipfed.org/index.php/CI_Citation
 
 https://geo-ide.noaa.gov/wiki/index.php?title=ISO_Citations#CI_Citation.2B.2B
 
-## UML diagrams
+### UML diagrams
 
 Recommended elements highlighted in Yellow
 

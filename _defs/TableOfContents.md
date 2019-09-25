@@ -6,12 +6,12 @@ title: Table of Contents
 ---
 #  ICSM Metadata Good Practice - Table of Contents
 
-## Guidance
+### Guidance
 - [Introduction](./GuidanceIntro)
 - [Pattern guide](./PatternGuide)
 - [Template](./Template)
 
-## Metadata for Metadata
+### Metadata for Metadata
 - [Class - MD_Metadata](./class-MD_Metadata)
 - [Metadata Identifier](./MetadataIdentifier)
 - [Metadata Linkage](./MetadataLinkage)
@@ -27,7 +27,7 @@ title: Table of Contents
   - Reference for security
 - [Parent Metadata](./ParentMetadata)
 
-## Metadata for Data Resources
+### Metadata for Data Resources
 - Package [Identification Information](./class-MD_DataIdentification)
   - [Resource Default locale](./ResourceLocale)
   - [Abstract](./Abstract)
@@ -86,7 +86,7 @@ title: Table of Contents
     - Online Resource
     - Offline Resource
 
-## Classes 
+### Classes 
 - [CI_Citation](./class-CI_Citation)
 - [CI_Date](./class-CI_Date)
 - [CI_OnlineResource](./class-CI_OnlineResource)

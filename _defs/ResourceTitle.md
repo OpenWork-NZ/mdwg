@@ -19,62 +19,62 @@ title: Resource Title
 - **Metadata type -** *descriptive*
 - *ICSM Level of Agreement* - ⭑⭑⭑⭑
 
-# Definition
+## Definition
 **The most common useful name by which the resource is known.**
 
-## ISO Obligation
+### ISO Obligation
 - There must be one and only one [1..1] *title* element for the cited resource in the  *[MD_DataIdentification.citation](./ResourceCitation)* package in a metadata record of type *charater string*.
 
-##  ICSM Good Practice
+###  ICSM Good Practice
 - All metadata records must have the element *MD_Metadata,indentificationInfo>MD_Identification.citation>CI_Citation.title* populated with the most common useful name by which the resource is known.
 
-# Discussion
+## Discussion
 The value of the title field should be the most common language named by which the resource is known by your largest perceived audience. It should be relatively unique or made so by inclusion of expanded title elements such edition numbers or agency name.
 
 There can be multiple alternate titles captured for a resource in the sibling element `alternateTitle`. These should be populated with other known names or variations of the name.
 
-# Recommendations
+## Recommendations
 Therefore - There must be one title given for a resource. The value of the title field should be the most common named by which the resource is known by your largest perceived audience. It should be relatively unique or made so by inclusion of expanded title elements such edition numbers or agency name.
 
 Use the sibling element `alternateTitle` to capture other names by which the resource may be known. Index both `title` and `alternateTitle` in the same index to increase the likelihood that the resource may be found by the title that others may know it.
 
 If the title is not a common language name, at least one alternate title should be common language title such as a lay person may identify it.
 
-## Crosswalk considerations
+### Crosswalk considerations
 
 <details>
 
-### Dublin core / CKAN / data.govt.nz
+#### Dublin core / CKAN / data.govt.nz
 Maps to `title`
 
-### DCAT
+#### DCAT
 Maps to `dct.title`
 
-### RIF-CS
+#### RIF-CS
 Maps to `Title`
 
 </details>
 
-# Also Consider
+## Also Consider
 - **alternateTitle -** *(type - charStr)* [0..\*] Sibling to `title`. A short name or other language name by which the cited information is known. Example: DCW as an alternative title for Digital Chart of the World. Recommended whenever there are alternate names commonly in use.
 - **[Resource  Citation](./ResourceCitation)** - parent to this element
 
-# Examples
+## Examples
 
 <details>
 
-## Example Current Use
+### Example Current Use
 
-### ABARES
+#### ABARES
 "2.5M Topographical Series 1998 MAPDATA TOPO_2.5M Scale 1:2.5 Million"
 
-### GA
+#### GA
 “Geomorphic features of the Antarctic and Southern Ocean 2012"
 
-### Data.govt.au
+#### Data.govt.au
 Location of Medicare Offices
 
-## XML
+### XML
 ```
 <mdb:MD_Metadata>
 ....
@@ -98,7 +98,7 @@ Location of Medicare Offices
 </mdb:MD_Metadata>
 ```
 
-## UML diagrams
+### UML diagrams
 Recommended elements highlighted in Yellow
 
 ![title](../images/ResourceTitle.png)
