@@ -15,14 +15,18 @@
       margin: 10px auto;
       position: relative; /* For positioning the watermark */
     }
+
     h1, h2, h3, h4, h5, h6, details summary {
       font-family: merriweather,Georgia,Times New Roman,DejaVu Serif,serif;
       color: #001b44cc;
     }
-    h1, h2 {text-align: center}
+    h1, h2, details summary {text-align: center}
     h1 {color: black}
     details summary {font-weight: bold}
+
     header {background: #fff9}
+    header h1 {font-size: 2.5rem}
+
     aside, main {
       margin-top: 300px;
       background: #fff9;
@@ -37,6 +41,7 @@
       padding: 0;
       margin: 15px;
     }
+
     aside ul:nth-of-type(2n) {list-style-type: square}
     aside h2 {font-size: 1em}
     aside h3 {font-size: 1em; font-weight: normal}
