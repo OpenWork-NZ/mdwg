@@ -36,7 +36,7 @@ From class *[MD_Identifier](./class-MD_Identifier)*
 - **authority -** *(class - [CI_Citation](./class-CI_Citation))* [0..1] optional, the provider of the UUID
 
 ## Discussion
-Every metadata record needs a unique identifier so as to provide certain of the identity of the record and to provide a primary key for linkages. This element should hold UUID, preferably in the form of a resolvable URI. This provides the machine readable (and human) ability to determine if this is the same or different to other metadata records. It is useful in machine to machine activities such as metadata harvesting. It is also at times useful to data managers and others to determine if a record is the same as another.
+Every metadata record needs a unique identifier so as to provide certainty as to the identity of the record and to provide a primary key for linkages. This element should hold UUID, preferably in the form of a resolvable URI (either stanalone or in combinationwith anther element e.g. `<mcc:codespace>`). This provides the machine readable (and human) ability to determine if this is the same or different to other metadata records. It is useful in machine to machine activities such as metadata harvesting. It is also at times useful to data managers and others to determine if a record is the same as another.
 
 This identifier must never change, irrespective of where that metadata record is stored. This allows linkages to a metadata record to persist.
 
@@ -89,7 +89,7 @@ Maps to `Key Identifier`
 
 ## Also Consider
 - **[Resource Identifier](./ResourceIdentifier) -** provides unique identifier to the resource. This may be the same as the metadata identifier when the metadata resource in a catalogue serves as the landing page for a resource.
-- **[Metadata Linkage](./MetadataLinkage)** - is most often used to provide a point of truth linkage to the metadata record.
+- **[Metadata Linkage](./MetadataLinkage)** - is most often used to provide a point of truth linkage (landing page) to the metadata record.
 - **[CI_Citation](./class-CI_Citation) (Authority) -** Information authority responsible for minting the UUID, be it the software package or other mechanism, may be captured in the Authority subelement using the CI_Citation package general guidance.
 - **[MD_Identifier](./class-MD_Identifier)** General Guidance for the package used to hold the metadata identifier information. This package can be used to provide identity to a large number of other metadata elements.
 
