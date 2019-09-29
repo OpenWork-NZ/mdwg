@@ -23,10 +23,10 @@ A small table follows that summarises details about the element. These include:
 - **Governance** -  Details what body is most likely to make decisions about how the element is used and populated. Common values are ISO, Common ICSM, Domain, Agency. Sometimes these decisions are made at more than one level.
 - **Purpose** - Provides the high-level purpose of the element - for what is it most useful? Common values include: Discovery, Evaluation, Use, Management
 - **Audience -** describes with a 1 to 5 star rating how important the element is to the select personas.  These personas include:
-- machine resource - for purely digital interactions
-- general - a novice audience
-- resource manager - parties responsible for the management of the data
-- specialist - subject matter specialist who know a great deal about the domain.
+  - machine resource - for purely digital interactions
+  - general - a novice audience
+  - resource manager - parties responsible for the management of the data
+  - specialist - subject matter specialist who know a great deal about the domain.
 - **Metadata type** - Which of the three general metadata types does the element belong, *descriptive*, *structural*, or *administrative*
 - *ICSM Level of Agreement* - A 5 star rating as to how close to consensus the MDWG is on the description of this item. A low number of stars usually indicates lack of process progress rather than disagreement.
 
