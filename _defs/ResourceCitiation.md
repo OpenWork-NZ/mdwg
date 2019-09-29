@@ -76,7 +76,7 @@ Therefore - because many of the elements of MD_Identification.citation are manda
                       <gco:Date>2019-07-18</gco:Date>
                    </cit:date>
                    <cit:dateType>
-                      <cit:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode"
+                      <cit:CI_DateTypeCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_DateTypeCode"
                                            codeListValue="creation"/>
                    </cit:dateType>
                 </cit:CI_Date>
@@ -87,7 +87,7 @@ Therefore - because many of the elements of MD_Identification.citation are manda
                       <gco:Date>2019-07-18</gco:Date>
                    </cit:date>
                    <cit:dateType>
-                      <cit:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode"
+                      <cit:CI_DateTypeCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_DateTypeCode"
                                            codeListValue="publication"/>
                    </cit:dateType>
                 </cit:CI_Date>
@@ -111,7 +111,7 @@ Therefore - because many of the elements of MD_Identification.citation are manda
              <cit:citedResponsibleParty>
                 <cit:CI_Responsibility>
                    <cit:role>
-                      <cit:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode"
+                      <cit:CI_RoleCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_RoleCode"
                                        codeListValue="author"/>
                    </cit:role>
                    <cit:party>
@@ -137,7 +137,7 @@ Therefore - because many of the elements of MD_Identification.citation are manda
              <cit:citedResponsibleParty>
                 <cit:CI_Responsibility>
                    <cit:role>
-                      <cit:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode"
+                      <cit:CI_RoleCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_RoleCode"
                                        codeListValue="publisher"/>
                    </cit:role>
                    <cit:party>

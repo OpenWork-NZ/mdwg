@@ -104,7 +104,7 @@ Maps to `Date`
                         <gco:Date>2018-06-11</gco:Date>
                      </cit:date>
                      <cit:dateType>
-                        <cit:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode"
+                        <cit:CI_DateTypeCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_DateTypeCode"
                                              codeListValue="creation"/>
                      </cit:dateType>
                   </cit:CI_Date>
@@ -115,7 +115,7 @@ Maps to `Date`
                         <gco:Date>2019-06-11</gco:Date>
                      </cit:date>
                      <cit:dateType>
-                        <cit:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode"
+                        <cit:CI_DateTypeCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_DateTypeCode"
                                              codeListValue="lastUpdate"/>
                      </cit:dateType>
                   </cit:CI_Date>

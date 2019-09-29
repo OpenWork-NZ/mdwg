@@ -96,7 +96,7 @@ May map to `Key Identifier` if `metadataIdentifier` is unresolvable
         <gco:CharacterString>Point of truth URL of this metadata record</gco:CharacterString>
       </cit:description>
       <cit:function>
-        <cit:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="completeMetadata"/>
+        <cit:CI_OnLineFunctionCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_OnLineFunctionCode" codeListValue="completeMetadata"/>
       </cit:function>
     </cit:CI_OnlineResource>
   </mdb:metadataLinkage>

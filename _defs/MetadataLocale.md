@@ -83,7 +83,7 @@ No identified mapping
             <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="eng"/>
          </lan:language>
          <lan:characterEncoding>
-            <lan:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_CharacterSetCode"
+            <lan:MD_CharacterSetCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#MD_CharacterSetCode"
                                      codeListValue="utf8"/>
          </lan:characterEncoding>
       </lan:PT_Locale>

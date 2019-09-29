@@ -136,7 +136,7 @@ Recommended property to meet data citation requirement
              <mrd:distributorContact>
                 <cit:CI_Responsibility>
                    <cit:role>
-                      <cit:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode"
+                      <cit:CI_RoleCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_RoleCode"
                                        codeListValue="distributor"/>
                    </cit:role>
                    <cit:party>
@@ -188,7 +188,7 @@ Recommended property to meet data citation requirement
                       <gco:CharacterString/>
                    </cit:description>
                    <cit:function>
-                      <cit:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_OnLineFunctionCode"
+                      <cit:CI_OnLineFunctionCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_OnLineFunctionCode"
                                                  codeListValue=""/>
                    </cit:function>
                 </cit:CI_OnlineResource>
@@ -226,7 +226,7 @@ Recommended property to meet data citation requirement
                       <gco:CharacterString/>
                    </cit:description>
                    <cit:function>
-                      <cit:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_OnLineFunctionCode"
+                      <cit:CI_OnLineFunctionCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_OnLineFunctionCode"
                                                  codeListValue=""/>
                    </cit:function>
                 </cit:CI_OnlineResource>

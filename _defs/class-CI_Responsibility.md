@@ -116,7 +116,7 @@ The CI_Responsibility/extent element was added in order to allow specificationof
 ...
       <cit:CI_Responsibility>
          <cit:role>
-            <cit:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode"
+            <cit:CI_RoleCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_RoleCode"
                              codeListValue="pointOfContact"/>
          </cit:role>
          <cit:party>

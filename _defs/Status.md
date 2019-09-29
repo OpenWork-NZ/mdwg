@@ -81,11 +81,11 @@ Maps to `data status`
       ....
          <mri:status>
             <mri:status>
-            <mcc:MD_ProgressCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ProgressCode"
+            <mcc:MD_ProgressCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#MD_ProgressCode"
                                  codeListValue="underDevelopment"/>
          </mri:status>
          <mri:status>
-            <mcc:MD_ProgressCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ProgressCode"
+            <mcc:MD_ProgressCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#MD_ProgressCode"
                                  codeListValue="tentative"/>
          </mri:status>
          ....

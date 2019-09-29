@@ -89,7 +89,7 @@ Agregated into `Description 'notes'`
          <mco:constraintApplicationScope>
             <mcc:MD_Scope>
                <mcc:level>
-                  <mcc:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ScopeCode"
+                  <mcc:MD_ScopeCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#MD_ScopeCode"
                                     codeListValue="metadata"/>
                </mcc:level>
             </mcc:MD_Scope>
@@ -120,7 +120,7 @@ Agregated into `Description 'notes'`
                         <gco:CharacterString/>
                      </cit:description>
                      <cit:function>
-                        <cit:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_OnLineFunctionCode"
+                        <cit:CI_OnLineFunctionCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_OnLineFunctionCode"
                                                    codeListValue=""/>
                      </cit:function>
                   </cit:CI_OnlineResource>
@@ -145,7 +145,7 @@ Agregated into `Description 'notes'`
                               <gco:CharacterString/>
                            </cit:description>
                            <cit:function>
-                              <cit:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_OnLineFunctionCode"
+                              <cit:CI_OnLineFunctionCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_OnLineFunctionCode"
                                                          codeListValue=""/>
                            </cit:function>
                         </cit:CI_OnlineResource>
@@ -157,7 +157,7 @@ Agregated into `Description 'notes'`
          <mco:responsibleParty>
             <cit:CI_Responsibility>
                <cit:role>
-                  <cit:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode"
+                  <cit:CI_RoleCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_RoleCode"
                                    codeListValue="owner"/>
                </cit:role>
                <cit:party>
@@ -181,7 +181,7 @@ Agregated into `Description 'notes'`
             </cit:CI_Responsibility>
          </mco:responsibleParty>
          <mco:useConstraints>
-            <mco:MD_RestrictionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_RestrictionCode"
+            <mco:MD_RestrictionCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#MD_RestrictionCode"
                                     codeListValue="copyright"/>
          </mco:useConstraints>
       </mco:MD_LegalConstraints>

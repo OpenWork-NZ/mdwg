@@ -95,7 +95,7 @@ Maps to `Rights/@licence`
              <mco:responsibleParty>
                 <cit:CI_Responsibility>
                    <cit:role>
-                      <cit:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode"
+                      <cit:CI_RoleCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_RoleCode"
                                        codeListValue="author"/>
                    </cit:role>
                    <cit:party>
@@ -127,11 +127,11 @@ Maps to `Rights/@licence`
              </mco:responsibleParty>
              <mco:accessConstraints>
                 <mco:MD_RestrictionCode codeListValue="copyright"
-                                        codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_RestrictionCode"/>
+                                        codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#MD_RestrictionCode"/>
              </mco:accessConstraints>
              <mco:useConstraints>
                 <mco:MD_RestrictionCode codeListValue="otherRestrictions"
-                                        codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_RestrictionCode"/>
+                                        codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#MD_RestrictionCode"/>
              </mco:useConstraints>
              <mco:otherConstraints gco:nilReason="missing">
                 <gco:CharacterString/>
@@ -141,7 +141,7 @@ Maps to `Rights/@licence`
        <mri:resourceConstraints>
           <mco:MD_SecurityConstraints>
              <mco:classification>
-                <mco:MD_ClassificationCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ClassificationCode"
+                <mco:MD_ClassificationCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#MD_ClassificationCode"
                                            codeListValue="unclassified"/>
              </mco:classification>
           </mco:MD_SecurityConstraints>

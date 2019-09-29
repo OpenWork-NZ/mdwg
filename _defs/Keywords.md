@@ -128,7 +128,7 @@ There are several elements outside the keywords class that are in effect keyword
                </mri:keyword>
                <mri:type>
                   <mri:MD_KeywordTypeCode codeListValue="theme"
-                                          codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_KeywordTypeCode"/>
+                                          codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#MD_KeywordTypeCode"/>
                </mri:type>
             </mri:MD_Keywords>
          </mri:descriptiveKeywords>
@@ -139,7 +139,7 @@ There are several elements outside the keywords class that are in effect keyword
                </mri:keyword>
                <mri:type>
                   <mri:MD_KeywordTypeCode codeListValue="place"
-                                          codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_KeywordTypeCode"/>
+                                          codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#MD_KeywordTypeCode"/>
                </mri:type>
             </mri:MD_Keywords>
          </mri:descriptiveKeywords>
@@ -149,7 +149,7 @@ There are several elements outside the keywords class that are in effect keyword
                   <gco:CharacterString>Tasman Sea</gco:CharacterString>
                </mri:keyword>
                <mri:type>
-                  <mri:MD_KeywordTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_KeywordTypeCode"
+                  <mri:MD_KeywordTypeCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#MD_KeywordTypeCode"
                                           codeListValue="place"/>
                </mri:type>
                <mri:thesaurusName>
@@ -163,7 +163,7 @@ There are several elements outside the keywords class that are in effect keyword
                               <gco:Date>2015-07-17</gco:Date>
                            </cit:date>
                            <cit:dateType>
-                              <cit:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode"
+                              <cit:CI_DateTypeCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_DateTypeCode"
                                                    codeListValue="publication"/>
                            </cit:dateType>
                         </cit:CI_Date>

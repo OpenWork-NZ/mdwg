@@ -100,7 +100,7 @@ Maps to `@dateAccessioned`
             <gco:DateTime>2019-05-30T15:30:05</gco:DateTime>
          </cit:date>
          <cit:dateType>
-            <cit:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode"
+            <cit:CI_DateTypeCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_DateTypeCode"
                                  codeListValue="revision"/>
          </cit:dateType>
       </cit:CI_Date>
