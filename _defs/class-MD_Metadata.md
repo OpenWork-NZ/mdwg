@@ -49,7 +49,7 @@ title: Metadata Info
 - **[parentMetadata -](./ParentMetadata)** *(class - [CI_Citation](./class-CI_Citation)* [0..1]
 - **[metadataScope -](./MetadataScope)** *(class - MD_MetadataScope)*[0..\*]
 - **metadataStandard -**  *(class - [CI_Citation](./class-CI_Citation))* [0..\*] AS/NZS ISO 19115-3  > recommnded but not yet detailed by MDWG
-- **metadataProfile -**  *(class - [CI_Citation](./class-CI_Citation))* [0..\*] >  recommnded butnot yet detailed by MDWG
+- **metadataProfile -**  *(class - [CI_Citation](./class-CI_Citation))* [0..\*] >  recommnded but not yet detailed by MDWG
 
 #### Other attributes - not yet addressed by MDWG
 - **otherLocale -** *(class - [PT_Locale](./PT_Locale))*[0..\*]
@@ -58,7 +58,7 @@ title: Metadata Info
 
 ## Discussion
 
-The MD_Metadata package defines the schema for describing the complete metadata about a resource and metadata about the metadata itself. It is composed through an aggregate of 12 additional metadata classes as shown above. The MD_Metadata class also contains attributes providing information about the metadata. Those recommnded attributes are covered in other sections as cited above
+The MD_Metadata package defines the schema for describing the complete metadata about a resource and metadata about the metadata itself. It is composed through an aggregate of 12 additional metadata classes as shown above. The MD_Metadata class also contains attributes providing information about the metadata record itself. Those recommnded attributes are covered in other sections as cited above
 
 
 
