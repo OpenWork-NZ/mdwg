@@ -6,7 +6,7 @@ rank: 60
 title: Resource Series
 ---
 #  Resource Series ★★★
-*Very often, resources identified in a catalogue are part of a larger body of work. When this is the case it is useful to document such a relation in the metadata.  The resource metadata element `series` is designed for this purpose.*
+*Very often, resources identified in a catalogue are part of a larger body of work. When this is the case it is useful to document such a relation in the metadata.  The resource metadata element **series** is designed for this purpose.*
 
 - **Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.citation>CI_Citation.series*
 - **Governance** -  *Agency, Domain*
