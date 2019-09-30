@@ -84,6 +84,10 @@ To adequately describe a resource, there may be the need to include multiple SRS
 
 
 ### Outstanding Issues
+
+> **Dynamic (Earth Centric) Datums**
+When the SRS is Earth centered as is the case with WGS 84, in order to understand position relative to object catured in the same SRS but at a different date, the *Epoch* (time of posisiton information capture) must be recorded. A best practice way of doing so is under discussion. A full resolution of this problem will most likely require changes to the ISO19115-1 standard.
+
 > **Authority**
 Authority has been indicated as a conditional field by ABARES and GA.  But little guidance exist on the use of this element in this context. Should authority be about the owner of the registry (e.g. EPSG) or the provider of the SRS (LINZ in the case of NZTM)?
 
