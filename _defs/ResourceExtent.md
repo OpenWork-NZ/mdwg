@@ -8,7 +8,7 @@ title: Resource Extent
 # Resource Extent ★★★★
 *In order to quickly determine the general location of features included in an cited spatial resource, it is useful that extent information, geographic, vertical and temporal, are documented in the metadata.*
 
-- **Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.extent *
+- **Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.extent*
 - **Governance** - *Common ICSM, Domain*
 - **Primary use** - *Discovery*
 - **Audience -**
