@@ -6,7 +6,7 @@ rank: 70
 title: Resource Security Constraints
 ---
 # Resource Security Constraints ★★★★★
-*When constraints ([MD_Constraints]) on a spatial resource [MD_Identification]  concern security it is important to document these. Potential users need to be informed of the presence or absence of concerns about security that apply to the use of such resources.*
+*When constraints ([MD_Constraints](./class-md_constraints.html)) on a spatial resource [MD_Identification] concern security it is important to document these. Potential users need to be informed of the presence or absence of concerns about security that apply to the use of such resources.*
 
 - **Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.resourceConstraints>MD_SecurityConstraints*
 - **Governance** - *National, Agency*
