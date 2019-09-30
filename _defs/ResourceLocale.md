@@ -52,10 +52,12 @@ MD_DataIdentification/language and MD_DataIdentification/characterSet moved to M
 
 #### Dublin core / CKAN / data.gov.au
 Maps to `language`
+
 CKAN has one field for language that maps to both Metadata and Resource language fields. ISO 19115 recommends 639-2 3 letter codes. Data.gov.au recommends IETF RFC4646 2 letter codes as primary. See https://www.loc.gov/standards/iso639-2/faq.html#6 for discussion of the differences
 
 #### DCAT
 Maps to `dct.language`.  
+
 > Note BC 19-7: It iis unclear if DCAT makes a distinction between the metadata language and the resource language
 
 #### RIF-CS

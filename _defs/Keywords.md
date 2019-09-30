@@ -11,7 +11,7 @@ title: Keywords
 - **Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.descriptiveKeywords*
 - **Governance** - *Common ICSM, Agency, Domain*
 - **Primary use -** *Discovery, Data management*
-- **Audience - **
+- **Audience -**
   - machine resource - ⭑⭑⭑⭑⭑
   - general - ⭑⭑⭑⭑⭑
   - data manager - ⭑⭑⭑⭑⭑

@@ -50,6 +50,9 @@ title: Spatial Resolution
   - brief textual description of the spatial resolution of the resource
 
 ## Discussion
+
+Scale is a fundemental concept of sptial data. *SpatialResolution* is the element that captures this.
+
 *SpatialResolution* is most commonly represented as a factor which provides a general understanding of the density of spatial data in the resource or describes the range of resolutions in which a digital resource may be used.  This element should be repeated when describing upper and lower range.
 
 *SpatialResolution* is recommended in ISO 19115.1-2015 as a metadata element to be used for discovery of geospatial resources.

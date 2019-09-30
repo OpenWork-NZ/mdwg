@@ -6,7 +6,7 @@ rank: 10
 title: Resource Title
 ---
 # Resource Title ★★★★★
-*The most important component of the [Resource Citation](./class-CI_Citation) is the **title** element. In order to easily communicate about a resource and at least locally differentiate it from others, it is useful that the resource has  a common name. This name is captured in the [Resource Citation](./ResourceCitation) *title* element.*
+*The most important component of the [Resource Citation](./class-CI_Citation) is the **title** element. In order to easily communicate about a resource and at least locally differentiate it from others, it is useful that the resource has  a common name. This name is captured in the [Resource Citation](./ResourceCitation) **title** element.*
 
 - **Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.citation>CI_Citation.title*
 - **Governance** -  *Common ICSM, Agency, Domain*
@@ -29,12 +29,12 @@ title: Resource Title
 - All metadata records must have the element *MD_Metadata,indentificationInfo>MD_Identification.citation>CI_Citation.title* populated with the most common useful name by which the resource is known.
 
 ## Discussion
-The value of the title field should be the most common language named by which the resource is known by your largest perceived audience. It should be relatively unique or made so by inclusion of expanded title elements such edition numbers or agency name.
+The value of the title field should be the most common name by which the resource is known by your largest perceived audience. It should be relatively unique or made so by inclusion of expanded title elements such edition numbers or agency name.
 
 There can be multiple alternate titles captured for a resource in the sibling element `alternateTitle`. These should be populated with other known names or variations of the name.
 
 ## Recommendations
-Therefore - There must be one title given for a resource. The value of the title field should be the most common named by which the resource is known by your largest perceived audience. It should be relatively unique or made so by inclusion of expanded title elements such edition numbers or agency name.
+Therefore - There must be one title given for a resource. The value of the title field should be the most common name by which the resource is known by your largest perceived audience. It should be relatively unique or made so by inclusion of expanded title elements such edition numbers or agency name.
 
 Use the sibling element `alternateTitle` to capture other names by which the resource may be known. Index both `title` and `alternateTitle` in the same index to increase the likelihood that the resource may be found by the title that others may know it.
 
