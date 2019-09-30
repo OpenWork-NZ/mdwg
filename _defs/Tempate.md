@@ -1,5 +1,6 @@
 ---
 layout: page
+rank: 40
 type: page
 section: Guidance
 title: Template
