@@ -18,7 +18,7 @@ title: Metadata Info
 **Root entity which defines metadata about a resource or resources**
 
 ### Child packages
-#### MDWG recommended
+#### ICSM recommended
 - **[resourceLineage -](./ResourceLineage)** *(class - Li_Lineage)* [0..\*]
 - **[referenceSystemInfo -](https://www.loomio.org/d/4SliNjWE/md_metadata-md_referencesystem-definition)** *(class - MD_ReferenceSystem)*
 - **metadataConstraints -** *( abstract class [MD_Constraints](./class-md_constraints))* [0..\*] see
