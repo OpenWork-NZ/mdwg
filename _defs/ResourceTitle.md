@@ -6,7 +6,7 @@ rank: 10
 title: Resource Title
 ---
 # Resource Title ★★★★★
-*The most important component of the [Resource Citation](./class-CI_Citation) is the **title** element. In order to easily communicate about a resource and at least locally differentiate it from others, it is useful that the resource has  a common name. This name is captured in the [Resource Citation](./ResourceCitation) `title` element.*
+*The most important component of the [Resource Citation](./class-CI_Citation) is the **title** element. In order to easily communicate about a resource and at least locally differentiate it from others, it is useful that the resource has  a common name. This name is captured in the [Resource Citation](./ResourceCitation) **title** element.*
 
 - **Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.citation>CI_Citation.title*
 - **Governance** -  *Common ICSM, Agency, Domain*
