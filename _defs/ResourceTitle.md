@@ -29,7 +29,7 @@ title: Resource Title
 - All metadata records must have the element *MD_Metadata,indentificationInfo>MD_Identification.citation>CI_Citation.title* populated with the most common useful name by which the resource is known.
 
 ## Discussion
-The value of the title field should be the most common language named by which the resource is known by your largest perceived audience. It should be relatively unique or made so by inclusion of expanded title elements such edition numbers or agency name.
+The value of the title field should be the most common name by which the resource is known by your largest perceived audience. It should be relatively unique or made so by inclusion of expanded title elements such edition numbers or agency name.
 
 There can be multiple alternate titles captured for a resource in the sibling element `alternateTitle`. These should be populated with other known names or variations of the name.
 
