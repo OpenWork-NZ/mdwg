@@ -39,7 +39,7 @@ A restriction may be applicable to a particular aspect of the resource. In this 
 
 Almost all created resources (including metadata) carry some legal rights, restrictions and responsibility regarding their access and use. For instance, in most jurisdictions, copyright is automatically granted to the creator of a creative work. Legal restrictions such as licences and end user agreements, need be documented for users and resource managers along with the identity of the holder of these rights. Each agency needs to develop consistent guidance on the use of such statement and share clear understanding of their meaning. This is often done by reference to a external body that manages the definitions of the legal constraints applied.
 
-There is often general confusion over the restraints fields and to what they apply = metadata, resource, distribution, etc. A major topic needing clarification. In ISO 19115-1 two types of constraints are recognised metadataConstraints (restrictions on the access and use of metadata) and resourceConstraints (information about constraints which apply to the resources). Here we are only address constraints on Metadata.
+There is often general confusion over the restraints fields and to what they apply; metadata, resource, distribution, etc. This is a topic needing further discussion and clarification. In ISO 19115-1 two types of constraints are recognised metadataConstraints (restrictions on the access and use of metadata) and resourceConstraints (information about constraints which apply to the resources). Here we are only address constraints on Metadata.
 
 For more discussion on the types of common legal restrictions see [Resource Legal Constraints](./ResourceLegalConstraints#copyright).
 
@@ -52,7 +52,7 @@ I  am having some difficulty understanding the value on capturing legal restrict
 
 
 ## Recommendations
-Therefore - It is important to capture any legal constraints that apply to a metadata resord. This should include licences, end user agreements, etc. If the resource is public domain, this should be cited appropriately. Many juristrictions encourage the use of open data and Creative Commons license. This should be encouraged through the use of copyright licenses such as CC0 or CC By. Provide the user links to additional information about such constraints, there use and meaning. In addition, document the holder of such rights and how to contact for more information. As legal restrictions such as copyright are tied to the creator of an intellectual resource, make are that users have access to their information.
+Therefore - It is important to capture any legal constraints that may apply to a metadata resord. This should include licences, end user agreements, etc. If the resource is public domain, this should be cited appropriately. Many juristrictions encourage the use of open data and Creative Commons license. This should be encouraged through the use of copyright licenses such as CC0 or CC By. Provide the user links to additional information about such constraints, there use and meaning. In addition, document the holder of such rights and how to contact for more information. As legal restrictions such as copyright are tied to the creator of an intellectual resource, make are that users have access to their information.
 
 ### Crosswalk considerations
 
