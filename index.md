@@ -12,10 +12,15 @@ This document was compile by [OpenWork Ltd (OWL)](http://openwork.nz) on behalf 
 ## Acknowledgements
 
 GA - Chair WG:	Irina Bastrokova	irina.bastrakova@ga.gov.au
+
 GA - Secretariat:	Andrew Whiting	andrew.whiting@ga.gov.au
+
 GA - Secretariat:	Graham Logan	graham.logan@ga.gov.au
+
 ANZLIC:	Brian Sloan	Brian.Sloan@ga.gov.au
+
 ANZLIC:	Ann Beaumaris	Ann.Beaumaris@industry.gov.au
+
 ICSM: - Executive Officer 	Lesley Waterhouse 	lesley.waterhouse@ga.gov.au
 
 **>> [*Introduction*](./GuidanceIntro.md)**
