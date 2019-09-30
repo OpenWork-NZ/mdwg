@@ -7,7 +7,7 @@ title: Resource Legal Constraints
 ---
 # Resource Legal Constraints ★★★★★
 
-When constraints ([MD_Constraints]) on a spatial resource [MD_Identification]  are of a legal nature it is important to document these.. Potential users need to be informed of rights, restrictions and responsibilities (or lack thereof) that apply to the use of such resources.
+*When constraints ([MD_Constraints]) on a spatial resource [MD_Identification]  are of a legal nature it is important to document these.. Potential users need to be informed of rights, restrictions and responsibilities (or lack thereof) that apply to the use of such resources.*
 
 - **Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.resourceConstraints>MD_LegalConstraints*
 - **Governance** - *Agency*
