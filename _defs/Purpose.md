@@ -51,7 +51,7 @@ The contents of a purpose should include as much information as would be useful 
 
 <details>
 
-#### Dublin core / CKAN / data.govt.nz
+#### Dublin core / CKAN / data.gov.au
 Maps to *description*?
 
 #### DCAT

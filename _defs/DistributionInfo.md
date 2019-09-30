@@ -94,7 +94,7 @@ There may also be instances where anonymous free online distribution is not desi
 - **MD_StandardOrderProcess.orderOptionsType** and **MD_StandardOrderProcess.orderOptions**
   - These two new roles were added in order to allow specification of custom ordering options associated with specific resources or implementations.
 
-#### Dublin core / CKAN / data.govt.nz
+#### Dublin core / CKAN / data.gov.au
 - `Format` maps to `format` - The file format of the distribution. If available in IANA, use Media Type
 - `OnlineResource` *(MD_DigitalTransferOptions.online)* maps to `landing page`, `download URL` , `access URL`
 

@@ -55,7 +55,7 @@ dates and scope.
 - **MD_MaintenanceInformation.updateScope** and **MD_MaintenanceInformation.updateScopeDescription** were replaced by **MD_MaintenanceInformation.maintenanceScope**(
   - These two roles were combined into maintenance-Scope: MD_Scope [0..\*] in order to allow specifying a scope that includes a spatial and temporal extent.
 
-#### Dublin core / CKAN / data.govt.nz {if any}
+#### Dublin core / CKAN / data.gov.au {if any}
 Maps to `update frequency`
 
 #### RIF-CS

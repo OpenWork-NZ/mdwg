@@ -92,7 +92,7 @@ It is not recommended that this list be extended as its value is in part due to 
 #### ISO19139
 This element, along with spatialRepresentationType and spatialResolution, were moved from MD_DataIdentification to MD_Identification in order to allow their use for service identification. Two new values were added to this enumeration: *extraTerrestrial* and *disaster* from the ISO19139 version.
 
-#### Dublin core / CKAN / data.govt.nz
+#### Dublin core / CKAN / data.gov.au
 Maps to *ISO 19115 topic*
 
 #### DCAT

@@ -48,7 +48,7 @@ Therefore - It is strongly recommended that to support discovery of resources, e
 
 ### Crosswalk considerations
 
-#### Dublin core / CKAN / data.govt.nz 
+#### Dublin core / CKAN / data.gov.au 
 Mapping to CKAN and Dublin core elements, particularly as used by data.gov.au needs discussion
 
 ## Also Consider 

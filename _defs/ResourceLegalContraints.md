@@ -61,7 +61,7 @@ Therefore - It is important to capture all legal constraints that apply to a spa
 #### ISO19139
 See guidance provided in [MD_Constraints](./class-md_constraints) and [MD_LegalConstraints](./class-MD_LegalConstraints)
 
-#### Dublin core / CKAN / data.govt.nz
+#### Dublin core / CKAN / data.gov.au
 Maps to `rights`
 `Reference for legal` maps to `licence`
 

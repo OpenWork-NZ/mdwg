@@ -54,7 +54,7 @@ Therefore - It is highly recommended that to support discovery of resources, eve
 
 <details>
 
-#### Dublin core / CKAN / data.govt.nz {if any}
+#### Dublin core / CKAN / data.gov.au {if any}
 Mapping geographic extents to CKAN and Dublin core elements, particularly as used by data.gov.au needs discussion
 
 </details>

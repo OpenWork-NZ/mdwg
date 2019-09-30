@@ -56,7 +56,7 @@ Development of URI naming conventions to describe how the reference to the resou
 
 <details>
 
-#### Dublin core / CKAN / data.govt.nz
+#### Dublin core / CKAN / data.gov.au
 Maps to `identifier`
 > Note BC 18-7 - may relate to issues involving confusion between metadata identifiers and resource identifiers in DC and other metadata systems.
 

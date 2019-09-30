@@ -65,7 +65,7 @@ Values for this element must come from the MD_ProgressCode codelist.
 
 ### Crosswalk considerations
 
-#### Dublin core / CKAN / data.govt.nz
+#### Dublin core / CKAN / data.gov.au
 Maps to `data status`
 
 ## Examples

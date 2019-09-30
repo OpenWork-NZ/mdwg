@@ -57,7 +57,7 @@ The contents of an abstract should address the 5Ws What is it; Who generated it;
 
 <details>
 
-#### Dublin core / CKAN / data.govt.nz
+#### Dublin core / CKAN / data.gov.au
 Maps to `description`
 
 #### DCAT

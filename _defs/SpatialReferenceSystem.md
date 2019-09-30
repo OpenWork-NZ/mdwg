@@ -102,7 +102,7 @@ To date the European Petroleum Survey Group (EPSG) holds the most complete and c
 
 <details>
 
-#### Dublin core / CKAN / data.govt.nz
+#### Dublin core / CKAN / data.gov.au
 No mapping provided
 
 #### DCAT

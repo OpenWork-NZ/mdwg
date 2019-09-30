@@ -55,7 +55,7 @@ It is not recommended, except in the case of service information metadata, that 
 
 <details>
 
-#### Dublin core / CKAN / data.govt.nz 
+#### Dublin core / CKAN / data.gov.au 
 likely unneeded unless a service
 
 #### DCAT 

@@ -58,7 +58,7 @@ Therefore - It is strongly recommended that to support discovery of resources, e
 
 <details>
 
-#### Dublin core / CKAN / data.govt.nz
+#### Dublin core / CKAN / data.gov.au
 Maps to `geospatial coverage`
 
 #### DCAT 

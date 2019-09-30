@@ -50,7 +50,7 @@ The use of the new `partyIdentifier` element added in the 2018 ammendment to the
 #### ISO19139
 See discussion at [CI_Responsibility](./class-CI_Responsibility)
 
-#### Dublin core / CKAN / data.govt.nz
+#### Dublin core / CKAN / data.gov.au
 Maps to `contact`
 
 #### DCAT

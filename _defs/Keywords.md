@@ -96,7 +96,7 @@ The new `keywordClass` package should be explored to allow the greater use of se
 #### ISO19139
 MD_KeywordClass was added to allow further categorisation of keywords
 
-#### Dublin core / CKAN / data.govt.nz
+#### Dublin core / CKAN / data.gov.au
 Mapping not yet discussed.
 
 #### DCAT

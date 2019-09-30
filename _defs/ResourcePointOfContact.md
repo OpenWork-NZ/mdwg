@@ -51,7 +51,7 @@ The use of the new `partyIdentifier` element added in the 2018 ammendment to the
 #### ISO19139
 See discussion at [CI_Responsibility](./class-CI_Responsibility)
 
-#### Dublin core / CKAN / data.govt.nz
+#### Dublin core / CKAN / data.gov.au
 Maps to `contact` 
 > Note BC 19-7: These map to the same elements as Metadata Contact.  Is this a problem?
 

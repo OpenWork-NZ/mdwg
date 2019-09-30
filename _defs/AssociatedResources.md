@@ -74,7 +74,7 @@ role as a mechanism for associating resources. Changes include:
 - MD_AssociatedResource /metadataReference:CI_Citation was added
   - This new element was added to avoid ambiguity about whether the name:CI_Citation refers to a resource or to metadata for that resource. Now it is clear that name:CI_Citation refers to the resource and the metadataReference refers to metadata for that resource.
 
-#### Dublin core / CKAN / data.govt.nz 
+#### Dublin core / CKAN / data.gov.au 
 TBD {mapping to *DC element* and discussion???}
 
 #### DCAT 

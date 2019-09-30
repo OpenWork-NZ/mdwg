@@ -60,7 +60,7 @@ As for multiple locations for the same metadata, it is useful to look at MD_Meta
 #### ISO19139
 This is a new element that allows unambiguous specification of the online location where the metadata is available.
 
-#### Dublin core / CKAN / data.govt.nz
+#### Dublin core / CKAN / data.gov.au
 In Dublin core the identifier element is described as holding a reference to the resource (not the metadata). However in the case of metadata records harvested by s higher level CKAN like catalogue, we view the complete metadata record as the resource. It is also standard practice that the DC Identifier field be resolvable. For a Dublin core metadata harvested via CSW from a ISO 19115-1 record, it is important that that record links to something that can be derefewrenced. That something is held in the identifier field and should be the location URL/URI for the metadata.  IF the ISO 19115-1 identifier element is only a unresolvable UUID, the metadataLinkage element may be a better choice to populate the DC Identifier field.
 
 #### DCAT

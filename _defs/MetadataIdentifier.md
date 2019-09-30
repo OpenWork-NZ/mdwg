@@ -76,7 +76,7 @@ Therefore - It is Highly Recommended that every metadata record should have one 
 #### ISO19139
 In iso19115-1 Data type `CI_ResponsibleParty` (iso19115:2004) changed to type `CI_Responsibility` such as in `MD_Metadata.contact`, `MD_DataIdentification.pointOfContact`, or `CI_Citation.citedResponsibleParty`
 
-#### Dublin core / CKAN / data.govt.nz
+#### Dublin core / CKAN / data.gov.au
 Maps to `metadata URI`
 
 #### DCAT

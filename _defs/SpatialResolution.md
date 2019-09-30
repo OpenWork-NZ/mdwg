@@ -72,7 +72,7 @@ Spatial resolution can be documented in many ways. For ISO19115-1, these are lim
 
 <details>
 
-#### Dublin core / CKAN / data.govt.nz
+#### Dublin core / CKAN / data.gov.au
 Maps to ?
 
 #### DCAT

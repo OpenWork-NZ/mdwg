@@ -74,7 +74,7 @@ title: Template
 #### ISO19139 
 {Discussion of issues, if any, to guide migration from ISO19139}
 
-#### Dublin core / CKAN / data.govt.nz {if any}
+#### Dublin core / CKAN / data.gov.au {if any}
 {mapping to `DC element` and discussion}
 
 #### DCAT 

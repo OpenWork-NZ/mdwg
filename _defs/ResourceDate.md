@@ -69,7 +69,7 @@ This element should be updated in a consistent yet to be agreed upon manor.  We 
 
 <details>
 
-#### Dublin core / CKAN / data.govt.nz
+#### Dublin core / CKAN / data.gov.au
 Maps to `date (publication, update)`
 
 #### DCAT

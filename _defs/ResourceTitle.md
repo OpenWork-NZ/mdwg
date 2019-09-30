@@ -44,7 +44,7 @@ If the title is not a common language name, at least one alternate title should 
 
 <details>
 
-#### Dublin core / CKAN / data.govt.nz
+#### Dublin core / CKAN / data.gov.au
 Maps to `title`
 
 #### DCAT

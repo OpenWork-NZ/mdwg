@@ -69,7 +69,7 @@ This element should be updated in a consistent yet to be agreed upon manor.  We 
 #### ISO19139
 The element `dateStamp` was replaced with `dateInfo` to allow other types of metadata date information to be recorded in addition to creation date. The type and cardinality of this element was changed in order to allow associating more than one type of date with a metadata record.
 
-#### Dublin core / CKAN / data.govt.nz
+#### Dublin core / CKAN / data.gov.au
 Maps to `publish` and `update date`
 
 #### DCAT

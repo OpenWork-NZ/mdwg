@@ -51,7 +51,7 @@ Therefore - In order to provide metadata in a consistant manner for the users in
 #### ISO19139
 MD_Metadata/language moved to MD_Metadata/defaultLocale:PT_Locale - Make use of the newly added Language and character set localization package for defining local language and character set.
 
-#### Dublin core / CKAN / data.govt.nz
+#### Dublin core / CKAN / data.gov.au
 Maps to `language`
 CKAN has one field for language that maps to both Metadata and Resource language fields. ISO 19115 recommends 639-2 3 letter codes. Data.gov.au recommends IETF RFC4646 2 letter codes as primary. See https://www.loc.gov/standards/iso639-2/faq.html#6 for discussion of the differences
 
