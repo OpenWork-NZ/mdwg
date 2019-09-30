@@ -6,12 +6,12 @@ rank: 70
 title: Resource Lineage
 ---
 # Resource Lineage ★★★★
-*Every spatial resource has a history and was built upon other work. Lineage documentation specifies a resource's source data, transformations, and input/output specifications. Such information is inherently causal, communicating the purpose, theory and meaning embodied in a resource. *
+*Every spatial resource has a history and was built upon other work. Lineage documentation specifies a resource's source data, transformations, and input/output specifications. Such information is inherently causal, communicating the purpose, theory and meaning embodied in a resource.*
 
 - **Path** -  *MD_Metadata.resourceLineage>LI_Lineage*
 - **Governance** -  *Agency, Domain*
 - **Purpose -** *Resource use*
-- **Audience - **
+- **Audience -**
   - machine resource - ⭑
   - general - ⭑⭑
   - resource manager - ⭑⭑⭑⭑
