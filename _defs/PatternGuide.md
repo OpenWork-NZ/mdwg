@@ -1,5 +1,6 @@
 ---
 layout: page
+rank: 30
 type: page
 section: Guidance
 title: Pattern Guide
