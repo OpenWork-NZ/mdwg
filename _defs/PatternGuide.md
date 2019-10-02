@@ -95,3 +95,6 @@ An example of how this document might be used to provide guidance by an organisa
 | Constraints on resource access and use: | [Resource Constraints](./ResourceOtherConstraints)   |
 | Metadata date stamp:  | [Metadata Date](./MetadataDate)  |
 |Metadata point of contact: | [Metadata Responsible Party](./MetadataContact)  |
+
+
+**>> [*Patterns Template*](./Template)**
