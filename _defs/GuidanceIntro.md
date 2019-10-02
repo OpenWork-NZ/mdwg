@@ -32,4 +32,4 @@ Terms of Reference
 - Govern associated metadata tools, models, vocabularies, and resources, which are published on by ICSM and or ANZLIC.
 - Report to ICSM and ANZLIC on key activities, and metadata developments.
 
-**>> [*Table of Contents*](./TableOfContents.md)**
+**>> [*Table of Contents*](./TableOfContents)**
