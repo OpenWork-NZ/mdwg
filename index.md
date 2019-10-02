@@ -13,21 +13,21 @@ This document was compile by [OpenWork Ltd (OWL)](http://openwork.nz) on behalf 
 
 ### ICSM Metadata Working Group 
 
-Chair :	Irina Bastrokova	irina.bastrakova@ga.gov.au
+Chair :	Irina Bastrokova - irina.bastrakova@ga.gov.au
 
-Secretariat:	Andrew Whiting	andrew.whiting@ga.gov.au
+Secretariat:	Andrew Whiting - andrew.whiting@ga.gov.au
 
-Secretariat:	Graham Logan	graham.logan@ga.gov.au
+Secretariat:	Graham Logan - graham.logan@ga.gov.au
 
-ANZLIC:	Brian Sloan	Brian.Sloan@ga.gov.au
+ANZLIC:	Brian Sloan	- Brian.Sloan@ga.gov.au
 
-ANZLIC:	Ann Beaumaris	Ann.Beaumaris@industry.gov.au
+ANZLIC:	Ann Beaumaris	- Ann.Beaumaris@industry.gov.au
 
-ICSM: - Executive Officer 	Lesley Waterhouse 	lesley.waterhouse@ga.gov.au
+ICSM: Executive Officer -	Lesley Waterhouse - lesley.waterhouse@ga.gov.au
 
 ### Contributors
 
-Lead Author - Byron Cochrane - OpenWorks Ltd - byron@openwork.nz
+Lead Author: Byron Cochrane - OpenWorks Ltd - byron@openwork.nz
 
 Irina Bastrakova - Geoscience Australia - irina.bastrakova@ga.gov.au
 
