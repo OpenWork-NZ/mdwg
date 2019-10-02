@@ -102,3 +102,5 @@ title: Table of Contents
 - [MD_Scope](./class-MD_Scope) 
 - [MD_SecurityConstraints](./class-MD_SecurityConstraints)
 - [PT_Locale](./PT_Locale)
+
+**>> [*Patterns Explained*](./PatternGuide)**
