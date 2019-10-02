@@ -43,6 +43,6 @@ Aaron Sedgmen - Geoscience Australia - Aaron.Sedgmen@ga.gov.au
 
 Martin Capobianco - Geoscience Australia - Martin.Capobianco@ga.gov.au
 
-Dave Connell - Australia Antarctic Division, Dept othe Environment and Energy - Dave.Connell@aad.gov.au
+Dave Connell - Australia Antarctic Division, Dept of the Environment and Energy - Dave.Connell@aad.gov.au
 
 **>> [*Introduction*](./GuidanceIntro.md)**
