@@ -46,7 +46,7 @@ Martin Capobianco - Geoscience Australia - Martin.Capobianco@ga.gov.au
 Dave Connell - Australia Antarctic Division, Dept of the Environment and Energy - Dave.Connell@aad.gov.au
 
 
-**>> [*Introduction*](./defs/GuidanceIntro.md)**
+**>> [*Introduction*](./defs/GuidanceIntro)**
 
 ![Geoscience Australia](./images/GA.jpg) 
 
