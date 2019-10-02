@@ -50,4 +50,6 @@ Dave Connell - Australia Antarctic Division, Dept of the Environment and Energy 
 
 ![Geoscience Australia](./images/GA.jpg) 
 
-![ARDC](./images/ARDC.png)  ![DEE](./images/DeptEngEnv.png)  ![TERN](./images/TERN.png)  ![DOD](./images/dod.jpg)  ![AAD](./images/aad.png)  ![OpenWork Ltd](./images/OWL.png) 
+![ARDC](./images/ARDC.png)  ![DEE](./images/DeptEngEnv.png)  ![TERN](./images/TERN.png)  ![DOD](./images/dod.jpg)  ![AAD](./images/aad.png)  
+
+![OpenWork Ltd](./images/OWL.png) 
