@@ -97,4 +97,5 @@ An example of how this document might be used to provide guidance by an organisa
 |Metadata point of contact: | [Metadata Responsible Party](./MetadataContact)  |
 
 
+
 **>> [*Patterns Template*](./Template)**
