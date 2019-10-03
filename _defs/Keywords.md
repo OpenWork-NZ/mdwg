@@ -127,19 +127,23 @@ There are several elements outside the keywords class that are in effect keyword
                   <gco:CharacterString/>
                </mri:keyword>
                <mri:type>
-                  <mri:MD_KeywordTypeCode codeListValue="theme"
-                                          codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#MD_KeywordTypeCode"/>
+                  <mri:MD_KeywordTypeCode codeListValue="theme" 
+                  codeList="https://schemas.isotc211.org/19115/resources
+                  /Codelist/cat/codelists.xml#MD_KeywordTypeCode"/>
                </mri:type>
             </mri:MD_Keywords>
          </mri:descriptiveKeywords>
          <mri:descriptiveKeywords>
             <mri:MD_Keywords>
                <mri:keyword>
-                  <gco:CharacterString>World</gco:CharacterString>
+                  <gco:CharacterString>
+                  World
+                  </gco:CharacterString>
                </mri:keyword>
                <mri:type>
-                  <mri:MD_KeywordTypeCode codeListValue="place"
-                                          codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#MD_KeywordTypeCode"/>
+                  <mri:MD_KeywordTypeCode codeListValue="place" 
+                  codeList="https://schemas.isotc211.org/19115/resources
+                  /Codelist/cat/codelists.xml#MD_KeywordTypeCode"/>
                </mri:type>
             </mri:MD_Keywords>
          </mri:descriptiveKeywords>
@@ -149,13 +153,17 @@ There are several elements outside the keywords class that are in effect keyword
                   <gco:CharacterString>Tasman Sea</gco:CharacterString>
                </mri:keyword>
                <mri:type>
-                  <mri:MD_KeywordTypeCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#MD_KeywordTypeCode"
-                                          codeListValue="place"/>
+                  <mri:MD_KeywordTypeCode 
+                  codeList="https://schemas.isotc211.org/19115/resources
+                  /Codelist/cat/codelists.xml#MD_KeywordTypeCode" 
+                  codeListValue="place"/>
                </mri:type>
                <mri:thesaurusName>
                   <cit:CI_Citation>
                      <cit:title>
-                        <gco:CharacterString>Continents, countries, sea regions of the world.</gco:CharacterString>
+                        <gco:CharacterString>
+                        Continents, countries, sea regions of the world.
+                        </gco:CharacterString>
                      </cit:title>
                      <cit:date>
                         <cit:CI_Date>
@@ -163,15 +171,23 @@ There are several elements outside the keywords class that are in effect keyword
                               <gco:Date>2015-07-17</gco:Date>
                            </cit:date>
                            <cit:dateType>
-                              <cit:CI_DateTypeCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_DateTypeCode"
-                                                   codeListValue="publication"/>
+                              <cit:CI_DateTypeCode 
+                              codeList="https://schemas.isotc211.org/19115
+                              /resources/Codelist/cat
+                              /codelists.xml#CI_DateTypeCode" 
+                              codeListValue="publication"/>
                            </cit:dateType>
                         </cit:CI_Date>
                      </cit:date>
                      <cit:identifier>
                         <mcc:MD_Identifier>
                            <mcc:code>
-                              <gcx:Anchor xlink:href="http://202.49.243.69:8080/geonetwork/srv/eng/thesaurus.download?ref=external.place.regions">geonetwork.thesaurus.external.place.regions</gcx:Anchor>
+                              <gcx:Anchor 
+                              xlink:href="http://202.49.243.69:8080/geonetwork
+                              /srv/eng/thesaurus.download?ref=
+                              external.place.regions">
+                              geonetwork.thesaurus.external.place.regions
+                              </gcx:Anchor>
                            </mcc:code>
                         </mcc:MD_Identifier>
                      </cit:identifier>
@@ -188,6 +204,9 @@ There are several elements outside the keywords class that are in effect keyword
 
 ### UML diagrams
 Recommended elements highlighted in Yellow
+
 ![keywords](../images/KeywordsUML.png)
 
 </details>
+
+\pagebreak

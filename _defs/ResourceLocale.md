@@ -85,11 +85,15 @@ No identified mapping
           <mri:defaultLocale>
             <lan:PT_Locale>
                <lan:language>
-                  <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="eng"/>
+                  <lan:LanguageCode 
+                  codeList="http://www.loc.gov/standards/iso639-2/" 
+                  codeListValue="eng"/>
                </lan:language>
                <lan:characterEncoding>
-                  <lan:MD_CharacterSetCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#MD_CharacterSetCode"
-                                           codeListValue="utf8"/>
+                  <lan:MD_CharacterSetCode 
+                  codeList="https://schemas.isotc211.org/19115/resources
+                  /Codelist/cat/codelists.xml#MD_CharacterSetCode" 
+                  codeListValue="utf8"/>
                </lan:characterEncoding>
             </lan:PT_Locale>
          </mri:defaultLocale>
@@ -103,6 +107,9 @@ No identified mapping
 
 ### UML diagrams
 Recommended elements highlighted in Yellow
+
 ![resourceDefaultLocale](../images/ResourceLocaleUML.png)
 
 </details>
+
+\pagebreak

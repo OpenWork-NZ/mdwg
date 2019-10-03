@@ -84,9 +84,12 @@ The data resulting from this program are known as GEODATA. Each GEODATA product 
     <mri:MD_DataIdentification>
     ....
       <mri:purpose>
-        <gco:CharacterString>  This is a sample purpose statement reprinted from the document AS/NZS ISO 19115.1:2015:
-        This dataset was developed to record information necessary for the administration of the
-        Mining Act.</gco:CharacterString>
+        <gco:CharacterString>
+        This is a sample purpose statement reprinted from the document 
+        AS/NZS ISO 19115.1:2015:
+        This dataset was developed to record information necessary for the 
+        administration of the Mining Act.
+        </gco:CharacterString>
       </mri:purpose>
     ....
     </mri:MD_DataIdentification>
@@ -97,6 +100,9 @@ The data resulting from this program are known as GEODATA. Each GEODATA product 
 
 ### UML diagrams
 Recommended elements highlighted in Yellow
+
 ![purpose](../images/PurposeUML.png)
 
 </details>
+
+\pagebreak

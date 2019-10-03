@@ -93,8 +93,9 @@ May map to `Key Identifier` if `metadataIdentifier` is unresolvable
    <mdb:metadataScope>
       <mdb:MD_MetadataScope>
          <mdb:resourceScope>
-            <mcc:MD_ScopeCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#MD_ScopeCode"
-                              codeListValue="dataset"/>
+            <mcc:MD_ScopeCode 
+            codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat
+            /codelists.xml#MD_ScopeCode" codeListValue="dataset"/>
          </mdb:resourceScope>
          <mdb:name gco:nilReason="missing">
             <gco:CharacterString/>
@@ -111,3 +112,5 @@ Recommended elements highlighted in Yellow
 ![metadataScope](../images/MD_Scope.png)
 
 </details>
+
+\pagebreak

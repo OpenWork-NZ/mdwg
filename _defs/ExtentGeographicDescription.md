@@ -116,7 +116,9 @@ Mapping geographic extents to CKAN and Dublin core elements, particularly as use
                      <gex:geographicIdentifier>
                         <mcc:MD_Identifier>
                            <mcc:code>
-                              <gco:CharacterString>Australia</gco:CharacterString>
+                              <gco:CharacterString>
+                              Australia
+                              </gco:CharacterString>
                            </mcc:code>
                         </mcc:MD_Identifier>
                      </gex:geographicIdentifier>
@@ -133,6 +135,9 @@ Mapping geographic extents to CKAN and Dublin core elements, particularly as use
 
 ### UML diagrams
 Recommended elements highlighted in Yellow
+
 ![ExGeoDescription](../images/EX_GeoDescription.png)
 
 </details>
+
+\pagebreak

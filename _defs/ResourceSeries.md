@@ -87,7 +87,8 @@ Maps to `Context`
                <cit:series>
                   <cit:CI_Series>
                      <cit:name>
-                        <gco:CharacterString>OpenWork GeoData Series</gco:CharacterString>
+                        <gco:CharacterString>OpenWork GeoData Series
+                        </gco:CharacterString>
                      </cit:name>
                      <cit:issueIdentification gco:nilReason="missing">
                         <gco:CharacterString/>
@@ -106,6 +107,9 @@ Maps to `Context`
 
 ### UML diagrams
 Recommended elements highlighted in Yellow
+
 ![dataCitationSeries](../images/ResourceSeriesUML.png)
 
 </details>
+
+\pagebreak

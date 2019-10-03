@@ -48,3 +48,5 @@ Identification information about a resource is of high importance to document as
 Recommended elements highlighted in Yellow
 
 ![MD_DataIdentification](../images/class-MD_DataIdentification.png)
+
+\pagebreak

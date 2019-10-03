@@ -79,11 +79,13 @@ Maps to `Related Party`
    <mdb:identificationInfo>
       <mri:MD_DataIdentification>
 ....
-	<mri:pointOfContact>
+        <mri:pointOfContact>
             <cit:CI_Responsibility>
                <cit:role>
-                  <cit:CI_RoleCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_RoleCode"
-                                   codeListValue="custodian"/>
+                  <cit:CI_RoleCode 
+                  codeList="https://schemas.isotc211.org/19115/resources
+                  /Codelist/cat/codelists.xml#CI_RoleCode" 
+                  codeListValue="custodian"/>
                </cit:role>
                <cit:party>
                   <cit:CI_Organisation>
@@ -95,7 +97,8 @@ Maps to `Related Party`
                            <cit:address>
                               <cit:CI_Address>
                                  <cit:electronicMailAddress>
-                                    <gco:CharacterString>email@mail.com</gco:CharacterString>
+                                    <gco:CharacterString>email@mail.com
+                                    </gco:CharacterString>
                                  </cit:electronicMailAddress>
                               </cit:CI_Address>
                            </cit:address>
@@ -104,10 +107,12 @@ Maps to `Related Party`
                      <cit:individual>
                         <cit:CI_Individual>
                            <cit:name>
-                              <gco:CharacterString>Metadata Bob</gco:CharacterString>
+                              <gco:CharacterString>Metadata Bob
+                              </gco:CharacterString>
                            </cit:name>
                            <cit:positionName>
-                              <gco:CharacterString>GIS Guru</gco:CharacterString>
+                              <gco:CharacterString>GIS Guru
+                              </gco:CharacterString>
                            </cit:positionName>
                         </cit:CI_Individual>
                      </cit:individual>
@@ -124,6 +129,9 @@ Maps to `Related Party`
 
 ### UML diagrams
 Recommended elements highlighted in Yellow
+
 ![Responsibility](../images/ResourcePointOfContactUML.png)
 
 </details>
+
+\pagebreak

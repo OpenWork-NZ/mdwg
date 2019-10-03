@@ -100,8 +100,10 @@ Maps to `@dateAccessioned`
             <gco:DateTime>2019-05-30T15:30:05</gco:DateTime>
          </cit:date>
          <cit:dateType>
-            <cit:CI_DateTypeCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_DateTypeCode"
-                                 codeListValue="revision"/>
+            <cit:CI_DateTypeCode 
+            codeList="https://schemas.isotc211.org/19115/resources/Codelist
+            /cat/codelists.xml#CI_DateTypeCode"
+            codeListValue="revision"/>
          </cit:dateType>
       </cit:CI_Date>
   </mdb:dateInfo>
@@ -111,7 +113,8 @@ Maps to `@dateAccessioned`
             <gco:DateTime>2005-03-31T19:13:30</gco:DateTime>
          </cit:date>
          <cit:dateType>
-            <cit:CI_DateTypeCode codeList="codeListLocation#CI_DateTypeCode" codeListValue="creation">creation</cit:CI_DateTypeCode>
+            <cit:CI_DateTypeCode codeList="codeListLocation#CI_DateTypeCode" 
+            codeListValue="creation">creation</cit:CI_DateTypeCode>
          </cit:dateType>
       </cit:CI_Date>
   </mdb:dateInfo>
@@ -125,3 +128,5 @@ Recommended elements highlighted in Yellow
 ![dateInfo](../images/MetadataDateUML.png)
 
 </details>
+
+\pagebreak

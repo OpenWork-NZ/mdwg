@@ -170,7 +170,8 @@ Agregated into `Description 'notes'`
                            <cit:address>
                               <cit:CI_Address>
                                  <cit:electronicMailAddress>
-                                    <gco:CharacterString>info@openwork.nz</gco:CharacterString>
+                                    <gco:CharacterString>info@openwork.nz
+                                    </gco:CharacterString>
                                  </cit:electronicMailAddress>
                               </cit:CI_Address>
                            </cit:address>
@@ -181,8 +182,9 @@ Agregated into `Description 'notes'`
             </cit:CI_Responsibility>
          </mco:responsibleParty>
          <mco:useConstraints>
-            <mco:MD_RestrictionCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#MD_RestrictionCode"
-                                    codeListValue="copyright"/>
+            <mco:MD_RestrictionCode 
+            codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat
+            /codelists.xml#MD_RestrictionCode" codeListValue="copyright"/>
          </mco:useConstraints>
       </mco:MD_LegalConstraints>
    </mdb:metadataConstraints>
@@ -192,6 +194,9 @@ Agregated into `Description 'notes'`
 
 ### UML diagrams
 Recommended elements highlighted in Yellow
+
 ![MetdataConstraints_Legal](../images/MD_LegalConstraints.png)
 
 </details>
+
+\pagebreak

@@ -74,4 +74,4 @@ Recommended elements highlighted in Yellow
 
 ![image-20190711170142639](../images/class-MD_Metadata.png)
 
-
+\pagebreak

@@ -88,9 +88,9 @@ title: Template
 
 ## Also Consider
 {Links to additional useful information. Usually other elements, packages and classes in this good pratice document. May also link to other external resources.}
-**[{element name} -]({https://path to element})**  {description of importance and utility with any links}
-**[{element name} -]({https://path to element})**  {description of importance and utility with any links}
-**[{class name} -]({https://path to class})**  {description of importance and utility with any links}
+**[{element name} -]({path to element})**  {description of importance and utility with any links}
+**[{element name} -]({path to element})**  {description of importance and utility with any links}
+**[{class name} -]({path to class})**  {description of importance and utility with any links}
 
 ## Examples
 
@@ -116,4 +116,7 @@ title: Template
 ### UML diagrams
 {Captured from official ISO documentation at https://www.isotc211.org/hmmg/HTML/ConceptualModels/index.htm?goto=1:12:2:4095}
 Recommended elements highlighted in Yellow
-![{Name}](/%7Bhttp:/path.to.image/of/UML%7D)
+
+![{Name}]({path to UML diagram image})
+
+\pagebreak

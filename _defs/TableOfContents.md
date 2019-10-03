@@ -104,3 +104,5 @@ title: Table of Contents
 - [PT_Locale](./PT_Locale)
 
 **>> [*Patterns Explained*](./PatternGuide)**
+
+\pagebreak

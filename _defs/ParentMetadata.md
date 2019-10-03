@@ -81,7 +81,10 @@ Maps to `RelatedInfo/relation='partOf'`
          <cit:onlineResource>
             <cit:CI_OnlineResource>
                <cit:linkage>
-                  <gco:CharacterString>https://geodata.nz/geonetwork/srv/eng/catalog.search#/metadata/8668cb6b-b594-4394-8e2c-f554bace859f</gco:CharacterString>
+                  <gco:CharacterString>
+                  https://geodata.nz/geonetwork/srv/eng/catalog.search#
+                  /metadata/8668cb6b-b594-4394-8e2c-f554bace859f
+                  </gco:CharacterString>
                </cit:linkage>
                <cit:protocol gco:nilReason="missing">
                   <gco:CharacterString/>
@@ -93,8 +96,10 @@ Maps to `RelatedInfo/relation='partOf'`
                   <gco:CharacterString/>
                </cit:description>
                <cit:function>
-                  <cit:CI_OnLineFunctionCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_OnLineFunctionCode"
-                                             codeListValue=""/>
+                  <cit:CI_OnLineFunctionCode 
+                  codeList="https://schemas.isotc211.org/19115/resources
+                  /Codelist/cat/codelists.xml#CI_OnLineFunctionCode" 
+                  codeListValue=""/>
                </cit:function>
             </cit:CI_OnlineResource>
          </cit:onlineResource>
@@ -106,6 +111,9 @@ Maps to `RelatedInfo/relation='partOf'`
 
 ### UML diagrams
 Recommended elements highlighted in Yellow
+
 ![ParentMetadata](../images/ParentMetadataUML.png)
 
 </details>
+
+\pagebreak

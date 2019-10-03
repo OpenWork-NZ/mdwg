@@ -129,27 +129,35 @@ Recommended property to meet data citation requirement
   <mdb:distributionInfo>
     <mrd:MD_Distribution>
        <mrd:description>
-          <gco:CharacterString>A sample distribution record for a dataset</gco:CharacterString>
+          <gco:CharacterString>
+          A sample distribution record for a dataset
+          </gco:CharacterString>
        </mrd:description>
        <mrd:distributor>
           <mrd:MD_Distributor>
              <mrd:distributorContact>
                 <cit:CI_Responsibility>
                    <cit:role>
-                      <cit:CI_RoleCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_RoleCode"
-                                       codeListValue="distributor"/>
+                      <cit:CI_RoleCode 
+                      codeList="https://schemas.isotc211.org/19115/resources
+                      /Codelist/cat/codelists.xml#CI_RoleCode"
+                      codeListValue="distributor"/>
                    </cit:role>
                    <cit:party>
                       <cit:CI_Organisation>
                          <cit:name>
-                            <gco:CharacterString>OpenWork Ltd</gco:CharacterString>
+                            <gco:CharacterString>
+                            OpenWork Ltd
+                            </gco:CharacterString>
                          </cit:name>
                          <cit:contactInfo>
                             <cit:CI_Contact>
                                <cit:address>
                                   <cit:CI_Address>
                                      <cit:electronicMailAddress>
-                                        <gco:CharacterString>info@openwork.nz</gco:CharacterString>
+                                        <gco:CharacterString>
+                                        info@openwork.nz
+                                        </gco:CharacterString>
                                      </cit:electronicMailAddress>
                                   </cit:CI_Address>
                                </cit:address>
@@ -165,7 +173,9 @@ Recommended property to meet data citation requirement
                       <gco:CharacterString>Free</gco:CharacterString>
                    </mrd:fees>
                    <mrd:orderingInstructions>
-                      <gco:CharacterString>Contact us at the distributor email address</gco:CharacterString>
+                      <gco:CharacterString>
+                      Contact us at the distributor email address
+                      </gco:CharacterString>
                    </mrd:orderingInstructions>
                 </mrd:MD_StandardOrderProcess>
              </mrd:distributionOrderProcess>
@@ -176,7 +186,9 @@ Recommended property to meet data citation requirement
              <mrd:onLine>
                 <cit:CI_OnlineResource>
                    <cit:linkage>
-                      <gco:CharacterString>https://data.openwork.nz/samplePath/toResource</gco:CharacterString>
+                      <gco:CharacterString>
+                      https://data.openwork.nz/samplePath/toResource
+                      </gco:CharacterString>
                    </cit:linkage>
                    <cit:protocol gco:nilReason="missing">
                       <gco:CharacterString/>
@@ -188,8 +200,10 @@ Recommended property to meet data citation requirement
                       <gco:CharacterString/>
                    </cit:description>
                    <cit:function>
-                      <cit:CI_OnLineFunctionCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_OnLineFunctionCode"
-                                                 codeListValue=""/>
+                      <cit:CI_OnLineFunctionCode 
+                      codeList="https://schemas.isotc211.org/19115/resources
+                      /Codelist/cat/codelists.xml#CI_OnLineFunctionCode" 
+                      codeListValue=""/>
                    </cit:function>
                 </cit:CI_OnlineResource>
              </mrd:onLine>
@@ -198,7 +212,9 @@ Recommended property to meet data citation requirement
                    <mrd:formatSpecificationCitation>
                       <cit:CI_Citation>
                          <cit:title>
-                            <gco:CharacterString>geopackage</gco:CharacterString>
+                            <gco:CharacterString>
+                            geopackage
+                            </gco:CharacterString>
                          </cit:title>
                          <cit:edition>
                             <gco:CharacterString>1.2.0</gco:CharacterString>
@@ -214,10 +230,14 @@ Recommended property to meet data citation requirement
              <mrd:onLine>
                 <cit:CI_OnlineResource>
                    <cit:linkage>
-                      <gco:CharacterString>https://info.openwork.nz/linkTo/offlineAccess/instructions</gco:CharacterString>
+                      <gco:CharacterString>
+                      https://info.openwork.nz/linkTo/offlineAccess/instructions
+                      </gco:CharacterString>
                    </cit:linkage>
                    <cit:protocol>
-                      <gco:CharacterString>WWW:DOWNLOAD-1.0-http--download</gco:CharacterString>
+                      <gco:CharacterString>
+                      WWW:DOWNLOAD-1.0-http--download
+                      </gco:CharacterString>
                    </cit:protocol>
                    <cit:name gco:nilReason="missing">
                       <gco:CharacterString/>
@@ -226,8 +246,10 @@ Recommended property to meet data citation requirement
                       <gco:CharacterString/>
                    </cit:description>
                    <cit:function>
-                      <cit:CI_OnLineFunctionCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_OnLineFunctionCode"
-                                                 codeListValue=""/>
+                      <cit:CI_OnLineFunctionCode 
+                      codeList="https://schemas.isotc211.org/19115/resources
+                      /Codelist/cat/codelists.xml#CI_OnLineFunctionCode" 
+                      codeListValue=""/>
                    </cit:function>
                 </cit:CI_OnlineResource>
              </mrd:onLine>
@@ -236,7 +258,9 @@ Recommended property to meet data citation requirement
                    <mrd:name>
                       <cit:CI_Citation>
                          <cit:title>
-                            <gco:CharacterString>BigProject data</gco:CharacterString>
+                            <gco:CharacterString>
+                            BigProject data
+                            </gco:CharacterString>
                          </cit:title>
                       </cit:CI_Citation>
                    </mrd:name>
@@ -256,3 +280,5 @@ Recommended elements highlighted in Yellow
 ![Distribution](../images/MD_Distribution.png)
 
 </details>
+
+\pagebreak

@@ -113,12 +113,18 @@ All products must include an appropriate copyright statement.*
     <mri:MD_DataIdentification>
     ....
       <mri:abstract>
-        <gco:CharacterString>This is an example dataset to demonstrate the use of ISO 19115-3.  Below is a sample abstract reprinted from the document AS/NZS ISO 19115.1:2015.
-        Location of all current mineral Exploration Licences issued under the Mining Act, 1971.
-        Exploration Licences provide exclusive tenure rights to explore for mineral resources for up to a maximum
-        of 5 years. Comment is sought on applications for Exploration Licences from numerous sources
-        before granting. Exploration programs are subject to strict environmental and heritage conditions.
-        Exploitation of identified resources must be made under separate mineral production leases.</gco:CharacterString>
+        <gco:CharacterString>
+        This is an example dataset to demonstrate the use of ISO 19115-3.  
+        Below is a sample abstract reprinted from the document AS/NZS ISO 
+        19115.1:2015. Location of all current mineral Exploration Licences 
+        issued under the Mining Act, 1971.Exploration Licences provide 
+        exclusive tenure rights to explore for mineral resources for up to 
+        a maximum of 5 years. Comment is sought on applications for 
+        Exploration Licences from numerous sources before granting. 
+        Exploration programs are subject to strict environmental and 
+        heritage conditions. Exploitation of identified resources must be 
+        made under separate mineral production leases.
+        </gco:CharacterString>
       </mri:abstract>
     ....
     </mri:MD_DataIdentification>
@@ -129,6 +135,7 @@ All products must include an appropriate copyright statement.*
 
 ### UML diagrams
 Recommended elements highlighted in Yellow
+
 ![abstract](../images/AbstractUML.png)
 
 </details>

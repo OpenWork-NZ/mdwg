@@ -65,7 +65,9 @@ Agregated into `Description 'notes'`
 ### XML - Geoscience Australia
 Includes reference to the constraint document - Australia Protective Security Policy Framework
 ```
-<mdb:metadataConstraints xmlns:gmd="http://standards.iso.org/iso/19115/-3/gmd/1.0"xmlns:geonet="http://www.fao.org/geonetwork">
+<mdb:metadataConstraints 
+xmlns:gmd="http://standards.iso.org/iso/19115/-3/gmd/1.0" 
+xmlns:geonet="http://www.fao.org/geonetwork">
   <mco:MD_SecurityConstraints>
     <mco:reference>
       <cit:CI_Citation>
@@ -85,7 +87,12 @@ Includes reference to the constraint document - Australia Protective Security Po
               </gco:CharacterString>
             </cit:linkage>
             <cit:protocol>
-              <gco:CharacterString xsi:type="gco:CodeType" codeSpace="http://pid.geoscience.gov.au/def/schema/ga/ISO19115-3-2016/codelist/ga_profile_codelists.xml#gapCI_ProtocolTypeCode">WWW:LINK-1.0-http--link
+              <gco:CharacterString 
+              xsi:type="gco:CodeType" 
+              codeSpace="http://pid.geoscience.gov.au/def/schema/ga
+              /ISO19115-3-2016/codelist
+              /ga_profile_codelists.xml#gapCI_ProtocolTypeCode">
+              WWW:LINK-1.0-http--link
               </gco:CharacterString>
             </cit:protocol>
           </cit:CI_OnlineResource>
@@ -93,7 +100,9 @@ Includes reference to the constraint document - Australia Protective Security Po
       </cit:CI_Citation>
     </mco:reference>
     <mco:classification>
-      <mco:MD_ClassificationCode codeList="codeListLocation#MD_ClassificationCode" codeListValue="unclassified"/>
+      <mco:MD_ClassificationCode
+      codeList="codeListLocation#MD_ClassificationCode"
+      codeListValue="unclassified"/>
     </mco:classification>
   </mco:MD_SecurityConstraints>
 </mdb:metadataConstraints>
@@ -107,3 +116,5 @@ Recommended elements highlighted in Yellow
 ![MetdataSecurityConstraints](../images/MD_SecurityConstraints.png)
 
 </details>
+
+\pagebreak

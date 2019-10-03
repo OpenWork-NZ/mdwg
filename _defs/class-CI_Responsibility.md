@@ -116,8 +116,10 @@ The CI_Responsibility/extent element was added in order to allow specificationof
 ...
       <cit:CI_Responsibility>
          <cit:role>
-            <cit:CI_RoleCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_RoleCode"
-                             codeListValue="pointOfContact"/>
+            <cit:CI_RoleCode 
+            codeList="https://schemas.isotc211.org/19115/resources/Codelist
+            /cat/codelists.xml#CI_RoleCode" 
+            codeListValue="pointOfContact"/>
          </cit:role>
          <cit:party>
             <cit:CI_Organisation>
@@ -129,7 +131,8 @@ The CI_Responsibility/extent element was added in order to allow specificationof
                      <cit:address>
                         <cit:CI_Address>
                            <cit:electronicMailAddress>
-                              <gco:CharacterString>name@email.org</gco:CharacterString>
+                              <gco:CharacterString>name@email.org
+                              </gco:CharacterString>
                            </cit:electronicMailAddress>
                         </cit:CI_Address>
                      </cit:address>
@@ -154,6 +157,9 @@ The CI_Responsibility/extent element was added in order to allow specificationof
 
 ### UML diagrams
 Recommended elements highlighted in Yellow
+
 ![Responsibility](https://loomio-uploads.s3.amazonaws.com/documents/files/000/198/726/web/1558404613424)
 
 </details>
+
+\pagebreak

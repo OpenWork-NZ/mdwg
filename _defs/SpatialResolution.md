@@ -98,17 +98,28 @@ Maps to ?
 ### ABARES
 ```
     <mri:spatialResolution><mri:MD_Resolution>
-        <mri:distance><gco:Distance uom="metre">123</gco:Distance></mri:distance>
+        <mri:distance><gco:Distance uom="metre">123</gco:Distance>
+        </mri:distance>
     </mri:MD_Resolution></mri:spatialResolution>
     <mri:spatialResolution><mri:MD_Resolution>
-        <mri:angularDistance><gco:Angle uom="degreeLatitude">0.1</gco:Angle></mri:angularDistance>
+        <mri:angularDistance>
+            <gco:Angle uom="degreeLatitude">0.1</gco:Angle>
+        </mri:angularDistance>
     </mri:MD_Resolution></mri:spatialResolution>
-    <mri:spatialResolution><mri:MD_Resolution>
-        <mri:angularDistance><gco:Angle uom="degreeLongitude">0.05</gco:Angle></mri:angularDistance>
-    </mri:MD_Resolution></mri:spatialResolution>
-    <mri:spatialResolution><mri:MD_Resolution>
-        <mri:vertical><gco:Distance uom="metre">123</gco:Distance></mri:vertical>
-    </mri:MD_Resolution></mri:spatialResolution>
+    <mri:spatialResolution>
+        <mri:MD_Resolution>
+            <mri:angularDistance>
+                <gco:Angle uom="degreeLongitude">0.05</gco:Angle>
+            </mri:angularDistance>
+        </mri:MD_Resolution>
+    </mri:spatialResolution>
+    <mri:spatialResolution>
+        <mri:MD_Resolution>
+            <mri:vertical>
+                <gco:Distance uom="metre">123</gco:Distance>
+            </mri:vertical>
+        </mri:MD_Resolution>
+    </mri:spatialResolution>
 ```
 
 ### GA
@@ -147,6 +158,9 @@ Maps to ?
 
 ### UML diagrams
 Recommended elements highlighted in Yellow
+
 ![spatialResolution](../images/SpatialResolutionUML.png)
 
 </details>
+
+\pagebreak

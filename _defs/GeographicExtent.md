@@ -87,6 +87,9 @@ Maps to `Coverage/Spatial`
 
 ### UML diagrams
 Recommended elements highlighted in Yellow
+
 ![geographicExtent](../images/GeographicExtentUML.png)
 
 </details>
+
+\pagebreak

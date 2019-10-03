@@ -80,11 +80,14 @@ No identified mapping
    <mdb:defaultLocale>
       <lan:PT_Locale id="EN">
          <lan:language>
-            <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="eng"/>
+            <lan:LanguageCode 
+            codeList="http://www.loc.gov/standards/iso639-2/" 
+            codeListValue="eng"/>
          </lan:language>
          <lan:characterEncoding>
-            <lan:MD_CharacterSetCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#MD_CharacterSetCode"
-                                     codeListValue="utf8"/>
+            <lan:MD_CharacterSetCode 
+            codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat
+            /codelists.xml#MD_CharacterSetCode"  codeListValue="utf8"/>
          </lan:characterEncoding>
       </lan:PT_Locale>
    </mdb:defaultLocale>
@@ -94,6 +97,9 @@ No identified mapping
 
 ### UML diagrams
 Recommended elements highlighted in Yellow
+
 ![MDdefaultLocale](../images/MetadataLocaleUML.png)
 
 </details>
+
+\pagebreak

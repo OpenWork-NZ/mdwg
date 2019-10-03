@@ -82,7 +82,8 @@ Maps to `Publisher`
        <mri:citation>
           <cit:CI_Citation>
              <cit:title>
-                <gco:CharacterString>OpenWork geographical data</gco:CharacterString>
+                <gco:CharacterString>OpenWork geographical data
+                </gco:CharacterString>
              </cit:title>
              <cit:date>
                 <cit:CI_Date>
@@ -90,8 +91,10 @@ Maps to `Publisher`
                       <gco:Date>2019-07-18</gco:Date>
                    </cit:date>
                    <cit:dateType>
-                      <cit:CI_DateTypeCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_DateTypeCode"
-                                           codeListValue="creation"/>
+                      <cit:CI_DateTypeCode 
+                      codeList="https://schemas.isotc211.org/19115/resources
+                      /Codelist/cat/codelists.xml#CI_DateTypeCode" 
+                      codeListValue="creation"/>
                    </cit:dateType>
                 </cit:CI_Date>
              </cit:date>
@@ -101,8 +104,10 @@ Maps to `Publisher`
                       <gco:Date>2019-07-18</gco:Date>
                    </cit:date>
                    <cit:dateType>
-                      <cit:CI_DateTypeCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_DateTypeCode"
-                                           codeListValue="publication"/>
+                      <cit:CI_DateTypeCode 
+                      codeList="https://schemas.isotc211.org/19115/resources
+                      /Codelist/cat/codelists.xml#CI_DateTypeCode" 
+                      codeListValue="publication"/>
                    </cit:dateType>
                 </cit:CI_Date>
              </cit:date>
@@ -115,30 +120,37 @@ Maps to `Publisher`
              <cit:identifier>
                 <mcc:MD_Identifier>
                    <mcc:code>
-                      <gco:CharacterString>9547e07e-6a15-403b-8b19-488778fe0cf0</gco:CharacterString>
+                    <gco:CharacterString>9547e07e-6a15-403b-8b19-488778fe0cf0
+                    </gco:CharacterString>
                    </mcc:code>
                    <mcc:codeSpace>
-                      <gco:CharacterString>http://202.49.243.69:8080/geonetwork/srv/eng/metadata/</gco:CharacterString>
+                      <gco:CharacterString>
+                      http://202.49.243.69:8080/geonetwork/srv/eng/metadata/
+                      </gco:CharacterString>
                    </mcc:codeSpace>
                 </mcc:MD_Identifier>
              </cit:identifier>
              <cit:citedResponsibleParty>
                 <cit:CI_Responsibility>
                    <cit:role>
-                      <cit:CI_RoleCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_RoleCode"
-                                       codeListValue="author"/>
+                      <cit:CI_RoleCode 
+                      codeList="https://schemas.isotc211.org/19115/resources
+                      /Codelist/cat/codelists.xml#CI_RoleCode" 
+                      codeListValue="author"/>
                    </cit:role>
                    <cit:party>
                       <cit:CI_Organisation>
                          <cit:name>
-                            <gco:CharacterString>OpenWork Ltd</gco:CharacterString>
+                            <gco:CharacterString>OpenWork Ltd
+                            </gco:CharacterString>
                          </cit:name>
                          <cit:contactInfo>
                             <cit:CI_Contact>
                                <cit:address>
                                   <cit:CI_Address>
                                      <cit:electronicMailAddress>
-                                        <gco:CharacterString>info@openwork.nz</gco:CharacterString>
+                                        <gco:CharacterString>info@openwork.nz
+                                        </gco:CharacterString>
                                      </cit:electronicMailAddress>
                                   </cit:CI_Address>
                                </cit:address>
@@ -151,20 +163,25 @@ Maps to `Publisher`
              <cit:citedResponsibleParty>
                 <cit:CI_Responsibility>
                    <cit:role>
-                      <cit:CI_RoleCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_RoleCode"
-                                       codeListValue="publisher"/>
+                      <cit:CI_RoleCode 
+                      codeList="https://schemas.isotc211.org/19115/resources
+                      /Codelist/cat/codelists.xml#CI_RoleCode" 
+                      codeListValue="publisher"/>
                    </cit:role>
-                   <cit:party>
+                   <ci
+                   t:party>
                       <cit:CI_Individual>
                          <cit:name>
-                            <gco:CharacterString>Byron Cochrane</gco:CharacterString>
+                            <gco:CharacterString>Byron Cochrane
+                            </gco:CharacterString>
                          </cit:name>
                          <cit:contactInfo>
                             <cit:CI_Contact>
                                <cit:address>
                                   <cit:CI_Address>
                                      <cit:electronicMailAddress>
-                                        <gco:CharacterString>byron@openwork.nz</gco:CharacterString>
+                                        <gco:CharacterString>byron@openwork.nz
+                                        </gco:CharacterString>
                                      </cit:electronicMailAddress>
                                   </cit:CI_Address>
                                </cit:address>
@@ -185,6 +202,9 @@ Maps to `Publisher`
 
 ### UML diagrams
 Recommended elements highlighted in Yellow
+
 ![ResourceCitation](../images/ResourceResponsiblePartyUML.png)
 
 </details>
+
+\pagebreak

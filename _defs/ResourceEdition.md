@@ -80,7 +80,8 @@ Maps to `Version`
             <cit:CI_Citation>
             ....
    	       <cit:edition>
-                  <gco:CharacterString>2nd new and improved edition</gco:CharacterString>
+                  <gco:CharacterString>2nd new and improved edition
+                  </gco:CharacterString>
                </cit:edition>
                <cit:editionDate>
                   <gco:Date>2019-06-11</gco:Date>
@@ -97,6 +98,9 @@ Maps to `Version`
 
 ### UML diagrams
 Recommended elements highlighted in Yellow
+
 ![edition](../images/ResourceEditionUML.png)
 
 </details>
+
+\pagebreak

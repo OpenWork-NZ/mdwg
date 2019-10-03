@@ -109,10 +109,14 @@ http://data.gov.au/dataset/559708e5-480e-4f94-8429-c49571e82761
       <mdb:metadataIdentifier>
       <mcc:MD_Identifier>
          <mcc:code>
-            <gco:CharacterString>314eb989-3771-4c24-a399-d22631973279</gco:CharacterString>
+            <gco:CharacterString>
+            314eb989-3771-4c24-a399-d22631973279
+            </gco:CharacterString>
          </mcc:code>
          <mcc:codeSpace>
-            <gco:CharacterString>https://geodata.nz/geonetwork/srv/metadata/</gco:CharacterString>
+            <gco:CharacterString>
+            https://geodata.nz/geonetwork/srv/metadata/
+            </gco:CharacterString>
          </mcc:codeSpace>
       </mcc:MD_Identifier>
   </mdb:metadataIdentifier>
@@ -127,3 +131,5 @@ Recommended elements highlighted in Yellow
 ![MDIdentifier](../images/MetadataIdentifierUML.png)
 
 </details>
+
+\pagebreak

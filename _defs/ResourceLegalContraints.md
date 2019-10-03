@@ -95,20 +95,24 @@ Maps to `Rights/@licence`
              <mco:responsibleParty>
                 <cit:CI_Responsibility>
                    <cit:role>
-                      <cit:CI_RoleCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_RoleCode"
-                                       codeListValue="author"/>
+                      <cit:CI_RoleCode 
+                      codeList="https://schemas.isotc211.org/19115/resources
+                      /Codelist/cat/codelists.xml#CI_RoleCode" 
+                      codeListValue="author"/>
                    </cit:role>
                    <cit:party>
                       <cit:CI_Organisation>
                          <cit:name>
-                            <gco:CharacterString>OpenWork Ltd</gco:CharacterString>
+                            <gco:CharacterString>OpenWork Ltd
+                            </gco:CharacterString>
                          </cit:name>
                          <cit:contactInfo>
                             <cit:CI_Contact>
                                <cit:address>
                                   <cit:CI_Address>
                                      <cit:electronicMailAddress>
-                                        <gco:CharacterString>info@openwork.nz</gco:CharacterString>
+                                        <gco:CharacterString>info@openwork.nz
+                                        </gco:CharacterString>
                                      </cit:electronicMailAddress>
                                   </cit:CI_Address>
                                </cit:address>
@@ -117,7 +121,8 @@ Maps to `Rights/@licence`
                          <cit:individual>
                             <cit:CI_Individual>
                                <cit:name>
-                                  <gco:CharacterString>Byron Cochrane</gco:CharacterString>
+                                  <gco:CharacterString>Byron Cochrane
+                                  </gco:CharacterString>
                                </cit:name>
                             </cit:CI_Individual>
                          </cit:individual>
@@ -126,12 +131,14 @@ Maps to `Rights/@licence`
                 </cit:CI_Responsibility>
              </mco:responsibleParty>
              <mco:accessConstraints>
-                <mco:MD_RestrictionCode codeListValue="copyright"
-                                        codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#MD_RestrictionCode"/>
+                <mco:MD_RestrictionCode codeListValue="copyright" 
+                codeList="https://schemas.isotc211.org/19115/resources/Codelist
+                /cat/codelists.xml#MD_RestrictionCode"/>
              </mco:accessConstraints>
              <mco:useConstraints>
-                <mco:MD_RestrictionCode codeListValue="otherRestrictions"
-                                        codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#MD_RestrictionCode"/>
+                <mco:MD_RestrictionCode codeListValue="otherRestrictions" 
+                codeList="https://schemas.isotc211.org/19115/resources/Codelist
+                /cat/codelists.xml#MD_RestrictionCode"/>
              </mco:useConstraints>
              <mco:otherConstraints gco:nilReason="missing">
                 <gco:CharacterString/>
@@ -141,15 +148,18 @@ Maps to `Rights/@licence`
        <mri:resourceConstraints>
           <mco:MD_SecurityConstraints>
              <mco:classification>
-                <mco:MD_ClassificationCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#MD_ClassificationCode"
-                                           codeListValue="unclassified"/>
+                <mco:MD_ClassificationCode 
+                codeList="https://schemas.isotc211.org/19115/resources/Codelist
+                /cat/codelists.xml#MD_ClassificationCode" 
+                codeListValue="unclassified"/>
              </mco:classification>
           </mco:MD_SecurityConstraints>
        </mri:resourceConstraints>
        <mri:resourceConstraints>
           <mco:MD_Constraints>
              <mco:useLimitation>
-                <gco:CharacterString>Not to be used for navigation</gco:CharacterString>
+                <gco:CharacterString>Not to be used for navigation
+                </gco:CharacterString>
              </mco:useLimitation>
           </mco:MD_Constraints>
        </mri:resourceConstraints>
@@ -163,6 +173,9 @@ Maps to `Rights/@licence`
 ### UML diagrams
 
 Recommended elements highlighted in Yellow
+
 ![resourceLegalConstraints](../images/ResourceLegalConstraintsUML.png)
 
 </details>
+
+\pagebreak

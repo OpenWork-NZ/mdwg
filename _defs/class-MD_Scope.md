@@ -103,3 +103,5 @@ HierarchyLevel attributes were replaced by an MD_Scope class to improve the desc
 Recommended elements highlighted in Yellow
 
 ![MD_Scope](../images/MD_Scope.png)
+
+\pagebreak

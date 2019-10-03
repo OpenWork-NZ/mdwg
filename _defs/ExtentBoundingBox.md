@@ -115,6 +115,9 @@ Maps to the aggregate element `Coverage/Spatial`
 
 ### UML diagrams
 Recommended elements highlighted in Yellow
+
 ![EXBoundBox](../images/ExtentBoundingBoxUML.png)
 
 </details>
+
+\pagebreak

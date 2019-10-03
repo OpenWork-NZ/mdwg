@@ -83,4 +83,7 @@ Currently there are no clear methods to apply different constraints to different
 
 ### UML diagrams
 Recommended elements highlighted in Yellow
+
 ![MD_Constraints](../images/MD_ConstraintsUML.png)
+
+\pagebreak

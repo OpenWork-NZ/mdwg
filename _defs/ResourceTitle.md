@@ -83,7 +83,8 @@ Location of Medicare Offices
          <mri:citation>
             <cit:CI_Citation>
                <cit:title>
-                  <gco:CharacterString>OpenWork geographical data</gco:CharacterString>
+                  <gco:CharacterString>OpenWork geographical data<
+                  /gco:CharacterString>
                </cit:title>
                <cit:alternateTitle>
                   <gco:CharacterString>geodata by OpenWork</gco:CharacterString>
@@ -104,3 +105,5 @@ Recommended elements highlighted in Yellow
 ![title](../images/ResourceTitle.png)
 
 </details>
+
+\pagebreak

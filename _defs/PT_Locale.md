@@ -47,3 +47,5 @@ Therefore - given the location and area of influence of ICSM, for `language`, th
 Recommended elements highlighted in Yellow
 
 ![PT_Locale](../images/PT_Locale.png)
+
+\pagebreak

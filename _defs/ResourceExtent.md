@@ -64,6 +64,9 @@ Mapping to CKAN and Dublin core elements, particularly as used by data.gov.au ne
 
 ### UML diagrams
 Recommended elements highlighted in Yellow
+
 ![Extent](../images/ResourceExtentUML.png)
 
 </details>
+
+\pagebreak

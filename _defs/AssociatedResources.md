@@ -112,7 +112,8 @@ Maps to "Related Information"
             </cit:CI_Citation>
           </mri:name>
           <mri:associationType>
-            <mri:DS_AssociationTypeCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#DS_AssociationTypeCode"
+            <mri:DS_AssociationTypeCode codeList="https://schemas.isotc211.org
+            /19115/resources/Codelist/cat/codelists.xml#DS_AssociationTypeCode"
             codeListValue="largerWorkCitation"/>
           </mri:associationType>
         </mri:MD_AssociatedResource>
@@ -131,3 +132,5 @@ Recommended elements highlighted in Yellow
 ![associateResource](../images/AssociatedResourcesUML.png)
 
 </details>
+
+\pagebreak

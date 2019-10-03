@@ -100,19 +100,24 @@ Maps to `Description 'lineage'`
     <mdb:resourceLineage>
         <mrl:LI_Lineage>
             <mrl:statement>
-                <gco:CharacterString>this is my resource lineage</gco:CharacterString>
+                <gco:CharacterString>this is my resource lineage
+                </gco:CharacterString>
             </mrl:statement>
             <mrl:scope>
                 <mcc:MD_Scope>
                     <mcc:level>
-                        <mcc:MD_ScopeCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#MD_ScopeCode" codeListValue="dataset"/>
+                        <mcc:MD_ScopeCode 
+                        codeList="https://schemas.isotc211.org/19115/resources
+                        /Codelist/cat/codelists.xml#MD_ScopeCode" 
+                        codeListValue="dataset"/>
                     </mcc:level>
                 </mcc:MD_Scope>
             </mrl:scope>
             <mrl:source>
                 <mrl:LI_Source>
                     <mrl:description>
-                        <gco:CharacterString>this is my source description</gco:CharacterString>
+                        <gco:CharacterString>this is my source description
+                        </gco:CharacterString>
                     </mrl:description>
                 </mrl:LI_Source>
             </mrl:source>
@@ -124,6 +129,9 @@ Maps to `Description 'lineage'`
 
 ### UML diagrams
 Recommended elements highlighted in Yellow
+
 ![resourceLineage](../images/ResourceLineageUML.png)
 
 </details>
+
+\pagebreak

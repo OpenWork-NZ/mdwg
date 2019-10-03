@@ -90,13 +90,19 @@ May map to `Key Identifier` if `metadataIdentifier` is unresolvable
   <mdb:metadataLinkage>
     <cit:CI_OnlineResource>
       <cit:linkage>
-        <gco:CharacterString>http://geodata.nz/geonetwork/srv/eng//metadata/314eb989-3771-4c24-a399-d22631973279</gco:CharacterString>
+        <gco:CharacterString>
+        http://geodata.nz/geonetwork/srv/eng/metadata/
+        314eb989-3771-4c24-a399-d22631973279
+        </gco:CharacterString>
       </cit:linkage>
       <cit:description>
-        <gco:CharacterString>Point of truth URL of this metadata record</gco:CharacterString>
+        <gco:CharacterString>Point of truth URL of this metadata record
+        </gco:CharacterString>
       </cit:description>
       <cit:function>
-        <cit:CI_OnLineFunctionCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_OnLineFunctionCode" codeListValue="completeMetadata"/>
+        <cit:CI_OnLineFunctionCode 
+        codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat
+        /codelists.xml#CI_OnLineFunctionCode" codeListValue="completeMetadata"/>
       </cit:function>
     </cit:CI_OnlineResource>
   </mdb:metadataLinkage>
@@ -110,3 +116,5 @@ Recommended elements highlighted in Yellow
 ![MDLinkage](../images/MetadataLinkageUML.png)
 
 </details>
+
+\pagebreak
