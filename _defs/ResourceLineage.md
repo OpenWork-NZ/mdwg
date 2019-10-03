@@ -6,12 +6,12 @@ rank: 70
 title: Resource Lineage
 ---
 # Resource Lineage ★★★★
-*Every spatial resource has a history and was built upon other work. Lineage documentation specifies a resource's source data, transformations, and input/output specifications. Such information is inherently causal, communicating the purpose, theory and meaning embodied in a resource. *
+*Every spatial resource has a history and was built upon other work. Lineage documentation specifies a resource's source data, transformations, and input/output specifications. Such information is inherently causal, communicating the purpose, theory and meaning embodied in a resource.*
 
 - **Path** -  *MD_Metadata.resourceLineage>LI_Lineage*
 - **Governance** -  *Agency, Domain*
 - **Purpose -** *Resource use*
-- **Audience - **
+- **Audience -**
   - machine resource - ⭑
   - general - ⭑⭑
   - resource manager - ⭑⭑⭑⭑
@@ -100,19 +100,24 @@ Maps to `Description 'lineage'`
     <mdb:resourceLineage>
         <mrl:LI_Lineage>
             <mrl:statement>
-                <gco:CharacterString>this is my resource lineage</gco:CharacterString>
+                <gco:CharacterString>this is my resource lineage
+                </gco:CharacterString>
             </mrl:statement>
             <mrl:scope>
                 <mcc:MD_Scope>
                     <mcc:level>
-                        <mcc:MD_ScopeCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#MD_ScopeCode" codeListValue="dataset"/>
+                        <mcc:MD_ScopeCode 
+                        codeList="https://schemas.isotc211.org/19115/resources
+                        /Codelist/cat/codelists.xml#MD_ScopeCode" 
+                        codeListValue="dataset"/>
                     </mcc:level>
                 </mcc:MD_Scope>
             </mrl:scope>
             <mrl:source>
                 <mrl:LI_Source>
                     <mrl:description>
-                        <gco:CharacterString>this is my source description</gco:CharacterString>
+                        <gco:CharacterString>this is my source description
+                        </gco:CharacterString>
                     </mrl:description>
                 </mrl:LI_Source>
             </mrl:source>
@@ -124,6 +129,9 @@ Maps to `Description 'lineage'`
 
 ### UML diagrams
 Recommended elements highlighted in Yellow
+
 ![resourceLineage](../images/ResourceLineageUML.png)
 
 </details>
+
+\pagebreak

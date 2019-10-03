@@ -51,7 +51,7 @@ The contents of a purpose should include as much information as would be useful 
 
 <details>
 
-#### Dublin core / CKAN / data.govt.nz
+#### Dublin core / CKAN / data.gov.au
 Maps to *description*?
 
 #### DCAT
@@ -76,6 +76,9 @@ Maps to *dct.description*
 AUSLIG has undertaken the Australian Geographic Database program to enhance this topographic map information so it is suitable for use in Geographic Information Systems. 
 The data resulting from this program are known as GEODATA. Each GEODATA product incorporates characteristics such as customer focus, national consistency, assured quality and comprehensive documentation.
 
+### TERN
+> The purpose of the Cumberland Plain flux station is: to quantify the exchanges of carbon dioxide, water vapour and energy in a dry sclerophyll forest. to characterize the functional behaviour and sensitivity of the different components contributing to the ecosystem carbon balance from sub-daily to multi-annual temporal scales and under climatic variability. to identify the role of hydraulic limitations on constraining ecosystem productivity. to quantify the impact of mistletoe on plant physiological processes and whole ecosystem water vapour and carbon dioxide exchange. to validate remote sensing estimates of different radiation components to obtain accurate regional predictions of fuel moisture and to understand how wood traits and microbial diversity interact to determine rates of wood decay.
+
 ### XML -
 ```
 <mdb:MD_Metadata>
@@ -84,9 +87,12 @@ The data resulting from this program are known as GEODATA. Each GEODATA product 
     <mri:MD_DataIdentification>
     ....
       <mri:purpose>
-        <gco:CharacterString>  This is a sample purpose statement reprinted from the document AS/NZS ISO 19115.1:2015:
-        This dataset was developed to record information necessary for the administration of the
-        Mining Act.</gco:CharacterString>
+        <gco:CharacterString>
+        This is a sample purpose statement reprinted from the document 
+        AS/NZS ISO 19115.1:2015:
+        This dataset was developed to record information necessary for the 
+        administration of the Mining Act.
+        </gco:CharacterString>
       </mri:purpose>
     ....
     </mri:MD_DataIdentification>
@@ -97,6 +103,9 @@ The data resulting from this program are known as GEODATA. Each GEODATA product 
 
 ### UML diagrams
 Recommended elements highlighted in Yellow
+
 ![purpose](../images/PurposeUML.png)
 
 </details>
+
+\pagebreak

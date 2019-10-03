@@ -69,7 +69,7 @@ This element should be updated in a consistent yet to be agreed upon manor.  We 
 
 <details>
 
-#### Dublin core / CKAN / data.govt.nz
+#### Dublin core / CKAN / data.gov.au
 Maps to `date (publication, update)`
 
 #### DCAT
@@ -98,14 +98,16 @@ Maps to `Date`
          <mri:citation>
             <cit:CI_Citation>
             ....
-   		<cit:date>
+                <cit:date>
                   <cit:CI_Date>
                      <cit:date>
                         <gco:Date>2018-06-11</gco:Date>
                      </cit:date>
                      <cit:dateType>
-                        <cit:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode"
-                                             codeListValue="creation"/>
+                        <cit:CI_DateTypeCode 
+                        codeList="https://schemas.isotc211.org/19115/resources
+                        /Codelist/cat/codelists.xml#CI_DateTypeCode" 
+                        codeListValue="creation"/>
                      </cit:dateType>
                   </cit:CI_Date>
                </cit:date>
@@ -115,8 +117,10 @@ Maps to `Date`
                         <gco:Date>2019-06-11</gco:Date>
                      </cit:date>
                      <cit:dateType>
-                        <cit:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode"
-                                             codeListValue="lastUpdate"/>
+                        <cit:CI_DateTypeCode 
+                        codeList="https://schemas.isotc211.org/19115/resources
+                        /Codelist/cat/codelists.xml#CI_DateTypeCode" 
+                        codeListValue="lastUpdate"/>
                      </cit:dateType>
                   </cit:CI_Date>
                </cit:date>
@@ -132,6 +136,9 @@ Maps to `Date`
 
 ### UML diagrams
 Recommended elements highlighted in Yellow
+
 ![resourceDate](../images/ResourceDateUML.png)
 
 </details>
+
+\pagebreak

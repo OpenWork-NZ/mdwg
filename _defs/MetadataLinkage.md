@@ -58,9 +58,9 @@ As for multiple locations for the same metadata, it is useful to look at MD_Meta
 <details>
 
 #### ISO19139
-This is a new element that allows unambiguous specification of the online location where the metadata is available.
+As this is a new element to allow unambiguous specification of the online location where the metadata is available, there are no reliable elements to crosswalk.
 
-#### Dublin core / CKAN / data.govt.nz
+#### Dublin core / CKAN / data.gov.au
 In Dublin core the identifier element is described as holding a reference to the resource (not the metadata). However in the case of metadata records harvested by s higher level CKAN like catalogue, we view the complete metadata record as the resource. It is also standard practice that the DC Identifier field be resolvable. For a Dublin core metadata harvested via CSW from a ISO 19115-1 record, it is important that that record links to something that can be derefewrenced. That something is held in the identifier field and should be the location URL/URI for the metadata.  IF the ISO 19115-1 identifier element is only a unresolvable UUID, the metadataLinkage element may be a better choice to populate the DC Identifier field.
 
 #### DCAT
@@ -90,13 +90,19 @@ May map to `Key Identifier` if `metadataIdentifier` is unresolvable
   <mdb:metadataLinkage>
     <cit:CI_OnlineResource>
       <cit:linkage>
-        <gco:CharacterString>http://geodata.nz/geonetwork/srv/eng//metadata/314eb989-3771-4c24-a399-d22631973279</gco:CharacterString>
+        <gco:CharacterString>
+        http://geodata.nz/geonetwork/srv/eng/metadata/
+        314eb989-3771-4c24-a399-d22631973279
+        </gco:CharacterString>
       </cit:linkage>
       <cit:description>
-        <gco:CharacterString>Point of truth URL of this metadata record</gco:CharacterString>
+        <gco:CharacterString>Point of truth URL of this metadata record
+        </gco:CharacterString>
       </cit:description>
       <cit:function>
-        <cit:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="completeMetadata"/>
+        <cit:CI_OnLineFunctionCode 
+        codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat
+        /codelists.xml#CI_OnLineFunctionCode" codeListValue="completeMetadata"/>
       </cit:function>
     </cit:CI_OnlineResource>
   </mdb:metadataLinkage>
@@ -110,3 +116,5 @@ Recommended elements highlighted in Yellow
 ![MDLinkage](../images/MetadataLinkageUML.png)
 
 </details>
+
+\pagebreak

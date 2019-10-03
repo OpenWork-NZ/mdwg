@@ -56,7 +56,7 @@ Development of URI naming conventions to describe how the reference to the resou
 
 <details>
 
-#### Dublin core / CKAN / data.govt.nz
+#### Dublin core / CKAN / data.gov.au
 Maps to `identifier`
 > Note BC 18-7 - may relate to issues involving confusion between metadata identifiers and resource identifiers in DC and other metadata systems.
 
@@ -103,10 +103,13 @@ URN:UUID (example 559708e5-480e-4f94-8429-c49571e82761)
              <cit:identifier>
                 <mcc:MD_Identifier>
                    <mcc:code>
-                      <gco:CharacterString>9547e07e-6a15-403b-8b19-488778fe0cf0</gco:CharacterString>
+                    <gco:CharacterString>9547e07e-6a15-403b-8b19-488778fe0cf0
+                    </gco:CharacterString>
                    </mcc:code>
                    <mcc:codeSpace>
-                      <gco:CharacterString>http://202.49.243.69:8080/geonetwork/srv/eng/metadata/</gco:CharacterString>
+                      <gco:CharacterString>
+                      http://202.49.243.69:8080/geonetwork/srv/eng/metadata/
+                      </gco:CharacterString>
                    </mcc:codeSpace>
                 </mcc:MD_Identifier>
              </cit:identifier>
@@ -122,6 +125,9 @@ URN:UUID (example 559708e5-480e-4f94-8429-c49571e82761)
 
 ### UML diagrams
 Recommended elements highlighted in Yellow
+
 ![resourceIdentifier](../images/ResourceIdentifierUML.png)
 
 </details>
+
+\pagebreak

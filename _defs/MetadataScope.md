@@ -65,7 +65,7 @@ used in non-hierarchical structures. Changed elements include
 - `MD_Metadata.hierarchyLevelName` changed to `MD_Metadata.metadataScope>MD_MetadataScope.name`
 These two elements were moved to the new MD_MetadataScope class to avoid ambiguity in cases where multiple scope codes and names are associated with a single record. The word hierarchy was dropped from the names because scopes can be used in non-hierarchical structures.
 
-#### Dublin core / CKAN / data.govt.nz
+#### Dublin core / CKAN / data.gov.au
 In Dublin core the identifier element is described as holding a reference to the resource (not the metadata). However in the case of metadata records harvested by s higher level CKAN like catalogue, we view the complete metadata record as the resource. It is also standard practice that the DC Identifier field be resolvable. For a Dublin core metadata harvested via CSW from a ISO 19115-1 record, it is important that that record links to something that can be derefewrenced. That something is held in the identifier field and should be the location URL/URI for the metadata.  IF the ISO 19115-1 identifier element is only a unresolvable UUID, the metadataLinkage element may be a better choice to populate the DC Identifier field.
 
 #### DCAT
@@ -93,8 +93,9 @@ May map to `Key Identifier` if `metadataIdentifier` is unresolvable
    <mdb:metadataScope>
       <mdb:MD_MetadataScope>
          <mdb:resourceScope>
-            <mcc:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ScopeCode"
-                              codeListValue="dataset"/>
+            <mcc:MD_ScopeCode 
+            codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat
+            /codelists.xml#MD_ScopeCode" codeListValue="dataset"/>
          </mdb:resourceScope>
          <mdb:name gco:nilReason="missing">
             <gco:CharacterString/>
@@ -111,3 +112,5 @@ Recommended elements highlighted in Yellow
 ![metadataScope](../images/MD_Scope.png)
 
 </details>
+
+\pagebreak

@@ -58,7 +58,7 @@ Therefore - It is strongly recommended that to support discovery of resources, e
 
 <details>
 
-#### Dublin core / CKAN / data.govt.nz {if any}
+#### Dublin core / CKAN / data.gov.au {if any}
 Mapping to CKAN and Dublin core elements, particularly as used by data.gov.au needs discussion
 
 #### DCAT

@@ -92,15 +92,26 @@ Therefore - in order to provide a quick way for users to discover and identify t
                <cit:graphic>
                   <mcc:MD_BrowseGraphic>
                      <mcc:fileName>
-                        <gco:CharacterString>https://static.wixstatic.com/media/414fd2_2f712656fb5547f39a08a53aab98cc29~mv2.png/v1/fill/w_92,h_146,al_c,q_80,usm_0.66_1.00_0.01/IFaGR9yg.webp</gco:CharacterString>
+                        <gco:CharacterString>
+                        https://static.wixstatic.com/media
+                        /414fd2_2f712656fb5547f39a08a53aab98cc29~mv2.png/v1
+                        /fill/w_92,h_146,al_c,q_80,usm_0.66_1.00_0.01
+                        /IFaGR9yg.webp</gco:CharacterString>
                      </mcc:fileName>
                      <mcc:linkage>
                         <cit:CI_OnlineResource>
                            <cit:linkage>
-                              <gco:CharacterString>https://static.wixstatic.com/media/414fd2_2f712656fb5547f39a08a53aab98cc29~mv2.png/v1/fill/w_92,h_146,al_c,q_80,usm_0.66_1.00_0.01/IFaGR9yg.webp</gco:CharacterString>
+                              <gco:CharacterString>
+                              https://static.wixstatic.com/media
+                              /414fd2_2f712656fb5547f39a08a53aab98cc29~mv2.png
+                              /v1/fill/w_92,h_146,al_c,q_80,usm_0.66_1.00_0.01
+                              /IFaGR9yg.webp
+                              </gco:CharacterString>
                            </cit:linkage>
                            <cit:protocol>
-                              <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                              <gco:CharacterString>
+                                WWW:LINK-1.0-http--link
+                              </gco:CharacterString>
                            </cit:protocol>
                            <cit:name gco:nilReason="missing">
                               <gco:CharacterString/>
@@ -109,8 +120,10 @@ Therefore - in order to provide a quick way for users to discover and identify t
                               <gco:CharacterString/>
                            </cit:description>
                            <cit:function>
-                              <cit:CI_OnLineFunctionCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_OnLineFunctionCode"
-                                                         codeListValue="browseGraphic"/>
+                              <cit:CI_OnLineFunctionCode codeList=
+                              "https://schemas.isotc211.org/19115/resources
+                              /Codelist/cat/codelists.xml#CI_OnLineFunctionCode"
+                              codeListValue="browseGraphic"/>
                            </cit:function>
                         </cit:CI_OnlineResource>
                      </mcc:linkage>
@@ -131,3 +144,4 @@ Recommended elements highlighted in Yellow
 ![browseGraphic](../images/BrowseGraphicUML.png)
 
 </details>
+\pagebreak

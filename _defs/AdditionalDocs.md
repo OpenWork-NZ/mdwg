@@ -87,7 +87,7 @@ Maps to `Description 'notes'`
                         <gco:Date>2019-07-01</gco:Date>
                      </cit:date>
                      <cit:dateType>
-                        <cit:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode"
+                        <cit:CI_DateTypeCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_DateTypeCode"
                                              codeListValue="creation"/>
                      </cit:dateType>
                   </cit:CI_Date>
@@ -95,8 +95,10 @@ Maps to `Description 'notes'`
                <cit:citedResponsibleParty>
                   <cit:CI_Responsibility>
                      <cit:role>
-                        <cit:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode"
-                                         codeListValue="custodian"/>
+                        <cit:CI_RoleCode 
+                        codeList="https://schemas.isotc211.org/19115/resources
+                        /Codelist/cat/codelists.xml#CI_RoleCode"
+                        codeListValue="custodian"/>
                      </cit:role>
                      <cit:party>
                         <cit:CI_Organisation>
@@ -108,7 +110,8 @@ Maps to `Description 'notes'`
                                  <cit:address>
                                     <cit:CI_Address>
                                        <cit:electronicMailAddress>
-                                          <gco:CharacterString>info@openwork.nz</gco:CharacterString>
+                                        <gco:CharacterString>info@openwork.nz
+                                        </gco:CharacterString>
                                        </cit:electronicMailAddress>
                                     </cit:CI_Address>
                                  </cit:address>
@@ -117,7 +120,8 @@ Maps to `Description 'notes'`
                            <cit:individual>
                               <cit:CI_Individual>
                                  <cit:name>
-                                    <gco:CharacterString>Byron Cochrane</gco:CharacterString>
+                                    <gco:CharacterString>Byron Cochrane
+                                    </gco:CharacterString>
                                  </cit:name>
                               </cit:CI_Individual>
                            </cit:individual>
@@ -128,7 +132,9 @@ Maps to `Description 'notes'`
                <cit:onlineResource>
                   <cit:CI_OnlineResource>
                      <cit:linkage>
-                        <gco:CharacterString>https://openwork-nz.github.io/Resources/2019/04/25/gn-plugins.html</gco:CharacterString>
+                        <gco:CharacterString>https://openwork-nz.github.io
+                        /Resources/2019/04/25/gn-plugins.html
+                        </gco:CharacterString>
                      </cit:linkage>
                      <cit:protocol gco:nilReason="missing">
                         <gco:CharacterString/>
@@ -140,8 +146,10 @@ Maps to `Description 'notes'`
                         <gco:CharacterString/>
                      </cit:description>
                      <cit:function>
-                        <cit:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_OnLineFunctionCode"
-                                                   codeListValue=""/>
+                        <cit:CI_OnLineFunctionCode codeList=
+                        "https://schemas.isotc211.org/19115/resources/Codelist
+                        /cat/codelists.xml#CI_OnLineFunctionCode"
+                        codeListValue=""/>
                      </cit:function>
                   </cit:CI_OnlineResource>
                </cit:onlineResource>
@@ -160,3 +168,5 @@ Recommended elements highlighted in Yellow
 ![additionalDoc](../images/AdditionalDocsUML.png)
 
 </details>
+
+\pagebreak

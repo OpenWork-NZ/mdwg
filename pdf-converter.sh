@@ -9,10 +9,10 @@ pandoc TableOfContents.md GuidanceIntro.md PatternGuide.md Tempate.md \
       AdditionalDocs.md SpatialRepresentationType.md AssociatedResources.md \
       ResourceFormat.md BrowseGraphic.md ResourceCitiation.md \
         ResourceTitle.md ResourceIdentifier.md ResourceDate.md \
-        ResourceEdition.md ResourceSeries.md ResourceResponsibleParty.md \
+ResourceEdition.md ResourceSeries.md ResourceResponsibleParty.md \
       Keywords.md Maintenance.md ResourceOtherConstraints.md \
       ResourceLegalContraints.md ResourceSecurityConstraints.md \
-      GeographicExtent.md ExtentGeographicDescription.md \
+    GeographicExtent.md ExtentGeographicDescription.md \
       ExtentBoundingBox.md VerticalExtent.md TemporalExtents.md \
     ResourceLineage.md SpatialReferenceSystem.md DistributionInfo.md \
     class-CI_Citation.md class-CI_Date.md class-CI_OnlineResource.md \

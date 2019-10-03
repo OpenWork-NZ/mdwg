@@ -6,7 +6,7 @@ rank: 70
 title: Resource Security Constraints
 ---
 # Resource Security Constraints ★★★★★
-*When constraints ([MD_Constraints]) on a spatial resource [MD_Identification]  concern security it is important to document these. Potential users need to be informed of the presence or absence of concerns about security that apply to the use of such resources.*
+*When constraints ([MD_Constraints](./class-md_constraints.html)) on a spatial resource [MD_Identification] concern security it is important to document these. Potential users need to be informed of the presence or absence of concerns about security that apply to the use of such resources.*
 
 - **Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.resourceConstraints>MD_SecurityConstraints*
 - **Governance** - *National, Agency*
@@ -87,30 +87,39 @@ Maps to the agregate `Rights/@accessRights`
        <mri:resourceConstraints>
             <mco:MD_LegalConstraints>
                <mco:useLimitation>
-                  <gco:CharacterString>Not to be used for navigation</gco:CharacterString>
+                  <gco:CharacterString>Not to be used for navigation
+                  </gco:CharacterString>
                </mco:useLimitation>
                <mco:reference>
                   <cit:CI_Citation>
                      <cit:title>
-                        <gco:CharacterString>“Creative Commons Attribution 4.0 International Licence”</gco:CharacterString>
+                        <gco:CharacterString>
+                        “Creative Commons Attribution 4.0 International 
+                        Licence”
+                        </gco:CharacterString>
                      </cit:title>
                      <cit:citedResponsibleParty>
                         <cit:CI_Responsibility>
                            <cit:role>
-                              <cit:CI_RoleCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_RoleCode"
-                                               codeListValue="rightsHolder"/>
+                              <cit:CI_RoleCode 
+                              codeList="https://schemas.isotc211.org/19115
+                              /resources/Codelist/cat/codelists.xml#CI_RoleCode" 
+                              codeListValue="rightsHolder"/>
                            </cit:role>
                            <cit:party>
                               <cit:CI_Organisation>
                                  <cit:name>
-                                    <gco:CharacterString>OpenWork Ltd</gco:CharacterString>
+                                    <gco:CharacterString>OpenWork Ltd
+                                    </gco:CharacterString>
                                  </cit:name>
                                  <cit:contactInfo>
                                     <cit:CI_Contact>
                                        <cit:address>
                                           <cit:CI_Address>
-                                             <cit:electronicMailAddress>
-                                                <gco:CharacterString>info@openwork.nz</gco:CharacterString>
+                                             <cit:electronicMailAddress>                    
+                                             <gco:CharacterString>
+                                             info@openwork.nz
+                                             </gco:CharacterString>
                                              </cit:electronicMailAddress>
                                           </cit:CI_Address>
                                        </cit:address>
@@ -123,15 +132,20 @@ Maps to the agregate `Rights/@accessRights`
                   </cit:CI_Citation>
                </mco:reference>
                <mco:accessConstraints>
-                  <mco:MD_RestrictionCode codeListValue="copyright"
-                                          codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#MD_RestrictionCode"/>
+                  <mco:MD_RestrictionCode 
+                  codeListValue="copyright" 
+                  codeList="https://schemas.isotc211.org/19115/resources
+                  /Codelist/cat/codelists.xml#MD_RestrictionCode"/>
                </mco:accessConstraints>
                <mco:useConstraints>
-                  <mco:MD_RestrictionCode codeListValue="otherRestrictions"
-                                          codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#MD_RestrictionCode"/>
+                  <mco:MD_RestrictionCode 
+                  codeListValue="otherRestrictions" 
+                  codeList="https://schemas.isotc211.org/19115/resources
+                  /Codelist/cat/codelists.xml#MD_RestrictionCode"/>
                </mco:useConstraints>
                <mco:otherConstraints>
-                  <gco:CharacterString>For non-commercial purposes only</gco:CharacterString>
+                  <gco:CharacterString>For non-commercial purposes only
+                  </gco:CharacterString>
                </mco:otherConstraints>
             </mco:MD_LegalConstraints>
          </mri:resourceConstraints>
@@ -145,6 +159,9 @@ Maps to the agregate `Rights/@accessRights`
 ### UML diagrams
 
 Recommended elements highlighted in Yellow
+
 ![resourceSecurityConstraints](../images/ResourceSecurityConstraintsUML.png)
 
 </details>
+
+\pagebreak

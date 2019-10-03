@@ -50,12 +50,14 @@ Therefore - In order to meet ICSM good practice, in metadata for data resources,
 #### ISO19139
 MD_DataIdentification/language and MD_DataIdentification/characterSet moved to MD_DataIdentification/defaultLocale:PT_Locale - Make use of the newly added Language and character set localization package for defining local language and character set.
 
-#### Dublin core / CKAN / data.govt.nz
+#### Dublin core / CKAN / data.gov.au
 Maps to `language`
+
 CKAN has one field for language that maps to both Metadata and Resource language fields. ISO 19115 recommends 639-2 3 letter codes. Data.gov.au recommends IETF RFC4646 2 letter codes as primary. See https://www.loc.gov/standards/iso639-2/faq.html#6 for discussion of the differences
 
 #### DCAT
 Maps to `dct.language`.  
+
 > Note BC 19-7: It iis unclear if DCAT makes a distinction between the metadata language and the resource language
 
 #### RIF-CS
@@ -83,11 +85,15 @@ No identified mapping
           <mri:defaultLocale>
             <lan:PT_Locale>
                <lan:language>
-                  <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="eng"/>
+                  <lan:LanguageCode 
+                  codeList="http://www.loc.gov/standards/iso639-2/" 
+                  codeListValue="eng"/>
                </lan:language>
                <lan:characterEncoding>
-                  <lan:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_CharacterSetCode"
-                                           codeListValue="utf8"/>
+                  <lan:MD_CharacterSetCode 
+                  codeList="https://schemas.isotc211.org/19115/resources
+                  /Codelist/cat/codelists.xml#MD_CharacterSetCode" 
+                  codeListValue="utf8"/>
                </lan:characterEncoding>
             </lan:PT_Locale>
          </mri:defaultLocale>
@@ -101,6 +107,9 @@ No identified mapping
 
 ### UML diagrams
 Recommended elements highlighted in Yellow
+
 ![resourceDefaultLocale](../images/ResourceLocaleUML.png)
 
 </details>
+
+\pagebreak

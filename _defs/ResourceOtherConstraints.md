@@ -83,7 +83,8 @@ Maps to the agregate `Rights/@accessRights`
                <mco:reference>
                   <cit:CI_Citation>
                      <cit:title>
-                        <gco:CharacterString>My own list of constraints</gco:CharacterString>
+                        <gco:CharacterString>My own list of constraints
+                        </gco:CharacterString>
                      </cit:title>
                   </cit:CI_Citation>
                </mco:reference>
@@ -92,33 +93,40 @@ Maps to the agregate `Rights/@accessRights`
                      <mco:addressee>
                         <cit:CI_Responsibility>
                            <cit:role>
-                              <cit:CI_RoleCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_RoleCode"
-                                               codeListValue="resourceProvider"/>
+                              <cit:CI_RoleCode 
+                              codeList="https://schemas.isotc211.org/19115
+                              /resources/Codelist/cat/codelists.xml#CI_RoleCode"
+                              codeListValue="resourceProvider"/>
                            </cit:role>
                         </cit:CI_Responsibility>
                      </mco:addressee>
                      <mco:statement>
-                        <gco:CharacterString>not useful to others</gco:CharacterString>
+                        <gco:CharacterString>not useful to others
+                        </gco:CharacterString>
                      </mco:statement>
                   </mco:MD_Releasability>
                </mco:releasability>
                <mco:responsibleParty>
                   <cit:CI_Responsibility>
                      <cit:role>
-                        <cit:CI_RoleCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_RoleCode"
-                                         codeListValue="publisher"/>
+                        <cit:CI_RoleCode 
+                        codeList="https://schemas.isotc211.org/19115/resources
+                        /Codelist/cat/codelists.xml#CI_RoleCode" 
+                        codeListValue="publisher"/>
                      </cit:role>
                      <cit:party>
                         <cit:CI_Organisation>
                            <cit:name>
-                              <gco:CharacterString>OpenWork Ltd</gco:CharacterString>
+                              <gco:CharacterString>OpenWork Ltd
+                              </gco:CharacterString>
                            </cit:name>
                            <cit:contactInfo>
                               <cit:CI_Contact>
                                  <cit:address>
                                     <cit:CI_Address>
                                        <cit:electronicMailAddress>
-                                          <gco:CharacterString>info@openwork.nz</gco:CharacterString>
+                                         <gco:CharacterString>info@openwork.nz
+                                         </gco:CharacterString>
                                        </cit:electronicMailAddress>
                                     </cit:CI_Address>
                                  </cit:address>
@@ -132,7 +140,7 @@ Maps to the agregate `Rights/@accessRights`
          </mri:resourceConstraints>
      ....
      </mri:MD_DataIdentification>
-</mdb:identificationInfo>
+  </mdb:identificationInfo>
 ....
 </mdb:MD_Metadata>
 ```
@@ -140,6 +148,9 @@ Maps to the agregate `Rights/@accessRights`
 ### UML diagrams
 
 Recommended elements highlighted in Yellow
+
 ![constraints](../images/ResourceOtherConstraintsUML.png)
 
 </details>
+
+\pagebreak

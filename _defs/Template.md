@@ -1,10 +1,13 @@
 ---
 layout: page
+rank: 40
 type: page
 section: Guidance
 title: Template
 ---
-# {Element or Package Title}  ★★★★★ {stars indicate level of ICSM importance / priority}
+# {Element or Package Title}  ★★★★★ 
+{stars indicate level of ICSM importance / priority}
+
 *{A brief description about the problem this element addresses - why we need it. Where it sits in the metadata hierarchy.}*
 
 - **Path** -  *{XML path to the element}*
@@ -74,7 +77,7 @@ title: Template
 #### ISO19139 
 {Discussion of issues, if any, to guide migration from ISO19139}
 
-#### Dublin core / CKAN / data.govt.nz {if any}
+#### Dublin core / CKAN / data.gov.au {if any}
 {mapping to `DC element` and discussion}
 
 #### DCAT 
@@ -85,9 +88,9 @@ title: Template
 
 ## Also Consider
 {Links to additional useful information. Usually other elements, packages and classes in this good pratice document. May also link to other external resources.}
-**[{element name} -]({https://path to element})**  {description of importance and utility with any links}
-**[{element name} -]({https://path to element})**  {description of importance and utility with any links}
-**[{class name} -]({https://path to class})**  {description of importance and utility with any links}
+**[{element name} -]({path to element})**  {description of importance and utility with any links}
+**[{element name} -]({path to element})**  {description of importance and utility with any links}
+**[{class name} -]({path to class})**  {description of importance and utility with any links}
 
 ## Examples
 
@@ -113,4 +116,7 @@ title: Template
 ### UML diagrams
 {Captured from official ISO documentation at https://www.isotc211.org/hmmg/HTML/ConceptualModels/index.htm?goto=1:12:2:4095}
 Recommended elements highlighted in Yellow
-![{Name}](/%7Bhttp:/path.to.image/of/UML%7D)
+
+![{Name}]({path to UML diagram image})
+
+\pagebreak

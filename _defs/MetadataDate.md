@@ -69,7 +69,7 @@ This element should be updated in a consistent yet to be agreed upon manor.  We 
 #### ISO19139
 The element `dateStamp` was replaced with `dateInfo` to allow other types of metadata date information to be recorded in addition to creation date. The type and cardinality of this element was changed in order to allow associating more than one type of date with a metadata record.
 
-#### Dublin core / CKAN / data.govt.nz
+#### Dublin core / CKAN / data.gov.au
 Maps to `publish` and `update date`
 
 #### DCAT
@@ -100,8 +100,10 @@ Maps to `@dateAccessioned`
             <gco:DateTime>2019-05-30T15:30:05</gco:DateTime>
          </cit:date>
          <cit:dateType>
-            <cit:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode"
-                                 codeListValue="revision"/>
+            <cit:CI_DateTypeCode 
+            codeList="https://schemas.isotc211.org/19115/resources/Codelist
+            /cat/codelists.xml#CI_DateTypeCode"
+            codeListValue="revision"/>
          </cit:dateType>
       </cit:CI_Date>
   </mdb:dateInfo>
@@ -111,7 +113,8 @@ Maps to `@dateAccessioned`
             <gco:DateTime>2005-03-31T19:13:30</gco:DateTime>
          </cit:date>
          <cit:dateType>
-            <cit:CI_DateTypeCode codeList="codeListLocation#CI_DateTypeCode" codeListValue="creation">creation</cit:CI_DateTypeCode>
+            <cit:CI_DateTypeCode codeList="codeListLocation#CI_DateTypeCode" 
+            codeListValue="creation">creation</cit:CI_DateTypeCode>
          </cit:dateType>
       </cit:CI_Date>
   </mdb:dateInfo>
@@ -125,3 +128,5 @@ Recommended elements highlighted in Yellow
 ![dateInfo](../images/MetadataDateUML.png)
 
 </details>
+
+\pagebreak

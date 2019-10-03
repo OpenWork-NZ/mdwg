@@ -36,7 +36,7 @@ From class *[MD_Identifier](./class-MD_Identifier)*
 - **authority -** *(class - [CI_Citation](./class-CI_Citation))* [0..1] optional, the provider of the UUID
 
 ## Discussion
-Every metadata record needs a unique identifier so as to provide certain of the identity of the record and to provide a primary key for linkages. This element should hold UUID, preferably in the form of a resolvable URI. This provides the machine readable (and human) ability to determine if this is the same or different to other metadata records. It is useful in machine to machine activities such as metadata harvesting. It is also at times useful to data managers and others to determine if a record is the same as another.
+Every metadata record needs a unique identifier so as to provide certainty as to the identity of the record and to provide a primary key for linkages. This element should hold UUID, preferably in the form of a resolvable URI (either stanalone or in combinationwith anther element e.g. `<mcc:codespace>`). This provides the machine readable (and human) ability to determine if this is the same or different to other metadata records. It is useful in machine to machine activities such as metadata harvesting. It is also at times useful to data managers and others to determine if a record is the same as another.
 
 This identifier must never change, irrespective of where that metadata record is stored. This allows linkages to a metadata record to persist.
 
@@ -76,7 +76,7 @@ Therefore - It is Highly Recommended that every metadata record should have one 
 #### ISO19139
 In iso19115-1 Data type `CI_ResponsibleParty` (iso19115:2004) changed to type `CI_Responsibility` such as in `MD_Metadata.contact`, `MD_DataIdentification.pointOfContact`, or `CI_Citation.citedResponsibleParty`
 
-#### Dublin core / CKAN / data.govt.nz
+#### Dublin core / CKAN / data.gov.au
 Maps to `metadata URI`
 
 #### DCAT
@@ -89,7 +89,7 @@ Maps to `Key Identifier`
 
 ## Also Consider
 - **[Resource Identifier](./ResourceIdentifier) -** provides unique identifier to the resource. This may be the same as the metadata identifier when the metadata resource in a catalogue serves as the landing page for a resource.
-- **[Metadata Linkage](./MetadataLinkage)** - is most often used to provide a point of truth linkage to the metadata record.
+- **[Metadata Linkage](./MetadataLinkage)** - is most often used to provide a point of truth linkage (landing page) to the metadata record.
 - **[CI_Citation](./class-CI_Citation) (Authority) -** Information authority responsible for minting the UUID, be it the software package or other mechanism, may be captured in the Authority subelement using the CI_Citation package general guidance.
 - **[MD_Identifier](./class-MD_Identifier)** General Guidance for the package used to hold the metadata identifier information. This package can be used to provide identity to a large number of other metadata elements.
 
@@ -109,10 +109,14 @@ http://data.gov.au/dataset/559708e5-480e-4f94-8429-c49571e82761
       <mdb:metadataIdentifier>
       <mcc:MD_Identifier>
          <mcc:code>
-            <gco:CharacterString>314eb989-3771-4c24-a399-d22631973279</gco:CharacterString>
+            <gco:CharacterString>
+            314eb989-3771-4c24-a399-d22631973279
+            </gco:CharacterString>
          </mcc:code>
          <mcc:codeSpace>
-            <gco:CharacterString>https://geodata.nz/geonetwork/srv/metadata/</gco:CharacterString>
+            <gco:CharacterString>
+            https://geodata.nz/geonetwork/srv/metadata/
+            </gco:CharacterString>
          </mcc:codeSpace>
       </mcc:MD_Identifier>
   </mdb:metadataIdentifier>
@@ -127,3 +131,5 @@ Recommended elements highlighted in Yellow
 ![MDIdentifier](../images/MetadataIdentifierUML.png)
 
 </details>
+
+\pagebreak

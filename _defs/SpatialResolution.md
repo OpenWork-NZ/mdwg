@@ -50,6 +50,9 @@ title: Spatial Resolution
   - brief textual description of the spatial resolution of the resource
 
 ## Discussion
+
+Scale is a fundemental concept of sptial data. *SpatialResolution* is the element that captures this.
+
 *SpatialResolution* is most commonly represented as a factor which provides a general understanding of the density of spatial data in the resource or describes the range of resolutions in which a digital resource may be used.  This element should be repeated when describing upper and lower range.
 
 *SpatialResolution* is recommended in ISO 19115.1-2015 as a metadata element to be used for discovery of geospatial resources.
@@ -72,7 +75,7 @@ Spatial resolution can be documented in many ways. For ISO19115-1, these are lim
 
 <details>
 
-#### Dublin core / CKAN / data.govt.nz
+#### Dublin core / CKAN / data.gov.au
 Maps to ?
 
 #### DCAT
@@ -95,17 +98,28 @@ Maps to ?
 ### ABARES
 ```
     <mri:spatialResolution><mri:MD_Resolution>
-        <mri:distance><gco:Distance uom="metre">123</gco:Distance></mri:distance>
+        <mri:distance><gco:Distance uom="metre">123</gco:Distance>
+        </mri:distance>
     </mri:MD_Resolution></mri:spatialResolution>
     <mri:spatialResolution><mri:MD_Resolution>
-        <mri:angularDistance><gco:Angle uom="degreeLatitude">0.1</gco:Angle></mri:angularDistance>
+        <mri:angularDistance>
+            <gco:Angle uom="degreeLatitude">0.1</gco:Angle>
+        </mri:angularDistance>
     </mri:MD_Resolution></mri:spatialResolution>
-    <mri:spatialResolution><mri:MD_Resolution>
-        <mri:angularDistance><gco:Angle uom="degreeLongitude">0.05</gco:Angle></mri:angularDistance>
-    </mri:MD_Resolution></mri:spatialResolution>
-    <mri:spatialResolution><mri:MD_Resolution>
-        <mri:vertical><gco:Distance uom="metre">123</gco:Distance></mri:vertical>
-    </mri:MD_Resolution></mri:spatialResolution>
+    <mri:spatialResolution>
+        <mri:MD_Resolution>
+            <mri:angularDistance>
+                <gco:Angle uom="degreeLongitude">0.05</gco:Angle>
+            </mri:angularDistance>
+        </mri:MD_Resolution>
+    </mri:spatialResolution>
+    <mri:spatialResolution>
+        <mri:MD_Resolution>
+            <mri:vertical>
+                <gco:Distance uom="metre">123</gco:Distance>
+            </mri:vertical>
+        </mri:MD_Resolution>
+    </mri:spatialResolution>
 ```
 
 ### GA
@@ -144,6 +158,9 @@ Maps to ?
 
 ### UML diagrams
 Recommended elements highlighted in Yellow
+
 ![spatialResolution](../images/SpatialResolutionUML.png)
 
 </details>
+
+\pagebreak

@@ -8,7 +8,7 @@ title: Resource Extent
 # Resource Extent ★★★★
 *In order to quickly determine the general location of features included in an cited spatial resource, it is useful that extent information, geographic, vertical and temporal, are documented in the metadata.*
 
-- **Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.extent *
+- **Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.extent*
 - **Governance** - *Common ICSM, Domain*
 - **Primary use** - *Discovery*
 - **Audience -**
@@ -48,7 +48,7 @@ Therefore - It is strongly recommended that to support discovery of resources, e
 
 ### Crosswalk considerations
 
-#### Dublin core / CKAN / data.govt.nz 
+#### Dublin core / CKAN / data.gov.au 
 Mapping to CKAN and Dublin core elements, particularly as used by data.gov.au needs discussion
 
 ## Also Consider 
@@ -64,6 +64,9 @@ Mapping to CKAN and Dublin core elements, particularly as used by data.gov.au ne
 
 ### UML diagrams
 Recommended elements highlighted in Yellow
+
 ![Extent](../images/ResourceExtentUML.png)
 
 </details>
+
+\pagebreak

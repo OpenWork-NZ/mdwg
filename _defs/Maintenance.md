@@ -55,7 +55,7 @@ dates and scope.
 - **MD_MaintenanceInformation.updateScope** and **MD_MaintenanceInformation.updateScopeDescription** were replaced by **MD_MaintenanceInformation.maintenanceScope**(
   - These two roles were combined into maintenance-Scope: MD_Scope [0..\*] in order to allow specifying a scope that includes a spatial and temporal extent.
 
-#### Dublin core / CKAN / data.govt.nz {if any}
+#### Dublin core / CKAN / data.gov.au {if any}
 Maps to `update frequency`
 
 #### RIF-CS
@@ -81,12 +81,18 @@ Maps to `Description 'lineage'`
          <mri:resourceMaintenance>
             <mmi:MD_MaintenanceInformation>
                <mmi:maintenanceAndUpdateFrequency>
-                  <mmi:MD_MaintenanceFrequencyCode codeListValue="irregular" codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#MD_MaintenanceFrequencyCode"/>
+                  <mmi:MD_MaintenanceFrequencyCode 
+                  codeListValue="irregular" 
+                  codeList="https://schemas.isotc211.org/19115/resources
+                  /Codelist/cat/codelists.xml#MD_MaintenanceFrequencyCode"/>
                </mmi:maintenanceAndUpdateFrequency>
                <mmi:maintenanceScope>
                   <mcc:MD_Scope>
                      <mcc:level>
-                        <mcc:MD_ScopeCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#MD_ScopeCode" codeListValue="attribute"/>
+                        <mcc:MD_ScopeCode 
+                        codeList="https://schemas.isotc211.org/19115/resources
+                        /Codelist/cat/codelists.xml#MD_ScopeCode" 
+                        codeListValue="attribute"/>
                      </mcc:level>
                   </mcc:MD_Scope>
                </mmi:maintenanceScope>
@@ -102,6 +108,9 @@ Maps to `Description 'lineage'`
 ### UML diagrams
 
 Recommended elements highlighted in Yellow
+
 ![resourceMaintenance](../images/MaintenanceUML.png)
 
 </details>
+
+\pagebreak

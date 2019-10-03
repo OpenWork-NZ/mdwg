@@ -71,7 +71,9 @@ MD_DataIdentification/spatialRepresentationType moved from MD_DataIdentification
     <mri:MD_DataIdentification>
     ....
       <mri:spatialRepresentationType>
-        <mcc:MD_SpatialRepresentationTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_SpatialRepresentationTypeCode"
+        <mcc:MD_SpatialRepresentationTypeCode 
+        codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat
+        /codelists.xml#MD_SpatialRepresentationTypeCode"
         codeListValue="vector"/>
       </mri:spatialRepresentationType>
     ....
@@ -83,6 +85,9 @@ MD_DataIdentification/spatialRepresentationType moved from MD_DataIdentification
 
 ### UML diagrams
 Recommended elements highlighted in Yellow
+
 ![spatialRepresentationType](../images/SpatialRepresentationTypeUML.png)
 
 </details>
+
+\pagebreak

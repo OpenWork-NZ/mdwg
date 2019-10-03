@@ -62,3 +62,5 @@ The `function` element, while optional, can ususally be populated through automa
 Recommended elements highlighted in Yellow
 
 ![CI_OnlineResource](../images/class-CI_OnlineResource.png)
+
+\pagebreak

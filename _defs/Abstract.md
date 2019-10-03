@@ -57,7 +57,7 @@ The contents of an abstract should address the 5Ws What is it; Who generated it;
 
 <details>
 
-#### Dublin core / CKAN / data.govt.nz
+#### Dublin core / CKAN / data.gov.au
 Maps to `description`
 
 #### DCAT
@@ -100,6 +100,9 @@ All products must include an appropriate copyright statement.*
  Each image has a water-surface footprint of 204 m along-track by 306 m across track; there is some image overlap along-track.
  The EXIF data for each image is populated.
  Images taken in January 2012 along the Bonney Upwelling, along the south-east coast of Australia, an area known to be a summer (Nov-May) feeding ground for pygmy blue whales; the surveys focussed on the area bounded by 138.0-145.0ºE and 36.6-40.3ºS.
+ 
+### TERN
+> The Cumberland Plain flux station is located in a dry sclerophyll forest in the Hawkesbury Valley in central New South Wales. Operation commenced for the station in September 2012 and is managed by the Hawkesbury Institute for the Environment at Western Sydney University. The Cumberland Plain Woodland is now an endangered ecological community that encompasses distinct groupings of plants growing on clayey soils. The canopy is dominated by Eucalyptus moluccana and Eucalyptus fibrosa, which host an expanding population of mistletoe. Average canopy height is 23m, the elevation of the site is 20m and mean annual precipitation is 800mm. Fluxes of water vapour, carbon dioxide and heat are quantified with the open-path eddy flux technique from a 30 m tall mast. Additional measurements above the canopy include temperature, humidity, wind speed and direction, rainfall, incoming and reflected shortwave and longwave radiation and net, diffuse and direct radiation and the photochemical reflectance index. In addition, profiles of humidity and CO2 are measured at eight levels within the canopy, as well as measurements of soil moisture content, soil heat fluxes, soil temperature, and 10-hr fuel moisture dynamics. In addition, regular monitoring of understory species abundance, mistletoe infection, leaf area index and litterfall are also performed.
 
 ### data.gov.au
  > The Department of Human Services Service Centre locator contains information updated weekly, a search function and maps.
@@ -113,12 +116,18 @@ All products must include an appropriate copyright statement.*
     <mri:MD_DataIdentification>
     ....
       <mri:abstract>
-        <gco:CharacterString>This is an example dataset to demonstrate the use of ISO 19115-3.  Below is a sample abstract reprinted from the document AS/NZS ISO 19115.1:2015.
-        Location of all current mineral Exploration Licences issued under the Mining Act, 1971.
-        Exploration Licences provide exclusive tenure rights to explore for mineral resources for up to a maximum
-        of 5 years. Comment is sought on applications for Exploration Licences from numerous sources
-        before granting. Exploration programs are subject to strict environmental and heritage conditions.
-        Exploitation of identified resources must be made under separate mineral production leases.</gco:CharacterString>
+        <gco:CharacterString>
+        This is an example dataset to demonstrate the use of ISO 19115-3.  
+        Below is a sample abstract reprinted from the document AS/NZS ISO 
+        19115.1:2015. Location of all current mineral Exploration Licences 
+        issued under the Mining Act, 1971.Exploration Licences provide 
+        exclusive tenure rights to explore for mineral resources for up to 
+        a maximum of 5 years. Comment is sought on applications for 
+        Exploration Licences from numerous sources before granting. 
+        Exploration programs are subject to strict environmental and 
+        heritage conditions. Exploitation of identified resources must be 
+        made under separate mineral production leases.
+        </gco:CharacterString>
       </mri:abstract>
     ....
     </mri:MD_DataIdentification>
@@ -129,6 +138,7 @@ All products must include an appropriate copyright statement.*
 
 ### UML diagrams
 Recommended elements highlighted in Yellow
+
 ![abstract](../images/AbstractUML.png)
 
 </details>

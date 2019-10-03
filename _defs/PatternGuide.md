@@ -1,5 +1,6 @@
 ---
 layout: page
+rank: 30
 type: page
 section: Guidance
 title: Pattern Guide
@@ -23,10 +24,10 @@ A small table follows that summarises details about the element. These include:
 - **Governance** -  Details what body is most likely to make decisions about how the element is used and populated. Common values are ISO, Common ICSM, Domain, Agency. Sometimes these decisions are made at more than one level.
 - **Purpose** - Provides the high-level purpose of the element - for what is it most useful? Common values include: Discovery, Evaluation, Use, Management
 - **Audience -** describes with a 1 to 5 star rating how important the element is to the select personas.  These personas include:
-- machine resource - for purely digital interactions
-- general - a novice audience
-- resource manager - parties responsible for the management of the data
-- specialist - subject matter specialist who know a great deal about the domain.
+  - machine resource - for purely digital interactions
+  - general - a novice audience
+  - resource manager - parties responsible for the management of the data
+  - specialist - subject matter specialist who know a great deal about the domain.
 - **Metadata type** - Which of the three general metadata types does the element belong, *descriptive*, *structural*, or *administrative*
 - *ICSM Level of Agreement* - A 5 star rating as to how close to consensus the MDWG is on the description of this item. A low number of stars usually indicates lack of process progress rather than disagreement.
 
@@ -52,11 +53,11 @@ Finally, we come to the recommendations. These are statements capture the what, 
 
 #### Crosswalks
 
-Included in the Recommendation section are crosswalk concerns when translating metadata between four different standards: ISO19139, Dublin core/CKAN/data.govt.nz, DCAT, and RIF-CS. 
+Included in the Recommendation section are crosswalk concerns when translating metadata between four different standards: ISO19139, Dublin core/CKAN/data.gov.au, DCAT, and RIF-CS. 
 
 ISO19139 is the previous standard that ISO19115-3 replaced. It is also the parent to widely used metadata profiles such as ANZLIC and MCP. Many geospatial practitioners currently have metadata in this standard and need to know how to migrate.
 
-Dublin core/CKAN/data.govt.nz represents the way that top-level catalogues such as data.gov.au hold their metadata. These are more abbreviated formats focused on data discovery. Knowing how to share metadata with these platforms while not losing the important additional information held in ISO19115-1 is of high importance.
+Dublin core/CKAN/data.gov.au represents the way that top-level catalogues such as data.gov.au hold their metadata. These are more abbreviated formats focused on data discovery. Knowing how to share metadata with these platforms while not losing the important additional information held in ISO19115-1 is of high importance.
 
 DCAT is a newer metadata standard developed by the W3C and based on linked data principles like RDF and formal ontologies. It can be thought of as a wrapper around other standards that make the sharing of metadata between standards easier through the use of well understood tags. The use of this standard continues to grow and is important for metadata exchange.
 
@@ -94,3 +95,9 @@ An example of how this document might be used to provide guidance by an organisa
 | Constraints on resource access and use: | [Resource Constraints](./ResourceOtherConstraints)   |
 | Metadata date stamp:  | [Metadata Date](./MetadataDate)  |
 |Metadata point of contact: | [Metadata Responsible Party](./MetadataContact)  |
+
+
+
+**>> [*Patterns Template*](./Template)**
+
+\pagebreak

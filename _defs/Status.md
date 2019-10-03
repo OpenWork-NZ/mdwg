@@ -65,7 +65,7 @@ Values for this element must come from the MD_ProgressCode codelist.
 
 ### Crosswalk considerations
 
-#### Dublin core / CKAN / data.govt.nz
+#### Dublin core / CKAN / data.gov.au
 Maps to `data status`
 
 ## Examples
@@ -81,12 +81,16 @@ Maps to `data status`
       ....
          <mri:status>
             <mri:status>
-            <mcc:MD_ProgressCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ProgressCode"
-                                 codeListValue="underDevelopment"/>
+            <mcc:MD_ProgressCode 
+            codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat
+            /codelists.xml#MD_ProgressCode" 
+            codeListValue="underDevelopment"/>
          </mri:status>
          <mri:status>
-            <mcc:MD_ProgressCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ProgressCode"
-                                 codeListValue="tentative"/>
+            <mcc:MD_ProgressCode 
+            codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat
+            /codelists.xml#MD_ProgressCode" 
+            codeListValue="tentative"/>
          </mri:status>
          ....
       </mri:MD_DataIdentification>
@@ -97,6 +101,9 @@ Maps to `data status`
 
 ### UML diagrams
 Recommended elements highlighted in Yellow
+
 ![status](../images/StatusUML.png)
 
 </details>
+
+\pagebreak

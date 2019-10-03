@@ -74,7 +74,7 @@ role as a mechanism for associating resources. Changes include:
 - MD_AssociatedResource /metadataReference:CI_Citation was added
   - This new element was added to avoid ambiguity about whether the name:CI_Citation refers to a resource or to metadata for that resource. Now it is clear that name:CI_Citation refers to the resource and the metadataReference refers to metadata for that resource.
 
-#### Dublin core / CKAN / data.govt.nz 
+#### Dublin core / CKAN / data.gov.au 
 TBD {mapping to *DC element* and discussion???}
 
 #### DCAT 
@@ -112,7 +112,8 @@ Maps to "Related Information"
             </cit:CI_Citation>
           </mri:name>
           <mri:associationType>
-            <mri:DS_AssociationTypeCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#DS_AssociationTypeCode"
+            <mri:DS_AssociationTypeCode codeList="https://schemas.isotc211.org
+            /19115/resources/Codelist/cat/codelists.xml#DS_AssociationTypeCode"
             codeListValue="largerWorkCitation"/>
           </mri:associationType>
         </mri:MD_AssociatedResource>
@@ -131,3 +132,5 @@ Recommended elements highlighted in Yellow
 ![associateResource](../images/AssociatedResourcesUML.png)
 
 </details>
+
+\pagebreak

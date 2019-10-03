@@ -55,7 +55,7 @@ It is not recommended, except in the case of service information metadata, that 
 
 <details>
 
-#### Dublin core / CKAN / data.govt.nz 
+#### Dublin core / CKAN / data.gov.au 
 likely unneeded unless a service
 
 #### DCAT 
@@ -92,7 +92,8 @@ mapping as yet unknown
                      <mrd:name>
                         <cit:CI_Citation>
                            <cit:title>
-                              <gco:CharacterString>My Cloud</gco:CharacterString>
+                              <gco:CharacterString>My Cloud
+                              </gco:CharacterString>
                            </cit:title>
                         </cit:CI_Citation>
                      </mrd:name>
@@ -109,6 +110,9 @@ mapping as yet unknown
 
 ### UML diagrams
 Recommended elements highlighted in Yellow
+
 ![resourceFormat](../images/ResourceFormatUML.png)
 
 </details>
+
+\pagebreak

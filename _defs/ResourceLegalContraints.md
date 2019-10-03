@@ -7,7 +7,7 @@ title: Resource Legal Constraints
 ---
 # Resource Legal Constraints ★★★★★
 
-When constraints ([MD_Constraints]) on a spatial resource [MD_Identification]  are of a legal nature it is important to document these.. Potential users need to be informed of rights, restrictions and responsibilities (or lack thereof) that apply to the use of such resources.
+*When constraints ([MD_Constraints](./class-md_constraints.html)) on a spatial resource [MD_Identification](http://wiki.esipfed.org/index.php/MD_Identification)  are of a legal nature it is important to document these.. Potential users need to be informed of rights, restrictions and responsibilities (or lack thereof) that apply to the use of such resources.*
 
 - **Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.resourceConstraints>MD_LegalConstraints*
 - **Governance** - *Agency*
@@ -61,7 +61,7 @@ Therefore - It is important to capture all legal constraints that apply to a spa
 #### ISO19139
 See guidance provided in [MD_Constraints](./class-md_constraints) and [MD_LegalConstraints](./class-MD_LegalConstraints)
 
-#### Dublin core / CKAN / data.govt.nz
+#### Dublin core / CKAN / data.gov.au
 Maps to `rights`
 `Reference for legal` maps to `licence`
 
@@ -95,20 +95,24 @@ Maps to `Rights/@licence`
              <mco:responsibleParty>
                 <cit:CI_Responsibility>
                    <cit:role>
-                      <cit:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode"
-                                       codeListValue="author"/>
+                      <cit:CI_RoleCode 
+                      codeList="https://schemas.isotc211.org/19115/resources
+                      /Codelist/cat/codelists.xml#CI_RoleCode" 
+                      codeListValue="author"/>
                    </cit:role>
                    <cit:party>
                       <cit:CI_Organisation>
                          <cit:name>
-                            <gco:CharacterString>OpenWork Ltd</gco:CharacterString>
+                            <gco:CharacterString>OpenWork Ltd
+                            </gco:CharacterString>
                          </cit:name>
                          <cit:contactInfo>
                             <cit:CI_Contact>
                                <cit:address>
                                   <cit:CI_Address>
                                      <cit:electronicMailAddress>
-                                        <gco:CharacterString>info@openwork.nz</gco:CharacterString>
+                                        <gco:CharacterString>info@openwork.nz
+                                        </gco:CharacterString>
                                      </cit:electronicMailAddress>
                                   </cit:CI_Address>
                                </cit:address>
@@ -117,7 +121,8 @@ Maps to `Rights/@licence`
                          <cit:individual>
                             <cit:CI_Individual>
                                <cit:name>
-                                  <gco:CharacterString>Byron Cochrane</gco:CharacterString>
+                                  <gco:CharacterString>Byron Cochrane
+                                  </gco:CharacterString>
                                </cit:name>
                             </cit:CI_Individual>
                          </cit:individual>
@@ -126,12 +131,14 @@ Maps to `Rights/@licence`
                 </cit:CI_Responsibility>
              </mco:responsibleParty>
              <mco:accessConstraints>
-                <mco:MD_RestrictionCode codeListValue="copyright"
-                                        codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_RestrictionCode"/>
+                <mco:MD_RestrictionCode codeListValue="copyright" 
+                codeList="https://schemas.isotc211.org/19115/resources/Codelist
+                /cat/codelists.xml#MD_RestrictionCode"/>
              </mco:accessConstraints>
              <mco:useConstraints>
-                <mco:MD_RestrictionCode codeListValue="otherRestrictions"
-                                        codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_RestrictionCode"/>
+                <mco:MD_RestrictionCode codeListValue="otherRestrictions" 
+                codeList="https://schemas.isotc211.org/19115/resources/Codelist
+                /cat/codelists.xml#MD_RestrictionCode"/>
              </mco:useConstraints>
              <mco:otherConstraints gco:nilReason="missing">
                 <gco:CharacterString/>
@@ -141,15 +148,18 @@ Maps to `Rights/@licence`
        <mri:resourceConstraints>
           <mco:MD_SecurityConstraints>
              <mco:classification>
-                <mco:MD_ClassificationCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ClassificationCode"
-                                           codeListValue="unclassified"/>
+                <mco:MD_ClassificationCode 
+                codeList="https://schemas.isotc211.org/19115/resources/Codelist
+                /cat/codelists.xml#MD_ClassificationCode" 
+                codeListValue="unclassified"/>
              </mco:classification>
           </mco:MD_SecurityConstraints>
        </mri:resourceConstraints>
        <mri:resourceConstraints>
           <mco:MD_Constraints>
              <mco:useLimitation>
-                <gco:CharacterString>Not to be used for navigation</gco:CharacterString>
+                <gco:CharacterString>Not to be used for navigation
+                </gco:CharacterString>
              </mco:useLimitation>
           </mco:MD_Constraints>
        </mri:resourceConstraints>
@@ -163,6 +173,9 @@ Maps to `Rights/@licence`
 ### UML diagrams
 
 Recommended elements highlighted in Yellow
+
 ![resourceLegalConstraints](../images/ResourceLegalConstraintsUML.png)
 
 </details>
+
+\pagebreak

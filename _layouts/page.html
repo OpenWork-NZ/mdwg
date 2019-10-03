@@ -24,8 +24,11 @@
     h1 {color: black}
     details summary {font-weight: bold}
 
-    header {background: #fff9}
+    header {background: #3339; vertical-align: center}
     header h1 {font-size: 2.5rem}
+    header img {float: left}
+    header a:link, header a:visited {color: white; text-decoration: none}
+    header a:hover {color: #393}
 
     aside, main {
       margin-top: 300px;
@@ -63,10 +66,19 @@
 </head>
 <body>
   <header>
-  <h1><a href="/mdwg/">ICSM Metadata Good Practices</a></h1>
+  <h1><a href="https://www.icsm.gov.au/"><img src="/mdwg/images/logo.png" alt="ICSM" /></a>
+    <a href="/mdwg/">ISO19115-1 Metadata Good Practice Guide</a></h1>
   </header>
 
   <aside>
+    {% if page.section != "Guidance" %}
+      <h2>Guidance</h2>
+      {% assign defs = site.defs|sort:"rank" %}
+      <ul>{% for def in defs %}{% if def.section == "Guidance" %}
+        <li><a href="{{ def.url | relative_url }}">{{ def.title }}</a></li>
+      {% endif %}{% endfor %}</ul>
+    {% endif %}
+
     <h2>Sections</h2>
     {% assign defs = site.defs|sort:"rank" %}
     <ul>{% for def in defs %}{% if def.type == "section" %}
