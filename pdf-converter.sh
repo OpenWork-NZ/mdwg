@@ -1,6 +1,6 @@
 #! /bin/sh
 cd _defs
-pandoc TableOfContents.md GuidanceIntro.md PatternGuide.md Template.md \
+pandoc GuidanceIntro.md TableOfContents.md PatternGuide.md Template.md \
     class-MD_Metadata.md MetadataIdentifier.md MetadataLinkage.md MetadataDate.md \
       MetadataContact.md MetadataLocale.md MetadataScope.md \
       MetadataLegalConstraints.md MetadataSecurityConstraints.md ParentMetadata.md \
