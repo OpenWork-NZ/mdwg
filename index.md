@@ -1,5 +1,7 @@
 ---
 layout: page
+image: "./images/logo.png"
+date: 3 October 2019
 type: page
 section: Guidance
 title: Metadata Good Practice Guide
@@ -10,8 +12,9 @@ title: Metadata Good Practice Guide
 This document was compiled by [OpenWork Ltd (OWL)](http://openwork.nz) on behalf of and with guidance and contributions from the [ICSM Metadata Working Group (MDWG)](https://www.icsm.gov.au/what-we-do/metadata-working-group). The purpose of this document is to capture the consensus good practice guidance for the use of recommended ISO 19115-1 metadata elements for organisataion in the Australia / New Zealand region. Further this guidance will aid the migration from the retired [ANZLIC](https://www.anzlic.gov.au/) Metadata Profile of ISO 19115:2003 to the currently endorsed ISO 191125-1:2014 (including Amd.1:2018).
 
 ![Geoscience Australia](./images/GA.jpg)  
-![ARDC](./images/ARDC.png)  ![DEE](./images/DeptEngEnv.png)  ![TERN](./images/TERN.png)  ![DOD](./images/dod.jpg)  ![AAD](./images/aad.png)  
- ![OpenWork Ltd](./images/OWL.png) 
+![ARDC](./images/ARDC.png)  ![DEE](./images/DeptEngEnv.png) 
+![TERN](./images/TERN.png)  ![DOD](./images/dod.jpg)  ![AAD](./images/aad.png)  
+ ![OpenWork Ltd](./images/openwork.png) 
 
 \pagebreak
 
