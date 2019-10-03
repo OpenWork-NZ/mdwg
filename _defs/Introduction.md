@@ -1,9 +1,5 @@
 ---
 layout: page
-image: "../images/logo.png"
-date: 3 October 2019
-type: page
-section: Guidance
 title: Metadata Good Practice Guide
 ---
 
