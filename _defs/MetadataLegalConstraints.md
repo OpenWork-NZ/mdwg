@@ -89,7 +89,9 @@ Agregated into `Description 'notes'`
          <mco:constraintApplicationScope>
             <mcc:MD_Scope>
                <mcc:level>
-                  <mcc:MD_ScopeCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#MD_ScopeCode"
+                  <mcc:MD_ScopeCode 
+                  codeList="https://schemas.isotc211.org/19115/resources/Codelist/
+                  cat/codelists.xml#MD_ScopeCode"
                                     codeListValue="metadata"/>
                </mcc:level>
             </mcc:MD_Scope>
@@ -97,7 +99,8 @@ Agregated into `Description 'notes'`
          <mco:reference>
             <cit:CI_Citation>
                <cit:title>
-                  <gco:CharacterString>Creative Commons 4.0 International Licence</gco:CharacterString>
+                  <gco:CharacterString>Creative Commons 4.0 International Licence
+                  </gco:CharacterString>
                </cit:title>
                <cit:alternateTitle>
                   <gco:CharacterString>CC By</gco:CharacterString>
@@ -121,7 +124,8 @@ Agregated into `Description 'notes'`
                         <gco:CharacterString/>
                      </cit:description>
                      <cit:function>
-                        <cit:CI_OnLineFunctionCode codeList="https://schemas.isotc211.org/19115/resources/
+                        <cit:CI_OnLineFunctionCode 
+                        codeList="https://schemas.isotc211.org/19115/resources/
                         Codelist/cat/codelists.xml#CI_OnLineFunctionCode"
                                                    codeListValue=""/>
                      </cit:function>
@@ -148,7 +152,8 @@ Agregated into `Description 'notes'`
                               <gco:CharacterString/>
                            </cit:description>
                            <cit:function>
-                              <cit:CI_OnLineFunctionCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/
+                              <cit:CI_OnLineFunctionCode 
+                              codeList="https://schemas.isotc211.org/19115/resources/Codelist/
                               cat/codelists.xml#CI_OnLineFunctionCode"
                                                          codeListValue=""/>
                            </cit:function>
@@ -161,7 +166,8 @@ Agregated into `Description 'notes'`
          <mco:responsibleParty>
             <cit:CI_Responsibility>
                <cit:role>
-                  <cit:CI_RoleCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/
+                  <cit:CI_RoleCode 
+                  codeList="https://schemas.isotc211.org/19115/resources/Codelist/
                   cat/codelists.xml#CI_RoleCode"
                                    codeListValue="owner"/>
                </cit:role>
