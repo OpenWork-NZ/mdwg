@@ -74,7 +74,8 @@ Maps to `RelatedInfo/relation='partOf'`
          <cit:identifier>
             <mcc:MD_Identifier>
                <mcc:code>
-                  <gco:CharacterString>8668cb6b-b594-4394-8e2c-f554bace859f</gco:CharacterString>
+                  <gco:CharacterString>8668cb6b-b594-4394-8e2c-f554bace859f
+                  </gco:CharacterString>
                </mcc:code>
             </mcc:MD_Identifier>
          </cit:identifier>
