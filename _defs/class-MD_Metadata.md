@@ -72,6 +72,6 @@ Therefore - It is recommended that all spatial metadata utilise the structure pr
 
 Recommended elements highlighted in Yellow
 
-![image-20190711170142639](../images/class-MD_Metadata.png)
+![MD_Metadata.png](../images/MD_Metadata.png)
 
 \pagebreak
