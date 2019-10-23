@@ -87,7 +87,9 @@ Maps to `Description 'notes'`
                         <gco:Date>2019-07-01</gco:Date>
                      </cit:date>
                      <cit:dateType>
-                        <cit:CI_DateTypeCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_DateTypeCode"
+                        <cit:CI_DateTypeCode 
+                        codeList="https://schemas.isotc211.org/19115/resources/Codelist/
+                        cat/codelists.xml#CI_DateTypeCode"
                                              codeListValue="creation"/>
                      </cit:dateType>
                   </cit:CI_Date>
