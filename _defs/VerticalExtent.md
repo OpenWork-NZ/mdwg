@@ -105,13 +105,21 @@ Maps to `Coverage/Spatial`
                                  <gmd:referenceSystemIdentifier>
                                     <gmd:RS_Identifier>
                                        <gmd:code>
-                                          <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">WGS 84 (EPSG:4326)</gco:CharacterString>
+                                          <gco:CharacterString 
+                                          xmlns:gco="http://www.isotc211.org/2005/gco">
+                                          WGS 84 (EPSG:4326)</gco:CharacterString>
                                        </gmd:code>
                                        <gmd:codeSpace>
-                                          <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">EPSG</gco:CharacterString>
+                                          <gco:CharacterString 
+                                          xmlns:gco="http://www.isotc211.org/2005/gco">
+                                          EPSG
+                                          </gco:CharacterString>
                                        </gmd:codeSpace>
                                        <gmd:version>
-                                          <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">8.6</gco:CharacterString>
+                                          <gco:CharacterString 
+                                          xmlns:gco="http://www.isotc211.org/2005/gco">
+                                          8.6
+                                          </gco:CharacterString>
                                        </gmd:version>
                                     </gmd:RS_Identifier>
                                  </gmd:referenceSystemIdentifier>
