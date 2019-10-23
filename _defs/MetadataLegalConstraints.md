@@ -108,7 +108,8 @@ Agregated into `Description 'notes'`
                <cit:onlineResource>
                   <cit:CI_OnlineResource>
                      <cit:linkage>
-                        <gco:CharacterString>https://creativecommons.org/licenses/by/4.0/</gco:CharacterString>
+                        <gco:CharacterString>https://creativecommons.org/licenses/by/4.0/
+                        </gco:CharacterString>
                      </cit:linkage>
                      <cit:protocol gco:nilReason="missing">
                         <gco:CharacterString/>
@@ -120,7 +121,8 @@ Agregated into `Description 'notes'`
                         <gco:CharacterString/>
                      </cit:description>
                      <cit:function>
-                        <cit:CI_OnLineFunctionCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_OnLineFunctionCode"
+                        <cit:CI_OnLineFunctionCode codeList="https://schemas.isotc211.org/19115/resources/
+                        Codelist/cat/codelists.xml#CI_OnLineFunctionCode"
                                                    codeListValue=""/>
                      </cit:function>
                   </cit:CI_OnlineResource>
@@ -133,7 +135,8 @@ Agregated into `Description 'notes'`
                      <mcc:linkage>
                         <cit:CI_OnlineResource>
                            <cit:linkage>
-                              <gco:CharacterString>https://creativecommons.org/images/deed/cc_icon_white_x2.png</gco:CharacterString>
+                              <gco:CharacterString>https://creativecommons.org/images/
+                              deed/cc_icon_white_x2.png</gco:CharacterString>
                            </cit:linkage>
                            <cit:protocol gco:nilReason="missing">
                               <gco:CharacterString/>
@@ -145,7 +148,8 @@ Agregated into `Description 'notes'`
                               <gco:CharacterString/>
                            </cit:description>
                            <cit:function>
-                              <cit:CI_OnLineFunctionCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_OnLineFunctionCode"
+                              <cit:CI_OnLineFunctionCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/
+                              cat/codelists.xml#CI_OnLineFunctionCode"
                                                          codeListValue=""/>
                            </cit:function>
                         </cit:CI_OnlineResource>
@@ -157,7 +161,8 @@ Agregated into `Description 'notes'`
          <mco:responsibleParty>
             <cit:CI_Responsibility>
                <cit:role>
-                  <cit:CI_RoleCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat/codelists.xml#CI_RoleCode"
+                  <cit:CI_RoleCode codeList="https://schemas.isotc211.org/19115/resources/Codelist/
+                  cat/codelists.xml#CI_RoleCode"
                                    codeListValue="owner"/>
                </cit:role>
                <cit:party>
