@@ -23,12 +23,15 @@ title: Purpose
 **A brief summary of the intentions with which the resource was developed**
 
 ### ISO Obligation
+
 - There may be no more than one [0..1] *purpose* entries for the resource in the   *[MD_DataIdentification](./class-MD_DataIdentification)* package of type *character string* in a metadata record.
 
 ### ICSM Good Practice
+
 - Populate the *purpose* element and provide enough narrative to give the reader a good understanding of the intent for which the resource was created. Use common language as far as possible as the readers may come from a different domain.
 
 ## Discussion
+
 A purpose statement provides a brief description of the reason a resource was created. Knowing this can give a good guide to potential usefulness of a resource to other potential users.
 
 Consideration needs be given to the audience and what they need to know about the resource to decide it's utility for them.
@@ -36,6 +39,7 @@ Consideration needs be given to the audience and what they need to know about th
 A purpose statement is generally shorter than an abstract and should be written in a style that your human audience will easily comprehend. The purpose should capture the "why" a dataset was created and to what end it is used. Common language should be used that most people could understand. If there is a need for more technical language to describe the resource, this should be included at the end of the purpose statement.
 
 ### Outstanding Issues
+
 > **DCAT**
 Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.
 
@@ -52,17 +56,21 @@ The contents of a purpose should include as much information as would be useful 
 <details>
 
 #### Dublin core / CKAN / data.gov.au
+
 Maps to *description*?
 
 #### DCAT
+
 Maps to *dct.description* (as does *abstract*)
 
 #### RIF-CS
+
 Maps to *dct.description*
 
 </details>
 
 ## Also Consider
+
 - **[Abstract](./Abstract)** provides somewhat more lengthy verbal summary description of the resource. Some overlap of usage with `purpose` may exist. The MDWG should provide some guidance as to what belongs in `abstract` and what belongs in `purpose`
 - **MD_DataIdentification.supplimentalInformation -** provides a description of the resource in the producer's processing environment, including items such as the software, the computer operating system, file name, and the dataset size. 
 - **[Resource Lineage](./ResourceLineage)** may contain information related to purpose.
@@ -72,11 +80,13 @@ Maps to *dct.description*
 <details>
 
 ### ABARES
+
 > The Australian Surveying and Land Information Group (AUSLIG) has the responsibility for providing topographic mapping information at a national scale. 
 AUSLIG has undertaken the Australian Geographic Database program to enhance this topographic map information so it is suitable for use in Geographic Information Systems. 
 The data resulting from this program are known as GEODATA. Each GEODATA product incorporates characteristics such as customer focus, national consistency, assured quality and comprehensive documentation.
 
 ### TERN
+
 > The purpose of the Cumberland Plain flux station is: to quantify the exchanges of carbon dioxide, water vapour and energy in a dry sclerophyll forest. to characterize the functional behaviour and sensitivity of the different components contributing to the ecosystem carbon balance from sub-daily to multi-annual temporal scales and under climatic variability. to identify the role of hydraulic limitations on constraining ecosystem productivity. to quantify the impact of mistletoe on plant physiological processes and whole ecosystem water vapour and carbon dioxide exchange. to validate remote sensing estimates of different radiation components to obtain accurate regional predictions of fuel moisture and to understand how wood traits and microbial diversity interact to determine rates of wood decay.
 
 ### XML -
