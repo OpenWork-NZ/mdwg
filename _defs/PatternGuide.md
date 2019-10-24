@@ -20,6 +20,7 @@ A design pattern is a general, reusable solution to a commonly occurring problem
 An entry starts with a meaningful name that provides an anchor to which we can refer. These are associated in our case with the individual element, class or package in the standard. A star rating (1 to 5 stars) indicates the importance or priority of the element in the general ICSM context. In some domains and agencies, these rating will differ. This is followed by a short statement that provides context for the element and why it is useful.
 
 A small table follows that summarises details about the element. These include:
+
 - **Path** -  Which provides clear identification about where the element sits in the structure of a metadata record.
 - **Governance** -  Details what body is most likely to make decisions about how the element is used and populated. Common values are ISO, Common ICSM, Domain, Agency. Sometimes these decisions are made at more than one level.
 - **Purpose** - Provides the high-level purpose of the element - for what is it most useful? Common values include: Discovery, Evaluation, Use, Management
@@ -38,12 +39,13 @@ The next section holds a brief in context definition of the element. This is fol
 #### Discussion
 
 This section captures the thinking of the MDWG behind the use of this element. The following aspects in this order are considered:
+
 - Why this element is important?
 - What we need it for?
 - Who should capture this information? 
 - Whom is it useful to?
 - When should the information be captured? 
-Where is it important, with what resource?
+- Where is it important, with what resource?
 
 Outstanding issues are also captured in this section. This is a living document and we only get to the level of agreement that we can.  Capturing these outstanding differences and lack of understanding, allows us to know where to start on the next bit of work.
 
