@@ -22,13 +22,17 @@ title: Resource Format
 **Description of the computer language construct that specifies the representation of the data objects in a record, file, message, storage device, or transmission channel**
 
 ### ISO Obligation
+
 There may be zero or many [0..\*] *resourceFormats* for the cited resource in the  *[MD_DataIdentification](./class-MD_DataIdentification)* package of class *[MD_Format](https://www.isotc211.org/hmmg/HTML/ConceptualModels/EARoot/EA1/EA13/EA2/EA10/EA4323.htm)* desrcibed in a metadata record.
 
 ###  ICSM Good Practice
+
 This element should be populated in all metadata records with information about the format in which the resource is stored and managed within the agency,  This is not about the format inwhich the resource is distributed which often differs.
 
 #### Recommended Sub-Elements
+
 From class - *[MD_Format](http://wiki.esipfed.org/index.php/MD_Format)*
+
 * **formatSpecificationCitation -** *(class - [CI_Citation](./class-CI_Citation))* citation/URL of the specification for the format
 * **medium -** *(class - [MD_Medium](http://wiki.esipfed.org/index.php/MD_Medium))*  medium used by the format
 
@@ -38,6 +42,7 @@ Knowledge of the native format of a resource provides a user that has direct acc
 Most external users would likely be more interested in the distribution format.
 
 ### Outstanding Issues
+
 > **CORE ISSUE:**
 This element seems to be about the native format in which the data is kept by an organisation.  This may or may not be the same as the distribution format. It is the distribution format that most people would want to know from a metadata record (except internal users).
 
@@ -56,14 +61,17 @@ It is not recommended, except in the case of service information metadata, that 
 <details>
 
 #### Dublin core / CKAN / data.gov.au 
+
 likely unneeded unless a service
 
 #### DCAT 
+
 mapping as yet unknown
 
 </details>
 
 ## Also Consider
+
 - **[MD_Distribution.distributionFormat -](./DistributionInfo)**  holds information about the format in which the data is distributed.
 
 
