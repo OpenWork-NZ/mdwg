@@ -25,6 +25,7 @@ EXAMPLE - A dataset, an organisation logo, security constraint or citationgraphi
 In a metadata record there should be zero to many {0..*] graphicOverview packages  of class MD_BrowseGraphic describing  a resource. These should typically include the name linkage to the graphic.
 
 #### Recommended Sub Elements
+
 * **fileName -** *(type - CharStr)* Mandatory - name of the file that contains a graphic that provides an illustration of the resource. 
 * **linkage -** *(class - CI_OnlineResource)*  0 to many - link to browse graphic.
 * Optional
@@ -46,7 +47,9 @@ Therefore - in order to provide a quick way for users to discover and identify t
 <details>
 
 #### ISO19139
+
 browseGraphic is a new package in iso19115-1. New elements include:
+
 - **MD_BrowseGraphic.imageConstraint** *(class - [MD_Constraints](./class-md_constraints))*
   - This new element was added in order to allow the specification of constraints on a browse graphic associated with a resource.
 - **MD_BrowseGraphic.linkage** *(class - [CI_OnlineResource](./class-CI_OnlineResource)*
@@ -55,6 +58,7 @@ browseGraphic is a new package in iso19115-1. New elements include:
 </details>
 
 ## Also Consider
+
 - [**CI_OnLineFunctionCode**](http://wiki.esipfed.org/index.php/ISO_19115-3_Codelists#CI_OnLineFunctionCode) - A property of [CI OnlineResource](http://wiki.esipfed.org/index.php/CI_OnlineResource). This codelist contains an option *browseGraphic*
 
 ## Examples
@@ -62,6 +66,7 @@ browseGraphic is a new package in iso19115-1. New elements include:
 <details>
 
 ### UML diagrams
+
 Recommended elements highlighted in Yellow
 
 ![browseGraphic](../images/BrowseGraphicUML.png)
