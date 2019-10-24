@@ -30,7 +30,9 @@ title: Metadata Responsible Party
 - This element should be populated in all metadata records with a minimum of `role` , `name` (of organisation preferred), `positionName` and `electronicMailAddress`.
 
 #### Recommended Sub-Elements
+
 Follow the general guidance for [CI_Responsibility](./class-CI_Responsibility).
+
 - One value of `role` should be "Point of Contact".
 
 ## Discussion
@@ -48,20 +50,25 @@ The use of the new `partyIdentifier` element added in the 2018 ammendment to the
 <details>
 
 #### ISO19139
+
 See discussion at [CI_Responsibility](./class-CI_Responsibility)
 
 #### Dublin core / CKAN / data.gov.au
+
 Maps to `contact`
 
 #### DCAT
+
 Maps to `dcat:contactPoint`
 
 #### RIF-CS
+
 Maps to `Related Party`
 
 </details>
 
 ## Also Consider
+
 - **[Resource Point of Contact](./ResourcePointOfContact)** Contact information for the recommended party to contact about the resource
 - **[Resource Cited Reponsible Party](./ResourceResponsibleParty)** contact information for the parties otherwise responsible for aspects of the the resource creation and maintenance.
 - **[DistributionInfo](./DistributionInfo)** Includes Distributor contact information.
