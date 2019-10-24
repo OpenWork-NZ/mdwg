@@ -18,6 +18,7 @@ In order to provide a standardised way of capturing information related to the v
 **A standardized resource reference framework.**
 
 ### ISO Associations (May be found in) -
+
 - MD_Metadata.parentMetadata 
 - MD_Metadata.metadataStandard
 - MD_Metadata.metadataProfile
@@ -49,6 +50,7 @@ In order to provide a standardised way of capturing information related to the v
 - 
 
 #### Recomended Attributes -
+
 - **title -** *(type - charStr)*[1..1] Mandatory - name by which the cited resource is known
 - **alternateTitle -** *(type - charStr)* [0..\*] short name or other language name by which the cited information is known. Example: DCW as an alternative title for Digital Chart of the World. Recommended whenever there are alternate names commonly in use.
 - **date -** *(class - [CI_Date](./class-CI_Date))*  [0..\*]  reference date for the cited resource
@@ -67,6 +69,7 @@ In order to provide a standardised way of capturing information related to the v
 
 
 ## Discussion
+
 Citations are used to provide information about citing the resource being described in the metadata or to refer to resources outside of the metadata record.
 Citations use CI_Citation and cite the party responsible using CI_Responsibility. CI_Responsibility may be used without CI_Citation. CI_Responsibility is an aggregate of one or more parties (CI_Party). CI_Party may be specified as CI_Individual and/or CI_Organisation.
 
