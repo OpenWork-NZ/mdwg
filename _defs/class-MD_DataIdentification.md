@@ -19,6 +19,7 @@ title: Data Identification
 ### ISO Associations 
 
 **[MD_Identification](http://wiki.esipfed.org/index.php/MD_Identification)** is an abstract class that is parent to 
+
 - **MD_DataIdentification**
 It is a child of 
 - MD_Metadata.identificationInfo
@@ -41,15 +42,19 @@ In addition to all the attributes of [MD_Identification](./class-MD_Identificati
 - **supplementalInformation -** *(type - charStr)*[0..1] any other descriptive information about the resource
 
 ## Discussion
+
 Identification information about a resource is of high importance to document as this information strongly impacts on the ability of a user to asses the resource fitness to use. MD_DataIdentification instantiates the abstract class [MD_Identification](./class-MD_Identification)  for use with data resources.
 
 ## Recommendations
+
 ## Related Classes
+
 - **[MD_Identification](./class-MD_Identification)** the abstract parent class to `MD_DataIdentification`
 - See guidances for the composite elements.
 
 
 ### UML diagrams
+
 Recommended elements highlighted in Yellow
 
 ![MD_DataIdentification](../images/class-MD_DataIdentification.png)
