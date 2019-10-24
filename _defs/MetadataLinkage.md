@@ -30,7 +30,9 @@ title: Metadata Linkage
 - If posible, one instance of this element must be populated in all metadata records with a link to the source "point of truth" metadata record.
 
 #### Recommended Sub-Elements
+
 Follow the general guidance for [class - CI_OnlineResource](./class-CI_OnlineResource) with the following additional guidance:
+
 - **description -** (*type - charStr*) [0..1] when `metadataLinkage` is used as a "point of truth" location of the authoritative metadata, use this field to indicate this.
 - **function -** *(codelist - [CI_OnlineFunctionCode](http://wiki.esipfed.org/index.php/ISO_19115-3_Codelists#CI_OnLineFunctionCode))* [0..1] This should be populated with the value "completeMetadata".
 
@@ -58,20 +60,25 @@ As for multiple locations for the same metadata, it is useful to look at MD_Meta
 <details>
 
 #### ISO19139
+
 As this is a new element to allow unambiguous specification of the online location where the metadata is available, there are no reliable elements to crosswalk.
 
 #### Dublin core / CKAN / data.gov.au
+
 In Dublin core the identifier element is described as holding a reference to the resource (not the metadata). However in the case of metadata records harvested by s higher level CKAN like catalogue, we view the complete metadata record as the resource. It is also standard practice that the DC Identifier field be resolvable. For a Dublin core metadata harvested via CSW from a ISO 19115-1 record, it is important that that record links to something that can be derefewrenced. That something is held in the identifier field and should be the location URL/URI for the metadata.  IF the ISO 19115-1 identifier element is only a unresolvable UUID, the metadataLinkage element may be a better choice to populate the DC Identifier field.
 
 #### DCAT
+
 May map to `dct:identifier` if `metadataIdentifier` is unresolvable
 
 #### RIF-CS
+
 May map to `Key Identifier` if `metadataIdentifier` is unresolvable
 
 </details>
 
 ## Also Consider
+
 - **[onlineResource -](./DistributionInfo)** (MD_Distribution.transferOptions>MD_DigitalTransferOptions.online) is used to provide online linage to the resource. 
 - **[MetadataIdentifier -](./MetadataIdentifier)** is the preferred element to be used to provide linkage to the metadata record.
 - **[alternativeMetadataReference](http://geos.whu.edu.cn/ont/iso19115/metadata.html#d4e52) -** *(class - CI_Citation)*[0..\*] *Page 37 - ISO 19115.1:2015* - reference to alternative metadata, e.g Dublin Core, FGDC, or metadata in a non-ISO standard for the same resource
