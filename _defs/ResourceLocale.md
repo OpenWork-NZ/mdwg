@@ -29,13 +29,16 @@ title: Resource Default Locale
 - The default language in our region is English and it is recommended to be used as the language in metadata records using the 3 letter code "eng".
 
 #### Recommended Sub-Elements
+
 - Follow the general guidance for *[class - PT_Locale](./PT_Locale)*
 
 #### Recommended Sibling Elements
+
 - **otherLocale -** *[class - PT_Locale]* [0..\*] when a resource has information in additional languages
   - Follow the general guidance for [class - PT_Locale](./PT_Locale)
 
 ## Discussion
+
 There may be only one default locale for a resource identified in a metadata record.
 The element "otherLocale" can be use to provide information about alternatively used localised character strings
 
@@ -48,24 +51,29 @@ Therefore - In order to meet ICSM good practice, in metadata for data resources,
 <details>
 
 #### ISO19139
+
 MD_DataIdentification/language and MD_DataIdentification/characterSet moved to MD_DataIdentification/defaultLocale:PT_Locale - Make use of the newly added Language and character set localization package for defining local language and character set.
 
 #### Dublin core / CKAN / data.gov.au
+
 Maps to `language`
 
 CKAN has one field for language that maps to both Metadata and Resource language fields. ISO 19115 recommends 639-2 3 letter codes. Data.gov.au recommends IETF RFC4646 2 letter codes as primary. See https://www.loc.gov/standards/iso639-2/faq.html#6 for discussion of the differences
 
 #### DCAT
+
 Maps to `dct.language`.  
 
 > Note BC 19-7: It iis unclear if DCAT makes a distinction between the metadata language and the resource language
 
 #### RIF-CS
+
 No identified mapping
 
 </details>
 
 ## Also Consider
+
 - **MD_DataIdentification.otherLocale -**  *(codelist - PT_Locale)* [0..\*] alternate localised language(s) and character set (s) used within the resource
 - **[Metadata Default Locale](./MetadataLocale)** *(codelist - PT_Locale)* [0..1]  contains the  language and character set used in the metadata
 - **MD_Metadata.otherLocale -** *(codelist - PT_Locale)* [0..\*] provides information about alternatively used localised character strings provides information about alternatively used localised character strings
