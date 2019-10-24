@@ -33,6 +33,7 @@ title: Template
 
 #### Recommended Sub-Elements 
 {MDWG recommended sub-elements and how to populate them. May be nested.}
+
 - **{sub-elementName} -** *(type - {name of type})* [{cardinality}] - {brief guidance statement} 
 - **{sub-elementName} -** *(codelist - {name of codelist})* [{cardinality}] - {brief guidance statement} 
 - **{sub-elementName} -** *(class - {name of class})* [{cardinality}] - {brief guidance statement} -
@@ -42,6 +43,7 @@ title: Template
 
 ## Discussion  
 {This section captures the thinking behind the use of this element. The following aspects in this order are considered:
+
 - Why this element is import?
 - What we need it for?
 - Who should capture this information? 
@@ -61,11 +63,12 @@ title: Template
 
 #### Other discussion 
 {from other sources of note - other standards and implementations. In Markdown Notes format. Such as:}
+
 > **{DCAT Notes}** -
 {Discussion of issue}
+
 > **{From data.govt.au}** -
 {Discussion of issue}
-
 
 
 ## Recommendations 
@@ -88,8 +91,11 @@ title: Template
 
 ## Also Consider
 {Links to additional useful information. Usually other elements, packages and classes in this good pratice document. May also link to other external resources.}
+
 **[{element name} -]({path to element})**  {description of importance and utility with any links}
+
 **[{element name} -]({path to element})**  {description of importance and utility with any links}
+
 **[{class name} -]({path to class})**  {description of importance and utility with any links}
 
 ## Examples
