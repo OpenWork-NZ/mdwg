@@ -23,12 +23,15 @@ title: Resource Lineage
 **Information about the provenance, source(s), and/or the production process(es) applied to the resource.**
 
 ### ISO Obligation
+
 - A metadata record should contain zero to many [0..\*] *resourceLineage* packages for the cited resource in the  *[MD_Metadata](./class-MD_Metadata)* package of class *[LI_Lineage](http://wiki.esipfed.org/index.php/LI_Lineage)*. 
 
 ### ICSM Good Practice
+
 - Lineage information should be documented and include a descriptive statement of the resource provenance and its scope as an level from a hiearchy *[MD_Scope](./class-MD_Scope)*.
 
 #### Recommended Sub-Elements
+
 - **statement -** *(type - charstr)* 0 to 1 - Recommended by MDWG. A general explanation of the data producer's knowledge about the lineage of a resource.
 - **source -** *(class - [LI_Source](http://wiki.esipfed.org/index.php/LI_Source))* 0 to many - information about the source resource used in creating the data specified by the scope
 - **description -** *(type - CharStr)* 0 to 1 - detailed description of the source
@@ -38,6 +41,7 @@ title: Resource Lineage
   - **levelDescription -** *(class - [MD_ScopeDescription](http://wiki.esipfed.org/index.php/MD_ScopeDescription))* detailed description/listing of the items specified by the level
 
 ## Discussion
+
 Lineage metadata provides the user with information about the events, parameters, and source data which constructed the resource, and information about the responsible parties.  It provide a good understanding of the original intent and limitations of a resource. It also allows one to reproduce the process or avoid reproducing a process where unnecesary. Lineage information can help specialist users  avoid the problem of too heavily citing the same resource by not knowing their sources share common provenance. Lineage information can help custodians more intelligently manage their resources.
 
 ### Outstanding Issues
@@ -53,7 +57,9 @@ Therefore - It is strongly recommended, particularly when the resource is author
 <details>
 
 #### ISO19139
+
 New attributes were added to improve the description of *LI_Source* and *LI_ProcessStep*.
+
 - **MD_Metadata.resourceLineage** *(class - [LI_Lineage](http://wiki.esipfed.org/index.php/LI_Lineage)*)
   - *LI_Lineage( to be included in the metadata without Data Quality information. The Data Quality model was removed in this revision to ISO 19157.
 - **LI_Lineage.scope** *(class - [MD_Scope](./class-MD_Scope))*
@@ -74,15 +80,18 @@ New attributes were added to improve the description of *LI_Source* and *LI_Proc
   - This new element was added in order to allow description of the scope of a process step independently from the scope of the entire lineage section. This was required, in part, to replace the DQ_Scope from the DQ_DataQuality class that was moved from 19115 to the new data quality standard (ISO 19157).
 
 #### DCAT
+
 `MD_Metadata.resourceLineage>LI_Lineage.statement` maps to  `prov:has_Provenance`
 `MD_Metadata.resourceLineage>LI_Lineage.source` maps to `dct:source`
 
 #### RIF-CS
+
 Maps to `Description 'lineage'`
 
 </details>
 
 ## Also Consider
+
 - **[AssociatedResource](./AssociatedResources)** - contains information about resources related to the creation or use of the cited resource.
 - **[Abstract](./Abstract)** and
 - **[Purpose](./Purpose)** - often contain some brief lineage information
@@ -128,6 +137,7 @@ Maps to `Description 'lineage'`
 ```
 
 ### UML diagrams
+
 Recommended elements highlighted in Yellow
 
 ![resourceLineage](../images/ResourceLineageUML.png)
