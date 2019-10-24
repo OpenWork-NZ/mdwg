@@ -18,6 +18,7 @@ Most metadata contains information about resources that are avaliable online. In
 **information about on-line sources from which the resource, specification, or community profile name and extended metadata elements can be obtained**
 
 ### ISO Associations
+
 - MD_Metadata.metadataLinkage
 - MD_DigitalTransferOptions.online
 - MD_MetadataExtensionInformation.extensionOnLineResource
@@ -30,6 +31,7 @@ Most metadata contains information about resources that are avaliable online. In
 
 
 #### ICSM Recommended Sub Element for class CI_OnlineResource
+
 - **linkage -** (*type - charStr*) [1..1] location (address) for on-line access using a Uniform Resource Locator/Uniform Resource Identifier address or similar addressing scheme 
 - **protocol -** *(type - charstr)* [0..1] recommended to document the connection type used.
 - **function -** *(codelist - CI_OnlineFunctionCode)* [0..1] (optional) code for function performed by the online resource. Options are:
@@ -46,6 +48,7 @@ Most metadata contains information about resources that are avaliable online. In
   - fileAccess - online file access provided
 
 #### Other sub elements
+
 - **applicationProfile -** (*type - charstr*) [0..1] name of an application profile that can be used with the online resource
 - **name -** (*type - charstr*) [0..1] name of the online resource
 - **description -** (*type - charstr*) [0..1] detailed text description of what the online resource is/does
