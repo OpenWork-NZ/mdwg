@@ -17,6 +17,7 @@ In order for machines and people to distinguish singlton elements cited a Metada
 **Provides a value uniquely identifying an object within a namespace**
 
 ### ISO Associations
+
 - MD_Metadata.metadataIdentifier
 - MD_ReferenceSystem.referenceSystemIdentifier
 - MD_Medium.identifier
@@ -28,6 +29,7 @@ In order for machines and people to distinguish singlton elements cited a Metada
 - CI_Party.PartyIdentifier
 
 #### Sub Elements for class MD_Identifier
+
 - **code -** (*type - charStr*) [1..1] alphanumeric value identifying an instance in the namespace, mandatory when identifier is provided
 - **codespace -** *(type - charStr)* [0..1] identifier or namespace in which the code is valid. Usually a  URL  path by which, when combined with the uuid, the full path to the resource is provided.
 - **authority -** *(class CI_Citation)* [0..1] the provider of the UUID
