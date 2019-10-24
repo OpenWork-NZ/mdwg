@@ -44,9 +44,9 @@ title: Distribution Info
     - **applicationProfile -** *(type - charStr)*[0..1] (optional) may be useful when the application of this distribution is limited.  The name of an application profile that can be used with the online resource
   - **offline -** *(class - [MD_Medium](http://wiki.esipfed.org/index.php/MD_Medium))* [0..*] information about offline media on which the resource can be obtained > TODO Link to MD_Medium discusion
   - **distributionFormat -** *(class - [MD_Format](http://wiki.esipfed.org/index.php/MD_Format))* [0..*] The name and version of the specification for the data format by which a distribution of this cited resource is provided
-    - **formatSpecificationCitation -** *(class - [CI_Citation](./class-CI_Citation))* [1..1]   citation/URL of the specification for the format of type:
-    - **title -** *(type - charStr)*[1..1] name of the data format in which the resource is distributed
-    - **edition -** *(type - charStr)*[0..1] version of the distribution format used
+    - **formatSpecificationCitation -** *(class - [CI_Citation](./class-CI_Citation))* [1..1]   citation/URL of the specification for the format 
+      - **title -** *(type - charStr)*[1..1] name of the data format in which the resource is distributed
+      - **edition -** *(type - charStr)*[0..1] version of the distribution format used
 
 
 ## Discussion
