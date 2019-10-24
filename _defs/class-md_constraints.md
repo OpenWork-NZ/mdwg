@@ -17,11 +17,13 @@ title: MD_Constraints
 **restrictions on the access and use of a resource or metadata.**
 
 ### ISO Associations (May be found in) 
+
 - MD_Metadata.metadataConstraints
 - MD_Identification.resourceConstraints
 - MD_BrowseGraphic.imageConstraints
 
 #### Attributes -
+
 - **useLimitation -** *(type - charStr)* [0..\*] limitation affecting the fitness for use of the resource or metadata. Example, "not to be used for navigation"
 - **constraintApplicationScope -** *(class - [MD_Scope](./class-MD_Scope))* [0..1] the target resource and physical extent for which information is reported
 - **graphic -** *(class - [MD_BrowseGraphic](http://wiki.esipfed.org/index.php/MD_BrowseGraphic))* [0..\*]  graphic /symbol indicating the constraint 
@@ -33,10 +35,13 @@ title: MD_Constraints
 - **responsibleParty -** *(class - [CI_Responsibility](./class-CI_Responsibility))* [0..\*] party responsible for the resource constraints
 
 ### Associated Classes, Codelists and Unions
+
 #### MD_Scope - class
+
 See [MD_Scope](./class-MD_Scope)
 
 #### MD_BrowseGraphic - class
+
 - **fileName -** *(type - charStr)* Mandatory when using `MD_BrowseGraphic` - name of the file that contains a graphic that provides an illustration of the resource. 
 - **linkage -** *(class - [CI_OnlineResource](./class-CI_OnlineResource))*  0 to many - link to browse graphic.
 - **imageConstraints -** *(class - [MD_Constraints](./class-md_constraints))*  0 to many - restriction on access and/or use of browse graphic
@@ -44,17 +49,21 @@ See [MD_Scope](./class-MD_Scope)
 - **extent -** *(class -  [Extent](./ResourceExtent))* Information about the horizontal, vertical and temporal extent of the resource specified by the scope
 
 ### Generalisations of MD_Constraints
+
 MD_Constraints may be expressed as:
+
 - **[MD_LegalConstraints](./class-MD_LegalConstraints)**
 - **[MD_SecurityConstraints](./class-MD_SecurityConstraints)**
  
 
 ## Discussion
+
 Information about constraints on the access and use of a resource or its metadata is of high importance to document as this information strongly impacts on the usability of the resource to the user. Constraints may be security (*MD_SecurityConstraints*), legal (*MD_LegalConstraints*) or other (*MD_Constraints*).
 
 A restriction may be applicable to a particular aspect of the resource. In this case capture this scope in *constraintApplicationScope* using a value from *MD_Scope*
 
 ### Outstanding Issues
+
 > Good Practice examples lacking
 There is a need to gain greater consensus as to the general use of MD_Constraints across its instances by the MDWG.
 
@@ -62,11 +71,13 @@ There is a need to gain greater consensus as to the general use of MD_Constraint
 Currently there are no clear methods to apply different constraints to different distributions. This may be an ISO issue to address. We should develop use cases.
 
 ## Recommendations
+
 ### Crosswalk considerations
 
 <details>
 
 #### ISO19139
+
 - *MD_BrowseGraphic.imageConstraint* - This new element was added in order to allow the specification of constraints on a browse graphic associated with a resource.
 - *MD_Constraints.constraintApplicationScope* -  This new element was added in order to allow description of constraints on a resource that vary in space and/or time and/or level.
 - *MD_Constraints.graphic* - This new element was added in order to allow inclusion of a logo or other graphic that is associated with a particular constraint. 
@@ -78,10 +89,12 @@ Currently there are no clear methods to apply different constraints to different
 </details>
 
 ## Related Classes
+
 - **[MD_LegalConstraints](./class-MD_LegalConstraints) An extension to MD_Constraints for constraints applied for legal reasons.
 - **[MD_SecurityConstraints](./class-MD_SecurityConstraints) An extension to MD_Constraints for constraints applied for security purposes.
 
 ### UML diagrams
+
 Recommended elements highlighted in Yellow
 
 ![MD_Constraints](../images/MD_ConstraintsUML.png)
