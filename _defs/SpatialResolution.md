@@ -23,13 +23,17 @@ title: Spatial Resolution
 **The nominal scale and/or spatial resolution of the resource.**
 
 ### ISO Obligation
+
 - There may zero to many [0..\*] *spatialResolution* entries for the cited resource in the  *[MD_DataIdentification](./class-MD_DataIdentification)* package of class *[MD_Resolution](http://wiki.esipfed.org/index.php/MD_Resolution)* in a metadata record.
 
 ### ICSM Good Practice
+
 - The *spatialReolution* package should be populated with enough information to give the reader a good understanding of the spatial scale at which the resource was designed to be used.
 
 #### Recommended Sub-Elements
+
 **MD_Resolution** [1..1] is a class of type *Union* (meaning only one attribute from the available list can be used) that provides level of detail expressed as a scale factor, a distance or an angle. Similar to codelist, one and only one [1..1] must be chosen per `spatailResolution` instance. Possible attribute choice include:
+
 - **equivalentScale -** *(class - [MD_RepresentativeFraction](http://wiki.esipfed.org/index.php/MD_RepresentativeFraction))* 
   - level of detail expressed as the scale of a comparable hardcopy map or chart
   - MD_RepresentativeFraction derived from ISO/TS 19103 Scale where MD_RepresentativeFraction.denominator = 1 / Scale.measure And Scale.targetUnits = Scale.sourceUnits
@@ -60,11 +64,13 @@ Scale is a fundemental concept of sptial data. *SpatialResolution* is the elemen
 *SpatialResolution* has no value of its own. The spatialResolution type are selectable from the class [MD_Resolution](http://wiki.esipfed.org/index.php/MD_Resolution).
 
 ### Outstanding Issues
+
 > **Scale has little meaning in digital context**
 The most common way of capturing spatial resolution is as a denominator value using `equivalentScale`.  While this made intuitive sense in the days of paper maps printed at a particular size, scales such as 1 : 20,000 have little real meaning when the size of a map is totally dependent on the display sceen. Will younger spatial professionals who may only have passing knowledge of fixed scale maps relate to this value? Will it have meaning to the young neo-geo? It would be useful to work towards expressing scale, a fundamental concept in geospatial data, in a more digitally friendly way.  Perhaps something like standardised zoom levels?
 Would "distance", sampling size be of greater use? Most relatable would be something like "zoom level" which could be captured in "level of detail" but there is currently a lack of standardisation as to what terms like "zoom level" mean. Also, he levelOfDetail option lacks citation support that would be needed to make this usable in such a manner. Work on Discreet Global Grid Systems (DGGS) may provide some guidance to this topic.
 
 ## Recommendations
+
 Therefore - capture the spatial resolution of a resource as it is useful information for determining the fitness to purpose of geospatial data. Data gathered at too high or too low a resolution may make it unfit to your needs. Mixing data of different resolutions can give uncertain results. Spatial resolution provides a rough guide to the precision and accuracy of a resource. (Data quality elements should be used to document precision and accuracy more fully.)
 
 Spatial resolution can be documented in many ways. For ISO19115-1, these are limited to the methods itemised in the class MD_Resolution and documented above. Equivalent scale is the default of many systems, including supplied templates in GeoNetwork. It is captured with a single denominator value such as "20,000" as in a 1:20,000 map.
@@ -76,12 +82,15 @@ Spatial resolution can be documented in many ways. For ISO19115-1, these are lim
 <details>
 
 #### Dublin core / CKAN / data.gov.au
+
 Maps to ?
 
 #### DCAT
+
 Maps to ?
 
 #### RIF-CS
+
 Maps to ?
 
 </details>
