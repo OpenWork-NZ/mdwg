@@ -23,13 +23,17 @@ title: Keywords
 **Words or phrases describing the resource to be indexed and searched.**
 
 ### ISO Obligation
+
 - There can be zero or many [0..\*] descriptive keywords for the cited resource in the  *[MD_DataIdentification](./class-MD_DataIdentification)* package of class *[MD_Keywords](http://wiki.esipfed.org/index.php/MD_Keywords)* in a metadata record.
 
 ### ICSM Good Practice
+
 - There should be multiple keywords selected from a referenced thesaurus present in a metadata record for a spatial resource.
 
 #### Recommended Sub-Elements
+
 From class *[MD_Keywords](http://wiki.esipfed.org/index.php/MD_Keywords)*
+
 * **keyword -** *(type - charStr) Mandatory, preferably chosen from a thesaurus
 * **type -** *(codelist - [MD_KeywordTypeCode](http://wiki.esipfed.org/index.php/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_KeywordTypeCode))* highly recommended - 15 options (substantial increase from iso19139)
   - *discipline* - keyword identifies a branch of instruction or specialized learning
@@ -55,7 +59,9 @@ From class *[MD_Keywords](http://wiki.esipfed.org/index.php/MD_Keywords)*
 
 
 ## Discussion
+
 Keywords are a foundational technology for organising and discovering resources. ISO19115-1 provides powerful tools to expand on these capabilities but these tools are most often very lightly used. The use of thesauri to normalise and standardise terms helps greatly. Ontologies and registries in which the definitions of these terms may be stored and linked help ensure consistent use and understanding. In Australia several agencies have developed and implemented thesauri and mandated their use. These include:
+
 * *"ABS Field of Research* - The Australian and New Zealand Standard Research Classification (ANZSRC), 2008 defined field or fields of research relevant to the dataset.
 * *ABARES Keywords* - (Need Definition)
 * *AGIFT Keyword* - Australian Governments' Interactive Functions Thesaurus (AGIFT) that describes the high-level business functions carried out across Commonwealth, state and local governments in Australia.
@@ -64,6 +70,7 @@ Keywords are a foundational technology for organising and discovering resources.
 NOTE - When the resource described is a service, one instance of `MD_Keyword` should refer to the service taxonomy defined in ISO 19119.
 
 #### Ontology support with keywordClass
+
 A `keywordClass` role is an association of a `MD_Keywords` instance with a `MD_KeywordClass` used to provide user-defined categorisation of groups of keywords that extend or are orthogonal to the standardised `KeywordTypeCodes` and are associated with an ontology that allows additional semantic query processing.
 The thesaurus citation specifies a collection of instances from some ontology, but is not an ontology. It might be a list of places that include rivers, mountains, counties and cities. There might be a Laconte county, the city of Laconte, the Laconte River, and Mt. Laconte; when searching it is useful for the user to be able to restrict the search to only rivers. the addition of `keywordClass` provides support for this functionality.
 
@@ -94,18 +101,23 @@ The new `keywordClass` package should be explored to allow the greater use of se
 <details>
 
 #### ISO19139
+
 MD_KeywordClass was added to allow further categorisation of keywords
 
 #### Dublin core / CKAN / data.gov.au
+
 Mapping not yet discussed.
 
 #### DCAT
+
 ISO 19115 can groups keywords according to type (theme, place, temporal, discipline and stratum), or according to thesaurus; this information is lost in DCAT. DCAT keywords are mapped to ISO 19115 keywords without type or thesaurus.
 
 </details>
 
 ## Also Consider
+
 There are several elements outside the keywords class that are in effect keywords. These include:
+
 - **[Topic Category](./TopicCategory)** - The main themes of the resource populated from a fixed domain of values mandated by ISO19115-1
 - **[Extent Geographic Description](./ExtentGeographicDescription)** - verbal description of place by names
 - **[Spatial Representation Type](./SpatialRepresentationType)** - holds a set of values from a domain that provides keyword values about the technical method used by the resource to spatially represent geographic information.
@@ -115,6 +127,7 @@ There are several elements outside the keywords class that are in effect keyword
 <details>
 
 ### XML -
+
 ```
 <mdb:MD_Metadata>
 ....
