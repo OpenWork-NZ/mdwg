@@ -125,6 +125,7 @@ Maps to *Subject*
 <details>
 
 ### XML
+
 ```
 <mdb:MD_Metadata>
 ....
@@ -148,6 +149,7 @@ Maps to *Subject*
 ```
 
 ### UML diagrams
+
 Recommended elements highlighted in Yellow
 
 ![topicCategory](../images/TopicCategoryUML.png)
