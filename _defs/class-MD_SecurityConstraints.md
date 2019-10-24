@@ -16,10 +16,13 @@ When constraints information *([MD_Constraints](./class-md_constraints))* concer
 **Handling restrictions imposed on the resource or metadata for national security or similar security concerns.**
 
 ### ISO Associations
+
 The class, *MD_SecurityConstraints* is an specialisation of [MD_Constraints](./class-md_constraints). Follow the guidance provided for that class plus the following additional guidance.
 
 ### Attributes -
+
 *MD_SecurityConstraints* has all the attributes of [MD_Constraints](./class-md_constraints) plus the following:
+
 - **classification -** *(codelist - [MD_RestrictionCode](./class-md_constraints#MD_RestrictionCode---codelist))* [0..\*] Mandatory when using `MD_SecurityConstraints` - the name of the handling restrictions on the resource or metadata
 - **userNote -** *(type - charStr)* [0..1] explanation of the application of the legal constraints or other restrictions and legal prerequisites for obtaining and using the resource or metadata
 - **classificationSystem -** *(type - charStr)* [0..1]  name of the classification system
@@ -28,7 +31,9 @@ The class, *MD_SecurityConstraints* is an specialisation of [MD_Constraints](./c
 ### Associated Codelists
 
 #### MD_RestrictionCode - codelist
-name of the handling restrictions on the resource
+
+The name of the handling restrictions on the resource
+
 - *unclassified* - information applies to the dataset
 - *restricted* - information applies to the series
 - *confidential* - information applies to non-geographic data
@@ -40,6 +45,7 @@ name of the handling restrictions on the resource
 - *limitedDistribution* - information applies to the collection session
 
 ## Discussion
+
 Information about constraints on the access and use of a resource or its metadata is of high importance to document as this information strongly impacts on the usability of the resource to the user. Constraints may be security (*MD_SecurityConstraints*), legal (*MD_LegalConstraints*) or other (*MD_Constraints*).
 
 A restriction may be applicable to a particular aspect of the resource. In this case capture this scope in *constraintApplicationScope* using a value from *MD_Scope*
@@ -47,6 +53,7 @@ A restriction may be applicable to a particular aspect of the resource. In this 
 Many of the resources and even its metadata may carry some security restrictions regarding their access and use.  The reasons may be for national security, financial or commercial sensitivity, or privacy concerns as is common with census data. These security restrictions need be documented for users and resource managers along with the identity of the applier of these constraints. Each agency needs to develop consistent guidance on the use of such statement and share clear understanding of their meaning. This is often done by reference to an external body that manages the definitions of the security constraints applied.
 
 ### Outstanding Issues
+
 > Good Practice examples lacking
 There is a need to gain greater consensus as to the general use of MD_SecurityConstraints across its instances by the MDWG.
 
@@ -61,13 +68,16 @@ At a minimum the Name (primary and alternate) and version by which this security
 ### Crosswalk considerations
 
 #### ISO19139
+
 See guidance provided in [MD_Constraints](./class-md_constraints) 
 
 ## Related Classes
+
 - **[MD_Constraints](./class-md_constraints)** the Superclass to `MD_LegalConstraints`. `MD_LegalConstraints` implements all the properties of `MD_Constraints`.  Full guidance of the associated elements are discussed there.
 - **[MD_LegalConstraints](./class-MD_LegalConstraints)** A sibling to `MD_SecurityConstraints` and an extension to `MD_Constraints` for constraints applied for legal purposes.
 
 ### UML diagrams
+
 Recommended elements highlighted in Yellow
 
 ![MD_Constraints](../images/MD_SecurityConstraints.png)
