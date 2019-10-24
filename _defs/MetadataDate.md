@@ -29,10 +29,13 @@ title: Metadata Date Info
 - All updates to metadata should be include the date of last revision to the metadata. This can be an automated process.
 
 #### Recommended Sub-Elements
+
 Follow the general guidance for [class - CI_Date](./class-CI_Date) with the following additional guidance:
+
 - **dateType -**  One entry must be of this value *creation*. 
 
 ## Discussion
+
 According to ISO guidance, there must be at least one instance of dateInfo in a metadata record (creation), but there may be multiple.
 
 The CI_DateType CodeList contains 16 values. Which values are of most import needs further discussion. 
@@ -56,6 +59,7 @@ encoded using the relevant ISO 8601 Date and Time compliant string [DATETIME] an
 
 Therefore - In order to provide an idea of the age, validity and other time dependant properties of a metadata record, it is important to capture the important events that happened or will happen to a particular metadata record in the `MD_Metadata.dateInfo` element.  One of this important events must be of `dateType` "creation".  This is often referred to as a "Metadata date stamp".
 It is recommended that `dateInfo include - 
+
 - *date* - (Mandatory) the reference DateTime for the metadata record.
 - *dateType* - (Mandatory for Creation) the event type to which the date refers. Populated from the CI_DateTypeCode codelist.
 - *dateType* - (Mandatory for Revision when a revision is made) the event type to which the date refers. Populated from the CI_DateTypeCode codelist.
@@ -67,21 +71,26 @@ This element should be updated in a consistent yet to be agreed upon manor.  We 
 <details>
 
 #### ISO19139
+
 The element `dateStamp` was replaced with `dateInfo` to allow other types of metadata date information to be recorded in addition to creation date. The type and cardinality of this element was changed in order to allow associating more than one type of date with a metadata record.
 
 #### Dublin core / CKAN / data.gov.au
+
 Maps to `publish` and `update date`
 
 #### DCAT
+
 Maps to `dct:issued` and `dct:modified`
 
 #### RIF-CS
+
 Maps to `@dateAccessioned`
 
 </details>
 
 ## Also Consider
- - **[Resource Date](./ResourceDate) -** Dates associated with the resource
+
+- **[Resource Date](./ResourceDate) -** Dates associated with the resource
 - **[CI_Date -](./class-CI_Date)** the class by which dates are expressed
 
 
