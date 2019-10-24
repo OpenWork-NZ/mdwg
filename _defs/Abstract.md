@@ -23,9 +23,11 @@ title: Abstract
 **A brief narrative summary of the cited resource.**
 
 ### ISO Obligation 
+
 - There must be one and only one [1..1] *abstract* entries for the resource in the metadata  *[MD_DataIdentification](./class-MD_DataIdentification)* package of type *character String* in a metadata record.
 
 ### ICSM Good Practice 
+
   - Provide enough narative to give the reader a good understanding of the nature of the resource. Use common language for at least the first few statements.
   
 ## Discussion 
@@ -37,6 +39,7 @@ The abstract should address the 5Ws What is it; Who generated it; When was it ge
 
   
 ### Outstanding Issues
+
 > **Dublin core / CKAN / data.gov.au**
 Also defines this element as additional information describing or analysing the data. But while this can be static it also can be an editable wiki which anyone can contribute to instantly or via admin moderation. This latter approach is currently difficult to support in ISO 19115-1.
 
@@ -58,17 +61,21 @@ The contents of an abstract should address the 5Ws What is it; Who generated it;
 <details>
 
 #### Dublin core / CKAN / data.gov.au
+
 Maps to `description`
 
 #### DCAT
+
 Maps to `dct.description`
 
 #### RIF-CS
+
 Maps to `Description 'full'`
 
 </details>
 
 ## Also Consider
+
 - **[Purpose -](./Purpose.md)** provides A brief summary of the intentions with which the resource was developed. Some overlap of usage with `abstract` may exist. The MDWG should provide some guidance as to what belongs in `abstract` and what belongs in `purpose`
 - **MD_DataIdentification.supplimentalInformation -** provides a description of the resource in the producer's processing environment, including items such as the software, the computer operating system, file name, and the dataset size.
 
@@ -77,6 +84,7 @@ Maps to `Description 'full'`
 <details>
 
 ### ABARES
+
 > *TOPO_2.5M is a national seamless data product aimed at regional or national applications. 
 The data are suitable for location or distribution mapping at a small scale and can be readily combined with other data products.
 TOPO_2.5M is an intermediate product between AUSLIGs TOPO_10M (data at 1:10 million scale) and TOPO_250K (data at 1:250 000 scale). 
@@ -88,9 +96,11 @@ The licence allows the use of the data for any maps (including Internet applicat
 All products must include an appropriate copyright statement.*
 
 ### GA
+
  > *Publicly available bathymetry and geophysical data has been used to map geomorphic features of the Antarctic continental margin and adjoining ocean basins at scales of 1:1-2 million. The key bathymetry datasets used were GEBCO08 and ETOPO2 satellite bathymetry (Smith & Sandwell 1997), in addition to seismic lines in key areas. Twenty-seven geomorphic units were identified based on interpretation of the seafloor bathymetry with polygons digitised by hand in ArcGIS. Seafloor features were classified largely based on the International Hydrographic Organisation (2001) classification of undersea features, and expanded to include additional features, including those likely to have specific substrate types and influence on oceanography. This approach improves the technique as a predictor of physical conditions that may influence seafloor communities. The geomorphic map has been used for developing a benthic bioregionalisation and for developing a representative system of Marine Protected Areas for East Antarctica. Slight modifications have been made since original publication in O'Brien et al. 2009 and Post et al. 2014. These include: - updating of some feature names; - combining "wave affected banks" with "shelf banks" - Combining "coastal terrance" with "island coastal terrane" as "Coastal/Shelf Terrane" - replacing canyon vectors with polygons by using a buffer around the vectors Further details of the original mapping can be found in: O'Brien, P.E., Post, A.L., Romeyn, R., 2009. Antarctic-wide geomorphology as an aid to habitat mapping and locating Vulnerable Marine Ecosystems, Commission for the Conservation of Antarctic Marine Living Resources Vulnerable Marine Ecosystems Workshop, Paper WS-VME-09/10. CCAMLR, La Jolla, California, USA. Post, A.L., Meijers, A.J.S., Fraser, A.D., Meiners, K.M., Ayers, J., Bindoff, N.L., Griffiths, H.J., Van de Putte, A.P., O'Brien, P.E., Swadling, K.M., Raymond, B., 2014. Chapter 14. Environmental Setting, In: De Broyer, C., Koubbi, P., Griffiths, H.J., Raymond, B., d'Udekem d'Acoz, C., et al. (Eds.), Biogeographic Atlas of the Southern Ocean. Scientific Committee on Antarctic Research, Cambridge, pp. 46-64.*
  
 ### AAD
+
  > This dataset is a collection of aerial images taken from a camera mounted in the fuselage of the CASA-212 400 aircraft used to survey for pygmy blue whales. Line transect data from that survey are also available (but see Gill, P.C., Pirzl, R., Morrice, M.G. and Lawton, K. (2015). "Cetacean diversity of the continental shelf and slope off southern australia." The Journal of Wildlife Management 79(4): 672-681 for more details). 
  The digital images were taken with a Nikon D200 camera, using a 35mm lens. The survey altitude was approximately 1500 ft. Images have full EXIF data attached. Image footprints are approximately 204 m along-track by 306 m across track, with some image overlap.
   Aerial images; downward facing images along track from a line transect survey. 
@@ -102,9 +112,11 @@ All products must include an appropriate copyright statement.*
  Images taken in January 2012 along the Bonney Upwelling, along the south-east coast of Australia, an area known to be a summer (Nov-May) feeding ground for pygmy blue whales; the surveys focussed on the area bounded by 138.0-145.0ºE and 36.6-40.3ºS.
  
 ### TERN
+
 > The Cumberland Plain flux station is located in a dry sclerophyll forest in the Hawkesbury Valley in central New South Wales. Operation commenced for the station in September 2012 and is managed by the Hawkesbury Institute for the Environment at Western Sydney University. The Cumberland Plain Woodland is now an endangered ecological community that encompasses distinct groupings of plants growing on clayey soils. The canopy is dominated by Eucalyptus moluccana and Eucalyptus fibrosa, which host an expanding population of mistletoe. Average canopy height is 23m, the elevation of the site is 20m and mean annual precipitation is 800mm. Fluxes of water vapour, carbon dioxide and heat are quantified with the open-path eddy flux technique from a 30 m tall mast. Additional measurements above the canopy include temperature, humidity, wind speed and direction, rainfall, incoming and reflected shortwave and longwave radiation and net, diffuse and direct radiation and the photochemical reflectance index. In addition, profiles of humidity and CO2 are measured at eight levels within the canopy, as well as measurements of soil moisture content, soil heat fluxes, soil temperature, and 10-hr fuel moisture dynamics. In addition, regular monitoring of understory species abundance, mistletoe infection, leaf area index and litterfall are also performed.
 
 ### data.gov.au
+
  > The Department of Human Services Service Centre locator contains information updated weekly, a search function and maps.
 
 
