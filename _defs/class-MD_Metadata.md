@@ -18,6 +18,7 @@ title: Metadata Info
 **Root entity which defines metadata about a resource or resources**
 
 ### Child packages
+
 #### ICSM recommended
 
 - **[resourceLineage -](./ResourceLineage)** *(class - Li_Lineage)* [0..\*]
@@ -42,6 +43,7 @@ title: Metadata Info
 - **dataQualityInfo -** *(class - DQ_DataQuality (from ISO19157))* [0..\*]
 
 ### Atributes
+
 #### MDWG Recomended Attributes -
 
 - **[metadataIdentifier -](./MetadataIdentifier)** (*class - [MD_Identifier](./class-MD_Identifier)*) [0..1]
