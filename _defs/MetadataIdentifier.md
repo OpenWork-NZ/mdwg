@@ -128,7 +128,7 @@ http://data.gov.au/dataset/559708e5-480e-4f94-8429-c49571e82761
 
 Recommended elements highlighted in Yellow
 
-![MDIdentifier](../images/MetadataIdentifierUML.png)
+![MDIdentifier](../images/MetadataIdentifier.png)
 
 </details>
 
