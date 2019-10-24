@@ -32,10 +32,13 @@ EXAMPLE - A dataset, an organisation logo, security constraint or citation graph
 In a metadata record there should be zero to many [0..\*] *graphicOverview* packages for the cited resource in the  *[MD_DataIdentification](./class-MD_DataIdentification)* package of class *[MD_BrowseGraphic](http://wiki.esipfed.org/index.php/MD_BrowseGraphic)* in a metadata record.
 
 ### ICSM Good Practice 
+
 A graphic overview image of the resource should be included in the metadata and typically include the name linkage to the graphic.
 
 #### Recommended Sub-Elements 
+
 From class *[MD_BrowseGraphic](http://wiki.esipfed.org/index.php/MD_BrowseGraphic)*
+
 - **fileName -** *(type - CharStr)* [1..1] Mandatory for browse graphic elements - name of the file that contains a graphic that provides an illustration of the resource. 
 - **linkage -** *(class - [CI_OnlineResource](./class-CI_OnlineResource))*  [0..\*] - link to browse graphic.
 - Optional:
@@ -72,6 +75,7 @@ Therefore - in order to provide a quick way for users to discover and identify t
 </details>
 
 ## Also Consider
+
 - **[MD_BrowseGraphic -](http://wiki.esipfed.org/index.php/MD_BrowseGraphic)**  associates to a large number of packages for different purposes, such as business or product icons and logos
 - **[CI_OnLineFunctionCode -](http://wiki.esipfed.org/index.php/ISO_19115-3_Codelists#CI_OnLineFunctionCode)** This codelist contains an option *browseGraphic*
 
