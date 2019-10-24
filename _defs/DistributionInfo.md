@@ -24,12 +24,15 @@ title: Distribution Info
 **information about the distributor of and options for obtaining the resource**
 
 ### ISO Obligation -
+
 - There should be zero to many [0..\*] *distributionInfo* packages for the cited resource in the  *[MD_Metadata](./class-MD_Metadata)* package of class *[MD_Distribution](http://wiki.esipfed.org/index.php/MD_Distribution)* in a metadata record.
 
 ### ICSM Good Practice
+
   - The *distributionInfo* package should be populated in all metadata records unless it obviously has no resource to be distributed, e.g. metadata for a series where resources are accessed via the children.
 
 #### ICSM Recommended Sub-Elements
+
 - **description -** *(type - charStr)*[0..1] (highly recommended when more than one distributionInfo package is present) a brief description of a set of distribution options 
 - **distributor -** *(class - [MD_Distributor](http://wiki.esipfed.org/index.php/MD_Distributor))* [0..*] Name, contact information, and role of the organisation from which this distribution of this cited resource may be obtained.
   - **distributorContact -** *(class - [CI_Responsibility](./class-CI_Responsibility))* [0..*] (Highly recommended - CI_RoleCode should be *distributor*) party from whom the resource may be obtained. This list need not be exhaustive
@@ -47,6 +50,7 @@ title: Distribution Info
 
 
 ## Discussion
+
 The distributionInfo package is highly flexible and provides multiple ways to capture information related to the distribution of resources descibed in a metadata record. In this entry we describe what we have determined to be best practice in the ICSM context. For instance, the format of a distribution could be captured using the path:
 `MD_Distribution.distributionFormat` or
 `MD_Distribution.transferOptions>MD_DigitalTransferOptions.distributionFormat`
@@ -54,10 +58,13 @@ We have chosen to recommend the later.  This is to provide better clarity of the
 This format element describes the format of the data for a particular distribution of the resource. It does not describe the format of the resource native store or of the metadata. There may be multiple formats for a distribution. 
 
 ## Recommendations
+
 Therefore - This package should contain at least the minimum information necessary to contact the party responsible for this distribution of the resource. We have identified three primary sub-elements to recommend:
+
 - *Distributor*
 - *Online resource*
 - *Format*
+
 Of these, *distributor* is is the most most highly recommended.
 
 When needed, instructions for online access should be provided.  
@@ -67,6 +74,7 @@ It is recommended that the format details are specific for the distribution. If 
 When using a common distribution service that provides all data in a set number of formats, consider using `MD_Distribution.distributor>MD_Distributor.distributorFormat`.
 
 ### Offline distribution support
+
 Offline access is an important option in many circumstances.  For offline access to the resource we recommend the use of `MD_Distribution.transferOptions>MD_DigitalTransferOptions.offline` to capture information about the media on which the resource is stored.  
 The `MD_Distribution.transferOptions>MD_DigitalTransferOptions.online` with `CI_OnLineresource.function>CI_OnLineFunctionCode` value of `offlineAccess` is to be reserved for instructions (online) about how to access the resource from the providor offline. Another preferred apporach is to provide such instructions is via `MD_Distribution.distributor>MD_Distributor.distributionOrderProcess`.
 
@@ -78,6 +86,7 @@ There may also be instances where anonymous free online distribution is not desi
 <details>
 
 #### ISO19139
+
 - The cardinality of **MD_Metadata.distributionInfo** was increased to [0..*] in order to allow more flexibility in defining distribution information.
 - The new element **MD_Distribution.description** was added to allow a description of distribution options.
 - **MD_Format.name**, **MD_Format.version** and **MD_Format.specification** were deleted and replace with:
@@ -95,11 +104,14 @@ There may also be instances where anonymous free online distribution is not desi
   - These two new roles were added in order to allow specification of custom ordering options associated with specific resources or implementations.
 
 #### Dublin core / CKAN / data.gov.au
+
 - `Format` maps to `format` - The file format of the distribution. If available in IANA, use Media Type
 - `OnlineResource` *(MD_DigitalTransferOptions.online)* maps to `landing page`, `download URL` , `access URL`
 
 #### DCAT
+
 Recommended property to meet data citation requirement
+
 - `distributionInfo` maps to `dct:distribution`
 - `Format` maps to `dct:format`
 - `distributor` maps to `dct:publisher`
@@ -107,6 +119,7 @@ Recommended property to meet data citation requirement
 - `distributionFormat` - The file format, physical medium, or dimensions of the resource. A subproperty of `dct:relation`.
 
 #### RIF-CS
+
 - `Format` maps to `Location/Electronic/@format`
 - `distributor` maps to `Related Party/relation='distributor'`
 - `OnlineResource` *(MD_DigitalTransferOptions.online)* maps to `Location/Electronic/@url`
@@ -114,6 +127,7 @@ Recommended property to meet data citation requirement
 </details>
 
 ## Also Consider
+
 - **[metadataLinkage -](./AdditionalDocs)**  for links that provide a download of the metadata
 - **[resourceLineage -](./ResourceLineage)** Information about the provenance, source(s), and/or the production process(es) applied to the resource.
 - **[browseGraphic -](./BrowseGraphic)**  associates to a large number of packages to provide linkage to associated image files, such as business or product icons and logos
@@ -123,6 +137,7 @@ Recommended property to meet data citation requirement
 <details>
 
 ### XML
+
 ```
 <mdb:MD_Metadata>
 ....
@@ -275,6 +290,7 @@ Recommended property to meet data citation requirement
 ```
 
 ### UML diagrams
+
 Recommended elements highlighted in Yellow
 
 ![Distribution](../images/MD_Distribution.png)
