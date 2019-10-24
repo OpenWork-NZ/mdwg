@@ -4,6 +4,19 @@ type: section
 section: Distribution Info
 rank: 90
 title: Distribution Info
+header-includes:
+ - \usepackage{enumitem}
+ - \setlistdepth{9}
+ - \setlist[itemize,1]{label=$\bullet$}
+ - \setlist[itemize,2]{label=$\bullet$}
+ - \setlist[itemize,3]{label=$\bullet$}
+ - \setlist[itemize,4]{label=$\bullet$}
+ - \setlist[itemize,5]{label=$\bullet$}
+ - \setlist[itemize,6]{label=$\bullet$}
+ - \setlist[itemize,7]{label=$\bullet$}
+ - \setlist[itemize,8]{label=$\bullet$}
+ - \setlist[itemize,9]{label=$\bullet$}
+ - \renewlist{itemize}{itemize}{9}
 ---
 #  Distribution Info ★★★★★
 *Commonly the most important purpose of a catalogue is to provide information by which one can access the resources described.  In ISO19115-1 the distrubutionInfo package contains and provides this information describing both online and offline access methods, contacts, and instructions.*
