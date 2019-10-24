@@ -25,12 +25,15 @@ title: Spatial Reference System
 **The information about the reference system that define the system use to describe spatial position descriptions in a resource.**
 
 ### ISO Obligation
+
 - There should be zero or many [0..\*] *spatialReferenceInfo* packages for the cited resource in the  *[MD_Metadata](./class-MD_Metadata)* package of class *[MD_ReferenceSystem](http://wiki.esipfed.org/index.php/MD_ReferenceSystem)* in a metadata record for spatial resources.
 
 ### ICSM Good Practice
+
 - There should be at least one instance of spatialReferenceInfo for every dataset that contains spatial information referenced to a datum.
 
 #### Recommended Sub-Classes
+
 * **referenceSystemType -** (*codelist - [MD_ReferenceSystemTypeCode](http://wiki.esipfed.org/index.php/ISO_19115-3_Codelists#MD_ReferenceSystemTypeCode)*) 0 to 1 - to describe the type of system used.
 * **referenceSystemIdentifier -** *(class - [MD_Identifier](./class-MD_Identifier))* mandatory - identifier, codespace and authority information for reference system
   * *code -* (type - charStr) mandatory - alphanumeric value identifying an instance in the namespace, e.g. '4283', '4326'
@@ -40,8 +43,10 @@ title: Spatial Reference System
   * *authority -* (class - [CI_Citation](./class-CI_Citation)) optional (GA, ABARES - conditional?) - Information about the party responsible for the spatial or temporal reference system used in this cited resource.
 
 #### Related Codelists
+
 **MD_ReferenceSystemTypeCode**
-  There are 28 options to choose from in the reference system type code list (MD_ReferenceSystemTypeCode). Many would never be used by a particular professional. The most common for most geospatial professionals is 'projected'. The list below sorts these options with the most common on top.
+
+There are 28 options to choose from in the reference system type code list (MD_ReferenceSystemTypeCode). Many would never be used by a particular professional. The most common for most geospatial professionals is 'projected'. The list below sorts these options with the most common on top.
 
   * Common
     * **projected -** coordinate reference system derived from a two-dimensional geodetic coordinate reference system by applying a map projection e.g. easting, northing
@@ -78,6 +83,7 @@ title: Spatial Reference System
     * *compoundEngineeringVerticalTemporal* - compound spatio-temporal coordinate reference system containing an engineering, a vertical, and a temporal coordinate reference system e.g. [local] x, y, height, time
 
 ## Discussion  
+
 In order to common understand of location in geospatial resource, standardised spatial reference systems are used. A spatial reference helps describe where features are located in the real world. Different spatial reference systems are used for different purposes. (The terms spatial reference and coordinate system used interchangeably although they are slightly different.) People and machines that use spatial resources need to be provided in the metadata the details of the spatial reference systems used by the resource in order to conduct meaningful analysis and to combine this resource with others.
 
 To adequately describe a resource, there may be the need to include multiple SRS in the metadata. Usually, each of these would be of a different type (referenceSystemType).
@@ -96,6 +102,7 @@ This is a long and confusing list. Should we recommend a shortly one?
 
 
 ## Recommendations
+
 Therefore - To ensure the usability of your spatial resource, it is important to include the Spatial Reference System used by this resource in its metadata. Doing so will allow the proper use and analysis to occur.
 
 At a minimum the reference system type, the code and the codespace must be captured. 
@@ -107,17 +114,21 @@ To date the European Petroleum Survey Group (EPSG) holds the most complete and c
 <details>
 
 #### Dublin core / CKAN / data.gov.au
+
 No mapping provided
 
 #### DCAT
+
 Maps to `dct:conformsTo`
 
 #### RIF-CS
+
 Maps to the aggregate element `Coverage/Spatial`
 
 </details>
 
 ## Also Consider
+
 - **[Spatial representation information](http://wiki.esipfed.org/index.php/ISO_Spatial_Representation)** *(class - [MD_SpatialRepresentation](http://wiki.esipfed.org/index.php/MD_SpatialRepresentation))* Not discussed by MDWG. Contains detailed information about digital mechanisms used to represent spatial information. Particularly useful for gridded data.
 
 ## Examples
@@ -125,6 +136,7 @@ Maps to the aggregate element `Coverage/Spatial`
 <details>
 
 ### XML
+
 ```
 <mdb:MD_Metadata>
 ....
@@ -144,6 +156,7 @@ Maps to the aggregate element `Coverage/Spatial`
 ```
 
 ### UML diagrams
+
 Recommended elements highlighted in Yellow
 
 ![SpatRefSys](../images/SpatialReferenceSystemUML.png)
