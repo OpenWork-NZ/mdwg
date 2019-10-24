@@ -24,13 +24,16 @@ title: Metadata Identifier
 **The persistent unique alphanumeric identifier for the metadata record that describes a resource.**
 
 ### ISO Obligation
+
 - There should be zero or one [0..1] metadataIdentifier for the cited resource in the  *[MD_Metadata](./class-MD_Metadata)* package of class *[MD_Identifier](./class-MD_Identifier)*.
 
 ### ICSM Good Practice
-  - This element should be populated in all metadata records
+
+- This element should be populated in all metadata records
 
 #### Recommended Sub-Elements
 From class *[MD_Identifier](./class-MD_Identifier)* 
+
 - **code -** (*type - charStr*) [1..1] a UUID, mandatory when identifier is provided
 - **codespace -** *(type - charStr)* [0..1] ideally a  URL  path by which, when combined with the uuid, the full metadata can be retrieved.
 - **authority -** *(class - [CI_Citation](./class-CI_Citation))* [0..1] optional, the provider of the UUID
@@ -99,6 +102,7 @@ Maps to `Key Identifier`
 
 ### Other
 #### data.govt.au
+
 http://data.gov.au/dataset/559708e5-480e-4f94-8429-c49571e82761
 
 ### XML
