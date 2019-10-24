@@ -23,13 +23,17 @@ title: Resource Citation
 **Citation information for the resource.**
 
 ### ISO Obligation
+
 - There must be one and only one [1..1] *MD_Metadata,indentificationInfo>MD_Identification.citation* package for the cited resource in the  *[MD_DataIdentification](./class-MD_DataIdentification)* package in a metadata record. this must be of of class *[CI_Citation](./class-CI_Citation)*.
 
 ###  ICSM Good Practice
+
 - This element should be populated in all metadata records with a minimum of `title`, `identifier`, `date` and `citedResponsibleParty`.
 
 #### Recommended Sub-Elements
+
 Follow the general guidance for **[CI_Citation](./class-CI_Citation)** with emphasis on the following elements:
+
 - **[title](./ResourceTitle) -** *(type - charStr)*[1..1] Mandatory - name by which the cited resource is known
 - **[date](./ResourceDate) -** *(class - [CI_Date](./class-CI_Date))*  [0..\*]  reference date for the cited resource. Should include at a minimum, the creation date for the resource.
 - **[edition](./ResourceEdition) -** *(type - charStr)* [0..1] version of the cited resource if appropriate
@@ -38,6 +42,7 @@ Follow the general guidance for **[CI_Citation](./class-CI_Citation)** with emph
 - **[series](./ResourceSeries) -**  *(class - CI_Series)* [0..1] If needed, information about the series, or aggregate resource, of which the resource is a part should be included.
 
 ## Discussion
+
 The citation package contains multiple elements from [CI_Citation](./class-CI_Citation). Only child elements contain content. Follow the links on the child elements above for further discussion. Aspects of the contents of this package may be governed at different levels.
 
 ## Recommendations
@@ -45,6 +50,7 @@ The citation package contains multiple elements from [CI_Citation](./class-CI_Ci
 Therefore - because many of the elements of MD_Identification.citation are mandatory and are important for identification and harvesting of metadata, it is recommended the the guidance provided in each of these six child elements be followed. Other availble [CI_Citation](./class-CI_Citation) elements should be used if needed to properly document your resource. Consult your metadata governance team on such use.
 
 ## Also Consider
+
 - **[title](./ResourceTitle)** 
 - **[date](./ResourceDate)**
 - **[edition](./ResourceEdition)**
