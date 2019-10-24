@@ -149,6 +149,9 @@ Maps to *Subject*
 
 ### UML diagrams
 Recommended elements highlighted in Yellow
+
 ![topicCategory](../images/TopicCategoryUML.png)
 
 </details>
+
+\pagebreak
