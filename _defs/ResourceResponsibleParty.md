@@ -23,16 +23,21 @@ title: Resource Responsible Party
 **Name, role, and instructions for contacting the organisation, role and/or individual responsible for the cited resource.**
 
 ### ISO Obligation
+
 - There may be zero or more [0..\*] *citedResponsibleParties* provided for the cited resource in the  *[MD_DataIdentification.citation](./ResourceCitation)* package. These will be of class [CI_Responsibility](./class-CI_Responsibility).
 
 ###  ICSM Good Practice
+
 - This element should be populated in all metadata records with a minimum of `role` , `name` (of organisation preferred), `positionName` and `electronicMailAddress`.
 
 #### Recommended Sub-Elements
+
 Follow the general guidance for [CI_Responsibility](./class-CI_Responsibility).
+
 - Recommended `role` values should include (but not be limited to) "author" and "publisher".
 
 ## Discussion
+
 This element captures contact information for those parties responsible for various aspects of the cited resource.. It does not refer to the party responsible for the metadata record itself.  General contact information for the resource should be captured in [Resource Point of Contact](./ResourcePointOfContact).
 
 There may be multiple responsible parties who hold different responsibilities. The responsibility of each party is captured in the element CI_Responsibility > role. Entries for "author" and "publisher" are recommended. 
@@ -47,20 +52,25 @@ The use of the new `partyIdentifier` element added in the 2018 ammendment to the
 <details>
 
 #### ISO19139
+
 See discussion at [CI_Responsibility](./class-CI_Responsibility)
 
 #### Dublin core / CKAN / data.gov.au
+
 Maps to `publisher`
 
 #### DCAT
+
 Maps to `dct:publisher`
 
 #### RIF-CS
+
 Maps to `Publisher`
 
 </details>
 
 ## Also Consider
+
 - **[Resource Point of Contact](./ResourcePointOfContact)** Contact information for the recommended party to contact about the resource
 - **[Metadata Responsible Party](./MetadataContact)** Contact information for the recommended party to contact about the metadata
 - **[DistributionInfo](./DistributionInfo)** Includes Distributor contact information.
