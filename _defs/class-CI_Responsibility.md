@@ -4,6 +4,19 @@ type: class
 section: class
 rank: 50
 title: CI_Responsibility
+header-includes:
+ - \usepackage{enumitem}
+ - \setlistdepth{9}
+ - \setlist[itemize,1]{label=$\bullet$}
+ - \setlist[itemize,2]{label=$\bullet$}
+ - \setlist[itemize,3]{label=$\bullet$}
+ - \setlist[itemize,4]{label=$\bullet$}
+ - \setlist[itemize,5]{label=$\bullet$}
+ - \setlist[itemize,6]{label=$\bullet$}
+ - \setlist[itemize,7]{label=$\bullet$}
+ - \setlist[itemize,8]{label=$\bullet$}
+ - \setlist[itemize,9]{label=$\bullet$}
+ - \renewlist{itemize}{itemize}{9}
 ---
 # class - CI_Responsibility
 
