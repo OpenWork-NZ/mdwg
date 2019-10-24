@@ -23,12 +23,14 @@ title: Additional Documentation
 **Citation of other documentation associated with the resource, e.g. related articles, publications, user guides, data dictionaries.**
 
 ### ISO Obligation 
+
 There may be zero to many [0..\*] *additionalDocumentation* packages for the cited resource in the  *[MD_DataIdentification](./class-MD_DataIdentification)* package of class [CI_Citation](./class-CI_Citation) in the metadata record. 
 
 ###  ICSM Good Practice recommendation
 This element should be populated in all metadata records with a minimum of `title`, `identifier`, `date` and `citedResponsibleParty`. If posible, use the link to the metadata for the cited additional documentation as its landing page.
 
 #### Recommended Sub-Elements
+
 * **title -** *(type - charStr)* [1..1] mandatory for citations, the name by which the cited resource is known
 * **date -** *(class - [CI_Date](./class-CI_Date))* recommended, the reference date for the cited resource. 
 In addition, some direction should be given about how to access the cited additional resource.
@@ -37,9 +39,11 @@ In addition, some direction should be given about how to access the cited additi
 
 
 ## Discussion
+
 To make best use of a given resource, additional documentation may be useful or required. Providing instructions for accessing these documents can greatly enhance the value of a resource to its users and providers. Capturing these additional documents in the metadata is also helpful to resource managers who need to properly track the linkages between a resource and its documentation.
 
 ### Outstanding Issues
+
 > **DCAT**
 Previously captured DCAT related documentation on this elements calls what is considered the equivalent "A free-text account of the catalog." Mapping seems incorrect.
 
@@ -54,14 +58,17 @@ Therefore to make best use of a given resource capturing the the links to additi
 <details>
 
 #### DCAT 
+
 Maps to `dct.description` free-text 
 
 #### RIF-CS 
+
 Maps to `Description 'notes'`
 
 </details>
 
 ## Also Consider 
+
 - **[MD_DataIdentification.supplementalInformation -](https://www.isotc211.org/hmmg/HTML/ConceptualModels/EARoot/EA1/EA13/EA2/EA12/EA4420.htm)**  is defined as "any other descriptive information about the resource". 
 - **[MD_AssociatedResource -](https://www.isotc211.org/hmmg/HTML/ConceptualModels/EARoot/EA1/EA13/EA2/EA12/EA4419.htm)**  contains information about resources of which this resource is a piece. Association types are taken from the [DS_AssociationTypeCode](https://www.isotc211.org/hmmg/HTML/ConceptualModels/EARoot/EA1/EA13/EA2/EA12/EA4378.htm).
 
