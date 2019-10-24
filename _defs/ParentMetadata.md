@@ -29,6 +29,7 @@ title: Parent Metadata
 - The element `parentMetadata` may be populated to sufficient level to allow discovery if the metadata has a child relationship to another metadata record. Before doing so consider if other elements such as 'AssociatedResource' which has more flexiblitiy, is a more appropriate way to capture this information.
 
 #### Recommended Sub-Elements
+
 Follow the general guidance for [CI_Citation](./class-CI_Citation)
 
 ## Discussion
@@ -36,6 +37,7 @@ There currently exists very little guidance for what qualifies as a parent metad
 The cardinality rules only allow one parent, but it is concievable that a metadata record could inherit parts from multiple  parents.
 
 ### Outstanding Issues
+
 > **What qualifies a metadata record as a parent?**
 If we include this as a recommended element, the MDWG should provide some guidance as to what qualifies as a parent metadata record. This is a CI_Citation element so it has the all the capabilities of that package. We need to decide which fields are necessary given that a requirement should be a link to the parent metadata record.
 
@@ -46,9 +48,11 @@ TBD - insufficient clarity exist as to what qualifies a metadata record as "pare
 ### Crosswalk considerations
 
 #### RIF-CS
+
 Maps to `RelatedInfo/relation='partOf'`
 
 ## Also Consider
+
 - **[AssociatedResource](./AssociatedResources) -** Used when the resource is part of a larger whole
 - **[additionalDocumentation -](./AdditionalDocs)**  other documentation associated with the resource, e.g. related articles, publications, user guides, data dictionaries.
 - **[resourceLineage -](./ResourceLineage)** Information about the provenance, source(s), and/or the production process(es) applied to the resource.
