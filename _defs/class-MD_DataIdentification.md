@@ -17,20 +17,25 @@ title: Data Identification
 **basic information required to uniquely identify a data resource.**
 
 ### ISO Associations 
+
 **[MD_Identification](http://wiki.esipfed.org/index.php/MD_Identification)** is an abstract class that is parent to 
 - **MD_DataIdentification**
 It is a child of 
 - MD_Metadata.identificationInfo
 
 ### Atributes and packages
+
 the following provides additional gauidance to [MD_Identification](./class-MD_Identification).
 
 #### MDWG Recomended -
+
 In addition to all the attributes of [MD_Identification](./class-MD_Identification), the additional recommended elements apply - 
+
 - **[Locale -](./ResourceLocale)** *(class - [PT_Locale](./PT_Locale))* [0..1] 
 - **[Extents -](./ResourceExtent)** *(class - [EX_Extent](http://wiki.esipfed.org/index.php/EX_Extent))* [0..\*]  High-level thematic classifications to assist in the grouping and searching of data. Required when the hierarchyLevelName scopeCode is 'dataset'.
 
 #### Additional optional attributes
+
 - **[otherLocale -](./ResourceLocale)** *(class - [PT_Locale](./PT_Locale))* [0..\*] 
 - **environmentDescription -** *(type - charStr)* [0..1] description of the resource in the producer's processing environment, including items such as the software, the computer operating system, file name, and the dataset size
 - **supplementalInformation -** *(type - charStr)*[0..1] any other descriptive information about the resource
