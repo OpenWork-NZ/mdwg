@@ -19,6 +19,7 @@ title: Metadata Info
 
 ### Child packages
 #### ICSM recommended
+
 - **[resourceLineage -](./ResourceLineage)** *(class - Li_Lineage)* [0..\*]
 - **[referenceSystemInfo -](https://www.loomio.org/d/4SliNjWE/md_metadata-md_referencesystem-definition)** *(class - MD_ReferenceSystem)*
 - **metadataConstraints -** *( abstract class [MD_Constraints](./class-md_constraints))* [0..\*] see
@@ -31,6 +32,7 @@ title: Metadata Info
 - **[distributionInfo -](./DistributionInfo)** *(class - MD_Distribution)* [0..\*]
   
 #### Other packages - not yet addressed by MDWG
+
 - **metadataMaintenance -** *(class MD_MaintenanceInformation)* [0..1]
 - **spatialRepresentationInfo -** *(abstract class - MD_SpatialRepresentation)* [0..\*]
 - **metadataExtensionInfo -** *(class - MD_MetadataExtensionInformation)* [0..\*]
@@ -41,6 +43,7 @@ title: Metadata Info
 
 ### Atributes
 #### MDWG Recomended Attributes -
+
 - **[metadataIdentifier -](./MetadataIdentifier)** (*class - [MD_Identifier](./class-MD_Identifier)*) [0..1]
 - **[dateInfo -](./MetadataDate)** *(class - [CI_Date](./class-CI_Date))* [1..\*] 
 - **[contact -](./MetadataContact)** *(class - [CI_Responsibility](./class-CI_Responsibility))* [0..1] 
@@ -52,6 +55,7 @@ title: Metadata Info
 - **metadataProfile -**  *(class - [CI_Citation](./class-CI_Citation))* [0..\*] >  recommnded but not yet detailed by MDWG
 
 #### Other attributes - not yet addressed by MDWG
+
 - **otherLocale -** *(class - [PT_Locale](./PT_Locale))*[0..\*]
 - **alternativeMetadataReference -** *(class - [CI_Citation](./class-CI_Citation)* [0..\*]
   
