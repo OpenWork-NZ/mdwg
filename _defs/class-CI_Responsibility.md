@@ -18,6 +18,7 @@ One of the most important benefits of metadata is to allow people to conect over
 **information about the party and their role.**
 
 ### ISO Associations (May be found in)
+
 - MD_Metadata.contact
 - MD_Identification.pointOfContact
 - MD_Usage.userContactInfo
@@ -30,7 +31,9 @@ One of the most important benefits of metadata is to allow people to conect over
 - CI_Citation.citedResponsibleParty
 
 ### Attributes
+
 CI_Responsibility has at its core three elements:
+
 - **role -** *(codelist - [CI_RoleCode](http://wiki.esipfed.org/index.php/ISO_19115-3_Codelists#CI_RoleCode))*[1..1] Mandatory - function performed by the responsible party. Options are:
   - *resourceProvider -* party that supplies the resource
   - *custodian -* party that accepts accountability and responsibility for the resource and ensures appropriate care and maintenance of the resource
@@ -73,6 +76,7 @@ CI_Responsibility has at its core three elements:
     - **partyIdentifier -** *(class - [MD_Identifier](./class-MD_Identifier))* [0..\*]   identifier for the party
 
 #### Associated Classes to CI_Party
+
 - **CI_Individual -** information about the party if the party is an individual
   - **positionName -** *(type - charStr)* [0..1] position of the individual in an organisation
 
@@ -81,6 +85,7 @@ CI_Responsibility has at its core three elements:
   - **individual -** *(class - CI_Individual)* see above
 
 ## Discussion
+
 CI_Responsibility is a complex class that provides a good deal of flexibility while maintaining structure enough to provide conformity.  In the ICSM community, the minimum general guidance for CI_Responsibility is to include the `role` , `name` (of organisation preferred), `positionName` and `electronicMailAddress`. Other requirements exists according to purpose for which it appears in the metadata.
 
 As a codelist, `CI_RoleCode` can be extended as needed. To improve consistancy, in most instances this should done under the the auspices of ICSM MDWG.
@@ -101,6 +106,7 @@ The use of the new `partyIdentifier` element added in the 2018 ammendment to the
 <details>
 
 #### ISO19139
+
 In iso19115-1 Data type CI_ResponsibleParty (iso19115:2004) changed to type CI_Responsibility. The CI_ResponsibleParty was restructured in order to allow more flexible associations of individuals, organisations, and roles.
 The CI_Responsibility/extent element was added in order to allow specificationof the spatial and temporal extent of a role.
 
@@ -111,6 +117,7 @@ The CI_Responsibility/extent element was added in order to allow specificationof
 <details>
 
 ### XML -
+
 ```
 <mdb:MD_Metadata>
 ...
@@ -156,6 +163,7 @@ The CI_Responsibility/extent element was added in order to allow specificationof
 ```
 
 ### UML diagrams
+
 Recommended elements highlighted in Yellow
 
 ![Responsibility](https://loomio-uploads.s3.amazonaws.com/documents/files/000/198/726/web/1558404613424)
