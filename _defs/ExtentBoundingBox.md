@@ -23,20 +23,25 @@ title: Extent Bounding Box
 **A minimal set of geographic coordinates describing the geographic position of the resource. This is only an approximate reference so specifying the coordinate reference system is unnecessary and need only be provided with a precision of up to two decimal places** 
 
 ### ISO Obligation
+
 - A metadata record may have zero to many  [0..\*] *geographicIdentifier* elements for the cited resource in the  *[GeographicExtent](./GeographicExtent)* package of class *EX_GeographicBoundingBox* that described the geographic extent of a cited resource.
 
 ### ICSM Good Practice -
+
 - The MDWG recommends populating as many instances of Geographical Extent packages as need to give a common understanding of the spatial coverage of the cited resource.
 
 #### Recommended Sub Elements
+
 Use **extentTypeCode** *(Boolean)* [0..1] with a value of "0" to indicate exclusions
 All four following subelements must be included in a bounding box description
+
 * **westBoundLongitude** - *(type - Decimal)* western-most coordinate of the limit of the resource extent, expressed in longitude in decimal degrees (positive east - WGS 84)
 * **eastBoundLongitude** - *(type - Decimal)*  eastern-most coordinate of the limit of the resource extent, expressed in longitude in decimal degrees (positive east - WGS 84)
 * **southBoundLatitude** - *(type - Decimal)* southern-most coordinate of the limit of the resource extent, expressed in latitude in decimal degrees (positive north - WGS 84)
 * **eastBoundLongitude** - *(type - Decimal)* northern-most, coordinate of the limit of the resource extent expressed in latitude in decimal degrees (positive north - WGS 84)
 
 ## Discussion
+
 Every metadata record describing geographic resources should contain a bounding box description that covers the location which describes the area of interest of the resource. Those searching for resources can be provided a quick visual of the usable location of the resource. Catalogue software can use these boxes to do overlay analyses and narrow searches to particular areas of interest. To ensure ease of use with metadata from other sources that may contain data in any number of projections, these bounding box needs to be expresses in a common WGS 84 projection. 
 
 Because of the simple mathematics involed in calculating overlap with two coordinate pairs, bounding box descriptions provide a lightwieght way that those without GIS tools can tell if the resource overlaps with anaother.
@@ -44,6 +49,7 @@ Because of the simple mathematics involed in calculating overlap with two coordi
 The use of multiple bounding boxes is recommended for more complicated geometries, inclding exclusion areas.
 
 ### Outstanding Issues
+
 > **Projections**
 Geospatial data may be held and maintained by an organisation in any number of projections. Capturing the bounding box in common WGS 84 coordinates may require reprojection of coordinates. Workflows and tools need to be available to the metadata authors to simplify this task and reduce transcription errors.
 
@@ -59,17 +65,21 @@ Therefore - It is strongly recommended that to support discovery of resources, e
 <details>
 
 #### Dublin core / CKAN / data.gov.au
+
 Maps to `geospatial coverage`
 
 #### DCAT 
+
 Maps to `dct.spatial`
 
 #### RIF-CS
+
 Maps to the aggregate element `Coverage/Spatial`
 
 </details>
 
 ## Also Consider
+
 - **[EX_Extent](./ResourceExtent)** The class that contains all extent information about the cited resource - vertical, geographical or temporal.
 - **[EX_GeographicExtents](./GeographicExtent)** is an abstract class and the parent of **EX_GeographicBoundingBox**
 - **[EX_GeographicDescription -](./ExtentGeographicDescription)**  a sibling to this element.
