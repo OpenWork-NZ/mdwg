@@ -70,18 +70,7 @@ DCAT 2 suggests some ways of improving non-HTTP dereferenceable identifiers:
 * "Proxy dereferenceable URIs can be used when resources have not HTTP dereferenceable IDs. For example https://example.org/proxyid is a proxy for id."
 * [DCAT] uses adms:schemaAgency and dct:creator to represent the authority that defines the identifier scheme (e.g., the DOI foundation in the example), adms:schemaAgency is used when the authority has no URI associated.
 
-> **identifying authorities**
-The concept captured by DCAT 2 using adms:schemaAgency or dct:creator is the **authority** in this specification. Some resolvable identifiers (URIs) for **authority** likely of interest to MDWG members have been established using persistent identifiers by the [Australian Government Linked Data Working Group](http://www.linked.data.gov.au):
-
-* <http://linked.data.gov.au/org/ausgin> - Australian Geoscience Information Network. Authorises use of `pid.geoscience.gov.au`-based URIs
-* <http://linked.data.gov.au/org/agldwg> - Australian Government Linked Data Working Group. Authorises use of `linked.data.gov.au`, the Australian government's departmentally-independent URI domain allocated for persistent data identifiers
-* <http://linked.data.gov.au/org/doi> - Digital Object Identifier System. The international not-for-profit membership organization providing Digital Object Identifier (DOI)s used for documents and data
-* <http://linked.data.gov.au/org/handle> - the general-purpose digital object identifier system used by amny other systems
-* <http://linked.data.gov.au/org/igsn> - International Geo Sample Number. The non-profit consortium managing unique identifiers for samples and specimens collected from our natural environment
-* <http://linked.data.gov.au/org/psma> - PSMA Australia. Issues identifiers for street addresses in Australia
-* <http://linked.data.gov.au/org/ror> - Research Organization Registry Community. A community-led project to develop an open, sustainable, usable, and unique identifier for every research organization in the world
-
-These identifiers may be used in appropriate **authority** fields to better indicate authority agencies than just the name of them in text, contact information and so on (normal `CI_Citation` information).
+The concept captured by DCAT 2 using adms:schemaAgency or dct:creator is the **authority** in this specification.
 
 > **From [data.gov.au](http://data.gov.au)**
 The fileIdentifier for a metadata record must never change, irrespective of where that metadata record is stored. Should be system generated. In CKANs case the UUID is common to dataset and metadata record, and takes the UUID with it across new systems.
