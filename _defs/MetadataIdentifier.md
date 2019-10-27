@@ -102,7 +102,7 @@ In iso19115-1 Data type `CI_ResponsibleParty` (iso19115:2004) changed to type `C
 Maps to `metadata URI`
 
 #### DCAT
-Maps to `dct:identifier`
+Maps to `dct:identifier` or `adms:identifier`. From DCAT 2: "The property adms:identifier can express other locally minted identifiers or external identifiers, like DOI, ELI, arΧiv for creative works and ORCID, VIAF, ISNI for actors such as authors and publishers, as long as the identifiers are globally unique and stable." and "adms:schemaAgency is used when the authority has no URI associated."
 
 #### RIF-CS
 Maps to `Key Identifier`
