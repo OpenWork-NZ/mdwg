@@ -62,7 +62,18 @@ In practice metadataLinkage (Link) often contains the online linkage (to the poi
 #### Other discussion
 
 > **DCAT Notes**
-See long discussion at https://github.com/w3c/dxwg/issues/53 on how to represent the identifier scheme and authority; currently unresolved
+[DCAT 2](https://www.w3.org/TR/vocab-dcat-2/) makes several recommendations about the use of identifiers. From the specification's [Dereferencable identifiers](https://www.w3.org/TR/vocab-dcat-2/#dereferenceable-identifiers) section:
+
+* "DCAT primarily relies on persistent HTTP URIs as an effective way of making identifiers actionable. Notably, quite a few identifier schemes can be encoded as dereferenceable HTTP URIs, and some of them are also returning machine-readable metadata (e.g., DOIs and ORCIDs)."
+* The CrossRef and DataCite display guidelines recommend displaying DOIs as full URL link in the form https://doi.org/10.xxxx/xxxxx/.
+* "...data providers still might need to refer to legacy identifiers, non-HTTP dereferenceable identifiers, locally minted or third-party-provided identifiers."
+
+DCAT 2 suggests some ways of improving non-HTTP dereferenceable identifiers:
+
+* "Proxy dereferenceable URIs can be used when resources have not HTTP dereferenceable IDs. For example https://example.org/proxyid is a proxy for id."
+* [DCAT] uses adms:schemaAgency and dct:creator to represent the authority that defines the identifier scheme (e.g., the DOI foundation in the example), adms:schemaAgency is used when the authority has no URI associated.
+
+The concept captured by DCAT 2 using adms:schemaAgency or dct:creator is the **authority** in this specification.
 
 > **From [data.gov.au](http://data.gov.au)**
 The fileIdentifier for a metadata record must never change, irrespective of where that metadata record is stored. Should be system generated. In CKANs case the UUID is common to dataset and metadata record, and takes the UUID with it across new systems.
@@ -83,7 +94,7 @@ In iso19115-1 Data type `CI_ResponsibleParty` (iso19115:2004) changed to type `C
 Maps to `metadata URI`
 
 #### DCAT
-Maps to `dct:identifier`
+Maps to `dct:identifier` or `adms:identifier`. From DCAT 2: "The property adms:identifier can express other locally minted identifiers or external identifiers, like DOI, ELI, arΧiv for creative works and ORCID, VIAF, ISNI for actors such as authors and publishers, as long as the identifiers are globally unique and stable." and "adms:schemaAgency is used when the authority has no URI associated."
 
 #### RIF-CS
 Maps to `Key Identifier`
