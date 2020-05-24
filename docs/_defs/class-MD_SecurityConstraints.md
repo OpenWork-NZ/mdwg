@@ -28,21 +28,6 @@ The class, *MD_SecurityConstraints* is an specialisation of [MD_Constraints](./c
 - **classificationSystem -** *(type - charStr)* [0..1]  name of the classification system
 - **handlingDescription -** *(type - charStr)* [0..1]  additional information about the restrictions on handling the resource or metadata
 
-### Associated Codelists
-
-#### MD_RestrictionCode - codelist
-
-The name of the handling restrictions on the resource
-
-- *unclassified* - information applies to the dataset
-- *restricted* - information applies to the series
-- *confidential* - information applies to non-geographic data
-- *secret* - information applies to a dimension group
-- *topSecret* - information applies to a feature
-- *sensitiveButUnclassified* - although unclassified, requires strict controls over its distribution
-- *forOfficialUseOnly* -   information applies to the characteristic of a feature
-- *protected* - information applies to the collection hardware class
-- *limitedDistribution* - information applies to the collection session
 
 ## Discussion
 
