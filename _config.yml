@@ -8,4 +8,5 @@ kramdown:
 exclude: [README.md]
 collections:
   defs:
+    collections_dir: good_practice_guide
     output: true
