@@ -21,8 +21,7 @@ title: Parameter
 |  | resource manager - ⭑ ⭑ |
 |  | specialist - ⭑ ⭑ ⭑ ⭑ |
 | **Metadata type** | *sturctural* |
-
-- *ICSM Level of Agreement* - ⭑ ⭑
+| **ICSM Level of Agreement** | ⭑ ⭑ |
 
 ## Definition  
 **the parameters that are required for an service operation interface, in sequence**
