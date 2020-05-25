@@ -1,0 +1,112 @@
+---
+layout: page
+rank: 40
+type: page
+section: Service Metadata
+title: Service Type
+---
+# Service Type  ★★★★★ 
+
+*When documenting a service, it is important that the type of service be described as a simple generic type so that searches can be so filtered and the use of such service can be categorised.*
+
+|  |  |
+| --- | --- |
+| **Element Name** | *serviceType* |
+| **Parent** |  *[MD_Metadata.identificationInfo>SV_ServiceIdentification](./ServiceIdentification)* |
+| **Class/Type** | *genericName* |
+| **Governance** |  *Common ICSM* |
+| **Purpose** | *Discovery, Evaluation, Use* |
+| **Audience** |- machine resource - ⭑ ⭑ ⭑ |
+|  | general - ⭑ ⭑ ⭑ |
+|  | resource manager - ⭑ ⭑ ⭑ |
+|  | specialist - ⭑ ⭑ ⭑ |
+| **Metadata type** | *descriptive* |
+| **ICSM Level of Agreement** | ⭑ ⭑ |
+
+## Definition  
+*A simple name describing a generic service type, e.g. ‘discovery’, ‘view’, ‘download’, ‘transformation’, or ‘invoke'. Note - A GenericName (see ISO 19103:2015) shall indicate the meaning of the named value. Its value should be taken from a well-governed source if possible.*
+
+### ISO Requirements
+
+There must be one and only one [1..1] *serviceType* entries for the cited resource for a  *[SV_ServiceIdentification](./ServiceIdentification)* package of type *genericName* in a metadata record.
+
+## Discussion  
+The *serviceType* is useful both as a search filter and for categorisation of the service. It should hold what is considered the primary use of the service in generic terms. The vaue of this field is of type *genericName* which is described in ISO 19103. While *genericName* values are essentially character strings, the posible values should be selected by a centrally managed controlled vocabulary.  Listed values as described in the ISO 19115-1 standard include ‘discovery’, ‘view’, ‘download’, ‘transformation’, or ‘invoke'. However in practice, more specific terms are often used. In GeoNetwork, the initial suggested values include: *OGC Web Map Service, OGC Web Map Tile Service, OGC Web Feature Service, OGC Web Coverage Service, OGC Web Processeing Service*, and *Atom feed*. 
+
+
+## Recommendations 
+
+Therefore - The mandatory *serviceType* element should be populated with a value from managed controled vocabulary containing names for generic types of services. While ISO 19115-1 descibes these values as very specific (e.g. ‘discovery’, ‘view’, ‘download’, ‘transformation’, or ‘invoke') in practice, somewhat generic terms for spatial service standards are often used (e.g. OGC Web Map Service, OGC Web Coverage Service, Atom feed)
+
+## Also Consider
+There are any locations where service type and version infromation may be captured. Choose appropriately.
+
+**[Service Type Version](./ServiceTypeVersion)** The version of the service.  Provided to enhance searchability based on the version of serviceType. Could be a shorthand handle like WMS 1.4.1
+
+**[Service Standard](./ServiceDataset)** When a service conforms to a particular service standard that standard to which the service adheres should be cited
+
+**[Service Profile](./ServiceProfile)**  When a service conforms to a particular profile of a service standard, the profile to which the service adheres should be cited (instead of the Service Standard)
+
+**[Keywords (services)-](./Keywords)**  To enable ease of discovery, a service metadata record should contain at least one keyword of type *service*. The value of such keywords should refer to the service taxonomy defined in ISO 19119.
+
+## Outstanding Issues
+
+> **CORE ISSUE:**  
+There is an appearent incongruity in the definition of ServiceType and ServiceTypeVersion. While ServiceType is described as contain values of a very general nature, download, view, etc., ServiceTypeVersion is defined as a refinement of ServiceType. But generic terms like "download" do not have versions. In practice ServiceType is often populated with more specific terms like "OGC WMS" and ServiceTypeVersion may be "OGC WMS 1.4".
+
+> **Managed vocabulary for Service Type**
+More clarity on the use of this mandatory service metadata element is needed and being sought. An ICSM agreed upon controlled vocabulary of acceptable values would improve the usability of this field. Until then, agreement of use should be sought at the domain level. It is yet to be decided who at a higher level should host such a service and what values it should contain.
+
+#### Other discussion 
+{from other sources of note - other standards and implementations. In Markdown Notes format. Such as:}
+
+> **{DCAT Notes}** -
+{Discussion of issue}
+
+> **{From data.govt.au}** -
+{Discussion of issue}
+
+
+## Crosswalk considerations 
+
+#### ISO19139 
+{Discussion of issues, if any, to guide migration from ISO19139}
+
+#### Dublin core / CKAN / data.gov.au {if any}
+{mapping to `DC element` and discussion}
+
+#### DCAT 
+Maps to dct:type 
+>Note - may conflict with mapping of serviceTypeVersion
+
+#### RIF-CS
+{mapping to `RIF-CS element` and discussion, if any}
+
+## Examples
+
+### GA
+{example - if any useful}
+
+### ABARES
+{example - if any useful}
+
+### Others
+{### who - example - if any useful}}
+
+### XML -
+
+```
+<mdb:MD_Metadata>
+....
+  {<in context xml/>}
+....
+</mdb:MD_Metadata>
+```
+
+### UML diagrams
+{Captured from official ISO documentation at https://www.isotc211.org/hmmg/HTML/ConceptualModels/index.htm?goto=1:12:2:4095}
+Recommended elements highlighted in Yellow
+
+![{Name}]({path to UML diagram image})
+
+\pagebreak
