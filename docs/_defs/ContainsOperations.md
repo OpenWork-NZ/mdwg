@@ -1,7 +1,7 @@
 ---
 layout: page
 rank: 40
-type: page
+type: element
 section: Service Metadata
 title: Contains Operations
 ---
@@ -16,7 +16,7 @@ title: Contains Operations
 | **Class/Type** | *SV_OperationMetadata* |
 | **Governance** |  *Common ICSM* |
 | **Purpose** | *Evaluation, Use* |
-| **Audience** |- machine resource - ⭑ ⭑ ⭑ ⭑ |
+| **Audience** | machine resource - ⭑ ⭑ ⭑ ⭑ |
 |  | general - ⭑ ⭑ ⭑|
 |  | resource manager - ⭑ ⭑ |
 |  | specialist - ⭑ ⭑ ⭑ ⭑ |
@@ -37,16 +37,16 @@ It is useful when documenting a service to document the particular operations th
 
 ## ICSM Recommendations 
 
-Therefore - If a potential cleint of a service is to use such service, descriptions of the functionality and use of operations provided shoud be documented in metadata of a geospatial service. 
+Therefore - If a potential client of a service is to use such service, descriptions of the functionality and use of operations provided shoud be documented in metadata of a geospatial service. 
 
 ### Recommended Sub-Elements 
 
 
-- **operationName -** *(type - charStr)* [1..1] - Madatory. A unique identifier within the service for this interface e.g. GetCapabilities
+- **operationName -** *(type - charStr)* [1..1] - Mandatory. A unique identifier within the service for this interface e.g. GetCapabilities
 - **distributedComputingPlatform -** *(codelist - DCPList)* [1..\*] - Mandatory. Distributed computing platforms on which the operation has been implemented 
 - **operationDescription -** *(type - charStr)* [0..1] - Free text description of the intent of the operation and the results of the operation
 - **invocationName -** *(type - charStr)* [0..1] - The name used to invoke this interface within the context of the DCP. The name is identical for all DCPs.
-- **connectPoint -** *(class - [CI_OnlineResource}(class-CI_OnlineResource)* [1..\*] - Mandatory. Handle for accessing the service interface. Usually a complete URL. 
+- **connectPoint -** *(class - [CI_OnlineResource](class-CI_OnlineResource)* [1..\*] - Mandatory. Handle for accessing the service interface. Usually a complete URL. 
 - **[parameter -](./Parameter)** *(class - SV_Parameter)* [0..\*] - A description of the parameters that can be provided to the operation. See **[parameter -](./Parameter)** for more information
 
 #### Other Sub-Elements
@@ -80,7 +80,7 @@ There are 10 options to choose from in the Distributed Computing Platform code l
 {Issue discussion points and items which need resolution}
 
 
-#### Other discussion 
+#### Other Discussion 
 {from other sources of note - other standards and implementations. In Markdown Notes format. Such as:}
 
 > **{DCAT Notes}** -
