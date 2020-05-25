@@ -1,6 +1,6 @@
 ---
 layout: page
-type: section
+type: page
 section: Service Metadata
 rank: 30
 title: Service Citation
