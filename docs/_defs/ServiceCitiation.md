@@ -54,6 +54,8 @@ Follow the general guidance for **[CI_Citation](./class-CI_Citation)** with emph
 - **[onlineResource](./class-CI_OnlineResource) -** *class - [CI_OnlineResource](./class-CI_OnlineResource)* [0..\*] Highly Recommended. The URL Link for the landing page of the service. May also be recorded in *DistributionInfo*
 
 #### Other Sub-Elements
+
+- **alternateTitle -** *(type - charStr)* [0..\*] short name or other language name by which the cited service is known. Example: DCW as an alternative title for Digital Chart of the World. Recommended whenever there are alternate names commonly in use.
 - **[series](./ResourceSeries) -**  *(class - CI_Series)* [0..1] If needed, information about the series, or aggregate resource, of which the resource is a part should be included.
 - See *[CI_Citation](./class-CI_Citation)* for more options.
 
