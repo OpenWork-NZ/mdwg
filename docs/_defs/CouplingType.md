@@ -1,13 +1,13 @@
 ---
 layout: page
 rank: 40
-type: page
+type: element
 section: Service Metadata
 title: Coupling Type
 ---
 # Coupling Type  ★★★★
 
-*When documenting a service, the nature of the relationship of the service to the data resources on which it interacts is iimportant to capture so as to provide potential users an understanding of the applicability oc such service to their needs. A service may be highly dependant on particular data, independent of the data or a mixture.*
+*When documenting a service, the nature of the relationship of the service to the data resources on which it interacts is important to capture so as to provide potential users an understanding of the applicability of such service to their needs. A service may be highly dependant on particular data, independent of the data or a mixture.*
 
 |  |  |
 | --- | --- |
@@ -21,24 +21,24 @@ title: Coupling Type
 |  | resource manager - ⭑ ⭑ ⭑ ⭑ |
 |  | specialist - ⭑ ⭑ ⭑ |
 | **Metadata type** | *structural* |
-|* *ICSM Level of Agreement** | ⭑ ⭑ | 
+| **ICSM Level of Agreement** | ⭑ ⭑ | 
 
 ## Definition  
 **The type of coupling between service and associated data (if exists)**
 
 ### ISO Requirements
 
-There must be zero or one [0-1]  *couplingType* entries for the cited resource for a  *[SV_ServiceIdentification](./ServiceIdentification)* package selected from the codelist *SV_CouplingType* in a metadata record. If a *[coupled resource](./CoupledResource)* exist, this element must be populated.
+There must be zero or one [0-1]  *couplingType* entries for the cited resource for a  *[SV_ServiceIdentification](./ServiceIdentification)* package selected from the codelist *SV_CouplingType* in a metadata record. If a *[coupled resource](./CoupledResource)* exists, this element must be populated.
 
 
 ## Discussion  
-The relation of a geospatial service to the data on which it operates is varied. This relation impacts the decisions one may make regarding the capture of useful metadata for such a service. These services fall into three categories depending on how tightly coupled the data is to the service: *tightly, loosely,* or *mixed*. 
+The relation of a geospatial service to the data on which it operates is varied. This relation impacts the decisions one may make regarding the capture of useful metadata for such a service. These services fall into three categories depending on how tightly coupled the data is to the service: *tightly*, *loosely*, or *mixed*. 
 
 An example of a tightly coupled service would be a WFS service delivering a particular dataset. In the tightly coupled case, the service metadata shall describe both the service and the geographic dataset. The permitted values for the description of operations shall be constrained by the values defined by the datasets associated with the service.
 
 An example of a loosely coupled service could be a reprojection service with user selected input datasets. Loosely coupled services may have an association with data types through the service type definition (SV_ServiceIdentification.serviceType). Dataset metadata need not be provided in the service metadata for the loosely coupled case.
 
-A mixed coupling might be a WMS service into which add additional data sources of your choice. In a mixed coupling situation a single service instance may be associated to both kinds of data associated, loosely and tightly coupled. 
+A mixed coupling might be a WMS service into which you may add additional data sources of your choice. In a mixed coupling situation a single service instance may be associated to both kinds of data associated, loosely and tightly coupled. 
 
 
 ## ICSM Recommendations 
@@ -50,11 +50,11 @@ Therefore - The element *couplingType* should be populated in all service metada
 From codelist - *[SV_CouplingType](https://github.com/ISO-TC211/schemas/blob/master/19115/resources/Codelist/gml/SV_CouplingType.xml)*. Available values for *SV_CouplingType* are: 
 
 - *loose* - service instance is loosely coupled with a data instance, i.e. no MD_DataIdentification class has to be described
-- *mixed* - service instance is mixed coupled with a data instance, i.e. MD_DataIdentification describes the associated data instance and additionally the service instance might work with other external data instance
+- *mixed* - service instance is mixed coupled with a data instance, i.e. MD_DataIdentification describes the associated data instance and additionally the service instance might work with other external data instances
 - *tight* - service instance is tightly coupled with a data instance, i.e. MD_DataIdentification class MUST be described
 
 ## Also Consider
-{Links to additional useful information. Usually other elements, packages and classes in this good pratice document. May also link to other external resources.}
+{Links to additional useful information. Usually other elements, packages and classes in this good practice document. May also link to other external resources.}
 
 **[{element name} -]({path to element})**  {description of importance and utility with any links}
 
@@ -72,7 +72,7 @@ From codelist - *[SV_CouplingType](https://github.com/ISO-TC211/schemas/blob/mas
 {Issue discussion points and items which need resolution}
 
 
-#### Other discussion 
+#### Other Discussion 
 {from other sources of note - other standards and implementations. In Markdown Notes format. Such as:}
 
 > **{DCAT Notes}** -
@@ -81,7 +81,7 @@ From codelist - *[SV_CouplingType](https://github.com/ISO-TC211/schemas/blob/mas
 > **{From data.govt.au}** -
 {Discussion of issue}
 
-## Crosswalk considerations 
+## Crosswalk Considerations 
 
 #### ISO19139 
 {Discussion of issues, if any, to guide migration from ISO19139}
