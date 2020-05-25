@@ -1,5 +1,6 @@
 ---
 layout: page
+rank: 20
 type: page
 section: Guidance
 title: Metadata For Services
