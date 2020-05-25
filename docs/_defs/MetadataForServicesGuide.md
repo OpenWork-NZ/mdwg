@@ -1,7 +1,7 @@
 ---
 layout: page
 type: page
-section: Service Metadata
+section: Guidance
 title: Metadata For Services
 ---
 
