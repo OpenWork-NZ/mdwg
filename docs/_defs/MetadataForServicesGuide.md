@@ -53,7 +53,7 @@ title: Metadata For Services
           - Title
           - OnlineResource
     - [profile](./ServiceProfile)  CI_Citation
-    - [serviceStandard](./serviceStandard)  CI_Citation
+    - [serviceStandard](./ServiceStandard)  CI_Citation
     - [ContainsOperations](./ContainsOperations) class - SV_OperationMetadata    
        - operationName  
        - distributedComputingPlatform  DCP List
