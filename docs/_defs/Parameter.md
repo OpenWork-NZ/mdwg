@@ -1,7 +1,7 @@
 ---
 layout: page
 rank: 40
-type: page
+type: element
 section: Service Metadata
 title: Parameter
 ---
@@ -16,33 +16,33 @@ title: Parameter
 | **Class/Type** | *SV_Parameter* |
 | **Governance** |  *Domain, Agency* |
 | **Purpose** | *Evaluation, Use* |
-| **Audience** |- machine resource - ⭑ ⭑ ⭑ ⭑ |
+| **Audience** | machine resource - ⭑ ⭑ ⭑ ⭑ |
 |  | general - ⭑ ⭑|
 |  | resource manager - ⭑ ⭑ |
 |  | specialist - ⭑ ⭑ ⭑ ⭑ |
-| **Metadata type** | *sturctural* |
+| **Metadata type** | *structural* |
 | **ICSM Level of Agreement** | ⭑ ⭑ |
 
 ## Definition  
-**the parameters that are required for an service operation interface, in sequence**
+**the parameters that are required for a service operation interface, in sequence**
 
 ### ISO Requirements
 
-This is an ISO optional element. There may be zero or many [0..\*] *parameter* instances of class *SV_Parameter* associate to service operation (*containsOperations*, class *SV_OperationMetadata*) entries for the cited resource.  If parameter or is important, then these should be recorded in the proper sequence.
+This is an ISO optional element. There may be zero or many [0..\*] *parameter* instances of class *SV_Parameter* associated to service operation (*containsOperations*, class *SV_OperationMetadata*) entries for the cited resource.  If parameter order is important, then these should be recorded in the proper sequence.
 
 ## Discussion  
-It is useful when documenting a service to document the particular parametrs that the service operations need and expect, if any. This documentation must include the parameter technical details including *name, direction, optionality,* and *repeatability*.  A discription of the pupose of the parameter is useful for users to evaluate the utility of such operations.
+It is useful when documenting a service to document the particular parameters that the service operations need and expect, if any. This documentation must include the parameter technical details including *name*, *direction*, *optionality*, and *repeatability*.  A description of the purpose of the parameter is useful for users to evaluate the utility of such operations.
 
-As many of the services we may call will have operations that summarise the operations that the service provides it may be better to document this one service in order not to duplicate or cause confusion. GetCapabilities would be an example of this as would an OpenAPI endpoint as implemented in OGC API common based services. These operations typically require no parameters, but the operations they describe will contain the necesaary parameters,
+As many of the services we may call will have operations that summarise the operations that the service provides it may be better to document this one service in order not to duplicate or cause confusion. GetCapabilities would be an example of this as would an OpenAPI endpoint as implemented in OGC API common based services. These operations typically require no parameters, but the operations they describe will contain the necessary parameters.
 
 ## ICSM Recommendations 
 
-Therefore - If a potential cleint of a service is to use such service, descriptions of the functionality and use of the parameters required by thse operations shoud be documented in metadata of a geospatial service. When used, this element has several mandatory subelements as described below.
+Therefore - If a potential client of a service is to use such service, descriptions of the functionality and use of the parameters required by these operations shoud be documented in metadata of a geospatial service. When used, this element has several mandatory subelements as described below.
 
 ### Recommended Sub-Elements 
 
 - **name -** *(class - MemberName)* [1..1] - Mandatory. The name, as used by the service for this parameter 
-- **direction -** *(codelist - SV_ParmeterDirection)* [1..1] - Mandatory. Indication if the parameter is an input to the service, an output or both 
+- **direction -** *(codelist - SV_ParameterDirection)* [1..1] - Mandatory. Indication if the parameter is an input to the service, an output or both 
 - **description -** *(type - charStr)* [0..1] - A narrative explanation of the role of the parameter
 - **optionality -** *(type - Boolean)* [1..1] - Mandatory. Indication if the parameter is required (True or False)
 - **repeatability -** *(type - Boolean)* [1..1] - Mandatory. Indication if more than one value of the parameter may be provided (True or False)
@@ -68,7 +68,7 @@ When describing the service parameters, the *direction* for each paramenter must
 {Issue discussion points and items which need resolution}
 
 
-#### Other discussion 
+#### Other Discussion 
 {from other sources of note - other standards and implementations. In Markdown Notes format. Such as:}
 
 > **{DCAT Notes}** -
@@ -77,7 +77,7 @@ When describing the service parameters, the *direction* for each paramenter must
 > **{From data.govt.au}** -
 {Discussion of issue}
 
-## Crosswalk considerations 
+## Crosswalk Considerations 
 
 #### ISO19139 
 {Discussion of issues, if any, to guide migration from ISO19139}
