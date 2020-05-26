@@ -52,7 +52,7 @@ title: Metadata For Services
       - ResourceReference - includes
           - Title
           - OnlineResource
-    - [profile](./Profile)  CI_Citation
+    - [profile](./ServiceProfile)  CI_Citation
     - [serviceStandard](./serviceStandard)  CI_Citation
     - [ContainsOperations](./ContainsOperations) class - SV_OperationMetadata    
        - operationName  
