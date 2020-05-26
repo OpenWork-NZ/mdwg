@@ -1,9 +1,11 @@
 layout: page
 rank: 40
-type: page
+type: element
 section: Service Metadata
 title: Service Profile
+
 ---
+
 # Service Profile  ★★★ 
 
 *When documenting a spatial service the details of the standard to which a service adheres should be provided so that once descovered potential users may find further authoritative information about such standard.*
