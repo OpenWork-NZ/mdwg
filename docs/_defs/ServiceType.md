@@ -1,7 +1,7 @@
 ---
 layout: page
 rank: 40
-type: page
+type: element
 section: Service Metadata
 title: Service Type
 ---
@@ -16,7 +16,7 @@ title: Service Type
 | **Class/Type** | *genericName* |
 | **Governance** |  *Common ICSM* |
 | **Purpose** | *Discovery, Evaluation, Use* |
-| **Audience** |- machine resource - ⭑ ⭑ ⭑ |
+| **Audience** | machine resource - ⭑ ⭑ ⭑ |
 |  | general - ⭑ ⭑ ⭑ |
 |  | resource manager - ⭑ ⭑ ⭑ |
 |  | specialist - ⭑ ⭑ ⭑ |
@@ -31,15 +31,15 @@ title: Service Type
 There must be one and only one [1..1] *serviceType* entries for the cited resource for a  *[SV_ServiceIdentification](./ServiceIdentification)* package of type *genericName* in a metadata record.
 
 ## Discussion  
-The *serviceType* is useful both as a search filter and for categorisation of the service. It should hold what is considered the primary use of the service in generic terms. The vaue of this field is of type *genericName* which is described in ISO 19103. While *genericName* values are essentially character strings, the posible values should be selected by a centrally managed controlled vocabulary.  Listed values as described in the ISO 19115-1 standard include ‘discovery’, ‘view’, ‘download’, ‘transformation’, or ‘invoke'. However in practice, more specific terms are often used. In GeoNetwork, the initial suggested values include: *OGC Web Map Service, OGC Web Map Tile Service, OGC Web Feature Service, OGC Web Coverage Service, OGC Web Processeing Service*, and *Atom feed*. 
+The *serviceType* is useful both as a search filter and for categorisation of the service. It should hold what is considered the primary use of the service in generic terms. The vaue of this field is of type *genericName* which is described in ISO 19103. While *genericName* values are essentially character strings, the posible values should be selected by a centrally managed controlled vocabulary.  Listed values as described in the ISO 19115-1 standard include ‘discovery’, ‘view’, ‘download’, ‘transformation’, or ‘invoke'. However in practice, more specific terms are often used. In GeoNetwork, the initial suggested values include: *OGC Web Map Service, OGC Web Map Tile Service, OGC Web Feature Service, OGC Web Coverage Service, OGC Web Processing Service*, and *Atom feed*. 
 
 
 ## Recommendations 
 
-Therefore - The mandatory *serviceType* element should be populated with a value from managed controled vocabulary containing names for generic types of services. While ISO 19115-1 descibes these values as very specific (e.g. ‘discovery’, ‘view’, ‘download’, ‘transformation’, or ‘invoke') in practice, somewhat generic terms for spatial service standards are often used (e.g. OGC Web Map Service, OGC Web Coverage Service, Atom feed)
+Therefore - The mandatory *serviceType* element should be populated with a value from a managed controled vocabulary containing names for generic types of services. While ISO 19115-1 descibes these values as very specific (e.g. ‘discovery’, ‘view’, ‘download’, ‘transformation’, or ‘invoke') in practice, somewhat generic terms for spatial service standards are often used (e.g. OGC Web Map Service, OGC Web Coverage Service, Atom feed)
 
 ## Also Consider
-There are any locations where service type and version infromation may be captured. Choose appropriately.
+There are many locations where service type and version information may be captured. Choose appropriately.
 
 **[Service Type Version](./ServiceTypeVersion)** The version of the service.  Provided to enhance searchability based on the version of serviceType. Could be a shorthand handle like WMS 1.4.1
 
@@ -52,12 +52,12 @@ There are any locations where service type and version infromation may be captur
 ## Outstanding Issues
 
 > **CORE ISSUE:**  
-There is an appearent incongruity in the definition of ServiceType and ServiceTypeVersion. While ServiceType is described as contain values of a very general nature, download, view, etc., ServiceTypeVersion is defined as a refinement of ServiceType. But generic terms like "download" do not have versions. In practice ServiceType is often populated with more specific terms like "OGC WMS" and ServiceTypeVersion may be "OGC WMS 1.4".
+There is an apparrent incongruity in the definition of ServiceType and ServiceTypeVersion. While ServiceType is described as containing values of a very general nature, download, view, etc., ServiceTypeVersion is defined as a refinement of ServiceType. But generic terms like "download" do not have versions. In practice ServiceType is often populated with more specific terms like "OGC WMS" and ServiceTypeVersion may be "OGC WMS 1.4".
 
 > **Managed vocabulary for Service Type**
 More clarity on the use of this mandatory service metadata element is needed and being sought. An ICSM agreed upon controlled vocabulary of acceptable values would improve the usability of this field. Until then, agreement of use should be sought at the domain level. It is yet to be decided who at a higher level should host such a service and what values it should contain.
 
-#### Other discussion 
+#### Other Discussion 
 {from other sources of note - other standards and implementations. In Markdown Notes format. Such as:}
 
 > **{DCAT Notes}** -
@@ -67,7 +67,7 @@ More clarity on the use of this mandatory service metadata element is needed and
 {Discussion of issue}
 
 
-## Crosswalk considerations 
+## Crosswalk Considerations 
 
 #### ISO19139 
 {Discussion of issues, if any, to guide migration from ISO19139}
