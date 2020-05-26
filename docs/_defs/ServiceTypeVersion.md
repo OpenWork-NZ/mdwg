@@ -1,13 +1,13 @@
 ---
 layout: page
 rank: 40
-type: page
+type: element
 section: Service Metadata
 title: Service Type Version
 ---
 # Service Type Version  ★★ 
 
-*When describing Spatial Servives in a metadata record, it is useful to capture the type and version of the service in its commonly know name so as those who may wish to use the service can determine its campatibility to the desired purpose.*
+*When describing Spatial Services in a metadata record, it is useful to capture the type and version of the service in its commonly known name so as those who may wish to use the service can determine its campatibility to the desired purpose.*
 
 |  |  |
 | --- | --- |
@@ -16,7 +16,7 @@ title: Service Type Version
 | **Class/Type** | *characterString* |
 | **Governance** |  *Domain, Agency* |
 | **Purpose** | *Discovery, Evaluation, Use* |
-| **Audience** |- machine resource - ⭑ ⭑ |
+| **Audience** | machine resource - ⭑ ⭑ |
 |  | general - ⭑ ⭑ ⭑|
 |  | resource manager - ⭑ ⭑ ⭑|
 |  | specialist - ⭑ ⭑ ⭑ |
@@ -41,7 +41,7 @@ Detailed citation of such services, including linkages to the service standard i
 Therefore - It is recommended that the *ServiceTypeVersion* be populated in service metadata records in such a way that discovery of services that adhere to a specific service type version can be found and filtered.
 
 ## Also Consider
-There are any locations where service type and version infromation may be captured. Choose appropriately.
+There are many locations where service type and version information may be captured. Choose appropriately.
 
 **[Service Type](./ServiceType)** The mandatory *serviceType* element should be populated with a value from managed controled vocabulary containing names for generic types of services. While ISO 19115-1 descibes these values as very specific (e.g. ‘discovery’, ‘view’, ‘download’, ‘transformation’, or ‘invoke') in practice, somewhat generic terms for spatial service standards are often used (e.g. OGC Web Map Service, OGC Web Coverage Service, Atom feed)
 
@@ -54,13 +54,13 @@ There are any locations where service type and version infromation may be captur
 ## Outstanding Issues
 
 > **CORE ISSUE:**  
-There is an appearent incongruity in the definition of ServiceType and ServiceTypeVersion. While ServiceType is described as contain values of a very general nature, download, view, etc., ServiceTypeVersion is defined as a refinement of ServiceType. But generic terms like "download" do not have versions. In practice ServiceType is often populated with more specific terms like "OGC WMS" and ServiceTypeVersion may be "OGC WMS 1.4".
+There is an apparrent incongruity in the definition of ServiceType and ServiceTypeVersion. While ServiceType is described as contain values of a very general nature, download, view, etc., ServiceTypeVersion is defined as a refinement of ServiceType. But generic terms like "download" do not have versions. In practice ServiceType is often populated with more specific terms like "OGC WMS" and ServiceTypeVersion may be "OGC WMS 1.4".
 
 > **{Issue Name}**
 {Issue discussion points and items which need resolution}
 
 
-#### Other discussion 
+#### Other Discussion 
 {from other sources of note - other standards and implementations. In Markdown Notes format. Such as:}
 
 > **{DCAT Notes}** -
@@ -69,7 +69,7 @@ There is an appearent incongruity in the definition of ServiceType and ServiceTy
 > **{From data.govt.au}** -
 {Discussion of issue}
 
-## Crosswalk considerations 
+## Crosswalk Considerations 
 
 #### ISO19139 
 {Discussion of issues, if any, to guide migration from ISO19139}
