@@ -1,9 +1,9 @@
+---
 layout: page
 rank: 40
 type: element
 section: Service Metadata
 title: Service Profile
-
 ---
 
 # Service Profile  ★★★ 
