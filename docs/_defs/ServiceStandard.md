@@ -1,7 +1,7 @@
 ---
 layout: page
 rank: 40
-type: page
+type: element
 section: Service Metadata
 title: Service Standard
 ---
@@ -16,7 +16,7 @@ title: Service Standard
 | **Class/Type** | *CI_Citation* |
 | **Governance** |  *Common ICSM* |
 | **Purpose** | *Evaluation, Use* |
-| **Audience** |- machine resource - ⭑ ⭑ ⭑ |
+| **Audience** | machine resource - ⭑ ⭑ ⭑ |
 |  | general - ⭑ ⭑ ⭑ |
 |  | resource manager - ⭑ ⭑ ⭑ ⭑ |
 |  | specialist - ⭑ ⭑ ⭑ ⭑ |
@@ -31,7 +31,7 @@ title: Service Standard
 There may be zero or more [0-\*] *serviceStandard* entries for the cited resource for a  *[SV_ServiceIdentification](./ServiceIdentification)* package of class *[CI_Citation](./class-CI_Citation)* in a service metadata record.
 
 ## Discussion  
-To be complete in the desciption of the standards to which a spatial service adheres, citations, including linkages to official websites and documentation, of such standards should be provided. This will aid potential users in the use of such services or to troubleshoot when the use of such services do not behave as expected.
+To be complete in the description of the standards to which a spatial service adheres, citations, including linkages to official websites and documentation, of such standards should be provided. This will aid potential users in the use of such services or to troubleshoot when the use of such services do not behave as expected.
 
 When the service complies to a particular profile of a standard, it will suffice to complete the sibling *profile* element to the same degree.
 
@@ -48,9 +48,9 @@ Follow the guidance in *[CI_Citation](./class-CI_Citation)* noting the following
 - **linkage -** (*type - charStr*) [1..1] Mandatory for *class - CI_OnlineResource* - usually the web address to the authoritative documentation for the service
 
 ## Also Consider
-There are any locations where service type and version infromation may be captured. Choose appropriately.
+There are many locations where service type and version information may be captured. Choose appropriately.
 
-**[Service Type](./ServiceType)** The mandatory *serviceType* element should be populated with a value from managed controled vocabulary containing names for generic types of services. While ISO 19115-1 descibes these values as very specific (e.g. ‘discovery’, ‘view’, ‘download’, ‘transformation’, or ‘invoke') in practice, somewhat generic terms for spatial service standards are often used (e.g. OGC Web Map Service, OGC Web Coverage Service, Atom feed)
+**[Service Type](./ServiceType)** The mandatory *serviceType* element should be populated with a value from a managed controled vocabulary containing names for generic types of services. While ISO 19115-1 descibes these values as very specific (e.g. ‘discovery’, ‘view’, ‘download’, ‘transformation’, or ‘invoke') in practice, somewhat generic terms for spatial service standards are often used (e.g. OGC Web Map Service, OGC Web Coverage Service, Atom feed)
 
 **[Service Type Version](./ServiceTypeVersion)** The version of the service.  Provided to enhance searchability based on the version of serviceType. Could be a shorthand handle like WMS 1.4.1
 
@@ -68,7 +68,7 @@ There are any locations where service type and version infromation may be captur
 {Issue discussion points and items which need resolution}
 
 
-#### Other discussion 
+#### Other Discussion 
 {from other sources of note - other standards and implementations. In Markdown Notes format. Such as:}
 
 > **{DCAT Notes}** -
@@ -77,7 +77,7 @@ There are any locations where service type and version infromation may be captur
 > **{From data.govt.au}** -
 {Discussion of issue}
 
-## Crosswalk considerations 
+## Crosswalk Considerations 
 
 #### ISO19139 
 {Discussion of issues, if any, to guide migration from ISO19139}
