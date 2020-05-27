@@ -32,7 +32,7 @@ title: Spatial Representation Type
 
 #### Possible Values for *spatialRepresentationType*
 
-From codelist - *[MD_SpatialRepresentationTypeCode](http://wiki.esipfed.org/index.php/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_SpatialRepresentationTypeCode)(*)
+From codelist - *[MD_SpatialRepresentationTypeCode](http://wiki.esipfed.org/index.php/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_SpatialRepresentationTypeCode)*
 
 - *vector -* vector data is used to represent geographic data
 - *grid -* grid data is used to represent geographic data
