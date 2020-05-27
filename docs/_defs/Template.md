@@ -9,17 +9,19 @@ title: Template
 {stars indicate level of ICSM importance / priority}
 
 *{A brief description about the problem this element addresses - why we need it. Where it sits in the metadata hierarchy.}*
+|  |  |
+| --- | --- |
+| **Element Name** | *serviceTypeVersion* |
+| **Parent** |  *[MD_Metadata.identificationInfo>SV_ServiceIdentification](./ServiceIdentification)* |
+| **Class/Type** | *characterString* |
+| **Governance** |  *Domain, Agency* |
+| **Purpose** | *Discovery, Evaluation, Use* |
+| **Audience** |- machine resource - ⭑ ⭑ |
+|  | general - ⭑ ⭑ ⭑|
+|  | resource manager - ⭑ ⭑ ⭑|
+|  | specialist - ⭑ ⭑ ⭑ |
+| **Metadata type** | *descriptive* |
 
-- **Path** -  *{XML path to the element}*
-- **Governance** -  *{who makes decisions about how this element is populated. Possible values: ISO, Common ICSM, Domain, Agency}*
-- **Purpose -** *{The type of use the element  is intended to aid. Values: Discovery, Evaluation, Use, Management)*
-- **Audience -** {How important is this to these classes of users}
-  - machine resource - ⭑ ⭑ ⭑ ⭑
-  - general - ⭑⭑
-  - resource manager - ⭑ ⭑ ⭑⭑
-  - specialist - ⭑⭑
-- **Metadata type -** *{descriptive, sturctural, or administrative}*
-- *ICSM Level of Agreement* - ⭑⭑⭑ {5 star max. How close to consensus the MDWG is on the description of this item. Low number of stars usually indicates lack of process progress rather than disagreement.}
 
 ## Definition  
 **{In context definition}**
@@ -28,7 +30,19 @@ title: Template
 
 {Verbal description with links of the cardinality (e.g. [1-*]) and obligation of the element and its class}
 
-### ICSM Good Practice 
+## Discussion  
+{This section captures the thinking behind the use of this element. The following aspects in this order are considered:
+
+- Why this element is import?
+- What we need it for?
+- Who should capture this information? 
+- Whom is it useful to?
+- When should the information be captured? 
+- Where is it important, with what resource?}
+
+## ICSM Recommendations 
+
+{Therefore - Statement about what, why, who, when and how MDWG recommend this element be used}
 {A brief statement of MDWG guidance on use of this element}
 
 #### Recommended Sub-Elements 
@@ -41,17 +55,16 @@ title: Template
   - **{sub-elementName for above class} -** *(codelist - {name of codelist})* [{cardinality}] - {brief guidance statement} 
   - **{sub-elementName for above class} -** *(class - {name of class})* [{cardinality}] - {brief guidance statement} 
 
-## Discussion  
-{This section captures the thinking behind the use of this element. The following aspects in this order are considered:
+## Also Consider
+{Links to additional useful information. Usually other elements, packages and classes in this good pratice document. May also link to other external resources.}
 
-- Why this element is import?
-- What we need it for?
-- Who should capture this information? 
-- Whom is it useful to?
-- When should the information be captured? 
-- Where is it important, with what resource?}
+**[{element name} -]({path to element})**  {description of importance and utility with any links}
 
-### Outstanding Issues
+**[{element name} -]({path to element})**  {description of importance and utility with any links}
+
+**[{class name} -]({path to class})**  {description of importance and utility with any links}
+
+## Outstanding Issues
 {Unresolved issues of discussion are captured here in Markdown Notes format}
 
 > **CORE ISSUE:**  
@@ -70,12 +83,7 @@ title: Template
 > **{From data.govt.au}** -
 {Discussion of issue}
 
-
-## Recommendations 
-
-{Therefore - Statement about what, why, who, when and how MDWG recommend this element be used}
-
-### Crosswalk considerations 
+## Crosswalk considerations 
 
 #### ISO19139 
 {Discussion of issues, if any, to guide migration from ISO19139}
