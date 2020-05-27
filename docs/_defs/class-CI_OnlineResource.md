@@ -32,7 +32,7 @@ Most metadata contains information about resources that are avaliable online. In
 
 #### ICSM Recommended Sub Element for class CI_OnlineResource
 
-- **linkage -** (*type - charStr*) [1..1] location (address) for on-line access using a Uniform Resource Locator/Uniform Resource Identifier address or similar addressing scheme 
+- **linkage -** (*type - charStr*) [1..1] Mandatory for class - location (address) for on-line access using a Uniform Resource Locator/Uniform Resource Identifier address or similar addressing scheme 
 - **protocol -** *(type - charstr)* [0..1] recommended to document the connection type used.
 - **function -** *(codelist - CI_OnlineFunctionCode)* [0..1] (optional) code for function performed by the online resource. Options are:
   - downlaod -  online instructions for transferring data from one storage device or system to another
