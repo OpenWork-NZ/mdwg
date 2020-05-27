@@ -23,7 +23,7 @@ title: Metadata Info
 
 - **[resourceLineage -](./ResourceLineage)** *(class - Li_Lineage)* [0..\*]
 - **[referenceSystemInfo -](https://www.loomio.org/d/4SliNjWE/md_metadata-md_referencesystem-definition)** *(class - MD_ReferenceSystem)*
-- **metadataConstraints -** *( abstract class [MD_Constraints](./class-md_constraints))* [0..\*] see
+- **metadataConstraints -** *( abstract class [MD_Constraints](./class-MD_Constraints))* [0..\*] see
   - **[Metadata Security Constraints](./MetadataSecurityConstraints)**
   - **[Metadata Legal Constraints](./MetadataLegalConstraints)** 
   

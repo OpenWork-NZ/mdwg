@@ -29,7 +29,7 @@ title: Contains Operations
 
 ### ISO Requirements
 
-This is an ISO optional element. There may be zero or many [0..\*] *containsOperations* entries for the cited resource in the  *[SV_ServiceIdentification](./class-SV_ServiceIdentification)* package of class *SV_OperationMetadata*  in a metadata record for a service resource.
+This is an ISO optional element. There may be zero or many [0..\*] *containsOperations* entries for the cited resource in the  *[SV_ServiceIdentification](./ServiceIdentification)* package of class *SV_OperationMetadata*  in a metadata record for a service resource.
 
 ## Discussion  
 It is useful when documenting a service to document the particular operations that the service can be called upon to do.  As many of the services we may call will have operations that summarise the operations that the service provides it may be better to document this one service in order not to duplicate or cause confusion. GetCapabilities would be an example of this as would an OpenAPI endpoint as implemented in OGC API common based services.

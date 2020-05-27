@@ -25,7 +25,7 @@ title: Metadata For Services
       - Security Constraints
       - Reference For Security
 - [Metadata Standard](./MetadataStandard) To be fixed - missing element  
-- [Parent Metadata](./parentMetadata)  Needed for services?
+- [Parent Metadata](./ParentMetadata)  Needed for services?
 - [MetadataScope](./MetadataScope)  Resource Scope  
 
 ### General Identification Metadata
@@ -69,7 +69,7 @@ title: Metadata For Services
 
 ### Other Metadata Packages (To Review)
 
-- [Associated Resource](./AssociatedResource)   class - MD_AssociatedResource  - Needed    
+- [Associated Resource](./AssociatedResource)   class - MD_AssociatedResource  
 - [Format](./ResourceFormat) Needed?  
 - [BrowseGraphic](./BrowseGraphic)  Class - MD_BrowseGraphic  
 - [Keywords](./Keywords)  Package - MD_Keywords  
@@ -79,7 +79,7 @@ title: Metadata For Services
 - [Maintenance](./Maintenance) Package -  MD_MaintenanceInformation   
       - Frequency of update
       - scope for maintenance
-- [Resource Constraints](./class-md_constraints)   Do we need separate "Service Constraints"?
+- [Resource Constraints](./class-MD_Constraints)   Do we need separate "Service Constraints"?
       - Use Limitations
       - Legal
       - Reference for Legal
@@ -115,7 +115,7 @@ title: Metadata For Services
 - [Cited Responsible party (author, creator)](./ResourceResponsibleParty)
 - [Cited Responsible party (contributor)](./ResourceResponsibleParty)
 - [Cited Responsible party (publisher)](./ResourceResponsibleParty)
-- [OnlineResource](./class_CI_OnlineResource)
+- [OnlineResource](./class-CI_OnlineResource)
 
 ### Metadata for Data  MD_DataIdentification  - Needed? Or belong with MD_Identification? Or coupled resource metadata link?
 - Spatial Resolution Type  
@@ -133,9 +133,9 @@ title: Metadata For Services
 - [Geographic location:](./ResourceExtent) (MD_Metadata.identificationInfo > SV_ServiceIdentification.extent > EX_Extent.geographicElement > EX_GeographicExtent > EX_Geo- graphicBoundingBox –or- EX_GeographicDescription)
 - [Service topic category:](./TopicCategory)  (MD_Metadata.identificationInfo > SV_ServiceIdentification.topicCategory > MD_TopicCategoryCode)
 - [Resource abstract:](./Abstract)  (MD_Metadata.identificationInfo >SV_ServiceIdentification. abstract)
-- [On-line Link:](./class_CI_OnlineResource) (MD_Metadata.identificationInfo >SV_ServiceIdentification. citation>CI_Citation.onlineResource>CI_OnlineResource)
+- [On-line Link:](./class-CI_OnlineResource) (MD_Metadata.identificationInfo >SV_ServiceIdentification. citation>CI_Citation.onlineResource>CI_OnlineResource)
 - [Keywords:](./Keywords)  (MD_Metadata.identificationInfo >SV_ServiceIdentification>MD_Keywords)
-- [Constraints on access and use:](./class-md_constraints) (MD_Metadata>SV_ServiceIdentification>MD_Constraints.useLimita- tions and/or MD_LegalConstraints and or MD_SecurityConstraints)
+- [Constraints on access and use:](./class-MD_Constraints) (MD_Metadata>SV_ServiceIdentification>MD_Constraints.useLimita- tions and/or MD_LegalConstraints and or MD_SecurityConstraints)
 - [Metadata date stamp:](./MetadataDate) (MD_Metadata.dateInfo)
 - [Metadata point of contact:](./MetadataContact) (MD_Metadata.contact > CI_Responsibility)
 - [Resource type:](./MetadataScope) (MD_Metadata.metadataScope> MD_Scope.resourceScope)

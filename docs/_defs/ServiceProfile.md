@@ -54,7 +54,7 @@ There are any locations where service type and version infromation may be captur
 
 **[Service Type Version](./ServiceTypeVersion)** The version of the service.  Provided to enhance searchability based on the version of serviceType. Could be a shorthand handle like WMS 1.4.1
 
-**[Service Standard](./ServiceDataset)** When a service conforms to a particular service standard that standard to which the service adheres should be cited
+**[Service Standard](./ServiceStandard)** When a service conforms to a particular service standard that standard to which the service adheres should be cited
 
 **[Keywords (services)-](./Keywords)**  To enable ease of discovery, a service metadata record should contain at least one keyword of type *service*. The value of such keywords should refer to the service taxonomy defined in ISO 19119.
 

@@ -38,7 +38,7 @@ When the service complies to a particular profile of a standard, it will suffice
 
 ## ICSM Recommendations 
 
-Therefore - When a service adheres to particular service standards such standards should be cited in this package. If a particular profile of such standard is implemented it is sufficient to document this in *[SV_ServiceIdentification.profile](./profile).* 
+Therefore - When a service adheres to particular service standards such standards should be cited in this package. If a particular profile of such standard is implemented it is sufficient to document this in *[SV_ServiceIdentification.profile](./ServiceProfile).* 
 
 #### Recommended Sub-Elements 
 Follow the guidance in *[CI_Citation](./class-CI_Citation)* noting the following element usage:

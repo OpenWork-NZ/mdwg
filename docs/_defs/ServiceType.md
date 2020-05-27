@@ -43,7 +43,7 @@ There are many locations where service type and version information may be captu
 
 **[Service Type Version](./ServiceTypeVersion)** The version of the service.  Provided to enhance searchability based on the version of serviceType. Could be a shorthand handle like WMS 1.4.1
 
-**[Service Standard](./ServiceDataset)** When a service conforms to a particular service standard that standard to which the service adheres should be cited
+**[Service Standard](./ServiceStandard)** When a service conforms to a particular service standard that standard to which the service adheres should be cited
 
 **[Service Profile](./ServiceProfile)**  When a service conforms to a particular profile of a service standard, the profile to which the service adheres should be cited (instead of the Service Standard)
 

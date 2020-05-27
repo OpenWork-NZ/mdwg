@@ -117,7 +117,7 @@ Maps to *Subject*
 ## Also Consider
 
 - **[Keywords](./Keywords)** provides a more lengthy flexible system to attach keywords - including from custom thesari and free text.
-- **[Resource Scope](./ResourceScope)** holds keyword  identifying the type of resource, e.g. service, a collection, an application which the metadata describes
+- **[Metadata Scope](./MetadataScope)** holds keyword  identifying the type of resource, e.g. service, a collection, an application which the metadata describes
 - **[Spatial Representation Type](./SpatialRepresentationType)** holds keywords related to the spatial type of the resource, such as vector, grid, tin, etc.
 
 ## Examples

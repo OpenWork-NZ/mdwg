@@ -6,7 +6,7 @@ rank: 50
 title: MD_SecurityConstraints
 ---
 #  Class - MD_SecurityConstraints
-When constraints information *([MD_Constraints](./class-md_constraints))* concern security issues they should be captured using the class *MD_SecurityConstraints*.
+When constraints information *([MD_Constraints](./class-MD_Constraints))* concern security issues they should be captured using the class *MD_SecurityConstraints*.
 
 - **Governance** -  *ISO, Common, Agency*
 - **Metadata type -** *structural*
@@ -17,13 +17,13 @@ When constraints information *([MD_Constraints](./class-md_constraints))* concer
 
 ### ISO Associations
 
-The class, *MD_SecurityConstraints* is an specialisation of [MD_Constraints](./class-md_constraints). Follow the guidance provided for that class plus the following additional guidance.
+The class, *MD_SecurityConstraints* is an specialisation of [MD_Constraints](./class-MD_Constraints). Follow the guidance provided for that class plus the following additional guidance.
 
 ### Attributes -
 
-*MD_SecurityConstraints* has all the attributes of [MD_Constraints](./class-md_constraints) plus the following:
+*MD_SecurityConstraints* has all the attributes of [MD_Constraints](./class-MD_Constraints) plus the following:
 
-- **classification -** *(codelist - [MD_RestrictionCode](./class-md_constraints#MD_RestrictionCode---codelist))* [0..\*] Mandatory when using `MD_SecurityConstraints` - the name of the handling restrictions on the resource or metadata
+- **classification -** *(codelist - [MD_RestrictionCode](./class-MD_Constraints#MD_RestrictionCode---codelist))* [0..\*] Mandatory when using `MD_SecurityConstraints` - the name of the handling restrictions on the resource or metadata
 - **userNote -** *(type - charStr)* [0..1] explanation of the application of the legal constraints or other restrictions and legal prerequisites for obtaining and using the resource or metadata
 - **classificationSystem -** *(type - charStr)* [0..1]  name of the classification system
 - **handlingDescription -** *(type - charStr)* [0..1]  additional information about the restrictions on handling the resource or metadata
@@ -54,11 +54,11 @@ At a minimum the Name (primary and alternate) and version by which this security
 
 #### ISO19139
 
-See guidance provided in [MD_Constraints](./class-md_constraints) 
+See guidance provided in [MD_Constraints](./class-MD_Constraints) 
 
 ## Related Classes
 
-- **[MD_Constraints](./class-md_constraints)** the Superclass to `MD_LegalConstraints`. `MD_LegalConstraints` implements all the properties of `MD_Constraints`.  Full guidance of the associated elements are discussed there.
+- **[MD_Constraints](./class-MD_Constraints)** the Superclass to `MD_LegalConstraints`. `MD_LegalConstraints` implements all the properties of `MD_Constraints`.  Full guidance of the associated elements are discussed there.
 - **[MD_LegalConstraints](./class-MD_LegalConstraints)** A sibling to `MD_SecurityConstraints` and an extension to `MD_Constraints` for constraints applied for legal purposes.
 
 ### UML diagrams

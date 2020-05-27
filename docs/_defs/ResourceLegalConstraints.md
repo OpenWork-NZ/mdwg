@@ -7,7 +7,7 @@ title: Resource Legal Constraints
 ---
 # Resource Legal Constraints ★★★★★
 
-*When constraints ([MD_Constraints](./class-md_constraints.html)) on a spatial resource [MD_Identification](http://wiki.esipfed.org/index.php/MD_Identification)  are of a legal nature it is important to document these.. Potential users need to be informed of rights, restrictions and responsibilities (or lack thereof) that apply to the use of such resources.*
+*When constraints ([MD_Constraints](./class-MD_Constraints.html)) on a spatial resource [MD_Identification](http://wiki.esipfed.org/index.php/MD_Identification)  are of a legal nature it is important to document these.. Potential users need to be informed of rights, restrictions and responsibilities (or lack thereof) that apply to the use of such resources.*
 
 - **Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.resourceConstraints>MD_LegalConstraints*
 - **Governance** - *Agency*
@@ -67,7 +67,7 @@ Therefore - It is important to capture all legal constraints that apply to a spa
 
 #### ISO19139
 
-See guidance provided in [MD_Constraints](./class-md_constraints) and [MD_LegalConstraints](./class-MD_LegalConstraints)
+See guidance provided in [MD_Constraints](./class-MD_Constraints) and [MD_LegalConstraints](./class-MD_LegalConstraints)
 
 #### Dublin core / CKAN / data.gov.au
 

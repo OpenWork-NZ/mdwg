@@ -70,7 +70,7 @@ Mapping geographic extents to CKAN and Dublin core elements, particularly as use
 ## Also Consider
 
 - **[EX_Extent](./ResourceExtent)** The class that contains all extent information about the cited resource - vertical, geographical or temporal.
-- **[EX_GeographicExtents](./ExtentGeographic)** is an abstract class and the parent of **EX_GeographicDescription**
+- **[EX_GeographicExtents](./GeographicExtent)** is an abstract class and the parent of **EX_GeographicDescription**
 - **[EX_GeographicBoundingBox -](./ExtentBoundingBox)**  a sibling to this element.
 - **EX_BoundingPolygon**  While very useful, particularly in describing irregular areas, this element is not described by the MDWG as a recommended element due to the difficult that many systems have in implementing it.
 - **[EX_TemporalExtent](./TemporalExtents)** Contains temporal extent information for the cited resource

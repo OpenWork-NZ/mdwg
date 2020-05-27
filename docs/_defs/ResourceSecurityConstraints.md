@@ -6,7 +6,7 @@ rank: 70
 title: Resource Security Constraints
 ---
 # Resource Security Constraints ★★★★★
-*When constraints ([MD_Constraints](./class-md_constraints.html)) on a spatial resource [MD_Identification] concern security it is important to document these. Potential users need to be informed of the presence or absence of concerns about security that apply to the use of such resources.*
+*When constraints ([MD_Constraints](./class-MD_Constraints.html)) on a spatial resource [MD_Identification] concern security it is important to document these. Potential users need to be informed of the presence or absence of concerns about security that apply to the use of such resources.*
 
 - **Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.resourceConstraints>MD_SecurityConstraints*
 - **Governance** - *National, Agency*
@@ -37,7 +37,7 @@ title: Resource Security Constraints
 - **userNote -** *(type - charstr)*  0 to 1 - explanation of the application of the legal constraints or other restrictions and legal prerequisites for obtaining and using the resource or metadata. Use when needed
 - **classificationSystem -** *(type - charstr)*  0 to 1 - name of the classification system. Use when needed
 - **handlingDescription -** *(type - charstr)*  0 to 1 - additional information about the restrictions on handling the resource or metadata. Use when needed
-- See guidance provided in [MD_Constraints](./class-md_constraints) for the following elements:
+- See guidance provided in [MD_Constraints](./class-MD_Constraints) for the following elements:
   - **reference -** *(class - [CI_Citation](./class-CI_Citation))* [0..\*] can be used to cite the Protective Security Policy Framework
   - **releasability -** *(class - [MD_Releasability](http://wiki.esipfed.org/index.php/MD_Releasability))* [0..\*] use when some parties have special considerations for use or access of the cited resource
   - **responsibleParty -** *(class [CI_Responsibility](./class-CI_Responsibility))* [0..\*] contact information for those responsible for managing the security of the cited resource.
@@ -66,7 +66,7 @@ At a minimum the name (primary and alternate) and version by which this security
 
 #### ISO19139
 
-See guidance provided in [MD_Constraints](./class-md_constraints)
+See guidance provided in [MD_Constraints](./class-MD_Constraints)
 
 #### RIF-CS
 
@@ -78,7 +78,7 @@ Maps to the agregate `Rights/@accessRights`
 
 - **[Metadata Security Constraints](./MetadataSecurityConstraints)** contains security restriction information that apply to the metadata that cites the resource.
 - **[Resource Legal Constraints](./ResourceLegalConstraints)**  A sibling to resource security constraints. Contains information regarding any legal restriction on the use or access of the resource.
-- **[Other Constraints ](./class-md_constraints)**  other constraints that apply to the access and use of a cited resource
+- **[Other Constraints ](./class-MD_Constraints)**  other constraints that apply to the access and use of a cited resource
 
 ## Examples
 

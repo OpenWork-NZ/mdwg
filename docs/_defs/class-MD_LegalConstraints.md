@@ -6,7 +6,7 @@ rank: 50
 title: MD_LegalConstraints
 ---
 #  Class - MD_LegalConstraints
-*When constraint ([MD_Constraints](./class-md_constraints)) are of a legal nature they should be captured using the class **MD_LegalConstrints**.*
+*When constraint ([MD_Constraints](./class-MD_Constraints)) are of a legal nature they should be captured using the class **MD_LegalConstrints**.*
 
 - **Governance** -  *ISO*
 - **Metadata type -** *structural*
@@ -17,7 +17,7 @@ title: MD_LegalConstraints
 
 ### ISO Associations
 
-The class, *MD_LegalConstraints* is an specialisation of *[MD_Constraints](./class-md_constraints)*. Follow the guidance provided for that class plus the following additional guidance.
+The class, *MD_LegalConstraints* is an specialisation of *[MD_Constraints](./class-MD_Constraints)*. Follow the guidance provided for that class plus the following additional guidance.
 
 #### ISO Constraints
 
@@ -25,10 +25,10 @@ When `MD_LegalConstraints` is used the at least one of the elements  `accessCons
 
 #### Attributes
 
-Has all the attributes of [MD_Constraints](./class-md_constraints) plus the following:
+Has all the attributes of [MD_Constraints](./class-MD_Constraints) plus the following:
 
-- **accessConstraints -** *(codelist - [MD_RestrictionCode](./class-md_constraints#MD_RestrictionCode---codelist))* [0..\*] access constraints applied to assure the protection of privacy or intellectual property, and any special restrictions or limitations on obtaining the resource or metadata
-- **useConstraints -** *(codelist - [MD_RestrictionCode](./class-md_constraints#MD_RestrictionCode---codelist))* [0..\*] constraints applied to assure the protection of privacy or intellectual property, and any special restrictions or limitations or warnings on using the resource or metadata
+- **accessConstraints -** *(codelist - [MD_RestrictionCode](./class-MD_Constraints#MD_RestrictionCode---codelist))* [0..\*] access constraints applied to assure the protection of privacy or intellectual property, and any special restrictions or limitations on obtaining the resource or metadata
+- **useConstraints -** *(codelist - [MD_RestrictionCode](./class-MD_Constraints#MD_RestrictionCode---codelist))* [0..\*] constraints applied to assure the protection of privacy or intellectual property, and any special restrictions or limitations or warnings on using the resource or metadata
 - **otherConstraints -** *(type - charStr)* [0..\*]  other restrictions and legal prerequisites for accessing and using the resource or metadata
 
 
@@ -58,11 +58,11 @@ Therefore - It is important to capture all legal constraints that apply to a res
 
 #### ISO19139
 
-See guidance provided in [MD_Constraints](./class-md_constraints) 
+See guidance provided in [MD_Constraints](./class-MD_Constraints) 
 
 ## Related Classes
 
-- **[MD_Constraints](./class-md_constraints)** the Superclass to `MD_LegalConstraints`. `MD_LegalConstraints` implements all the properties of `MD_Constraints`.  Full guidance of the associated elements are discussed there.
+- **[MD_Constraints](./class-MD_Constraints)** the Superclass to `MD_LegalConstraints`. `MD_LegalConstraints` implements all the properties of `MD_Constraints`.  Full guidance of the associated elements are discussed there.
 - **[MD_SecurityConstraints](path)** A sibling to `MD_LegalConstraints` and an extension to `MD_Constraints` for constraints applied for security purposes.
 
 ### UML diagrams

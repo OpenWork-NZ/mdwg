@@ -67,7 +67,7 @@ Therefore - in order to provide a quick way for users to discover and identify t
 #### ISO19139 
 
 **browseGraphic** is a new package in iso19115-1. New elements include:
-- **MD_BrowseGraphic.imageConstraint** *(class - [MD_Constraints](./class-md_constraints))
+- **MD_BrowseGraphic.imageConstraint** *(class - [MD_Constraints](./class-MD_Constraints))
   - This new element was added in order to allow the specification of constraints on a browse graphic associated with a resource.
 - **MD_BrowseGraphic.linkage** *(class - [CI_OnlineResource](./class-CI_OnlineResource))
   - This new element was added in order to allow a straightforward specification of the link to the browse graphic and the capability to add additionalinformation (name, description, …) about that graphic.

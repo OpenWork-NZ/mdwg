@@ -44,14 +44,14 @@ The following provides additional guidance to [MD_Identification](./class-MD_Ide
 - **[purpose -](./Purpose)** *(type - charStr))* [0..1] - A brief summary of the intentions with which the data resource was develope
 - **[status -](./Status)** *(codelist - [MD_ProgressCode](http://wiki.esipfed.org/index.php/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_ProgressCode))* [0..1] - The status of the data resource populated from a domain of values
 - **[topicCategory -](./TopicCategory)** *(enumeration - [MD_TopicCategoryCode](http://wiki.esipfed.org/index.php/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_TopicCategoryCode))* [0..\*] - The main themes of the data resource populated from a fixed domain of values
-- **[pointOfContact -](./PointOfContact)** *(class -  [CI_Responsibility](./class-CI_Responsibility))* [0..1] - The name and contact information for the organisation, role and/or individual that serves as the point of contact for the cited data resource.
+- **[pointOfContact -](./ResourcePointOfContact)** *(class -  [CI_Responsibility](./class-CI_Responsibility))* [0..1] - The name and contact information for the organisation, role and/or individual that serves as the point of contact for the cited data resource.
 - **[spatialRepresentationType -](./SpatialRepresentationType)** *(codelist - MD_SpatialRepresentationTypeCode)* [0..\*] - The method used by the data resource to spatially represent geographic information.
 - **[spatialResolution -](./SpatialResolution)** *(class - MD_Resolution)* [0..\*] - The nominal scale and/or spatial resolution at which the information is designed to be used.
-- **[graphicOverview -](./GraphicOverview)** *(class - MD_BrowseGraphic)* [0..\*] - A graphic that provides an lightweight illustration pertaining a data resource
+- **[graphicOverview -](./BrowseGraphic)** *(class - MD_BrowseGraphic)* [0..\*] - A graphic that provides an lightweight illustration pertaining a data resource
 - **[additionalDocumentation](./AdditionalDocs) -**  *(class - [CI_Citation](./class-CI_Citation))* [0..\*] - Citation of other documentation associated with the data resource, e.g. related articles, publications, user guides, data dictionaries.
 - **[associatedResource](./AssociatedResources) -**  *(class - [MD AssociatedResource](http://wiki.esipfed.org/index.php/MD_AssociatedResource))* [0..\*] - Used to indicate association between resources and records related to the data resources
 - **[referenceSystemInfo -](https://www.loomio.org/d/4SliNjWE/md_metadata-md_referencesystem-definition)** *(class - MD_ReferenceSystem)*
-- **resourceConstraints -** *( abstract class [MD_Constraints](./class-md_constraints))* [0..\*] see
+- **resourceConstraints -** *( abstract class [MD_Constraints](./class-MD_Constraints))* [0..\*] see
 - **[Resource Security Constraints](./ResourceSecurityConstraints)**
 - **[Recource Legal Constraints](./ResourceLegalConstraints)** 
 - **[Recource Other Constraints](./ResourceOtherConstraints)** 
