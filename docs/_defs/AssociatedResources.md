@@ -46,7 +46,7 @@ title: Associated Resource
 
 ## Discussion  
 
-When important aspects or information about a spatial resource are derived by the association of this resource to others, it is useful that these associations be documented in the metadata so as these can be captured and discovered.  Doing so provides important avenues for additional data discovery.  Some resources are indeed of little use unless combined with others of which they are a part. 
+When important aspects or information about a spatial resource are derived by the association of this resource to others of which it is part, it is useful that these associations be documented in the metadata so as these can be captured and discovered.  Doing so provides important avenues for additional data discovery.  Some resources are indeed of little use unless combined with others of which they are a part. 
 
 ### Outstanding Issues
 
