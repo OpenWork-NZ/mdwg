@@ -22,7 +22,7 @@ title: Spatial Reference System
 - *ICSM Level of Agreement* - ⭑⭑⭑
 
 ## Definition
-**The information about the reference system that define the system use to describe spatial position descriptions in a resource.**
+**The information about the reference systems that define the system use to describe spatial position descriptions in a resource.**
 
 ### ISO Obligation
 
@@ -30,7 +30,7 @@ title: Spatial Reference System
 
 ### ICSM Good Practice
 
-- There should be at least one instance of spatialReferenceInfo for every dataset that contains spatial information referenced to a datum.
+- There should be at least two instance of spatialReferenceInfo for every dataset that contains spatial information referenced to a datum. The first will provide reference to the spatial reference system used by the resource. The second will contain a **Coordinate Epoch**. This will be of *referenceSystemType* **Temporal** with a *description* of **Coordinate Epoch**. The value of the *code* will be the date of the the Coordinate Epoch in Decimal Year to least two places.
 
 #### Recommended Sub-Classes
 
@@ -88,11 +88,16 @@ In order to common understand of location in geospatial resource, standardised s
 
 To adequately describe a resource, there may be the need to include multiple SRS in the metadata. Usually, each of these would be of a different type (referenceSystemType).
 
+**Dynamic (Earth Centric) Datums**
+Real world coordinates do change over time due to movements of the Earth's crust. These changes are significant and need be accounted for when combining data from different time periods. For Australia continental drift accounts for up to 70mm per year or 1.8 metres over the past 26 years.
+When the SRS is Earth centered as is the case with WGS 84, in order to understand position relative to object catured in the same SRS but at a different date, the *Coordinate Epoch* (time of posisiton information capture) must be recorded. A method of capturing this information within the ISO 19115-1 standard is under development. A best practice way of doing so in the interim is as follows:
+* Create an additional Instance of *spatialReferenceInfo* of *referenceSystemType -* *temporal*. The Description should read *Coordinate Epoch*. The *code* value should be the year in decimal degrees of at least 2 decimal places for the value of the coordinate reference frame within which the data is captured. 
+    For instance, if the data is captured using a GNSS device, the Coordinate Epoch may be the date at which the Coordinates were captured dependent on the methodology used. If the data is digitised from imagery, the Coordinate Epoch would be the same as that of the source imagery. The user must take care to determine the true coordinate system of their source data or method  including its coordinate epoch.
 
 ### Outstanding Issues
 
-> **Dynamic (Earth Centric) Datums**
-When the SRS is Earth centered as is the case with WGS 84, in order to understand position relative to object catured in the same SRS but at a different date, the *Epoch* (time of posisiton information capture) must be recorded. A best practice way of doing so is under discussion. A full resolution of this problem will most likely require changes to the ISO19115-1 standard.
+> **Dynamic (Earth Centric) Datums** 
+The latest amendment to ISO 19115-1 includes support for Coordinate Epoch capture as a sibling element to *ReferenceSystemIdentifier*. This guidance will be updated accordingly following the publication and adoption of these modifications
 
 > **Authority**
 Authority has been indicated as a conditional field by ABARES and GA.  But little guidance exist on the use of this element in this context. Should authority be about the owner of the registry (e.g. EPSG) or the provider of the SRS (LINZ in the case of NZTM)?
@@ -103,9 +108,9 @@ This is a long and confusing list. Should we recommend a shortly one?
 
 ## Recommendations
 
-Therefore - To ensure the usability of your spatial resource, it is important to include the Spatial Reference System used by this resource in its metadata. Doing so will allow the proper use and analysis to occur.
+Therefore - To ensure the usability of your spatial resource, it is important to include the Spatial Reference System used by this resource in its metadata. Doing so will allow the proper use and analysis to occur. 
 
-At a minimum the reference system type, the code and the codespace must be captured. 
+At a minimum the reference system type, the code and the codespace must be captured. In addition the Coordinate Epoch should be captured so changes in coordinate positions due to movements in the earth's crust can be accounted for. Until ISO 19115-1 support the capture of Coordinate Epoch directly, the creation of a separate instance of MD_Reference system should be created of type *temporal* with the decimal year to at least to places of the coordinate epoch as *code* and "Coordinate Epoch - Horizontal" or "Coordinate Epoch - Vertical" as *description.
 
 To date the European Petroleum Survey Group (EPSG) holds the most complete and common register of SRS. It is recommended that this source be used as codespace (and authority?) for SRS information in the metadata.
 
