@@ -201,7 +201,7 @@ Note - change to service example
 ### UML diagrams
 Recommended elements highlighted in Yellow
 
-![ResourceCitation](../images/ResourceCitiationUML.png)
+![ResourceCitation](../images/ResourceCitationUML.png)
 
 </details>
 

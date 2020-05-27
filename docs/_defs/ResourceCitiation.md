@@ -195,7 +195,7 @@ Therefore - because many of the elements of MD_Identification.citation are manda
 ### UML diagrams
 Recommended elements highlighted in Yellow
 
-![ResourceCitation](../images/ResourceCitiationUML.png)
+![ResourceCitation](../images/ResourceCitationUML.png)
 
 </details>
 

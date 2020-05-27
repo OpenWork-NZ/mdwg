@@ -42,7 +42,7 @@ title: Table of Contents
   - [AssociatedResource](./AssociatedResources)
   - [Format](./ResourceFormat)
   - [Browse Graphic](./BrowseGraphic)
-  - Package - [Resource  Citation](./ResourceCitiation)
+  - Package - [Resource  Citation](./ResourceCitation)
     - [Resource Title](./ResourceTitle)
     - [Resource Identifier](./ResourceIdentifier)
     - [Resource Date](./ResourceDate)
