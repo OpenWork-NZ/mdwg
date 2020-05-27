@@ -36,10 +36,10 @@ title: Spatial Reference System
 
 * **referenceSystemType -** (*codelist - [MD_ReferenceSystemTypeCode](http://wiki.esipfed.org/index.php/ISO_19115-3_Codelists#MD_ReferenceSystemTypeCode)*) 0 to 1 - to describe the type of system used.
 * **referenceSystemIdentifier -** *(class - [MD_Identifier](./class-MD_Identifier))* mandatory - identifier, codespace and authority information for reference system
-  * *code -* (type - charStr) mandatory - alphanumeric value identifying an instance in the namespace, e.g. '4283', '4326'
-  * *codespace -* (type - charStr) strongly recommended - 	Identifier or namespace in which the code is valid, e.g. EPSG
+  * *code -* (type - charStr) mandatory - alphanumeric value identifying an instance in the namespace, e.g. '4283', '4326' . For Coordinate Epoch this code is the date in decimal year up to two decimal places
+  * *codespace -* (type - charStr) strongly recommended - Identifier or namespace in which the code is valid, e.g. EPSG
   * *version -* (type - charStr) optional - use if needed to distinguish a code
-  * *description -* (type - charStr) optional - Common language description of the reference system, e.g. 'WGS84 - World Geodetic System 1984, used in GPS', 'NZTM'
+  * *description -* (type - charStr) optional - Common language description of the reference system, e.g. 'WGS84 - World Geodetic System 1984, used in GPS', 'NZTM'. For Coodinate Epoch this value should be "Coordinate Epoch"
   * *authority -* (class - [CI_Citation](./class-CI_Citation)) optional (GA, ABARES - conditional?) - Information about the party responsible for the spatial or temporal reference system used in this cited resource.
 
 #### Related Codelists
