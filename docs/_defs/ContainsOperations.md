@@ -34,29 +34,30 @@ This is an ISO optional element. There may be zero or many [0..\*] *containsOper
 ## Discussion  
 It is useful when documenting a service to document the particular operations that the service can be called upon to do.  As many of the services we may call will have operations that summarise the operations that the service provides it may be better to document this one service in order not to duplicate or cause confusion. GetCapabilities would be an example of this as would an OpenAPI endpoint as implemented in OGC API common based services.
 
-
 ## ICSM Recommendations 
 
-Therefore - If a potential client of a service is to use such service, descriptions of the functionality and use of operations provided shoud be documented in metadata of a geospatial service. 
+Therefore - If a potential client of a service is to use such service once discovered, descriptions of the functionality and use of operations provided shoud be documented in metadata of a geospatial service. When there exists a an operation that details the operations available, such as *GetCapabilities* or an OpenAPI/Swagger endpoint, it is recommend that this operation be captured here. Further operations detailed by such a service need not be detailed here. At a minimum, the ICSM recommended subelemnts to be populated include *operationName*, *distributedComputingEnvironment*, *operationDescription*, *connectPoint*.
 
 ### Recommended Sub-Elements 
 
+- **operationName -** *(type - charStr)* [1..1] - Mandatory. A unique identifier within the service for this interface e.g. GetCapabilities, OpenAPI 
+- **distributedComputingPlatform -** *(codelist - DCPList)* [1..\*] - Mandatory by ISO 19115-1. Distributed computing platforms on which the operation has been implemented. Suggest use of *Web Services* as default valueas use of this element is not clearly described or agreed upon. 
+- **operationDescription -** *(type - charStr)* [0..1] - Highly recommended. Free text description of the intent of the operation and the results of the operation
+- **connectPoint -** *(class - [CI_OnlineResource](class-CI_OnlineResource)* [1..\*] - Mandatory. Handle for accessing the service interface. Usually a complete URL. Recommend that this be the full path to a *GetCapabilities* document. Recommended *connectPoint* sub-elements include for service operation:
+  - **linkage** - Mandatory for *(class - [CI_OnlineResource](class-CI_OnlineResource)*
+  - **protocol** - E.g. WFS, WFS, CSW
+  - **function** - Drawn from codelist - [CI_OnlineFunctionCode](./class-CI_OnlineResource). Use if appropriate values are available.
+- **[parameter -](./Parameter)** *(class - SV_Parameter)* [0..\*] - Recommended when parameters are needed for the operation. A description of the parameters that can be provided to the operation. 
 
-- **operationName -** *(type - charStr)* [1..1] - Mandatory. A unique identifier within the service for this interface e.g. GetCapabilities
-- **distributedComputingPlatform -** *(codelist - DCPList)* [1..\*] - Mandatory. Distributed computing platforms on which the operation has been implemented 
-- **operationDescription -** *(type - charStr)* [0..1] - Free text description of the intent of the operation and the results of the operation
-- **invocationName -** *(type - charStr)* [0..1] - The name used to invoke this interface within the context of the DCP. The name is identical for all DCPs.
-- **connectPoint -** *(class - [CI_OnlineResource](class-CI_OnlineResource)* [1..\*] - Mandatory. Handle for accessing the service interface. Usually a complete URL. 
-- **[parameter -](./Parameter)** *(class - SV_Parameter)* [0..\*] - A description of the parameters that can be provided to the operation. See **[parameter -](./Parameter)** for more information
-
-#### Other Sub-Elements
-- **dependsOn** - *(class - SV_OperationsMetadata)*  [0..\*] - Operations that must be completed immediately before current operation is invoked. When multiple, structured as a list for capturing alternate predecessor paths and sets for capturing parallel predecessor paths
+#### Other Optional Sub-Elements
+- **invocationName -** *(type - charStr)* [0..1] - The name used to invoke this interface within the context of the DCP. The name is identical for all DCPs. The mandatory elements *operationName* and *connectPoint* usually suffice thus making *invocationName* surperfluous in most cases
+- **dependsOn** - *(class - SV_OperationsMetadata)*  [0..\*] - Recommnded when there exists operations that must be completed immediately before current operation is invoked. When multiple, structured as a list for capturing alternate predecessor paths and sets for capturing parallel predecessor paths
 
 ### Related Codelists
 
 ####  DCPList - codelist
 
-There are 10 options to choose from in the Distributed Computing Platform code list (DCPList). At least one must be chosen when describing a service operation. These are as follows:
+There are 10 options to choose from in the Distributed Computing Platform code list (DCPList). At least one must be chosen when describing a service operation. As the use of this codelist has not been agreed upon, current ICSM guidance is to use *webService* as default value unless there is clear reason otherwise. Available values are as follows:
 
 * **XML** - eXtensible Markup Language
 * **CORBA** - Common Object Request Broker Architecture
@@ -67,50 +68,39 @@ There are 10 options to choose from in the Distributed Computing Platform code l
 * **Z3950** - ISO 23950, an international standard client–server, application layer communications protocol for searching and retrieving information from a database over a TCP/IP computer network.
 * **HTTP** - HyperText Transfer Protocol
 * **FTP** - File Transfer Protocol
-* **webServices** - any web based services
+* **webServices** - **Default** - any web based services
 
 
 ## Outstanding Issues
-{Unresolved issues of discussion are captured here in Markdown Notes format}
 
-> **CORE ISSUE:**  
-{If there is any major issue of concern, Name it and discuss here}
-
-> **{Issue Name}**
-{Issue discussion points and items which need resolution}
+> **Distributed Computing Platform Codelist**
+The mandatory selection of DCPList values presents some some area for disagreement and varied implementation. The values available and guidance of their use and purpose is lacking. 
 
 
 #### Other Discussion 
 {from other sources of note - other standards and implementations. In Markdown Notes format. Such as:}
 
-> **{DCAT Notes}** -
-{Discussion of issue}
-
-> **{From data.govt.au}** -
-{Discussion of issue}
+> **OGC API Notes** -
+The `containsOperations' equivalent in OGC API Records (under development) will likely describe the operations available on a single path. A Path Item MAY be empty, due to ACL constraints. The path itself is still exposed to the documentation viewer but they will not know which operations and parameters are available.
 
 ## Crosswalk considerations 
 
-#### ISO19139 
-{Discussion of issues, if any, to guide migration from ISO19139}
+#### ISO 19119/19139 
+None Known
 
-#### Dublin core / CKAN / data.gov.au {if any}
-{mapping to `DC element` and discussion}
+#### Dublin core / CKAN / data.gov.au 
+None Known
 
 #### DCAT 
-{mapping to `DCAT element` and discussion, if any}
+*operationDiscription* maps to *dcat:endpointDescription*
+*connectPoint* maps to *dcat:endpointURL*
 
 #### RIF-CS
-{mapping to `RIF-CS element` and discussion, if any}
+*connectPoint* maps to *Location/Electronic/@type='url'*
 
 ## Also Consider
-{Links to additional useful information. Usually other elements, packages and classes in this good pratice document. May also link to other external resources.}
 
-**[{element name} -]({path to element})**  {description of importance and utility with any links}
-
-**[{element name} -]({path to element})**  {description of importance and utility with any links}
-
-**[{class name} -]({path to class})**  {description of importance and utility with any links}
+**[Coupled Resource -](./CoupledResource)**  Present an option to connect a coupled resource to a particular operation.
 
 ## Examples
 
@@ -128,15 +118,54 @@ There are 10 options to choose from in the Distributed Computing Platform code l
 ```
 <mdb:MD_Metadata>
 ....
-  {<in context xml/>}
+  <mdb:identificationInfo>
+      <srv:SV_ServiceIdentification>
+      ....
+         <srv:containsOperations>
+             <srv:SV_OperationMetadata>
+                <srv:operationName>
+                   <gco:CharacterString>GetCapabilities</gco:CharacterString>
+                </srv:operationName>
+                <srv:distributedComputingPlatform>
+                   <srv:DCPList codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#DCPList"
+                                codeListValue="WebServices"/>
+                </srv:distributedComputingPlatform>
+                <srv:operationDescription>
+                   <gco:CharacterString>Description of available operations</gco:CharacterString>
+                </srv:operationDescription>
+                <srv:connectPoint>
+                   <cit:CI_OnlineResource>
+                      <cit:linkage>
+                         <gco:CharacterString>https://my.webite.io/cgi-bin/wfs?SERVICE=WFS&amp;VERSION=1.0.0&amp;REQUEST=GetCapabilities</gco:CharacterString>
+                      </cit:linkage>
+                      <cit:protocol>
+                         <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                      </cit:protocol>
+                      <cit:name gco:nilReason="missing">
+                         <gco:CharacterString/>
+                      </cit:name>
+                      <cit:description gco:nilReason="missing">
+                         <gco:CharacterString/>
+                      </cit:description>
+                      <cit:function>
+                         <cit:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_OnLineFunctionCode"
+                                                    codeListValue=""/>
+                      </cit:function>
+                   </cit:CI_OnlineResource>
+                </srv:connectPoint>
+             </srv:SV_OperationMetadata>
+          </srv:containsOperations>
+        ....    
+      </srv:SV_ServiceIdentification>
+  </mdb:identificationInfo>
 ....
 </mdb:MD_Metadata>
 ```
 
 ### UML diagrams
-{Captured from official ISO documentation at https://www.isotc211.org/hmmg/HTML/ConceptualModels/index.htm?goto=1:12:2:4095}
+
 Recommended elements highlighted in Yellow
 
-![{Name}]({path to UML diagram image})
+![Contains Operation](../images/ContainsOperation.png)
 
 \pagebreak
