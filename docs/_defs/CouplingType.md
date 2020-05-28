@@ -111,7 +111,28 @@ From codelist - *[SV_CouplingType](https://github.com/ISO-TC211/schemas/blob/mas
 ```
 <mdb:MD_Metadata>
 ....
-  {<in context xml/>}
+  <mdb:identificationInfo>
+     <srv:SV_ServiceIdentification>
+        <mri:citation>
+        ...
+        </mri:citation>
+        <mri:abstract/>
+        <srv:serviceType>
+           <gco:ScopedName>view</gco:ScopedName>
+        </srv:serviceType>
+        <srv:couplingType>
+           <srv:SV_CouplingType codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#SV_CouplingType"
+                                codeListValue="tight"/>
+        </srv:couplingType>
+        <srv:coupledResource>
+          ....
+           </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:containsOperations>
+        ....
+        </srv:containsOperations>
+     </srv:SV_ServiceIdentification>
+  </mdb:identificationInfo>
 ....
 </mdb:MD_Metadata>
 ```

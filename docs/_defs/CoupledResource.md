@@ -55,7 +55,9 @@ ICSM recommends population of *SV_CoupledResources* sub-elements as follows:
 - **scopedName** *(type - scopedName)* [0..1] Scoped identifier of the resource in the context of the given service instance. This ScopedName is the name of the resources as it is used by a service instance (e.g. feature type name in a WFS or layer name in a WMS).
 - **resourceReference -** *(class - [CI_Citation](./class-CI_Citation))* [0..\*] reference to the resource on which the service operates. Recommended *CI_Citation* elements to include:
   - **title -** (type - charStr)*[1..1] Mandatory - the name by which the cited data resource is known as described in its metadata. May be different than the scoped name
-  - **onlineResource -**  *(class -  [CI_OnlineResource](./class-CI_OnlineResource))* [0..\*] Highly Recommended. The online reference to the cited resource metadata (or landing page)
+  - **onlineResource -**  *(class -  [CI_OnlineResource](./class-CI_OnlineResource))* [0..\*] Highly Recommended. The online reference to the cited resource metadata (or landing page). Recommended *CI_OnlineResource* sub-elements include:
+    - **linkage** - Mandatory for *(class - [CI_OnlineResource](class-CI_OnlineResource)*). A URL link to the metadata for the data resource.
+    - **description** - E.g. "Metadata for dataset in OWL GeoNetwork Catalogue"
 
 ## Also Consider
 There are numerous alternate ways to document related dataset to a service. We recommend *coupledDataset* in line with ISO 19115-1 advice in section F.2 *Metadata for the discovery of non-service geographic resources*. Here we list some of the alternatives and why we do not recommnd them. 
@@ -71,7 +73,6 @@ There are numerous alternate ways to document related dataset to a service. We r
 There are numerous ways the related data resource may be captured in a service metadata record (e.g. *operatesOn*, *operatedDataset*, or even a sibling *MD_DataIdentification* package. The choice of *coupledResource* is made for the following reasons. ISO 19115-1 recommends *coupledResource* as minimum metadata required for the discovery of service resources. The options *operatesOn*, *SV_CoupledResource.resource* and a sibling *identificationInfo/MD_DataIdentification* all require a *MD_Identifier* package. This would create metadata records that identify more than one resource. ICSM guidance is that such a situation be avoided as it could confuse other catalogues that expect a one-to-one relationship between metadata resources and resources.
 
 #### Other Discussion 
-{from other sources of note - other standards and implementations. In Markdown Notes format. Such as:}
 
 > **{DCAT Notes}** -
 {Discussion of issue}
@@ -81,17 +82,17 @@ There are numerous ways the related data resource may be captured in a service m
 
 ## Crosswalk considerations 
 
-#### ISO19139 
-{Discussion of issues, if any, to guide migration from ISO19139}
+#### ISO19139/19119 
+The element **SV_CoupledResource.identifier** was removed and the element **SV_CoupledResource. resourceReference** and **role SV_ CoupledResource.resource** were added to replace the dashed lines of ISO 19119, it enables implementation by reference an existing operationMetadata instance. The element **SV_CoupledResource.scoped Name** came from CSW ISO AP to identify the dataset in the context of the operation, for example, name of the layer for a WMS.
 
-#### Dublin core / CKAN / data.gov.au {if any}
-{mapping to `DC element` and discussion}
+#### Dublin core / CKAN / data.gov.au 
+None known
 
 #### DCAT 
-{mapping to `DCAT element` and discussion, if any}
+None known
 
 #### RIF-CS
-{mapping to `RIF-CS element` and discussion, if any}
+None known
 
 
 ## Examples
@@ -110,15 +111,68 @@ There are numerous ways the related data resource may be captured in a service m
 ```
 <mdb:MD_Metadata>
 ....
-  {<in context xml/>}
+  <mdb:identificationInfo>
+     <srv:SV_ServiceIdentification>
+        <mri:citation>
+           <cit:CI_Citation>
+           ....
+           </cit:CI_Citation>
+        </mri:citation>
+        <mri:abstract/>
+        <srv:serviceType>
+           <gco:ScopedName>view</gco:ScopedName>
+        </srv:serviceType>
+        <srv:couplingType>
+           <srv:SV_CouplingType codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#SV_CouplingType"
+                                codeListValue="tight"/>
+        </srv:couplingType>
+        <srv:coupledResource>
+           <srv:SV_CoupledResource>
+              <srv:scopedName>
+                 <gco:ScopedName>MyLayerName</gco:ScopedName>
+              </srv:scopedName>
+              <srv:resourceReference>
+                 <cit:CI_Citation>
+                    <cit:title>
+                       <gco:CharacterString>MyDataSet</gco:CharacterString>
+                    </cit:title>
+                    <cit:onlineResource>
+                       <cit:CI_OnlineResource>
+                          <cit:linkage>
+                             <gco:CharacterString>https://dev.geodata.nz/geonetwork/srv/eng/catalog.search#/metadata/4c0a67e1-04ce-e2d8-57d8-33f8e063aaf0</gco:CharacterString>
+                          </cit:linkage>
+                          <cit:protocol gco:nilReason="missing">
+                             <gco:CharacterString/>
+                          </cit:protocol>
+                          <cit:name gco:nilReason="missing">
+                             <gco:CharacterString/>
+                          </cit:name>
+                          <cit:description>
+                             <gco:CharacterString>Metadata for dataset in OWL GeoNetwork Catalogue</gco:CharacterString>
+                          </cit:description>
+                          <cit:function>
+                             <cit:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_OnLineFunctionCode"
+                                                        codeListValue=""/>
+                          </cit:function>
+                       </cit:CI_OnlineResource>
+                    </cit:onlineResource>
+                 </cit:CI_Citation>
+              </srv:resourceReference>
+           </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:containsOperations>
+        ....
+        </srv:containsOperations>
+     </srv:SV_ServiceIdentification>
+  </mdb:identificationInfo>
 ....
 </mdb:MD_Metadata>
 ```
 
 ### UML diagrams
-{Captured from official ISO documentation at https://www.isotc211.org/hmmg/HTML/ConceptualModels/index.htm?goto=1:12:2:4095}
+
 Recommended elements highlighted in Yellow
 
-![{Name}]({path to UML diagram image})
+![Coupled Resource](../images/CoupledResource.png)
 
 \pagebreak
