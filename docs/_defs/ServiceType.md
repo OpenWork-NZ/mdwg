@@ -57,23 +57,14 @@ There is an apparrent incongruity in the definition of ServiceType and ServiceTy
 > **Managed vocabulary for Service Type**
 More clarity on the use of this mandatory service metadata element is needed and being sought. An ICSM agreed upon controlled vocabulary of acceptable values would improve the usability of this field. Until then, agreement of use should be sought at the domain level. It is yet to be decided who at a higher level should host such a service and what values it should contain.
 
-#### Other Discussion 
-{from other sources of note - other standards and implementations. In Markdown Notes format. Such as:}
-
-> **{DCAT Notes}** -
-{Discussion of issue}
-
-> **{From data.govt.au}** -
-{Discussion of issue}
-
 
 ## Crosswalk Considerations 
 
-#### ISO19139 
-{Discussion of issues, if any, to guide migration from ISO19139}
+#### ISO 19139/19119
+None known
 
-#### Dublin core / CKAN / data.gov.au {if any}
-{mapping to `DC element` and discussion}
+#### Dublin core / CKAN / data.gov.au 
+None known
 
 #### DCAT 
 Maps to dct:type 
@@ -98,15 +89,35 @@ Maps to dct:type
 ```
 <mdb:MD_Metadata>
 ....
-  {<in context xml/>}
+  <mdb:identificationInfo>
+   <srv:SV_ServiceIdentification>
+      <mri:citation>
+      ....
+      </mri:citation>
+      <mri:abstract/>
+      <srv:serviceType>
+         <gco:ScopedName>view</gco:ScopedName>
+      </srv:serviceType>
+      <srv:serviceTypeVersion>
+         <gco:CharacterString>WFS 2.0.0</gco:CharacterString>
+      </srv:serviceTypeVersion>
+      <srv:serviceTypeVersion>
+         <gco:CharacterString>WFS 1.1.0</gco:CharacterString>
+      </srv:serviceTypeVersion>
+      <srv:serviceTypeVersion>
+         <gco:CharacterString>WFS 1.0.0</gco:CharacterString>
+      </srv:serviceTypeVersion>
+      ....
+    </srv:SV_ServiceIdentification>
+    ....
+  </mdb:identificationInfo>
 ....
 </mdb:MD_Metadata>
 ```
 
 ### UML diagrams
-{Captured from official ISO documentation at https://www.isotc211.org/hmmg/HTML/ConceptualModels/index.htm?goto=1:12:2:4095}
 Recommended elements highlighted in Yellow
 
-![{Name}]({path to UML diagram image})
+![Service Type](../images/ServiceType.png)
 
 \pagebreak

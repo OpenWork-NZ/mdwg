@@ -77,8 +77,7 @@ There are 10 options to choose from in the Distributed Computing Platform code l
 The mandatory selection of DCPList values presents some some area for disagreement and varied implementation. The values available and guidance of their use and purpose is lacking. 
 
 
-#### Other Discussion 
-{from other sources of note - other standards and implementations. In Markdown Notes format. Such as:}
+#### Other Notes
 
 > **OGC API Notes** -
 The `containsOperations' equivalent in OGC API Records (under development) will likely describe the operations available on a single path. A Path Item MAY be empty, due to ACL constraints. The path itself is still exposed to the documentation viewer but they will not know which operations and parameters are available.
