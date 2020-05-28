@@ -141,6 +141,6 @@ From codelist - *[SV_CouplingType](https://github.com/ISO-TC211/schemas/blob/mas
 {Captured from official ISO documentation at https://www.isotc211.org/hmmg/HTML/ConceptualModels/index.htm?goto=1:12:2:4095}
 Recommended elements highlighted in Yellow
 
-![{Name}]({path to UML diagram image})
+![Coupling Type](../images/CouplingType)
 
 \pagebreak
