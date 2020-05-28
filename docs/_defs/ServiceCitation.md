@@ -74,125 +74,124 @@ Note - change to service example
 ```
 <mdb:MD_Metadata>
 ....
- <mdb:identificationInfo>
-    <mri:MD_DataIdentification>
-    ....
-       <mri:citation>
-          <cit:CI_Citation>
-             <cit:title>
-                <gco:CharacterString>OpenWork geographical service
-                </gco:CharacterString>
-             </cit:title>
-             <cit:date>
-                <cit:CI_Date>
-                   <cit:date>
-                      <gco:Date>2020-05-18</gco:Date>
-                   </cit:date>
-                   <cit:dateType>
-                      <cit:CI_DateTypeCode 
-                      codeList="https://schemas.isotc211.org/19115/resources
-                      /Codelist/cat/codelists.xml#CI_DateTypeCode" 
-                      codeListValue="creation"/>
-                   </cit:dateType>
-                </cit:CI_Date>
-             </cit:date>
-             <cit:date>
-                <cit:CI_Date>
-                   <cit:date>
-                      <gco:Date>2019-07-18</gco:Date>
-                   </cit:date>
-                   <cit:dateType>
-                      <cit:CI_DateTypeCode 
-                      codeList="https://schemas.isotc211.org/19115/resources
-                      /Codelist/cat/codelists.xml#CI_DateTypeCode" 
-                      codeListValue="publication"/>
-                   </cit:dateType>
-                </cit:CI_Date>
-             </cit:date>
-             <cit:edition>
-                <gco:CharacterString>Version 0.1</gco:CharacterString>
-             </cit:edition>
-             <cit:editionDate>
-                <gco:Date>2019-07-18</gco:Date>
-             </cit:editionDate>
-             <cit:identifier>
-                <mcc:MD_Identifier>
-                   <mcc:code>
-                      <gco:CharacterString>
-                      9547e07e-6a15-403b-8b19-488778fe0cf0
-                      </gco:CharacterString>
-                   </mcc:code>
-                   <mcc:codeSpace>
-                      <gco:CharacterString>
-                      http://202.49.243.69:8080/geonetwork/srv/eng/metadata/
-                      </gco:CharacterString>
-                   </mcc:codeSpace>
-                </mcc:MD_Identifier>
-             </cit:identifier>
-             <cit:citedResponsibleParty>
-                <cit:CI_Responsibility>
-                   <cit:role>
-                      <cit:CI_RoleCode 
-                      codeList="https://schemas.isotc211.org/19115/resources
-                      /Codelist/cat/codelists.xml#CI_RoleCode" 
-                      codeListValue="author"/>
-                   </cit:role>
-                   <cit:party>
-                      <cit:CI_Organisation>
-                         <cit:name>
-                            <gco:CharacterString>OpenWork Ltd
-                            </gco:CharacterString>
-                         </cit:name>
-                         <cit:contactInfo>
-                            <cit:CI_Contact>
-                               <cit:address>
-                                  <cit:CI_Address>
-                                     <cit:electronicMailAddress>
-                                        <gco:CharacterString>info@openwork.nz
-                                        </gco:CharacterString>
-                                     </cit:electronicMailAddress>
-                                  </cit:CI_Address>
-                               </cit:address>
-                            </cit:CI_Contact>
-                         </cit:contactInfo>
-                      </cit:CI_Organisation>
-                   </cit:party>
-                </cit:CI_Responsibility>
-             </cit:citedResponsibleParty>
-             <cit:citedResponsibleParty>
-                <cit:CI_Responsibility>
-                   <cit:role>
-                      <cit:CI_RoleCode 
-                      codeList="https://schemas.isotc211.org/19115/resources
-                      /Codelist/cat/codelists.xml#CI_RoleCode" 
-                      codeListValue="publisher"/>
-                   </cit:role>
-                   <cit:party>
-                      <cit:CI_Individual>
-                         <cit:name>
-                            <gco:CharacterString>Byron Cochrane
-                            </gco:CharacterString>
-                         </cit:name>
-                         <cit:contactInfo>
-                            <cit:CI_Contact>
-                               <cit:address>
-                                  <cit:CI_Address>
-                                     <cit:electronicMailAddress>
-                                        <gco:CharacterString>byron@openwork.nz
-                                        </gco:CharacterString>
-                                     </cit:electronicMailAddress>
-                                  </cit:CI_Address>
-                               </cit:address>
-                            </cit:CI_Contact>
-                         </cit:contactInfo>
-                      </cit:CI_Individual>
-                   </cit:party>
-                </cit:CI_Responsibility>
-             </cit:citedResponsibleParty>
-          </cit:CI_Citation>
-        </mri:citation>
-      ....
-    </mri:MD_DataIdentification>
+  <mdb:identificationInfo>
+      <srv:SV_ServiceIdentification>
+         <mri:citation>
+            <cit:CI_Citation>
+               <cit:title>
+                  <gco:CharacterString>Sample service metadata 2020-05-28</gco:CharacterString>
+               </cit:title>
+               <cit:date>
+                  <cit:CI_Date>
+                     <cit:date>
+                        <gco:DateTime>2019-09-01T00:00:00</gco:DateTime>
+                     </cit:date>
+                     <cit:dateType>
+                        <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode"
+                                             codeListValue="creation"/>
+                     </cit:dateType>
+                  </cit:CI_Date>
+               </cit:date>
+               <cit:date>
+                  <cit:CI_Date>
+                     <cit:date>
+                        <gco:DateTime>2019-12-01T00:00:00</gco:DateTime>
+                     </cit:date>
+                     <cit:dateType>
+                        <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode"
+                                             codeListValue="revision"/>
+                     </cit:dateType>
+                  </cit:CI_Date>
+               </cit:date>
+               <cit:edition>
+                  <gco:CharacterString>2nd Revision</gco:CharacterString>
+               </cit:edition>
+               <cit:editionDate>
+                  <gco:DateTime>2019-12-01T00:00:00</gco:DateTime>
+               </cit:editionDate>
+               <cit:identifier>
+                  <mcc:MD_Identifier>
+                     <mcc:code>
+                        <gcx:Anchor xlink:href="https://my.webite.io/cgi-bin/wfs-map-site" xlink:type="simple">https://my.webite.io/cgi-bin/wfs-map-site</gcx:Anchor>
+                     </mcc:code>
+                  </mcc:MD_Identifier>
+               </cit:identifier>
+               <cit:citedResponsibleParty>
+                  <cit:CI_Responsibility>
+                     <cit:role>
+                        <cit:CI_RoleCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode"
+                                         codeListValue="contributor"/>
+                     </cit:role>
+                     <cit:party>
+                        <cit:CI_Organisation>
+                           <cit:name>
+                              <gco:CharacterString>OpenWork Ltd</gco:CharacterString>
+                           </cit:name>
+                           <cit:contactInfo>
+                              <cit:CI_Contact>
+                                 <cit:address>
+                                    <cit:CI_Address>
+                                       <cit:electronicMailAddress>
+                                          <gco:CharacterString>info@openwork.nz</gco:CharacterString>
+                                       </cit:electronicMailAddress>
+                                    </cit:CI_Address>
+                                 </cit:address>
+                              </cit:CI_Contact>
+                           </cit:contactInfo>
+                        </cit:CI_Organisation>
+                     </cit:party>
+                  </cit:CI_Responsibility>
+               </cit:citedResponsibleParty>
+               <cit:citedResponsibleParty>
+                  <cit:CI_Responsibility>
+                     <cit:role>
+                        <cit:CI_RoleCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode"
+                                         codeListValue="publisher"/>
+                     </cit:role>
+                     <cit:party>
+                        <cit:CI_Organisation>
+                           <cit:name>
+                              <gco:CharacterString>ICSM MDWG</gco:CharacterString>
+                           </cit:name>
+                           <cit:contactInfo>
+                              <cit:CI_Contact>
+                                 <cit:address>
+                                    <cit:CI_Address>
+                                       <cit:electronicMailAddress>
+                                          <gco:CharacterString>mdwg@icsm-au.org</gco:CharacterString>
+                                       </cit:electronicMailAddress>
+                                    </cit:CI_Address>
+                                 </cit:address>
+                              </cit:CI_Contact>
+                           </cit:contactInfo>
+                        </cit:CI_Organisation>
+                     </cit:party>
+                  </cit:CI_Responsibility>
+               </cit:citedResponsibleParty>
+               <cit:onlineResource>
+                  <cit:CI_OnlineResource>
+                     <cit:linkage>
+                        <gco:CharacterString>https://my.webite.io/</gco:CharacterString>
+                     </cit:linkage>
+                     <cit:protocol gco:nilReason="missing">
+                        <gco:CharacterString/>
+                     </cit:protocol>
+                     <cit:name>
+                        <gco:CharacterString>OWL WFS Sample site</gco:CharacterString>
+                     </cit:name>
+                     <cit:description>
+                        <gco:CharacterString>Landing page for Spatial Service</gco:CharacterString>
+                     </cit:description>
+                     <cit:function>
+                        <cit:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_OnLineFunctionCode"
+                                                   codeListValue=""/>
+                     </cit:function>
+                  </cit:CI_OnlineResource>
+               </cit:onlineResource>
+            </cit:CI_Citation>
+         </mri:citation>
+         ....
+    </mri:SV_ServiceIdentification>
   </mdb:identificationInfo>
 ....
 </mdb:MD_Metadata>
