@@ -54,8 +54,8 @@ ICSM recommends population of *SV_CoupledResources* sub-elements as follows:
 
 - **scopedName** *(type - scopedName)* [0..1] Scoped identifier of the resource in the context of the given service instance. This ScopedName is the name of the resources as it is used by a service instance (e.g. feature type name in a WFS or layer name in a WMS).
 - **resourceReference -** *(class - [CI_Citation](./class-CI_Citation))* [0..\*] reference to the resource on which the service operates. Recommended *CI_Citation* elements to include:
-- **title -** (type - charStr)*[1..1] Mandatory - the name by which the cited data resource is known as described in its metadata. May be different than the scoped name
-- **onlineResource -**  *(class -  [CI_OnlineResource](./class-CI_OnlineResource))* [0..\*] Highly Recommended. The online reference to the cited resource metadata (or landing page)
+  - **title -** (type - charStr)*[1..1] Mandatory - the name by which the cited data resource is known as described in its metadata. May be different than the scoped name
+  - **onlineResource -**  *(class -  [CI_OnlineResource](./class-CI_OnlineResource))* [0..\*] Highly Recommended. The online reference to the cited resource metadata (or landing page)
 
 ## Also Consider
 There are numerous alternate ways to document related dataset to a service. We recommend *coupledDataset* in line with ISO 19115-1 advice in section F.2 *Metadata for the discovery of non-service geographic resources*. Here we list some of the alternatives and why we do not recommnd them. 
@@ -69,10 +69,6 @@ There are numerous alternate ways to document related dataset to a service. We r
 
 > **CORE ISSUE: Choice of Element to Hold Related Data Resource Reference**  
 There are numerous ways the related data resource may be captured in a service metadata record (e.g. *operatesOn*, *operatedDataset*, or even a sibling *MD_DataIdentification* package. The choice of *coupledResource* is made for the following reasons. ISO 19115-1 recommends *coupledResource* as minimum metadata required for the discovery of service resources. The options *operatesOn*, *SV_CoupledResource.resource* and a sibling *identificationInfo/MD_DataIdentification* all require a *MD_Identifier* package. This would create metadata records that identify more than one resource. ICSM guidance is that such a situation be avoided as it could confuse other catalogues that expect a one-to-one relationship between metadata resources and resources.
-
-> **{Issue Name}**
-{Issue discussion points and items which need resolution}
-
 
 #### Other Discussion 
 {from other sources of note - other standards and implementations. In Markdown Notes format. Such as:}

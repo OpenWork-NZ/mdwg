@@ -44,7 +44,7 @@ Therefore - If a potential client of a service is to use such service once disco
 - **distributedComputingPlatform -** *(codelist - DCPList)* [1..\*] - Mandatory by ISO 19115-1. Distributed computing platforms on which the operation has been implemented. Suggest use of *Web Services* as default valueas use of this element is not clearly described or agreed upon. 
 - **operationDescription -** *(type - charStr)* [0..1] - Highly recommended. Free text description of the intent of the operation and the results of the operation
 - **connectPoint -** *(class - [CI_OnlineResource](class-CI_OnlineResource)* [1..\*] - Mandatory. Handle for accessing the service interface. Usually a complete URL. Recommend that this be the full path to a *GetCapabilities* document. Recommended *connectPoint* sub-elements include for service operation:
-  - **linkage** - Mandatory for *(class - [CI_OnlineResource](class-CI_OnlineResource)*
+- **linkage** - Mandatory for *(class - [CI_OnlineResource](class-CI_OnlineResource)*. A URL link to invoke the service.
   - **protocol** - E.g. WFS, WFS, CSW
   - **function** - Drawn from codelist - [CI_OnlineFunctionCode](./class-CI_OnlineResource). Use if appropriate values are available.
 - **[parameter -](./Parameter)** *(class - SV_Parameter)* [0..\*] - Recommended when parameters are needed for the operation. A description of the parameters that can be provided to the operation. 
