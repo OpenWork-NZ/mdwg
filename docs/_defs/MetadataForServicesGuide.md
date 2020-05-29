@@ -10,11 +10,6 @@ title: Metadata For Services Best Practices
 
 This document was compiled by [OpenWork Ltd (OWL)](http://openwork.nz) on behalf of and with guidance and contributions from the [ICSM Metadata Working Group (MDWG)](https://www.icsm.gov.au/what-we-do/metadata-working-group). The purpose of this document is to capture the consensus best practice guidance for the use of recommended ISO 19115-1 metadata elements for organisataion in the Australia / New Zealand regionwhen documenting geospatial service. Further this guidance will aid the migration from the retired [ANZLIC](https://www.anzlic.gov.au/) Metadata Profile of ISO 19115:2003 to the currently endorsed ISO 191125-1:2014 (including Amd.1:2018).
 
-![Geoscience Australia](../images/GA.jpg)  
-![ARDC](../images/ARDC.png)  ![DEE](../images/DeptEngEnv.png) 
-![TERN](../images/TERN.png)  ![DOD](../images/dod.jpg)  ![AAD](../images/aad.png)  
- ![OpenWork Ltd](../images/openwork.png) 
-
 \pagebreak
 
 ## Acknowledgements
@@ -162,7 +157,7 @@ Elements with specific guidance for Services are in **_Bold Italic_**
 - [Coupled Resource:](./CoupledResource) (MD_Metadata>SV_ServiceIdentification.coupledResource>SV-CoupledResource)
 - [Coupled resource type:](./CouplingType) (MD_Metadata>SV_ServiceIdentification.couplingType>SV-CouplingType)
 
-
+## Generated List
 
 {% for def in site.defs %}{% if def.section == "Service Metadata" %}
 * [{{def.title}}]({{def.url|relative_url}})
