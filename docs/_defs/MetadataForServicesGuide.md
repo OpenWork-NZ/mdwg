@@ -104,8 +104,8 @@ Elements with specific guidance for Services are in **_Bold Italic_**
 - [Associated Resource](./AssociatedResource)   class - MD_AssociatedResource  
 - [Format](./ResourceFormat) Needed?  
 - [BrowseGraphic](./BrowseGraphic)  Class - MD_BrowseGraphic  
-- [Keywords](./Keywords) *Mandatory.* Package - MD_Keywords  including:
-      - Service Keywords *Mandatory.*
+- **_[Keywords](./Keywords)_** *Mandatory.* Package - MD_Keywords  including:
+      - **Service Keywords** *Mandatory.*
       - ABS Field of Research
       - Other keywords
 - [Maintenance](./Maintenance) Package -  MD_MaintenanceInformation   
@@ -129,13 +129,10 @@ Elements with specific guidance for Services are in **_Bold Italic_**
       - Statement
       - Source
 - [ReferenceSystemInfo](./SpatialReferenceSystem)   Package - MD_ReferenceSystem  
-- [Distribution Information](./DistributionInfo)   Package - MD_Distribution   Should this be required to provide service endpioint?
+-**_ [Distribution Information](./DistributionInfo)_**   Package - MD_Distribution   Should this be required to provide service endpioint?
       - Format
       - Distributor
       - Online Resource
-      - Offline Resource
-
-
 
 
 ## ISO 19115-1 Table F.2 — Metadata required for the discovery of service resources
