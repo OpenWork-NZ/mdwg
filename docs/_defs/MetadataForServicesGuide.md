@@ -39,7 +39,9 @@ This document was compiled by [OpenWork Ltd (OWL)](http://openwork.nz) on behalf
 When creating metadata for services, most of the dataset metadata best practice guidance applies. But there are notable differences. Most of these differences are contained in the *IdentificationInfo* section
 
 New elements specific to Service Metadata are highlighted in **Bold**
+
 Elements with specific guidance for Services are in **_Bold Italic_**
+
 ### Metadata for Metadata
 - [Metadata for Metadata](./class-MD_Metadata )  
   - [Metadata Identifier](./MetadataIdentifier)  *Mandatory.*
