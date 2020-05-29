@@ -131,7 +131,7 @@ Elements with specific guidance for Services are in **_Bold Italic_**
       - Statement
       - Source
 - [ReferenceSystemInfo](./SpatialReferenceSystem)   Package - MD_ReferenceSystem  
--**_ [Distribution Information](./DistributionInfo)_**   Package - MD_Distribution   Should this be required to provide service endpioint?
+-**_[Distribution Information](./DistributionInfo)_**   Package - MD_Distribution   Should this be required to provide service endpioint?
       - Format
       - Distributor
       - Online Resource
