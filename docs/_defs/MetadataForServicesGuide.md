@@ -106,10 +106,10 @@ Elements with specific guidance for Services are in **_Bold Italic_**
 - [Associated Resource](./AssociatedResource)   class - MD_AssociatedResource  
 - [Format](./ResourceFormat) Needed?  
 - [BrowseGraphic](./BrowseGraphic)  Class - MD_BrowseGraphic  
-- **_[Keywords](./Keywords)_** *Mandatory.* Package - MD_Keywords  including:
-      - **Service Keywords** *Mandatory.*
-      - ABS Field of Research
-      - Other keywords
+- **_[Keywords](./Keywords)_** *Mandatory.* Package - MD_Keywords  including:  
+  - **Service Keywords** *Mandatory.*
+  - ABS Field of Research
+  - Other keywords
 - [Maintenance](./Maintenance) Package -  MD_MaintenanceInformation   
       - Frequency of update
       - scope for maintenance
@@ -131,7 +131,7 @@ Elements with specific guidance for Services are in **_Bold Italic_**
       - Statement
       - Source
 - [ReferenceSystemInfo](./SpatialReferenceSystem)   Package - MD_ReferenceSystem  
--**_[Distribution Information](./DistributionInfo)_**   Package - MD_Distribution   Should this be required to provide service endpioint?
+- **_[Distribution Information](./DistributionInfo)_**   Package - MD_Distribution   Should this be required to provide service endpioint?
       - Format
       - Distributor
       - Online Resource
