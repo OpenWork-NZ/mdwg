@@ -36,11 +36,6 @@ Alternatively, `metadataLiunkage` may be used to record the location of the meta
 
 The use of this field to hold the local of the metadata record in the local catalogue could be better accomplished through the options provided in [metadataIdentifier](./MetadataIdentifier).
 
-### Outstanding Issues
-
-> **Point of Truth Issue:**
-The use of a standardised term for "point of truth" has been suggested. While this could be applied to the `discription` element it could be placed elsewhere such as an expanded *CI_OnlineFunctionCode* codelist
-
 ## ICSM Recommendations
 
 Therefore - There should be a "point of truth" url to a metadata record provided under metadataLinkage. Alternatively, this could be the full path to this metadata record. There may be multiple endpoints containing copies of this metadata record, one captured with the description of "Point of Truth URL for this metadata record" is recommended.
@@ -61,6 +56,11 @@ Follow the general guidance for [class - CI_OnlineResource](./class-CI_OnlineRes
 - **[MetadataIdentifier -](./MetadataIdentifier)** is the preferred element to be used to provide linkage to the metadata record.
 - **[alternativeMetadataReference](http://geos.whu.edu.cn/ont/iso19115/metadata.html#d4e52) -** *(class - CI_Citation)*[0..\*] *Page 37 - ISO 19115.1:2015* - reference to alternative metadata, e.g Dublin Core, FGDC, or metadata in a non-ISO standard for the same resource
 - **[class - CI_OnlineResource -](./class-CI_OnlineResource)** provides a standardised way of collecting links to online resources 
+
+### Outstanding Issues
+
+> **Point of Truth Issue:**
+The use of a standardised term for "point of truth" has been suggested. While this could be applied to the `discription` element it could be placed elsewhere such as an expanded *CI_OnlineFunctionCode* codelist
 
 ## Crosswalk considerations
 
