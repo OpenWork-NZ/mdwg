@@ -73,8 +73,7 @@ title: Template
 > **{Issue Name}**
 {Issue discussion points and items which need resolution}
 
-
-#### Other discussion 
+### Other discussion 
 {from other sources of note - other standards and implementations. In Markdown Notes format. Such as:}
 
 > **{DCAT Notes}** -
@@ -85,26 +84,17 @@ title: Template
 
 ## Crosswalk considerations 
 
-#### ISO19139 
+### ISO19139 
 {Discussion of issues, if any, to guide migration from ISO19139}
 
-#### Dublin core / CKAN / data.gov.au {if any}
+### Dublin core / CKAN / data.gov.au {if any}
 {mapping to `DC element` and discussion}
 
-#### DCAT 
+### DCAT 
 {mapping to `DCAT element` and discussion, if any}
 
-#### RIF-CS
+### RIF-CS
 {mapping to `RIF-CS element` and discussion, if any}
-
-## Also Consider
-{Links to additional useful information. Usually other elements, packages and classes in this good pratice document. May also link to other external resources.}
-
-**[{element name} -]({path to element})**  {description of importance and utility with any links}
-
-**[{element name} -]({path to element})**  {description of importance and utility with any links}
-
-**[{class name} -]({path to class})**  {description of importance and utility with any links}
 
 ## Examples
 
