@@ -7,11 +7,11 @@ title: Metadata Info
 ---
 # class - MD_Metadata
 
-*In order to create consistent structured metadata, we need a schema to provide a structure and a class to hold it.  MD_Metadata provides this for ISO19115-1.*
+*In order to create consistent structured metadata to describe spatial resources, we need a schema to provide a structure and a class to hold it.  MD_Metadata provides this for ISO19115-1.*
 
 - **Governance** -  *ISO*
 - **Metadata Type -** *structural*
-- *ICSM Level of Agreement* - ⭑⭑
+- *ICSM Level of Agreement* - ⭑⭑⭑⭑
 
 ## Definition
 
@@ -70,7 +70,7 @@ The MD_Metadata package defines the schema for describing the complete metadata 
 
 ## Recommendations 
 
-Therefore - It is recommended that all spatial metadata utilise the structure provided by the ISO19115-1 MD_Metadata class and follow the guidance provided.
+Therefore - It is recommended that all spatial metadata utilise the structure provided by the ISO19115-1 MD_Metadata class and follow the guidance provided. While ISO 19115-1 allows for such a metadata to describe more than one spatial resource, in order to reduce confusion and ease the integration with other metadata systems, it is recommended that each metadata record describes one and only one resource and that each resource have one metadata record of class MD_Metadata. 
 
 
 
