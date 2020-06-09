@@ -11,10 +11,10 @@ title: Metadata Identifier
 
 |  |  |
 | --- | --- |
-| **Element Name** | *SV_ServiceIdentification* |
+| **Element Name** | *metadataIdentifier* |
 | **Parent** |  *[MD_Metadata](./class-MD_Metadata)* |
 | **Class/Type** | *[MD_Identification](./class-MD_Identification)* |
-| **Governance** |  *Common ICsM* |
+| **Governance** |  *Common ICSM* |
 | **Purpose** | *Linkage, Identification* |
 | **Audience** | machine resource - ⭑ ⭑ ⭑ |
 |  | general - ⭑ |
@@ -22,7 +22,6 @@ title: Metadata Identifier
 |  | specialist - ⭑ ⭑  |
 | **Metadata type** | *administrative* |
 | **ICSM Level of Agreement** | ⭑ ⭑ ⭑ ⭑ |
-
 
 ## Definition
 **The persistent unique alphanumeric identifier for the metadata record that describes a spatial resource.**
