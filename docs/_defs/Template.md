@@ -16,12 +16,12 @@ title: Template
 | **Class/Type** | *characterString* |
 | **Governance** |  *Domain, Agency* |
 | **Purpose** | *Discovery, Evaluation, Use* |
-| **Audience** |- machine resource - ⭑ ⭑ |
-|  | general - ⭑ ⭑ ⭑|
-|  | resource manager - ⭑ ⭑ ⭑|
+| **Audience** | machine resource - ⭑ ⭑ |
+|  | general - ⭑ ⭑ ⭑ |
+|  | resource manager - ⭑ ⭑ ⭑ |
 |  | specialist - ⭑ ⭑ ⭑ |
 | **Metadata type** | *descriptive* |
-
+| **ICSM Level of Agreement** | ⭑ ⭑ ⭑ |
 
 ## Definition  
 **{In context definition}**
@@ -73,7 +73,7 @@ title: Template
 > **{Issue Name}**
 {Issue discussion points and items which need resolution}
 
-### Other discussion 
+## Other discussion 
 {from other sources of note - other standards and implementations. In Markdown Notes format. Such as:}
 
 > **{DCAT Notes}** -
