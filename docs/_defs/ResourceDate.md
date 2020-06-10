@@ -8,37 +8,28 @@ title: Resource Reference Date
 #  Resource Reference Date ★★★★★
 *In order to manage resource and notification systems such as giving updates to users it is useful to include in our metadata temporal information relating to resource creation, publication, revision, etc.*
 
-- **Path** - *MD_Metadata.identificationInfo>MD_DataIndentification.citation>CI_Citation.date*
-- **Governance** -  *Agency, Domain*
-- **Purpose -** *discovery, data management*
-- **Audience -**
-  - machine resource - ⭑⭑⭑
-  - general - ⭑⭑⭑
-  - data manager - ⭑⭑⭑⭑⭑
-  - specialist - ⭑⭑⭑⭑
-- **Metadata type -** *descriptive*
-- *ICSM Level of Agreement* - ⭑⭑⭑
+|  |  |
+| --- | --- |
+| **Element Name** | *date* |
+| **Parent** | *[MD_Metadata.identificationInfo>MD_Identificationcitation>CI_Citation](./ResourceCitation)* |
+| **Class/Type** | *CI_Date* |
+| **Governance** |  *Agency, Domain* |
+| **Purpose** | *Discovery, Identification* |
+| **Audience** | machine resource - ⭑ ⭑ ⭑ |
+|  | general - ⭑ ⭑ ⭑ |
+|  | resource manager - ⭑ ⭑ ⭑ ⭑ ⭑ |
+|  | specialist - ⭑ ⭑ ⭑ ⭑ |
+| **Metadata type** | *descriptive* |
+| **ICSM Level of Agreement** | ⭑⭑⭑ |
 
 ## Definition
 **A named and dated event associated with the cited resource (in ISO 8601 format).**
 
 ### ISO Obligation
 
-- There can be zero to many [0..`*`] *Resource reference date* entries for the cited resource in the  *[MD_DataIdentification.citation](./ResourceCitation)* package of class *[CI_Date](./class-CI_Date)* in a metadata record.  One of these must be of `dateType` *creation*.
+- There can be zero to many [0..`*`] *Resource reference date* entries for the cited resource in the  *[MD_Identification.citation](./ResourceCitation)* package of class *[CI_Date](./class-CI_Date)* in a metadata record.  One of these must be of `dateType` *creation*. The resource may be of type Data *[MD_DataIdentification](./class_MD_DataIdentification)* or of type Service *[SV_ServiceIdentification].
 
-### ICSM Good Practice
 
-- There should be multiple entries for the Resource reference date in a metadata record.  These should include:
-  - **Creation date** - This is important for intellectual property and other reasons
-  - **Publication date** - Is the most common date type captured by an agency
-  - **Update date** - Allows notifications and resource management
-  - All updates to metadata should be include the date of last revision to the metadata. This can be an automated process.
-
-### Recommended Sub-Elements
-
-Follow the general guidance for [class - CI_Date](./class-CI_Date) with the following additional guidance:
-
-- **[dateType](http://wiki.esipfed.org/index.php/ISO_19115-3_Codelists#CI_DateTypeCode) -**  There should be an entries of value *creation*, *publication* and *lastUpdate*
 
 ## Discussion
 
@@ -50,8 +41,29 @@ Relation of Metadata dateInfo to Resource reference date needs to be discussed. 
 
 When does the metadata dataInfo require updating? For instance, is it okay to not update the metadata dataInfo when the Resource reference date is updated if nothing else has changed? Our good practice guide should address this and related issues.
 
+## Recommendations
 
-### Other discussion
+Therefore - In order to provide an idea of the age, validity and other time dependant properties of a resource, it is important to capture the important events that happened or will happen to a particular resource in the Resource Reference Date element.  One of these important events must be of `dateType` "creation".  Creation is a significant date in regards to copyright. Other important date types are "publication" and "lastUpdate".
+
+### Recommended Sub-Elements
+
+It is recommended that `Resource Date` include - 
+
+- **date** - (Mandatory) the reference DateTime for the metadata record.
+- **dateType** - Highly recommended. There should be multiple entries for the Resource reference date in a metadata record.  These should include `dateType` entries for:
+  - **Creation date** - This is important for intellectual property and other reasons
+  - **Publication date** - Is the most common date type captured by an agency
+  - **Update date** - Allows notifications and resource management. All updates to metadata should also include the date of last revision to the metadata. This can be an automated process.
+
+This element should be updated in a consistent yet to be agreed upon manor.  We recommend GeoNetwork's current approach.  GeoNetwork updates the **revision date** for the metadata record automatically on every save. This supports systems such as notifications and harvesting regimes that  rely on the capture of the date that a metadata record was last modified.
+
+## Also Consider
+
+- **[Metadata Date](./MetadataDate)** - for sdates related to the metadata record itself and not the cited resource
+- **[CI_Date -](./class-CI_Date)** for general information about the class CI_Date
+- **[Resource  Citation](./ResourceCitation)** - parent to this element
+
+## Other discussion
 
 > **Date and DateTime:**
 When is it okay to use Date as opposed to DateTime?
@@ -59,43 +71,23 @@ When is it okay to use Date as opposed to DateTime?
 > **DCAT:**
 encoded using the relevant ISO 8601 Date and Time compliant string [DATETIME] and typed using the appropriate XML Schema datatype [XMLSCHEMA11-2]
 
-
-## Recommendations
-
-Therefore - In order to provide an idea of the age, validity and other time dependant properties of a resource, it is important to capture the important events that happened or will happen to a particular resource in the Resource Reference Date element.  One of these important events must be of `dateType` "creation".  Creation is a significant date in regards to copyright. Other important date types are "publication" and "lastUpdate".
-
-It is recommended that `Resource Date` include - 
-
-- *date* - (Mandatory) the reference DateTime for the metadata record.
-- *dateType* - Highly recommended for Creation, when the resource was created
-- *dateType* - Highly recommended for Publication, when the resource was first published.
-- *dateType* - Highly recommended for Revision, when a revision is made.
-
-This element should be updated in a consistent yet to be agreed upon manor.  We recommend GeoNetwork's current approach.  GeoNetwork updates the **revision date** for the metadata record automatically on every save. This supports systems such as notifications and harvesting regimes that  rely on the capture of the date that a metadata record was last modified.
-
-### Crosswalk considerations
+## Crosswalk considerations
 
 <details>
 
-#### Dublin core / CKAN / data.gov.au
+### Dublin core / CKAN / data.gov.au
 
 Maps to `date (publication, update)`
 
-#### DCAT
+### DCAT
 
 Maps to `dct:issued* and *dct:modified`
 
-#### RIF-CS
+### RIF-CS
 
 Maps to `Date`
 
 </details>
-
-## Also Consider
-
-- **[Metadata Date](./MetadataDate)** - for sdates related to the metadata record itself and not the cited resource
-- **[CI_Date -](./class-CI_Date)** for general information about the class CI_Date
-- **[Resource  Citation](./ResourceCitation)** - parent to this element
 
 ## Examples
 

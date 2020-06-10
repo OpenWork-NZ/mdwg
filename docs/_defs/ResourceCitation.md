@@ -11,13 +11,13 @@ title: Resource Citation
 |  |  |
 | --- | --- |
 | **Element Name** | *citation* |
-| **Parent** | *[MD_Metadata.identificationInfo>MD_Identification](./class-MD_Identification)* |v
+| **Parent** | *[MD_Metadata.identificationInfo>MD_Identification](./class-MD_Identification)* |
 | **Class/Type** | *CI_Citation* |
 | **Governance** |  *Common ICSM, Agency, Domain* |
 | **Purpose** | *Discovery, Identification* |
 | **Audience** | machine resource - ⭑ ⭑ ⭑ |
 |  | general - ⭑ ⭑ ⭑ ⭑ ⭑ |
-|  | resource manager - ⭑ ⭑ ⭑ ⭑|
+|  | resource manager - ⭑ ⭑ ⭑ ⭑ |
 |  | specialist - ⭑ ⭑ ⭑ |
 | **Metadata type** | *descriptive* |
 | **ICSM Level of Agreement** | ⭑⭑⭑⭑ |
@@ -27,7 +27,7 @@ title: Resource Citation
 
 ### ISO Obligation
 
-There must be one and only one [1..1] *MD_Metadata.indentificationInfo>MD_Identification.citation* package for the cited resource in a metadata record. This must be of of class *[CI_Citation](./class-CI_Citation)*. The resource may be of type Data *[MD_DataIdentification](./class_MD_DataIdentification)* or of type Service *[SV_ServiceIdentification]
+There must be one and only one [1..1] *MD_Metadata.indentificationInfo>MD_Identification.citation* package for the cited resource in a metadata record. This must be of of class *[CI_Citation](./class-CI_Citation)*. The resource may be of type Data *[MD_DataIdentification](./class_MD_DataIdentification)* or of type Service *[SV_ServiceIdentification].
 
 ## Discussion
 
@@ -48,7 +48,7 @@ Follow the general guidance for **[CI_Citation](./class-CI_Citation)** with emph
 - **[date](./ResourceDate) -** *(class - [CI_Date](./class-CI_Date))*  [0..\*]  reference date for the cited resource. Should include at a minimum, the creation date for the resource.
 - **[edition](./ResourceEdition) -** *(type - charStr)* [0..1] version of the cited resource if appropriate
 - **[identifier](./ResourceIdentifier) -** *(class - [MD_Identifier](./class-MD_Identifier))* [0..\*] value uniquely identifying an object within a namespace. Recommend provision of a resolvable URI following the MD_Identifier guidance.
-- **[citedResponsibleParty](./ResourceResponsibleParty) -** *(class - CI_Responsibility)*[0..\*] roles, name, contact, and position information for an individual or organisation that is responsible for the resource. It is recommended that a party with the role "Point of Contact" be provided as well as an entry for "publisher".
+- **[citedResponsibleParty](./ResourceResponsibleParty) -** *(class - CI_Responsibility)*[0..\*] roles, name, contact, and position information for an individual or organisation that is responsible for the resource. It is recommended that a party with the role "Point of Contact" be provided as well as an entry for "author" or "publisher".
 - **[series](./ResourceSeries) -**  *(class - CI_Series)* [0..1] If needed, information about the series, or aggregate resource, of which the resource is a part should be included.
 - **[onlineResource](./class-CI_OnlineResource) -** *class - [CI_OnlineResource](./class-CI_OnlineResource)* [0..\*] Highly Recommended for Service Resources. Should contain the URL Link for the landing page of the service. May also be recorded in *[DistributionInfo](./DistributionInfo)* or *[ResourceIdentifier](./ResourceIdentifier)*
 
