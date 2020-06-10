@@ -11,8 +11,7 @@ title: Resource Point of Contact
 |  |  |
 | --- | --- |
 | **Element Name** | *pointOfContact* |
-| **Parent** | *[MD_Metadata.identificationInfo>MD_DataIdentification](./class-MD_DataIdentification)* |
-| | or *[MD_Metadata.identificationInfo>SV_ServiceIdentification](./ServiceIdentification)* |
+| **Parent** | *[MD_Metadata.identificationInfo>MD_Identification](./class-MD_Identification)* |
 | **Class/Type** | *[CI_Responsibility](./class-CI_Responsibility)* |
 | **Governance** |  *Agency* |
 | **Purpose** | *Discovery, Evaluation, Communications* |

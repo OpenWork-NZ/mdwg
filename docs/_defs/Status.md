@@ -11,8 +11,7 @@ title: Resource Status
 |  |  |
 | --- | --- |
 | **Element Name** | *status* |
-| **Parent** | *[MD_Metadata.identificationInfo>MD_DataIdentification](./class-MD_DataIdentification)* |
-| | or *[MD_Metadata.identificationInfo>SV_ServiceIdentification](./ServiceIdentification)* |
+| **Parent** | *[MD_Metadata.identificationInfo>MD_Identification](./class-MD_Identification)* |
 | **Class/Type** | *[MD_ProgressCode](http://wiki.esipfed.org/index.php/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_ProgressCode)* |
 | **Governance** |  *Common ICSM* |
 | **Purpose** | *Discovery, Management* |

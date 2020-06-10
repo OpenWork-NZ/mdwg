@@ -11,8 +11,7 @@ title: Spatial Resolution
 |  |  |
 | --- | --- |
 | **Element Name** | *spatialResolution* |
-| **Parent** | *[MD_Metadata.identificationInfo>MD_DataIdentification](./class-MD_DataIdentification)* |
-| | or *[MD_Metadata.identificationInfo>SV_ServiceIdentification](./ServiceIdentification)* |
+| **Parent** | *[MD_Metadata.identificationInfo>MD_Identification](./class-MD_Identification)* |
 | **Class/Type** | *[MD_Resolution](http://wiki.esipfed.org/index.php/MD_Resolution)* |
 | **Governance** |  *Common ICSM* |
 | **Purpose** | *Discovery, Evaluation* |

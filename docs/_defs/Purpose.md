@@ -11,8 +11,7 @@ title: Purpose
 |  |  |
 | --- | --- |
 | **Element Name** | *purpose* |
-| **Parent** | *[MD_Metadata.identificationInfo>MD_DataIdentification](./class-MD_DataIdentification)* |
-| | or *[MD_Metadata.identificationInfo>SV_ServiceIdentification](./ServiceIdentification)* |
+| **Parent** | *[MD_Metadata.identificationInfo>MD_Identification](./class-MD_Identification)* |
 | **Class/Type** | *characterString* |
 | **Governance** |  *Domain, Agency* |
 | **Purpose** | *Discovery, Evaluation, Use* |

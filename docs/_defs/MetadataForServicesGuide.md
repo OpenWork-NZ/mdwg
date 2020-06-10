@@ -65,7 +65,7 @@ Elements with specific guidance for Services are in **_Bold Italic_**
     - [Additional Docs](./AdditionalDocs)  *Recommended.* If any
     - [Spatial Representation Type](./SpatialRepresentationType)  *Recommended.*
   
-  #### CI_Citation  Package - [Service Citation](./ServiceCitation) Sub-elements to be reviewed
+  #### CI_Citation  Package - [Service Citation](./ResourceCitation) Sub-elements to be reviewed
   - [Title](./ResourceTitle) *Mandatory.*
   - [Identifier (uri)](./ResourceIdentifier) *Highly Recommended.*
   - [Date (creation)](./ResourceDate) *Highly Recommended.*

@@ -11,8 +11,7 @@ title: Additional Documentation
 |  |  |
 | --- | --- |
 | **Element Name** | *additionalDocumentation* |
-| **Parent** | *[MD_Metadata.identificationInfo>MD_DataIdentification](./class-MD_DataIdentification)* |
-| | or *[MD_Metadata.identificationInfo>SV_ServiceIdentification](./ServiceIdentification)* |
+| **Parent** | *[MD_Metadata.identificationInfo>MD_Identification](./class-MD_Identification)* |
 | **Class/Type** | *[CI_Citation](./class-CI_Citation)* |
 | **Governance** |  *Domain, Agency* |
 | **Purpose** | *Data Management, Resource Use* |

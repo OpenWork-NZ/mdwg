@@ -11,9 +11,8 @@ title: Abstract
 |  |  |
 | --- | --- |
 | **Element Name** | *abstract* |
-| **Parent** | *[MD_Metadata.identificationInfo>MD_DataIdentification](./class-MD_DataIdentification)* |
-| | or *[MD_Metadata.identificationInfo>SV_ServiceIdentification](./ServiceIdentification)* |
-| **Class/Type** | *)character string* |
+| **Parent** | *[MD_Metadata.identificationInfo>MD_Identification](./class-MD_Identification)* |
+| **Class/Type** | *character string* |
 | **Governance** |  *Common ICSM, Agency, Domain* |
 | **Purpose** | *Discovery, Evaluation* |
 | **Audience** | machine resource - ⭑ ⭑ |
