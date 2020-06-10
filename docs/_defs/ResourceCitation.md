@@ -1,17 +1,17 @@
 ---
 layout: page
 type: element
-section: Service Metadata
+section: Resource Citation
 rank: 30
-title: Service Citation
+title: Resource Citation
 ---
-#  Service Citation ★★★★★
+#  Resource Citation ★★★★★
 *Some of the most basic needs of users of a resource is citation information. This basic information includes title, edition, identifier, dates, responsible parties, etc. In ISO 19115-1 we capture this information in MD_identification.citation.*
 
 |  |  |
 | --- | --- |
 | **Element Name** | *citation* |
-| **Parent** |  *[MD_Metadata.identificationInfo>SV_ServiceIdentification](./ServiceIdentification)* |
+| **Parent** | *[MD_Metadata.identificationInfo>MD_Identification](./class-MD_Identification)* |v
 | **Class/Type** | *CI_Citation* |
 | **Governance** |  *Common ICSM, Agency, Domain* |
 | **Purpose** | *Discovery, Identification* |
@@ -23,15 +23,15 @@ title: Service Citation
 | **ICSM Level of Agreement** | ⭑⭑⭑⭑ |
 
 ## Definition
-**Citation information for the service.**
+**Citation information for the spatial resource.**
 
 ### ISO Obligation
 
-There must be one and only one [1..1] *MD_Metadata.indentificationInfo>SV_ServiceIdentification.citation* package for the cited service in a metadata record. This must be of of class *[CI_Citation](./class-CI_Citation)*.
+There must be one and only one [1..1] *MD_Metadata.indentificationInfo>MD_Identification.citation* package for the cited resource in a metadata record. This must be of of class *[CI_Citation](./class-CI_Citation)*. The resource may be of type Data *[MD_DataIdentification](./class_MD_DataIdentification)* or of type Service *[SV_ServiceIdentification]
 
 ## Discussion
 
-The citation package contains multiple elements from [CI_Citation](./class-CI_Citation). Only child elements contain content. Follow the links on the child elements above for further discussion. Aspects of the contents of this package may be governed at different levels.
+The citation package contains multiple elements from [CI_Citation](./class-CI_Citation). Only child elements contain content. Follow the links on the child elements recommendations for further instruction. Aspects of the contents of this package may be governed at different levels.
 
 ## ICSM Recommendations
 
@@ -50,26 +50,161 @@ Follow the general guidance for **[CI_Citation](./class-CI_Citation)** with emph
 - **[identifier](./ResourceIdentifier) -** *(class - [MD_Identifier](./class-MD_Identifier))* [0..\*] value uniquely identifying an object within a namespace. Recommend provision of a resolvable URI following the MD_Identifier guidance.
 - **[citedResponsibleParty](./ResourceResponsibleParty) -** *(class - CI_Responsibility)*[0..\*] roles, name, contact, and position information for an individual or organisation that is responsible for the resource. It is recommended that a party with the role "Point of Contact" be provided as well as an entry for "publisher".
 - **[series](./ResourceSeries) -**  *(class - CI_Series)* [0..1] If needed, information about the series, or aggregate resource, of which the resource is a part should be included.
-- **[onlineResource](./class-CI_OnlineResource) -** *class - [CI_OnlineResource](./class-CI_OnlineResource)* [0..\*] Highly Recommended. The URL Link for the landing page of the service. May also be recorded in *DistributionInfo* or *ResourceIdentifier*
+- **[onlineResource](./class-CI_OnlineResource) -** *class - [CI_OnlineResource](./class-CI_OnlineResource)* [0..\*] Highly Recommended for Service Resources. Should contain the URL Link for the landing page of the service. May also be recorded in *[DistributionInfo](./DistributionInfo)* or *[ResourceIdentifier](./ResourceIdentifier)*
 
 #### Other Sub-Elements
 
 - **alternateTitle -** *(type - charStr)* [0..\*] short name or other language name by which the cited service is known. Example: DCW as an alternative title for Digital Chart of the World. Recommended whenever there are alternate names commonly in use.
 - **[series](./ResourceSeries) -**  *(class - CI_Series)* [0..1] If needed, information about the series, or aggregate resource, of which the resource is a part should be included.
-- See *[CI_Citation](./class-CI_Citation)* for more options.
+- See 
 
 ## Also Consider
 
-- **[DistributionInfo -](./DistributionInfo)** Can contain information about how the service is distributed. like *onlineResource* should contain landing page linkages to the service but can also store additional information.
+- **[DistributionInfo -](./DistributionInfo)** Can contain information about how the resource is distributed. like *onlineResource* should contain landing page linkages to the resource but can also store additional information.
 - **[metadataLinkage -](./MetadataLinkage)**  for links that provide a download of the metadata
 - **[browseGraphic -](./BrowseGraphic)**  associates to a large number of packages to provide linkage to associated image files, such as business or product icons and logos
+- **[ContainsOperations -](./ContainsOperations)** For Service resources, this element can provide online access instructions.
+- **[CI_Citation - ](./class-CI_Citation)**  the class guidance for more options.
+
+## Outstaninding Issues
+> **CORE ISSUE:**  
+Core to any metadata record is access to the described resource. There are several options where this may be expressed in a ISO19115-1 metadata record. The MDWG has not come to agreement as to a consistent approach. Inside the resource citation package, the `identifier` and `onlineResource` may provide this functionality. The package `DistributionInfo` is of course a common way to capture such information - particularly for data resources. For service resources.`ContainsOperations` is another common location for resource access information. Further discussion and guidance is needed to resolve this issue in order to support machine readability and reduce confusion.
 
 ## Examples
 
 <details>
 
 ### XML
-Note - change to service example
+Data Resource example
+
+```
+<mdb:MD_Metadata>
+....
+ <mdb:identificationInfo>
+    <mri:MD_DataIdentification>
+    ....
+       <mri:citation>
+          <cit:CI_Citation>
+             <cit:title>
+                <gco:CharacterString>OpenWork geographical data
+                </gco:CharacterString>
+             </cit:title>
+             <cit:date>
+                <cit:CI_Date>
+                   <cit:date>
+                      <gco:Date>2019-07-18</gco:Date>
+                   </cit:date>
+                   <cit:dateType>
+                      <cit:CI_DateTypeCode 
+                      codeList="https://schemas.isotc211.org/19115/resources
+                      /Codelist/cat/codelists.xml#CI_DateTypeCode" 
+                      codeListValue="creation"/>
+                   </cit:dateType>
+                </cit:CI_Date>
+             </cit:date>
+             <cit:date>
+                <cit:CI_Date>
+                   <cit:date>
+                      <gco:Date>2019-07-18</gco:Date>
+                   </cit:date>
+                   <cit:dateType>
+                      <cit:CI_DateTypeCode 
+                      codeList="https://schemas.isotc211.org/19115/resources
+                      /Codelist/cat/codelists.xml#CI_DateTypeCode" 
+                      codeListValue="publication"/>
+                   </cit:dateType>
+                </cit:CI_Date>
+             </cit:date>
+             <cit:edition>
+                <gco:CharacterString>Version 0.1</gco:CharacterString>
+             </cit:edition>
+             <cit:editionDate>
+                <gco:Date>2019-07-18</gco:Date>
+             </cit:editionDate>
+             <cit:identifier>
+                <mcc:MD_Identifier>
+                   <mcc:code>
+                      <gco:CharacterString>
+                      9547e07e-6a15-403b-8b19-488778fe0cf0
+                      </gco:CharacterString>
+                   </mcc:code>
+                   <mcc:codeSpace>
+                      <gco:CharacterString>
+                      http://202.49.243.69:8080/geonetwork/srv/eng/metadata/
+                      </gco:CharacterString>
+                   </mcc:codeSpace>
+                </mcc:MD_Identifier>
+             </cit:identifier>
+             <cit:citedResponsibleParty>
+                <cit:CI_Responsibility>
+                   <cit:role>
+                      <cit:CI_RoleCode 
+                      codeList="https://schemas.isotc211.org/19115/resources
+                      /Codelist/cat/codelists.xml#CI_RoleCode" 
+                      codeListValue="author"/>
+                   </cit:role>
+                   <cit:party>
+                      <cit:CI_Organisation>
+                         <cit:name>
+                            <gco:CharacterString>OpenWork Ltd
+                            </gco:CharacterString>
+                         </cit:name>
+                         <cit:contactInfo>
+                            <cit:CI_Contact>
+                               <cit:address>
+                                  <cit:CI_Address>
+                                     <cit:electronicMailAddress>
+                                        <gco:CharacterString>info@openwork.nz
+                                        </gco:CharacterString>
+                                     </cit:electronicMailAddress>
+                                  </cit:CI_Address>
+                               </cit:address>
+                            </cit:CI_Contact>
+                         </cit:contactInfo>
+                      </cit:CI_Organisation>
+                   </cit:party>
+                </cit:CI_Responsibility>
+             </cit:citedResponsibleParty>
+             <cit:citedResponsibleParty>
+                <cit:CI_Responsibility>
+                   <cit:role>
+                      <cit:CI_RoleCode 
+                      codeList="https://schemas.isotc211.org/19115/resources
+                      /Codelist/cat/codelists.xml#CI_RoleCode" 
+                      codeListValue="publisher"/>
+                   </cit:role>
+                   <cit:party>
+                      <cit:CI_Individual>
+                         <cit:name>
+                            <gco:CharacterString>Byron Cochrane
+                            </gco:CharacterString>
+                         </cit:name>
+                         <cit:contactInfo>
+                            <cit:CI_Contact>
+                               <cit:address>
+                                  <cit:CI_Address>
+                                     <cit:electronicMailAddress>
+                                        <gco:CharacterString>byron@openwork.nz
+                                        </gco:CharacterString>
+                                     </cit:electronicMailAddress>
+                                  </cit:CI_Address>
+                               </cit:address>
+                            </cit:CI_Contact>
+                         </cit:contactInfo>
+                      </cit:CI_Individual>
+                   </cit:party>
+                </cit:CI_Responsibility>
+             </cit:citedResponsibleParty>
+          </cit:CI_Citation>
+        </mri:citation>
+      ....
+    </mri:MD_DataIdentification>
+  </mdb:identificationInfo>
+....
+</mdb:MD_Metadata>
+```
+
+Service Resource example
 ```
 <mdb:MD_Metadata>
 ....
@@ -197,6 +332,7 @@ Note - change to service example
 ```
 
 ### UML diagrams
+
 Recommended elements highlighted in Yellow
 
 ![ResourceCitation](../images/ResourceCitationUML.png)
