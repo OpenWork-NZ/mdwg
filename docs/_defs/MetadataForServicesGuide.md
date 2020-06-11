@@ -12,6 +12,11 @@ This document was compiled by [OpenWork Ltd (OWL)](http://openwork.nz) on behalf
 
 Thiss guidance is a point in time best bractice guide and will be updated as requirement and capabilities evolve. This will be done in a structure version fashion. It is anticipated that new versions of this guidance will be released annually as a PDF document. Incremental changes, managed by the MDWG Technical group in byweekly meetings, will be versioned in a GitHub repository and reflected in the web pages view of this document.
 
+![Geoscience Australia](../images/GA.jpg)  
+![ARDC](../images/ARDC.png)  ![DEE](../images/DeptEngEnv.png) 
+![TERN](../images/TERN.png)  ![DOD](../images/dod.jpg)  ![AAD](../images/aad.png)  
+ ![OpenWork Ltd](../images/openwork.png) 
+ 
 \pagebreak
 
 ## Acknowledgements
@@ -57,6 +62,8 @@ Do not forget that there are other unknown potential users of you service. Let s
 
 Finally, keep in mind that the most important audience may be in fact yourself or your own organisation. Write metadata that is useful to you when you find this service and need to use and fix it 5 or 10 years later or need to hand it off to a colleague.
 
+\pagebreak
+ 
 ## ICSM Specific Recommendations for Service Metadata
 
 When creating metadata for services, most of the data resource metadata best practice guidance applies. But there are notable differences. Most of these differences are contained in the *IdentificationInfo* section
@@ -76,7 +83,6 @@ Elements with specific guidance for Services are in **_Bold Italic_**
     - [Metadata Security Constraints](./MetadataSecurityConstraints) *Recommended.*
     - [Metadata Standard](./MetadataStandard) *Highly Recommended.*  
     - **_[MetadataScope](./MetadataScope)_** *Mandatory.* For Service metadata, Resource Scope = *Service*
-
 - ### General Identification Metadata Applicable to Services
   - [Metadata for Resources](./class-MD_Identification)    
       - [Abstract](./Abstract)  *Mandatory.*
@@ -87,7 +93,6 @@ Elements with specific guidance for Services are in **_Bold Italic_**
       - [Resource Point of Contact  role = 'pointOfContact'](./ResourcePointOfContact) *Highly Recommended.*
       - [Additional Docs](./AdditionalDocs)  *Recommended.* If any
       - [Spatial Representation Type](./SpatialRepresentationType)  *Recommended.*
-  
   - #### CI_Citation  Package - [Service Citation](./ResourceCitation) Sub-elements 
     - [Title](./ResourceTitle) *Mandatory.*
     - [Identifier (uri)](./ResourceIdentifier) *Highly Recommended.*
@@ -98,7 +103,6 @@ Elements with specific guidance for Services are in **_Bold Italic_**
     - [Series](./ResourceSeries) *Recommended.* If applicable
     - [Cited Responsible party (author, creator, contributor, publisher)](./ResourceResponsibleParty) *Highly Recommended.*
     - **_[OnlineResource](./class-CI_OnlineResource)_** - Should provide the landing page for the service
-
 - ### Service Specific Metadata in **[Service Identification](./ServiceIdentification)** 
   - **[serviceType](./ServiceType)**  - *Mandatory.* Plus at least one of:
   - **[serviceTypeVersion](./ServiceTypeVersion)**  
@@ -121,7 +125,6 @@ Elements with specific guidance for Services are in **_Bold Italic_**
       - description *Recommended*
       - optionality  *Mandatory*
       - repeatability  *Mandatory*
-
 - ### Other Metadata Packages 
   - [Associated Resource](./AssociatedResources)   class - MD_AssociatedResource  
   - [BrowseGraphic](./BrowseGraphic)  Class - MD_BrowseGraphic  - Perhaps a logo for the service or oganisation 
@@ -169,7 +172,7 @@ The guidance produced here is meant to be a flexible resource. The element discu
 
 Below is a example of how one might use a particular collection of best practice guidance documents to support a particular purpose. In this case is a list of elements as described in ISO 19115-1 Table F.2 of the minimum metadata required for the discovery of service resources
 
-| **Element** | **Class** |
+| **Element** | **Class** | 
 | --- | --- |
 | [Metadata reference information:](./MetadataIdentifier) |  (MD_Metadata.metadataIdentifier) |
 | [Service title:](./ResourceTitle) | (MD_Metadata .identificationInfo>SV_ServiceIdentification.citation>CI_Citation.title) |
@@ -187,3 +190,22 @@ Below is a example of how one might use a particular collection of best practice
 | [Resource type:](./MetadataScope) | (MD_Metadata.metadataScope>MD_Scope.resourceScope) |
 | [Coupled Resource:](./CoupledResource) | (MD_Metadata>SV_ServiceIdentification.coupledResource>SV-CoupledResource) |
 | [Coupled resource type:](./CouplingType) | (MD_Metadata>SV_ServiceIdentification.couplingType>SV-CouplingType) |
+
+| **Metadata element** | **Guidance Link** | 
+| --- | --- |
+| Metadata reference information: | [Metadata Identifier](./MetadataIdentifier)|
+| Resource title: | [Resource Title](./ResourceTitle)|
+| Resource reference date: | [Resource Date](./ResourceDate) |
+| Resource identifier: | [Resource Identifier](./ResourceIdentifier) |
+| Resource point of contact:  | [Resource Point of Contact](./ResourcePointOfContact)|
+| Geographic location: | [Extent Bounding Box](./ExtentBoundingBox) |
+| Resource language:  | [Resource Default locale](./ResourceLocale)  |
+| Resource topic category: | [Topic Category](./TopicCategory)    |
+| Spatial resolution:   | [Spatial Resolution](./SpatialResolution) |
+| Resource type:  | [Resource Scope](./MetadataScope)  |
+| Resource abstract:   | [Abstract](./Abstract) |
+| Resource lineage: | [Resource Lineage](./ResourceLineage)  |
+| Keywords:   | [Keywords](./Keywords)  |
+| Constraints on resource access and use: | [Resource Constraints](./ResourceOtherConstraints)   |
+| Metadata date stamp:  | [Metadata Date](./MetadataDate)  |
+|Metadata point of contact: | [Metadata Responsible Party](./MetadataContact)  |
