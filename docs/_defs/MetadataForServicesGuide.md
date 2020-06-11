@@ -43,103 +43,99 @@ New elements specific to Service Metadata are highlighted in **Bold**
 Elements with specific guidance for Services are in **_Bold Italic_**
 
 ### Metadata for Metadata
-|  [Metadata for Metadata](./class-MD_Metadata )   |  |
-| --- | --- |
-| [Metadata Identifier](./MetadataIdentifier)  | *Mandatory.*   |
-| [Metadata Linkage](./MetadataLinkage)   | *Highly Recommended.*  |
-| [[Metadata Date](./MetadataDate)   | *Highly Recommended.*  |
-| [[Metadata Responsible Party](./MetadataContact)   | *Mandatory.*  |
-| [[Metadata Default Locale](./MetadataLocale)   | *Highly Recommended.*  |
-| [[Metadata Legal Constraints](./MetadataLegalConstraints)  | *Recommended.*  |
-| [[Metadata Security Constraints](./MetadataSecurityConstraints)  | *Recommended.*  |
-| [Metadata Standard](./MetadataStandard)  | *Highly Recommended.*   | 
-| **_[MetadataScope](./MetadataScope)_**  | *Mandatory.* For Service metadata, Resource Scope = *Service*  |
+- [Metadata for Metadata](./class-MD_Metadata )  
+  - [Metadata Identifier](./MetadataIdentifier)  *Mandatory.*
+  - [Metadata Linkage](./MetadataLinkage)  *Highly Recommended.*
+  - [Metadata Date](./MetadataDate)  *Highly Recommended.*
+  - [Metadata Responsible Party](./MetadataContact)  *Mandatory.*
+  - [Metadata Default Locale](./MetadataLocale)  *Highly Recommended.*
+  - [Metadata Legal Constraints](./MetadataLegalConstraints) *Recommended.*
+  - [Metadata Security Constraints](./MetadataSecurityConstraints) *Recommended.*
+  - [Metadata Standard](./MetadataStandard) *Highly Recommended.*  
+  - **_[MetadataScope](./MetadataScope)_** *Mandatory.* For Service metadata, Resource Scope = *Service*
 
 ### General Identification Metadata
-  | [Metadata for Resources](./class-MD_Identification)   |  |
-    | ---  | ---  |
-  | [Abstract](./Abstract)  |  *Mandatory.*  |
-  | [Purpose](./Purpose)   | *Highly Recommended.*  |
-  | [Status](./Status)  |  *Highly Recommended.*  |
-  | [Topic Category](./TopicCategory)   | *Highly Recommended.*  |
-  | [Spatial resolution](./SpatialResolution)  |  *Highly Recommended.*  |
-  | [Resource Point of Contact  role = 'pointOfContact'](./ResourcePointOfContact)  | *Highly Recommended.*  |
-  | [Additional Docs](./AdditionalDocs)   | *Recommended.* If any  |
-  | [Spatial Representation Type](./SpatialRepresentationType)   | *Recommended.*  |
+- [Metadata for Resources](./class-MD_Identification)    
+    - [Abstract](./Abstract)  *Mandatory.*
+    - [Purpose](./Purpose)  *Highly Recommended.*
+    - [Status](./Status)  *Highly Recommended.*
+    - [Topic Category](./TopicCategory)  *Highly Recommended.*
+    - [Spatial resolution](./SpatialResolution)  *Highly Recommended.*
+    - [Resource Point of Contact  role = 'pointOfContact'](./ResourcePointOfContact) *Highly Recommended.*
+    - [Additional Docs](./AdditionalDocs)  *Recommended.* If any
+    - [Spatial Representation Type](./SpatialRepresentationType)  *Recommended.*
   
-  #### CI_Citation  Package - [Service Citation](./ResourceCitation) Sub-elements 
-| ---  | ---  |
-| [Title](./ResourceTitle)  | *Mandatory.*  |
-| [Identifier (uri)](./ResourceIdentifier)  | *Highly Recommended.*  |
-| [Date (creation)](./ResourceDate)  | *Highly Recommended.*  |
-| [Date (revision)](./ResourceDate)  | *Highly Recommended.* If applicable  |
-| [Date (issued)](./ResourceDate)   | *Highly Recommended.*  |
-| [Edition](./ResourceEdition)  | *Recommended.* If applicable  |
-| [Series](./ResourceSeries)  | *Recommended.* If applicable  |
-| [Cited Responsible party (author, creator, contributor, publisher)](./ResourceResponsibleParty)  | *Highly Recommended.*  |
-| **_[OnlineResource](./class-CI_OnlineResource)_**   | *Recommended* Should provide the landing page for the service  |
+  #### CI_Citation  Package - [Service Citation](./ResourceCitation) Sub-elements to be reviewed
+  - [Title](./ResourceTitle) *Mandatory.*
+  - [Identifier (uri)](./ResourceIdentifier) *Highly Recommended.*
+  - [Date (creation)](./ResourceDate) *Highly Recommended.*
+  - [Date (revision)](./ResourceDate) *Highly Recommended.* If applicable
+  - [Date (issued)](./ResourceDate) *Highly Recommended.*
+  - [Edition](./ResourceEdition) *Recommended.* If applicable
+  - [Series](./ResourceSeries) *Recommended.* If applicable
+  - [Cited Responsible party (author, creator, contributor, publisher)](./ResourceResponsibleParty) *Highly Recommended.*
+  - **_[OnlineResource](./class-CI_OnlineResource)_** - Should provide the landing page for the service
 
 
 ### Service Specific Metadata
+- **[Service Identification](./ServiceIdentification)** 
+  - **[serviceType](./ServiceType)**  - *Mandatory.* Plus at least one of:
+    - **[serviceTypeVersion](./ServiceTypeVersion)**  
+    - **[profile](./ServiceProfile)**  CI_Citation
+    - **[serviceStandard](./ServiceStandard)**  CI_Citation
+  - **[couplingType](./CouplingType)** *Highly Recommended.* Options = `tight`, `loose`, `mixed`
+  - **[coupledResource](./CoupledResource)** *Highly Recommended* when *CouplingType* is `tight`. Includes:  
+      - ScopedName - *Mandatory*
+      - ResourceReference - includes:
+          - Title - Mandatory
+          - OnlineResource - *Highly Recommended.* Metadata URL for related data
+    - **[ContainsOperations](./ContainsOperations)** class - SV_OperationMetadata   Contains
+       - operationName  *Mandatory*
+       - distributedComputingPlatform  codelist - DCPList, *Mandatory*
+       - operationDescription  *Highly Recommended*
+       - connectPoint  class - CI_OnlineResource *Mandatory*
+       - **[parameter](./Parameter)** class - SV_Parameter
+           - name  *Madatory*
+           - direction  *Mandatory*
+           - description *Recommended*
+           - optionality  *Mandatory*
+           - repeatability  *Mandatory*
 
-| **[Service Identification](./ServiceIdentification)**  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- |
-|  | **[serviceType](./ServiceType)** |  |  |  *Mandatory.* Plus at least one of:  |  
-|  |  | **[serviceTypeVersion](./ServiceTypeVersion)** | characterString |  |
-|  |  | **[profile](./ServiceProfile)** |  CI_Citation |  |
-|  |  | **[serviceStandard](./ServiceStandard)** |  CI_Citation |  |
-|  | **[couplingType](./CouplingType)** |  |  | *Highly Recommended.* Options = `tight`, `loose`, `mixed` |
-|  | **[coupledResource](./CoupledResource)** |  |  | *Highly Recommended* when *CouplingType* is `tight`. Includes:  |
-|  |  | ScopedName | | *Mandatory* |
-|  |  | ResourceReference | | includes: | 
-|  |  |  | Title | Mandatory |
-|  |  |  | OnlineResource | *Highly Recommended.* Metadata URL for related data |
-|  | **[ContainsOperations](./ContainsOperations)** |  |  | class - SV_OperationMetadata   Contains: |
-|  |  | operationName | | *Mandatory* |
-|  |  | distributedComputingPlatform |  | *Mandatory* codelist - DCPList |
-|  |  | operationDescription |  | *Highly Recommended* |
-|  |  | connectPoint  class |  | *Mandatory* CI_OnlineResource  |
-|  |  | **[parameter](./Parameter)** |  | class - SV_Parameter Contaoins: |
-|  |  |  | name | *Madatory* |
-|  |  |  | direction | *Mandatory* |
-|  |  |  | description | *Recommended* |
-|  |  |  | optionality | *Mandatory* |
-|  |  |  | repeatability | *Mandatory* |
+### Other Metadata Packages (To Review)
 
-### Other Metadata Packages 
-
-| [Associated Resource](./AssociatedResources) |  |  | class - MD_AssociatedResource  |
-| [BrowseGraphic](./BrowseGraphic) |  |  |  Class - MD_BrowseGraphic  |
-| **_[Keywords](./Keywords)_** |  |  | *Mandatory.* Package - MD_Keywords  including:  |
-|  | **Service Keywords** |  |  *Mandatory.* |
-|  | ABS Field of Research |  |  |
-|  | Other keywords |  |  |
-| [Maintenance](./Maintenance) |  |  Package -  MD_MaintenanceInformation   |
-|  | Frequency of update |  |  |
-|  | scope for maintenance |  |  |
-| [Resource Constraints](./class-MD_Constraints)   |  |  |  Do we need separate "Service Constraints" guidance? |
-|  | Use Limitations |  |  |
-|  | Legal |  |  |
-|  |  | Reference for Legal |  |
-|  | Security |  |  |
-|  |  | Reference for Security |  |
-|  | releasability |  |  |
-|  | otherConstraints |  |  |
-| [Extents](./ResourceExtent) |  |  | Package -  EX_Extent  Expressed as: |
-|  | [GeoExtent](./GeographicExtent) |  | class - EX_GeographicExtent  |
-|  |  | [geographic description](./ExtentGeographicDescription) |  |
-|  |  | [bounding box](./ExtentBoundingBox) |  |
-|  | [vertical extent](./VerticalExtent) |  | class - EX_VerticalExtent  |
-|  | [temporal extent](./TemporalExtents) |  | class - EX_TemporalExtent  | 
-| Lineage |  |  |   Package - LI_Lineage   |
-|  | Statement |  |  |
-|  | Source |  |  |
-| [ReferenceSystemInfo](./SpatialReferenceSystem)  |  |  | Package - MD_ReferenceSystem  |
-| **_[Distribution Information](./DistributionInfo)_**  |  |  |  Package - MD_Distribution   Should this be required to provide service endpioint? |
-|  | Format |  |  |  
-|  | Distributor |  |  | 
-|  | Online Resource |  |  |
-|  | Offline Resource |  |  |
+- [Associated Resource](./AssociatedResources)   class - MD_AssociatedResource  
+- [Format](./ResourceFormat) Needed?  
+- [BrowseGraphic](./BrowseGraphic)  Class - MD_BrowseGraphic  
+- **_[Keywords](./Keywords)_** *Mandatory.* Package - MD_Keywords  including:  
+  - **Service Keywords** *Mandatory.*
+  - ABS Field of Research
+  - Other keywords
+- [Maintenance](./Maintenance) Package -  MD_MaintenanceInformation   
+      - Frequency of update
+      - scope for maintenance
+- [Resource Constraints](./class-MD_Constraints)   Do we need separate "Service Constraints" guidance?
+      - Use Limitations
+      - Legal
+      - Reference for Legal
+      - Security
+      - Reference for Security
+      - releasability
+      - otherConstraints
+- [Extents](./ResourceExtent)  Package -  EX_Extent  
+    - [GeoExtent](./GeographicExtent) class - EX_GeographicExtent  
+       - [geographic description](./ExtentGeographicDescription)
+       - [bounding box](./ExtentBoundingBox)
+    - [vertical extent](./VerticalExtent) class - EX_VerticalExtent  
+    - [temporal extent](./TemporalExtents) class - EX_TemporalExtent  
+- Lineage    Package - LI_Lineage   - To Be Done
+      - Statement
+      - Source
+- [ReferenceSystemInfo](./SpatialReferenceSystem)   Package - MD_ReferenceSystem  
+- **_[Distribution Information](./DistributionInfo)_**   Package - MD_Distribution   Should this be required to provide service endpioint?
+      - Format
+      - Distributor
+      - Online Resource
+      - Offline Resource
 
 
 
