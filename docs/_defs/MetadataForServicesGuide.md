@@ -52,7 +52,7 @@ Elements with specific guidance for Services are in **_Bold Italic_**
   - [Metadata Legal Constraints](./MetadataLegalConstraints) *Recommended.*
   - [Metadata Security Constraints](./MetadataSecurityConstraints) *Recommended.*
   - [Metadata Standard](./MetadataStandard) *Highly Recommended.*  
-  - **_[MetadataScope](./MetadataScope)_** *Mandatory.* Resource Scope = *Service*
+  - **_[MetadataScope](./MetadataScope)_** *Mandatory.* For Service metadata, Resource Scope = *Service*
 
 ### General Identification Metadata
 - [Metadata for Resources](./class-MD_Identification)    
@@ -137,24 +137,7 @@ Elements with specific guidance for Services are in **_Bold Italic_**
       - Online Resource
       - Offline Resource
 
-### CI_Citation  Package - [Service Citation](./ResourceCitation) Sub-elements to be reviewed
-- [Title](./ResourceTitle)
-- AlternateTitle - To Be Done
-- [Identifier (uri)](./ResourceIdentifier)
-- [Date (creation)](./ResourceDate)
-- [Date (revision)](./ResourceDate)
-- [Date (issued)](./ResourceDate)
-- [Edition](./ResourceEdition)
-- [Series](./ResourceSeries)
-- [Cited Responsible party (author, creator)](./ResourceResponsibleParty)
-- [Cited Responsible party (contributor)](./ResourceResponsibleParty)
-- [Cited Responsible party (publisher)](./ResourceResponsibleParty)
-- [OnlineResource](./class-CI_OnlineResource)
 
-### Metadata for Data  MD_DataIdentification  - Needed? Or belong with MD_Identification? Or coupled resource metadata link?
-- Spatial Resolution Type  
-- CharacterSet  
-- Resource Default Locale  
 
 
 ## ISO 19115-1 Table F.2 — Metadata required for the discovery of service resources
