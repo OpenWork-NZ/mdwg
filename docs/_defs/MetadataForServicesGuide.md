@@ -172,8 +172,8 @@ The guidance produced here is meant to be a flexible resource. The element discu
 
 Below is a example of how one might use a particular collection of best practice guidance documents to support a particular purpose. In this case is a list of elements as described in ISO 19115-1 Table F.2 of the minimum metadata required for the discovery of service resources
 
-| **Element** | **Class** | 
-| --- | --- |
+| **Element**   | **Class** | 
+| ------------- | ------------------------ |
 | [Metadata reference information:](./MetadataIdentifier) |  (MD_Metadata.metadataIdentifier) |
 | [Service title:](./ResourceTitle) | (MD_Metadata .identificationInfo>SV_ServiceIdentification.citation>CI_Citation.title) |
 | [Reference date:](./ResourceDate) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.citation>CI_Citation.date) |
