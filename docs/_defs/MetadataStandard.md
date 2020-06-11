@@ -27,7 +27,7 @@ title: Metadata Standard
 
 ### ISO Requirements
 
-There may be zero to many [1-\*] *MetadataStandards* cited for a metadata record of class *[CI_Citation](./class-CI_Citation). Each Metadata standard citation should include an identifier.
+There may be zero to many [1-\*] *MetadataStandard* entries cited for a metadata record of class *[CI_Citation](./class-CI_Citation). Each Metadata standard citation should include an identifier.
 
 ## Discussion  
 
