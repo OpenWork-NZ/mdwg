@@ -74,7 +74,7 @@ Elements with specific guidance for Services are in **_Bold Italic_**
   - [Edition](./ResourceEdition) *Recommended.* If applicable
   - [Series](./ResourceSeries) *Recommended.* If applicable
   - [Cited Responsible party (author, creator, contributor, publisher)](./ResourceResponsibleParty) *Highly Recommended.*
-  - **_[OnlineResource](./ServiceCitation)_** - the landing page for the service
+  - **_[OnlineResource](./OnlineResource)_** - the landing page for the service
 
 
 ### Service Specific Metadata
@@ -103,7 +103,7 @@ Elements with specific guidance for Services are in **_Bold Italic_**
 
 ### Other Metadata Packages (To Review)
 
-- [Associated Resource](./AssociatedResource)   class - MD_AssociatedResource  
+- [Associated Resource](./AssociatedResources)   class - MD_AssociatedResource  
 - [Format](./ResourceFormat) Needed?  
 - [BrowseGraphic](./BrowseGraphic)  Class - MD_BrowseGraphic  
 - **_[Keywords](./Keywords)_** *Mandatory.* Package - MD_Keywords  including:  
@@ -135,6 +135,26 @@ Elements with specific guidance for Services are in **_Bold Italic_**
       - Format
       - Distributor
       - Online Resource
+      - Offline Resource
+
+### CI_Citation  Package - [Service Citation](./ResourceCitation) Sub-elements to be reviewed
+- [Title](./ResourceTitle)
+- AlternateTitle - To Be Done
+- [Identifier (uri)](./ResourceIdentifier)
+- [Date (creation)](./ResourceDate)
+- [Date (revision)](./ResourceDate)
+- [Date (issued)](./ResourceDate)
+- [Edition](./ResourceEdition)
+- [Series](./ResourceSeries)
+- [Cited Responsible party (author, creator)](./ResourceResponsibleParty)
+- [Cited Responsible party (contributor)](./ResourceResponsibleParty)
+- [Cited Responsible party (publisher)](./ResourceResponsibleParty)
+- [OnlineResource](./class-CI_OnlineResource)
+
+### Metadata for Data  MD_DataIdentification  - Needed? Or belong with MD_Identification? Or coupled resource metadata link?
+- Spatial Resolution Type  
+- CharacterSet  
+- Resource Default Locale  
 
 
 ## ISO 19115-1 Table F.2 — Metadata required for the discovery of service resources
@@ -155,10 +175,3 @@ Elements with specific guidance for Services are in **_Bold Italic_**
 - [Resource type:](./MetadataScope) (MD_Metadata.metadataScope> MD_Scope.resourceScope)
 - [Coupled Resource:](./CoupledResource) (MD_Metadata>SV_ServiceIdentification.coupledResource>SV-CoupledResource)
 - [Coupled resource type:](./CouplingType) (MD_Metadata>SV_ServiceIdentification.couplingType>SV-CouplingType)
-
-## Generated List
-
-{% for def in site.defs %}{% if def.section == "Service Metadata" %}
-* [{{def.title}}]({{def.url|relative_url}})
-{% endif %}{% endfor %}
-
