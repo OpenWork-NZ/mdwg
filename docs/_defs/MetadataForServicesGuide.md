@@ -51,7 +51,7 @@ Elements with specific guidance for Services are in **_Bold Italic_**
   - [Metadata Default Locale](./MetadataLocale)  *Highly Recommended.*
   - [Metadata Legal Constraints](./MetadataLegalConstraints) *Recommended.*
   - [Metadata Security Constraints](./MetadataSecurityConstraints) *Recommended.*
-  - [Metadata Standard](./MetadataStandard) *Highly Recommended.* To be fixed - missing element  
+  - [Metadata Standard](./MetadataStandard) *Highly Recommended.*  
   - **_[MetadataScope](./MetadataScope)_** *Mandatory.* Resource Scope = *Service*
 
 ### General Identification Metadata
@@ -74,7 +74,7 @@ Elements with specific guidance for Services are in **_Bold Italic_**
   - [Edition](./ResourceEdition) *Recommended.* If applicable
   - [Series](./ResourceSeries) *Recommended.* If applicable
   - [Cited Responsible party (author, creator, contributor, publisher)](./ResourceResponsibleParty) *Highly Recommended.*
-  - **_[OnlineResource](./OnlineResource)_** - the landing page for the service
+  - **_[OnlineResource](./class-CI_OnlineResource)_** - Should provide the landing page for the service
 
 
 ### Service Specific Metadata

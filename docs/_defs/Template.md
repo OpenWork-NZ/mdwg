@@ -45,7 +45,7 @@ title: Template
 {Therefore - Statement about what, why, who, when and how MDWG recommend this element be used}
 {A brief statement of MDWG guidance on use of this element}
 
-#### Recommended Sub-Elements 
+### Recommended Sub-Elements 
 {MDWG recommended sub-elements and how to populate them. May be nested.}
 
 - **{sub-elementName} -** *(type - {name of type})* [{cardinality}] - {brief guidance statement} 
