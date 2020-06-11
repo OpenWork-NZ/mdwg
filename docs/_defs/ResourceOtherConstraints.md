@@ -22,17 +22,6 @@ title: Resource Constraints
 | **Metadata type** | *administrative* |
 | **ICSM Level of Agreement** | ⭑ ⭑ ⭑ |
 
-- **Path** -  *MD_Metadata.identificationInfo>MD_DataIdentification.resourceConstraints*
-- **Governance** - *Agency*
-- **Primary use -** *Resource use* 
-- **Audience -**
-  - machine resource - ⭑
-  - general - ⭑⭑⭑⭑⭑
-  - data manager - ⭑⭑⭑⭑
-  - specialist - ⭑⭑
-- **Metadata type -** *administrative*
-- *ICSM Level of Agreement* - ⭑⭑⭑
-
 ## Definition -
 *Rights, restrictions, and responsibilities for the access and use of this cited resource.  While these may optionally be of subtypes legal ([MD_LegalConstraints](./class-MD_LegalConstraints)) or security ([MD_SecurityConstraints](./class-MD_SecurityConstraints)) there are other types of constraints to consider that exist under the more general class [MD_Constraints](./class-MD_Constraints) including *useLimitations* and *releasability* restrictions* 
 
