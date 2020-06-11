@@ -8,7 +8,7 @@ title: Template
 # {Element or Package Title}  ★★★★★ 
 {stars indicate level of ICSM importance / priority}
 
-**{A brief description about the problem this element addresses - why we need it. Where it sits in the metadata hierarchy.}**
+*{A brief description about the problem this element addresses - why we need it. Where it sits in the metadata hierarchy.}*
 |  |  |
 | --- | --- |
 | **Element Name** | *serviceTypeVersion* |
@@ -83,7 +83,7 @@ title: Template
 {Discussion of issue}
 
 ## Crosswalk considerations 
-
+<details>
 ### ISO19139 
 {Discussion of issues, if any, to guide migration from ISO19139}
 
@@ -106,9 +106,9 @@ title: Template
 
 ### Others
 {### who - example - if any useful}}
-
+</details>
 ### XML -
-
+<details>
 ```
 <mdb:MD_Metadata>
 ....
@@ -122,5 +122,5 @@ title: Template
 Recommended elements highlighted in Yellow
 
 ![{Name}]({path to UML diagram image})
-
+</details>
 \pagebreak
