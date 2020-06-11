@@ -23,7 +23,7 @@ In order to provide a standardised way of capturing information related to the v
 - MD_Metadata.metadataStandard
 - MD_Metadata.metadataProfile
 - MD_Metadata.alternativeMetadataReference
-- MD_Identification.citation
+- MD_Identification.citation (instantiated as either MD_DataIdentification od SV_ServiceIdentification)
 - MD_Identification.additionalDocumentation
 - MD_Keywords.thesaurusName
 - MD_KeywordsClass.ontology

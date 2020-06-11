@@ -6,7 +6,7 @@ rank: 60
 title: Resource Format
 ---
 # Resource Format  ★★★
-*Information about how a cited spatial resource is kept on the host system can be useful to individuals such as subject matter specialist and data managers. General audiences will be more interested in the [distribution format](./DistribitionInfo)*.
+*Information about how a cited spatial resource is kept on the host system can be useful to individuals such as subject matter specialist and data managers. General audiences will be more interested in the [distribution format](./DistributionInfo)*.
 
 - **Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.resourceFormat*
 - **Governance** - *Agency*
@@ -23,7 +23,7 @@ title: Resource Format
 
 ### ISO Obligation
 
-There may be zero or many [0..\*] *resourceFormats* for the cited resource in the  *[MD_DataIdentification](./class-MD_DataIdentification)* package of class *[MD_Format](https://www.isotc211.org/hmmg/HTML/ConceptualModels/EARoot/EA1/EA13/EA2/EA10/EA4323.htm)* desrcibed in a metadata record.
+There may be zero or many [0..\*] *resourceFormats* for the cited resource in the  *[MD_DataIdentification](./class-MD_DataIdentification)* package of class *MD_Format* desrcibed in a metadata record.
 
 ###  ICSM Good Practice
 

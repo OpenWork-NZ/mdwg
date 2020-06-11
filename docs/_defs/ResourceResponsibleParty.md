@@ -8,33 +8,26 @@ title: Resource Responsible Party
 # Resource Responsible Party ★★★★★
 *Contact information for the parties responsible for various aspects of a resource is useful to users and managers of the resource and improves the ability of these parties to communicate. Some of the most basic users needs of a cited resource are to know who to contact for more information for information about different aspects of the resource. In ISO 19115-1 we capture this information in MD_identification.citation.*
 
-- **Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.citation>CI_Citation.citedResponsibleParty*
-- **Governance** -  *Common ICSM, Agency, Domain*
-- **Purpose -** *discovery, identification, communication*
-- **Audience -**
-  - machine resource - ⭑⭑
-  - general - ⭑⭑⭑⭑⭑
-  - data manager - ⭑⭑⭑⭑
-  - specialist - ⭑⭑⭑
-- **Metadata type -** *descriptive, administrative*
-- *ICSM Level of Agreement* - ⭑⭑⭑⭑
+|  |  |
+| --- | --- |
+| **Element Name** | *citedResponsibleParties* |
+| **Parent** | *[MD_Metadata.identificationInfo>MD_Identificationcitation>CI_Citation](./ResourceCitation)* |
+| **Class/Type** | *CI_Responsibility* |
+| **Governance** |  *Common ICSM, Agency, Domain* |
+| **Purpose** | *Discovery, Identification, Communication* |
+| **Audience** | machine resource - ⭑ ⭑ |
+|  | general - ⭑ ⭑ ⭑ ⭑ ⭑ |
+|  | resource manager - ⭑ ⭑ ⭑ ⭑ |
+|  | specialist - ⭑ ⭑ ⭑ |
+| **Metadata type** | *descriptive, administrative* |
+| **ICSM Level of Agreement** | ⭑⭑⭑⭑ |
 
 ## Definition
 **Name, role, and instructions for contacting the organisation, role and/or individual responsible for the cited resource.**
 
 ### ISO Obligation
 
-- There may be zero or more [0..\*] *citedResponsibleParties* provided for the cited resource in the  *[MD_DataIdentification.citation](./ResourceCitation)* package. These will be of class [CI_Responsibility](./class-CI_Responsibility).
-
-###  ICSM Good Practice
-
-- This element should be populated in all metadata records with a minimum of `role` , `name` (of organisation preferred), `positionName` and `electronicMailAddress`.
-
-#### Recommended Sub-Elements
-
-Follow the general guidance for [CI_Responsibility](./class-CI_Responsibility).
-
-- Recommended `role` values should include (but not be limited to) "author" and "publisher".
+- There may be zero or more [0..\*] *citedResponsibleParties* provided for the cited resource in the  *[MD_Identification.citation](./ResourceCitation)* package. These will be of class [CI_Responsibility](./class-CI_Responsibility). The resource may be of type Data *[MD_DataIdentification](./class-MD_DataIdentification)* or of type Service *[SV_ServiceIdentification]
 
 ## Discussion
 
@@ -42,32 +35,18 @@ This element captures contact information for those parties responsible for vari
 
 There may be multiple responsible parties who hold different responsibilities. The responsibility of each party is captured in the element CI_Responsibility > role. Entries for "author" and "publisher" are recommended. 
 
-## Recommendations
+## ICSM Recommendations
 
 Therefore - In order to meet ICSM good practice, in all metadata records, contact information should be given for the parties responsible for different aspects of the creation, management and maintenace of the resource. Entries for "author" and "publisher" should be provided.  In addition, for minimal conformity, `name` (of organisation preferred), `positionName` and `electrronicMailAddress` should also be popiulated.
 The use of the new `partyIdentifier` element added in the 2018 ammendment to the standard is encouraged by all parties.
 
-### Crosswalk considerations
+ This element should be populated in all metadata records with a minimum of `role` , `name` (of organisation preferred), `positionName` and `electronicMailAddress`.
 
-<details>
+### Recommended Sub-Elements
 
-#### ISO19139
+Follow the general guidance for [CI_Responsibility](./class-CI_Responsibility).
 
-See discussion at [CI_Responsibility](./class-CI_Responsibility)
-
-#### Dublin core / CKAN / data.gov.au
-
-Maps to `publisher`
-
-#### DCAT
-
-Maps to `dct:publisher`
-
-#### RIF-CS
-
-Maps to `Publisher`
-
-</details>
+- Recommended `role` values should include (but not be limited to) include "Point of Contact" as well as an entry for "publisher". "author" or "publisher".
 
 ## Also Consider
 
@@ -75,7 +54,30 @@ Maps to `Publisher`
 - **[Metadata Responsible Party](./MetadataContact)** Contact information for the recommended party to contact about the metadata
 - **[DistributionInfo](./DistributionInfo)** Includes Distributor contact information.
 - **[Citation](./ResourceCitation)** the parent package of which resouce responsible party is a part
-- **[Resource  Citation](./ResourceCitation)** - parent to this element
+- **[Resource Citation](./ResourceCitation)** - parent to this element
+
+## Crosswalk considerations
+
+<details>
+
+### ISO19139
+
+See discussion at [CI_Responsibility](./class-CI_Responsibility)
+
+### Dublin core / CKAN / data.gov.au
+
+Maps to `publisher`
+
+### DCAT
+
+Maps to `dct:publisher`
+
+### RIF-CS
+
+Maps to `Publisher`
+
+</details>
+
 
 ## Examples
 

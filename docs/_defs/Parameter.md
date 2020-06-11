@@ -41,7 +41,7 @@ Therefore - If a potential client of a service is to use such service, descripti
 
 ### Recommended Sub-Elements 
 
-- **name -** *(class - MemberName)* [1..1] - Mandatory. The name, as used by the service for this parameter 
+- **name -** *(class - MemberName)* [1..1] - Mandatory. The name, as used by the service for this parameter. 
 - **direction -** *(codelist - SV_ParameterDirection)* [1..1] - Mandatory. Indication if the parameter is an input to the service, an output or both 
 - **description -** *(type - charStr)* [0..1] - A narrative explanation of the role of the parameter
 - **optionality -** *(type - Boolean)* [1..1] - Mandatory. Indication if the parameter is required (True or False)
@@ -59,46 +59,20 @@ When describing the service parameters, the *direction* for each paramenter must
 * **in/out** - The parameter is both an input and output parameter to the service instance
 
 ## Outstanding Issues
-{Unresolved issues of discussion are captured here in Markdown Notes format}
-
-> **CORE ISSUE:**  
-{If there is any major issue of concern, Name it and discuss here}
-
-> **{Issue Name}**
-{Issue discussion points and items which need resolution}
-
+None known
 
 #### Other Discussion 
-{from other sources of note - other standards and implementations. In Markdown Notes format. Such as:}
 
-> **{DCAT Notes}** -
-{Discussion of issue}
-
-> **{From data.govt.au}** -
-{Discussion of issue}
+None known
 
 ## Crosswalk Considerations 
 
-#### ISO19139 
-{Discussion of issues, if any, to guide migration from ISO19139}
-
-#### Dublin core / CKAN / data.gov.au {if any}
-{mapping to `DC element` and discussion}
-
-#### DCAT 
-{mapping to `DCAT element` and discussion, if any}
-
-#### RIF-CS
-{mapping to `RIF-CS element` and discussion, if any}
+None known
 
 ## Also Consider
 {Links to additional useful information. Usually other elements, packages and classes in this good pratice document. May also link to other external resources.}
 
-**[{element name} -]({path to element})**  {description of importance and utility with any links}
-
-**[{element name} -]({path to element})**  {description of importance and utility with any links}
-
-**[{class name} -]({path to class})**  {description of importance and utility with any links}
+None known
 
 ## Examples
 
@@ -116,7 +90,105 @@ When describing the service parameters, the *direction* for each paramenter must
 ```
 <mdb:MD_Metadata>
 ....
-  {<in context xml/>}
+    </mdb:identificationInfo>
+       </srv:SV_ServiceIdentification>
+       ....
+          <srv:containsOperations>
+          ....
+                <srv:parameter>
+                   <srv:SV_Parameter>
+                      <srv:name>
+                         <gco:MemberName>
+                            <gco:aName>
+                               <gco:CharacterString>VERSION</gco:CharacterString>
+                            </gco:aName>
+                            <gco:attributeType>
+                               <gco:TypeName>
+                                  <gco:aName gco:nilReason="missing">
+                                     <gco:CharacterString/>
+                                  </gco:aName>
+                               </gco:TypeName>
+                            </gco:attributeType>
+                         </gco:MemberName>
+                      </srv:name>
+                      <srv:direction>
+                         <srv:SV_ParameterDirection>in</srv:SV_ParameterDirection>
+                      </srv:direction>
+                      <srv:description>
+                         <gco:CharacterString>Version of WFS. Accepted value = 1.0.0</gco:CharacterString>
+                      </srv:description>
+                      <srv:optionality>
+                         <gco:Boolean>true</gco:Boolean>
+                      </srv:optionality>
+                      <srv:repeatability>
+                               <gco:Boolean>false</gco:Boolean>
+                            </srv:repeatability>
+                         </srv:SV_Parameter>
+                      </srv:parameter>
+                      <srv:parameter>
+                         <srv:SV_Parameter>
+                            <srv:name>
+                               <gco:MemberName>
+                                  <gco:aName>
+                                     <gco:CharacterString>REQUEST</gco:CharacterString>
+                                  </gco:aName>
+                                  <gco:attributeType>
+                                     <gco:TypeName>
+                                        <gco:aName gco:nilReason="missing">
+                                           <gco:CharacterString/>
+                                        </gco:aName>
+                                     </gco:TypeName>
+                                  </gco:attributeType>
+                               </gco:MemberName>
+                            </srv:name>
+                            <srv:direction>
+                               <srv:SV_ParameterDirection>in</srv:SV_ParameterDirection>
+                            </srv:direction>
+                            <srv:description>
+                               <gco:CharacterString>REQUEST=GetCapabilities</gco:CharacterString>
+                            </srv:description>
+                            <srv:optionality>
+                               <gco:Boolean>false</gco:Boolean>
+                            </srv:optionality>
+                            <srv:repeatability>
+                               <gco:Boolean>false</gco:Boolean>
+                            </srv:repeatability>
+                         </srv:SV_Parameter>
+                      </srv:parameter>
+                      <srv:parameter>
+                         <srv:SV_Parameter>
+                            <srv:name>
+                               <gco:MemberName>
+                                  <gco:aName>
+                                     <gco:CharacterString>SERVICE</gco:CharacterString>
+                                  </gco:aName>
+                                  <gco:attributeType>
+                                     <gco:TypeName>
+                                        <gco:aName gco:nilReason="missing">
+                                           <gco:CharacterString/>
+                                        </gco:aName>
+                                     </gco:TypeName>
+                                  </gco:attributeType>
+                               </gco:MemberName>
+                            </srv:name>
+                            <srv:direction>
+                               <srv:SV_ParameterDirection>in</srv:SV_ParameterDirection>
+                            </srv:direction>
+                            <srv:description>
+                               <gco:CharacterString>SERVICE=WFS</gco:CharacterString>
+                            </srv:description>
+                            <srv:optionality>
+                               <gco:Boolean>false</gco:Boolean>
+                            </srv:optionality>
+                            <srv:repeatability>
+                               <gco:Boolean>false</gco:Boolean>
+                            </srv:repeatability>
+                   </srv:SV_Parameter>
+                </srv:parameter>
+             </srv:SV_OperationMetadata>
+          </srv:containsOperations>
+       </srv:SV_ServiceIdentification>
+    </mdb:identificationInfo>
 ....
 </mdb:MD_Metadata>
 ```
@@ -125,6 +197,6 @@ When describing the service parameters, the *direction* for each paramenter must
 {Captured from official ISO documentation at https://www.isotc211.org/hmmg/HTML/ConceptualModels/index.htm?goto=1:12:2:4095}
 Recommended elements highlighted in Yellow
 
-![{Name}]({path to UML diagram image})
+![Parameter](../images/Parameter.png)
 
 \pagebreak

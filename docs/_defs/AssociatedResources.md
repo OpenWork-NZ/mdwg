@@ -6,28 +6,38 @@ rank: 95
 title: Associated Resource
 ---
 # Associated Resource ★★★
-*Geospatial data and service often are part of a larger collection of resources.  Geospatial practitioners need to be provided linkages to these associated resources of which a given resource is a part. There are many types of associated resources, spatial and non-spatial. Associated resources can also provide useful path for discovery.*
+**Geospatial data and service often are part of a larger collection of resources.  Geospatial practitioners need to be provided linkages to these associated resources of which a given resource is a part. There are many types of associated resources, spatial and non-spatial. Associated resources can also provide useful path for discovery.**
 
-- **Path** -  *MD_Metadata.identificationInfo>MD_DataIdentification.associateResource*
-- **Governance** -  *Agency, Domain*
-- **Purpose -** *Resource use, Discovery*
-- **Audience -** 
-  - machine resource - ⭑⭑
-  - general - ⭑⭑⭑
-  - resource manager - ⭑⭑⭑ 
-  - specialist - ⭑⭑⭑⭑⭑
-- **Metadata type -** *administrative, descriptive*
-- *ICSM Level of Agreement -* ⭑⭑⭑
-
+|  |  |
+| --- | --- |
+| **Element Name** | *associateResource* |
+| **Parent** | *[MD_Metadata.identificationInfo>MD_Identification](./class-MD_Identification)* |
+| **Class/Type** | *MD_AssociatedResource* |
+| **Governance** |  *Resource use, Discovery* |
+| **Purpose** | *Discovery, Identification* |
+| **Audience** | machine resource - ⭑ ⭑ |
+|  | general - ⭑ ⭑ ⭑ |
+|  | resource manager - ⭑ ⭑ ⭑ ⭑ |
+|  | specialist - ⭑ ⭑ ⭑ ⭑ ⭑ |
+| **Metadata type** | *administrative, descriptive* |
+| **ICSM Level of Agreement** | ⭑ ⭑ ⭑ |
 
 ## Definition 
-**An entity to indicate association between resources and records related to the resources**
+**An entity to indicate association between resources and records related to the resources when part of a larger collection**
 
 ### ISO Obligation -
 
   - In a metadata record there should be zero to many [0..\*] *associatedResources* packages for the cited resource in the  *[MD_DataIdentification](./class-MD_DataIdentification)* package of class *[MD_AssociatedResource](http://wiki.esipfed.org/index.php/MD_AssociatedResource)* that relate a resource to other resources. These should be of type *[DS_AssociationTypeCode](http://wiki.esipfed.org/index.php/ISO_19115-3_Codelists#DS_AssociationTypeCode)*.
 
-#### ICSM Recommended Sub-Elements 
+## Discussion  
+
+When important aspects or information about a spatial resource are derived by the association of this resource to others of which it is part, it is useful that these associations be documented in the metadata so as these can be captured and discovered.  Doing so provides important avenues for additional data discovery.  Some resources are indeed of little use unless combined with others of which they are a part. 
+
+
+## ICSM Recommendations 
+Therefore - in order to provide an effective way to document, preserve and provide discovery of associated resources, these relations should be documented in the metadata.  At a minimum this should include a name, description of the relationship and link to the to the resource or its metadata. In contraxt to `additionalDocumentation` which can be thought of as outputs used to describe and understand a cited resource, an `associatedResource` is something that is of a piece of, or an input to, the cited resource.
+
+### Recommended Sub-Elements 
 
 * **associationType -** *(codelist - [DS_AssociationTypeCode](http://wiki.esipfed.org/index.php/ISO_19115-3_Codelists#DS_AssociationTypeCode))* [1..1] Mandatory for associated resource citations - one name for the type of relationship
   * crossReference - reference from one resource to another
@@ -43,31 +53,30 @@ title: Associated Resource
 * *Optional sub elements*
   * **initiativeType -** *(codelist - [DS_InitiativeTypeCode](http://wiki.esipfed.org/index.php/ISO_19115-3_Codelists#DS_InitiativeTypeCode))*  [0..1] - type of initiative under which the associated resource was produced 
   * **metadataReference -** *(class - [CI_Citation](./class-CI_Citation))*  [0..1] - reference to the metadata of the associated resource
+  
+  ## Outstanding Issues
 
-## Discussion  
+  > **Geonetwork support**
+   Support of associated resources for iso19115-3 in GeoNetwork 3.6 seems limited and perhaps broken. This needs investigation.
 
-When important aspects or information about a spatial resource are derived by the association of this resource to others, it is useful that these associations be documented in the metadata so as these can be captured and discovered.  Doing so provides important avenues for additional data discovery.  Some resources are indeed of little use unless combined with others of which they are a part. 
+  ## Other discussion
 
-### Outstanding Issues
+  > **DCAT**
+  Def - *A resource with an unspecified relationship to the catalogued item.*
+  Notes - *Use only if more specific subproperty is not available. Sub-properties of dct:relation in particular dcat:distribution, dct:hasPart, (and its sub-properties dcat:catalog, dcat:dataset, dcat:service ), dct:isPartOf, dct:conformsTo, dct:isFormatOf, dct:hasFormat, dct:isVersionOf, dct:hasVersion, dct:replaces, dct:isReplacedBy, dct:references, dct:isReferencedBy, dct:requires, dct:isRequiredBy*
+  
+  ## Also Consider
 
-> **Geonetwork support**
- Support of associated resources for iso19115-3 in GeoNetwork 3.6 seems limited and perhaps broken. This needs investigation.
+  - **[additionalDocumentation -](./AdditionalDocs)**  other documentation associated with the resource, e.g. related articles, publications, user guides, data dictionaries.
+  - **[resourceLineage -](./ResourceLineage)** Information about the provenance, source(s), and/or the production process(es) applied to the resource.
+  - **[browseGraphic -](./BrowseGraphic)**  associates to a large number of packages to provide linkage to associated image files, such as business or product icons and logos
+  - **[supplementalInformation -](https://www.isotc211.org/hmmg/HTML/ConceptualModels/EARoot/EA1/EA13/EA2/EA12/EA4420.htm)**   a free text field that is defined as "any other descriptive information about the resource". 
 
-#### Other discussion
-
-> **DCAT**
-Def - *A resource with an unspecified relationship to the catalogued item.*
-Notes - *Use only if more specific subproperty is not available. Sub-properties of dct:relation in particular dcat:distribution, dct:hasPart, (and its sub-properties dcat:catalog, dcat:dataset, dcat:service ), dct:isPartOf, dct:conformsTo, dct:isFormatOf, dct:hasFormat, dct:isVersionOf, dct:hasVersion, dct:replaces, dct:isReplacedBy, dct:references, dct:isReferencedBy, dct:requires, dct:isRequiredBy*
-
-## Recommendations 
-Therefore - in order to provide an effective way to document, preserve and provide discovery of associated resources, these relations should be documented in the metadata.  At a minimum this should include a name, description of the relationship and link to the to the resource or its metadata. In contraxt to `additionalDocumentation` which can be thought of as outputs used to describe and understand a cited resource, an `associatedResource` is something that is of a piece of, or an input to, the cited resource.
-
-
-### Crosswalk considerations
+## Crosswalk considerations
 
 <details>
 
-#### ISO19139 
+### ISO19139 
 MD_AssociatedResource replaces MD_AggregateInformation to clarify its
 role as a mechanism for associating resources. Changes include:
 
@@ -78,26 +87,19 @@ role as a mechanism for associating resources. Changes include:
 - MD_AssociatedResource /metadataReference:CI_Citation was added
   - This new element was added to avoid ambiguity about whether the name:CI_Citation refers to a resource or to metadata for that resource. Now it is clear that name:CI_Citation refers to the resource and the metadataReference refers to metadata for that resource.
 
-#### Dublin core / CKAN / data.gov.au 
+### Dublin core / CKAN / data.gov.au 
 
 TBD {mapping to *DC element* and discussion???}
 
-#### DCAT 
+### DCAT 
 
 Maps to dct:relation
 
-#### RIF-CS
+### RIF-CS
 
 Maps to "Related Information"
 
 </details>
-
-## Also Consider
-
-- **[additionalDocumentation -](./AdditionalDocs)**  other documentation associated with the resource, e.g. related articles, publications, user guides, data dictionaries.
-- **[resourceLineage -](./ResourceLineage)** Information about the provenance, source(s), and/or the production process(es) applied to the resource.
-- **[browseGraphic -](./BrowseGraphic)**  associates to a large number of packages to provide linkage to associated image files, such as business or product icons and logos
-- **[supplementalInformation -](https://www.isotc211.org/hmmg/HTML/ConceptualModels/EARoot/EA1/EA13/EA2/EA12/EA4420.htm)**   a free text field that is defined as "any other descriptive information about the resource". 
 
 ## Examples
 

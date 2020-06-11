@@ -38,14 +38,14 @@ When the service complies to a particular profile of a standard, it will suffice
 
 ## ICSM Recommendations 
 
-Therefore - When a service adheres to particular service standards such standards should be cited in this package. If a particular profile of such standard is implemented it is sufficient to document this in *[SV_ServiceIdentification.profile](./profile).* 
+Therefore - When a service adheres to particular service standards such standards should be cited in this package. If a particular profile of such standard is implemented it is sufficient to document this in *[SV_ServiceIdentification.profile](./ServiceProfile).* If the service may support multiple versions of the service standard, multiple entries of *Service Standard* can document such.
 
 #### Recommended Sub-Elements 
 Follow the guidance in *[CI_Citation](./class-CI_Citation)* noting the following element usage:
 
 - **Title -** *(type - charStr)*[1..1] Mandatory -  The well known name of the service standard
 - **onlineResource -**  *(class -  [CI_OnlineResource](./class-CI_OnlineResource))* [0..\*] online reference to the cited resource
-- **linkage -** (*type - charStr*) [1..1] Mandatory for *class - CI_OnlineResource* - usually the web address to the authoritative documentation for the service
+  - **linkage -** (*type - charStr*) [1..1] Mandatory for *class - CI_OnlineResource* - usually the web address to the authoritative documentation for the service standard
 
 ## Also Consider
 There are many locations where service type and version information may be captured. Choose appropriately.
@@ -59,31 +59,18 @@ There are many locations where service type and version information may be captu
 **[Keywords (services)-](./Keywords)**  To enable ease of discovery, a service metadata record should contain at least one keyword of type *service*. The value of such keywords should refer to the service taxonomy defined in ISO 19119.
 
 ## Outstanding Issues
-{Unresolved issues of discussion are captured here in Markdown Notes format}
 
 > **CORE ISSUE:**  
-{If there is any major issue of concern, Name it and discuss here}
+As there are several methods of capturing the service standard type, profile and version in a service metadata record, it would be useful for the MDWG to come to a strong agreement on which approach is best under what circumstances.
 
-> **Use of StandardVersion vs Profile**
-{Issue discussion points and items which need resolution}
-
-
-#### Other Discussion 
-{from other sources of note - other standards and implementations. In Markdown Notes format. Such as:}
-
-> **{DCAT Notes}** -
-{Discussion of issue}
-
-> **{From data.govt.au}** -
-{Discussion of issue}
 
 ## Crosswalk Considerations 
 
-#### ISO19139 
-{Discussion of issues, if any, to guide migration from ISO19139}
+#### ISO 19139 /19119
+None Known
 
-#### Dublin core / CKAN / data.gov.au {if any}
-{mapping to `DC element` and discussion}
+#### Dublin core / CKAN / data.gov.au 
+None known
 
 #### DCAT 
 {mapping to `DCAT element` and discussion, if any}
@@ -107,15 +94,51 @@ There are many locations where service type and version information may be captu
 ```
 <mdb:MD_Metadata>
 ....
-  {<in context xml/>}
+<mdb:identificationInfo>
+ <srv:SV_ServiceIdentification>
+    <mri:citation>
+    ....
+    </mri:citation>
+    <mri:abstract/>
+    <srv:serviceStandard>
+       <cit:CI_Citation>
+          <cit:title>
+             <gco:CharacterString>OGC WFS 2.0.0</gco:CharacterString>
+          </cit:title>
+          <cit:onlineResource>
+             <cit:CI_OnlineResource>
+                <cit:linkage>
+                   <gco:CharacterString>https://www.ogc.org/standards/wfs%20</gco:CharacterString>
+                </cit:linkage>
+                <cit:protocol gco:nilReason="missing">
+                   <gco:CharacterString/>
+                </cit:protocol>
+                <cit:name gco:nilReason="missing">
+                   <gco:CharacterString/>
+                </cit:name>
+                <cit:description gco:nilReason="missing">
+                   <gco:CharacterString/>
+                </cit:description>
+                <cit:function>
+                   <cit:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_OnLineFunctionCode"
+                                              codeListValue=""/>
+                </cit:function>
+             </cit:CI_OnlineResource>
+          </cit:onlineResource>
+       </cit:CI_Citation>
+    </srv:serviceStandard>
+    ....
+  </srv:SV_ServiceIdentification>
+  ....
+</mdb:identificationInfo>
 ....
 </mdb:MD_Metadata>
 ```
 
 ### UML diagrams
-{Captured from official ISO documentation at https://www.isotc211.org/hmmg/HTML/ConceptualModels/index.htm?goto=1:12:2:4095}
+
 Recommended elements highlighted in Yellow
 
-![{Name}]({path to UML diagram image})
+![Service Standard](../images/ServiceStandard.png)
 
 \pagebreak
