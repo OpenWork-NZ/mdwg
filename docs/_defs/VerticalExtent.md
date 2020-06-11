@@ -7,36 +7,27 @@ title: Vertical Extent
 ---
 # Vertical Extent ★★★
 
-*In order to quickly determine the general location of features included in an identifed resource it is useful that the extent information include any descriptions vertical extents.*
+**In order to quickly determine the general location of features included in an identifed resource it is useful that the extent information include any descriptions vertical extents.**
 
-- **Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.extent >EX_Extent.verticalElement*
-- **Governance** - *Common ICSM, Domain*
-- **Purpose** - *Discovery*
-- **Audience -**
-  - machine resource - ⭑⭑⭑⭑
-  - general - ⭑⭑⭑⭑
-  - data manager - ⭑⭑
-  - specialist - ⭑⭑⭑ (higher if domain specific time periods are used)
-- **Metadata type -** *descriptive*
-- *ICSM Level of Agreement* - ⭑⭑⭑
+|  |  |
+| --- | --- |
+| **Element Name** | *verticalElement* |
+| **Parent** |*[MD_Metadata.identificationInfo>MD_Identification.extent](./ResourceExtent)*  |
+| **Class/Type** | *EX_VerticalExtent* |
+| **Purpose** | *Discovery* |
+| **Audience** | machine resource - ⭑ ⭑ ⭑ ⭑ |
+|  | general - ⭑ ⭑ ⭑ ⭑ |
+|  | resource manager - ⭑ ⭑ |
+|  | specialist - ⭑ ⭑ ⭑  (higher if domain specific time periods are used) |
+| **Metadata type** | *descriptive* |
+| **ICSM Level of Agreement** | ⭑ ⭑ ⭑ |
 
 ## Definition
-**Provides vertical component of the extent of the referring object.**
+**Provides vertical component of the extent of the resource to aid discovery.**
 
 ### ISO Obligation
 
 - There can be zero to many [0..\*] *verticalElements* packages for the cited resource in the *[Resource Extent](./ResourceExtent)* package of class *[EX_VerticalExtent](http://wiki.esipfed.org/index.php/EX_VerticalExtent)* for a resource cited in a metadata record. 
-
-### ICSM Good Practice
-
-- The MDWG recommends, when the heights and depths of a resource are important to the resource, populating as many instances of Vertical Extent packages as need to give a common understanding of the depth and elevation coverage of the cited resource.
-
-#### Recommended Sub-Elements
-
-- **minimumValue -** *(type - Real)* The minimum vertical extent to which the resource is designed to be used
-- **maximumValue -** *(type - Real)* The maimum vertical extent to which the resource is designed to be used
-- **verticalCRSId -** *(class - [SC_VerticalCRS](http://wiki.esipfed.org/index.php/VerticalCRS)
-)* Identifies the vertical coordinate reference system used for the minimum and maximum values
 
 ## Discussion
 
@@ -44,7 +35,29 @@ Every metadata record describing resources which contain height or depth informa
 
 The use of multiple vertical extents is useful for describing more complicated resources.
 
-### Outstanding Issues
+## ICSM Recommendations
+
+Therefore - It is strongly recommended that to support discovery of resources, every metadata record contains, as needed vertical extent description of the resource area of interest.  Cpature the units of measure and the datum used.
+
+The MDWG recommends, when the heights and depths of a resource are important to the resource, populating as many instances of Vertical Extent packages as need to give a common understanding of the depth and elevation coverage of the cited resource.
+
+### Recommended Sub-Elements
+
+- **minimumValue -** *(type - Real)* The minimum vertical extent to which the resource is designed to be used
+- **maximumValue -** *(type - Real)* The maimum vertical extent to which the resource is designed to be used
+- **verticalCRSId -** *(class - [SC_VerticalCRS](http://wiki.esipfed.org/index.php/VerticalCRS)
+)* Identifies the vertical coordinate reference system used for the minimum and maximum values
+
+## Also Consider
+
+- **[EX_Extent](./ResourceExtent)** The class that contains all extent information about the cited resource - vertical, geographical or temporal.
+- **EX_GeographicExtents** is an abstract class that can be express three ways:
+  - **[EX_GeographicBoundingBox -](./ExtentBoundingBox)**  at least one of these should be present for resources that describe geographic resources
+  - **[EX_GeographicDescription -](./ExtentGeographicDescription)**  One of these should be present for resources that describe geographic resources
+  - **EX_BoundingPolygon**  While very useful, particularly in describing irregular areas, this element is not described by the MDWG as a recommended element due to the difficult that many systems have in implementing it.
+- **[EX_TemporalExtent](./TemporalExtents)** Contains temporal extent information for the cited resource
+
+## Outstanding Issues
 
 > **verticalCRS**
 The vertical CRS can be captured here or under the SpatialRefenceSystem package. We need to decide when to recommend capturing it here. As other extent paramenter do not include the CRS, I would make a recommendation that we treat verticl the same and capture this info in the SRS section.
@@ -56,36 +69,23 @@ These are not specified.  I would suggest that we use metres realtive to sea lev
 > **Datum Issues**
 What is "zero" is an open question. There may be little common between domains. In 3D cadaster the level above ground may be the measure. There also is no agreement between land vertical datums and those for sea.
 
-## Recommendations
-
-Therefore - It is strongly recommended that to support discovery of resources, every metadata record contains, as needed vertical extent description of the resource area of interest.  Cpature the units of measure and the datum used.
-
-### Crosswalk considerations
+## Crosswalk considerations
 
 <details>
 
-#### Dublin core / CKAN / data.gov.au
+### Dublin core / CKAN / data.gov.au
 
 Mapping to CKAN and Dublin core elements, particularly as used by data.gov.au needs discussion
 
-#### DCAT
+### DCAT
 
 Maps to `dct.spatial`
 
-#### RIF-CS
+### RIF-CS
 
 Maps to `Coverage/Spatial`
 
 </details>
-
-## Also Consider
-
-- **[EX_Extent](./ResourceExtent)** The class that contains all extent information about the cited resource - vertical, geographical or temporal.
-- **EX_GeographicExtents** is an abstract class that can be express three ways:
-  - **[EX_GeographicBoundingBox -](./ExtentBoundingBox)**  at least one of these should be present for resources that describe geographic resources
-  - **[EX_GeographicDescription -](./ExtentGeographicDescription)**  One of these should be present for resources that describe geographic resources
-  - **EX_BoundingPolygon**  While very useful, particularly in describing irregular areas, this element is not described by the MDWG as a recommended element due to the difficult that many systems have in implementing it.
-- **[EX_TemporalExtent](./TemporalExtents)** Contains temporal extent information for the cited resource
 
 ## Examples
 

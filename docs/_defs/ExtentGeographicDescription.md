@@ -6,39 +6,28 @@ rank: 30
 title: Extent Geographic Description
 ---
 # Extent Geographic Description ★★★★
-*In order to quickly determine the general location of spatial features included in an cited resource, it is useful that the extent information contains a verbal description of the geographic extent using common (to your community) place names.*
+**In order to quickly determine the general location of spatial features included in an cited resource, it is useful that the extent information contains a verbal description of the geographic extent using common (to your community) place names.**
 
-- **Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.extent >EX_Extent.geographicElement>EX_GeographicDescription.geographicIdentifier*
-- **Governance** - *Common, Domain*
-- **Purpose** - *Discovery*
-- **Audience -**
-  - machine resource - ⭑⭑
-  - general - ⭑⭑⭑⭑
-  - data manager - ⭑⭑
-  - specialist - ⭑⭑ (higher if domain specific placenames are used)
-- **Metadata type -** *descriptive*
-- *ICSM Level of Agreement* - ⭑⭑⭑
+|  |  |
+| --- | --- |
+| **Element Name** | *geographicIdentifier* |
+| **Parent** | *[MD_Metadata.identificationInfo>MD_Identificationextent >EX_Extent.geographicElement>](./GeographicExtent)* |
+| **Class/Type** | *EX_GeographicDescription* |
+| **Governance** |  *Common ICSM, Domain* |
+| **Purpose** | *Discovery* |
+| **Audience** | machine resource - ⭑ ⭑ ⭑  |
+|  | general - ⭑ ⭑ ⭑ ⭑ |
+|  | resource manager - ⭑ ⭑ |
+|  | specialist - ⭑ ⭑ ⭑  (higher if domain specific placenames are used) |
+| **Metadata type** | *descriptive* |
+| **ICSM Level of Agreement** | ⭑ ⭑ ⭑ |
 
 ## Definition
-**A Geographic description which describes the location of the resource.**
-
+**A Geographic description or placename which describes the location of the resource.**
 
 ### ISO Obligation
 
 - A metadata record may have zero to many  [0..\*] *geographicIdentifier* elements for the cited resource in the  *[GeographicExtent](./GeographicExtent)* package of class *EX_GeographicDescription* that described the geographic extent of a cited resource.
-
-### ICSM Good Practice
-
-- The MDWG recommends including as many instances of Geographical Extent packages as useful to give a common understanding of the spatial coverage of the cited resource. These names may be particular to your domain.
-
-#### Recommended Sub-Elements
-
-Use **extentTypeCode** *(type - Boolean)* [0..1] with a value of "0" to indicate exclusions
-class MD_Identifier
-
-* **code -** *(type - charStr)* mandatory for MD_Identifier
-* **codespace -** *(type - charStr)*  ?a codelist that contains the code?
-* **authority -** *(class - [CI_Citation](./class-CI_Citation))* optional, may contain the provider of the codelist of placenames
 
 ## Discussion
 
@@ -46,26 +35,20 @@ In order to provide a quick guide as tothe spatial area of interest for a cite r
 
 The use of multiple descriptor is recommended for more complicated geometries, including exclusion areas.
 
-### Outstanding Issues
-
-> **GeoNetwork use of EX_Extent.description** 
-The *"description"* element of EX_Extent offers a freeform way of describing the extent of a resource. GeoNetwork uses it to provide a codelist delimited set of values by which the EX_GeographicBoundingBox elements are populated in addition. It would seem more correct to use EX_GeographicDescription and its MD_Identifier element to this purpose.
-
-
-## Recommendations
+## ICSM Recommendations
 
 Therefore - It is highly recommended that to support discovery of resources, every metadata record that describes a geographic resource contains geographic descriptions of the area of interest for the resource. This description must contain a *code* that holds the value of the geographic descriptor and should contain in the *codespace* the codelist or domain from which it was derived. The *authority* element may contain additional documentation of the codelist.
 
+The MDWG recommends including as many instances of Geographical Extent packages as useful to give a common understanding of the spatial coverage of the cited resource. These names may be particular to your domain.
 
-### Crosswalk considerations
+### Recommended Sub-Elements
 
-<details>
+Use **extentTypeCode** *(type - Boolean)* [0..1] with a value of "0" to indicate exclusions
+class MD_Identifier
 
-#### Dublin core / CKAN / data.gov.au {if any}
-
-Mapping geographic extents to CKAN and Dublin core elements, particularly as used by data.gov.au needs discussion
-
-</details>
+* **code -** *(type - charStr)* mandatory for MD_Identifier
+* **codespace -** *(type - charStr)*  ?a codelist that contains the code?
+* **authority -** *(class - [CI_Citation](./class-CI_Citation))* optional, may contain the provider of the codelist of placenames
 
 ## Also Consider
 
@@ -76,6 +59,23 @@ Mapping geographic extents to CKAN and Dublin core elements, particularly as use
 - **[EX_TemporalExtent](./TemporalExtents)** Contains temporal extent information for the cited resource
 - **[EX_VerticalExtent -](./VerticalExtent)**  captures the vertical range of a resource.
 - **[GeoNames -](https://www.geonames.org/about.html)** Provides a free geographical database is available for download free of charge under a creative commons attribution license. It contains over 25 million geographical names and consists of over 11 million unique features whereof 4.8 million populated places and 13 million alternate names. All features are categorized into one out of nine feature classes and further subcategorized into one out of 645 feature codes.
+
+## Outstanding Issues
+
+> **GeoNetwork use of EX_Extent.description** 
+The *"description"* element of EX_Extent offers a freeform way of describing the extent of a resource. GeoNetwork uses it to provide a codelist delimited set of values by which the EX_GeographicBoundingBox elements are populated in addition. It would seem more correct to use EX_GeographicDescription and its MD_Identifier element to this purpose.
+
+
+## Crosswalk considerations
+
+<details>
+
+### Dublin core / CKAN / data.gov.au {if any}
+
+Mapping geographic extents to CKAN and Dublin core elements, particularly as used by data.gov.au needs discussion
+
+</details>
+
 
 ## Examples
 
