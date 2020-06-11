@@ -8,6 +8,20 @@ title: Resource Constraints
 # Resource Other Constraints ★★★★
 *The presence (or at times absence) of constraints (other than those of [legal](./ResourceLegalConstraints) of [security](./ResourceSecurityConstraints) nature) on a spatial resource is important to document. Potential users need to be informed of rights, restrictions and responsibilities that apply to the use of such resources. These include *use limitations* and *releasability* constraint information.*
 
+|  |  |
+| --- | --- |
+| **Element Name** | *resourceConstraints* |
+| **Parent** | *[MD_Metadata.identificationInfo>MD_Identification.resourceConstraints](./class-MD_Constraints)* |
+| **Class/Type** | *MD_Constraints* |
+| **Governance** |  *Agency* |
+| **Purpose** | *Resource use* |
+| **Audience** | machine resource - ⭑ |
+|  | general - ⭑ ⭑ ⭑ ⭑ ⭑ |
+|  | resource manager - ⭑ ⭑ ⭑ ⭑ |
+|  | specialist - ⭑ ⭑ ⭑ |
+| **Metadata type** | *administrative* |
+| **ICSM Level of Agreement** | ⭑ ⭑ ⭑ |
+
 - **Path** -  *MD_Metadata.identificationInfo>MD_DataIdentification.resourceConstraints*
 - **Governance** - *Agency*
 - **Primary use -** *Resource use* 
@@ -20,11 +34,11 @@ title: Resource Constraints
 - *ICSM Level of Agreement* - ⭑⭑⭑
 
 ## Definition -
-**Rights, restrictions, and responsibilities for the access and use of this cited resource.  While these may optionally be of subtypes legal ([MD_LegalConstraints](./class-MD_LegalConstraints)) or security ([MD_SecurityConstraints](./class-MD_SecurityConstraints)) there are other types of constraints to consider that exist under the more general class [MD_Constraints](./class-MD_Constraints) including *useLimitations* and *releasability* restrictions** 
+*Rights, restrictions, and responsibilities for the access and use of this cited resource.  While these may optionally be of subtypes legal ([MD_LegalConstraints](./class-MD_LegalConstraints)) or security ([MD_SecurityConstraints](./class-MD_SecurityConstraints)) there are other types of constraints to consider that exist under the more general class [MD_Constraints](./class-MD_Constraints) including *useLimitations* and *releasability* restrictions* 
 
 ### ISO Obligation
 
-- There should be zero to many [0..\*] *resourceConstraints* recorded for the cited resource in the  *[MD_DataIdentification](./class-MD_DataIdentification)* package of class [MD_Constraints](./class-MD_Constraints) in a metadata record,
+- There should be zero to many [0..\*] *resourceConstraints* recorded for the cited resource in the  *[MD_DataIdentification](./class-MD_DataIdentification)* or [SV_ServiceIdentification](./ServiceIdentification) package of class [MD_Constraints](./class-MD_Constraints) in a metadata record,
 
 ### ICSM Good Practice
 
