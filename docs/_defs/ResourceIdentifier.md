@@ -8,35 +8,26 @@ title: Resource Identifier
 # Resource Identifier ★★★★
 *An important component of the [Resource Citation](./class-CI_Citation) is the resource identification element.  Similar to the [Metadata Identifier](./MetadataIdentifier), this element hold a code that uniquely identifies the resource and differentiates it from all others. With this, machines and humans can differentiate, reference and link to the resource without ambiguity*
 
-- **Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.citation>CI_Citation.identifier*
-- **Governance** -  *Common, Agency, Domain*
-- **Purpose -** *linkage, identification*
-- **Audience -**
-  - machine resource - ⭑⭑⭑⭑
-  - general - ⭑
-  - data manager - ⭑⭑⭑
-  - specialist - ⭑⭑
-- **Metadata type -** *administrative*
-- *ICSM Level of Agreement* - ⭑⭑⭑⭑
+|  |  |
+| --- | --- |
+| **Element Name** | *identifier* |
+| **Parent** | *[MD_Metadata.identificationInfo>MD_Identificationcitation>CI_Citation](./ResourceCitation)* |
+| **Class/Type** | *MD_Identifier* |
+| **Governance** |  *Common ICSM, Agency, Domain* |
+| **Purpose** | *Linkage, Identification* |
+| **Audience** | machine resource - ⭑ ⭑ ⭑  ⭑|
+|  | general - ⭑ |
+|  | resource manager - ⭑ ⭑ ⭑  |
+|  | specialist - ⭑ ⭑ |
+| **Metadata type** | *administrative* |
+| **ICSM Level of Agreement** | ⭑⭑⭑⭑ |
 
 ## Definition
 **Alphanumeric identifier uniquely identifying this cited resource.**
 
 ### ISO Obligation
 
-- This is an ISO optional element. There may be zero or many [0..\*] *identifier* entries for the cited resource in the  *[MD_DataIdentification.citation](./ResourceCitation)* package of class *[MD_Identifier](./class-MD_Identifier)*  in a metadata record.
-
-###  ICSM Good Practice
-
-- The MDWG recommends this element be populated in all metadata records, preferably with a resolvable URI that points to a landing page for the resource. This landing page may be the authoritative metadata record.
-
-#### Recommended Sub-Elements
-
-Follow the general guidance for **[MD_Identifier](./class-MD_Identifier)** with emphasis on the following elements:
-
-- **code -** (*type - charstr*) [1..1] A mandataroy alphanumeric value identifying an instance in the namespace, 
-- **codespace -** *(type - charstr)* [0..1] An optional but recommended namespace in which the code is valid. Ideally a  URL  path by which, when combined with the uuid, the full path to the resource landing page is provided.
-- **description -** (*type - charstr*) [0..1] An optional but recommended natural language description of the meaning of the code value. Usually prepopulated in the metadata template.
+- This is an ISO optional element. There may be zero or many [0..\*] *identifier* entries for the cited resource in the  *[MD_DataIdentification.citation](./ResourceCitation)* package of class *[MD_Identifier](./class-MD_Identifier)*  in a metadata record. The resource may be of type Data *[MD_DataIdentification](./class-MD_DataIdentification)* or of type Service *[SV_ServiceIdentification]
 
 ## Discussion
 
@@ -48,7 +39,7 @@ Common practice in GA and ABARES is for this identifier to be the same as the me
 
 In the case where a resource may have multiple identifiers, additional instances of this element can be created. It is  important that  the `discription` element be populatied in such situations to distinguish the meaning of the different identifiers.
 
-## Recommendations
+## ICSM Recommendations
 
 Therefore - It is recommended that this element be populated, preferably once, but more often if there are multiple identifier sytems for the same resource. In the case of multiple identifiers, it is important that  the `discription` element be populatied in such situations to distinguish the meaning of the different identifiers. `Code` must be populated in all records and it is recomended that `codeSpace` be populated as well.
 
@@ -58,30 +49,39 @@ If the metadata record is for a resource that contains more than one dataset, a 
 
 Development of URI naming conventions to describe how the reference to the resource and the reference to metadata for that resource would be useful. This would allow easy discovery of not only the data from the metadata, but solve the often more difficult problem of discovery of the metadata for a given dataset.
 
-### Crosswalk considerations
+### Recommended Sub-Elements
 
-<details>
+Follow the general guidance for **[MD_Identifier](./class-MD_Identifier)** with emphasis on the following elements:
 
-#### Dublin core / CKAN / data.gov.au
-
-Maps to `identifier`
-> Note BC 18-7 - may relate to issues involving confusion between metadata identifiers and resource identifiers in DC and other metadata systems.
-
-#### DCAT
-
-Maps to `dcat:identifier`
-
-#### RIF-CS
-
-Maps to `Identifier`
-
-</details>
+- **code -** (*type - charstr*) [1..1] A mandataroy alphanumeric value identifying an instance in the namespace, 
+- **codespace -** *(type - charstr)* [0..1] An optional but recommended namespace in which the code is valid. Ideally a  URL  path by which, when combined with the uuid, the full path to the resource landing page is provided.
+- **description -** (*type - charstr*) [0..1] An optional but recommended natural language description of the meaning of the code value. Usually prepopulated in the metadata template.
 
 ## Also Consider
 
 - **[onlineResource -](./DistributionInfo)** (MD_Distribution.transferOptions>MD_DigitalTransferOptions.online) is used to provide online linage to the resource.
 - **[MetadataIdentifier -](./MetadataIdentifier)** is the preferred element to be used to provide linkage to the metadata record.
 - **[Resource  Citation](./ResourceCitation)** - parent to this element
+
+## Crosswalk considerations
+
+<details>
+
+### Dublin core / CKAN / data.gov.au
+
+Maps to `identifier`
+> Note BC 18-7 - may relate to issues involving confusion between metadata identifiers and resource identifiers in DC and other metadata systems.
+
+### DCAT
+
+Maps to `dcat:identifier`
+
+### RIF-CS
+
+Maps to `Identifier`
+
+</details>
+
 
 ## Examples
 

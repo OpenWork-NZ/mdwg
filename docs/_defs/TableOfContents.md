@@ -42,7 +42,7 @@ title: Table of Contents
   - [AssociatedResource](./AssociatedResources)
   - [Format](./ResourceFormat)
   - [Browse Graphic](./BrowseGraphic)
-  - Package - [Resource  Citation](./ResourceCitiation)
+  - Package - [Resource  Citation](./ResourceCitation)
     - [Resource Title](./ResourceTitle)
     - [Resource Identifier](./ResourceIdentifier)
     - [Resource Date](./ResourceDate)
@@ -62,7 +62,7 @@ title: Table of Contents
       - UseLimitations
       - Releasibility
       - OtherConstraints
-    - [Resource Legal Constraints](./ResourceLegalContraints) - Includes
+    - [Resource Legal Constraints](./ResourceLegalConstraints) - Includes
       - Legal constraints
       - Reference for legal
     - [Resource Security Constraints](./ResourceSecurityConstraints) Includes
@@ -93,7 +93,7 @@ title: Table of Contents
 - [CI_OnlineResource](./class-CI_OnlineResource)
 - [CI_Responsibility](./class-CI_Responsibility)
 - [MD_BrowseGraphic](./class-MD_BrowseGraphic)
-- [MD_Constraints](./class-md_constraints)
+- [MD_Constraints](./class-MD_Constraints)
 - [MD_DataIdentification](./class-MD_DataIdentification)
 - [MD_Metadata](./class-MD_Metadata)
 - [MD_Identification](./class-MD_Identification)

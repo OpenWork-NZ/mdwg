@@ -7,25 +7,28 @@ title: Resource Legal Constraints
 ---
 # Resource Legal Constraints ★★★★★
 
-*When constraints ([MD_Constraints](./class-md_constraints.html)) on a spatial resource [MD_Identification](http://wiki.esipfed.org/index.php/MD_Identification)  are of a legal nature it is important to document these.. Potential users need to be informed of rights, restrictions and responsibilities (or lack thereof) that apply to the use of such resources.*
+*When constraints ([MD_Constraints](./class-MD_Constraints)) on a spatial resource [MD_Identification](http://wiki.esipfed.org/index.php/MD_Identification)  are of a legal nature it is important to document these.. Potential users need to be informed of rights, restrictions and responsibilities (or lack thereof) that apply to the use of such resources.*
 
-- **Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.resourceConstraints>MD_LegalConstraints*
-- **Governance** - *Agency*
-- **Purpose -** *Resource use*
-- **Audience -**
-  - machine resource - ⭑
-  - general - ⭑⭑⭑⭑⭑
-  - data manager - ⭑⭑⭑⭑
-  - specialist - ⭑⭑
-- **Metadata type -** *adminsitrative*
-- *ICSM Level of Agreement* - ⭑⭑⭑
+|  |  |
+| --- | --- |
+| **Element Name** | *resourceConstraints* |
+| **Parent** | *[MD_Metadata.identificationInfo>MD_Identification.resourceConstraints](./class-MD_Constraints)* |
+| **Class/Type** | *MD_LegalConstraints* |
+| **Governance** |  *Agency* |
+| **Purpose** | *Resource use* |
+| **Audience** | machine resource - ⭑ |
+|  | general - ⭑ ⭑ ⭑ ⭑ ⭑ |
+|  | resource manager - ⭑ ⭑ ⭑ ⭑ |
+|  | specialist - ⭑ ⭑ ⭑ |
+| **Metadata type** | *Resource use* |
+| **ICSM Level of Agreement** | ⭑ ⭑ ⭑ |
 
 ## Definition
 **Legal restrictions on the access and use of this cited resource e.g. copyright**
 
 ### ISO Obligation
 
-- There may be zero  to many [0..\*] *legalConstraints* recorded for the cited resource in the  *[MD_DataIdentification](./class-MD_DataIdentification)* package of class *[MD_LegalConstraints](./class-MD_LegalConstraints)* in a metadata record,  
+- There may be zero  to many [0..\*] *legalConstraints* recorded for the cited resource in the  *[MD_DataIdentification](./class-MD_DataIdentification)* or [SV_ServiceIdentification](./ServiceIdentification) package of class *[MD_LegalConstraints](./class-MD_LegalConstraints)* in a metadata record,  
 
 ### ICSM Good Practice
 
@@ -67,7 +70,7 @@ Therefore - It is important to capture all legal constraints that apply to a spa
 
 #### ISO19139
 
-See guidance provided in [MD_Constraints](./class-md_constraints) and [MD_LegalConstraints](./class-MD_LegalConstraints)
+See guidance provided in [MD_Constraints](./class-MD_Constraints) and [MD_LegalConstraints](./class-MD_LegalConstraints)
 
 #### Dublin core / CKAN / data.gov.au
 

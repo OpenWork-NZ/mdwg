@@ -58,7 +58,7 @@ See [MD_Scope](./class-MD_Scope)
 
 - **fileName -** *(type - charStr)* Mandatory when using `MD_BrowseGraphic` - name of the file that contains a graphic that provides an illustration of the resource. 
 - **linkage -** *(class - [CI_OnlineResource](./class-CI_OnlineResource))*  0 to many - link to browse graphic.
-- **imageConstraints -** *(class - [MD_Constraints](./class-md_constraints))*  0 to many - restriction on access and/or use of browse graphic
+- **imageConstraints -** *(class - [MD_Constraints](./class-MD_Constraints))*  0 to many - restriction on access and/or use of browse graphic
 - **fileType -** *(type - charStr)* f0 to 1 - format in which the illustration is encoded (e.g.: EPS, GIF, JPEG, PBM, PS, TIFF, PDF)
 - **extent -** *(class -  [Extent](./ResourceExtent))* Information about the horizontal, vertical and temporal extent of the resource specified by the scope
 
