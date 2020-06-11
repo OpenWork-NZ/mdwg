@@ -27,7 +27,7 @@ title: Resource Reference Date
 
 ### ISO Obligation
 
-- There can be zero to many [0..`*`] *Resource reference date* entries for the cited resource in the  *[MD_Identification.citation](./ResourceCitation)* package of class *[CI_Date](./class-CI_Date)* in a metadata record.  One of these must be of `dateType` *creation*. The resource may be of type Data *[MD_DataIdentification](./class_MD_DataIdentification)* or of type Service *[SV_ServiceIdentification].
+- There can be zero to many [0..`*`] *Resource reference date* entries for the cited resource in the  *[MD_Identification.citation](./ResourceCitation)* package of class *[CI_Date](./class-CI_Date)* in a metadata record.  One of these must be of `dateType` *creation*. The resource may be of type Data *[MD_DataIdentification](./class-MD_DataIdentification)* or of type Service *[SV_ServiceIdentification].
 
 
 

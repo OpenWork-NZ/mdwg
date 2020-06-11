@@ -38,7 +38,7 @@ title: Resource Edition
 
 ### ISO Obligation
 
-- There can be at most one [0..1] *edition* entries for the cited resource in the  *[MD_Identification.citation](./ResourceCitation)* package in a metadata record. These are of type *characterString*. The resource may be of type Data *[MD_DataIdentification](./class_MD_DataIdentification)* or of type Service *[SV_ServiceIdentification]
+- There can be at most one [0..1] *edition* entries for the cited resource in the  *[MD_Identification.citation](./ResourceCitation)* package in a metadata record. These are of type *characterString*. The resource may be of type Data *[MD_DataIdentification](./class-MD_DataIdentification)* or of type Service *[SV_ServiceIdentification]
 
 ## Discussion
 

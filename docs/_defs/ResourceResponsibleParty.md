@@ -27,7 +27,7 @@ title: Resource Responsible Party
 
 ### ISO Obligation
 
-- There may be zero or more [0..\*] *citedResponsibleParties* provided for the cited resource in the  *[MD_Identification.citation](./ResourceCitation)* package. These will be of class [CI_Responsibility](./class-CI_Responsibility). The resource may be of type Data *[MD_DataIdentification](./class_MD_DataIdentification)* or of type Service *[SV_ServiceIdentification]
+- There may be zero or more [0..\*] *citedResponsibleParties* provided for the cited resource in the  *[MD_Identification.citation](./ResourceCitation)* package. These will be of class [CI_Responsibility](./class-CI_Responsibility). The resource may be of type Data *[MD_DataIdentification](./class-MD_DataIdentification)* or of type Service *[SV_ServiceIdentification]
 
 ## Discussion
 

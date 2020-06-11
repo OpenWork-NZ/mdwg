@@ -27,7 +27,7 @@ title: Resource Identifier
 
 ### ISO Obligation
 
-- This is an ISO optional element. There may be zero or many [0..\*] *identifier* entries for the cited resource in the  *[MD_DataIdentification.citation](./ResourceCitation)* package of class *[MD_Identifier](./class-MD_Identifier)*  in a metadata record. The resource may be of type Data *[MD_DataIdentification](./class_MD_DataIdentification)* or of type Service *[SV_ServiceIdentification]
+- This is an ISO optional element. There may be zero or many [0..\*] *identifier* entries for the cited resource in the  *[MD_DataIdentification.citation](./ResourceCitation)* package of class *[MD_Identifier](./class-MD_Identifier)*  in a metadata record. The resource may be of type Data *[MD_DataIdentification](./class-MD_DataIdentification)* or of type Service *[SV_ServiceIdentification]
 
 ## Discussion
 

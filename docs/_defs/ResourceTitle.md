@@ -27,7 +27,7 @@ title: Resource Title
 
 ### ISO Obligation
 
-- There must be one and only one [1..1] *title* element for the cited resource in the  *[MD_Identification.citation](./ResourceCitation)* package in a metadata record of type *charater string*. The resource may be of type Data *[MD_DataIdentification](./class_MD_DataIdentification)* or of type Service *[SV_ServiceIdentification].
+- There must be one and only one [1..1] *title* element for the cited resource in the  *[MD_Identification.citation](./ResourceCitation)* package in a metadata record of type *charater string*. The resource may be of type Data *[MD_DataIdentification](./class-MD_DataIdentification)* or of type Service *[SV_ServiceIdentification].
 
 ## Discussion
 
