@@ -7,7 +7,7 @@ title: Coupled Resource
 ---
 # Coupled Resource  ★★★★
 
-*When documenting a service, the nature of the relationship of the service to the data resources on which it interacts is important to capture so as to provide potential users an understanding of the applicability of such service to their needs. When a service is highly dependant on particular data, these data needs need to be documented in the service metadata.*
+**When documenting a service, the nature of the relationship of the service to the data resources on which it interacts is important to capture so as to provide potential users an understanding of the applicability of such service to their needs. When a service is highly dependant on particular data, these data needs need to be documented in the service metadata.**
 
 |  |  |
 | --- | --- |
@@ -72,30 +72,10 @@ There are numerous alternate ways to document related dataset to a service. We r
 > **CORE ISSUE: Choice of Element to Hold Related Data Resource Reference**  
 There are numerous ways the related data resource may be captured in a service metadata record (e.g. *operatesOn*, *operatedDataset*, or even a sibling *MD_DataIdentification* package. The choice of *coupledResource* is made for the following reasons. ISO 19115-1 recommends *coupledResource* as minimum metadata required for the discovery of service resources. The options *operatesOn*, *SV_CoupledResource.resource* and a sibling *identificationInfo/MD_DataIdentification* all require a *MD_Identifier* package. This would create metadata records that identify more than one resource. ICSM guidance is that such a situation be avoided as it could confuse other catalogues that expect a one-to-one relationship between metadata resources and resources.
 
-#### Other Discussion 
-
-> **{DCAT Notes}** -
-{Discussion of issue}
-
-> **{From data.govt.au}** -
-{Discussion of issue}
-
-## Crosswalk considerations 
-
-#### ISO19139/19119 
-The element **SV_CoupledResource.identifier** was removed and the element **SV_CoupledResource. resourceReference** and **role SV_ CoupledResource.resource** were added to replace the dashed lines of ISO 19119, it enables implementation by reference an existing operationMetadata instance. The element **SV_CoupledResource.scoped Name** came from CSW ISO AP to identify the dataset in the context of the operation, for example, name of the layer for a WMS.
-
-#### Dublin core / CKAN / data.gov.au 
-None known
-
-#### DCAT 
-None known
-
-#### RIF-CS
-None known
-
 
 ## Examples
+
+<details>
 
 ### GA
 {example - if any useful}
@@ -174,5 +154,7 @@ None known
 Recommended elements highlighted in Yellow
 
 ![Coupled Resource](../images/CoupledResource.png)
+
+</details>
 
 \pagebreak

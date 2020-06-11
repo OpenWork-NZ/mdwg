@@ -7,7 +7,7 @@ title: Coupling Type
 ---
 # Coupling Type  ★★★★
 
-*When documenting a service, the nature of the relationship of the service to the data resources on which it interacts is important to capture so as to provide potential users an understanding of the applicability of such service to their needs. A service may be highly dependant on particular data, independent of the data or a mixture.*
+**When documenting a service, the nature of the relationship of the service to the data resources on which it interacts is important to capture so as to provide potential users an understanding of the applicability of such service to their needs. A service may be highly dependant on particular data, independent of the data or a mixture.**
 
 |  |  |
 | --- | --- |
@@ -47,56 +47,15 @@ Therefore - The element *couplingType* should be populated in all service metada
 
 ### Values for Codelist *SV_CouplingType*
 
-From codelist - *[SV_CouplingType](https://github.com/ISO-TC211/schemas/blob/master/19115/resources/Codelist/gml/SV_CouplingType.xml)*. Available values for *SV_CouplingType* are: 
+From codelist - **[SV_CouplingType](https://github.com/ISO-TC211/schemas/blob/master/19115/resources/Codelist/gml/SV_CouplingType.xml)**. Available values for *SV_CouplingType* are: 
 
 - *loose* - service instance is loosely coupled with a data instance, i.e. no MD_DataIdentification class has to be described
 - *mixed* - service instance is mixed coupled with a data instance, i.e. MD_DataIdentification describes the associated data instance and additionally the service instance might work with other external data instances
 - *tight* - service instance is tightly coupled with a data instance, i.e. MD_DataIdentification class MUST be described
 
-## Also Consider
-{Links to additional useful information. Usually other elements, packages and classes in this good practice document. May also link to other external resources.}
-
-**[{element name} -]({path to element})**  {description of importance and utility with any links}
-
-**[{element name} -]({path to element})**  {description of importance and utility with any links}
-
-**[{class name} -]({path to class})**  {description of importance and utility with any links}
-
-## Outstanding Issues
-{Unresolved issues of discussion are captured here in Markdown Notes format}
-
-> **CORE ISSUE:**  
-{If there is any major issue of concern, Name it and discuss here}
-
-> **{Issue Name}**
-{Issue discussion points and items which need resolution}
-
-
-#### Other Discussion 
-{from other sources of note - other standards and implementations. In Markdown Notes format. Such as:}
-
-> **{DCAT Notes}** -
-{Discussion of issue}
-
-> **{From data.govt.au}** -
-{Discussion of issue}
-
-## Crosswalk Considerations 
-
-#### ISO19139 
-{Discussion of issues, if any, to guide migration from ISO19139}
-
-#### Dublin core / CKAN / data.gov.au {if any}
-{mapping to `DC element` and discussion}
-
-#### DCAT 
-{mapping to `DCAT element` and discussion, if any}
-
-#### RIF-CS
-{mapping to `RIF-CS element` and discussion, if any}
 
 ## Examples
-
+<details>
 ### GA
 {example - if any useful}
 
@@ -138,9 +97,11 @@ From codelist - *[SV_CouplingType](https://github.com/ISO-TC211/schemas/blob/mas
 ```
 
 ### UML diagrams
-{Captured from official ISO documentation at https://www.isotc211.org/hmmg/HTML/ConceptualModels/index.htm?goto=1:12:2:4095}
+
 Recommended elements highlighted in Yellow
 
-![Coupling Type](../images/CouplingType)
+![Coupling Type](../images/CouplingType.png)
+
+</details>
 
 \pagebreak
