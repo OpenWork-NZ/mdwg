@@ -8,6 +8,20 @@ title: Graphic Overview
 # Resource Graphic Overview ★★★
 *Geospatial data and service are largely visual by nature.  Geospatial practicianers tend to be visually oriented. Browse graphics are a way of including in the metadata visual clues as to the nature and usefulness of resources.*
 
+|  |  |
+| --- | --- |
+| **Element Name** | *citation* |
+| **Parent** | *[MD_Metadata.identificationInfo>MD_Identification](./class-MD_Identification)* |
+| **Class/Type** | *CI_Citation* |
+| **Governance** |  *Common ICSM, Agency, Domain* |
+| **Purpose** | *Discovery, Identification* |
+| **Audience** | machine resource - ⭑ ⭑ ⭑ |
+|  | general - ⭑ ⭑ ⭑ ⭑ ⭑ |
+|  | resource manager - ⭑ ⭑ ⭑ ⭑ |
+|  | specialist - ⭑ ⭑ ⭑ |
+| **Metadata type** | *descriptive* |
+| **ICSM Level of Agreement** | ⭑⭑⭑⭑ |
+
 - **Path** -  *MD_Metadata.identificationInfo>MD_DataIdentification.graphicOverview*
 - **Governance** -  *Agency, Domain*
 - **Purpose -** *Discovery*

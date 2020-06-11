@@ -6,7 +6,7 @@ rank: 30
 title: Resource Citation
 ---
 #  Resource Citation ★★★★★
-*Some of the most basic needs of users of a resource is citation information. This basic information includes title, edition, identifier, dates, responsible parties, etc. In ISO 19115-1 we capture this information in MD_identification.citation.*
+**Some of the most basic needs of users of a resource is citation information. This basic information includes title, edition, identifier, dates, responsible parties, etc. In ISO 19115-1 we capture this information in MD_identification.citation.**
 
 |  |  |
 | --- | --- |
@@ -20,7 +20,7 @@ title: Resource Citation
 |  | resource manager - ⭑ ⭑ ⭑ ⭑ |
 |  | specialist - ⭑ ⭑ ⭑ |
 | **Metadata type** | *descriptive* |
-| **ICSM Level of Agreement** | ⭑⭑⭑⭑ |
+| **ICSM Level of Agreement** | ⭑ ⭑ ⭑ ⭑ |
 
 ## Definition
 **Citation information for the spatial resource.**

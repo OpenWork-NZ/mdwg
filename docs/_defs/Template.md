@@ -8,7 +8,7 @@ title: Template
 # {Element or Package Title}  ★★★★★ 
 {stars indicate level of ICSM importance / priority}
 
-*{A brief description about the problem this element addresses - why we need it. Where it sits in the metadata hierarchy.}*
+**{A brief description about the problem this element addresses - why we need it. Where it sits in the metadata hierarchy.}**
 |  |  |
 | --- | --- |
 | **Element Name** | *serviceTypeVersion* |
