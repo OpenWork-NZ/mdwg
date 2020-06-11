@@ -1,4 +1,4 @@
-%%
+f%%
 % Copyright (c) 2017 - 2019, Pascal Wagler;
 % Copyright (c) 2014 - 2019, John MacFarlane
 %
@@ -129,10 +129,10 @@ $endif$
 $if(beamerarticle)$
 \usepackage{beamerarticle} % needs to be loaded first
 $endif$
-$if(fontfamily)$
+%$if(fontfamily)$
 \usepackage[$for(fontfamilyoptions)$$fontfamilyoptions$$sep$,$endfor$]{$fontfamily$}
 $else$
-\usepackage{lmodern}
+\usepackage{FreeSerif}
 $endif$
 $if(linestretch)$
 \usepackage{setspace}
@@ -182,6 +182,8 @@ $else$
   \setmathfont[$for(mathfontoptions)$$mathfontoptions$$sep$,$endfor$]{$mathfont$}
 $endif$
 $endif$
+\usepackage{titlesec}
+
 $if(CJKmainfont)$
   \ifxetex
     \usepackage{xeCJK}
@@ -572,7 +574,7 @@ $endif$
 \definecolor{heading-color}{RGB}{40,40,40}
 $if(beamer)$
 $else$
-\addtokomafont{section}{\color{heading-color}}
+%\addtokomafont{section}{\color{heading-color}}
 $endif$
 % When using the classes report, scrreprt, book,
 % scrbook or memoir, uncomment the following line.
