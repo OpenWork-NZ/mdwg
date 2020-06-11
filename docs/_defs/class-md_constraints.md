@@ -36,6 +36,20 @@ title: MD_Constraints
 
 ### Associated Classes, Codelists and Unions
 
+#### MD_RestrictionCode - codelist
+
+The name of the handling restrictions on the resource
+
+- *unclassified* - information applies to the dataset
+- *restricted* - information applies to the series
+- *confidential* - information applies to non-geographic data
+- *secret* - information applies to a dimension group
+- *topSecret* - information applies to a feature
+- *sensitiveButUnclassified* - although unclassified, requires strict controls over its distribution
+- *forOfficialUseOnly* -   information applies to the characteristic of a feature
+- *protected* - information applies to the collection hardware class
+- *limitedDistribution* - information applies to the collection session
+
 #### MD_Scope - class
 
 See [MD_Scope](./class-MD_Scope)
