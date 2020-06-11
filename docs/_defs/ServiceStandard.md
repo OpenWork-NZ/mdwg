@@ -33,6 +33,8 @@ There may be zero or more [0-\*] *serviceStandard* entries for the cited resourc
 ## Discussion  
 To be complete in the description of the standards to which a spatial service adheres, citations, including linkages to official websites and documentation, of such standards should be provided. This will aid potential users in the use of such services or to troubleshoot when the use of such services do not behave as expected.
 
+When the service complies to a particular profile of a standard, it will suffice to complete the sibling *profile* element to the same degree.
+
 
 ## ICSM Recommendations 
 

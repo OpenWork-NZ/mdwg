@@ -7,7 +7,7 @@ title: Service Type Version
 ---
 # Service Type Version  ★★ 
 
-*When describing Spatial Services in a metadata record, it is useful to capture the type and version of the service in its commonly known name so as those who may wish to use the service can determine its campatibility to the desired purpose.*
+**When describing Spatial Services in a metadata record, it is useful to capture the type and version of the service in its commonly known name so as those who may wish to use the service can determine its campatibility to the desired purpose.**
 
 |  |  |
 | --- | --- |
