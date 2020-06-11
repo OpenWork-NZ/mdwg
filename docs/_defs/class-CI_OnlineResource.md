@@ -7,7 +7,7 @@ title: CI_OnlineResource
 ---
 # class - CI_OnlineResource
 
-Most metadata contains information about resources that are avaliable online. In order for machines and people to to retrieve such resources cited in a  Metadata record [MD_Metadata](./class-MD_Metadata) , a method of access must be provided.  CI_OnlineResources provides a standard way of describing such access wherever such is documented in a metadata record.
+Most metadata contains information about resources that are avaliable online. In order for machines and people to to retrieve such resources cited in a  Metadata record [MD_Metadata](http://link.to.MD_Metadata) , a method of access must be provided.  CI_OnlineResources provides a standard way of describing such access wherever such is documented in a metadata record.
 
 - **Governance** -  *ISO*
 - **Metadata type -** *administrative*
