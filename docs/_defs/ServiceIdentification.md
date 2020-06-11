@@ -78,18 +78,19 @@ In addition the recommended attributes of [MD_Identification](./class-MD_Identif
 
 The following provides additional guidance to [MD_Identification](./class-MD_Identification) inherited element recommendations.
 
-- **[Service Citation -](./ServiceCitation)** *(class - [CI_Citation](./class-CI_Citation)*  [1..1] - Mandatory. Citation information providing the name, publication date, identifiers, originators and publishers of the service. 
+- **[Resource Citation -](./ResourceCitation)** *(class - [CI_Citation](./class-CI_Citation)*  [1..1] - Mandatory. Citation information providing the name, publication date, identifiers, originators and publishers of the service. 
 - **[abstract -](./Abstract)** *(type - charStr)* [1..1] - Mandatory. A brief narrative summary of the cited service resource and its functions.
 - **[purpose -](./Purpose)** *(type - charStr))* [0..1] - Recommended. A brief summary of the intentions and intended users with which the service resource was developed
 - **[status -](./Status)** *(codelist - [MD_ProgressCode](http://wiki.esipfed.org/index.php/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_ProgressCode))* [0..1] - Recommended. The status of the service resource populated from a domain of values
 - **[topicCategory -](./TopicCategory)** *(enumeration - [MD_TopicCategoryCode](http://wiki.esipfed.org/index.php/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_TopicCategoryCode))* [0..\*] - Recommended.  The main themes of the service resource populated from a fixed domain of values
-- **[pointOfContact -](./ResourcePointOfContact)** *(class -  [CI_Responsibility](./class-CI_Responsibility))* [0..1] - Highly Recommended. The name and contact information for the organisation, role and/or individual that provides a point of contact for the cited service.
+- **[pointOfContact -](./ResourcePointOfContact)** *(class - [CI_Responsibility](./class-CI_Responsibility))* [0..1] - Highly Recommended. The name and contact information for the organisation, role and/or individual that provides a point of contact for the cited service.
 - **[spatialRepresentationType -](./SpatialRepresentationType)** *(codelist - MD_SpatialRepresentationTypeCode)* [0..\*] - Optional. The method used by the service to spatially represent geographic information.
 - **[spatialResolution -](./SpatialResolution)** *(class - MD_Resolution)* [0..\*] - Recommended. The nominal scale and/or spatial resolution at which the service is designed to be used.
+- **[graphicOverview -](./BrowseGraphic)** *(class - MD_BrowseGraphic)* [0..\*] - Optional. Graphics that provide lightweight illustrations pertaining to a service
 - **[additionalDocumentation -](./AdditionalDocs) -**  *(class - [CI_Citation](./class-CI_Citation))* [0..\*] - Recommended. Citation of other documentation associated with the service, e.g. related articles, publications, user guides, data dictionaries.
 - **[associatedResource -](./AssociatedResources) -**  *(class - [MD AssociatedResource](http://wiki.esipfed.org/index.php/MD_AssociatedResource))* [0..\*] - Highly recommended when part of a larger work. Used to indicate association between resources and records related to the service of which the setvice is a part.
-- **[Extent -](./ResourceExtent)** *(class - [EX_Extent](http://wiki.esipfed.org/index.php/EX_Extent))* [0..\*]  Recommended when the Service has extent limitations. High-level thematic classifications to assist in the grouping and searching of data. 
-- **[referenceSystemInfo -](https://www.loomio.org/d/4SliNjWE/md_metadata-md_referencesystem-definition)** *(class - MD_ReferenceSystem)* [0..\*] Highly Recommended. The information about the reference systems that define the system use to describe spatial position descriptions in a service.
+- **[Extents -](./ResourceExtent)** *(class - [EX_Extent](http://wiki.esipfed.org/index.php/EX_Extent))* [0..\*]  Recommended when the Service has extent limitations. High-level thematic classifications to assist in the grouping and searching of data. 
+- **[referenceSystemInfo -](./SpatialReferenceSystem)** *(class - MD_ReferenceSystem)* [0..\*] Highly Recommended. The information about the reference systems that define the system use to describe spatial position descriptions in a service.
 - **resourceConstraints -** *( abstract class [MD_Constraints](./class-MD_Constraints))* [0..\*] Highly Recommended. See:
   - **[Resource Security Constraints](./ResourceSecurityConstraints)**
   - **[Recource Legal Constraints](./ResourceLegalConstraints)** 
@@ -101,10 +102,8 @@ The following provides additional guidance to [MD_Identification](./class-MD_Ide
     - planned available date and time
     - ordering instructions
     - turnaround
-- **[graphicOverview -](./BrowseGraphic)** *(class - MD_BrowseGraphic)* [0..\*] - Optional. Graphics that provide lightweight illustrations pertaining to a service- **[graphicOverview -](./BrowseGraphic)** *(class - MD_BrowseGraphic)* [0..\*] - Optional. Graphics that provide lightweight illustrations pertaining to a service
-- **Operated Dataset** *(class - [CI_Citation](./class-CI_Citation)* [0..\*]  NOT Recommended. Provides a reference to the resource on which the service operates. Should refernence existing metadata for the data resource. NOTE - For one resource either operatedDataset or operatesOn may be used (not both for the same resource)
-- **operatesOn -** *(class - MD_DataIdentification)* [0..\*]  NOT Recommended.. Alternative to Opererated Dataset. Contains  full Data Identification metadata for the resource. May be useful in cases where dataset metadata is unavailable. NOTE - For one resource either operatedDataset or operatesOn may be used (not both for the same resource)
-
+- **operatedDataset** *(class - [CI_Citation](./class-CI_Citation)* [0..\*]  NOT Recommended. Provides a reference to the resource on which the service operates. Should refernence existing metadata for the data resource. NOTE - For one resource either `operatedDataset` or `operatesOn` may be used (not both for the same resource)
+- **operatesOn -** *(class - MD_DataIdentification)* [0..\*]  NOT Recommended.  Alternative to `opereratedDataset`. Contains full Data Identification metadata for the resource and thus not recommended. May be useful in cases where dataset metadata is unavailable. NOTE - For one resource either `operatedDataset` or `operatesOn` may be used (not both for the same resource)
 
 ## Related Classes
 
