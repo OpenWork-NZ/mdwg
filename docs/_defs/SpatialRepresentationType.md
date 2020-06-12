@@ -5,20 +5,20 @@ section: Data Identification
 rank: 70
 title: Spatial Representation Type
 ---
-#  Spatial Representation Type ★★★★
-*In order to quickly find, catagorise and evaluate the fitness of a resource to our needs it is useful to include in our metadata a high level description of the type or format of spatial data the resource contains.*
+# Spatial Representation Type ★★★★
+*In order to quickly find, categorise and evaluate the fitness of a resource to our needs it is useful to include in our metadata a high-level description of the type or format of spatial data the resource contains.*
 
-|  |  |
+| | |
 | --- | --- |
 | **Element Name** | *spatialRepresentationType* |
 | **Parent** | *[MD_Metadata.identificationInfo>MD_Identification](./class-MD_Identification)* |
 | **Class/Type** | *characterString* |
-| **Governance** |  *Common ICSM, Domain* |
+| **Governance** | *Common ICSM, Domain* |
 | **Purpose** | *Discovery* |
 | **Audience** | machine resource - ⭑ ⭑ ⭑ |
-|  | general - ⭑ ⭑ ⭑ ⭑ |
-|  | resource manager - ⭑ ⭑ ⭑ ⭑ |
-|  | specialist - ⭑ ⭑ ⭑ |
+| | general - ⭑ ⭑ ⭑ ⭑ |
+| | resource manager - ⭑ ⭑ ⭑ ⭑ |
+| | specialist - ⭑ ⭑ ⭑ |
 | **Metadata type** | *Structural* |
 | **ICSM Level of Agreement** | ⭑ ⭑ ⭑ |
 
@@ -27,7 +27,7 @@ title: Spatial Representation Type
 
 ### ISO Obligation
 
-- There can be zero to many [0..\*] *spatialRepresentationType* entries for the cited resource in the  *[MD_DataIdentification](./class-MD_DataIdentification)* package selected from codelist *[MD_SpatialRepresentationTypeCode](http://wiki.esipfed.org/index.php/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_SpatialRepresentationTypeCode)*.
+- There can be zero to many [0..\*] *spatialRepresentationType* entries for the cited resource in the *[MD_DataIdentification](./class-MD_DataIdentification)* package selected from codelist *[MD_SpatialRepresentationTypeCode](http://wiki.esipfed.org/index.php/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_SpatialRepresentationTypeCode)*.
 
 ## Discussion
 
@@ -60,7 +60,7 @@ From codelist - *[MD_SpatialRepresentationTypeCode](http://wiki.esipfed.org/inde
 
 ### ISO19139
 
-MD_DataIdentification/spatialRepresentationType moved from MD_DataIdentification to MD_Identification in order to allow their use for service identification. In practice, when creating metadata for data, this change is not noticable.
+MD_DataIdentification/spatialRepresentationType moved from MD_DataIdentification to MD_Identification in order to allow their use for service identification. In practice, when creating metadata for data, this change is not noticeable.
 
 </details>
 
@@ -72,18 +72,18 @@ MD_DataIdentification/spatialRepresentationType moved from MD_DataIdentification
 ```
 <mdb:MD_Metadata>
 ....
-  <mdb:identificationInfo>
-    <mri:MD_DataIdentification>
-    ....
-      <mri:spatialRepresentationType>
-        <mcc:MD_SpatialRepresentationTypeCode 
-        codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat
-        /codelists.xml#MD_SpatialRepresentationTypeCode"
-        codeListValue="vector"/>
-      </mri:spatialRepresentationType>
-    ....
-    </mri:MD_DataIdentification>
-  </mdb:identificationInfo>
+ <mdb:identificationInfo>
+  <mri:MD_DataIdentification>
+  ....
+   <mri:spatialRepresentationType>
+    <mcc:MD_SpatialRepresentationTypeCode 
+    codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat
+    /codelists.xml#MD_SpatialRepresentationTypeCode"
+    codeListValue="vector"/>
+   </mri:spatialRepresentationType>
+  ....
+  </mri:MD_DataIdentification>
+ </mdb:identificationInfo>
 ....
 </mdb:MD_Metadata>
 ```
@@ -96,3 +96,4 @@ Recommended elements highlighted in Yellow
 </details>
 
 \pagebreak
+

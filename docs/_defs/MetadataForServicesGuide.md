@@ -8,9 +8,9 @@ title: Metadata For Services Best Practices
 
 # ICSM ISO19115-1 Metadata for Services Best Practices
 
-This document was compiled by [OpenWork Ltd (OWL)](http://openwork.nz) on behalf of and with guidance and contributions from the [ICSM Metadata Working Group (MDWG)](https://www.icsm.gov.au/what-we-do/metadata-working-group). The purpose of this document is to capture the consensus best practice guidance for the use of recommended ISO 19115-1 metadata elements for organisataion in the Australia / New Zealand regionwhen documenting geospatial service. Further this guidance will aid the migration from the retired [ANZLIC](https://www.anzlic.gov.au/) Metadata Profile of ISO 19115:2003 to the currently endorsed ISO 191125-1:2014 (including Amd.1:2018).
+This document was compiled by [OpenWork Ltd (OWL)](http://openwork.nz) on behalf of and with guidance and contributions from the [ICSM Metadata Working Group (MDWG)](https://www.icsm.gov.au/what-we-do/metadata-working-group). The purpose of this document is to capture the consensus best practice guidance for the use of recommended ISO 19115-1 metadata elements for organisations in the Australia / New Zealand region when documenting geospatial service. Further, this guide will aid the migration from the retired [ANZLIC](https://www.anzlic.gov.au/) Metadata Profile of ISO 19115:2003 to the currently endorsed ISO 191125-1:2014 (including Amd.1:2018).
 
-Thiss guidance is a point in time best bractice guide and will be updated as requirement and capabilities evolve. This will be done in a structure version fashion. It is anticipated that new versions of this guidance will be released annually as a PDF document. Incremental changes, managed by the MDWG Technical group in byweekly meetings, will be versioned in a GitHub repository and reflected in the web pages view of this document.
+This guidance is a point in time best practice guide and will be updated as requirement and capabilities evolve. This will be done in a structure version fashion. It is anticipated that new versions of this guidance will be released annually as a PDF document. Incremental changes, managed by the MDWG Technical group in biweekly meetings, will be versioned in a GitHub repository and reflected in the web pages view of this document.
 
 ![Geoscience Australia](../images/GA.jpg)  
 ![ARDC](../images/ARDC.png)  ![DEE](../images/DeptEngEnv.png) 
@@ -42,25 +42,25 @@ Thiss guidance is a point in time best bractice guide and will be updated as req
 \pagebreak
 
 ## Introduction
-Metadata is often defined as "Data about resources" - in this case, data about spatial service resources. This best practice guide represensents a consensus about creating metadata for spatial services in Australia and New Zealand.
+Metadata is often defined as "Data about resources" - in this case, data about spatial service resources. This best practice guide represents a consensus about creating metadata for spatial services in Australia and New Zealand.
 
-It may be useful to think of this metadata standand, ISO 19115-1, as a language - a vocabulary and a grammar - that even a machine can understand. We select select from this language the words and structures we need to communicate what we need to about a spatial resource. Because it is highly structured, we can compare combine and contrast this with other simularly  structured data. As with any language there exists dialects. Think of this as as a guide to the Australian and New Zealand dialect of ISO 19115-1.
+It may be useful to think of this metadata standard, ISO 19115-1, as a language - a vocabulary and a grammar - that even a machine can understand. We select from this language the words and structures we need to communicate what we need to about a spatial resource. Because it is highly structured, we can compare combine and contrast this with other similarly structured data. As with any language there exists dialects. Think of this as as a guide to the Australian and New Zealand dialect of ISO 19115-1.
 
-An external best practice pattern to which we should endeavour to adhere is the web built on linkages. These linkages are expressed as unique identifiers known as URLs or Resolvable URIs. Where identifiers exist, they should resolve to a location on the web. Two basic question for us to keep in mind when creating metadata become, "Can I create an identifier and linkage to unabmigously describe this aspect of my resource?" and “To what should these identifiers resolve?”  The answers depend on the situation. If we can answer the first question in the affirmative, then this strengthens the authority of our metadata and makes it easier to maintain - similar to normalising a database and providing a known one point of truth. In the second question, this often prompts the question of, “should this identifier link me to the resource or the metadata for that resource?”  If it is for the resource, what should the end point of that link be?
+An external best practice pattern to which we should endeavour to adhere is the web built on linkages. These linkages are expressed as unique identifiers known as URLs or Resolvable URIs. Where identifiers exist, they should resolve to a location on the web. Two basic questions for us to keep in mind when creating metadata become, "Can I create an identifier and linkage to unambiguously describe this aspect of my resource?" and “To what should these identifiers resolve?”  The answers depend on the situation. If we can answer the first question in the affirmative, then this strengthens the authority of our metadata and makes it easier to maintain - similar to normalising a database and providing a known one point of truth. In the second question, this often prompts the question of, “should this identifier link me to the resource or the metadata for that resource?”  If it is for the resource, what should the endpoint of that link be?
 
 ### Linking to documents vs data. 
-The web is called the web because it is built on linking documents. This ability should be used whenever possible. But linking human readable documents like web pages and PDFs is different than linking to data and service resources. To what we link becomes much more nuanced. Do we really what to link to a spatial data resource that may be over a terabyte in size or a file, the contents of which is binary data that our browser knows not what to do with? Unless specifically told otherwise, web users expect links to deliver human readable documents.
+The web is called the web because it is built on linking documents. This ability should be used whenever possible. But linking human-readable documents like web pages and PDFs is different than linking to data and service resources. To what we link becomes much more nuanced. Do we really what to link to a spatial data resource that may be over a terabyte in size or a file, the contents of which is binary data that our browser knows not what to do with? Unless specifically told otherwise, web users expect links to deliver human-readable documents.
 
 ### Consider the Audience
 What do I need to say about this resource so that people understand what it is and how it may fit their needs? 
 
-What needs to be said and documented may vary by the audience to whom you are speaking. Keep your primary audience in mind. Ususally, the audience is best thought of as those who are most likely to make use of your spatial service. These may likely be people in your same or similar domain. These are your high value users. Make sure you support their needs.
+What needs to be said and documented may vary by the audience to whom you are speaking. Keep your primary audience in mind. Usually, the audience is best thought of as those who are most likely to make use of your spatial service. These may likely be people in your same or similar domain. These are your high-value users. Make sure you support their needs.
 
-Let the question, “what does my audience need to know about this spatial resource?” guide your selection of elements which to populate. This question should also be used to guide how one populates these elements. However, in such a structured language, most elements with the exception of abstract, purpose and a few others, the contents of particular metadata elements is less of an issue.
+Let the question, “what does my audience need to know about this spatial resource?” guide your selection of elements which to populate. This question should also be used to guide how one populates these elements. However, in such a structured language, most elements except abstract, purpose and a few others, the contents of particular metadata elements is less of an issue.
 
-Do not forget that there are other unknown potential users of you service. Let software create simplified versions of what you are saying present this to general audience as much as feasible. CSW will automatically create a simplified Dublin Core version of your metadata for a more general audience.
+Do not forget that there are other unknown potential users of your service. Let software create simplified versions of what you are saying present this to the general audience as much as feasible. CSW will automatically create a simplified Dublin Core version of your metadata for a more general audience.
 
-Finally, keep in mind that the most important audience may be in fact yourself or your own organisation. Write metadata that is useful to you when you find this service and need to use and fix it 5 or 10 years later or need to hand it off to a colleague.
+Finally, keep in mind that the most important audience may be yourself or your organisation. Write metadata that is useful to you when you find this service and need to use and fix it 5 or 10 years later or need to hand it off to a colleague.
 
 \pagebreak
  
@@ -155,10 +155,10 @@ Elements with specific guidance for Services are in **_Bold Italic_**
 
 ### Outstanding Issues
 
-Some issues reamain unresolved and without clear consensus in the MDWG. Most of these are element specific and are discussed under those individual elements. But some are more broad.
+Some issues remain unresolved and without clear consensus in the MDWG. Most of these are element specific and are discussed under those individual elements. But some are broader.
 
 #### How to Best Capture Link to Service Resource
-Core to any metadata record is access to the described resource. The ISO 19115-1 standard provides somewhat different advice for data and services resources about how to best capture linkage to the resource described by a metadata record (as opposed to linkages to the metadata).  There are several options where service linkage may be expressed in a ISO19115-1 metadata record. The MDWG has not come to agreement as to a consistent approach. Inside the resource citation package, the `identifier` and `onlineResource` may both provide this functionality. The package `DistributionInfo` is of course a common way to capture such information - particularly for data resources, but is prehaps a less logical place when describing service resources. For service resources.`ContainsOperations` is another common location for resource access information. Further discussion and guidance is needed to resolve this issue in order to support machine readability and reduce confusion.
+Core to any metadata record is access to the described resource. The ISO 19115-1 standard provides somewhat different advice for data and services resources about how to best capture linkage to the resource described by a metadata record (as opposed to linkages to the metadata).  There are several options where service linkage may be expressed in an ISO19115-1 metadata record. The MDWG has not agreed to a consistent approach. Inside the resource citation package, the `identifier` and `onlineResource` may both provide this functionality. The package `DistributionInfo` is, of course, a common way to capture such information - particularly for data resources, but is perhaps a less logical place when describing service resources. For service resources.`ContainsOperations` is another common location for resource access information. Further discussion and guidance are needed to resolve this issue to support machine readability and reduce confusion.
 
 #### Link to Tightly Coupled Data
 There are numerous ways the related data resource may be captured in a service metadata record (e.g. operatesOn, operatedDataset, or even a sibling MD_DataIdentification package. The choice of coupledResource is made for the following reasons. ISO 19115-1 recommends coupledResource as minimum metadata required for the discovery of service resources. The options operatesOn, SV_CoupledResource.resource and a sibling identificationInfo/MD_DataIdentification all require a MD_Identifier package. This would create metadata records that identify more than one resource. ICSM guidance is that such a situation be avoided as it could confuse other catalogues that expect a one-to-one relationship between metadata resources and resources.
@@ -168,9 +168,9 @@ It has been resolved that it will be best practice to use `CoupledResource>Reour
 ## Metadata required for the discovery of service resources
 ### As described in ISO 19115-1 Table F.2
 
-The guidance produced here is meant to be a flexible resource. The element discussions are stored as separate files in a git repository and as such can be incorporated into web documents as needed for a particular purpose. They also may be cloned  or forked from the gihub repository at [https://github.com/icsm-au/metadata-working-group](https://github.com/icsm-au/metadata-working-group) and modified for a particular communities purpose.
+The guidance produced here is meant to be a flexible resource. The element discussions are stored as separate files in a git repository and as such can be incorporated into web documents as needed for a particular purpose. They also may be cloned or forked from the GitHub repository at [https://github.com/icsm-au/metadata-working-group](https://github.com/icsm-au/metadata-working-group) and modified for a particular communities purpose.
 
-Below is a example of how one might use a particular collection of best practice guidance documents to support a particular purpose. In this case is a list of elements as described in ISO 19115-1 Table F.2 of the minimum metadata required for the discovery of service resources
+Below is an example of how one might use a particular collection of best practice guidance documents to support a particular purpose. In this case, is a list of elements as described in ISO 19115-1 Table F.2 of the minimum metadata required for the discovery of service resources
 
 | **Element**   | **Class** | 
 | ------------- | ------------------------ |
@@ -190,22 +190,3 @@ Below is a example of how one might use a particular collection of best practice
 | [Resource type:](./MetadataScope) | (MD_Metadata.metadataScope>MD_Scope.resourceScope) |
 | [Coupled Resource:](./CoupledResource) | (MD_Metadata>SV_ServiceIdentification.coupledResource>SV-CoupledResource) |
 | [Coupled resource type:](./CouplingType) | (MD_Metadata>SV_ServiceIdentification.couplingType>SV-CouplingType) |
-
-| **Metadata element** | **Guidance Link** | 
-| --- | --- |
-| Metadata reference information: | [Metadata Identifier](./MetadataIdentifier)|
-| Resource title: | [Resource Title](./ResourceTitle)|
-| Resource reference date: | [Resource Date](./ResourceDate) |
-| Resource identifier: | [Resource Identifier](./ResourceIdentifier) |
-| Resource point of contact:  | [Resource Point of Contact](./ResourcePointOfContact)|
-| Geographic location: | [Extent Bounding Box](./ExtentBoundingBox) |
-| Resource language:  | [Resource Default locale](./ResourceLocale)  |
-| Resource topic category: | [Topic Category](./TopicCategory)    |
-| Spatial resolution:   | [Spatial Resolution](./SpatialResolution) |
-| Resource type:  | [Resource Scope](./MetadataScope)  |
-| Resource abstract:   | [Abstract](./Abstract) |
-| Resource lineage: | [Resource Lineage](./ResourceLineage)  |
-| Keywords:   | [Keywords](./Keywords)  |
-| Constraints on resource access and use: | [Resource Constraints](./ResourceOtherConstraints)   |
-| Metadata date stamp:  | [Metadata Date](./MetadataDate)  |
-|Metadata point of contact: | [Metadata Responsible Party](./MetadataContact)  |

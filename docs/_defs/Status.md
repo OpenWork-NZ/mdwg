@@ -6,19 +6,19 @@ rank: 50
 title: Resource Status
 ---
 # Resource Status ★★★★
-*In order to quickly find, catagorise and evaluate the fitness of a resource to our needs it is usefull to include in our metadata a high level description of the progress status of the resource our metadata descibes.*
+*In order to quickly find, categorise and evaluate the fitness of a resource to our needs it is useful to include in our metadata a high-level description of the progress status of the resource our metadata describes.*
 
-|  |  |
+| | |
 | --- | --- |
 | **Element Name** | *status* |
 | **Parent** | *[MD_Metadata.identificationInfo>MD_Identification](./class-MD_Identification)* |
 | **Class/Type** | *[MD_ProgressCode](http://wiki.esipfed.org/index.php/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_ProgressCode)* |
-| **Governance** |  *Common ICSM* |
+| **Governance** | *Common ICSM* |
 | **Purpose** | *Discovery, Management* |
 | **Audience** | machine resource - ⭑ ⭑ ⭑ |
-|  | general - ⭑ ⭑ ⭑ ⭑ |
-|  | resource manager - ⭑ ⭑ ⭑ ⭑ |
-|  | specialist - ⭑ ⭑ ⭑ |
+| | general - ⭑ ⭑ ⭑ ⭑ |
+| | resource manager - ⭑ ⭑ ⭑ ⭑ |
+| | specialist - ⭑ ⭑ ⭑ |
 | **Metadata type** | *Descriptive, Administrative* |
 | **ICSM Level of Agreement** | ⭑ ⭑ ⭑ |
 
@@ -27,11 +27,11 @@ title: Resource Status
 
 ### ISO Obligation
 
-- There can be zero to many [0..\*] *status* entries for the cited resource in the  *[MD_DataIdentification](./class-MD_DataIdentification)* package selected from codelist *[MD_ProgressCode](http://wiki.esipfed.org/index.php/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_ProgressCode)*.
+- There can be zero to many [0..\*] *status* entries for the cited resource in the *[MD_DataIdentification](./class-MD_DataIdentification)* package selected from codelist *[MD_ProgressCode](http://wiki.esipfed.org/index.php/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_ProgressCode)*.
 
 ## Discussion
 
-According to the ISO model, a resource may exist in many states. Not all values are mutual exclusive. This element is optional and has only been lightly discussed. As it has been determined a valuable element we may want to increase these recommendations. 
+According to the ISO model, a resource may exist in many states. Not all values are mutually exclusive. This element is optional and has only been lightly discussed. As it has been determined a valuable element we may want to increase these recommendations. 
 
 The resource may be data or service, [MD_DataIdentification](./class-MD_DataIdentification)* or *[SV_ServiceIdentification](./ServiceIdentification)
 
@@ -39,7 +39,7 @@ The resource may be data or service, [MD_DataIdentification](./class-MD_DataIden
 
 Therefore - The status of a resource is valuable information to those who may want to use it. It is recommended that the status field be populated and regularly updated as needed. At least one instance of this element should be populated in all metadata records.
 
-As harvesting of metadata to more geeneral purpose catalogues is desirable, some thought need be given to crosswalk with boolean values (CKAN) or those that only accept one occurrence of this element.
+As the harvesting of metadata to more general-purpose catalogues is desirable, some thought need be given to crosswalk with boolean values (CKAN) or those that only accept one occurrence of this element.
 Values for this element must come from the MD_ProgressCode codelist. 
 
 ### Possible Values for **status** *(codelist - MD_ProgressCode)*
@@ -57,7 +57,7 @@ Values for this element must come from the MD_ProgressCode codelist.
 - *superseded -* replaced by new
 - *tentative -* provisional changes likely before resource becomes final or complete
 - *valid -* acceptable under specific conditions
-- *accepted -* agreed to by sponsor
+- *accepted -* agreed to by the sponsor
 - *notAccepted -* rejected by sponsor
 - *withdrawn -* removed from consideration
 - *proposed -* suggested that development needs to be undertaken
@@ -66,10 +66,10 @@ Values for this element must come from the MD_ProgressCode codelist.
 ## Outstanding Issues
 
 > **Abstract Class - MD_Identification**
-SpatialRepresentationType is one of many elements belonging to the abstract class MD_Identification.  MD_Identification is only instantiated as MD_DataIdentification or SV_ServiceIdentification. At this stage we are not addressing service metadata, We are assuming all metadata is for data resources. At a later time, when we include Service metadata guidance, a seperate discussion of MD_Identifier should be made.
+SpatialRepresentationType is one of many elements belonging to the abstract class MD_Identification. MD_Identification is only instantiated as MD_DataIdentification or SV_ServiceIdentification. At this stage we are not addressing service metadata, We are assuming all metadata is for data resources. At a later time, when we include Service metadata guidance, a separate discussion of MD_Identifier should be made.
 
 > **CKAN**
-It has been indicatcated that CKAN records in its related field booloen values for this item. Boolean does not map well to ISO domain values. Some options in the MD_ProgressCode are noncampatible some are compatible. Clarification and validation would be useful.
+It has been indicated that CKAN records in its related field boolean values for this item. Boolean does not map well to ISO domain values. Some options in the MD_ProgressCode are noncompatible some are compatible. Clarification and validation would be useful.
 
 ## Crosswalk considerations
 
@@ -85,25 +85,25 @@ Maps to `data status`
 ```
 <mdb:MD_Metadata>
 ....
-   <mdb:identificationInfo>
-      <mri:MD_DataIdentification>
-      ....
-         <mri:status>
-            <mri:status>
-            <mcc:MD_ProgressCode 
-            codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat
-            /codelists.xml#MD_ProgressCode" 
-            codeListValue="underDevelopment"/>
-         </mri:status>
-         <mri:status>
-            <mcc:MD_ProgressCode 
-            codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat
-            /codelists.xml#MD_ProgressCode" 
-            codeListValue="tentative"/>
-         </mri:status>
-         ....
-      </mri:MD_DataIdentification>
-   </mdb:identificationInfo>
+  <mdb:identificationInfo>
+   <mri:MD_DataIdentification>
+   ....
+     <mri:status>
+      <mri:status>
+      <mcc:MD_ProgressCode 
+      codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat
+      /codelists.xml#MD_ProgressCode" 
+      codeListValue="underDevelopment"/>
+     </mri:status>
+     <mri:status>
+      <mcc:MD_ProgressCode 
+      codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat
+      /codelists.xml#MD_ProgressCode" 
+      codeListValue="tentative"/>
+     </mri:status>
+     ....
+   </mri:MD_DataIdentification>
+  </mdb:identificationInfo>
 ....
 </mdb:MD_Metadata>
 ```
@@ -116,3 +116,4 @@ Recommended elements highlighted in Yellow
 </details>
 
 \pagebreak
+

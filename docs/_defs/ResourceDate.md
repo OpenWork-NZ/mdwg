@@ -5,20 +5,20 @@ section: Resource Citation
 rank: 30
 title: Resource Reference Date 
 ---
-#  Resource Reference Date ★★★★★
-*In order to manage resource and notification systems such as giving updates to users it is useful to include in our metadata temporal information relating to resource creation, publication, revision, etc.*
+# Resource Reference Date ★★★★★
+*To manage resource and notification systems such as giving updates to users it is useful to include in our metadata temporal information relating to resource creation, publication, revision, etc.*
 
-|  |  |
+| | |
 | --- | --- |
 | **Element Name** | *date* |
 | **Parent** | *[MD_Metadata.identificationInfo>MD_Identificationcitation>CI_Citation](./ResourceCitation)* |
 | **Class/Type** | *CI_Date* |
-| **Governance** |  *Agency, Domain* |
+| **Governance** | *Agency, Domain* |
 | **Purpose** | *Discovery, Identification* |
 | **Audience** | machine resource - ⭑ ⭑ ⭑ |
-|  | general - ⭑ ⭑ ⭑ |
-|  | resource manager - ⭑ ⭑ ⭑ ⭑ ⭑ |
-|  | specialist - ⭑ ⭑ ⭑ ⭑ |
+| | general - ⭑ ⭑ ⭑ |
+| | resource manager - ⭑ ⭑ ⭑ ⭑ ⭑ |
+| | specialist - ⭑ ⭑ ⭑ ⭑ |
 | **Metadata type** | *descriptive* |
 | **ICSM Level of Agreement** | ⭑⭑⭑ |
 
@@ -27,7 +27,7 @@ title: Resource Reference Date
 
 ### ISO Obligation
 
-- There can be zero to many [0..`*`] *Resource reference date* entries for the cited resource in the  *[MD_Identification.citation](./ResourceCitation)* package of class *[CI_Date](./class-CI_Date)* in a metadata record.  One of these must be of `dateType` *creation*. The resource may be of type Data *[MD_DataIdentification](./class-MD_DataIdentification)* or of type Service *[SV_ServiceIdentification].
+- There can be zero to many [0..`*`] *Resource reference date* entries for the cited resource in the *[MD_Identification.citation](./ResourceCitation)* package of class *[CI_Date](./class-CI_Date)* in a metadata record. One of these must be of `dateType` *creation*. The resource may be of type Data *[MD_DataIdentification](./class-MD_DataIdentification)* or of type Service *[SV_ServiceIdentification].
 
 
 
@@ -35,33 +35,33 @@ title: Resource Reference Date
 
 There should be at least one instance of a resource reference date in a metadata record (dateType - creation), but there should be multiple - including *publication* and as many *lastUpdate* entries as needed
 
-The CI_DateType CodeList contains 16 values. Which values are of most import needs further discussion. The ability to crosswalk easily with CKAN and DCAT are of high concern. These external catalogues commonly have a single date field. Which dateType we map to this field is of interest in discussions regarding the recommended dateTypes used.
+The CI_DateType CodeList contains 16 values. Which values are of most import needs further discussion. The ability to crosswalk easily with CKAN and DCAT is of high concern. These external catalogues commonly have a single date field. Which dateType we map to this field is of interest in discussions regarding the recommended dateTypes used.
 
-Relation of Metadata dateInfo to Resource reference date needs to be discussed. The Resource reference date is documented as the date that should be used for discovery of resources other than services. (For services MD_Metadata.identificationInfo>SV_ServiceIdentification.citation>CI_Citation.date is used.)
+Relation of Metadata dateInfo to Resource reference date needs to be discussed. The Resource reference date is documented as the date that should be used for the discovery of resources other than services. (For services MD_Metadata.identificationInfo>SV_ServiceIdentification.citation>CI_Citation.date is used.)
 
-When does the metadata dataInfo require updating? For instance, is it okay to not update the metadata dataInfo when the Resource reference date is updated if nothing else has changed? Our good practice guide should address this and related issues.
+When does the metadata dataInfo require updating? For instance, is it okay to not update the metadata dataInfo when the Resource reference date is updated if nothing else has changed? Our good practice guide should address these and related issues.
 
 ## Recommendations
 
-Therefore - In order to provide an idea of the age, validity and other time dependant properties of a resource, it is important to capture the important events that happened or will happen to a particular resource in the Resource Reference Date element.  One of these important events must be of `dateType` "creation".  Creation is a significant date in regards to copyright. Other important date types are "publication" and "lastUpdate".
+Therefore - To provide an idea of the age, validity and other time dependant properties of a resource, it is important to capture the important events that happened or will happen to a particular resource in the Resource Reference Date element. One of these important events must be of `dateType` "creation". Creation is a significant date in regards to copyright. Other important date types are "publication" and "lastUpdate".
 
 ### Recommended Sub-Elements
 
 It is recommended that `Resource Date` include - 
 
 - **date** - (Mandatory) the reference DateTime for the metadata record.
-- **dateType** - Highly recommended. There should be multiple entries for the Resource reference date in a metadata record.  These should include `dateType` entries for:
-  - **Creation date** - This is important for intellectual property and other reasons
-  - **Publication date** - Is the most common date type captured by an agency
-  - **Update date** - Allows notifications and resource management. All updates to metadata should also include the date of last revision to the metadata. This can be an automated process.
+- **dateType** - Highly recommended. There should be multiple entries for the Resource reference date in a metadata record. These should include `dateType` entries for:
+ - **Creation date** - This is important for intellectual property and other reasons
+ - **Publication date** - Is the most common date type captured by an agency
+ - **Update date** - Allows notifications and resource management. All updates to metadata should also include the date of last revision to the metadata. This can be an automated process.
 
-This element should be updated in a consistent yet to be agreed upon manor.  We recommend GeoNetwork's current approach.  GeoNetwork updates the **revision date** for the metadata record automatically on every save. This supports systems such as notifications and harvesting regimes that  rely on the capture of the date that a metadata record was last modified.
+This element should be updated in a consistent yet to be agreed upon manner. We recommend GeoNetwork's current approach. GeoNetwork updates the **revision date** for the metadata record automatically on every save. This supports systems such as notifications and harvesting regimes that rely on the capture of the date that a metadata record was last modified.
 
 ## Also Consider
 
-- **[Metadata Date](./MetadataDate)** - for sdates related to the metadata record itself and not the cited resource
+- **[Metadata Date](./MetadataDate)** - for dates related to the metadata record itself and not the cited resource
 - **[CI_Date -](./class-CI_Date)** for general information about the class CI_Date
-- **[Resource  Citation](./ResourceCitation)** - parent to this element
+- **[Resource Citation](./ResourceCitation)** - parent to this element
 
 ## Other discussion
 
@@ -97,43 +97,43 @@ Maps to `Date`
 ```
 </mdb:MD_Metadata>
 ....
-   <mdb:identificationInfo>
-      <mri:MD_DataIdentification>
-         <mri:citation>
-            <cit:CI_Citation>
-            ....
-                <cit:date>
-                  <cit:CI_Date>
-                     <cit:date>
-                        <gco:Date>2018-06-11</gco:Date>
-                     </cit:date>
-                     <cit:dateType>
-                        <cit:CI_DateTypeCode 
-                        codeList="https://schemas.isotc211.org/19115/resources
-                        /Codelist/cat/codelists.xml#CI_DateTypeCode" 
-                        codeListValue="creation"/>
-                     </cit:dateType>
-                  </cit:CI_Date>
-               </cit:date>
-               <cit:date>
-                  <cit:CI_Date>
-                     <cit:date>
-                        <gco:Date>2019-06-11</gco:Date>
-                     </cit:date>
-                     <cit:dateType>
-                        <cit:CI_DateTypeCode 
-                        codeList="https://schemas.isotc211.org/19115/resources
-                        /Codelist/cat/codelists.xml#CI_DateTypeCode" 
-                        codeListValue="lastUpdate"/>
-                     </cit:dateType>
-                  </cit:CI_Date>
-               </cit:date>
-               ....
-            </cit:CI_Citation>
-          </mri:citation>
-          ....
-      </mri:MD_DataIdentification>
-   </mdb:identificationInfo>
+  <mdb:identificationInfo>
+   <mri:MD_DataIdentification>
+     <mri:citation>
+      <cit:CI_Citation>
+      ....
+        <cit:date>
+         <cit:CI_Date>
+           <cit:date>
+            <gco:Date>2018-06-11</gco:Date>
+           </cit:date>
+           <cit:dateType>
+            <cit:CI_DateTypeCode 
+            codeList="https://schemas.isotc211.org/19115/resources
+            /Codelist/cat/codelists.xml#CI_DateTypeCode" 
+            codeListValue="creation"/>
+           </cit:dateType>
+         </cit:CI_Date>
+        </cit:date>
+        <cit:date>
+         <cit:CI_Date>
+           <cit:date>
+            <gco:Date>2019-06-11</gco:Date>
+           </cit:date>
+           <cit:dateType>
+            <cit:CI_DateTypeCode 
+            codeList="https://schemas.isotc211.org/19115/resources
+            /Codelist/cat/codelists.xml#CI_DateTypeCode" 
+            codeListValue="lastUpdate"/>
+           </cit:dateType>
+         </cit:CI_Date>
+        </cit:date>
+        ....
+      </cit:CI_Citation>
+     </mri:citation>
+     ....
+   </mri:MD_DataIdentification>
+  </mdb:identificationInfo>
 ....
 </mdb:MD_Metadata>
 ```
@@ -146,3 +146,4 @@ Recommended elements highlighted in Yellow
 </details>
 
 \pagebreak
+

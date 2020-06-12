@@ -7,7 +7,7 @@ title: Coupled Resource
 ---
 # Coupled Resource  ★★★★
 
-**When documenting a service, the nature of the relationship of the service to the data resources on which it interacts is important to capture so as to provide potential users an understanding of the applicability of such service to their needs. When a service is highly dependant on particular data, these data needs need to be documented in the service metadata.**
+*When documenting a service, the nature of the relationship of the service to the data resources on which it interacts is important to capture so as to provide potential users an understanding of the applicability of such service to their needs. When a service is highly dependant on particular data, these data needs need to be documented in the service metadata.*
 
 |  |  |
 | --- | --- |

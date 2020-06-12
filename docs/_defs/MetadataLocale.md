@@ -6,19 +6,19 @@ rank: 50
 title: Metadata Default Locale
 ---
 # Metadata Default Locale ★★★★
-*Metadata may be captured in different languages in different locations. For users it is important that the language of the metadata be known. MD_Metadata.defaultLocale provide a way to record the primary language of the metadata.*
+*Metadata may be captured in different languages in different locations. For users, it is important that the language of the metadata be known. MD_Metadata.defaultLocale provide a way to record the primary language of the metadata.*
 
-|  |  |
+| | |
 | --- | --- |
 | **Element Name** | *defaultLocale* |
-| **Parent** |  *[MD_Metadata](./class-MD_Metadata)* |
+| **Parent** | *[MD_Metadata](./class-MD_Metadata)* |
 | **Class/Type** | *[PT_Locale](./PT_Locale)* |
-| **Governance** |  *Common ICSM* |
+| **Governance** | *Common ICSM* |
 | **Purpose** | *Discovery, Data Management* |
-| **Audience** | machine resource - ⭑ ⭑ ⭑  |
-|  | general - ⭑ ⭑ ⭑ |
-|  | resource manager - ⭑ ⭑ ⭑ ⭑ ⭑ |
-|  | specialist - ⭑ ⭑ ⭑ ⭑  |
+| **Audience** | machine resource - ⭑ ⭑ ⭑ |
+| | general - ⭑ ⭑ ⭑ |
+| | resource manager - ⭑ ⭑ ⭑ ⭑ ⭑ |
+| | specialist - ⭑ ⭑ ⭑ ⭑ |
 | **Metadata type** | *Discovery* |
 | **ICSM Level of Agreement** | ⭑ ⭑ ⭑ |
 
@@ -26,16 +26,16 @@ title: Metadata Default Locale
 **Language and character set used for documenting metadata.**
 
 ### ISO Obligation
-- There can be one and only one [1..1] *defaultLocale* entries for the cited resource in the  *[MD_Metadata](./class-MD_Metadata)* package in the metadata record of class *[PT_Locale](./PT_Locale)*.
+- There can be one and only one [1..1] *defaultLocale* entries for the cited resource in the *[MD_Metadata](./class-MD_Metadata)* package in the metadata record of class *[PT_Locale](./PT_Locale)*.
 
 ## Discussion
 
-There may be only one default locale identified in one metadata record. This element only describes the default language of the metadata. Any language elements used in the described spatial resource may have a diffferent default language and would be captured in the element [MD_Identification.defaultLocale](./ResourceLocale)
-The element "otherLocale" can be use to provide information about alternatively used localised character strings.
+There may be only one default locale identified in one metadata record. This element only describes the default language of the metadata. Any language elements used in the described spatial resource may have a different default language and would be captured in the element [MD_Identification.defaultLocale](./ResourceLocale)
+The element "otherLocale" can be used to provide information about alternatively used localised character strings.
 
 ## ICSM Recommendations
 
-Therefore - In order to provide metadata in a consistant manner for the users in our region, it is recommended that English be chosen as the value for `language` using the ISO 639-2, 3-alphabetic digits code "eng".
+Therefore - In order to provide metadata in a consistent manner for the users in our region, it is recommended that English be chosen as the value for `language` using the ISO 639-2, 3-alphabetic digits code "eng".
 
 ### Recommended Sub-Elements
 
@@ -48,8 +48,8 @@ Follow the general guidance for [class - PT_Locale](./PT_Locale)
 ## Also Consider
 
 - **MD_Metadata.otherLocale -** *(codelist - PT_Locale)* [0..\*] provides information about alternatively used localised character strings provides information about alternatively used localised character strings
-- **[MD_DataIdentification.defaultLocale](./ResourceLocale)** *(codelist - PT_Locale)* [0..1]  contains the  language and character set used within the resource, such as map labels or other text.
-- **MD_DataIdentification.otherLocale -**  *(codelist - PT_Locale)* [0..\*] alternate localised language(s) and character set (s) used within the resource
+- **[MD_DataIdentification.defaultLocale](./ResourceLocale)** *(codelist - PT_Locale)* [0..1] contains the language and character set used within the resource, such as map labels or other text.
+- **MD_DataIdentification.otherLocale -** *(codelist - PT_Locale)* [0..\*] alternate localised language(s) and character set (s) used within the resource
 
 ## Crosswalk considerations
 
@@ -84,20 +84,20 @@ No identified mapping
 ```
 <mdb:MD_Metadata>
 ....
-   <mdb:defaultLocale>
-      <lan:PT_Locale id="EN">
-         <lan:language>
-            <lan:LanguageCode 
-            codeList="http://www.loc.gov/standards/iso639-2/" 
-            codeListValue="eng"/>
-         </lan:language>
-         <lan:characterEncoding>
-            <lan:MD_CharacterSetCode 
-            codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat
-            /codelists.xml#MD_CharacterSetCode"  codeListValue="utf8"/>
-         </lan:characterEncoding>
-      </lan:PT_Locale>
-   </mdb:defaultLocale>
+  <mdb:defaultLocale>
+   <lan:PT_Locale id="EN">
+     <lan:language>
+      <lan:LanguageCode 
+      codeList="http://www.loc.gov/standards/iso639-2/" 
+      codeListValue="eng"/>
+     </lan:language>
+     <lan:characterEncoding>
+      <lan:MD_CharacterSetCode 
+      codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat
+      /codelists.xml#MD_CharacterSetCode" codeListValue="utf8"/>
+     </lan:characterEncoding>
+   </lan:PT_Locale>
+  </mdb:defaultLocale>
 ....
 </mdb:MD_Metadata>
 ```
