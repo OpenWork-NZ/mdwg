@@ -175,14 +175,14 @@ Below is a example of how one might use a particular collection of best practice
 | **Element**   | **Class** | 
 | ------------- | ------------------------ |
 | [Metadata reference information:](./MetadataIdentifier) |  (MD_Metadata.metadataIdentifier) |
-| [Service title:](./ResourceTitle) | (MD_Metadata .identificationInfo>SV_ServiceIdentification.citation>CI_Citation.title) |
-| [Reference date:](./ResourceDate) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.citation>CI_Citation.date) |
-| [Resource identifier:](./ResourceIdentifier) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.citation>CI_Citation.identifier>MD_Identifier) |
-| [Responsible party:](./ResourceResponsibleParty) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.pointOfContact>CI_Responsibility) |
+| [Service title:](./ResourceTitle) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.citation >CI_Citation.title) |
+| [Reference date:](./ResourceDate) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.citation >CI_Citation.date) |
+| [Resource identifier:](./ResourceIdentifier) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.citation>CI_Citation.identifier >MD_Identifier) |
+| [Responsible party:](./ResourceResponsibleParty) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.pointOfContact >CI_Responsibility) |
 | [Geographic location:](./ResourceExtent) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.extent>EX_Extent.geographicElement> EX_GeographicExtent> EX_GeographicBoundingBox –or- EX_GeographicDescription) | 
-| [Service topic category:](./TopicCategory) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.topicCategory>MD_TopicCategoryCode) |
+| [Service topic category:](./TopicCategory) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.topicCategory >MD_TopicCategoryCode) |
 | [Resource abstract:](./Abstract) | (MD_Metadata.identificationInfo>SV_ServiceIdentification. abstract) |
-| [On-line Link:](./class-CI_OnlineResource) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.citation>CI_Citation.onlineResource>CI_OnlineResource) |
+| [On-line Link:](./class-CI_OnlineResource) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.citation >CI_Citation.onlineResource>CI_OnlineResource) |
 | [Keywords:](./Keywords) | (MD_Metadata.identificationInfo>SV_ServiceIdentification>MD_Keywords) |
 | [Constraints on access and use:](./class-MD_Constraints) | (MD_Metadata>SV_ServiceIdentification>MD_Constraints.useLimitations and/or MD_LegalConstraints and or MD_SecurityConstraints) |
 | [Metadata date stamp:](./MetadataDate) | (MD_Metadata.dateInfo) |
