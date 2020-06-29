@@ -7,19 +7,19 @@ title: Metadata Linkage
 ---
 # Metadata Linkage ★★★★★
 
-*Metadata records generally live in federated systems where metadata are harvested from catalogue to catalogue or collected from remote sources by other means.  This can lead to confusion since through the harvesting and collection processes, different versions of the same metadata may co-exist. It is useful that a metdata record contains a link to the source metadata so that a point of truth version can be deterrmined.*
+*Metadata records generally live in federated systems where metadata are harvested from catalogue to catalogue or collected from remote sources by other means. This can lead to confusion since through the harvesting and collection processes, different versions of the same metadata may co-exist. It is useful that a metadata record contains a link to the source metadata so that a point of truth version can be determined.*
 
-|  |  |
+| | |
 | --- | --- |
 | **Element Name** | *metadataLinkage* |
-| **Parent** |  *[MD_Metadata](./class-MD_Metadata)* |
+| **Parent** | *[MD_Metadata](./class-MD_Metadata)* |
 | **Class/Type** | *[CI_OnlineResource](./class-CI_OnlineResource)* |
-| **Governance** |  *Common ICSM* |
+| **Governance** | *Common ICSM* |
 | **Purpose** | *Linkage, Identification* |
 | **Audience** | machine resource - ⭑ ⭑ ⭑ |
-|  | general - ⭑ ⭑ |
-|  | resource manager - ⭑ ⭑ ⭑ ⭑ |
-|  | specialist - ⭑ ⭑ ⭑  |
+| | general - ⭑ ⭑ |
+| | resource manager - ⭑ ⭑ ⭑ ⭑ |
+| | specialist - ⭑ ⭑ ⭑ |
 | **Metadata type** | *administrative* |
 | **ICSM Level of Agreement** | ⭑ ⭑ ⭑ ⭑ |
 
@@ -27,18 +27,18 @@ title: Metadata Linkage
 **Allows unambiguous specification of the online location where the metadata is available.**
 
 ### ISO Obligation
-- There should be zero to many [0..\*] *metadataLinkage* elements for the cited resource in the  *[MD_Metadata](./class-MD_Metadata)* package of class *[CI_OnlineResource](./class-CI_OnlineResource)* in a metadata record.
+- There should be zero to many [0..\*] *metadataLinkage* elements for the cited resource in the *[MD_Metadata](./class-MD_Metadata)* package of class *[CI_OnlineResource](./class-CI_OnlineResource)* in a metadata record.
 
 ## Discussion
-The most common use of `metadataLinkage` is to record a "point of truth" location of the source authoritative metadata record. It is in the nature of metadata to be highly distrubuted.  This is commonly done through federated systems that harvest (or otherwise collect) metadata from other sources. Sometimes this process gets out of sync. Sometimes the metadata is modified in the process. In order to retain an authoritative understanding of a metadata record it is useful to provide a linkage to the source as reference.
+The most common use of `metadataLinkage` is to record a "point of truth" location of the source authoritative metadata record. It is in the nature of metadata to be highly distributed. This is commonly done through federated systems that harvest (or otherwise collect) metadata from other sources. Sometimes this process gets out of sync. Sometimes the metadata is modified in the process. In order to retain an authoritative understanding of a metadata record, it is useful to provide a linkage to the source as a reference.
 
-Alternatively, `metadataLiunkage` may be used to record the location of the metadata in its current catalogue. The Discription field should be used to indicate if this differs from other instances of the metadata record that may reside elsewhere. However, if alternate versions are not in ISO19115 format, such locations should be captured in `alternativeMetadataReference`.
+Alternatively, `metadataLiunkage` may be used to record the location of the metadata in its current catalogue. The *Discription* field should be used to indicate if this differs from other instances of the metadata record that may reside elsewhere. However, if alternate versions are not in ISO19115 format, such locations should be captured in `alternativeMetadataReference`.
 
 The use of this field to hold the local of the metadata record in the local catalogue could be better accomplished through the options provided in [metadataIdentifier](./MetadataIdentifier).
 
 ## ICSM Recommendations
 
-Therefore - There should be a "point of truth" url to a metadata record provided under metadataLinkage. Alternatively, this could be the full path to this metadata record. There may be multiple endpoints containing copies of this metadata record, one captured with the description of "Point of Truth URL for this metadata record" is recommended.
+Therefore - there should be a "point of truth" url to a metadata record provided under metadataLinkage. Alternatively, this could be the full path to this metadata record. There may be multiple endpoints containing copies of this metadata record, one captured with the description of "Point of Truth URL for this metadata record" is recommended.
 All metadataLinkage elements should have a function code of "Complete Metadata".
 
 As for multiple locations for the same metadata, it is useful to look at MD_Metadata/alternativeMetadataReference. This allows pointers to metadata for the same resource that may be in multiple schemas. (ISO def - "reference to alternative metadata, e.g Dublin Core, FGDC, or metadata in a non-ISO standard for the same resource") Of course, this does not suggest that it be used for different versions of the metadata in the same standard, but perhaps at least different profiles?
@@ -72,7 +72,7 @@ As this is a new element to allow unambiguous specification of the online locati
 
 ### Dublin core / CKAN / data.gov.au
 
-In Dublin core the identifier element is described as holding a reference to the resource (not the metadata). However in the case of metadata records harvested by s higher level CKAN like catalogue, we view the complete metadata record as the resource. It is also standard practice that the DC Identifier field be resolvable. For a Dublin core metadata harvested via CSW from a ISO 19115-1 record, it is important that that record links to something that can be derefewrenced. That something is held in the identifier field and should be the location URL/URI for the metadata.  IF the ISO 19115-1 identifier element is only a unresolvable UUID, the metadataLinkage element may be a better choice to populate the DC Identifier field.
+In Dublin Core, the identifier element is described as holding a reference to the resource (not the metadata). However, in the case of metadata records harvested by s higher level CKAN like catalogue, we view the complete metadata record as the resource. It is also a standard practice that the DC Identifier field to be resolvable. For a Dublin core metadata harvested via CSW from an ISO 19115-1 record, it is important that that record links to something that can be dereferenced. That something is held in the identifier field and should be the location URL/URI for the metadata. IF the ISO 19115-1 identifier element is only an unresolvable UUID, the metadataLinkage element may be a better choice to populate the DC Identifier field.
 
 ### DCAT
 
@@ -93,25 +93,25 @@ May map to `Key Identifier` if `metadataIdentifier` is unresolvable
 ```
 <mdb:MD_Metadata>
 ....
-  <mdb:metadataLinkage>
-    <cit:CI_OnlineResource>
-      <cit:linkage>
-        <gco:CharacterString>
-        http://geodata.nz/geonetwork/srv/eng/metadata/
-        314eb989-3771-4c24-a399-d22631973279
-        </gco:CharacterString>
-      </cit:linkage>
-      <cit:description>
-        <gco:CharacterString>Point of truth URL of this metadata record
-        </gco:CharacterString>
-      </cit:description>
-      <cit:function>
-        <cit:CI_OnLineFunctionCode 
-        codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat
-        /codelists.xml#CI_OnLineFunctionCode" codeListValue="completeMetadata"/>
-      </cit:function>
-    </cit:CI_OnlineResource>
-  </mdb:metadataLinkage>
+ <mdb:metadataLinkage>
+  <cit:CI_OnlineResource>
+   <cit:linkage>
+    <gco:CharacterString>
+    http://geodata.nz/geonetwork/srv/eng/metadata/
+    314eb989-3771-4c24-a399-d22631973279
+    </gco:CharacterString>
+   </cit:linkage>
+   <cit:description>
+    <gco:CharacterString>Point of truth URL of this metadata record
+    </gco:CharacterString>
+   </cit:description>
+   <cit:function>
+    <cit:CI_OnLineFunctionCode 
+    codeList="https://schemas.isotc211.org/19115/resources/Codelist/cat
+    /codelists.xml#CI_OnLineFunctionCode" codeListValue="completeMetadata"/>
+   </cit:function>
+  </cit:CI_OnlineResource>
+ </mdb:metadataLinkage>
 ....
 </mdb:MD_Metadata>
 ```
@@ -124,3 +124,4 @@ Recommended elements highlighted in Yellow
 </details>
 
 \pagebreak
+

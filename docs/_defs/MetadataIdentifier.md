@@ -5,21 +5,21 @@ section: Metadata Info
 rank: 10
 title: Metadata Identifier
 ---
-#  Metadata Identifier ★★★★★
+# Metadata Identifier ★★★★★
 
 *In order for machines and people to distinguish a metadata record from all others a Metadata record [MD_Metadata](./class-MD_Metadata) needs a unique identifier.*
 
-|  |  |
+| | |
 | --- | --- |
 | **Element Name** | *metadataIdentifier* |
-| **Parent** |  *[MD_Metadata](./class-MD_Metadata)* |
+| **Parent** | *[MD_Metadata](./class-MD_Metadata)* |
 | **Class/Type** | *[MD_Identification](./class-MD_Identification)* |
-| **Governance** |  *Common ICSM* |
+| **Governance** | *Common ICSM* |
 | **Purpose** | *Linkage, Identification* |
 | **Audience** | machine resource - ⭑ ⭑ ⭑ |
-|  | general - ⭑ |
-|  | resource manager - ⭑ ⭑ ⭑ |
-|  | specialist - ⭑ ⭑  |
+| | general - ⭑ |
+| | resource manager - ⭑ ⭑ ⭑ |
+| | specialist - ⭑ ⭑ |
 | **Metadata type** | *administrative* |
 | **ICSM Level of Agreement** | ⭑ ⭑ ⭑ ⭑ |
 
@@ -28,7 +28,7 @@ title: Metadata Identifier
 
 ### ISO Obligation
 
-- There should be zero or one [0..1] metadataIdentifier for the cited resource in the  *[MD_Metadata](./class-MD_Metadata)* package of class *[MD_Identifier](./class-MD_Identifier)*.
+- There should be zero or one [0..1] metadataIdentifier for the cited resource in the *[MD_Metadata](./class-MD_Metadata)* package of class *[MD_Identifier](./class-MD_Identifier)*.
 
 ### ICSM Good Practice
 
@@ -36,11 +36,11 @@ title: Metadata Identifier
 
 
 ## Discussion
-Every metadata record needs a unique identifier so as to provide certainty as to the identity of the record and to provide a primary key for linkages. This element should hold UUID, preferably in the form of a resolvable URI (either stanalone or in combinationwith anther element e.g. `<mcc:codespace>`). This provides the machine readable (and human) ability to determine if this is the same or different to other metadata records. It is useful in machine to machine activities such as metadata harvesting. It is also at times useful to data managers and others to determine if a record is the same as another.
+Every metadata record needs a unique identifier so as to provide certainty as to the identity of the record and to provide a primary key for linkages. This element should hold UUID, preferably in the form of a resolvable URI (either standalone or in combination with another element e.g. `<mcc:codespace>`). This provides the machine-readable (and human) ability to determine if this is the same or different to other metadata records. It is useful in machine to machine activities such as metadata harvesting. It is also at times useful to data managers and others to determine if a record is the same as another.
 
 This identifier must never change, irrespective of where that metadata record is stored. This allows linkages to a metadata record to persist.
 
-Equivalent of this field was recommended as mandatory in the previous ANZLIC Standard. Common practice is to record a UUID in this field.
+The equivalent of this field was recommended as mandatory in the previous ANZLIC Standard. Common practice is to record a UUID in this field.
 
 
 ## ICSM Recommendations
@@ -51,7 +51,7 @@ Therefore - It is Highly Recommended that every metadata record should have one 
 From class *[MD_Identifier](./class-MD_Identifier)* 
 
 - **code -** (*type - charStr*) [1..1] a UUID, mandatory when identifier is provided
-- **codespace -** *(type - charStr)* [0..1] ideally a  URL  path by which, when combined with the uuid, the full metadata can be retrieved.
+- **codespace -** *(type - charStr)* [0..1] ideally a URL path by which, when combined with the uuid, the full metadata can be retrieved.
 - **authority -** *(class - [CI_Citation](./class-CI_Citation))* [0..1] optional, the provider of the UUID
 
 ## Also Consider
@@ -65,7 +65,7 @@ From class *[MD_Identifier](./class-MD_Identifier)*
 > **CORE ISSUE:**
 In ISO the identifier for the Metadata can differ from that of the data. This is not necessarily the case in other metadata standards such as Dublin Core or DCAT.
 
->  **Resolvable URIs**
+> **Resolvable URIs**
 Of note - the ISO conceptual reference model for ISO 19115-1 available at https://www.isotc211.org/hmmg/HTML/ConceptualModels/EARoot/EA1/EA12/EA2/EA4095.htm.
 This includes a description that differs slightly from previous description - "Unique Identifier and onlineResource for this metadata record" In many ways it would be preferable if this field were populated with a URI that ultimately resolved to a point of truth for the metadata record. Some issues remain in software that incorrectly prohibit characters needed by URIs.
 The nested tag that actually holds the UUID character string is mcc:code. This is noted in the UML for this element: "NOTE: avoid characters that are not legal in URLs". This would suggest that URIs of type URL are to be allowed. While I would not currently recommend URIs in this field, due to software limitations, it is a practice that would likely be encouraged in the future when linked data is more prevalent. A recommended solution is to populate codespace with the path by which, when combined with the uuid, the metadata can be retrieved.
@@ -74,7 +74,7 @@ In practice metadataLinkage (Link) often contains the online linkage (to the poi
 > **Geonetwork usage**
  By default GeoNetwork calculates a unique value for the subelement *code* and populates the *codespace* element with “urn::uuid”. These fields are not editable once generated.
 
-### Other discussion
+### Other Discussion
 
 > **DCAT Notes**
 [DCAT 2](https://www.w3.org/TR/vocab-dcat-2/) makes several recommendations about the use of identifiers. From the specification's [Dereferencable identifiers](https://www.w3.org/TR/vocab-dcat-2/#dereferenceable-identifiers) section:
@@ -126,20 +126,20 @@ http://data.gov.au/dataset/559708e5-480e-4f94-8429-c49571e82761
 ```
 <mdb:MD_Metadata>
 ....
-      <mdb:metadataIdentifier>
-      <mcc:MD_Identifier>
-         <mcc:code>
-            <gco:CharacterString>
-            314eb989-3771-4c24-a399-d22631973279
-            </gco:CharacterString>
-         </mcc:code>
-         <mcc:codeSpace>
-            <gco:CharacterString>
-            https://geodata.nz/geonetwork/srv/metadata/
-            </gco:CharacterString>
-         </mcc:codeSpace>
-      </mcc:MD_Identifier>
-  </mdb:metadataIdentifier>
+   <mdb:metadataIdentifier>
+   <mcc:MD_Identifier>
+     <mcc:code>
+      <gco:CharacterString>
+      314eb989-3771-4c24-a399-d22631973279
+      </gco:CharacterString>
+     </mcc:code>
+     <mcc:codeSpace>
+      <gco:CharacterString>
+      https://geodata.nz/geonetwork/srv/metadata/
+      </gco:CharacterString>
+     </mcc:codeSpace>
+   </mcc:MD_Identifier>
+ </mdb:metadataIdentifier>
 ....
 </mdb:MD_Metadata>
 ```
@@ -153,3 +153,4 @@ Recommended elements highlighted in Yellow
 </details>
 
 \pagebreak
+
