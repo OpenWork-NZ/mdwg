@@ -35,7 +35,7 @@ The citation package contains multiple elements from [CI_Citation](./class-CI_Ci
 
 ## ICSM Recommendations
 
-Therefore - For potential users to find and identify spatial resources, these must be well-cited with information that includes a minimum of `title`, `identifier`, `date` (of type `creation`, plus `revision` and `issued` when appropriate) and `citedResponsibleParty` (for `author` or `creator`, plus `publisher` and `contributor` when appropriate). 
+Therefore - for potential users to find and identify spatial resources, these must be well-cited with information that includes a minimum of `title`, `identifier`, `date` (of type `creation`, plus `revision` and `issued` when appropriate) and `citedResponsibleParty` (for `author` or `creator`, plus `publisher` and `contributor` when appropriate). 
 
 Because many of the elements of `MD_Identification.citation` are mandatory and are important for identification and harvesting of metadata, it is recommended that the guidance provided in each of these six sub-elements (title, date, edition, identifier, citedResponsibleParty, and series) be followed. Other available [CI_Citation](./class-CI_Citation) elements should be used if needed to properly document your resource. Consult your metadata governance team on such use.
 
@@ -331,9 +331,11 @@ Service Resource example
 </mdb:MD_Metadata>
 ```
 
+\pagebreak
+
 ### UML diagrams
 
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![ResourceCitation](../images/ResourceCitationUML.png)
 

@@ -50,7 +50,7 @@ Lineage metadata provides the user with information about the events, parameters
 We have had insuficient conversation in MDWG about what we want from Lineage metadata to yet make strong recommendations.  The resource identified by this property presents a provenance record about its subject or anchor resource.  Need to discuss futher and reach agreement as to best practice approach for caturing provenance information.
 
 ## Recommendations
-Therefore - It is strongly recommended, particularly when the resource is authoritative or likely to be used by demanding specialist, the the lineage of the resource be captured in the metadata under resourceLineage. A linage statement should be included with your metadata. If appropriate include process step information for advanced users.
+Therefore - it is strongly recommended, particularly when the resource is authoritative or likely to be used by demanding specialist, the the lineage of the resource be captured in the metadata under resourceLineage. A linage statement should be included with your metadata. If appropriate include process step information for advanced users.
 
 ### Crosswalk considerations
 
@@ -136,9 +136,11 @@ Maps to `Description 'lineage'`
 </mdb:MD_Metadata>
 ```
 
+\pagebreak
+
 ### UML diagrams
 
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![resourceLineage](../images/ResourceLineageUML.png)
 

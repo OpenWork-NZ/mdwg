@@ -50,10 +50,11 @@ For class CI_OnlineResource
 
 Therefore - in order to provide the consistancy needed to avoid confusion for both machines and humans, it is recommended that all dates included in a metadata record implement the class CI_Date and follow the guidance provided by ISO and ICSM.
 
+\pagebreak
 
 ### UML diagrams
 
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![CI_Date](../images/class-CI_Date.png)! > FIX ME
 

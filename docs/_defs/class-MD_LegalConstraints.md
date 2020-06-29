@@ -52,7 +52,7 @@ Currently there are no clear methods to apply different legal constraints to dif
 
 ## Recommendations
 
-Therefore - It is important to capture all legal constraints that apply to a resource. This should include licences, end user agreements, etc. If the resource is public domain, this should be cited appropriately. Many juristrictions encourage the use of open data and Creative Commons license. This should be encouraged through the use of copyright licenses such as CC0 or CC By. Provide the user links to additional information about such constraints, there use and meaning. In addition, document the holder of such rights and how to contact for more information.
+Therefore - it is important to capture all legal constraints that apply to a resource. This should include licences, end user agreements, etc. If the resource is public domain, this should be cited appropriately. Many juristrictions encourage the use of open data and Creative Commons license. This should be encouraged through the use of copyright licenses such as CC0 or CC By. Provide the user links to additional information about such constraints, there use and meaning. In addition, document the holder of such rights and how to contact for more information.
 
 ### Crosswalk considerations
 
@@ -65,9 +65,11 @@ See guidance provided in [MD_Constraints](./class-MD_Constraints)
 - **[MD_Constraints](./class-MD_Constraints)** the Superclass to `MD_LegalConstraints`. `MD_LegalConstraints` implements all the properties of `MD_Constraints`.  Full guidance of the associated elements are discussed there.
 - **[MD_SecurityConstraints](path)** A sibling to `MD_LegalConstraints` and an extension to `MD_Constraints` for constraints applied for security purposes.
 
+\pagebreak
+
 ### UML diagrams
 
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![MD_Constraints](../images/MD_LegalConstraints.png)
 

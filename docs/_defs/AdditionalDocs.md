@@ -170,8 +170,10 @@ Maps to `Description 'notes'`
 </mdb:MD_Metadata>
 ```
 
+\pagebreak
+
 ### UML diagrams
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![additionalDoc](../images/AdditionalDocsUML.png)
 

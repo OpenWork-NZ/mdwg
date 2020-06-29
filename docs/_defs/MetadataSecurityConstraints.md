@@ -116,9 +116,10 @@ xmlns:geonet="http://www.fao.org/geonetwork">
 
 ```
 
+\pagebreak
 
 ### UML diagrams
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![MetdataSecurityConstraints](../images/MD_SecurityConstraints.png)
 

@@ -29,7 +29,7 @@ title: Metadata Standard
 
 There may be zero to many [1-\*] *MetadataStandard* entries cited for a metadata record of class *[CI_Citation](./class-CI_Citation). Each Metadata standard citation should include an identifier.
 
-## Discussion  
+## Discussion
 
 Documenting the metadata standard to which the metadata adheres is esential good practice in that this information provides the user ways to find the esential information and guidance about how to read the metadata. This is also essential information for those who may need to map such information to their own systems.
 
@@ -37,7 +37,7 @@ There are options about how to cite the standard used even in the context of thi
 
 ## ICSM Recommendations 
 
-Therefore - In order for users to have a better understanding of the metadata they recieve, it is highly recommended that the *MetadataStandard* element  be populated with at minimum "ISO 19115-1". The year and admendment information should also be included. Currently, the approved standard and version of this standard in Australia and New Zealand is **AS/NZS ISO 19115.1:2015 (ISO 19115-1:2014 with ISO 19115-1:2014/Amd.1:2018, IDT)**. Any profile information of this standard should be included as a *MetadataProfile* entry.
+Therefore - in order for users to have a better understanding of the metadata they recieve, it is highly recommended that the *MetadataStandard* element  be populated with at minimum "ISO 19115-1". The year and admendment information should also be included. Currently, the approved standard and version of this standard in Australia and New Zealand is **AS/NZS ISO 19115.1:2015 (ISO 19115-1:2014 with ISO 19115-1:2014/Amd.1:2018, IDT)**. Any profile information of this standard should be included as a *MetadataProfile* entry.
 
 ### Recommended Sub-Elements 
 
@@ -136,9 +136,11 @@ Should it be recommended that there be one and only one *MetadataStandard* entry
 </mdb:MD_Metadata>
 ```
 
+\pagebreak
+
 ### UML diagrams
 
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![Metadata Standard](../images/MetadataStandard.png)
 </details>

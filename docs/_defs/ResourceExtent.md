@@ -35,7 +35,7 @@ The use of multiple instances is useful for describing more complicated resource
 
 ## ICSM Recommendations
 
-Therefore - It is strongly recommended that to support discovery of resources, every metadata record contains, as needed, surface geometric, vertical and temporal extent description of the resource area of interest. Use multiple instances if it helps describe the resource for the user.
+Therefore - it is strongly recommended that to support discovery of resources, every metadata record contains, as needed, surface geometric, vertical and temporal extent description of the resource area of interest. Use multiple instances if it helps describe the resource for the user.
 
 Metadata for spatial resources should at a minimum contain bounding box description of the resource. Other dimensions, such as time, should be described when useful. 
 
@@ -64,8 +64,10 @@ Mapping to CKAN and Dublin core elements, particularly as used by data.gov.au ne
 
 <details>
 
+\pagebreak
+
 ### UML diagrams
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![Extent](../images/ResourceExtentUML.png)
 

@@ -72,7 +72,7 @@ This format element describes the format of the data for a particular distributi
 
 ## Recommendations
 
-Therefore - This package should contain at least the minimum information necessary to contact the party responsible for this distribution of the resource. We have identified three primary sub-elements to recommend:
+Therefore - this package should contain at least the minimum information necessary to contact the party responsible for this distribution of the resource. We have identified three primary sub-elements to recommend:
 
 - *Distributor*
 - *Online resource*
@@ -302,9 +302,11 @@ Recommended property to meet data citation requirement
 </mdb:MD_Metadata>
 ```
 
+\pagebreak
+
 ### UML diagrams
 
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![Distribution](../images/MD_Distribution.png)
 

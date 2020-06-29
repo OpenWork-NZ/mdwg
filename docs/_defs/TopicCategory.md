@@ -144,9 +144,11 @@ Maps to *Subject*
 </mdb:MD_Metadata>
 ```
 
+\pagebreak
+
 ### UML diagrams
 
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![topicCategory](../images/TopicCategoryUML.png)
 

@@ -53,7 +53,7 @@ Almost all spatial resources carry some rights, restrictions and responsibility 
 
 ## Recommendations
 
-Therefore - For users to understand the administrative constraints applied to a cited resource, the details of these constraints, together with sufficient information and linkages to provide access to further information as to the deeper meaning and implications of such constraints, needs to be capture in the metadata about the resource.
+Therefore - for users to understand the administrative constraints applied to a cited resource, the details of these constraints, together with sufficient information and linkages to provide access to further information as to the deeper meaning and implications of such constraints, needs to be capture in the metadata about the resource.
 
 ### Crosswalk considerations
 
@@ -156,9 +156,11 @@ Maps to the agregate `Rights/@accessRights`
 </mdb:MD_Metadata>
 ```
 
+\pagebreak
+
 ### UML diagrams
 
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![constraints](../images/ResourceOtherConstraintsUML.png)
 

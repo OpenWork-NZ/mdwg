@@ -41,7 +41,7 @@ In the case where a resource may have multiple identifiers, additional instances
 
 ## ICSM Recommendations
 
-Therefore - It is recommended that this element be populated, preferably once, but more often if there are multiple identifier systems for the same resource. In the case of multiple identifiers, the `discription` element must be populated in such situations to distinguish the meaning of the different identifiers. `Code` must be populated in all records and it is recommended that `codeSpace` be populated as well.
+Therefore - it is recommended that this element be populated, preferably once, but more often if there are multiple identifier systems for the same resource. In the case of multiple identifiers, the `discription` element must be populated in such situations to distinguish the meaning of the different identifiers. `Code` must be populated in all records and it is recommended that `codeSpace` be populated as well.
 
 Common practice has been to populate this field that is the same as or resolves to the metadata record itself. In this case, the metadata can be said to be the landing page for the resource. 
 
@@ -137,8 +137,10 @@ URN:UUID (example 559708e5-480e-4f94-8429-c49571e82761)
 </mdb:MD_Metadata>
 ```
 
+\pagebreak
+
 ### UML diagrams
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![resourceIdentifier](../images/ResourceIdentifierUML.png)
 

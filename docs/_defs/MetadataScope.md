@@ -56,7 +56,7 @@ Typically, the subject will be represented using keywords, key phrases, or class
 
 ## Recommendations
 
-Therefore - In order to provide top level categorisation of entries in a catalogue, it is recommended that `metadataScope` be populated.  The default value of `MD_MetadataScope.resourceScope` should be *dataset*. When the value of `resourceScope` is other than dataset, `MD_MetadataScope.name` must be populated.
+Therefore - in order to provide top level categorisation of entries in a catalogue, it is recommended that `metadataScope` be populated.  The default value of `MD_MetadataScope.resourceScope` should be *dataset*. When the value of `resourceScope` is other than dataset, `MD_MetadataScope.name` must be populated.
 
 ### Crosswalk considerations
 
@@ -117,8 +117,10 @@ May map to `Key Identifier` if `metadataIdentifier` is unresolvable
 </mdb:MD_Metadata>
 ```
 
+\pagebreak
+
 ### UML diagrams
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![metadataScope](../images/MD_Scope.png)
 

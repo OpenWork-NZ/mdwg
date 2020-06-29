@@ -37,7 +37,7 @@ There may be multiple responsible parties who hold different responsibilities. T
 
 ## ICSM Recommendations
 
-Therefore - To meet ICSM good practice, in all metadata records, contact information should be given for the parties responsible for different aspects of the creation, management and maintenance of the resource. Entries for "author" and "publisher" should be provided. In addition, for minimal conformity, `name` (of organisation preferred), `positionName` and `electrronicMailAddress` should also be populated.
+Therefore - to meet ICSM good practice, in all metadata records, contact information should be given for the parties responsible for different aspects of the creation, management and maintenance of the resource. Entries for "author" and "publisher" should be provided. In addition, for minimal conformity, `name` (of organisation preferred), `positionName` and `electrronicMailAddress` should also be populated.
 The use of the new `partyIdentifier` element added in the 2018 amendment to the standard is encouraged by all parties.
 
  This element should be populated in all metadata records with a minimum of `role`, `name` (of organisation preferred), `positionName` and `electronicMailAddress`.
@@ -212,8 +212,10 @@ Maps to `Publisher`
 </mdb:MD_Metadata>
 ```
 
+\pagebreak
+
 ### UML diagrams
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![ResourceCitation](../images/ResourceResponsiblePartyUML.png)
 

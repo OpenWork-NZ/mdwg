@@ -43,7 +43,7 @@ When does the metadata dataInfo require updating? For instance, is it okay to no
 
 ## Recommendations
 
-Therefore - To provide an idea of the age, validity and other time dependant properties of a resource, it is important to capture the important events that happened or will happen to a particular resource in the Resource Reference Date element. One of these important events must be of `dateType` "creation". Creation is a significant date in regards to copyright. Other important date types are "publication" and "lastUpdate".
+Therefore - to provide an idea of the age, validity and other time dependant properties of a resource, it is important to capture the important events that happened or will happen to a particular resource in the Resource Reference Date element. One of these important events must be of `dateType` "creation". Creation is a significant date in regards to copyright. Other important date types are "publication" and "lastUpdate".
 
 ### Recommended Sub-Elements
 
@@ -138,8 +138,10 @@ Maps to `Date`
 </mdb:MD_Metadata>
 ```
 
+\pagebreak
+
 ### UML diagrams
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![resourceDate](../images/ResourceDateUML.png)
 

@@ -37,7 +37,7 @@ This is a compound element of type CI_ResponsibleParty. At least one should be p
 
 ## Recommendations
 
-Therefore - To meet ICSM good practice, in all metadata records, at least one point of contact should be given for the party responsible for the cited resource. These should default to role code "Point of Contact". In addition, for minimal conformity, `name` (of organisation preferred), `positionName` and `electrronicMailAddress` should also be populated.
+Therefore - to meet ICSM good practice, in all metadata records, at least one point of contact should be given for the party responsible for the cited resource. These should default to role code "Point of Contact". In addition, for minimal conformity, `name` (of organisation preferred), `positionName` and `electrronicMailAddress` should also be populated.
 The use of the new `partyIdentifier` element added in the 2018 amendment to the standard is encouraged by all parties.
 
 
@@ -137,8 +137,10 @@ Maps to `Related Party`
 </mdb:MD_Metadata>
 ```
 
+\pagebreak
+
 ### UML diagrams
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![Responsibility](../images/ResourcePointOfContactUML.png)
 

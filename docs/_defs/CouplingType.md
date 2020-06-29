@@ -23,7 +23,7 @@ title: Coupling Type
 | **Metadata type** | *structural* |
 | **ICSM Level of Agreement** | ⭑ ⭑ | 
 
-## Definition  
+## Definition
 **The type of coupling between service and associated data (if exists)**
 
 ### ISO Requirements
@@ -31,7 +31,7 @@ title: Coupling Type
 There must be zero or one [0-1] *couplingType* entries for the cited resource for a *[SV_ServiceIdentification](./ServiceIdentification)* package selected from the codelist *SV_CouplingType* in a metadata record. If a *[coupled resource](./CoupledResource)* exists, this element must be populated.
 
 
-## Discussion  
+## Discussion
 The relation of a geospatial service to the data on which it operates is varied. This relation impacts the decisions one may make regarding the capture of useful metadata for such a service. These services fall into three categories depending on how tightly coupled the data is to the service: *tightly*, *loosely*, or *mixed*. 
 
 An example of a tightly coupled service would be a WFS service delivering a particular dataset. In the tightly coupled case, the service metadata shall describe both the service and the geographic dataset. The permitted values for the description of operations shall be constrained by the values defined by the datasets associated with the service.
@@ -41,9 +41,9 @@ An example of a loosely coupled service could be a reprojection service with use
 A mixed coupling might be a WMS service into which you may add additional data sources of your choice. In a mixed coupling situation a single service instance may be associated with both kinds of data associated, loosely and tightly coupled. 
 
 
-## ICSM Recommendations 
+## ICSM Recommendations
 
-Therefore - The element *couplingType* should be populated in all service metadata records. If the Coupling Type is *tight* then the *[coupled resource](./CoupledResource)* element must be populated for all coupled resources. 
+Therefore - the element *couplingType* should be populated in all service metadata records. If the Coupling Type is *tight* then the *[coupled resource](./CoupledResource)* element must be populated for all coupled resources. 
 
 ### Values for Codelist *SV_CouplingType*
 
@@ -95,6 +95,8 @@ From codelist - **[SV_CouplingType](https://github.com/ISO-TC211/schemas/blob/ma
 ....
 </mdb:MD_Metadata>
 ```
+
+\pagebreak
 
 ### UML diagrams
 

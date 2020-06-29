@@ -43,7 +43,7 @@ When does the metadata dataInfo require updating? For instance, is it okay to no
 
 ## ICSM Recommendations
 
-Therefore - In order to provide an idea of the age, validity and other time dependant properties of a metadata record, it is important to capture the important events that happened or will happen to a particular metadata record in the `MD_Metadata.dateInfo` element. One of these important events must be of `dateType` "creation". This is often referred to as a "Metadata date stamp".
+Therefore - in order to provide an idea of the age, validity and other time dependant properties of a metadata record, it is important to capture the important events that happened or will happen to a particular metadata record in the `MD_Metadata.dateInfo` element. One of these important events must be of `dateType` "creation". This is often referred to as a "Metadata date stamp".
 
 This element should be updated in a consistent yet to be agreed upon manner. We recommend GeoNetwork's current approach. GeoNetwork updates the **revision date** for the metadata record automatically on every save. This supports systems such as notifications and harvesting regimes that rely on the capture of the date that a metadata record was last modified.
 
@@ -127,8 +127,10 @@ Maps to `@dateAccessioned`
 </mdb:MD_Metadata>
 ```
 
+\pagebreak
+
 ### UML diagrams
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![dateInfo](../images/MetadataDateUML.png)
 

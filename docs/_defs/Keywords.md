@@ -87,7 +87,7 @@ References the old KeywordTypeCode list
 
 ## Recommendations
 
-Therefore - It is highly recommended that the metadata for spatial resources contains as many keywords as needed to provide ease of discovery and improved data management practices. Capture keywords for multiple audiences, general, domain or agency specific to aid the different users of the resource. However, excessive use of keywords that target minor aspects of a resource should be avoided. Consider providing a limit to the number of keywords used and focus on those of most importance.
+Therefore - it is highly recommended that the metadata for spatial resources contains as many keywords as needed to provide ease of discovery and improved data management practices. Capture keywords for multiple audiences, general, domain or agency specific to aid the different users of the resource. However, excessive use of keywords that target minor aspects of a resource should be avoided. Consider providing a limit to the number of keywords used and focus on those of most importance.
 
 It is recommended that all keywords have a topic category assigned. These must be sourced from the 15 values in the [MD_KeywordTypeCode](http://wiki.esipfed.org/index.php/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_KeywordTypeCode). Helps understand the keywords in context and further categorise resources.
 
@@ -215,8 +215,10 @@ There are several elements outside the keywords class that are in effect keyword
 </mdb:MD_Metadata>
 ```
 
+\pagebreak
+
 ### UML diagrams
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![keywords](../images/KeywordsUML.png)
 

@@ -56,7 +56,7 @@ A *mixed coupling* might be a WMS service into which add additional data sources
 
 ## ICSM Recommendations
 
-Therefore - To clearly understand what resource a metadata record is describing, there should be one and only one [1..1] *MD_Identification* package in a metadata record. For service metadata, this must be expressed as an *SV_ServiceIdentification* instance. The *Service Indentifaction* package contains several sub-packages and sub-elements. To ease the common use of such metadata, it is important that the use of these sub-packages and sub-elements be standardised.
+Therefore - to clearly understand what resource a metadata record is describing, there should be one and only one [1..1] *MD_Identification* package in a metadata record. For service metadata, this must be expressed as an *SV_ServiceIdentification* instance. The *Service Indentifaction* package contains several sub-packages and sub-elements. To ease the common use of such metadata, it is important that the use of these sub-packages and sub-elements be standardised.
 
 ### Recommended Service Sub-Elements 
 In addition the recommended attributes of [MD_Identification](./class-MD_Identification) detailed below, the following *SV_ServiceIdentification* subpackages and sub-elements are recommended.
@@ -110,11 +110,11 @@ The following provides additional guidance to [MD_Identification](./class-MD_Ide
 - **[MD_Identification](./class-MD_Identification)** the abstract parent class to `SV_ServiceIdentification` and `MD_DataIdentification`. See guidances for the composite elements.
 - **[MD_DataIdentification](./DataIdentification)** the sibling class to `SV_ServiceIdentification` used to describe data resources
 
-
+\pagebreak
 
 ### UML diagrams
 
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![SV_ServiceIdentification](../images/ServiceIdentification.png)
 

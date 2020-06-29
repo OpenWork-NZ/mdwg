@@ -116,8 +116,10 @@ mapping as yet unknown
 </mdb:MD_Metadata>
 ```
 
+\pagebreak
+
 ### UML diagrams
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![resourceFormat](../images/ResourceFormatUML.png)
 

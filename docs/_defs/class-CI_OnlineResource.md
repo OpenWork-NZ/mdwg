@@ -59,10 +59,11 @@ title: CI_OnlineResource
 It is recommended that the MDWG further develop general advise on the use of CI_OnlineResource - particularly concerning the use of the "Other sub elements"
 The `function` element, while optional, can ususally be populated through automated means according to the parent element.ß
 
+\pagebreak
 
 ### UML diagrams
 
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![CI_OnlineResource](../images/class-CI_OnlineResource.png)
 

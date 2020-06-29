@@ -104,9 +104,11 @@ There must be at least one (and usually just one) `identificationInfo` packages 
 
 - **[MD_DataIdentification](./class-MD_DataIdentification)** An instantiation of the abstract calss for data resource metadata
 
+\pagebreak
+
 ### UML diagrams
 
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![MD_Identification](../images/MD_IdentificationUML.png)
 

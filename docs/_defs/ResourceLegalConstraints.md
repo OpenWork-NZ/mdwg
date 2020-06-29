@@ -62,7 +62,7 @@ Not a true license in itself, but a contractual agreement between the Copyright 
 
 ## Recommendations
 
-Therefore - It is important to capture all legal constraints that apply to a spatial resource. This should include licences, end user agreements, etc. If the resource is public domain, this should be cited appropriately. Many jurisdictions encourage the use of open data and Creative Commons license. This should be encouraged through the use of copyright licenses such as CC0 or CC By. Provide the user links to additional information about such constraints, there use and meaning. Also, it is important to document the holder of such rights and how to contact for more information.
+Therefore - it is important to capture all legal constraints that apply to a spatial resource. This should include licences, end user agreements, etc. If the resource is public domain, this should be cited appropriately. Many jurisdictions encourage the use of open data and Creative Commons license. This should be encouraged through the use of copyright licenses such as CC0 or CC By. Provide the user links to additional information about such constraints, there use and meaning. Also, it is important to document the holder of such rights and how to contact for more information.
 
 ### Crosswalk considerations
 
@@ -185,9 +185,11 @@ Maps to `Rights/@licence`
 </mdb:MD_Metadata>
 ```
 
+\pagebreak
+
 ### UML diagrams
 
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![resourceLegalConstraints](../images/ResourceLegalConstraintsUML.png)
 
