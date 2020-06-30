@@ -117,7 +117,7 @@ Maps to `Key Identifier`
 <details>
 
 ### Other
-#### data.govt.au
+#### data.gov.au
 
 http://data.gov.au/dataset/559708e5-480e-4f94-8429-c49571e82761
 

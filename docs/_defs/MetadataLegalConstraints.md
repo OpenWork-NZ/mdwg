@@ -28,7 +28,7 @@ title: Metadata Legal Constraints
 
 ### ISO Obligation
 
-- There may be zero to many [0..\*] *metadataConstraints* entries for the cited resource in the *[MD_Metadata](./class-MD_Metadata)* package of class *[MD_LegalConstraints](./class-MD_LegalConstraints)* applied to a a metadata record,
+- There may be zero to many [0..\*] *metadataConstraints* entries for the cited resource in the *[MD_Metadata](./class-MD_Metadata)* package of class *[MD_LegalConstraints](./class-MD_LegalConstraints)* applied to a metadata record,
 
 ## Discussion
 
@@ -45,7 +45,7 @@ For more discussion on the types of common legal restrictions see [Resource Lega
 ## ICSM Recommendations
 
 Therefore - the MDWG recommends populating this element `metadataConstraints` with legal constraint information to sufficient level to determine the legal rights, responsibilities and restrictions on a metadata record. 
-It is important to capture any legal constraints that may apply to a metadata record. This should include licences, end-user agreements, etc. If the resource is public domain, this should be cited appropriately. Many jurisdictions encourage the use of open data and Creative Commons license. This should be encouraged through the use of copyright licenses such as CC0 or CC By. Provide the user links to additional information about such constraints, there use and meaning. In addition, document the holder of such rights and how to contact for more information. As legal restrictions such as copyright are tied to the creator of an intellectual resource, make are that users have access to their information.
+It is important to capture any legal constraints that may apply to a metadata record. This should include licences, end-user agreements, etc. If the resource is public domain, this should be cited appropriately. Many jurisdictions encourage the use of open data and Creative Commons licenses. This should be encouraged through the use of copyright licenses such as CC0 or CC-BY. Provide the user links to additional information about such constraints, their use and meaning. In addition, document the holder of such rights and how to contact for more information. As legal restrictions such as copyright are tied to the creator of an intellectual resource, make sure that users have access to their information.
 
 ### Recommended Sub-Elements
 
@@ -53,7 +53,7 @@ Follow the general guidance for [MD_LegalConstraints](./class-MD_LegalConstraint
 
 ## Also Consider
 
-- **[Resource Legal Constraints](./ResourceLegalConstraints)** contains legal restrictions that apply to the resource cited by the metadata
+- **[Resource Legal Constraints](./ResourceLegalConstraints)** contains legal restrictions that apply to the resource cited by the metadata.
 - **[Metadata Security Constraints](./MetadataSecurityConstraints)** A sibling to metadata legal constraints. Contains information regarding any security restriction on the metadata.
 
 ### Outstanding Issues

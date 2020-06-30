@@ -59,7 +59,7 @@ Follow the general guidance for **[MD_Identifier](./class-MD_Identifier)** with 
 
 ## Also Consider
 
-- **[onlineResource -](./DistributionInfo)** (MD_Distribution.transferOptions>MD_DigitalTransferOptions.online) is used to provide online linage to the resource.
+- **[onlineResource -](./DistributionInfo)** (MD_Distribution.transferOptions>MD_DigitalTransferOptions.online) is used to provide online linkage to the resource.
 - **[MetadataIdentifier -](./MetadataIdentifier)** is the preferred element to be used to provide linkage to the metadata record.
 - **[Resource Citation](./ResourceCitation)** - parent to this element
 

@@ -31,7 +31,7 @@ title: Purpose
 
 ## Discussion
 
-A purpose statement provides a brief description of the reason a resource was created. Knowing this can give a good guide to the potential usefulness of a resource to other potential users. The resource may be data or service, *[MD_DataIdentification](./class-MD_DataIdentification)* or *[SV_ServiceIdentification](./ServiceIdentification)*.
+A purpose statement provides a brief description of the reason a resource was created. Knowing this can give a good guide to the potential usefulness of a resource to other potential users. The resource may be a data or service, *[MD_DataIdentification](./class-MD_DataIdentification)* or *[SV_ServiceIdentification](./ServiceIdentification)*.
 
 Consideration needs to be given to the audience and what they need to know about the resource to decide the utility for them.
 
@@ -44,16 +44,16 @@ Populate the *purpose* element and provide enough narrative to give the reader a
 
 ## Also Consider
 
-- **[Abstract](./Abstract)** provides a somewhat more lengthy verbal summary description of the resource. Some overlap of usage with `purpose` may exist. The MDWG should provide some guidance as to what belongs in `abstract` and what belongs in `purpose`
-- **MD_DataIdentification.supplimentalInformation -** provides a description of the resource in the producer's processing environment, including items such as the software, the computer operating system, file name, and the dataset size. 
-- **[Resource Lineage](./ResourceLineage)** may contain information related to purpose.
+- **[Abstract](./Abstract)** provides a somewhat more lengthy verbal summary description of the resource. Some overlap of usage with `purpose` may exist. The MDWG should provide some guidance as to what belongs in `abstract` and what belongs in `purpose`.
+- **MD_DataIdentification.supplementalInformation -** provides a description of the resource in the producer's processing environment, including items such as the software, the computer operating system, file name, and the dataset size. 
+- **[Resource Lineage](./ResourceLineage) -** may contain information related to purpose.
 
 ## Outstanding Issues
 
 > **DCAT**
 The description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.
 
-> **element - Purpose vs abstract**
+> **element - purpose vs abstract**
 Some guidance needs to be developed to guide users as to what belongs in `abstract` and what belongs in `purpose`.
 
 ## Crosswalk considerations

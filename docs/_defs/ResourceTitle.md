@@ -82,7 +82,7 @@ Maps to `Title`
 #### GA
 “Geomorphic features of the Antarctic and Southern Ocean 2012"
 
-#### Data.govt.au
+#### Data.gov.au
 Location of Medicare Offices
 
 ### XML

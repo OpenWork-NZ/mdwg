@@ -33,7 +33,7 @@ There may be zero to many [1-\*] *MetadataStandard* entries cited for a metadata
 
 Documenting the metadata standard to which the metadata adheres is esential good practice in that this information provides the user ways to find the esential information and guidance about how to read the metadata. This is also essential information for those who may need to map such information to their own systems.
 
-There are options about how to cite the standard used even in the context of this naroow guidance for ISO 19115-1. One could equally cite a compliant profile of this standard used by their organisation or ISO 19115-3, the XML implementation standad for ISO 19115-1. It is very useful if the standard is cited to the year and admendment number (if any). As there are allowed multiple entries for this element, the base standard and any profiles thereof may be captured together.
+There are options about how to cite the standard used even in the context of this narrow guidance for ISO 19115-1. One could equally cite a compliant profile of this standard used by their organisation or ISO 19115-3, the XML implementation standad for ISO 19115-1. It is very useful if the standard is cited to the year and admendment number (if any). As there are allowed multiple entries for this element, the base standard and any profiles thereof may be captured together.
 
 ## ICSM Recommendations 
 
@@ -44,7 +44,7 @@ Therefore - in order for users to have a better understanding of the metadata th
 From class *[CI_Citation](./class-CI_Citation):
 
 - **title -** *(type - charStr)*[1..1] Strongly Recommended. Should be stated as `AS/NZS ISO 19115.1:2015` with any amendments e.g. `Amd.1:2018`
-- **alternateTitle -** *(type - charStr)* [0..\*] May include here other names by which this standard is know e.g. `ISO 19115-3`, `ISO 19115-1:2014 `
+- **alternateTitle -** *(type - charStr)* [0..\*] May include here other names by which this standard is now e.g. `ISO 19115-3`, `ISO 19115-1:2014 `
 - **date -** *(class - [CI_Date](./class-CI_Date))*  [0..\*]  May include the base year for the standard e.g. `2014`
 - **edition -** *(type - charStr)* [0..1] version of the cited resource e.g. `Amd.1:2018`
 - **editionDate -** *(type - DateTime)*[0..1] date of the edition e.g. `2018`
@@ -59,12 +59,11 @@ From class *[CI_Citation](./class-CI_Citation):
 **MetadataProfile -** A sibling element to *MetadataStandard*. Also of class *CI_Citation*. Use the same guidance provided here to populate any profile information needed.
 
 For Service resource metadata:
-**[ServiceStandard -](./ServiceStandard)**  to document the standard to which a spatial service conforms
+**[ServiceStandard -](./ServiceStandard)**  to document the standard to which a spatial service conforms.
 
-**[ServiceProfile -](/ServicePRofile)**  to document the profile to which a spatial service may conform
+**[ServiceProfile -](/ServicePRofile)**  to document the profile to which a spatial service may conform.
 
 ## Outstanding Issues
-{
 
 > **CORE ISSUE: ICSM Standardised agreement**  
 There has as yet been little discussion as to what such information a *MetadataStandard* entry should contain. While the guidance here is correct, it has not been verified by a quorum of MDWG members. There may be other valid methods of capturing this information.

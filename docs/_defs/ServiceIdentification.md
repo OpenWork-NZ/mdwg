@@ -6,7 +6,7 @@ rank: 20
 title: Service Identification
 ---
 # Service Identification
-*When capturing information on a spatial service, it is important to identify and categorise information as pertaining to the service resource and to distinguish these information from that which applies to the metadata itself or data resources. SV_ServiceIdentification extends the abstract class MD_Identification to document a spatial service resource.*
+*When capturing information on a spatial service, it is important to identify and categorise information as pertaining to the service resource and to distinguish this information from that which applies to the metadata itself or data resources. SV_ServiceIdentification extends the abstract class MD_Identification to document a spatial service resource.*
 
 | | |
 | --- | --- |
