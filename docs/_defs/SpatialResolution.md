@@ -42,12 +42,12 @@ Scale is a fundemental concept of spatial resource be they data or service ([MD_
 ### Outstanding Issues
 
 > **Scale has little meaning in digital context**
-The most common way of capturing spatial resolution is as a denominator value using `equivalentScale`. While this made intuitive sense in the days of paper maps printed at a particular size, scales such as 1 :20,000 have little real meaning when the size of a map is totally dependent on the display screen. Will younger spatial professionals who may only have a passing knowledge of fixed scale maps relate to this value? Will it have meaning to the young neo-geo? It would be useful to work towards expressing scale, a fundamental concept in geospatial data, in a more digitally friendly way. Perhaps something like standardised zoom levels?
+The most common way of capturing spatial resolution is as a denominator value using `equivalentScale`. While this made intuitive sense in the days of paper maps printed at a particular size, scales such as 1:20,000 have little real meaning when the size of a map is totally dependent on the display screen. Will younger spatial professionals who may only have a passing knowledge of fixed scale maps relate to this value? Will it have meaning to the young neo-geo? It would be useful to work towards expressing scale, a fundamental concept in geospatial data, in a more digitally friendly way. Perhaps something like standardised zoom levels?
 Would "distance", sampling size be of greater use? Most relatable would be something like "zoom level" which could be captured in "level of detail" but there is currently a lack of standardisation as to what terms like "zoom level" mean. Also, the levelOfDetail option lacks citation to support that would be needed to make this usable in such a manner. Work on Discrete Global Grid Systems (DGGS) may provide some guidance to this topic.
 
 ## Recommendations
 
-Therefore - The *spatialReolution* package should be populated with enough information to give the reader a good understanding of the spatial scale at which the resource was designed to be used. Capture the spatial resolution of a resource is useful information for determining the fitness to the purpose of geospatial data. Data gathered at too high or too low a resolution may make it unfit to your needs. Mixing data of different resolutions can give uncertain results. The spatial resolution provides a rough guide to the precision and accuracy of a resource. (Data quality elements should be used to document precision and accuracy more fully.)
+Therefore - The *spatialResolution* package should be populated with enough information to give the reader a good understanding of the spatial scale at which the resource was designed to be used. Capturing the spatial resolution of a resource is useful information for determining the fitness to the purpose of geospatial data. Data gathered at too high or too low a resolution may make it unfit to your needs. Mixing data of different resolutions can give uncertain results. The spatial resolution provides a rough guide to the precision and accuracy of a resource. (Data quality elements should be used to document precision and accuracy more fully.)
 
 Spatial resolution can be documented in many ways. For ISO19115-1, these are limited to the methods itemised in the class MD_Resolution and documented above. Equivalent scale is the default of many systems, including supplied templates in GeoNetwork. It is captured with a single denominator value such as "20,000" as in a 1:20,000 map.
 
@@ -55,7 +55,7 @@ Spatial resolution can be documented in many ways. For ISO19115-1, these are lim
 
 ### Recommended Sub-Elements
 
-**MD_Resolution** [1..1] is a class of type *Union* (meaning only one attribute from the available list can be used) that provides level of detail expressed as a scale factor, a distance or an angle. Similar to codelist, one and only one [1..1] must be chosen per `spatailResolution` instance. Possible attribute choice include:
+**MD_Resolution** [1..1] is a class of type *Union* (meaning only one attribute from the available list can be used) that provides level of detail expressed as a scale factor, a distance or an angle. Similar to codelist, one and only one [1..1] must be chosen per `spatialResolution` instance. Possible attribute choices include:
 
 - **equivalentScale -** *(class - [MD_RepresentativeFraction](http://wiki.esipfed.org/index.php/MD_RepresentativeFraction))* 
  - level of detail expressed as the scale of a comparable hardcopy map or chart
@@ -64,22 +64,22 @@ Spatial resolution can be documented in many ways. For ISO19115-1, these are lim
 - **distance -** *(type - [Distance](http://wiki.esipfed.org/index.php/Distance))*  
  * horizontal ground sample distance
  * Distance: This class is documented in full in ISO/TS 19103. Includes unitOfMeasure attribute 
-  * UnitOfMeasure: This class is documented in full in ISO/TS 19103. 
-- **vertical -** *(type - [Distance](http://wiki.esipfed.org/index.php/Distance))*  
+  * UnitOfMeasure: This class is documented in full in ISO/TS 19103
+- **vertical -** *(type - [Distance](http://wiki.esipfed.org/index.php/Distance))*
   * vertical sampling distance
-  * Distance: This class is documented in full in ISO/TS 19103. Includes unitOfMeasure attribute 
-   * UnitOfMeasure: This class is documented in full in ISO/TS 19103.
+  * Distance: This class is documented in full in ISO/TS 19103. Includes unitOfMeasure attribute
+   * UnitOfMeasure: This class is documented in full in ISO/TS 19103
 - **angularDistance -** *(type - [Angle](http://wiki.esipfed.org/index.php/Angle))*  
  * angular sampling measure
- * Angle: Amount of rotation needed to bring one line or plane into coincidence with another, generally measured in radians or degrees. This class is documented in full in ISO/TS 19103.
-  * UnitOfMeasure: This class is documented in full in ISO/TS 19103.
+ * Angle: Amount of rotation needed to bring one line or plane into coincidence with another, generally measured in radians or degrees. This class is documented in full in ISO/TS 19103
+  * UnitOfMeasure: This class is documented in full in ISO/TS 19103
 - **levelOfDetail -** *(type - charStr)* 
  - brief textual description of the spatial resolution of the resource
-  
- ## Also Consider
+
+## Also Consider
 
  - **[Spatial Representation Type](./SpatialRepresentationType)** Documents the method used to spatially represent geographic information
- - **dataQualityInfo>MD_DataQuality -** TBD - From ISO19157 - quality information for the data specified by a data quality scope 
+ - **dataQualityInfo>MD_DataQuality -** TBD - From ISO19157 - quality information for the data specified by a data quality scope
 
 
 
@@ -148,8 +148,10 @@ Spatial resolution can be documented in many ways. For ISO19115-1, these are lim
 </mdb:MD_Metadata>
 ```
 
+\pagebreak
+
 ### UML diagrams
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![spatialResolution](../images/SpatialResolutionUML.png)
 

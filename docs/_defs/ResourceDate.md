@@ -23,11 +23,11 @@ title: Resource Reference Date
 | **ICSM Level of Agreement** | ⭑⭑⭑ |
 
 ## Definition
-**A named and dated event associated with the cited resource (in ISO 8601 format).**
+**A named and dated event associated with the cited resource (in ISO 8601 format)**
 
 ### ISO Obligation
 
-- There can be zero to many [0..`*`] *Resource reference date* entries for the cited resource in the *[MD_Identification.citation](./ResourceCitation)* package of class *[CI_Date](./class-CI_Date)* in a metadata record. One of these must be of `dateType` *creation*. The resource may be of type Data *[MD_DataIdentification](./class-MD_DataIdentification)* or of type Service *[SV_ServiceIdentification].
+- There can be zero to many [0..`*`] *resource reference date* entries for the cited resource in the *[MD_Identification.citation](./ResourceCitation)* package of class *[CI_Date](./class-CI_Date)* in a metadata record. One of these must be of `dateType` *creation*. The resource may be of type Data *[MD_DataIdentification](./class-MD_DataIdentification)* or of type Service *[SV_ServiceIdentification].
 
 
 
@@ -37,20 +37,20 @@ There should be at least one instance of a resource reference date in a metadata
 
 The CI_DateType CodeList contains 16 values. Which values are of most import needs further discussion. The ability to crosswalk easily with CKAN and DCAT is of high concern. These external catalogues commonly have a single date field. Which dateType we map to this field is of interest in discussions regarding the recommended dateTypes used.
 
-Relation of Metadata dateInfo to Resource reference date needs to be discussed. The Resource reference date is documented as the date that should be used for the discovery of resources other than services. (For services MD_Metadata.identificationInfo>SV_ServiceIdentification.citation>CI_Citation.date is used.)
+Relation of Metadata dateInfo to resource reference date needs to be discussed. The resource reference date is documented as the date that should be used for the discovery of resources other than services. (For services MD_Metadata.identificationInfo>SV_ServiceIdentification.citation>CI_Citation.date is used.)
 
-When does the metadata dataInfo require updating? For instance, is it okay to not update the metadata dataInfo when the Resource reference date is updated if nothing else has changed? Our good practice guide should address these and related issues.
+When does the metadata dataInfo require updating? For instance, is it okay to not update the metadata dataInfo when the resource reference date is updated if nothing else has changed? Our good practice guide should address these and related issues.
 
 ## Recommendations
 
-Therefore - to provide an idea of the age, validity and other time dependant properties of a resource, it is important to capture the important events that happened or will happen to a particular resource in the Resource Reference Date element. One of these important events must be of `dateType` "creation". Creation is a significant date in regards to copyright. Other important date types are "publication" and "lastUpdate".
+Therefore - to provide an idea of the age, validity and other time dependant properties of a resource, it is important to capture the important events that happened or will happen to a particular resource in the resource reference date element. One of these important events must be of `dateType` "creation". Creation is a significant date in regards to copyright. Other important date types are "publication" and "lastUpdate".
 
 ### Recommended Sub-Elements
 
 It is recommended that `Resource Date` include - 
 
 - **date** - (Mandatory) the reference DateTime for the metadata record.
-- **dateType** - Highly recommended. There should be multiple entries for the Resource reference date in a metadata record. These should include `dateType` entries for:
+- **dateType** - Highly recommended. There should be multiple entries for the resource reference date in a metadata record. These should include `dateType` entries for:
  - **Creation date** - This is important for intellectual property and other reasons
  - **Publication date** - Is the most common date type captured by an agency
  - **Update date** - Allows notifications and resource management. All updates to metadata should also include the date of last revision to the metadata. This can be an automated process.

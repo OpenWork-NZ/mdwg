@@ -27,7 +27,7 @@ title: Resource Title
 
 ### ISO Obligation
 
-- There must be one and only one [1..1] *title* element for the cited resource in the *[MD_Identification.citation](./ResourceCitation)* package in a metadata record of type *charater string*. The resource may be of type Data *[MD_DataIdentification](./class-MD_DataIdentification)* or of type Service *[SV_ServiceIdentification].
+- There must be one and only one [1..1] *title* element for the cited resource in the *[MD_Identification.citation](./ResourceCitation)* package in a metadata record of type *character string*. The resource may be of type Data *[MD_DataIdentification](./class-MD_DataIdentification)* or of type Service *[SV_ServiceIdentification].
 
 ## Discussion
 
@@ -45,7 +45,7 @@ If the title is not a common language name, at least one alternate title should 
 
 ### ICSM Good Practice
 
-- All metadata records must have the element *MD_Metadata,indentificationInfo>MD_Identification.citation>CI_Citation.title* populated with the most common useful name by which the resource is known.
+- All metadata records must have the element *MD_Metadata.indentificationInfo>MD_Identification.citation>CI_Citation.title* populated with the most common useful name by which the resource is known.
 
 ## Also Consider
 

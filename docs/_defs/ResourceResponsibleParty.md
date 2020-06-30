@@ -37,7 +37,7 @@ There may be multiple responsible parties who hold different responsibilities. T
 
 ## ICSM Recommendations
 
-Therefore - to meet ICSM good practice, in all metadata records, contact information should be given for the parties responsible for different aspects of the creation, management and maintenance of the resource. Entries for "author" and "publisher" should be provided. In addition, for minimal conformity, `name` (of organisation preferred), `positionName` and `electrronicMailAddress` should also be populated.
+Therefore - to meet ICSM good practice, in all metadata records, contact information should be given for the parties responsible for different aspects of the creation, management and maintenance of the resource. Entries for "author" and "publisher" should be provided. In addition, for minimal conformity, `name` (of organisation preferred), `positionName` and `electronicMailAddress` should also be populated.
 The use of the new `partyIdentifier` element added in the 2018 amendment to the standard is encouraged by all parties.
 
  This element should be populated in all metadata records with a minimum of `role`, `name` (of organisation preferred), `positionName` and `electronicMailAddress`.
@@ -50,10 +50,10 @@ Follow the general guidelines for [CI_Responsibility](./class-CI_Responsibility)
 
 ## Also Consider
 
-- **[Resource Point of Contact](./ResourcePointOfContact)** Contact information for the recommended party to contact about the resource
-- **[Metadata Responsible Party](./MetadataContact)** Contact information for the recommended party to contact about the metadata
-- **[DistributionInfo](./DistributionInfo)** Includes Distributor contact information.
-- **[Citation](./ResourceCitation)** the parent package of which resouce responsible party is a part
+- **[Resource Point of Contact](./ResourcePointOfContact)** - contact information for the recommended party to contact about the resource
+- **[Metadata Responsible Party](./MetadataContact)** - contact information for the recommended party to contact about the metadata
+- **[DistributionInfo](./DistributionInfo)** - includes distributor contact information
+- **[Citation](./ResourceCitation)** - the parent package of which resouce responsible party is a part
 - **[Resource Citation](./ResourceCitation)** - parent to this element
 
 ## Crosswalk considerations

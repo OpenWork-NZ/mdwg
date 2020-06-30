@@ -31,7 +31,7 @@ title: Spatial Representation Type
 
 ## Discussion
 
-A resource may consist of many spatial representation types. It may also contain no spatial representation types. Most commonly, a geospatial resource will consist of a single representation type. The resource may be data or service, [MD_DataIdentification](./class-MD_DataIdentification)* or *[SV_ServiceIdentification](./ServiceIdentification)
+A resource may consist of many spatial representation types. It may also contain no spatial representation types. Most commonly, a geospatial resource will consist of a single representation type. The resource may be data or service, *[MD_DataIdentification](./class-MD_DataIdentification)* or *[SV_ServiceIdentification](./ServiceIdentification)*.
 
 ## ICSM Recommendations
 

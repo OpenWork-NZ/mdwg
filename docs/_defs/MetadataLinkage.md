@@ -32,7 +32,7 @@ title: Metadata Linkage
 ## Discussion
 The most common use of `metadataLinkage` is to record a "point of truth" location of the source authoritative metadata record. It is in the nature of metadata to be highly distributed. This is commonly done through federated systems that harvest (or otherwise collect) metadata from other sources. Sometimes this process gets out of sync. Sometimes the metadata is modified in the process. In order to retain an authoritative understanding of a metadata record, it is useful to provide a linkage to the source as a reference.
 
-Alternatively, `metadataLiunkage` may be used to record the location of the metadata in its current catalogue. The *Discription* field should be used to indicate if this differs from other instances of the metadata record that may reside elsewhere. However, if alternate versions are not in ISO19115 format, such locations should be captured in `alternativeMetadataReference`.
+Alternatively, `metadataLiunkage` may be used to record the location of the metadata in its current catalogue. The *Description* field should be used to indicate if this differs from other instances of the metadata record that may reside elsewhere. However, if alternate versions are not in ISO19115 format, such locations should be captured in `alternativeMetadataReference`.
 
 The use of this field to hold the local of the metadata record in the local catalogue could be better accomplished through the options provided in [metadataIdentifier](./MetadataIdentifier).
 
@@ -52,15 +52,15 @@ Follow the general guidance for [class - CI_OnlineResource](./class-CI_OnlineRes
 
 ## Also Consider
 
-- **[onlineResource -](./DistributionInfo)** (MD_Distribution.transferOptions>MD_DigitalTransferOptions.online) is used to provide online linage to the resource. 
-- **[MetadataIdentifier -](./MetadataIdentifier)** is the preferred element to be used to provide linkage to the metadata record.
+- **[onlineResource -](./DistributionInfo)** (MD_Distribution.transferOptions>MD_DigitalTransferOptions.online) is used to provide online linkage to the resource 
+- **[MetadataIdentifier -](./MetadataIdentifier)** is the preferred element to be used to provide linkage to the metadata record
 - **[alternativeMetadataReference](http://geos.whu.edu.cn/ont/iso19115/metadata.html#d4e52) -** *(class - CI_Citation)*[0..\*] *Page 37 - ISO 19115.1:2015* - reference to alternative metadata, e.g Dublin Core, FGDC, or metadata in a non-ISO standard for the same resource
 - **[class - CI_OnlineResource -](./class-CI_OnlineResource)** provides a standardised way of collecting links to online resources 
 
 ### Outstanding Issues
 
 > **Point of Truth Issue:**
-The use of a standardised term for "point of truth" has been suggested. While this could be applied to the `discription` element it could be placed elsewhere such as an expanded *CI_OnlineFunctionCode* codelist
+The use of a standardised term for "point of truth" has been suggested. While this could be applied to the `description` element it could be placed elsewhere such as an expanded *CI_OnlineFunctionCode* codelist
 
 ## Crosswalk considerations
 

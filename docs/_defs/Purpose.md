@@ -31,7 +31,7 @@ title: Purpose
 
 ## Discussion
 
-A purpose statement provides a brief description of the reason a resource was created. Knowing this can give a good guide to the potential usefulness of a resource to other potential users. The resource may be data or service, [MD_DataIdentification](./class-MD_DataIdentification)* or *[SV_ServiceIdentification](./ServiceIdentification)
+A purpose statement provides a brief description of the reason a resource was created. Knowing this can give a good guide to the potential usefulness of a resource to other potential users. The resource may be data or service, *[MD_DataIdentification](./class-MD_DataIdentification)* or *[SV_ServiceIdentification](./ServiceIdentification)*.
 
 Consideration needs to be given to the audience and what they need to know about the resource to decide the utility for them.
 

@@ -40,21 +40,21 @@ From class *[CI_Series](http://wiki.esipfed.org/index.php/CI_Series)*
 
 ## Discussion
 
-The content of all three *CI_Series* elements are free text and optional. How one would link back to the Series metadata is unclear. It could be captured in "Name" as a resolvable URI. Perhaps through the Parent Metadata element? What is the relation between "Series" and "Parent Metadata"
+The content of all three *CI_Series* elements are free text and optional. How one would link back to the series metadata is unclear. It could be captured in "Name" as a resolvable URI. Perhaps through the Parent Metadata element? What is the relation between "Series" and "Parent Metadata"
 
-It Is conceivable that there may be more than one series to which a dataset may belong. The dataset may be part of a time series while also part of a thematic series. But, by the standard, a resource may only belong to one cited series. Guidance needs to be developed for users on this topic.
+It is conceivable that there may be more than one series to which a dataset may belong. The dataset may be part of a time series while also part of a thematic series. But, by the standard, a resource may only belong to one cited series. Guidance needs to be developed for users on this topic.
 
 ## Recommendations
 
 **Series** has proven to be a difficult element to pin down for a number of reasons. Below is a list of issues that should be included in good practice guidance on this element:
 
-* Definition of this element needs to be expanded to include a definition of "Series" in our context.
-* Which a cardinality of zero to one, we need this well defined since it is conceivable that a resource may be part of multiple series depending on the definition and post of view.
+* Definition of this element needs to be expanded to include a definition of "series" in our context.
+* When a cardinality of zero to one, we need this well defined since it is conceivable that a resource may be part of multiple series depending on the definition and post of view.
 * Good practices of how one captures links to series metadata needs development.
 * The relation (if any) between series and parent metadata needs discussion.
 * The use of the three CI_Series elements are not well defined for the spatial context in which they reside. Further discussion is recommended.
 
-Until these topics are resolved I would not recommend the inclusion of Series as recommended elements.
+Until these topics are resolved I would not recommend the inclusion of series as recommended elements.
 If series information is to be captured, the minimum information needed would be CI_Series > name.  
 
 It may be better to use other elements such as `parentMetadata` or `associatedResource` to capture series type relationships.
@@ -76,7 +76,7 @@ Maps to `Context`
 ## Also Consider
 
 - **[Parent Metadata](./ParentMetadata)** - hierarchical relations of metadata records
-- **[AssociatedResource](./AssociatedResources)** information about aggregate data and related resources
+- **[AssociatedResource](./AssociatedResources)** - information about aggregate data and related resources
 - **[Resource  Citation](./ResourceCitation)** - parent to this element
 
 ## Examples

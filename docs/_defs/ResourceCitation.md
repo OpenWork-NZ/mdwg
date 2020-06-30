@@ -27,7 +27,7 @@ title: Resource Citation
 
 ### ISO Obligation
 
-There must be one and only one [1..1] *MD_Metadata.indentificationInfo>MD_Identification.citation* package for the cited resource in a metadata record. This must be of of class *[CI_Citation](./class-CI_Citation)*. The resource may be of type Data *[MD_DataIdentification](./class_MD_DataIdentification)* or of type Service *[SV_ServiceIdentification].
+There must be one and only one [1..1] *MD_Metadata.identificationInfo>MD_Identification.citation* package for the cited resource in a metadata record. This must be of class *[CI_Citation](./class-CI_Citation)*. The resource may be of type data *[MD_DataIdentification](./class_MD_DataIdentification)* or of type service *[SV_ServiceIdentification](./ServiceIdentification)*.
 
 ## Discussion
 
@@ -44,7 +44,7 @@ This element should be populated in all service metadata records.
 ### Recommended Sub-Elements
 
 Follow the general guidance for **[CI_Citation](./class-CI_Citation)** with emphasis on the following elements:
-- **[title](./ResourceTitle) -** *(type - charStr)*[1..1] Mandatory - name by which the cited resource is known
+- **[title](./ResourceTitle) -** *(type - charStr)*[1..1] mandatory - name by which the cited resource is known
 - **[date](./ResourceDate) -** *(class - [CI_Date](./class-CI_Date))* [0..\*] reference date for the cited resource. Should include at a minimum, the creation date for the resource.
 - **[edition](./ResourceEdition) -** *(type - charStr)* [0..1] version of the cited resource if appropriate
 - **[identifier](./ResourceIdentifier) -** *(class - [MD_Identifier](./class-MD_Identifier))* [0..\*] value uniquely identifying an object within a namespace. Recommend provision of a resolvable URI following the MD_Identifier guidance.
@@ -54,25 +54,26 @@ Follow the general guidance for **[CI_Citation](./class-CI_Citation)** with emph
 
 #### Other Sub-Elements
 
-- **alternateTitle -** *(type - charStr)* [0..\*] short name or other language name by which the cited service is known. Example: DCW as an alternative title for Digital Chart of the World. Recommended whenever there are alternate names commonly in use.
-- **[series](./ResourceSeries) -** *(class - CI_Series)* [0..1] If needed, information about the series, or aggregate resource, of which the resource is a part should be included.
-- See 
+- **alternateTitle -** *(type - charStr)* [0..\*] short name or other language name by which the cited service is known, e.g. DCW as an alternative title for Digital Chart of the World. Recommended whenever there are alternate names commonly in use
+- **[series](./ResourceSeries) -** *(class - CI_Series)* [0..1] If needed, information about the series, or aggregate resource, of which the resource is a part should be included
 
 ## Also Consider
 
-- **[DistributionInfo -](./DistributionInfo)** Can contain information about how the resource is distributed. like *onlineResource* should contain landing page linkages to the resource but can also store additional information.
+- **[DistributionInfo -](./DistributionInfo)** can contain information about how the resource is distributed. like *onlineResource* should contain landing page linkages to the resource but can also store additional information
 - **[metadataLinkage -](./MetadataLinkage)** for links that provide a download of the metadata
 - **[browseGraphic -](./BrowseGraphic)** associates to a large number of packages to provide linkage to associated image files, such as business or product icons and logos
-- **[ContainsOperations -](./ContainsOperations)** For Service resources, this element can provide online access instructions.
+- **[ContainsOperations -](./ContainsOperations)** for service resources, this element can provide online access instructions
 - **[CI_Citation - ](./class-CI_Citation)** the class guidance for more options.
 
 ## Outstanding Issues
 > **CORE ISSUE:**  
-Core to any metadata record is access to the described resource. There are several options where this may be expressed in an ISO19115-1 metadata record. The MDWG has not agreed as to a consistent approach. Inside the resource citation package, the `identifier` and `onlineResource` may provide this functionality. The package `DistributionInfo` is, of course, a common way to capture such information - particularly for data resources. For service resources.`ContainsOperations` is another common location for resource access information. Further discussion and guidance are needed to resolve this issue to support machine readability and reduce confusion.
+Core to any metadata record is access to the described resource. There are several options where this may be expressed in an ISO19115-1 metadata record. The MDWG has not agreed to a consistent approach. Inside the resource citation package, the `identifier` and `onlineResource` may provide this functionality. The package `DistributionInfo` is, of course, a common way to capture such information - particularly for data resources. For service resources `ContainsOperations` is another common location for resource access information. Further discussion and guidance are needed to resolve this issue to support machine readability and reduce confusion.
 
 ## Examples
 
 <details>
+
+\pagebreak
 
 ### XML
 Data Resource example

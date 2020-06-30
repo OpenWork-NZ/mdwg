@@ -31,13 +31,13 @@ title: Resource Point of Contact
 
 ## Discussion
 
-This element exists for the provision of a set of attributes for identification of, and means of communication with, person(s) and organisation(s) associated with the resource be they data or service ( [MD_DataIdentification](./class-MD_DataIdentification)* or *[SV_ServiceIdentification](./ServiceIdentification)). This element refers to the party responsible for the resource itself and the maintenance of this resource. It does not refer to the party responsible for the metadata or the distribution of the resource.
+This element exists for the provision of a set of attributes for identification of, and means of communication with, person(s) and organisation(s) associated with the resource be they data or service (*[MD_DataIdentification](./class-MD_DataIdentification)* or *[SV_ServiceIdentification](./ServiceIdentification)*). This element refers to the party responsible for the resource itself and the maintenance of this resource. It does not refer to the party responsible for the metadata or the distribution of the resource.
 
 This is a compound element of type CI_ResponsibleParty. At least one should be present. Recommended role value - "PointOfContact" with attached email. Other contacts can be added as required. Other role values are acceptable.
 
 ## Recommendations
 
-Therefore - to meet ICSM good practice, in all metadata records, at least one point of contact should be given for the party responsible for the cited resource. These should default to role code "Point of Contact". In addition, for minimal conformity, `name` (of organisation preferred), `positionName` and `electrronicMailAddress` should also be populated.
+Therefore - to meet ICSM good practice, in all metadata records, at least one point of contact should be given for the party responsible for the cited resource. These should default to role code "Point of Contact". In addition, for minimal conformity, `name` (of organisation preferred), `positionName` and `electronicMailAddress` should also be populated.
 The use of the new `partyIdentifier` element added in the 2018 amendment to the standard is encouraged by all parties.
 
 
@@ -46,12 +46,12 @@ The use of the new `partyIdentifier` element added in the 2018 amendment to the 
 Follow the general guidelines for [CI_Responsibility](./class-CI_Responsibility).
 
 - One value of `role` should be "Point of Contact", but may be another depending on agency guidance, e.g. if a custodian is also the primary point of contact, *custodian* may be the most appropriate choice for `role`.
-- **partyIdentifier -** *(class - [MD_Identifier](./class-MD_Identifier))* [0..\*]  identifier for the party, usual a URI such as an ORCID. Use of this package is recommended when the option exist.
+- **partyIdentifier -** *(class - [MD_Identifier](./class-MD_Identifier))* [0..\*]  identifier for the party, usually a URI such as an ORCID. Use of this package is recommended when this option exists.
 > Note BC 30-7: Do we have some regional alternatives to ORCID to recommend?
 
 ## Also Consider
 
-- **[Metadata Responsible Party](./MetadataContact)** Contact information for the recommended party to contact about the metadata
+- **[Metadata Responsible Party](./MetadataContact)** Contact information for the recommended party to contact about the metadata.
 - **[Resource Cited Reponsible Party](./ResourceResponsibleParty)** contact information for the parties otherwise responsible for aspects of the the resource creation and maintenance.
 - **[DistributionInfo](./DistributionInfo)** Includes Distributor contact information.
 

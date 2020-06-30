@@ -90,8 +90,8 @@ None Known
 #### Dublin core / CKAN / data.gov.au 
 None Known
 
-#### DCAT 
-*operationDiscription* maps to *dcat:endpointDescription*
+#### DCAT
+*operationDescription* maps to *dcat:endpointDescription*
 *connectPoint* maps to *dcat:endpointURL*
 
 #### RIF-CS
