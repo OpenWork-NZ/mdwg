@@ -27,7 +27,7 @@ title: Resource Identifier
 
 ### ISO Obligation
 
-- This is an ISO optional element. There may be zero or many [0..\*] *identifier* entries for the cited resource in the *[MD_DataIdentification.citation](./ResourceCitation)* package of class *[MD_Identifier](./class-MD_Identifier)* in a metadata record. The resource may be of type Data *[MD_DataIdentification](./class-MD_DataIdentification)* or of type Service *[SV_ServiceIdentification]
+- This is an ISO optional element. There may be zero or many [0..\*] *identifier* entries for the cited resource in the *[MD_DataIdentification.citation](./ResourceCitation)* package of class *[MD_Identifier](./class-MD_Identifier)* in a metadata record. The resource may be of type data *[MD_DataIdentification](./class-MD_DataIdentification)* or of type service *[SV_ServiceIdentification](./ServiceIdentification)*.
 
 ## Discussion
 
@@ -37,11 +37,11 @@ Commonly, standards like Dublin Core do not make a distinction between the metad
 
 A common practice in GA and ABARES is for this identifier to be the same as the metadata identifier. In these cases, it can be said the authoritative metadata serves as the landing page for the data resource.
 
-In the case where a resource may have multiple identifiers, additional instances of this element can be created. The `discription` element must be populated in such situations to distinguish the meaning of the different identifiers.
+In the case where a resource may have multiple identifiers, additional instances of this element can be created. The `description` element must be populated in such situations to distinguish the meaning of the different identifiers.
 
 ## ICSM Recommendations
 
-Therefore - It is recommended that this element be populated, preferably once, but more often if there are multiple identifier systems for the same resource. In the case of multiple identifiers, the `discription` element must be populated in such situations to distinguish the meaning of the different identifiers. `Code` must be populated in all records and it is recommended that `codeSpace` be populated as well.
+Therefore - it is recommended that this element be populated, preferably once, but more often if there are multiple identifier systems for the same resource. In the case of multiple identifiers, the `description` element must be populated in such situations to distinguish the meaning of the different identifiers. `Code` must be populated in all records and it is recommended that `codeSpace` be populated as well.
 
 Common practice has been to populate this field that is the same as or resolves to the metadata record itself. In this case, the metadata can be said to be the landing page for the resource. 
 
@@ -59,7 +59,7 @@ Follow the general guidance for **[MD_Identifier](./class-MD_Identifier)** with 
 
 ## Also Consider
 
-- **[onlineResource -](./DistributionInfo)** (MD_Distribution.transferOptions>MD_DigitalTransferOptions.online) is used to provide online linage to the resource.
+- **[onlineResource -](./DistributionInfo)** (MD_Distribution.transferOptions>MD_DigitalTransferOptions.online) is used to provide online linkage to the resource.
 - **[MetadataIdentifier -](./MetadataIdentifier)** is the preferred element to be used to provide linkage to the metadata record.
 - **[Resource Citation](./ResourceCitation)** - parent to this element
 
@@ -137,8 +137,10 @@ URN:UUID (example 559708e5-480e-4f94-8429-c49571e82761)
 </mdb:MD_Metadata>
 ```
 
+\pagebreak
+
 ### UML diagrams
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![resourceIdentifier](../images/ResourceIdentifierUML.png)
 

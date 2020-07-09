@@ -107,9 +107,11 @@ Currently there are no clear methods to apply different constraints to different
 - **[MD_LegalConstraints](./class-MD_LegalConstraints) An extension to MD_Constraints for constraints applied for legal reasons.
 - **[MD_SecurityConstraints](./class-MD_SecurityConstraints) An extension to MD_Constraints for constraints applied for security purposes.
 
+\pagebreak
+
 ### UML diagrams
 
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![MD_Constraints](../images/MD_ConstraintsUML.png)
 

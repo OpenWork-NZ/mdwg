@@ -42,7 +42,7 @@ title: Template
 
 ## ICSM Recommendations 
 
-{Therefore - Statement about what, why, who, when and how MDWG recommend this element be used}
+{Therefore - statement about what, why, who, when and how MDWG recommend this element be used}
 {A brief statement of MDWG guidance on use of this element}
 
 ### Recommended Sub-Elements 
@@ -117,9 +117,11 @@ title: Template
 </mdb:MD_Metadata>
 ```
 
+\pagebreak
+
 ### UML diagrams
 {Captured from official ISO documentation at https://www.isotc211.org/hmmg/HTML/ConceptualModels/index.htm?goto=1:12:2:4095}
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![{Name}]({path to UML diagram image})
 </details>

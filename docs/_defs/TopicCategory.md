@@ -33,7 +33,7 @@ title: Topic Category
 
 The Resource Topic Category is recommended in ISO 19115.1-2015 as a metadata element to be used for discovery of geospatial resources. It provides high-level filtering of data using standardised terms from the enumeration `MD_Topic CategoryCode`. This enumeration cannot be extended and should not be as it is the fixed nature that makes this element of particular value. These values allow metadata aggregated from anywhere in the world to be sorted and filtered into like categories - such as is done in a faceted search interface. Search results can be easily sorted by humans and machines. If this list were extensible, this would not be as effective.
 
-Many resources may fit into multiple categories. ISO199115-1 allows multiple instances of `topicCategory` to accommodate such instances. Discussions need to be made as to when an aspect of the resource is too minor to include an instance of the `MD_TopicCategoryCode` value.
+Many resources may fit into multiple categories. ISO19115-1 allows multiple instances of `topicCategory` to accommodate such instances. Discussions need to be made as to when an aspect of the resource is too minor to include an instance of the `MD_TopicCategoryCode` value.
 
 Topic categories are essentially keywords but of a particular enumeration. Like other keywords, search engines and indices use these to provide search support. If a topic category code satisfies the need for a particular keyword, it is probably unbeneficial to include that value as part of your [Keywords](./Keywords).
 
@@ -87,10 +87,10 @@ Type enumeration - [MD_TopicCategoryCode](http://wiki.esipfed.org/index.php/ISO_
 - **extraTerrestrial -** region more than 100 km above the surface of the Earth
 - **disaster -**  Information related to disasters
  - Examples: site of the disaster, evacuation zone, disaster-prevention facility, disaster relief activities
-  
- ## Also Consider
 
- - **[Keywords](./Keywords)** provides a more lengthy flexible system to attach keywords - including from custom thesauri and free text.
+## Also Consider
+
+ - **[Keywords](./Keywords)** provides a more lengthy flexible system to attach keywords - including from custom thesauri and free text
  - **[Metadata Scope](./MetadataScope)** holds keyword identifying the type of resource, e.g. service, a collection, an application which the metadata describes
  - **[Spatial Representation Type](./SpatialRepresentationType)** holds keywords related to the spatial type of the resource, such as vector, grid, tin, etc.
 
@@ -144,9 +144,11 @@ Maps to *Subject*
 </mdb:MD_Metadata>
 ```
 
+\pagebreak
+
 ### UML diagrams
 
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![topicCategory](../images/TopicCategoryUML.png)
 

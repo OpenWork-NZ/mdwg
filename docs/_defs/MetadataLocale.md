@@ -35,11 +35,11 @@ The element "otherLocale" can be used to provide information about alternatively
 
 ## ICSM Recommendations
 
-Therefore - In order to provide metadata in a consistent manner for the users in our region, it is recommended that English be chosen as the value for `language` using the ISO 639-2, 3-alphabetic digits code "eng".
+Therefore - in order to provide metadata in a consistent manner for the users in our region, it is recommended that English be chosen as the value for `language` using the ISO 639-2, 3-alphabetic digits code "eng".
 
 ### Recommended Sub-Elements
 
-Follow the general guidance for [class - PT_Locale](./PT_Locale) 
+Follow the general guidance for [class - PT_Locale](./PT_Locale)
 
 ### Recommended Sibling Elements -
 
@@ -102,8 +102,10 @@ No identified mapping
 </mdb:MD_Metadata>
 ```
 
+\pagebreak
+
 ### UML diagrams
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![MDdefaultLocale](../images/MetadataLocaleUML.png)
 

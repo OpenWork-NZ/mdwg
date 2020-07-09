@@ -30,21 +30,19 @@ title: Abstract
 - There must be one and only one [1..1] *abstract* entries for the spatial resource in the metadata *[MD_Identification](./class-MD_Identification)* package of type *character String* in a metadata record.
 
 ## Discussion 
-Abstract is a mandatory element. It contains a human-readable description of the resource that gives a user a first understanding of the resource. Typically, an abstract is several sentences long. The resource may be data or service, [MD_DataIdentification](./class-MD_DataIdentification)* or *[SV_ServiceIdentification](./ServiceIdentification)
+Abstract is a mandatory element. It contains a human-readable description of the resource that gives a user a first understanding of the resource. Typically, an abstract is several sentences long. The resource may be data or service, *[MD_DataIdentification](./class-MD_DataIdentification)* or *[SV_ServiceIdentification](./ServiceIdentification)*.
 
 Consideration needs to be given to the audience and what they need to know about the resource to decide the utility for them.
 
-The abstract should address the 5Ws What is it; Who generated it; When was it generated; Why was it generated; and Where is the place that it deals with. But in a general way with the most common language possible while still containing sufficient information to provide a good understanding of the resource to your most likely audience.
-
 ## ICSM Recommendations 
-Therefore - An abstract should be written in a style that your human audience will easily comprehend. As this is a top-level field for harvested records to general-purpose catalogues, common language should be used that most people could understand. If there is a need for more technical language to describe the resource, this should be included at the end of the abstract.
+Therefore - an abstract should be written in a style that your human audience will easily comprehend. As this is a top-level field for harvested records to general-purpose catalogues, common language should be used that most people could understand. If there is a need for more technical language to describe the resource, this should be included at the end of the abstract.
 
 The contents of an abstract should address the 5Ws What is it; Who generated it; When was it generated; Why was it generated; and Where is the place that it deals with (Time and Location). But in a general way with the most common language possible while still containing sufficient information.
 
 
 ## Also Consider
 
-- **[Purpose -](./Purpose)** provides A brief summary of the intentions with which the resource was developed. Some overlap of usage with `abstract` may exist. The MDWG should provide some guidance as to what belongs in `abstract` and what belongs in `purpose`
+- **[Purpose -](./Purpose)** provides a brief summary of the intentions with which the resource was developed. Some overlap of usage with `abstract` may exist. The MDWG should provide some guidance as to what belongs in `abstract` and what belongs in `purpose`
 - **MD_DataIdentification.supplimentalInformation -** provides a description of the resource in the producer's processing environment, including items such as the software, the computer operating system, file name, and the dataset size.
 
   
@@ -146,10 +144,13 @@ All products must include an appropriate copyright statement.*
 </mdb:MD_Metadata>
 ```
 
+\pagebreak
+
 ### UML diagrams
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![abstract](../images/AbstractUML.png)
 
 </details>
 
+\pagebreak

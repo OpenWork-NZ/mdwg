@@ -33,15 +33,13 @@ title: Resource Status
 
 According to the ISO model, a resource may exist in many states. Not all values are mutually exclusive. This element is optional and has only been lightly discussed. As it has been determined a valuable element we may want to increase these recommendations. 
 
-The resource may be data or service, [MD_DataIdentification](./class-MD_DataIdentification)* or *[SV_ServiceIdentification](./ServiceIdentification).
-
+The resource may be data or service, *[MD_DataIdentification](./class-MD_DataIdentification)* or *[SV_ServiceIdentification](./ServiceIdentification)*.
 ## Recommendations
 
 Therefore - The status of a resource is valuable information to those who may want to use it. It is recommended that the status field be populated and regularly updated as needed. At least one instance of this element should be populated in all metadata records.
 
 As the harvesting of metadata to more general-purpose catalogues is desirable, some thought needs to be given to crosswalk with boolean values (CKAN) or those that only accept one occurrence of this element.
-Values for this element must come from the MD_ProgressCode codelist. 
-
+Values for this element must come from the *MD_ProgressCode* codelist.
 ### Possible Values for **status** *(codelist - MD_ProgressCode)*
 
 - *completed -* has been completed
@@ -66,7 +64,8 @@ Values for this element must come from the MD_ProgressCode codelist.
 ## Outstanding Issues
 
 > **Abstract Class - MD_Identification**
-SpatialRepresentationType is one of many elements belonging to the abstract class MD_Identification. MD_Identification is only instantiated as MD_DataIdentification or SV_ServiceIdentification. At this stage we are not addressing service metadata, we are assuming all metadata is for data resources. At a later time, when we include Service metadata guidance, a separate discussion of MD_Identifier should be made.
+
+SpatialRepresentationType is one of many elements belonging to the abstract class MD_Identification. MD_Identification is only instantiated as MD_DataIdentification or SV_ServiceIdentification. At this stage we are not addressing service metadata, we are assuming all metadata is for data resources. At a later time, when we include service metadata guidance, a separate discussion of MD_Identifier should be made.
 
 > **CKAN**
 It has been indicated that CKAN records in its related field boolean values for this item. Boolean does not map well to ISO domain values. Some options in the MD_ProgressCode are noncompatible some are compatible. Clarification and validation would be useful.

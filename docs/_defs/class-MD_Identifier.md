@@ -59,9 +59,11 @@ More identifiers for more authorities can be added uplon request to the AGLDWG.
 
 It is recommended that the MDWG develop general advise on the use of MD_Identifier - particularly concerning the use of `<mcc:codespace>`  and leverage the ability of combining this element with its mandatory sibling element `<mcc:code>` to provide a linkage to a cited resource. It would also be beneficial to discuss other sibling elements `<mcc:authority>`, `<mcc:version>` and `<mcc:description>` and develop any needed advice on their general use.
 
+\pagebreak
+
 ### UML diagrams
 
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![MDIdentifier](../images/class-MD_Identifier.png)
 

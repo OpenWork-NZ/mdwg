@@ -24,21 +24,21 @@ title: Service Profile
 | **Metadata type** | *descriptive* |
 | **ICSM Level of Agreement** | ⭑ ⭑ |
 
-## Definition  
+## Definition
 **The standard to which the service adheres**
 
 ### ISO Requirements
 
 There may be zero or more [0-\*] *profile* entries for the cited resource for a *[SV_ServiceIdentification](./ServiceIdentification)* package of class *[CI_Citation](./class-CI_Citation)* in a service metadata record.
 
-## Discussion  
+## Discussion
 To be complete in the description of the standards to which a spatial service adheres, citations, including linkages to official websites and documentation, of such standards should be provided. This will aid potential users in the use of such services or troubleshoot when the use of such services do not behave as expected.
 
 When the service complies to a particular profile of a standard, it will suffice to complete the sibling *profile* element to the same degree.
 
 ## ICSM Recommendations 
 
-Therefore - When a service adheres to particular service standard profiles such profiles should be cited in this package. If a service adheres to a standard and not a profile of such it is preferable to document this in *[SV_ServiceIdentification.serviceStandard](./ServiceStandard).* If the service may support multiple profiles of the service standard, multiple entries of *Service Profile* can document such.
+Therefore - when a service adheres to particular service standard profiles such profiles should be cited in this package. If a service adheres to a standard and not a profile of such it is preferable to document this in *[SV_ServiceIdentification.serviceStandard](./ServiceStandard).* If the service may support multiple profiles of the service standard, multiple entries of *Service Profile* can document such.
 
 #### Recommended Sub-Elements 
 Follow the guidance in *[CI_Citation](./class-CI_Citation)* noting the following element usage:
@@ -136,9 +136,11 @@ None known
 </mdb:MD_Metadata>
 ```
 
+\pagebreak
+
 ### UML diagrams
 
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![Service Profile](../images/ServiceProfile.png)
 

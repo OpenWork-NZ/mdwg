@@ -40,7 +40,7 @@ As these extents are meant to be used to give a general rough comparison to othe
 
 ## Recommendations
 
-Therefore - It is strongly recommended that to support the discovery of resources, every metadata record that describes a geographic resource contains geographic descriptions of the area of interest for the resource. At a minimum one description needs be in bounding box coordinate values. If there be any exclusion areas, the use of the boolean extentTypeCode (set to "0") is recommended.
+Therefore - it is strongly recommended that to support the discovery of resources, every metadata record that describes a geographic resource contains geographic descriptions of the area of interest for the resource. At a minimum one description needs be in bounding box coordinate values. If there be any exclusion areas, the use of the boolean extentTypeCode (set to "0") is recommended.
 
 The MDWG recommends populating as many instances of Geographical Extent packages as needed to give a common understanding of the spatial coverage of the cited resource.
 
@@ -94,8 +94,10 @@ Maps to `Coverage/Spatial`
 
 <details>
 
+\pagebreak
+
 ### UML diagrams
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![geographicExtent](../images/GeographicExtentUML.png)
 

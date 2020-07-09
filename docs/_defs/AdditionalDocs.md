@@ -23,7 +23,7 @@ title: Additional Documentation
 | **ICSM Level of Agreement** | ⭑ ⭑ ⭑ |
 
 ## Definition 
-**Citation of other documentation associated with the resource, e.g. related articles, publications, user guides, data dictionaries.**
+**Citation of other documentation associated with the resource, e.g. related articles, publications, user guides, data dictionaries**
 
 ### ISO Obligation 
 
@@ -42,15 +42,15 @@ This element should be populated in all metadata records with a minimum of `titl
 ### Recommended Sub-Elements
 
 * **title -** *(type - charStr)* [1..1] mandatory for citations, the name by which the cited resource is known
-* **date -** *(class - [CI_Date](./class-CI_Date))* recommended, the reference date for the cited resource. 
-In addition, some direction should be given about how to access the cited additional resource.
+* **date -** *(class - [CI_Date](./class-CI_Date))* recommended, the reference date for the cited resource
+In addition, some direction should be given about how to access the cited additional resource
 * **onlineResource -** *(class [CI_OnlineResource](./class-CI_OnlineResource))* [0..\*] a description of how to access the cited additional resource online
 * **citedResponsibleParty -** *(class [CI_Responsibility](./class-CI_Responsibility))* [0..\*] contact information for someone who can give guidance about accessing the cited additional resource
 
 ## Also Consider 
 
-- **[MD_DataIdentification.supplementalInformation -](https://www.isotc211.org/hmmg/HTML/ConceptualModels/EARoot/EA1/EA13/EA2/EA12/EA4420.htm)** is defined as "any other descriptive information about the resource". 
-- **[MD_AssociatedResource -](https://www.isotc211.org/hmmg/HTML/ConceptualModels/EARoot/EA1/EA13/EA2/EA12/EA4419.htm)** contains information about resources of which this resource is a piece. Association types are taken from the [DS_AssociationTypeCode](https://www.isotc211.org/hmmg/HTML/ConceptualModels/EARoot/EA1/EA13/EA2/EA12/EA4378.htm).
+- **[MD_DataIdentification.supplementalInformation -](https://www.isotc211.org/hmmg/HTML/ConceptualModels/EARoot/EA1/EA13/EA2/EA12/EA4420.htm)** is defined as "any other descriptive information about the resource"
+- **[MD_AssociatedResource -](https://www.isotc211.org/hmmg/HTML/ConceptualModels/EARoot/EA1/EA13/EA2/EA12/EA4419.htm)** contains information about resources of which this resource is a piece. Association types are taken from the [DS_AssociationTypeCode](https://www.isotc211.org/hmmg/HTML/ConceptualModels/EARoot/EA1/EA13/EA2/EA12/EA4378.htm)
 
 ### Outstanding Issues
 
@@ -170,8 +170,10 @@ Maps to `Description 'notes'`
 </mdb:MD_Metadata>
 ```
 
+\pagebreak
+
 ### UML diagrams
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![additionalDoc](../images/AdditionalDocsUML.png)
 

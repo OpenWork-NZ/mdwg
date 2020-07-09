@@ -65,9 +65,11 @@ browseGraphic is a new package in iso19115-1. New elements include:
 
 <details>
 
+\pagebreak
+
 ### UML diagrams
 
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![browseGraphic](../images/BrowseGraphicUML.png)
 

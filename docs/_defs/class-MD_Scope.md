@@ -110,9 +110,11 @@ HierarchyLevel attributes were replaced by an MD_Scope class to improve the desc
 
 - [ESIP MD_Scope](http://wiki.esipfed.org/index.php/MD_Scope)
 
+\pagebreak
+
 ### UML diagrams
 
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![MD_Scope](../images/MD_Scope.png)
 

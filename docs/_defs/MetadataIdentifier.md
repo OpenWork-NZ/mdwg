@@ -45,7 +45,7 @@ The equivalent of this field was recommended as mandatory in the previous ANZLIC
 
 ## ICSM Recommendations
 
-Therefore - It is Highly Recommended that every metadata record should have one and only one metadata identifier (MD_Metadata > mdb:metadataIdentifier > MD_Identifier). The child element `<mcc:code>` should contain the persistent uuid for the metadata record. While the child element `<mcc:codespace>` should contain the reference URL path by which, when combined with the uuid, this metadata record can be retrieved. It is beneficial to populate other sibling elements as needed such as `<mcc:authority>` to indicated the authority that minted the uuid.
+Therefore - it is Highly Recommended that every metadata record should have one and only one metadata identifier (MD_Metadata > mdb:metadataIdentifier > MD_Identifier). The child element `<mcc:code>` should contain the persistent uuid for the metadata record. While the child element `<mcc:codespace>` should contain the reference URL path by which, when combined with the uuid, this metadata record can be retrieved. It is beneficial to populate other sibling elements as needed such as `<mcc:authority>` to indicated the authority that minted the uuid.
 
 ### ICSM Recommended Sub-Elements
 From class *[MD_Identifier](./class-MD_Identifier)* 
@@ -117,7 +117,7 @@ Maps to `Key Identifier`
 <details>
 
 ### Other
-#### data.govt.au
+#### data.gov.au
 
 http://data.gov.au/dataset/559708e5-480e-4f94-8429-c49571e82761
 
@@ -144,9 +144,11 @@ http://data.gov.au/dataset/559708e5-480e-4f94-8429-c49571e82761
 </mdb:MD_Metadata>
 ```
 
+\pagebreak
+
 ### UML diagrams
 
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![MDIdentifier](../images/MetadataIdentifier.png)
 
