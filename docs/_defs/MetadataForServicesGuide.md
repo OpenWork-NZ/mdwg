@@ -93,11 +93,7 @@ Elements with specific guidance for Services are in **_Bold Italic_**
     - [Resource Point of Contact  role = 'pointOfContact'](./ResourcePointOfContact) *Highly Recommended.*
     - [Additional Docs](./AdditionalDocs)  *Recommended.* If any
     - [Spatial Representation Type](./SpatialRepresentationType)  *Recommended.*
-<<<<<<< HEAD
-  - **[Service Citation](./ResourceCitation)** Sub-elements: 
-=======
   - #### CI_Citation  Package - [Service Citation](./ResourceCitation) Sub-elements 
->>>>>>> 9f0541b841e3521827037be4f2e123d1604dd54f
     - [Title](./ResourceTitle) *Mandatory.*
     - [Identifier (uri)](./ResourceIdentifier) *Highly Recommended.*
     - [Date (creation)](./ResourceDate) *Highly Recommended.*
@@ -129,11 +125,7 @@ Elements with specific guidance for Services are in **_Bold Italic_**
       - description *Recommended*
       - optionality  *Mandatory*
       - repeatability  *Mandatory*
-<<<<<<< HEAD
-- **Other Metadata Packages** 
-=======
 - ### Other Metadata Packages 
->>>>>>> 9f0541b841e3521827037be4f2e123d1604dd54f
   - [Associated Resource](./AssociatedResources)   class - MD_AssociatedResource
   - [BrowseGraphic](./BrowseGraphic)  Class - MD_BrowseGraphic  - Perhaps a logo for the service or oganisation 
   - **_[Keywords](./Keywords)_** *Mandatory.* Package - MD_Keywords  including:  
@@ -148,36 +140,22 @@ Elements with specific guidance for Services are in **_Bold Italic_**
     - Legal and Reference for Legal
     - Security and Reference for Security
     - Releasability
-<<<<<<< HEAD
-    - Other Constraints
-  - [Extents](./ResourceExtent)  Package - EX_Extent  
-    - [GeoExtent](./GeographicExtent) class - EX_GeographicExtent  
-=======
     - Other Constraints  
   - [Extents](./ResourceExtent)  Package -  EX_Extent
     - [GeoExtent](./GeographicExtent) class - EX_GeographicExtent
->>>>>>> 9f0541b841e3521827037be4f2e123d1604dd54f
        - [geographic description](./ExtentGeographicDescription)
        - [bounding box](./ExtentBoundingBox)
     - [vertical extent](./VerticalExtent) class - EX_VerticalExtent
     - [temporal extent](./TemporalExtents) class - EX_TemporalExtent
   - [ReferenceSystemInfo](./SpatialReferenceSystem)   Package - MD_ReferenceSystem
-<<<<<<< HEAD
-  - **_[Distribution Information](./DistributionInfo)_**   Package - MD_Distribution - Option for service endpioint location
-=======
   - **_[Distribution Information](./DistributionInfo)_**   Package - MD_Distribution - Option for service endpoint location
->>>>>>> 9f0541b841e3521827037be4f2e123d1604dd54f
     - Format - What the Online resource provides e.g. API, Webmap
     - Distributor - could cntain information about who hosts the service
     - Online Resource - *Highly Recommended* when using  *distributionInfo* for a service. The URL of the service
 
 \pagebreak
 
-<<<<<<< HEAD
-## Outstanding Issues
-=======
 ### Outstanding Issues
->>>>>>> 9f0541b841e3521827037be4f2e123d1604dd54f
 
 Some issues remain unresolved and without clear consensus in the MDWG. Most of these are element specific and are discussed under those individual elements. But some are broader.
 
@@ -204,11 +182,7 @@ Below is an example of how one might use a particular collection of best practic
 | [Reference date:](./ResourceDate) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.citation >CI_Citation.date) |
 | [Resource identifier:](./ResourceIdentifier) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.citation >CI_Citation.identifier >MD_Identifier) |
 | [Responsible party:](./ResourceResponsibleParty) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.pointOfContact >CI_Responsibility) |
-<<<<<<< HEAD
-| [Geographic location:](./ResourceExtent) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.extent >EX_Extent.geographicElement>EX_GeographicExtent> EX_GeographicBoundingBox –or- EX_GeographicDescription) | 
-=======
 | [Geographic location:](./ResourceExtent) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.extent>EX_Extent.geographicElement> EX_GeographicExtent>EX_GeographicBoundingBox –or- EX_GeographicDescription) | 
->>>>>>> 9f0541b841e3521827037be4f2e123d1604dd54f
 | [Service topic category:](./TopicCategory) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.topicCategory >MD_TopicCategoryCode) |
 | [Resource abstract:](./Abstract) | (MD_Metadata.identificationInfo>SV_ServiceIdentification. abstract) |
 | [On-line Link:](./class-CI_OnlineResource) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.citation >CI_Citation.onlineResource>CI_OnlineResource) |
