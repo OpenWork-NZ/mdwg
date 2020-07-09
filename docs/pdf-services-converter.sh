@@ -14,9 +14,10 @@ pandoc MetadataForServicesGuide.md \
       Maintenance.md class-MD_Constraints.md ResourceExtent.md GeographicExtent.md \
         ExtentGeographicDescription.md ExtentBoundingBox.md VerticalExtent.md TemporalExtents.md \
       SpatialReferenceSystem.md DistributionInfo.md \
-   -V mainfont="Open Sans" -V titlepage=true -V titlepage-color=ddddff \
+   -V mainfont="FreeSerif" -V titlepage=true -V titlepage-color=ddddff \
      -V logo=../images/logo.png -V title="ICSM ISO19115-1 Metadata for Services Best Practices" \
      -V header-center="Metadata for Services Best Practices" \
+     -V geometry:margin=3cm \
      -V header-right="12th Jun 2020" -V footer-left="OpenWork" -V footer-center="Byron Cochrane" \
-   --latex-engine=xelatex --template ../eisvogel.tex -o ../services.pdf
+   --pdf-engine=xelatex --template ../../test.tex -o ../services.pdf
 
