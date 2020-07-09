@@ -93,7 +93,7 @@ Elements with specific guidance for Services are in **_Bold Italic_**
     - [Resource Point of Contact  role = 'pointOfContact'](./ResourcePointOfContact) *Highly Recommended.*
     - [Additional Docs](./AdditionalDocs)  *Recommended.* If any
     - [Spatial Representation Type](./SpatialRepresentationType)  *Recommended.*
-  - #### CI_Citation  Package - [Service Citation](./ResourceCitation) Sub-elements 
+  - **CI_Citation  Package - [Service Citation](./ResourceCitation) Sub-elements** 
     - [Title](./ResourceTitle) *Mandatory.*
     - [Identifier (uri)](./ResourceIdentifier) *Highly Recommended.*
     - [Date (creation)](./ResourceDate) *Highly Recommended.*
@@ -125,7 +125,7 @@ Elements with specific guidance for Services are in **_Bold Italic_**
       - description *Recommended*
       - optionality  *Mandatory*
       - repeatability  *Mandatory*
-- ### Other Metadata Packages 
+- **Other Metadata Packages**
   - [Associated Resource](./AssociatedResources)   class - MD_AssociatedResource
   - [BrowseGraphic](./BrowseGraphic)  Class - MD_BrowseGraphic  - Perhaps a logo for the service or oganisation 
   - **_[Keywords](./Keywords)_** *Mandatory.* Package - MD_Keywords  including:  
