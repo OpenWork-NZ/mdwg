@@ -36,7 +36,7 @@ This guidance is a point in time best practice guide and will be updated as requ
 - Irina Bastrakova - Geoscience Australia - irina.bastrakova@ga.gov.au
 - Jenny Mahuika - Terrestrial Ecosystem Research Network (TERN) - j.mahuika@uq.edu.au
 - Evert Bleys - ISO TC211 - ejbleys@gmail.com
-- Melanie Barlow - Australian Research Data Commons (ARDfC)- melanie.barlow@ardc.edu.au
+- Melanie Barlow - Australian Research Data Commons (ARDC)- melanie.barlow@ardc.edu.au
 - Aaron Sedgmen - Geoscience Australia - Aaron.Sedgmen@ga.gov.au
 
 \pagebreak
@@ -81,18 +81,18 @@ Elements with specific guidance for Services are in **_Bold Italic_**
     - [Metadata Default Locale](./MetadataLocale)  *Highly Recommended.*
     - [Metadata Legal Constraints](./MetadataLegalConstraints) *Recommended.*
     - [Metadata Security Constraints](./MetadataSecurityConstraints) *Recommended.*
-    - [Metadata Standard](./MetadataStandard) *Highly Recommended.*  
+    - [Metadata Standard](./MetadataStandard) *Highly Recommended.*
     - **_[MetadataScope](./MetadataScope)_** *Mandatory.* For Service metadata, Resource Scope = *Service*
 - ### General Identification Metadata Applicable to Services
   - [Metadata for Resources](./class-MD_Identification)    
-      - [Abstract](./Abstract)  *Mandatory.*
-      - [Purpose](./Purpose)  *Highly Recommended.*
-      - [Status](./Status)  *Highly Recommended.*
-      - [Topic Category](./TopicCategory)  *Highly Recommended.*
-      - [Spatial resolution](./SpatialResolution)  *Highly Recommended.*
-      - [Resource Point of Contact  role = 'pointOfContact'](./ResourcePointOfContact) *Highly Recommended.*
-      - [Additional Docs](./AdditionalDocs)  *Recommended.* If any
-      - [Spatial Representation Type](./SpatialRepresentationType)  *Recommended.*
+    - [Abstract](./Abstract)  *Mandatory.*
+    - [Purpose](./Purpose)  *Highly Recommended.*
+    - [Status](./Status)  *Highly Recommended.*
+    - [Topic Category](./TopicCategory)  *Highly Recommended.*
+    - [Spatial resolution](./SpatialResolution)  *Highly Recommended.*
+    - [Resource Point of Contact  role = 'pointOfContact'](./ResourcePointOfContact) *Highly Recommended.*
+    - [Additional Docs](./AdditionalDocs)  *Recommended.* If any
+    - [Spatial Representation Type](./SpatialRepresentationType)  *Recommended.*
   - #### CI_Citation  Package - [Service Citation](./ResourceCitation) Sub-elements 
     - [Title](./ResourceTitle) *Mandatory.*
     - [Identifier (uri)](./ResourceIdentifier) *Highly Recommended.*
@@ -126,7 +126,7 @@ Elements with specific guidance for Services are in **_Bold Italic_**
       - optionality  *Mandatory*
       - repeatability  *Mandatory*
 - ### Other Metadata Packages 
-  - [Associated Resource](./AssociatedResources)   class - MD_AssociatedResource  
+  - [Associated Resource](./AssociatedResources)   class - MD_AssociatedResource
   - [BrowseGraphic](./BrowseGraphic)  Class - MD_BrowseGraphic  - Perhaps a logo for the service or oganisation 
   - **_[Keywords](./Keywords)_** *Mandatory.* Package - MD_Keywords  including:  
     - **Service Keywords** *Mandatory.* for service metadata
@@ -141,17 +141,19 @@ Elements with specific guidance for Services are in **_Bold Italic_**
     - Security and Reference for Security
     - Releasability
     - Other Constraints  
-  - [Extents](./ResourceExtent)  Package -  EX_Extent  
-    - [GeoExtent](./GeographicExtent) class - EX_GeographicExtent  
+  - [Extents](./ResourceExtent)  Package -  EX_Extent
+    - [GeoExtent](./GeographicExtent) class - EX_GeographicExtent
        - [geographic description](./ExtentGeographicDescription)
        - [bounding box](./ExtentBoundingBox)
-    - [vertical extent](./VerticalExtent) class - EX_VerticalExtent  
-    - [temporal extent](./TemporalExtents) class - EX_TemporalExtent  
-  - [ReferenceSystemInfo](./SpatialReferenceSystem)   Package - MD_ReferenceSystem  
+    - [vertical extent](./VerticalExtent) class - EX_VerticalExtent
+    - [temporal extent](./TemporalExtents) class - EX_TemporalExtent
+  - [ReferenceSystemInfo](./SpatialReferenceSystem)   Package - MD_ReferenceSystem
   - **_[Distribution Information](./DistributionInfo)_**   Package - MD_Distribution - Option for service endpoint location
     - Format - What the Online resource provides e.g. API, Webmap
     - Distributor - could cntain information about who hosts the service
     - Online Resource - *Highly Recommended* when using  *distributionInfo* for a service. The URL of the service
+
+\pagebreak
 
 ### Outstanding Issues
 
@@ -179,7 +181,7 @@ Below is an example of how one might use a particular collection of best practic
 | [Reference date:](./ResourceDate) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.citation >CI_Citation.date) |
 | [Resource identifier:](./ResourceIdentifier) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.citation>CI_Citation.identifier >MD_Identifier) |
 | [Responsible party:](./ResourceResponsibleParty) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.pointOfContact >CI_Responsibility) |
-| [Geographic location:](./ResourceExtent) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.extent>EX_Extent.geographicElement> EX_GeographicExtent> EX_GeographicBoundingBox –or- EX_GeographicDescription) | 
+| [Geographic location:](./ResourceExtent) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.extent>EX_Extent.geographicElement> EX_GeographicExtent>EX_GeographicBoundingBox –or- EX_GeographicDescription) | 
 | [Service topic category:](./TopicCategory) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.topicCategory >MD_TopicCategoryCode) |
 | [Resource abstract:](./Abstract) | (MD_Metadata.identificationInfo>SV_ServiceIdentification. abstract) |
 | [On-line Link:](./class-CI_OnlineResource) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.citation >CI_Citation.onlineResource>CI_OnlineResource) |
