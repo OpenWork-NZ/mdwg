@@ -72,7 +72,7 @@ New elements specific to Service Metadata are highlighted in **Bold**
 
 Elements with specific guidance for Services are in **_Bold Italic_**
 
-- ### Metadata for Metadata
+- **Metadata for Metadata**
   - [Metadata for Metadata](./class-MD_Metadata )  
     - [Metadata Identifier](./MetadataIdentifier)  *Mandatory.*
     - [Metadata Linkage](./MetadataLinkage)  *Highly Recommended.*
@@ -81,19 +81,19 @@ Elements with specific guidance for Services are in **_Bold Italic_**
     - [Metadata Default Locale](./MetadataLocale)  *Highly Recommended.*
     - [Metadata Legal Constraints](./MetadataLegalConstraints) *Recommended.*
     - [Metadata Security Constraints](./MetadataSecurityConstraints) *Recommended.*
-    - [Metadata Standard](./MetadataStandard) *Highly Recommended.*  
+    - [Metadata Standard](./MetadataStandard) *Highly Recommended.*
     - **_[MetadataScope](./MetadataScope)_** *Mandatory.* For Service metadata, Resource Scope = *Service*
-- ### General Identification Metadata Applicable to Services
+- **General Identification Metadata Applicable to Services**
   - [Metadata for Resources](./class-MD_Identification)    
-      - [Abstract](./Abstract)  *Mandatory.*
-      - [Purpose](./Purpose)  *Highly Recommended.*
-      - [Status](./Status)  *Highly Recommended.*
-      - [Topic Category](./TopicCategory)  *Highly Recommended.*
-      - [Spatial resolution](./SpatialResolution)  *Highly Recommended.*
-      - [Resource Point of Contact  role = 'pointOfContact'](./ResourcePointOfContact) *Highly Recommended.*
-      - [Additional Docs](./AdditionalDocs)  *Recommended.* If any
-      - [Spatial Representation Type](./SpatialRepresentationType)  *Recommended.*
-  - #### CI_Citation  Package - [Service Citation](./ResourceCitation) Sub-elements 
+    - [Abstract](./Abstract)  *Mandatory.*
+    - [Purpose](./Purpose)  *Highly Recommended.*
+    - [Status](./Status)  *Highly Recommended.*
+    - [Topic Category](./TopicCategory)  *Highly Recommended.*
+    - [Spatial resolution](./SpatialResolution)  *Highly Recommended.*
+    - [Resource Point of Contact  role = 'pointOfContact'](./ResourcePointOfContact) *Highly Recommended.*
+    - [Additional Docs](./AdditionalDocs)  *Recommended.* If any
+    - [Spatial Representation Type](./SpatialRepresentationType)  *Recommended.*
+  - **[Service Citation](./ResourceCitation)** Sub-elements: 
     - [Title](./ResourceTitle) *Mandatory.*
     - [Identifier (uri)](./ResourceIdentifier) *Highly Recommended.*
     - [Date (creation)](./ResourceDate) *Highly Recommended.*
@@ -102,10 +102,10 @@ Elements with specific guidance for Services are in **_Bold Italic_**
     - [Edition](./ResourceEdition) *Recommended.* If applicable
     - [Series](./ResourceSeries) *Recommended.* If applicable
     - [Cited Responsible party (author, creator, contributor, publisher)](./ResourceResponsibleParty) *Highly Recommended.*
-    - **_[OnlineResource](./class-CI_OnlineResource)_** - Should provide the landing page for the service
-- ### Service Specific Metadata in **[Service Identification](./ServiceIdentification)** 
-  - **[serviceType](./ServiceType)**  - *Mandatory.* Plus at least one of:
-  - **[serviceTypeVersion](./ServiceTypeVersion)**  
+    - **_[OnlineResource](./class-CI_OnlineResource)_**  Should provide the landing page for the service
+- **Service Specific Metadata** in **[Service Identification](./ServiceIdentification)** 
+  - **[serviceType](./ServiceType)**  *Mandatory.* Plus at least one of:
+  - **[serviceTypeVersion](./ServiceTypeVersion)**
   - **[profile](./ServiceProfile)**  CI_Citation
   - **[serviceStandard](./ServiceStandard)**  CI_Citation
   - **[couplingType](./CouplingType)** *Highly Recommended.* Options = `tight`, `loose`, `mixed`
@@ -125,8 +125,8 @@ Elements with specific guidance for Services are in **_Bold Italic_**
       - description *Recommended*
       - optionality  *Mandatory*
       - repeatability  *Mandatory*
-- ### Other Metadata Packages 
-  - [Associated Resource](./AssociatedResources)   class - MD_AssociatedResource  
+- **Other Metadata Packages** 
+  - [Associated Resource](./AssociatedResources)   class - MD_AssociatedResource
   - [BrowseGraphic](./BrowseGraphic)  Class - MD_BrowseGraphic  - Perhaps a logo for the service or oganisation 
   - **_[Keywords](./Keywords)_** *Mandatory.* Package - MD_Keywords  including:  
     - **Service Keywords** *Mandatory.* for service metadata
@@ -140,20 +140,22 @@ Elements with specific guidance for Services are in **_Bold Italic_**
     - Legal and Reference for Legal
     - Security and Reference for Security
     - Releasability
-    - Other Constraints  
-  - [Extents](./ResourceExtent)  Package -  EX_Extent  
+    - Other Constraints
+  - [Extents](./ResourceExtent)  Package - EX_Extent  
     - [GeoExtent](./GeographicExtent) class - EX_GeographicExtent  
        - [geographic description](./ExtentGeographicDescription)
        - [bounding box](./ExtentBoundingBox)
-    - [vertical extent](./VerticalExtent) class - EX_VerticalExtent  
-    - [temporal extent](./TemporalExtents) class - EX_TemporalExtent  
-  - [ReferenceSystemInfo](./SpatialReferenceSystem)   Package - MD_ReferenceSystem  
+    - [vertical extent](./VerticalExtent) class - EX_VerticalExtent
+    - [temporal extent](./TemporalExtents) class - EX_TemporalExtent
+  - [ReferenceSystemInfo](./SpatialReferenceSystem)   Package - MD_ReferenceSystem
   - **_[Distribution Information](./DistributionInfo)_**   Package - MD_Distribution - Option for service endpioint location
     - Format - What the Online resource provides e.g. API, Webmap
     - Distributor - could cntain information about who hosts the service
     - Online Resource - *Highly Recommended* when using  *distributionInfo* for a service. The URL of the service
 
-### Outstanding Issues
+\pagebreak
+
+## Outstanding Issues
 
 Some issues remain unresolved and without clear consensus in the MDWG. Most of these are element specific and are discussed under those individual elements. But some are broader.
 
@@ -164,6 +166,7 @@ Core to any metadata record is access to the described resource. The ISO 19115-1
 There are numerous ways the related data resource may be captured in a service metadata record (e.g. operatesOn, operatedDataset, or even a sibling MD_DataIdentification package. The choice of coupledResource is made for the following reasons. ISO 19115-1 recommends coupledResource as minimum metadata required for the discovery of service resources. The options operatesOn, SV_CoupledResource.resource and a sibling identificationInfo/MD_DataIdentification all require a MD_Identifier package. This would create metadata records that identify more than one resource. ICSM guidance is that such a situation be avoided as it could confuse other catalogues that expect a one-to-one relationship between metadata resources and resources.
 It has been resolved that it will be best practice to use `CoupledResource>ReourceReference>onlineResource>Linkage` to hold linkage to metadata for tightly coupled resources. 
 
+\pagebreak
 
 ## Metadata required for the discovery of service resources
 ### As described in ISO 19115-1 Table F.2
@@ -177,9 +180,9 @@ Below is an example of how one might use a particular collection of best practic
 | [Metadata reference information:](./MetadataIdentifier) |  (MD_Metadata.metadataIdentifier) |
 | [Service title:](./ResourceTitle) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.citation >CI_Citation.title) |
 | [Reference date:](./ResourceDate) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.citation >CI_Citation.date) |
-| [Resource identifier:](./ResourceIdentifier) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.citation>CI_Citation.identifier >MD_Identifier) |
+| [Resource identifier:](./ResourceIdentifier) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.citation >CI_Citation.identifier >MD_Identifier) |
 | [Responsible party:](./ResourceResponsibleParty) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.pointOfContact >CI_Responsibility) |
-| [Geographic location:](./ResourceExtent) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.extent>EX_Extent.geographicElement> EX_GeographicExtent> EX_GeographicBoundingBox –or- EX_GeographicDescription) | 
+| [Geographic location:](./ResourceExtent) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.extent >EX_Extent.geographicElement>EX_GeographicExtent> EX_GeographicBoundingBox –or- EX_GeographicDescription) | 
 | [Service topic category:](./TopicCategory) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.topicCategory >MD_TopicCategoryCode) |
 | [Resource abstract:](./Abstract) | (MD_Metadata.identificationInfo>SV_ServiceIdentification. abstract) |
 | [On-line Link:](./class-CI_OnlineResource) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.citation >CI_Citation.onlineResource>CI_OnlineResource) |
@@ -190,3 +193,5 @@ Below is an example of how one might use a particular collection of best practic
 | [Resource type:](./MetadataScope) | (MD_Metadata.metadataScope>MD_Scope.resourceScope) |
 | [Coupled Resource:](./CoupledResource) | (MD_Metadata>SV_ServiceIdentification.coupledResource>SV-CoupledResource) |
 | [Coupled resource type:](./CouplingType) | (MD_Metadata>SV_ServiceIdentification.couplingType>SV-CouplingType) |
+
+\pagebreak
