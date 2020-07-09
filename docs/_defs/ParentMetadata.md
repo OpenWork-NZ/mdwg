@@ -114,8 +114,10 @@ Maps to `RelatedInfo/relation='partOf'`
 </mdb:MD_Metadata>
 ```
 
+\pagebreak
+
 ### UML diagrams
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![ParentMetadata](../images/ParentMetadataUML.png)
 

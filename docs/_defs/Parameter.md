@@ -37,7 +37,7 @@ As many of the services we may call will have operations that summarise the oper
 
 ## ICSM Recommendations 
 
-Therefore - If a potential client of a service is to use such service, descriptions of the functionality and use of the parameters required by these operations should be documented in metadata of a geospatial service. When used, this element has several mandatory subelements as described below.
+Therefore - if a potential client of a service is to use such service, descriptions of the functionality and use of the parameters required by these operations should be documented in metadata of a geospatial service. When used, this element has several mandatory subelements as described below.
 
 ### Recommended Sub-Elements 
 
@@ -179,9 +179,11 @@ None known
 </mdb:MD_Metadata>
 ```
 
+\pagebreak
+
 ### UML diagrams
 {Captured from official ISO documentation at https://www.isotc211.org/hmmg/HTML/ConceptualModels/index.htm?goto=1:12:2:4095}
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![Parameter](../images/Parameter.png)
 

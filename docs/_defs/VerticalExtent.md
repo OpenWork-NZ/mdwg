@@ -37,7 +37,7 @@ The use of multiple vertical extents is useful for describing more complicated r
 
 ## ICSM Recommendations
 
-Therefore - It is strongly recommended that to support the discovery of resources, every metadata record contains, as needed vertical extent description of the resource area of interest. Capture the units of measure and the datum used.
+Therefore - it is strongly recommended that to support the discovery of resources, every metadata record contains, as needed vertical extent description of the resource area of interest. Capture the units of measure and the datum used.
 
 The MDWG recommends, when the heights and depths of a resource are important to the resource, populating as many instances of Vertical Extent packages as needed to give a common understanding of the depth and elevation coverage of the cited resource.
 
@@ -148,6 +148,8 @@ Maps to `Coverage/Spatial`
 ....
 </mdb:MD_Metadata>
 ```
+
+\pagebreak
 
 ### UML diagrams
 

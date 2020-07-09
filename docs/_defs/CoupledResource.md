@@ -45,9 +45,9 @@ Coupled resource information must be provided when the *couplingType* is *tightl
 While there are numerous ways the related data resource may be captured in a service metadata record (e.g. *operatesOn*, *operatedDataset*, or even a sibling *MD_DataIdentifcation* package), ISO 19115-1 recommends *coupledResource* as minimum metadata required for the discovery of service resources.
 
 
-## ICSM Recommendations 
+## ICSM Recommendations
 
-Therefore - The element *coupledResource* should be populated in all service metadata records where the Coupling Type is *tight*. One instance for each coupled resource should be populated. This should be done using the *SV_CoupledResource.resourceReference* citing the name and online location of the metadata for the coupled resources.
+Therefore - the element *coupledResource* should be populated in all service metadata records where the Coupling Type is *tight*. One instance for each coupled resource should be populated. This should be done using the *SV_CoupledResource.resourceReference* citing the name and online location of the metadata for the coupled resources.
 
 #### Recommended Sub-Elements 
 ICSM recommends population of *SV_CoupledResources* sub-elements as follows:
@@ -148,6 +148,8 @@ There are numerous ways the related data resource may be captured in a service m
 ....
 </mdb:MD_Metadata>
 ```
+
+\pagebreak
 
 ### UML diagrams
 

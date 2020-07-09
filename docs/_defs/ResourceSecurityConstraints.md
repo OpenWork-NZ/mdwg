@@ -45,7 +45,7 @@ There will be cases where other security frameworks and classification systems n
 
 ## ICSM Recommendations
 
-Therefore - It is important to capture all security constraints that apply to a spatial resource. If there be none it may be useful to capture such, particularly if your organisation does regularly handle sensitive resources. Agencies should develop consistent guidance on the use of security classifications and share a clear understanding of their meaning with users. 
+Therefore - it is important to capture all security constraints that apply to a spatial resource. If there be none it may be useful to capture such, particularly if your organisation does regularly handle sensitive resources. Agencies should develop consistent guidance on the use of security classifications and share a clear understanding of their meaning with users. 
 
 The MDWG recommends populating `resourceConstraints` with security constraint information to a sufficient level to determine the security structures and restrictions on a cited resource.
 
@@ -169,9 +169,11 @@ Maps to the aggregate `Rights/@accessRights`
 </mdb:MD_Metadata>
 ```
 
+\pagebreak
+
 ### UML diagrams
 
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![resourceSecurityConstraints](../images/ResourceSecurityConstraintsUML.png)
 

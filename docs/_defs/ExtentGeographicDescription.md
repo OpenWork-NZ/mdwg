@@ -37,7 +37,7 @@ The use of multiple descriptors is recommended for more complicated geometries, 
 
 ## ICSM Recommendations
 
-Therefore - It is highly recommended that to support the discovery of resources, every metadata record that describes a geographic resource contains geographic descriptions of the area of interest for the resource. This description must contain a *code* that holds the value of the geographic descriptor and should contain in the *codespace* the codelist or domain from which it was derived. The *authority* element may contain additional documentation of the codelist.
+Therefore - it is highly recommended that to support the discovery of resources, every metadata record that describes a geographic resource contains geographic descriptions of the area of interest for the resource. This description must contain a *code* that holds the value of the geographic descriptor and should contain in the *codespace* the codelist or domain from which it was derived. The *authority* element may contain additional documentation of the codelist.
 
 The MDWG recommends including as many instances of Geographical Extent packages as useful to give a common understanding of the spatial coverage of the cited resource. These names may be particular to your domain.
 
@@ -142,8 +142,10 @@ Mapping geographic extents to CKAN and Dublin core elements, particularly as use
 </mdb:MD_Metadata>
 ```
 
+\pagebreak
+
 ### UML diagrams
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![ExGeoDescription](../images/EX_GeoDescription.png)
 

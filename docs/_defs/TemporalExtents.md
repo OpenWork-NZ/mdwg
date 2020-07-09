@@ -40,7 +40,7 @@ With the advent of dynamic datums for high precision applications of spatial dat
 
 ## ICSM Recommendations
 
-Therefore - It is strongly recommended that to support discovery of resources, and ensure the resource is fit to purpose, every metadata record contains, as needed, temporal extent description of the resource period of interest. Dates may be captured as type *date* or *datetTime* depending on your need and tools. If your data is of high precision then capture temporal extents to support dynamic datums. the capture of *timePeriod* information is highly recommended.
+Therefore - it is strongly recommended that to support discovery of resources, and ensure the resource is fit to purpose, every metadata record contains, as needed, temporal extent description of the resource period of interest. Dates may be captured as type *date* or *datetTime* depending on your need and tools. If your data is of high precision then capture temporal extents to support dynamic datums. the capture of *timePeriod* information is highly recommended.
 
 The MDWG recommends populating as many instances of temporalExtent packages as needed to give a common understanding of the temporal coverage of the cited resource.
 
@@ -118,9 +118,11 @@ Mapping to CKAN and Dublin core elements, particularly as used by data.gov.au ne
 </mdb:MD_Metadata>
 ```
 
+\pagebreak
+
 ### UML diagrams
 
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![temporalExtent](../images/TemporalExtentsUML.png)
 

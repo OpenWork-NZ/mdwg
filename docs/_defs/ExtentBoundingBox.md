@@ -39,7 +39,7 @@ The use of multiple bounding boxes is recommended for more complicated geometrie
 
 ## ICSMRecommendations
 
-Therefore - It is strongly recommended that to support the discovery of resources, every metadata record that describes a geographic resource contains at a minimum one bounding box description of the resource area of interest. To ensure commonality with other catalogued data, the coordinates of such need be captured in WGS 84. If there be any exclusion areas, the use of the boolean extentTypeCode (set to "0") is recommended.
+Therefore - it is strongly recommended that to support the discovery of resources, every metadata record that describes a geographic resource contains at a minimum one bounding box description of the resource area of interest. To ensure commonality with other catalogued data, the coordinates of such need be captured in WGS 84. If there be any exclusion areas, the use of the boolean extentTypeCode (set to "0") is recommended.
 
 The MDWG recommends populating as many instances of Geographical Extent packages as needed to give a common understanding of the spatial coverage of the cited resource.
 
@@ -124,8 +124,10 @@ Maps to the aggregate element `Coverage/Spatial`
 </mdb:MD_Metadata>
 ```
 
+\pagebreak
+
 ### UML diagrams
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![EXBoundBox](../images/ExtentBoundingBoxUML.png)
 

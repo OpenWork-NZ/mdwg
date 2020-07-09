@@ -138,9 +138,11 @@ From class *[MD_BrowseGraphic](http://wiki.esipfed.org/index.php/MD_BrowseGraphi
 </mdb:MD_Metadata>
 ```
 
+\pagebreak
+
 ### UML diagrams
 
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![browseGraphic](../images/BrowseGraphicUML.png)
 

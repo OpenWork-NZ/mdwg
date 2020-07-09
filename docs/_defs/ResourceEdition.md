@@ -48,7 +48,7 @@ This element should be used wherever there's a usable edition/version as it is i
 
 ## Recommendations
 
-Therefore - When a new edition of a resource is created, a new metadata record needs to be created. This new metadata record needs the *resource edition* element populated with the edition name or identifier. When such is the case, the sibling [CI_Citation](./class-CI_Citation).editionDate field should also be populated.
+Therefore - when a new edition of a resource is created, a new metadata record needs to be created. This new metadata record needs the *resource edition* element populated with the edition name or identifier. When such is the case, the sibling [CI_Citation](./class-CI_Citation).editionDate field should also be populated.
 
 The `edition` element should be populated with the edition name.
 
@@ -115,8 +115,10 @@ Maps to `Version`
 </mdb:MD_Metadata>
 ```
 
+\pagebreak
+
 ### UML diagrams
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![edition](../images/ResourceEditionUML.png)
 

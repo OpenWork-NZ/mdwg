@@ -1,0 +1,16 @@
+
+byron.tex
+_defs/missfont.log
+_defs/enumitem.sty
+byron.log
+docs/latex.log
+docs/pdf-services-converter.sh
+docs/ßlatex.log
+*.log
+fonts
+fonts2.txt
+fonts3.txt
+icsm4.latex
+pdf-services-converter.sh
+template.latex
+test.tex

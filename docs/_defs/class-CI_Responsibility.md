@@ -81,11 +81,11 @@ CI_Responsibility has at its core three elements:
         - **postalCode -** *(type - charStr)* [0..\*] ZIP or other postal code
         - **country -** *(type - charStr)* [0..\*] country of the physical address
         - **electronicMailAddress -** *(type - charStr)* [0..\*] address of the electronic mailbox of the responsible organisation or individual
-        
+
       - **onlineResource -** *(class - [CI_OnlineResource](./class-CI_OnlineResource))* [0..\*]
       - **contactInstructions -** *(type - charStr)* [0..\*] supplemental instructions on how or when to contact the individual or organisation
       - **contactType -** *(type - charStr)* [0..\*] type of contact
-      
+
     - **partyIdentifier -** *(class - [MD_Identifier](./class-MD_Identifier))* [0..\*]   identifier for the party
 
 #### Associated Classes to CI_Party
@@ -175,9 +175,11 @@ The CI_Responsibility/extent element was added in order to allow specificationof
 </mdb:MD_Metadata>
 ```
 
+\pagebreak
+
 ### UML diagrams
 
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![Responsibility](https://loomio-uploads.s3.amazonaws.com/documents/files/000/198/726/web/1558404613424)
 

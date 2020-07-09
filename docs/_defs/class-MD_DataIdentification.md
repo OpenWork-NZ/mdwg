@@ -52,10 +52,11 @@ Identification information about a resource is of high importance to document as
 - **[MD_Identification](./class-MD_Identification)** the abstract parent class to `MD_DataIdentification`
 - See guidances for the composite elements.
 
+\pagebreak
 
 ### UML diagrams
 
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![MD_DataIdentification](../images/class-MD_DataIdentification.png)
 

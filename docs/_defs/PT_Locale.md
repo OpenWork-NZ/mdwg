@@ -45,10 +45,11 @@ digits code
 
 Therefore - given the location and area of influence of ICSM, for `language`, the three letter code chosen from the ISO 639-2 LanguageCode CodeList should default to "eng" for most instances of PT_Locale in a metadata record. Use UTF8 as the `characterEncoding` for consistancy accross catalogues.
 
+\pagebreak
 
 ### UML diagrams
 
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![PT_Locale](../images/PT_Locale.png)
 

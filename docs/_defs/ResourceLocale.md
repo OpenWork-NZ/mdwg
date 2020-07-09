@@ -44,7 +44,7 @@ The element "otherLocale" can be use to provide information about alternatively 
 
 ## Recommendations
 
-Therefore - In order to meet ICSM good practice, in metadata for data resources, one default language of the resource should be captured if the resource contains language elements, and its character set encoding in `MD_DataInformation.defaultLocale`. For the users in our region, English should be the default value for `language` using the ISO 639-2, 3-alphabetic digits code "eng" and the character encoding should be *UTF8*. If the resource contains multiple languages, capture the dominant one in `defaultLocale` and populate the sibling element `otherLocale` with  information describing these additional languages in the same manner.
+Therefore - in order to meet ICSM good practice, in metadata for data resources, one default language of the resource should be captured if the resource contains language elements, and its character set encoding in `MD_DataInformation.defaultLocale`. For the users in our region, English should be the default value for `language` using the ISO 639-2, 3-alphabetic digits code "eng" and the character encoding should be *UTF8*. If the resource contains multiple languages, capture the dominant one in `defaultLocale` and populate the sibling element `otherLocale` with  information describing these additional languages in the same manner.
 
 ### Crosswalk considerations
 
@@ -112,6 +112,8 @@ No identified mapping
 </mdb:MD_Metadata>
 
 ```
+
+\pagebreak
 
 ### UML diagrams
 Recommended elements highlighted in Yellow

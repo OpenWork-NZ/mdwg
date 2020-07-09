@@ -75,7 +75,7 @@ Citations use CI_Citation and cite the party responsible using CI_Responsibility
 
 ## Recommendations 
 
-Therefore - It is recommended that all citation instances follow the general guidance of ISO 19115-1 unless directed otherwise. The mandatory element `title` must be populated in all instances noting the the type and form of the contents in this field is dependent on location in the metadata record.
+Therefore - it is recommended that all citation instances follow the general guidance of ISO 19115-1 unless directed otherwise. The mandatory element `title` must be populated in all instances noting the the type and form of the contents in this field is dependent on location in the metadata record.
 
 > Note BC 18-7 - MDWG may wish to further standardise the use of CI_Citation
 
@@ -85,9 +85,11 @@ http://wiki.esipfed.org/index.php/CI_Citation
 
 https://geo-ide.noaa.gov/wiki/index.php?title=ISO_Citations#CI_Citation.2B.2B
 
+\pagebreak
+
 ### UML diagrams
 
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![CI_Citation](../images/class-CI_Citation.png)
 

@@ -24,7 +24,7 @@ This guidance is a point in time best practice guide and will be updated as requ
 ### ICSM Metadata Working Group 
 
 - Chair :  Irina Bastrokova - irina.bastrakova@ga.gov.au
-- Secretariat:  Andrew Whiting - andrew.whiting@ga.gov.au
+- Secretariat:  Andrew Whiting - andrew.whiting@ga.gov.aud
 - Secretariat:  Graham Logan - graham.logan@ga.gov.au
 - ANZLIC:  Brian Sloan  - Brian.Sloan@ga.gov.au
 - ANZLIC:  Ann Beaumaris  - Ann.Beaumaris@industry.gov.au
@@ -36,7 +36,7 @@ This guidance is a point in time best practice guide and will be updated as requ
 - Irina Bastrakova - Geoscience Australia - irina.bastrakova@ga.gov.au
 - Jenny Mahuika - Terrestrial Ecosystem Research Network (TERN) - j.mahuika@uq.edu.au
 - Evert Bleys - ISO TC211 - ejbleys@gmail.com
-- Melanie Barlow - Australian Research Data Commons (ADRC)- melanie.barlow@ardc.edu.au
+- Melanie Barlow - Australian Research Data Commons (ARDC)- melanie.barlow@ardc.edu.au
 - Aaron Sedgmen - Geoscience Australia - Aaron.Sedgmen@ga.gov.au
 
 \pagebreak
@@ -49,7 +49,7 @@ It may be useful to think of this metadata standard, ISO 19115-1, as a language 
 An external best practice pattern to which we should endeavour to adhere is the web built on linkages. These linkages are expressed as unique identifiers known as URLs or Resolvable URIs. Where identifiers exist, they should resolve to a location on the web. Two basic questions for us to keep in mind when creating metadata become, "Can I create an identifier and linkage to unambiguously describe this aspect of my resource?" and “To what should these identifiers resolve?”  The answers depend on the situation. If we can answer the first question in the affirmative, then this strengthens the authority of our metadata and makes it easier to maintain - similar to normalising a database and providing a known one point of truth. In the second question, this often prompts the question of, “should this identifier link me to the resource or the metadata for that resource?”  If it is for the resource, what should the endpoint of that link be?
 
 ### Linking to documents vs data. 
-The web is called the web because it is built on linking documents. This ability should be used whenever possible. But linking human-readable documents like web pages and PDFs is different than linking to data and service resources. To what we link becomes much more nuanced. Do we really what to link to a spatial data resource that may be over a terabyte in size or a file, the contents of which is binary data that our browser knows not what to do with? Unless specifically told otherwise, web users expect links to deliver human-readable documents.
+The web is called the web because it is built on linking documents. This ability should be used whenever possible. But linking human-readable documents like web pages and PDFs is different than linking to data and service resources. To what we link becomes much more nuanced. Do we really want to link to a spatial data resource that may be over a terabyte in size or a file, the contents of which is binary data that our browser knows not what to do with? Unless specifically told otherwise, web users expect links to deliver human-readable documents.
 
 ### Consider the Audience
 What do I need to say about this resource so that people understand what it is and how it may fit their needs? 
@@ -93,7 +93,11 @@ Elements with specific guidance for Services are in **_Bold Italic_**
     - [Resource Point of Contact  role = 'pointOfContact'](./ResourcePointOfContact) *Highly Recommended.*
     - [Additional Docs](./AdditionalDocs)  *Recommended.* If any
     - [Spatial Representation Type](./SpatialRepresentationType)  *Recommended.*
+<<<<<<< HEAD
   - **[Service Citation](./ResourceCitation)** Sub-elements: 
+=======
+  - #### CI_Citation  Package - [Service Citation](./ResourceCitation) Sub-elements 
+>>>>>>> 9f0541b841e3521827037be4f2e123d1604dd54f
     - [Title](./ResourceTitle) *Mandatory.*
     - [Identifier (uri)](./ResourceIdentifier) *Highly Recommended.*
     - [Date (creation)](./ResourceDate) *Highly Recommended.*
@@ -125,7 +129,11 @@ Elements with specific guidance for Services are in **_Bold Italic_**
       - description *Recommended*
       - optionality  *Mandatory*
       - repeatability  *Mandatory*
+<<<<<<< HEAD
 - **Other Metadata Packages** 
+=======
+- ### Other Metadata Packages 
+>>>>>>> 9f0541b841e3521827037be4f2e123d1604dd54f
   - [Associated Resource](./AssociatedResources)   class - MD_AssociatedResource
   - [BrowseGraphic](./BrowseGraphic)  Class - MD_BrowseGraphic  - Perhaps a logo for the service or oganisation 
   - **_[Keywords](./Keywords)_** *Mandatory.* Package - MD_Keywords  including:  
@@ -140,22 +148,36 @@ Elements with specific guidance for Services are in **_Bold Italic_**
     - Legal and Reference for Legal
     - Security and Reference for Security
     - Releasability
+<<<<<<< HEAD
     - Other Constraints
   - [Extents](./ResourceExtent)  Package - EX_Extent  
     - [GeoExtent](./GeographicExtent) class - EX_GeographicExtent  
+=======
+    - Other Constraints  
+  - [Extents](./ResourceExtent)  Package -  EX_Extent
+    - [GeoExtent](./GeographicExtent) class - EX_GeographicExtent
+>>>>>>> 9f0541b841e3521827037be4f2e123d1604dd54f
        - [geographic description](./ExtentGeographicDescription)
        - [bounding box](./ExtentBoundingBox)
     - [vertical extent](./VerticalExtent) class - EX_VerticalExtent
     - [temporal extent](./TemporalExtents) class - EX_TemporalExtent
   - [ReferenceSystemInfo](./SpatialReferenceSystem)   Package - MD_ReferenceSystem
+<<<<<<< HEAD
   - **_[Distribution Information](./DistributionInfo)_**   Package - MD_Distribution - Option for service endpioint location
+=======
+  - **_[Distribution Information](./DistributionInfo)_**   Package - MD_Distribution - Option for service endpoint location
+>>>>>>> 9f0541b841e3521827037be4f2e123d1604dd54f
     - Format - What the Online resource provides e.g. API, Webmap
     - Distributor - could cntain information about who hosts the service
     - Online Resource - *Highly Recommended* when using  *distributionInfo* for a service. The URL of the service
 
 \pagebreak
 
+<<<<<<< HEAD
 ## Outstanding Issues
+=======
+### Outstanding Issues
+>>>>>>> 9f0541b841e3521827037be4f2e123d1604dd54f
 
 Some issues remain unresolved and without clear consensus in the MDWG. Most of these are element specific and are discussed under those individual elements. But some are broader.
 
@@ -164,7 +186,7 @@ Core to any metadata record is access to the described resource. The ISO 19115-1
 
 #### Link to Tightly Coupled Data
 There are numerous ways the related data resource may be captured in a service metadata record (e.g. operatesOn, operatedDataset, or even a sibling MD_DataIdentification package. The choice of coupledResource is made for the following reasons. ISO 19115-1 recommends coupledResource as minimum metadata required for the discovery of service resources. The options operatesOn, SV_CoupledResource.resource and a sibling identificationInfo/MD_DataIdentification all require a MD_Identifier package. This would create metadata records that identify more than one resource. ICSM guidance is that such a situation be avoided as it could confuse other catalogues that expect a one-to-one relationship between metadata resources and resources.
-It has been resolved that it will be best practice to use `CoupledResource>ReourceReference>onlineResource>Linkage` to hold linkage to metadata for tightly coupled resources. 
+It has been resolved that it will be best practice to use `CoupledResource>ResourceReference>onlineResource>Linkage` to hold linkage to metadata for tightly coupled resources. 
 
 \pagebreak
 
@@ -182,7 +204,11 @@ Below is an example of how one might use a particular collection of best practic
 | [Reference date:](./ResourceDate) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.citation >CI_Citation.date) |
 | [Resource identifier:](./ResourceIdentifier) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.citation >CI_Citation.identifier >MD_Identifier) |
 | [Responsible party:](./ResourceResponsibleParty) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.pointOfContact >CI_Responsibility) |
+<<<<<<< HEAD
 | [Geographic location:](./ResourceExtent) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.extent >EX_Extent.geographicElement>EX_GeographicExtent> EX_GeographicBoundingBox –or- EX_GeographicDescription) | 
+=======
+| [Geographic location:](./ResourceExtent) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.extent>EX_Extent.geographicElement> EX_GeographicExtent>EX_GeographicBoundingBox –or- EX_GeographicDescription) | 
+>>>>>>> 9f0541b841e3521827037be4f2e123d1604dd54f
 | [Service topic category:](./TopicCategory) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.topicCategory >MD_TopicCategoryCode) |
 | [Resource abstract:](./Abstract) | (MD_Metadata.identificationInfo>SV_ServiceIdentification. abstract) |
 | [On-line Link:](./class-CI_OnlineResource) | (MD_Metadata.identificationInfo>SV_ServiceIdentification.citation >CI_Citation.onlineResource>CI_OnlineResource) |
