@@ -140,7 +140,7 @@ Elements with specific guidance for Services are in **_Bold Italic_**
     - Legal and Reference for Legal
     - Security and Reference for Security
     - Releasability
-    - Other Constraints  
+    - Other Constraints
   - [Extents](./ResourceExtent)  Package -  EX_Extent
     - [GeoExtent](./GeographicExtent) class - EX_GeographicExtent
        - [geographic description](./ExtentGeographicDescription)
