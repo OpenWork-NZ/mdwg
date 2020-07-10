@@ -1,7 +1,7 @@
 ---
 layout: page
 type: section
-section: Data Identification
+section: class
 rank: 20
 title: Data Identification
 ---
