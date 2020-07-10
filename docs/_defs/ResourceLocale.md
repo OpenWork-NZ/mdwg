@@ -116,7 +116,7 @@ No identified mapping
 \pagebreak
 
 ### UML diagrams
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![resourceDefaultLocale](../images/ResourceLocaleUML.png)
 

@@ -45,7 +45,7 @@ If the title is not a common language name, at least one alternate title should 
 
 ### ICSM Good Practice
 
-- All metadata records must have the element *MD_Metadata.indentificationInfo>MD_Identification.citation>CI_Citation.title* populated with the most common useful name by which the resource is known.
+- All metadata records must have the element *MD_Metadata.identificationInfo>MD_Identification.citation>CI_Citation.title* populated with the most common useful name by which the resource is known.
 
 ## Also Consider
 

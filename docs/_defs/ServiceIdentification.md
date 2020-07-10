@@ -64,37 +64,37 @@ In addition the recommended attributes of [MD_Identification](./class-MD_Identif
 > **Note -Service Types and Standards descriptors** - There are multiple methods of describing the type of service being provided. Of these *ServiceType* is mandatory. Also, there should be at least one entry in *Keywords* of type *Service* that also describes the service. The following others are recommended when appropriate.
 
 - **[Service Type -](./ServiceType)** *(class - GenericName)* [1..1] Mandatory. A Service metadata record must provide a name for the service type, e.g. ‘discovery’, ‘view’, ‘download’, ‘transformation’, or ‘invoke'. Note - A GenericName (see ISO 19103:2015) shall indicate the meaning of the named value. Its value should be taken from a well-governed source if possible.
-- **[Service Type Version -](./ServiceTypeVersion)** *(type - charStr)* [0..\*]* The version of the service. Provided to enhance searchability based on the version of serviceType. Could be a shorthand handle like WMS 1.4.1
+- **[Service Type Version -](./ServiceTypeVersion)** *(type - charStr)* [0..\*]* The version of the service. Provided to enhance searchability based on the version of serviceType. Could be a shorthand handle like WMS 1.4.1.
 - **[Service Profile -](./ServiceProfile)** *(class - [CI_Citation](./class-CI_Citation)* [0..\*] When a service conforms to a particular profile of a service standard, the profile to which the service adheres should be cited with details. (May be used instead of service standard)
 - **[Service Standard -](./ServiceStandard)** *(class - [CI_Citation](./class-CI_Citation)* [0..\*] When a service conforms to a particular service standard the standard to which the service adheres should be cited with details.
-- **[couplingType -](./CouplingType)** *(codeList - SV_CouplingType)* [0..1]Highly Recommended. Describes the type of coupling between service and associated data (if exists). Available values for *SV_CouplingType* are: 
-  - *loose* - service instance is loosely coupled with a data instance, i.e. no MD_DataIdentification class has to be described
-  - *mixed* - service instance is mixed coupled with a data instance, i.e. MD_DataIdentification describes the associated data instance and additionally the service instance might work with other external data instance
-  - *tight* - service instance is tightly coupled with a data instance, i.e. MD_DataIdentification class MUST be described
+- **[couplingType -](./CouplingType)** *(codeList - SV_CouplingType)* [0..1]Highly Recommended. Describes the type of coupling between service and associated data (if exists). Available values for *SV_CouplingType* are:
+  - *loose* - service instance is loosely coupled with a data instance, i.e. no MD_DataIdentification class has to be described.
+  - *mixed* - service instance is mixed coupled with a data instance, i.e. MD_DataIdentification describes the associated data instance and additionally the service instance might work with other external data instance.
+  - *tight* - service instance is tightly coupled with a data instance, i.e. MD_DataIdentification class MUST be described.
  - **[coupledResource](./CoupledResource) -** *(class - SV_CoupledResource)* [0..\*] Highly Recommended in the case of tightly coupled services. Provides access to the description of the coupled data resources and enables the description of the link between an operation, and the data on which it is based. It is recommended that this provides URLs that resolve to metadata for the data resources.
-- **[Contains Operations -](./ContainsOperations)** *(class - SV_OperationsMetadata* [0..\*] 
+- **[Contains Operations -](./ContainsOperations)** *(class - SV_OperationsMetadata* [0..\*]
 
 ### Other Recommended Sub-Elements 
 
 The following provides additional guidance to [MD_Identification](./class-MD_Identification) inherited element recommendations.
 
-- **[Resource Citation -](./ResourceCitation)** *(class - [CI_Citation](./class-CI_Citation)* [1..1] - Mandatory. Citation information providing the name, publication date, identifiers, originators and publishers of the service. 
+- **[Resource Citation -](./ResourceCitation)** *(class - [CI_Citation](./class-CI_Citation)* [1..1] - Mandatory. Citation information providing the name, publication date, identifiers, originators and publishers of the service.
 - **[abstract -](./Abstract)** *(type - charStr)* [1..1] - Mandatory. A brief narrative summary of the cited service resource and its functions.
-- **[purpose -](./Purpose)** *(type - charStr))* [0..1] - Recommended. A brief summary of the intentions and intended users with which the service resource was developed
-- **[status -](./Status)** *(codelist - [MD_ProgressCode](http://wiki.esipfed.org/index.php/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_ProgressCode))* [0..1] - Recommended. The status of the service resource populated from a domain of values
-- **[topicCategory -](./TopicCategory)** *(enumeration - [MD_TopicCategoryCode](http://wiki.esipfed.org/index.php/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_TopicCategoryCode))* [0..\*] - Recommended. The main themes of the service resource populated from a fixed domain of values
+- **[purpose -](./Purpose)** *(type - charStr))* [0..1] - Recommended. A brief summary of the intentions and intended users with which the service resource was developed.
+- **[status -](./Status)** *(codelist - [MD_ProgressCode](http://wiki.esipfed.org/index.php/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_ProgressCode))* [0..1] - Recommended. The status of the service resource populated from a domain of values.
+- **[topicCategory -](./TopicCategory)** *(enumeration - [MD_TopicCategoryCode](http://wiki.esipfed.org/index.php/ISO_19115_and_19115-2_CodeList_Dictionaries#MD_TopicCategoryCode))* [0..\*] - Recommended. The main themes of the service resource populated from a fixed domain of values.
 - **[pointOfContact -](./ResourcePointOfContact)** *(class - [CI_Responsibility](./class-CI_Responsibility))* [0..1] - Highly Recommended. The name and contact information for the organisation, role and/or individual that provides a point of contact for the cited service.
 - **[spatialRepresentationType -](./SpatialRepresentationType)** *(codelist - MD_SpatialRepresentationTypeCode)* [0..\*] - Optional. The method used by the service to spatially represent geographic information.
 - **[spatialResolution -](./SpatialResolution)** *(class - MD_Resolution)* [0..\*] - Recommended. The nominal scale and/or spatial resolution at which the service is designed to be used.
-- **[graphicOverview -](./BrowseGraphic)** *(class - MD_BrowseGraphic)* [0..\*] - Optional. Graphics that provide lightweight illustrations pertaining to a service
+- **[graphicOverview -](./BrowseGraphic)** *(class - MD_BrowseGraphic)* [0..\*] - Optional. Graphics that provide lightweight illustrations pertaining to a service.
 - **[additionalDocumentation -](./AdditionalDocs) -** *(class - [CI_Citation](./class-CI_Citation))* [0..\*] - Recommended. Citation of other documentation associated with the service, e.g. related articles, publications, user guides, data dictionaries.
-- **[associatedResource -](./AssociatedResources) -** *(class - [MD AssociatedResource](http://wiki.esipfed.org/index.php/MD_AssociatedResource))* [0..\*] - Highly recommended when part of a larger work. Used to indicate association between resources and records related to the service of which the setvice is a part.
+- **[associatedResource -](./AssociatedResources) -** *(class - [MD AssociatedResource](http://wiki.esipfed.org/index.php/MD_AssociatedResource))* [0..\*] - Highly recommended when part of a larger work. Used to indicate association between resources and records related to the service of which the sevice is a part.
 - **[Extents -](./ResourceExtent)** *(class - [EX_Extent](http://wiki.esipfed.org/index.php/EX_Extent))* [0..\*] Recommended when the Service has extent limitations. High-level thematic classifications to assist in the grouping and searching of data. 
 - **[referenceSystemInfo -](./SpatialReferenceSystem)** *(class - MD_ReferenceSystem)* [0..\*] Highly Recommended. The information about the reference systems that define the system use to describe spatial position descriptions in a service.
 - **resourceConstraints -** *( abstract class [MD_Constraints](./class-MD_Constraints))* [0..\*] Highly Recommended. See:
  - **[Resource Security Constraints](./ResourceSecurityConstraints)**
- - **[Recource Legal Constraints](./ResourceLegalConstraints)** 
- - **[Recource Other Constraints](./ResourceOtherConstraints)** 
+ - **[Resource Legal Constraints](./ResourceLegalConstraints)**
+ - **[Resource Other Constraints](./ResourceOtherConstraints)**
 
 #### Additional optional attributes
 - **Access Properties** *(class - MD_StandardOrderProcess)* [0..\*]* information about the availability of the service, including,

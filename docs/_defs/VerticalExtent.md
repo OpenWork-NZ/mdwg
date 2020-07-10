@@ -153,7 +153,7 @@ Maps to `Coverage/Spatial`
 
 ### UML diagrams
 
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![ExVertical](../images/EX_Vertical.png)
 

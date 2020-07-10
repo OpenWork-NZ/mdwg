@@ -100,7 +100,7 @@ From codelist - **[SV_CouplingType](https://github.com/ISO-TC211/schemas/blob/ma
 
 ### UML diagrams
 
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![Coupling Type](../images/CouplingType.png)
 

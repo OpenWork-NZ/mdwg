@@ -89,7 +89,7 @@ MD_DataIdentification/spatialRepresentationType moved from MD_DataIdentification
 ```
 
 ### UML diagrams
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![spatialRepresentationType](../images/SpatialRepresentationTypeUML.png)
 

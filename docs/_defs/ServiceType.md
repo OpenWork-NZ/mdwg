@@ -116,7 +116,7 @@ Maps to dct:type
 ```
 
 ### UML diagrams
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![Service Type](../images/ServiceType.png)
 

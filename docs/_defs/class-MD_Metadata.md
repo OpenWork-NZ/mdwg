@@ -27,7 +27,7 @@ title: Metadata Info
   - **[Metadata Security Constraints](./MetadataSecurityConstraints)**
   - **[Metadata Legal Constraints](./MetadataLegalConstraints)** 
   
--  **indentificationInfo -** *(abstract class - MD_Identification)* [1..\*] see:
+-  **identificationInfo -** *(abstract class - MD_Identification)* [1..\*] see:
   - **Data Identification -** *(class MD_DataIdentification)* > ?create Entry?
   - **Service Identification -** *(class SV_ServiceIdentification)* > To Be Completed
 - **[distributionInfo -](./DistributionInfo)** *(class - MD_Distribution)* [0..\*]

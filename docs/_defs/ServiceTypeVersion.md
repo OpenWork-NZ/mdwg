@@ -121,7 +121,7 @@ None known
 
 ### UML diagrams
 
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![Service Type Version](../images/ServiceTypeVersion.png)
 

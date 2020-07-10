@@ -53,8 +53,8 @@ Plus the following:
 - **[referenceSystemInfo -](https://www.loomio.org/d/4SliNjWE/md_metadata-md_referencesystem-definition)** *(class - MD_ReferenceSystem)*
 - **resourceConstraints -** *( abstract class [MD_Constraints](./class-MD_Constraints))* [0..\*] see
 - **[Resource Security Constraints](./ResourceSecurityConstraints)**
-- **[Recource Legal Constraints](./ResourceLegalConstraints)** 
-- **[Recource Other Constraints](./ResourceOtherConstraints)** 
+- **[Resource Legal Constraints](./ResourceLegalConstraints)**
+- **[Resource Other Constraints](./ResourceOtherConstraints)**
 - **[Spatial Resolution](./SpatialResolution) -**  *(class - [MD Resolution](http://wiki.esipfed.org/index.php/MD_Resolution))* [0..\*] 
 - **[Resource Lineage -](./ResourceLineage)** *(class - Li_Lineage)* [0..\*]
 

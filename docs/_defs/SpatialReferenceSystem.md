@@ -163,7 +163,7 @@ Maps to the aggregate element `Coverage/Spatial`
 
 ### UML diagrams
 
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![SpatRefSys](../images/SpatialReferenceSystemUML.png)
 
