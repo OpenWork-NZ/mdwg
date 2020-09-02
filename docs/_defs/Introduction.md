@@ -32,7 +32,7 @@ This document was compiled by [OpenWork Ltd (OWL)](http://openwork.nz) on behalf
 - Shanti Rowlison - Australia Government Dept of Defense - shanti.rowlison@defence.gov.au
 - Jenny Mahuika - Terrestrial Ecosystem Research Network (TERN) - j.mahuika@uq.edu.au
 - Evert Bleys - ABARES - ejbleys@gmail.com
-- Melanie Barlow - Australian Research Data Commons (ADRC)- melanie.barlow@ardc.edu.au
+- Melanie Barlow - Australian Research Data Commons (ARDC)- melanie.barlow@ardc.edu.au
 - Aaron Sedgmen - Geoscience Australia - Aaron.Sedgmen@ga.gov.au
 - Martin Capobianco - Geoscience Australia - Martin.Capobianco@ga.gov.au
 - Dave Connell - Australia Antarctic Division, Dept of the Environment and Energy - Dave.Connell@aad.gov.au
