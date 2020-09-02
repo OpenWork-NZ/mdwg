@@ -7,11 +7,11 @@ pandoc Introduction.md GuidanceIntro.md TableOfContents.md PatternGuide.md Templ
     class-MD_DataIdentification.md ResourceLocale.md Abstract.md Purpose.md \
       Status.md TopicCategory.md SpatialResolution.md ResourcePointOfContact.md \
       AdditionalDocs.md SpatialRepresentationType.md AssociatedResources.md \
-      ResourceFormat.md BrowseGraphic.md ResourceCitiation.md \
+      ResourceFormat.md BrowseGraphic.md ResourceCitation.md \
         ResourceTitle.md ResourceIdentifier.md ResourceDate.md \
 ResourceEdition.md ResourceSeries.md ResourceResponsibleParty.md \
       Keywords.md Maintenance.md ResourceOtherConstraints.md \
-      ResourceLegalContraints.md ResourceSecurityConstraints.md \
+      ResourceLegalConstraints.md ResourceSecurityConstraints.md \
     GeographicExtent.md ExtentGeographicDescription.md \
       ExtentBoundingBox.md VerticalExtent.md TemporalExtents.md \
     ResourceLineage.md SpatialReferenceSystem.md DistributionInfo.md \
@@ -24,5 +24,5 @@ ResourceEdition.md ResourceSeries.md ResourceResponsibleParty.md \
      -V logo=../images/logo.png -V title="ICSM ISO19115-1 Metadata Good Practice Guide" \
      -V header-center="Metadata Good Practice Guide" \
      -V header-right="3rd Oct 2019" -V footer-left="OpenWork" -V footer-center="Byron Cochrane" \
-   --pdf-engine=xelatex --template ../test.tex -o ../icsm.pdf
+   --pdf-engine=xelatex --template ../../test.tex -o ../icsm.pdf
 
