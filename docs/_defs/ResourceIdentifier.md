@@ -53,7 +53,7 @@ Development of URI naming conventions to describe how the reference to the resou
 
 Follow the general guidance for **[MD_Identifier](./class-MD_Identifier)** with emphasis on the following elements:
 
-- **code -** (*type - charstr*) [1..1] **Mandatory** An alphanumeric value identifying an instance in the namespace, 
+- **code -** (*type - charstr*) [1..1] **Mandatory** An alphanumeric value identifying an instance in the namespace.
 - **codespace -** *(type - charstr)* [0..1] An optional but recommended namespace in which the code is valid. Ideally a URL path by which, when combined with the UUID, the full path to the resource landing page is provided.
 - **description -** (*type - charstr*) [0..1] An optional but recommended natural language description of the meaning of the code value. Usually prepopulated in the metadata template.
 
@@ -61,7 +61,7 @@ Follow the general guidance for **[MD_Identifier](./class-MD_Identifier)** with 
 
 - **[onlineResource -](./DistributionInfo)** (MD_Distribution.transferOptions>MD_DigitalTransferOptions.online) is used to provide online linkage to the resource.
 - **[MetadataIdentifier -](./MetadataIdentifier)** is the preferred element to be used to provide linkage to the metadata record.
-- **[Resource Citation](./ResourceCitation)** - parent to this element
+- **[Resource Citation](./ResourceCitation)** - parent to this element.
 
 ## Crosswalk considerations
 

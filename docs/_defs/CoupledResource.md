@@ -153,7 +153,7 @@ There are numerous ways the related data resource may be captured in a service m
 
 ### UML diagrams
 
-Recommended elements highlighted in Yellow
+Recommended elements highlighted in yellow
 
 ![Coupled Resource](../images/CoupledResource.png)
 

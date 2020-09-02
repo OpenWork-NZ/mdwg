@@ -53,8 +53,8 @@ The following provides additional guidance to [MD_Identification](./class-MD_Ide
 - **[referenceSystemInfo -](https://www.loomio.org/d/4SliNjWE/md_metadata-md_referencesystem-definition)** *(class - MD_ReferenceSystem)*
 - **resourceConstraints -** *( abstract class [MD_Constraints](./class-MD_Constraints))* [0..\*] see
 - **[Resource Security Constraints](./ResourceSecurityConstraints)**
-- **[Recource Legal Constraints](./ResourceLegalConstraints)** 
-- **[Recource Other Constraints](./ResourceOtherConstraints)** 
+- **[Resource Legal Constraints](./ResourceLegalConstraints)**
+- **[Resource Other Constraints](./ResourceOtherConstraints)**
 
 
 In addition to all the attributes of [MD_Identification](./class-MD_Identification), the additional recommended elements apply - 
