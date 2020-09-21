@@ -40,7 +40,7 @@ Geospatial professionals by nature, rely to a large extent on visual information
 
 ## ICSM Recommendations 
 
-Therefore - to provide a quick way for users to discover and identify the resource they need, provide a graphic overview of the metadata. At a minimum, this should include a name and link to the image.
+Therefore - to provide a quick way for users to discover and identify the resource they need, provide a graphic overview of the resource. At a minimum, this should include a name and link to an image.
 
 #### Recommended Sub-Elements 
 
