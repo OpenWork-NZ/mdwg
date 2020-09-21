@@ -51,7 +51,6 @@ From class *[MD_BrowseGraphic](http://wiki.esipfed.org/index.php/MD_BrowseGraphi
 - Optional:
  - **imageConstraints -** *(class - [MD_Constraints](./class-MD_Constraints))* [0..\*] - restriction on access and/or use of browse graphic
  - **fileType -** *(type - CharStr)* [0..\*] - format in which the illustration is encoded (e.g.: EPS, GIF, JPEG, PBM, PS, TIFF, PDF)
- - **extent -** *(class - [EX_Extent](./ResourceExtent))* [0..\*] Information about the horizontal, vertical and temporal extent of the resource specified by the scope
   
 ## Also Consider
 
