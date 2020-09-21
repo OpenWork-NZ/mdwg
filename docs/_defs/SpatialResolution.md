@@ -51,7 +51,7 @@ Therefore - The *spatialResolution* package should be populated with enough info
 
 Spatial resolution can be documented in many ways. For ISO19115-1, these are limited to the methods itemised in the class MD_Resolution and documented above. Equivalent scale is the default of many systems, including supplied templates in GeoNetwork. It is captured with a single denominator value such as "20,000" as in a 1:20,000 map.
 
-> Note BC 19-7: Do we recommend equivalent scale as default?
+We recommend equivalent scale (denominator) as default for this element.
 
 ### Recommended Sub-Elements
 
