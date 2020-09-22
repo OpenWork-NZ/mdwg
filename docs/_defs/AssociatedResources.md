@@ -49,10 +49,12 @@ Therefore - to provide an effective way to document, preserve and provide discov
   * series - associated through a common heritage such as produced to a common product specification
   * dependency - associated through a dependency
   * revisionOf - resource is a revision of associated resource
-* **name -** *(class - [CI_Citation](./class-CI_Citation))* {0..\*]} - citation information about the associated resource
+* At least one of: 
+  * **name -** *(class - [CI_Citation/title](./class-CI_Citation))* {0..1]} - citation information about the associated resource
+  * **metadataReference -** *(class - [CI_Citation](./class-CI_Citation))* [0..1] - reference to the metadata of the associated resource
 * *Optional sub elements*
   * **initiativeType -** *(codelist - [DS_InitiativeTypeCode](http://wiki.esipfed.org/index.php/ISO_19115-3_Codelists#DS_InitiativeTypeCode))* [0..1] - type of initiative under which the associated resource was produced 
-  * **metadataReference -** *(class - [CI_Citation](./class-CI_Citation))* [0..1] - reference to the metadata of the associated resource
+  
   
  ## Outstanding Issues
 
