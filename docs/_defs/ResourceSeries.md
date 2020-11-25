@@ -26,7 +26,7 @@ title: Resource Series
 
 - There may be one  [0..1] *series* package for the cited resource in the  *[MD_DataIdentification.citation](./ResourceCitation)* package  of class *[CI_Series](http://wiki.esipfed.org/index.php/CI_Series)* in a metadata record.
 
-###  ICSM Good Practice
+###  ICSM Best Practice
 
 - This element should be populated in all metadata records where the resource is one part of a series.
 
