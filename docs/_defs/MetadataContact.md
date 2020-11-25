@@ -36,7 +36,7 @@ This is a compound element of type CI_ResponsibleParty. At least one must be pre
 
 ## ICSM Recommendations
 
-Therefore - in order to meet ICSM good practice, in all metadata records, at least one contact should be given for the party responsible for the metadata itself. One entry should be role code "Point of Contact". In addition, for minimal conformity, `name` (of organisation preferred), `positionName` and `electrronicMailAddress` should also be populated.
+Therefore - in order to meet ICSM best practice, in all metadata records, at least one contact should be given for the party responsible for the metadata itself. One entry should be role code "Point of Contact". In addition, for minimal conformity, `name` (of organisation preferred), `positionName` and `electrronicMailAddress` should also be populated.
 The use of the new `partyIdentifier` element added in the 2018 amendment to the standard is encouraged by all parties.
 
 #### Recommended Sub-Elements
