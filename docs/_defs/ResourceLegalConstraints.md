@@ -30,7 +30,7 @@ title: Resource Legal Constraints
 
 - There may be zero to many [0..\*] *legalConstraints* recorded for the cited resource in the *[MD_DataIdentification](./class-MD_DataIdentification)* or [SV_ServiceIdentification](./ServiceIdentification) package of class *[MD_LegalConstraints](./class-MD_LegalConstraints)* in a metadata record,  
 
-### ICSM Good Practice
+### ICSM Best Practice
 
 - The MDWG highly recommends populating this element `legalConstraints` to sufficient level to determine the legal rights, responsibilities and restrictions on a cited resource.
 
