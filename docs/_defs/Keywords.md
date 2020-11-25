@@ -76,7 +76,7 @@ The thesaurus citation specifies a collection of instances from some ontology, b
 ### Outstanding Issues
 
 > **CORE ISSUE:**
-Current practice in most agencies in use of keywords is not good.  Thesauri are too often not used. Comma delimited list are common in some shops where others have separate entries. Good practice guidance development and training is needed and should be a special focus area.
+Current practice in most agencies in use of keywords is not good.  Thesauri are too often not used. Comma delimited list are common in some shops where others have separate entries. Best practice guidance development and training is needed and should be a special focus area.
 
 > **Thesaurus citation:**
 What is important to capture beside the mandatory title element in the citation of a thesaurus?
