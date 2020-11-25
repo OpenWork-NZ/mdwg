@@ -26,7 +26,7 @@ title: Keywords
 
 - There can be zero or many [0..\*] descriptive keywords for the cited resource in the  *[MD_DataIdentification](./class-MD_DataIdentification)* package of class *[MD_Keywords](http://wiki.esipfed.org/index.php/MD_Keywords)* in a metadata record.
 
-### ICSM Good Practice
+### ICSM Best Practice
 
 - There should be multiple keywords selected from a referenced thesaurus present in a metadata record for a spatial resource.
 
@@ -63,7 +63,6 @@ From class *[MD_Keywords](http://wiki.esipfed.org/index.php/MD_Keywords)*
 Keywords are a foundational technology for organising and discovering resources. ISO19115-1 provides powerful tools to expand on these capabilities but these tools are most often very lightly used. The use of thesauri to normalise and standardise terms helps greatly. Ontologies and registries in which the definitions of these terms may be stored and linked help ensure consistent use and understanding. In Australia several agencies have developed and implemented thesauri and mandated their use. These include:
 
 * *"ABS Field of Research* - The Australian and New Zealand Standard Research Classification (ANZSRC), 2008 defined field or fields of research relevant to the dataset.
-* *ABARES Keywords* - (Need Definition)
 * *AGIFT Keyword* - Australian Governments' Interactive Functions Thesaurus (AGIFT) that describes the high-level business functions carried out across Commonwealth, state and local governments in Australia.
 * *GCMD Keywords* - The Global Change Master Directory (GCMD) Keywords are a hierarchical set of controlled Earth Science vocabularies that help ensure Earth science data, services, and variables are described in a consistent and comprehensive manner and allow for the precise searching of metadata and subsequent retrieval of data, services, and variables.
 
@@ -110,7 +109,7 @@ Mapping not yet discussed.
 
 #### DCAT
 
-ISO 19115 can groups keywords according to type (theme, place, temporal, discipline and stratum), or according to thesaurus; this information is lost in DCAT. DCAT keywords are mapped to ISO 19115 keywords without type or thesaurus.
+ISO 19115-1 can groups keywords according to type (theme, place, temporal, discipline and stratum), or according to thesaurus; this information is lost in DCAT. DCAT keywords are mapped to ISO 19115 keywords without type or thesaurus.
 
 </details>
 
