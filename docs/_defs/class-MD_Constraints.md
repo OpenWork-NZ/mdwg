@@ -78,7 +78,7 @@ A restriction may be applicable to a particular aspect of the resource. In this 
 
 ### Outstanding Issues
 
-> Good Practice examples lacking
+> Best Practice examples lacking
 There is a need to gain greater consensus as to the general use of MD_Constraints across its instances by the MDWG.
 
 > Distribution Constraints
