@@ -5,7 +5,7 @@ type: page
 section: Guidance
 title: Table of Contents
 ---
-#  ICSM Metadata Good Practice - Table of Contents
+#  ICSM Metadata Best Practice - Table of Contents
 
 ### Guidance
 - [Introduction](./GuidanceIntro)
