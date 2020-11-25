@@ -25,7 +25,7 @@ title: Parent Metadata
 ### ISO Obligation
 - There may be zero or one [0..1] *MD_Metadata.parentMetadata* entries for the cited resource in the  *[MD_Metadata](./class-MD_Metadata)* package of class *[CI_Citation](https://./class-CI_Citation)* in a metadata record.
 
-### ICSM Good Practice
+### ICSM Best Practice
 - The element `parentMetadata` may be populated to sufficient level to allow discovery if the metadata has a child relationship to another metadata record. Before doing so consider if other elements such as 'AssociatedResource' which has more flexiblitiy, is a more appropriate way to capture this information.
 
 #### Recommended Sub-Elements
