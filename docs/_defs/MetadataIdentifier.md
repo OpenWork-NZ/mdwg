@@ -30,7 +30,7 @@ title: Metadata Identifier
 
 - There should be zero or one [0..1] metadataIdentifier for the cited resource in the *[MD_Metadata](./class-MD_Metadata)* package of class *[MD_Identifier](./class-MD_Identifier)*.
 
-### ICSM Good Practice
+### ICSM Best Practice
 
 - This element should be populated in all metadata records
 
