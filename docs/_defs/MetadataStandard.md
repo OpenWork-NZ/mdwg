@@ -31,7 +31,7 @@ There may be zero to many [1-\*] *MetadataStandard* entries cited for a metadata
 
 ## Discussion
 
-Documenting the metadata standard to which the metadata adheres is esential good practice in that this information provides the user ways to find the esential information and guidance about how to read the metadata. This is also essential information for those who may need to map such information to their own systems.
+Documenting the metadata standard to which the metadata adheres is esential best practice in that this information provides the user ways to find the esential information and guidance about how to read the metadata. This is also essential information for those who may need to map such information to their own systems.
 
 There are options about how to cite the standard used even in the context of this narrow guidance for ISO 19115-1. One could equally cite a compliant profile of this standard used by their organisation or ISO 19115-3, the XML implementation standad for ISO 19115-1. It is very useful if the standard is cited to the year and admendment number (if any). As there are allowed multiple entries for this element, the base standard and any profiles thereof may be captured together.
 
