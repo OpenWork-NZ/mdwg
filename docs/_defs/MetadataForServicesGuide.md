@@ -8,7 +8,7 @@ title: Metadata For Services Best Practices
 
 # ICSM ISO19115-1 Metadata for Services Best Practices
 
-This document was compiled by [OpenWork Ltd (OWL)](http://openwork.nz) on behalf of and with guidance and contributions from the [ICSM Metadata Working Group (MDWG)](https://www.icsm.gov.au/what-we-do/metadata-working-group). The purpose of this document is to capture the consensus best practice guidance for the use of recommended ISO 19115-1 metadata elements for organisations in the Australia / New Zealand region when documenting geospatial service. Further, this guide will aid the migration from the retired [ANZLIC](https://www.anzlic.gov.au/) Metadata Profile of ISO 19115:2003 to the currently endorsed ISO 191125-1:2014 (including Amd.1:2018).
+This document was compiled by [OpenWork Ltd (OWL)](http://openwork.nz) on behalf of and with guidance and contributions from the [ICSM Metadata Working Group (MDWG)](https://www.icsm.gov.au/what-we-do/metadata-working-group). The purpose of this document is to capture the consensus best practice guidance for the use of recommended ISO 19115-1 metadata elements for organisations in the Australia / New Zealand region when documenting geospatial service. Further, this guide will aid the migration from the retired [ANZLIC](https://www.anzlic.gov.au/) Metadata Profile of ISO 19115:2003 to the currently endorsed ISO 191115-1:2014 (including Amd.1:2018).
 
 This guidance is a point in time best practice guide and will be updated as requirement and capabilities evolve. This will be done in a structure version fashion. It is anticipated that new versions of this guidance will be released annually as a PDF document. Incremental changes, managed by the MDWG Technical group in biweekly meetings, will be versioned in a GitHub repository and reflected in the web pages view of this document.
 
@@ -24,10 +24,8 @@ This guidance is a point in time best practice guide and will be updated as requ
 ### ICSM Metadata Working Group 
 
 - Chair :  Irina Bastrokova - irina.bastrakova@ga.gov.au
-- Secretariat:  Andrew Whiting - andrew.whiting@ga.gov.aud
 - Secretariat:  Graham Logan - graham.logan@ga.gov.au
-- ANZLIC:  Brian Sloan  - Brian.Sloan@ga.gov.au
-- ANZLIC:  Ann Beaumaris  - Ann.Beaumaris@industry.gov.au
+- ANZLIC:  Simon Costello  - simon.costello@ga.gov.au
 - ICSM: Executive Officer -  Lesley Waterhouse - lesley.waterhouse@ga.gov.au
 
 ### Contributors
