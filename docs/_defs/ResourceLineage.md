@@ -26,7 +26,7 @@ title: Resource Lineage
 
 - A metadata record should contain zero to many [0..\*] *resourceLineage* packages for the cited resource in the  *[MD_Metadata](./class-MD_Metadata)* package of class *[LI_Lineage](http://wiki.esipfed.org/index.php/LI_Lineage)*. 
 
-### ICSM Good Practice
+### ICSM Best Practice
 
 - Lineage information should be documented and include a descriptive statement of the resource provenance and its scope as an level from a hiearchy *[MD_Scope](./class-MD_Scope)*.
 
