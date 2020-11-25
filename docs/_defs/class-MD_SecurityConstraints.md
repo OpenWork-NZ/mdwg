@@ -39,7 +39,7 @@ Many of the resources and even its metadata may carry some security restrictions
 
 ### Outstanding Issues
 
-> Good Practice examples lacking
+> Best Practice examples lacking
 There is a need to gain greater consensus as to the general use of MD_SecurityConstraints across its instances by the MDWG.
 
 > Australia Protective Security Policy Framework
