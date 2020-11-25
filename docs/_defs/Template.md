@@ -56,7 +56,7 @@ title: Template
   - **{sub-elementName for above class} -** *(class - {name of class})* [{cardinality}] - {brief guidance statement} 
 
 ## Also Consider
-{Links to additional useful information. Usually other elements, packages and classes in this good pratice document. May also link to other external resources.}
+{Links to additional useful information. Usually other elements, packages and classes in this best pratice document. May also link to other external resources.}
 
 **[{element name} -]({path to element})**  {description of importance and utility with any links}
 
