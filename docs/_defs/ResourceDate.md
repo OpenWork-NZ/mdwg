@@ -39,7 +39,7 @@ The CI_DateType CodeList contains 16 values. Which values are of most import nee
 
 Relation of Metadata dateInfo to resource reference date needs to be discussed. The resource reference date is documented as the date that should be used for the discovery of resources other than services. (For services MD_Metadata.identificationInfo>SV_ServiceIdentification.citation>CI_Citation.date is used.)
 
-When does the metadata dataInfo require updating? For instance, is it okay to not update the metadata dataInfo when the resource reference date is updated if nothing else has changed? Our good practice guide should address these and related issues.
+When does the metadata dataInfo require updating? For instance, is it okay to not update the metadata dataInfo when the resource reference date is updated if nothing else has changed? Our best practice guide should address these and related issues.
 
 ## Recommendations
 
