@@ -109,7 +109,7 @@ The the 2018 ammendment to ISO19115-1 the `partyIdentifier` element was added to
 
 ## Recommendations
 
-Therefore - to remain in allignment with ICSM good practices, it is recommended that all CI_Responsibility instances follow the general guidance of ISO 19115-1 unless directed otherwise. The mandatory element `role` must be populated in all instances noting the the type and form of the contents in this field is dependent on location in the metadata record. In addition, for minimal conformity, `name` (of organisation preferred), `positionName` and `electronicMailAddress` should also be popiulated.
+Therefore - to remain in allignment with ICSM best practices, it is recommended that all CI_Responsibility instances follow the general guidance of ISO 19115-1 unless directed otherwise. The mandatory element `role` must be populated in all instances noting the the type and form of the contents in this field is dependent on location in the metadata record. In addition, for minimal conformity, `name` (of organisation preferred), `positionName` and `electronicMailAddress` should also be popiulated.
 The use of the new `partyIdentifier` element added in the 2018 ammendment to the standard is encouraged by all parties.
 
 > Note BC 18-7 - MDWG may wish to further standardise the use of CI_Responsibility
