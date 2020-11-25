@@ -44,7 +44,7 @@ Almost all created resources (including metadata) carry some legal rights, restr
 
 ### Outstanding Issues
 
-> Good Practice examples lacking
+> Best Practice examples lacking
 There is a need to gain greater consensus as to the general use of MD_LegalConstraints across its instances by the MDWG.
 
 > Distribution Constraints
