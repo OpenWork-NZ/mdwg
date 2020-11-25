@@ -25,7 +25,7 @@ title: Metadata Scope
 ### ISO Obligation
 - There can be zero to many [0..\*] *metadataScope* entries for the cited resource in the  *[MD_Metadata](./class-MD_Metadata)* package of class *[MD_MetadataScope](http://wiki.esipfed.org/index.php/MD_MetadataScope)* for the metadata record.
 
-### ICSM Good Practice
+### ICSM Best Practice
 - At least one instance of this element should be populated in all metadata records.
 
 ### Recommended Sub-Elements
