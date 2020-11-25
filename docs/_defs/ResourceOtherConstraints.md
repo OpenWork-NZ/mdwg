@@ -29,7 +29,7 @@ title: Resource Constraints
 
 - There should be zero to many [0..\*] *resourceConstraints* recorded for the cited resource in the *[MD_DataIdentification](./class-MD_DataIdentification)* or [SV_ServiceIdentification](./ServiceIdentification) package of class [MD_Constraints](./class-MD_Constraints) in a metadata record,
 
-### ICSM Good Practice
+### ICSM Best Practice
 
 - The MDWG recommends populating `resourceConstraints` with `useLimitation`, `releasability` and other constraint information to sufficient level to determine the limits and restrictions on a cited resource.
 
