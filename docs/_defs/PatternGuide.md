@@ -34,7 +34,7 @@ A small table follows that summarises details about the element. These include:
 
 #### Definition
 
-The next section holds a brief in context definition of the element. This is followed by the ISO19115-1 standard rules of cardinality and obligation for the element and the class used to structure the captured information. A brief statement of ICSM Good Practice summarises some further guidance as developed by the MDWG. This includes guidance on the use of the class and its sub-element or at times, siblings.
+The next section holds a brief in context definition of the element. This is followed by the ISO19115-1 standard rules of cardinality and obligation for the element and the class used to structure the captured information. A brief statement of ICSM Best Practice summarises some further guidance as developed by the MDWG. This includes guidance on the use of the class and its sub-element or at times, siblings.
 
 #### Discussion
 
