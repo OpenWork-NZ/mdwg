@@ -32,7 +32,7 @@ title: Metadata Linkage
 ## Discussion
 The most common use of `metadataLinkage` is to record a "point of truth" location of the source authoritative metadata record. It is in the nature of metadata to be highly distributed. This is commonly done through federated systems that harvest (or otherwise collect) metadata from other sources. Sometimes this process gets out of sync. Sometimes the metadata is modified in the process. In order to retain an authoritative understanding of a metadata record, it is useful to provide a linkage to the source as a reference.
 
-Alternatively, `metadataLinkage` may be used to record the location of the metadata in its current catalogue. The *Description* field should be used to indicate if this differs from other instances of the metadata record that may reside elsewhere. However, if alternate versions are not in ISO19115 format, such locations should be captured in `alternativeMetadataReference`.
+Alternatively, `metadataLinkage` may be used to record the location of the metadata in its current catalogue. The *Description* field should be used to indicate if this differs from other instances of the metadata record that may reside elsewhere. However, if alternate versions are not in ISO19115-1 format, such locations should be captured in `alternativeMetadataReference`.
 
 The use of this field to hold the local of the metadata record in the local catalogue could be better accomplished through the options provided in [metadataIdentifier](./MetadataIdentifier).
 
