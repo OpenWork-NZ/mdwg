@@ -25,7 +25,7 @@ title: Resource Format
 
 There may be zero or many [0..\*] *resourceFormats* for the cited resource in the *[MD_DataIdentification](./class-MD_DataIdentification)* package of class *MD_Format* desrcibed in a metadata record.
 
-### ICSM Good Practice
+### ICSM Best Practice
 
 This element should be populated in all metadata records with information about the format in which the resource is stored and managed within the agency, This is not about the format in which the resource is distributed which often differs.
 
