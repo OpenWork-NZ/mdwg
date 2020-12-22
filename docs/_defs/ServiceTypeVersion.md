@@ -35,7 +35,7 @@ Many tools may be able to connect to and make use of only particular versions of
 
 Detailed citation of such services, including linkages to the service standard itself or profile of such, should be captured in *[SV_ServiceIdentification.serviceStandard](./ServiceStandard)* or *[SV_ServiceIdentification.profile](./ServiceProfile)*.
 
-## ICSM Recommendations 
+## ICSM Best Practice Recommendations 
 
 Therefore - It is recommended that the *ServiceTypeVersion* be populated in service metadata records in such a way that discovery of services that adhere to a specific service type version can be found and filtered. It is particularly useful to capture here the multiple versions of a standard that the service may support.
 
