@@ -34,7 +34,7 @@ There must be one and only one [1..1] *serviceType* entries for the cited resour
 The *serviceType* is useful both as a search filter and for categorisation of the service. It should hold what is considered the primary use of the service in generic terms. The value of this field is of type *genericName* which is described in ISO 19103. While *genericName* values are essentially character strings, the possible values should be selected by a centrally managed controlled vocabulary. Listed values as described in the ISO 19115-1 standard include ‘discovery’, ‘view’, ‘download’, ‘transformation’, or ‘invoke'. However, in practice, more specific terms are often used. In GeoNetwork, the initial suggested values include *OGC Web Map Service, OGC Web Map Tile Service, OGC Web Feature Service, OGC Web Coverage Service, OGC Web Processing Service*, and *Atom feed*. 
 
 
-## Recommendations 
+## ICSM Best Practice Recommendations 
 
 Therefore - The mandatory *serviceType* element should be populated with a value from a managed controlled vocabulary containing names for generic types of services. While ISO 19115-1 describes these values as very specific (e.g. ‘discovery’, ‘view’, ‘download’, ‘transformation’, or ‘invoke') in practice, somewhat generic terms for spatial service standards are often used (e.g. OGC Web Map Service, OGC Web Coverage Service, Atom feed)
 
