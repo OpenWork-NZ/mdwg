@@ -35,7 +35,7 @@ The value of the title field should be the most common name by which the resourc
 
 There can be multiple alternate titles captured for a resource in the sibling element `alternateTitle`. These should be populated with other known names or variations of the name.
 
-## ICSM Recommendations
+## ICSM Best Practice Recommendations
 
 Therefore - there must be one title given for a resource. The value of the title field should be the most common name by which the resource is known by your largest perceived audience. It should be relatively unique or made so by the inclusion of expanded title elements such as edition numbers or agency name.
 
