@@ -36,7 +36,7 @@ To be complete in the description of the standards to which a spatial service ad
 When the service complies to a particular profile of a standard, it will suffice to complete the sibling *profile* element to the same degree.
 
 
-## ICSM Recommendations
+## ICSM Best Practice Recommendations
 
 Therefore - when a service adheres to particular service standards such standards should be cited in this package. If a particular profile of such standard is implemented it is sufficient to document this in *[SV_ServiceIdentification.profile](./ServiceProfile).* If the service may support multiple versions of the service standard, multiple entries of *Service Standard* can document such.
 
