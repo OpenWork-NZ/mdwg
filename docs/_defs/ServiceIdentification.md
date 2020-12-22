@@ -54,7 +54,7 @@ An example of a *loosely coupled* service could be a reprojection service with u
 A *mixed coupling* might be a WMS service into which add additional data sources of your choice. In a mixed coupling situation, a single service instance may be associated with both kinds of data associated, loosely and tightly coupled. 
 
 
-## ICSM Recommendations
+## ICSM Best Practice Recommendations
 
 Therefore - to clearly understand what resource a metadata record is describing, there should be one and only one [1..1] *MD_Identification* package in a metadata record. For service metadata, this must be expressed as an *SV_ServiceIdentification* instance. The *Service Indentifaction* package contains several sub-packages and sub-elements. To ease the common use of such metadata, it is important that the use of these sub-packages and sub-elements be standardised.
 
