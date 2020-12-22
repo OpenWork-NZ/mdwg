@@ -73,7 +73,7 @@ In order to provide a standardised way of capturing information related to the v
 Citations are used to provide information about citing the resource being described in the metadata or to refer to resources outside of the metadata record.
 Citations use CI_Citation and cite the party responsible using CI_Responsibility. CI_Responsibility may be used without CI_Citation. CI_Responsibility is an aggregate of one or more parties (CI_Party). CI_Party may be specified as CI_Individual and/or CI_Organisation.
 
-## Recommendations 
+## ICSM Best Practice Recommendations 
 
 Therefore - it is recommended that all citation instances follow the general guidance of ISO 19115-1 unless directed otherwise. The mandatory element `title` must be populated in all instances noting the the type and form of the contents in this field is dependent on location in the metadata record.
 
