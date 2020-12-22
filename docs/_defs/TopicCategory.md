@@ -39,7 +39,7 @@ Topic categories are essentially keywords but of a particular enumeration. Like 
 
  The resource to which the Topic Category applies may be data or service, [MD_DataIdentification](./class-MD_DataIdentification)* or *[SV_ServiceIdentification](./ServiceIdentification)
 
-## ICSM Recommendations
+## ICSM Best Practice Recommendations
 
 Therefore - in order to comply with ICSM best guidance, include at least one instance of `topicCategory` in the metadata for your resource to provide high-level filtering and categorisation of data. Multiple values may be captured and this is encouraged to avoid the lack of discovery due to too narrow categorisations. This field is particularly useful in faceted search interfaces such as GeoNetwork.
 
