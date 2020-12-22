@@ -70,7 +70,7 @@ The distributionInfo package is highly flexible and provides multiple ways to ca
 We have chosen to recommend the later.  This is to provide better clarity of the relation between the cited format to the cited access (online or off).
 This format element describes the format of the data for a particular distribution of the resource. It does not describe the format of the resource native store or of the metadata. There may be multiple formats for a distribution. 
 
-## Recommendations
+## ICSM Best Practice Recommendations
 
 Therefore - this package should contain at least the minimum information necessary to contact the party responsible for this distribution of the resource. We have identified three primary sub-elements to recommend:
 
