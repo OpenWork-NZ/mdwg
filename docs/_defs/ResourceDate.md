@@ -41,7 +41,7 @@ Relation of Metadata dateInfo to resource reference date needs to be discussed. 
 
 When does the metadata dataInfo require updating? For instance, is it okay to not update the metadata dataInfo when the resource reference date is updated if nothing else has changed? Our best practice guide should address these and related issues.
 
-## Recommendations
+## ICSM Best Practice Recommendations
 
 Therefore - to provide an idea of the age, validity and other time dependant properties of a resource, it is important to capture the important events that happened or will happen to a particular resource in the resource reference date element. One of these important events must be of `dateType` "creation". Creation is a significant date in regards to copyright. Other important date types are "publication" and "lastUpdate".
 
