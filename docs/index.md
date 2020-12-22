@@ -4,12 +4,12 @@ image: "./images/logo.png"
 date: 3 October 2019
 type: page
 section: Guidance
-title: Metadata Good Practice Guide
+title: Metadata Best Practice Guide
 ---
 
-# ICSM ISO19115-1 Metadata Good Practice Guide
+# ICSM ISO19115-1 Metadata Best Practice Guide
 
-This document was compiled by [OpenWork Ltd (OWL)](http://openwork.nz) on behalf of and with guidance and contributions from the [ICSM Metadata Working Group (MDWG)](https://www.icsm.gov.au/what-we-do/metadata-working-group). The purpose of this document is to capture the consensus good practice guidance for the use of recommended ISO 19115-1 metadata elements for organisataion in the Australia / New Zealand region. Further this guidance will aid the migration from the retired [ANZLIC](https://www.anzlic.gov.au/) Metadata Profile of ISO 19115:2003 to the currently endorsed ISO 191125-1:2014 (including Amd.1:2018).
+This document was compiled by [OpenWork Ltd (OWL)](http://openwork.nz) on behalf of and with guidance and contributions from the [ICSM Metadata Working Group (MDWG)](https://www.icsm.gov.au/what-we-do/metadata-working-group). The purpose of this document is to capture the consensus best practice guidance for the use of recommended ISO 19115-1 metadata elements for organisataion in the Australia / New Zealand region. Further this guidance will aid the migration from the retired [ANZLIC](https://www.anzlic.gov.au/) Metadata Profile of ISO 19115:2003 to the currently endorsed ISO 191125-1:2014 (including Amd.1:2018).
 
 ![Geoscience Australia](./images/GA.jpg)  
 ![ARDC](./images/ARDC.png)  ![DEE](./images/DeptEngEnv.png) 
@@ -23,10 +23,7 @@ This document was compiled by [OpenWork Ltd (OWL)](http://openwork.nz) on behalf
 ### ICSM Metadata Working Group 
 
 - Chair :	Irina Bastrokova - irina.bastrakova@ga.gov.au
-- Secretariat:	Andrew Whiting - andrew.whiting@ga.gov.au
 - Secretariat:	Graham Logan - graham.logan@ga.gov.au
-- ANZLIC:	Brian Sloan	- Brian.Sloan@ga.gov.au
-- ANZLIC:	Ann Beaumaris	- Ann.Beaumaris@industry.gov.au
 - ICSM: Executive Officer -	Lesley Waterhouse - lesley.waterhouse@ga.gov.au
 
 ### Contributors
