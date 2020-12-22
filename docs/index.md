@@ -22,21 +22,21 @@ This document was compiled by [OpenWork Ltd (OWL)](http://openwork.nz) on behalf
 
 ### ICSM Metadata Working Group 
 
-- Chair :	Irina Bastrokova - irina.bastrakova@ga.gov.au
-- Secretariat:	Graham Logan - graham.logan@ga.gov.au
-- ICSM: Executive Officer -	Lesley Waterhouse - lesley.waterhouse@ga.gov.au
+- Chair :	Irina Bastrokova
+- Secretariat:	Graham Logan
+- ICSM: Executive Officer -	Lesley Waterhouse
 
 ### Contributors
 
-- Lead Author: Byron Cochrane - OpenWorks Ltd - byron@openwork.nz
-- Irina Bastrakova - Geoscience Australia - irina.bastrakova@ga.gov.au
-- Shanti Rowlison - Australia Government Dept of Defense - shanti.rowlison@defence.gov.au
-- Jenny Mahuika - Terrestrial Ecosystem Research Network (TERN) - j.mahuika@uq.edu.au
-- Evert Bleys - ABARES - ejbleys@gmail.com
-- Melanie Barlow - Australian Research Data Commons (ARDC)- melanie.barlow@ardc.edu.au
-- Aaron Sedgmen - Geoscience Australia - Aaron.Sedgmen@ga.gov.au
-- Martin Capobianco - Geoscience Australia - Martin.Capobianco@ga.gov.au
-- Dave Connell - Australia Antarctic Division, Dept of the Environment and Energy - Dave.Connell@aad.gov.au
+- Lead Author: Byron Cochrane - OpenWorks Ltd
+- Irina Bastrakova - Geoscience Australia
+- Shanti Rowlison - Australia Government Dept of Defense
+- Jenny Mahuika - Terrestrial Ecosystem Research Network (TERN)
+- Evert Bleys - ABARES
+- Melanie Barlow - Australian Research Data Commons (ARDC)
+- Aaron Sedgmen - Geoscience Australia
+- Martin Capobianco - Geoscience Australia
+- Dave Connell - Australia Antarctic Division
 
 
 **>> [*Introduction*](./defs/GuidanceIntro)**
