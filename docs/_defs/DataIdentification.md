@@ -74,6 +74,8 @@ Identification information about a resource is of high importance to document as
 
 ## ICSM Best Practice Recommendations
 
+Therefore - to clearly understand what resource a metadata record is describing, there should be one and only one [1..1] MD_Identification package in a metadata record. For dataset metadata, this must be expressed as an MD_DataIdentification instance. The Data Indentifaction package contains several sub-packages and sub-elements. To ease the common use of such metadata, it is important that the use of these sub-packages and sub-elements be standardised.
+
 ## Related Classes
 
 - **[MD_Identification](./class-MD_Identification)** the abstract parent class to `MD_DataIdentification` - See guidances for the composite elements.
