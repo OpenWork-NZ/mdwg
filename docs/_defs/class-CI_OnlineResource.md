@@ -54,7 +54,7 @@ title: CI_OnlineResource
 - **description -** (*type - charstr*) [0..1] detailed text description of what the online resource is/does
 - **protocolRequest -** (*type - charstr*) [0..1] protocol used by the accessed resource(to be used mainly for POST requests).
 
-## Recommendations
+## ICSM Best Practice Recommendations
 
 It is recommended that the MDWG further develop general advise on the use of CI_OnlineResource - particularly concerning the use of the "Other sub elements"
 The `function` element, while optional, can ususally be populated through automated means according to the parent element.ß
