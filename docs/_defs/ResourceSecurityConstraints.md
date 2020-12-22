@@ -43,7 +43,7 @@ The official codes used in Australia as mandated by Australian [Protective Secur
 > **Other security frameworks support**
 There will be cases where other security frameworks and classification systems need to be cited, such as for New Zealand Defence. Instructions for how to include these are needed. Should such guidance be prescriptive or general?
 
-## ICSM Recommendations
+## ICSM Best Practice Recommendations
 
 Therefore - it is important to capture all security constraints that apply to a spatial resource. If there be none it may be useful to capture such, particularly if your organisation does regularly handle sensitive resources. Agencies should develop consistent guidance on the use of security classifications and share a clear understanding of their meaning with users. 
 
