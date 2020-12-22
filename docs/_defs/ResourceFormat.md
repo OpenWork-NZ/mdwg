@@ -49,7 +49,7 @@ This element seems to be about the native format in which the data is kept by an
 > **Applied to SV_ServiceIdentification**
 This element makes more sense when applied to service metadata. In that case, the resource format is what is of interest as the service is the distribution channel.
 
-## Recommendations
+## ICSM Best Practice Recommendations
 
 Therefore - it is recommended that format information about a resource be captured in the metadata. The details to include are to be at the best judgement of the managers and direct users of the resource.
 
