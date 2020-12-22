@@ -35,7 +35,7 @@ It is useful when documenting a service to document the particular parameters th
 
 As many of the services we may call will have operations that summarise the operations that the service provides it may be better to document this one service in order not to duplicate or cause confusion. GetCapabilities would be an example of this as would an OpenAPI endpoint as implemented in OGC API common based services. These operations typically require no parameters, but the operations they describe will contain the necessary parameters.
 
-## ICSM Recommendations 
+## ICSM Best Practice Recommendations 
 
 Therefore - if a potential client of a service is to use such service, descriptions of the functionality and use of the parameters required by these operations should be documented in metadata of a geospatial service. When used, this element has several mandatory subelements as described below.
 
