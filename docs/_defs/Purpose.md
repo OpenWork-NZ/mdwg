@@ -37,7 +37,7 @@ Consideration needs to be given to the audience and what they need to know about
 
 A purpose statement is generally shorter than an abstract and should be written in a style that your human audience will easily comprehend. The purpose should capture the "why" a dataset was created and to what end it is used. Common language should be used that most people could understand. If there is a need for more technical language to describe the resource, this should be included at the end of the purpose statement.
 
-## ICSM Recommendations
+## ICSM Best Practice Recommendations
 Therefore - keep the purpose statement generally shorter than your abstract and write in a style that your human audience will easily comprehend. Capture the "why" a resource was created and to what end it is used. Use common language that most people could understand. If there is a need for more technical language to describe the resource, this should be included at the end of the purpose statement.
 
 Populate the *purpose* element and provide enough narrative to give the reader a good understanding of the intent for which the resource was created. Use common language as far as possible as the readers may come from a different domain. The contents of a purpose should include as much information as would be useful to indicate the alignment of the original purpose and potential users' requirements.
