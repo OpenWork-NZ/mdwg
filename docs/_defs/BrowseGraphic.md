@@ -40,7 +40,7 @@ In a metadata record there should be zero to many [0..\*] *graphicOverview* pack
 
 Geospatial professionals by nature, rely to a large extent on visual information to gain an understanding of resources. Browse graphics provide in the metadata a way to communicate with users visually. 
 
-## ICSM Recommendations 
+## ICSM Best Practice Recommendations 
 
 Therefore - to provide a quick way for users to discover and identify the resource they need, provide a graphic overview of the metadata. At a minimum, this should include a name and link to the image.
 
