@@ -45,7 +45,7 @@ There is a need to gain greater consensus as to the general use of MD_SecurityCo
 > Australia Protective Security Policy Framework
 A best practice method of using the new Australia Protective Security Policy Framework in ISO 19115-1 must be created by the MDWG. While `classificationSystem` allows use to declare the security framework we are using, it does not do so as a citation whick limits our ability to document our reference properly. Also, how to include the values in the framework is not clear.  Extending `MD_RestrictionCode` seems the most obvious, but is changing an ISO codelist the best approach given we want our recommendations not to change the underlying ISO 19115-1.
 
-## Recommendations
+## ICSM Best Practice Recommendations
 Therefore - it is important to capture all security constraints that apply to a resource, including its metadata. If there be none then it may be useful to state this fact through the use of the `unclassified` value of `MD_RestrictionCode`, particularly if your organisation does regularly handle sensitive resources. Agencies should develop consistent guidance on the use of security classifications and share clear understanding of their meaning with users.
 
 At a minimum the Name (primary and alternate) and version by which this security restriction on the access and use of this cited resource is known should be captured along with the classification value selected from the codelist - MD_ClassificationCode.
