@@ -35,7 +35,7 @@ To provide a quick guide as to the spatial area of interest for a cited resource
 
 The use of multiple descriptors is recommended for more complicated geometries, including exclusion areas.
 
-## ICSM Recommendations
+## ICSM Best Practice Recommendations
 
 Therefore - it is highly recommended that to support the discovery of resources, every metadata record that describes a geographic resource contains geographic descriptions of the area of interest for the resource. This description must contain a *code* that holds the value of the geographic descriptor and should contain in the *codespace* the codelist or domain from which it was derived. The *authority* element may contain additional documentation of the codelist.
 
