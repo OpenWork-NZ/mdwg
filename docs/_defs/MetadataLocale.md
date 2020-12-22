@@ -33,7 +33,7 @@ title: Metadata Default Locale
 There may be only one default locale identified in one metadata record. This element only describes the default language of the metadata. Any language elements used in the described spatial resource may have a different default language and would be captured in the element [MD_Identification.defaultLocale](./ResourceLocale)
 The element "otherLocale" can be used to provide information about alternatively used localised character strings.
 
-## ICSM Recommendations
+## ICSM Best Practice Recommendations
 
 Therefore - in order to provide metadata in a consistent manner for the users in our region, it is recommended that English be chosen as the value for `language` using the ISO 639-2, 3-alphabetic digits code "eng".
 
