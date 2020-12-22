@@ -40,7 +40,7 @@ header-includes:
 
 - There should be zero to many [0..\*] *distributionInfo* packages for the cited resource in the  *[MD_Metadata](./class-MD_Metadata)* package of class *[MD_Distribution](http://wiki.esipfed.org/index.php/MD_Distribution)* in a metadata record.
 
-### ICSM Good Practice
+### ICSM Best Practice
 
   - The *distributionInfo* package should be populated in all metadata records unless it obviously has no resource to be distributed, e.g. metadata for a series where resources are accessed via the children.
 
