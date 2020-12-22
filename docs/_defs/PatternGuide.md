@@ -49,7 +49,7 @@ This section captures the thinking of the MDWG behind the use of this element. T
 
 Outstanding issues are also captured in this section. This is a living document and we only get to the level of agreement that we can.  Capturing these outstanding differences and lack of understanding, allows us to know where to start on the next bit of work.
 
-#### Recommendations
+#### ICSM Best Practice Recommendations
 
 Finally, we come to the recommendations. These are statements capture the what, why, who, when and how MDWG recommend this element be used. They provide an in-context summary of the MDWG guidance and the reasoning behind it.
 
