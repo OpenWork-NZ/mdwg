@@ -42,7 +42,7 @@ The cardinality rules only allow one parent, but it is concievable that a metada
 If we include this as a recommended element, the MDWG should provide some guidance as to what qualifies as a parent metadata record. This is a CI_Citation element so it has the all the capabilities of that package. We need to decide which fields are necessary given that a requirement should be a link to the parent metadata record.
 
 
-## Recommendations
+## ICSM Best Practice Recommendations
 TBD - insufficient clarity exist as to what qualifies a metadata record as "parent". Use cases need to be defined to illustrate yet to be determined good practice for parentMetadata.
 
 ### Crosswalk considerations
