@@ -37,7 +37,7 @@ Because of the simple mathematics involved in calculating overlap with two coord
 
 The use of multiple bounding boxes is recommended for more complicated geometries, including exclusion areas.
 
-## ICSMRecommendations
+## ICSM Best Practice Recommendations
 
 Therefore - it is strongly recommended that to support the discovery of resources, every metadata record that describes a geographic resource contains at a minimum one bounding box description of the resource area of interest. To ensure commonality with other catalogued data, the coordinates of such need be captured in WGS 84. If there be any exclusion areas, the use of the boolean extentTypeCode (set to "0") is recommended.
 
