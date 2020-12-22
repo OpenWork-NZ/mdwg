@@ -46,7 +46,7 @@ The [0..1] cardinality of `edition` and `editionDate` means that release of a ne
 
 This element should be used wherever there's a usable edition/version as it is invaluable to know where this resource fits into a sequence. As "version" is often synonymous with "edition", it is advised that this field also be used for new tracked versions of resources.
 
-## Recommendations
+## ICSM Best Practice Recommendations
 
 Therefore - when a new edition of a resource is created, a new metadata record needs to be created. This new metadata record needs the *resource edition* element populated with the edition name or identifier. When such is the case, the sibling [CI_Citation](./class-CI_Citation).editionDate field should also be populated.
 
