@@ -38,7 +38,7 @@ The use of multiple geographic extents is recommended for more complicated geome
 
 As these extents are meant to be used to give a general rough comparison to other geospatial data from sources, coordinates values should be captured in WGS 84 (EPSG 4326)
 
-## Recommendations
+## ICSM Best Practice Recommendations
 
 Therefore - it is strongly recommended that to support the discovery of resources, every metadata record that describes a geographic resource contains geographic descriptions of the area of interest for the resource. At a minimum one description needs be in bounding box coordinate values. If there be any exclusion areas, the use of the boolean extentTypeCode (set to "0") is recommended.
 
