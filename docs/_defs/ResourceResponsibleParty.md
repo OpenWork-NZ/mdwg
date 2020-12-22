@@ -35,7 +35,7 @@ This element captures contact information for those parties responsible for vari
 
 There may be multiple responsible parties who hold different responsibilities. The responsibility of each party is captured in the element CI_Responsibility > role. Entries for "author" and "publisher" are recommended. 
 
-## ICSM Recommendations
+## ICSM Best Practice Recommendations
 
 Therefore - to meet ICSM best practice, in all metadata records, contact information should be given for the parties responsible for different aspects of the creation, management and maintenance of the resource. Entries for "author" and "publisher" should be provided. In addition, for minimal conformity, `name` (of organisation preferred), `positionName` and `electronicMailAddress` should also be populated.
 The use of the new `partyIdentifier` element added in the 2018 amendment to the standard is encouraged by all parties.
