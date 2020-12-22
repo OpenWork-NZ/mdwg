@@ -29,7 +29,7 @@ This document was compiled by [OpenWork Ltd (OWL)](http://openwork.nz) on behalf
 - Irina Bastrakova - Geoscience Australia
 - Shanti Rowlison - Australia Government Dept of Defense
 - Jenny Mahuika - Terrestrial Ecosystem Research Network (TERN)
-- Evert Bleys - ABARES
+- Evert Bleys - ISO TC211
 - Melanie Barlow - Australian Research Data Commons (ARDC)
 - Aaron Sedgmen - Geoscience Australia
 - Martin Capobianco - Geoscience Australia
