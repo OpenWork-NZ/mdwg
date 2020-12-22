@@ -23,19 +23,19 @@ This guidance is a point in time best practice guide and will be updated as requ
 
 ### ICSM Metadata Working Group 
 
-- Chair :  Irina Bastrokova - irina.bastrakova@ga.gov.au
-- Secretariat:  Graham Logan - graham.logan@ga.gov.au
-- ANZLIC:  Simon Costello  - simon.costello@ga.gov.au
-- ICSM: Executive Officer -  Lesley Waterhouse - lesley.waterhouse@ga.gov.au
+- Chair :  Irina Bastrokova
+- Secretariat:  Graham Logan
+- ICSM Chair:  Simon Costello
+- ICSM Executive Officer: Lesley Waterhouse
 
 ### Contributors
 
-- Lead Author: Byron Cochrane - OpenWork Ltd - byron@openwork.nz
-- Irina Bastrakova - Geoscience Australia - irina.bastrakova@ga.gov.au
-- Jenny Mahuika - Terrestrial Ecosystem Research Network (TERN) - j.mahuika@uq.edu.au
-- Evert Bleys - ISO TC211 - ejbleys@gmail.com
-- Melanie Barlow - Australian Research Data Commons (ARDC)- melanie.barlow@ardc.edu.au
-- Aaron Sedgmen - Geoscience Australia - Aaron.Sedgmen@ga.gov.au
+- Lead Author: Byron Cochrane - OpenWork Ltd
+- Irina Bastrakova - Geoscience Australia
+- Jenny Mahuika - Terrestrial Ecosystem Research Network (TERN)
+- Evert Bleys - ISO TC211
+- Melanie Barlow - Australian Research Data Commons (ARDC)
+- Aaron Sedgmen - Geoscience Australia
 
 \pagebreak
 
