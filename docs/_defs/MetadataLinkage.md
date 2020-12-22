@@ -36,7 +36,7 @@ Alternatively, `metadataLinkage` may be used to record the location of the metad
 
 The use of this field to hold the local of the metadata record in the local catalogue could be better accomplished through the options provided in [metadataIdentifier](./MetadataIdentifier).
 
-## ICSM Recommendations
+## ICSM Best Practice Recommendations
 
 Therefore - there should be a "point of truth" url to a metadata record provided under metadataLinkage. Alternatively, this could be the full path to this metadata record. There may be multiple endpoints containing copies of this metadata record, one captured with the description of "Point of Truth URL for this metadata record" is recommended.
 All metadataLinkage elements should have a function code of "Complete Metadata".
