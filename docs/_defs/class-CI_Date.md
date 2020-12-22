@@ -46,7 +46,7 @@ For class CI_OnlineResource
   - released - the date that the resource shall be released for public access
   - distribution - date identifies when an instance of the resource was distributed
 
-## Recommendations
+## ICSM Best Practice Recommendations
 
 Therefore - in order to provide the consistancy needed to avoid confusion for both machines and humans, it is recommended that all dates included in a metadata record implement the class CI_Date and follow the guidance provided by ISO and ICSM.
 
