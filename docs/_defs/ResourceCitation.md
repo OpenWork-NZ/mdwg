@@ -33,7 +33,7 @@ There must be one and only one [1..1] *MD_Metadata.identificationInfo>MD_Identif
 
 The citation package contains multiple elements from [CI_Citation](./class-CI_Citation). Only child elements contain content. Follow the links on the child elements recommendations for further instruction. Aspects of the contents of this package may be governed at different levels.
 
-## ICSM Recommendations
+## ICSM Best Practice Recommendations
 
 Therefore - for potential users to find and identify spatial resources, these must be well-cited with information that includes a minimum of `title`, `identifier`, `date` (of type `creation`, plus `revision` and `issued` when appropriate) and `citedResponsibleParty` (for `author` or `creator`, plus `publisher` and `contributor` when appropriate). 
 
