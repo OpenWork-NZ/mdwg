@@ -42,7 +42,7 @@ When the SRS is Earth centered as is the case with WGS 84, in order to understan
 * Create an additional Instance of *spatialReferenceInfo* of *referenceSystemType -* *temporal*. The Description should read *Coordinate Epoch*. The *code* value should be the year in decimal degrees of at least 2 decimal places for the value of the coordinate reference frame within which the data is captured. 
     For instance, if the data is captured using a GNSS device, the Coordinate Epoch may be the date at which the Coordinates were captured dependent on the methodology used. If the data is digitised from imagery, the Coordinate Epoch would be the same as that of the source imagery. The user must take care to determine the true coordinate system of their source data or method  including its coordinate epoch.
 
-## ICSM Recommendations
+## ICSM Best Practice Recommendations
 
 Therefore - To ensure the usability of your spatial resource, it is important to include the Spatial Reference System used by this resource in its metadata. Doing so will allow the proper use and analysis to occur. 
 
