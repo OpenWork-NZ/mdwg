@@ -41,7 +41,7 @@ An example of a loosely coupled service could be a reprojection service with use
 A mixed coupling might be a WMS service into which you may add additional data sources of your choice. In a mixed coupling situation a single service instance may be associated with both kinds of data associated, loosely and tightly coupled. 
 
 
-## ICSM Recommendations
+## ICSM Best Practice Recommendations
 
 Therefore - the element *couplingType* should be populated in all service metadata records. If the Coupling Type is *tight* then the *[coupled resource](./CoupledResource)* element must be populated for all coupled resources. 
 
