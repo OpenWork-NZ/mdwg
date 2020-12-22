@@ -68,7 +68,7 @@ The MD_Metadata package defines the schema for describing the complete metadata 
 
 
 
-## Recommendations 
+## ICSM Best Practice Recommendations 
 
 Therefore - it is recommended that all spatial metadata utilise the structure provided by the ISO19115-1 MD_Metadata class and follow the guidance provided. While ISO 19115-1 allows for such a metadata to describe more than one spatial resource, in order to reduce confusion and ease the integration with other metadata systems, it is recommended that each metadata record describes one and only one resource and that each resource have one metadata record of class MD_Metadata. 
 
