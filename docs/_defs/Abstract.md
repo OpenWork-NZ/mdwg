@@ -34,7 +34,7 @@ Abstract is a mandatory element. It contains a human-readable description of the
 
 Consideration needs to be given to the audience and what they need to know about the resource to decide the utility for them.
 
-## ICSM Recommendations 
+## ICSM Best Practice Recommendations 
 Therefore - an abstract should be written in a style that your human audience will easily comprehend. As this is a top-level field for harvested records to general-purpose catalogues, common language should be used that most people could understand. If there is a need for more technical language to describe the resource, this should be included at the end of the abstract.
 
 The contents of an abstract should address the 5Ws What is it; Who generated it; When was it generated; Why was it generated; and Where is the place that it deals with (Time and Location). But in a general way with the most common language possible while still containing sufficient information.
