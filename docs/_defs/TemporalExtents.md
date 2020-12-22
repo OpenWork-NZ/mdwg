@@ -38,7 +38,7 @@ The use of multiple temporal extents is useful for describing more complicated r
 
 With the advent of dynamic datums for high precision applications of spatial data, temporal information becomes even more important.
 
-## ICSM Recommendations
+## ICSM Best Practice Recommendations
 
 Therefore - it is strongly recommended that to support discovery of resources, and ensure the resource is fit to purpose, every metadata record contains, as needed, temporal extent description of the resource period of interest. Dates may be captured as type *date* or *datetTime* depending on your need and tools. If your data is of high precision then capture temporal extents to support dynamic datums. the capture of *timePeriod* information is highly recommended.
 
