@@ -42,7 +42,7 @@ There is often general confusion over the restraints fields and to what they app
 
 For more discussion on the types of common legal restrictions see [Resource Legal Constraints](./ResourceLegalConstraints#copyright).
 
-## ICSM Recommendations
+## ICSM Best Practice Recommendations
 
 Therefore - the MDWG recommends populating this element `metadataConstraints` with legal constraint information to sufficient level to determine the legal rights, responsibilities and restrictions on a metadata record. 
 It is important to capture any legal constraints that may apply to a metadata record. This should include licences, end-user agreements, etc. If the resource is public domain, this should be cited appropriately. Many jurisdictions encourage the use of open data and Creative Commons licenses. This should be encouraged through the use of copyright licenses such as CC0 or CC-BY. Provide the user links to additional information about such constraints, their use and meaning. In addition, document the holder of such rights and how to contact for more information. As legal restrictions such as copyright are tied to the creator of an intellectual resource, make sure that users have access to their information.
