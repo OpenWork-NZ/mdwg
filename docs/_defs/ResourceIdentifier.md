@@ -39,7 +39,7 @@ A common practice in GA and ABARES is for this identifier to be the same as the 
 
 In the case where a resource may have multiple identifiers, additional instances of this element can be created. The `description` element must be populated in such situations to distinguish the meaning of the different identifiers.
 
-## ICSM Recommendations
+## ICSM Best Practice Recommendations
 
 Therefore - it is recommended that this element be populated, preferably once, but more often if there are multiple identifier systems for the same resource. In the case of multiple identifiers, the `description` element must be populated in such situations to distinguish the meaning of the different identifiers. `Code` must be populated in all records and it is recommended that `codeSpace` be populated as well.
 
