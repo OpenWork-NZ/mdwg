@@ -33,7 +33,7 @@ There may be zero to many [0..\*] *additionalDocumentation* packages for the cit
 
 To make the best use of a given resource, additional documentation may be useful or required. Providing instructions for accessing these documents can greatly enhance the value of a resource to its users and providers. Capturing these additional documents in the metadata is also helpful to resource managers who need to properly track the linkages between a resource and its documentation. The resource may be data or service, [MD_DataIdentification](./class-MD_DataIdentification)* or *[SV_ServiceIdentification](./ServiceIdentification)
 
-## ICSM Recommendations 
+## ICSM Best Practice Recommendations 
 
 Therefore - to make the best use of a given resource capturing the links to additional documentation related to this resource is highly recommended. Capture those documents of the highest value to your most likely community of users. If possible, include some reference to documentation or its metadata that can be easily understood by laypeople and label this accordingly.
 
