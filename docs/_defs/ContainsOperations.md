@@ -34,7 +34,7 @@ This is an ISO optional element. There may be zero or many [0..\*] *containsOper
 ## Discussion  
 It is useful when documenting a service to document the particular operations that the service can be called upon to do. As many of the services we may call will have operations that summarise the operations that the service provides it may be better to document this one service in order not to duplicate or cause confusion. GetCapabilities would be an example of this as would an OpenAPI endpoint as implemented in OGC API common based services.
 
-## ICSM Recommendations 
+## ICSM Best Practice Recommendations 
 
 Therefore - if a potential client of a service is to use such service once discovered, descriptions of the functionality and use of operations provided should be documented in metadata of a geospatial service. When there exists an operation that details the operations available, such as *GetCapabilities* or an OpenAPI/Swagger endpoint, it is recommended that this operation be captured here. Further operations detailed by such a service need not be detailed here. At a minimum, the ICSM recommended sub-elements to be populated include *operationName*, *distributedComputingEnvironment*, *operationDescription*, *connectPoint*.
 
