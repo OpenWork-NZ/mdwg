@@ -41,7 +41,7 @@ digits code
  "Resources defined by the Library of Congress (1, 2) SHOULD be used. If a ISO 639-1 (two-letter) code is defined for language, then its corresponding IRI SHOULD be used; if no ISO 639-1 code is defined, then IRI corresponding to the ISO 639-2 (three-letter) code SHOULD be used."
  This may present a problem of translation from ISO 19115-1 use of ISO 639-2, 3-alphabetic digits code
 
-## Recommendations
+## ICSM Best Practice Recommendations
 
 Therefore - given the location and area of influence of ICSM, for `language`, the three letter code chosen from the ISO 639-2 LanguageCode CodeList should default to "eng" for most instances of PT_Locale in a metadata record. Use UTF8 as the `characterEncoding` for consistancy accross catalogues.
 
