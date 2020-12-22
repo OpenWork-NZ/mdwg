@@ -35,7 +35,7 @@ Every metadata record describing resources which contain height or depth informa
 
 The use of multiple vertical extents is useful for describing more complicated resources.
 
-## ICSM Recommendations
+## ICSM Best Practice Recommendations
 
 Therefore - it is strongly recommended that to support the discovery of resources, every metadata record contains, as needed vertical extent description of the resource area of interest. Capture the units of measure and the datum used.
 
