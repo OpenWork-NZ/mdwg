@@ -84,7 +84,7 @@ There is a need to gain greater consensus as to the general use of MD_Constraint
 > Distribution Constraints
 Currently there are no clear methods to apply different constraints to different distributions. This may be an ISO issue to address. We should develop use cases.
 
-## Recommendations
+## ICSM Best Practice Recommendations
 
 ### Crosswalk considerations
 
