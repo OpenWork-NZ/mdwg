@@ -25,7 +25,7 @@ title: Resource Default Locale
 ### ISO Obligation
 - There may be only one [0..1] *defaultLocale* entries for the resource in the metadata  *[MD_DataIdentification](./class-MD_DataIdentification)* package. This must be of class *[PT_Locale](./PT_Locale)*.
 
-### ICSM Best Practice
+### ICSM Best Practice Recommendations
 - The default language in our region is English and it is recommended to be used as the language in metadata records using the 3 letter code "eng".
 
 #### Recommended Sub-Elements
