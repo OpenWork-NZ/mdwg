@@ -28,7 +28,7 @@ title: Keywords
 
 ### ICSM Best Practice Recommendations
 
-Therefore - There should be multiple keywords selected from a referenced thesaurus present in a metadata record for a spatial resource.
+Therefore - it is highly recommended that multiple keywords should be selected from a referenced thesaurus present in a metadata record for a spatial resource.
 
 #### Recommended Sub-Elements
 
