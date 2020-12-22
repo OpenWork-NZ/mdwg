@@ -36,7 +36,7 @@ Security constraints on metadata records are uncommon. Security is more commonly
 For some agencies, it may be important to capture under security constraints that there are no constraints.
 Reference for metadata security would include the name (primary and alternate) and version by which this security restriction on the access and use of this metadata record is known.
 
-## ICSM Recommendations
+## ICSM Best Practice Recommendations
 
 Therefore - when needed, it is important to capture any security constraints that apply to a metadata record. Provide the user links to additional information about such constraints, their use and meaning. Include the name (primary and alternate) and version by which this security restriction on the access and use of this metadata record is known. For example, when using the Australian [Protective Security Policy Framework](https://www.protectivesecurity.gov.au/Pages/default.aspx), provide access to materials from this linked website to explain this framework. (https://www.protectivesecurity.gov.au/Pages/default.aspx). In addition, document the holder of such rights and how to contact for more information. If your agency has requirements for stating that the metadata has no security constraints, do so in this element.
 
