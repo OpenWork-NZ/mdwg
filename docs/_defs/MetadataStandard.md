@@ -35,7 +35,7 @@ Documenting the metadata standard to which the metadata adheres is esential best
 
 There are options about how to cite the standard used even in the context of this narrow guidance for ISO 19115-1. One could equally cite a compliant profile of this standard used by their organisation or ISO 19115-3, the XML implementation standad for ISO 19115-1. It is very useful if the standard is cited to the year and admendment number (if any). As there are allowed multiple entries for this element, the base standard and any profiles thereof may be captured together.
 
-## ICSM Recommendations 
+## ICSM Best Practice Recommendations 
 
 Therefore - in order for users to have a better understanding of the metadata they recieve, it is highly recommended that the *MetadataStandard* element  be populated with at minimum "ISO 19115-1". The year and admendment information should also be included. Currently, the approved standard and version of this standard in Australia and New Zealand is **AS/NZS ISO 19115.1:2015 (ISO 19115-1:2014 with ISO 19115-1:2014/Amd.1:2018, IDT)**. Any profile information of this standard should be included as a *MetadataProfile* entry.
 
