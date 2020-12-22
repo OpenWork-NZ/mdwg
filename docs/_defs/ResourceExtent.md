@@ -33,7 +33,7 @@ Every metadata record describing resources should describe the extent of the are
 
 The use of multiple instances is useful for describing more complicated resources.
 
-## ICSM Recommendations
+## ICSM Best Practice Recommendations
 
 Therefore - it is strongly recommended that to support discovery of resources, every metadata record contains, as needed, surface geometric, vertical and temporal extent description of the resource area of interest. Use multiple instances if it helps describe the resource for the user.
 
