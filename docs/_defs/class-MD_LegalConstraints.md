@@ -50,7 +50,7 @@ There is a need to gain greater consensus as to the general use of MD_LegalConst
 > Distribution Constraints
 Currently there are no clear methods to apply different legal constraints to different distributions. This may be an ISO issue to address. We should develop use cases.
 
-## Recommendations
+## ICSM Best Practice Recommendations
 
 Therefore - it is important to capture all legal constraints that apply to a resource. This should include licences, end user agreements, etc. If the resource is public domain, this should be cited appropriately. Many juristrictions encourage the use of open data and Creative Commons license. This should be encouraged through the use of copyright licenses such as CC0 or CC By. Provide the user links to additional information about such constraints, there use and meaning. In addition, document the holder of such rights and how to contact for more information.
 
