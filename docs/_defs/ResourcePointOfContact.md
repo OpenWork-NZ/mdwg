@@ -35,7 +35,7 @@ This element exists for the provision of a set of attributes for identification 
 
 This is a compound element of type CI_ResponsibleParty. At least one should be present. Recommended role value - "PointOfContact" with attached email. Other contacts can be added as required. Other role values are acceptable.
 
-## Recommendations
+## ICSM Best Practice Recommendations
 
 Therefore - to meet ICSM good practice, in all metadata records, at least one point of contact should be given for the party responsible for the cited resource. These should default to role code "Point of Contact". In addition, for minimal conformity, `name` (of organisation preferred), `positionName` and `electronicMailAddress` should also be populated.
 The use of the new `partyIdentifier` element added in the 2018 amendment to the standard is encouraged by all parties.
