@@ -1,5 +1,8 @@
 ---
 layout: page
+rank: 10
+type: page
+section: Guidance
 title: Metadata Best Practice Guide
 ---
 
