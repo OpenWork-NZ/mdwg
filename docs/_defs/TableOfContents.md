@@ -50,8 +50,7 @@ title: Table of Contents
     - [Series](./ResourceSeries)
     - [Resource Cited Responsible Party](./ResourceResponsibleParty)
   - Package [Keywords](./Keywords) - Including:
-      - ABS Field of Research
-      - ABARES Keyword
+      - ABS Field of Researce
       - AGIFT Keyword
       - Other keywords
   - Package [Maintenance](./Maintenance) - Includes:
