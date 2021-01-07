@@ -112,7 +112,7 @@ Elements with specific guidance for Services are in **_Bold Italic_**
     - ResourceReference - includes:
       - Title - *Mandatory*
       - OnlineResource - *Highly Recommended.* Metadata URL for related data
-      - **[ContainsOperations](./ContainsOperations)** class - SV_ContainsOperation   Contains:
+  - **[ContainsOperations](./ContainsOperations)** class - SV_ContainsOperation   Contains:
     - operationName  *Mandatory*
     - distributedComputingPlatform  codelist - DCPList, *Mandatory*
     - operationDescription  *Highly Recommended*

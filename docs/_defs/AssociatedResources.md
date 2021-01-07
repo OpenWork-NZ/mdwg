@@ -40,19 +40,21 @@ Therefore - to provide an effective way to document, preserve and provide discov
 ### Recommended Sub-Elements 
 
 * **associationType -** *(codelist - [DS_AssociationTypeCode](http://wiki.esipfed.org/index.php/ISO_19115-3_Codelists#DS_AssociationTypeCode))* [1..1] Mandatory for associated resource citations - one name for the type of relationship
- * crossReference - reference from one resource to another
- * largerWorkCitation - reference to a master resource of which this one is a part
- * partOfSeamlessDatabase - part of same structured set of data held in a computer
- * stereoMate - part of a set of imagery that when used together, provides three-dimensional images
- * isComposedOf - reference to resources that are parts of this resource
- * collectiveTitle - common title for a collection of resources
- * series - associated through a common heritage such as produced to a common product specification
- * dependency - associated through a dependency
- * revisionOf - resource is a revision of associated resource
-* **name -** *(class - [CI_Citation](./class-CI_Citation))* {0..\*]} - citation information about the associated resource
+  * crossReference - reference from one resource to another
+  * largerWorkCitation - reference to a master resource of which this one is a part
+  * partOfSeamlessDatabase - part of same structured set of data held in a computer
+  * stereoMate - part of a set of imagery that when used together, provides three-dimensional images
+  * isComposedOf - reference to resources that are parts of this resource
+  * collectiveTitle - common title for a collection of resources
+  * series - associated through a common heritage such as produced to a common product specification
+  * dependency - associated through a dependency
+  * revisionOf - resource is a revision of associated resource
+* At least one of: 
+  * **name -** *(class - [CI_Citation/title](./class-CI_Citation))* {0..1]} - citation information about the associated resource
+  * **metadataReference -** *(class - [CI_Citation](./class-CI_Citation))* [0..1] - reference to the metadata of the associated resource
 * *Optional sub elements*
- * **initiativeType -** *(codelist - [DS_InitiativeTypeCode](http://wiki.esipfed.org/index.php/ISO_19115-3_Codelists#DS_InitiativeTypeCode))* [0..1] - type of initiative under which the associated resource was produced 
- * **metadataReference -** *(class - [CI_Citation](./class-CI_Citation))* [0..1] - reference to the metadata of the associated resource
+  * **initiativeType -** *(codelist - [DS_InitiativeTypeCode](http://wiki.esipfed.org/index.php/ISO_19115-3_Codelists#DS_InitiativeTypeCode))* [0..1] - type of initiative under which the associated resource was produced 
+  
   
  ## Outstanding Issues
 

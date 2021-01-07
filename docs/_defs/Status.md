@@ -64,10 +64,6 @@ Values for this element must come from the *MD_ProgressCode* codelist.
 
 ## Outstanding Issues
 
-> **Abstract Class - MD_Identification**
-
-SpatialRepresentationType is one of many elements belonging to the abstract class MD_Identification. MD_Identification is only instantiated as MD_DataIdentification or SV_ServiceIdentification. At this stage we are not addressing service metadata, we are assuming all metadata is for data resources. At a later time, when we include service metadata guidance, a separate discussion of MD_Identifier should be made.
-
 > **CKAN**
 It has been indicated that CKAN records in its related field boolean values for this item. Boolean does not map well to ISO domain values. Some options in the MD_ProgressCode are noncompatible some are compatible. Clarification and validation would be useful.
 

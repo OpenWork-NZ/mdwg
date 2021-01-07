@@ -26,23 +26,21 @@ title: Graphic Overview
 
 **A graphic that provides an illustration of a resource**
 
->NOTE - Should include a legend for the graphic, if applicable.
-
->EXAMPLE - A dataset thumbnail image, an organisation logo, security constraint or citation graphic.
-
 ### ISO Obligation
 
 In a metadata record there should be zero to many [0..\*] *graphicOverview* packages for the cited resource in the *[MD_DataIdentification](./class-MD_DataIdentification)* package of class *[MD_BrowseGraphic](http://wiki.esipfed.org/index.php/MD_BrowseGraphic)* in a metadata record.
 
+## Discussion
 
+Geospatial professionals by nature, rely to a large extent on visual information to gain an understanding of resources. Browse graphics provide in the metadata a way to communicate with users visually.
 
-## Discussion  
+>NOTE - Should include a legend for the graphic, if applicable.
 
-Geospatial professionals by nature, rely to a large extent on visual information to gain an understanding of resources. Browse graphics provide in the metadata a way to communicate with users visually. 
+>EXAMPLE - A dataset thumbnail image, an organisation logo, security constraint or citation graphic.
 
-## ICSM Best Practice Recommendations 
+## ICSM Best Practice Recommendations
 
-Therefore - to provide a quick way for users to discover and identify the resource they need, provide a graphic overview of the metadata. At a minimum, this should include a name and link to the image.
+Therefore - to provide a quick way for users to discover and identify the resource they need, provide a graphic overview of the resource. At a minimum, this should include a name and link to an image.
 
 #### Recommended Sub-Elements 
 
@@ -53,9 +51,8 @@ From class *[MD_BrowseGraphic](http://wiki.esipfed.org/index.php/MD_BrowseGraphi
 - Optional:
  - **imageConstraints -** *(class - [MD_Constraints](./class-MD_Constraints))* [0..\*] - restriction on access and/or use of browse graphic
  - **fileType -** *(type - CharStr)* [0..\*] - format in which the illustration is encoded (e.g.: EPS, GIF, JPEG, PBM, PS, TIFF, PDF)
- - **extent -** *(class - [EX_Extent](./ResourceExtent))* [0..\*] Information about the horizontal, vertical and temporal extent of the resource specified by the scope
   
- ## Also Consider
+## Also Consider
 
  - **[MD_BrowseGraphic -](http://wiki.esipfed.org/index.php/MD_BrowseGraphic)** associates to a large number of packages for different purposes, such as business or product icons and logos
  - **[CI_OnLineFunctionCode -](http://wiki.esipfed.org/index.php/ISO_19115-3_Codelists#CI_OnLineFunctionCode)** This codelist contains an option *browseGraphic*

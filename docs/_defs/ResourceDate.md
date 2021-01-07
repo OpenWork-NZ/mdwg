@@ -53,9 +53,8 @@ It is recommended that `Resource Date` include -
 - **dateType** - Highly recommended. There should be multiple entries for the resource reference date in a metadata record. These should include `dateType` entries for:
  - **Creation date** - This is important for intellectual property and other reasons
  - **Publication date** - Is the most common date type captured by an agency
- - **Update date** - Allows notifications and resource management. All updates to metadata should also include the date of last revision to the metadata. This can be an automated process.
+ - **Update date** - Allows notifications and resource management. All updates to metadata should also include the date of last revision to the metadata. This is not an automated process.
 
-This element should be updated in a consistent yet to be agreed upon manner. We recommend GeoNetwork's current approach. GeoNetwork updates the **revision date** for the metadata record automatically on every save. This supports systems such as notifications and harvesting regimes that rely on the capture of the date that a metadata record was last modified.
 
 ## Also Consider
 
