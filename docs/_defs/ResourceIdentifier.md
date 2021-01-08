@@ -4,6 +4,7 @@ type: element
 section: Resource Citation
 rank: 20
 title: Resource Identifier
+guides: [Metadata, Services]
 ---
 # Resource Identifier ★★★★
 *An important component of the [Resource Citation](./class-CI_Citation) is the resource identification element. Similar to the [Metadata Identifier](./MetadataIdentifier), this element holds a code that uniquely identifies the resource and differentiates it from all others. With this, machines and humans can differentiate, reference and link to the resource without ambiguity*

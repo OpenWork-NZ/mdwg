@@ -4,6 +4,7 @@ type: element
 section: Metadata Info
 rank: 50
 title: Metadata Scope
+guides: [Metadata]
 ---
 #  Metadata Scope ★★★★
 *In order to quickly find, categorise and evaluate the fitness of a resource to our needs it is useful to include in our metadata a high level description of the scope of the resource our metadata is describing.*

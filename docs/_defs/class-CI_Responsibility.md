@@ -17,6 +17,7 @@ header-includes:
  - \setlist[itemize,8]{label=$\bullet$}
  - \setlist[itemize,9]{label=$\bullet$}
  - \renewlist{itemize}{itemize}{9}
+guides: [Metadata]
 ---
 # class - CI_Responsibility
 

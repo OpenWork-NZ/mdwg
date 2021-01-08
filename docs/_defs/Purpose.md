@@ -4,6 +4,7 @@ type: element
 section: Data Identification
 rank: 20
 title: Purpose
+guides: [Metadata, Services]
 ---
 # Purpose ★★★★★
 *One of the useful ways to evaluate the fitness of a resource to our needs is to examine the purpose for which the resource was created and how well it fulfilled its intended purpose. The *MD_DataIdentification.purpose* element is designed to hold such information.*

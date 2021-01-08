@@ -4,6 +4,7 @@ type: element
 section: Data Identification
 rank: 80
 title: Graphic Overview
+guides: [Metadata, Services]
 ---
 # Resource Graphic Overview ★★★
 *Geospatial data and service are largely visual by nature. Geospatial practitioners tend to be visually oriented. Browse graphics are a way of including in the metadata visual clues as to the nature and usefulness of resources.*

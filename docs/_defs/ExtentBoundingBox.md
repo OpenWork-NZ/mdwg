@@ -4,6 +4,7 @@ type: element
 section: Extents
 rank: 20
 title: Extent Bounding Box
+guides: [Metadata, Services]
 ---
 # Extent Bounding Box ★★★★
 *To quickly determine the general location of spatial features included in a cited resource it is useful that the extent information includes a minimal set of coordinate values that form a bounding box containing all the features of the resource.**

@@ -4,6 +4,7 @@ type: element
 section: Metadata Info
 rank: 10
 title: Metadata Identifier
+guides: [Metadata, Services]
 ---
 # Metadata Identifier ★★★★★
 

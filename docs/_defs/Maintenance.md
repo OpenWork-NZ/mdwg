@@ -4,6 +4,7 @@ type: section
 section: Maintenance
 rank: 50
 title: Maintenance
+guides: [Metadata, Services]
 ---
 # Resource Maintenance ★★★★
 *A great deal of geospatial data and service exist as living changing resources. It is often the timeliness that these cycles provide that make these resources so valuable.  These update and maintenance schedules are important to document and share so that those who wish to use such resources know how to arrange their work flows to best suit.*

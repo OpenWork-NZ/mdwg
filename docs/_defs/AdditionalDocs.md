@@ -4,6 +4,7 @@ type: element
 section: Data Identification
 rank: 90
 title: Additional Documentation
+guides: [Metadata, Services]
 ---
 # Additional Documentation ★★★
 *A cited resource may have any number of related documents such as articles, publications, user guides, data dictionaries that are useful in applying the resource to desired purposes. Often these are difficult to discover and manage. Capturing these in the metadata is recommended.*

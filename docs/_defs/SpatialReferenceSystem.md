@@ -4,6 +4,7 @@ type: section
 section: Reference System
 rank: 80
 title: Spatial Reference System
+guides: [Metadata, Services]
 ---
 # Spatial Reference System ★★★★
 *In order to be of repeatable use and combined with other resources, geospatial information is most always captured according to a [spatial reference system - (SRS)](https://www.w3.org/TR/sdw-bp/#dfn-coordinate-reference-system-(crs)). (Also referred to as a Coordinate Reference System - CRS.) Sharing the specifics of the reference systems used allows the resource to be compared and combined with others with precision and accuracy.*

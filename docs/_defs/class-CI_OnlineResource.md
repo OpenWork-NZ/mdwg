@@ -4,6 +4,7 @@ type: class
 section: class
 rank: 50
 title: CI_OnlineResource
+guides: [Metadata, Services]
 ---
 # class - CI_OnlineResource
 

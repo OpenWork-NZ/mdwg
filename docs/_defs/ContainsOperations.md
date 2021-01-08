@@ -4,6 +4,7 @@ rank: 40
 type: element
 section: Service Metadata
 title: Contains Operations
+guides: [Services]
 ---
 # Contains Operations ★★★★ 
 

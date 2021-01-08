@@ -4,6 +4,7 @@ type: element
 section: Metadata Info
 rank: 70
 title: Metadata Legal Constraints
+guides: [Metadata, Services]
 ---
 # Metadata Legal Constraints ★★★
 *The presence (or absence) of legal restrictions such as copyright, on a metadata record is important to document. Potential users need to be informed of rights, restrictions and responsibilities that apply to the use of such metadata.*

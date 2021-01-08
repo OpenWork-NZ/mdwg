@@ -4,6 +4,7 @@ rank: 10
 type: page
 section: Guidance
 title: Introduction
+guides: [Metadata]
 ---
 
 # Introduction

@@ -4,6 +4,7 @@ type: element
 section: Extents
 rank: 80
 title: Temporal Extents
+guides: [Metadata, Services]
 ---
 # Temporal Extents ★★★
 

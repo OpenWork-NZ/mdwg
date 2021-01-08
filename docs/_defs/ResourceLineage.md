@@ -4,6 +4,7 @@ type: section
 section: Lineage
 rank: 70
 title: Resource Lineage
+guides: [Metadata]
 ---
 # Resource Lineage ★★★★
 *Every spatial resource has a history and was built upon other work. Lineage documentation specifies a resource's source data, transformations, and input/output specifications. Such information is inherently causal, communicating the purpose, theory and meaning embodied in a resource.*

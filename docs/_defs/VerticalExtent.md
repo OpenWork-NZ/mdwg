@@ -4,6 +4,7 @@ type: element
 section: Extents
 rank: 70
 title: Vertical Extent
+guides: [Metadata, Services]
 ---
 # Vertical Extent ★★★
 

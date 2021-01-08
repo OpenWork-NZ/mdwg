@@ -4,6 +4,7 @@ type: class
 section: class
 rank: 50
 title: CI_Date
+guides: [Metadata]
 ---
 #  class - CI_Date
 To support and maintain the recording of temporal elements in the metadata it is important to provide consistency of use. The class CI_Date provides this for all temporal elements in a ISO 19115-1 metadata record.

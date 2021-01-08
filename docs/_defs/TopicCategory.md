@@ -4,6 +4,7 @@ type: element
 section: Data Identification
 rank: 45
 title: Topic Category
+guides: [Metadata, Services]
 ---
 # Topic Category ★★★★★
 *Categorisation of a resource against a standardised thematic keyword list provides a useful way to filter and discover resources.*

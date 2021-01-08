@@ -4,6 +4,7 @@ type: element
 section: Metadata Info
 rank: 20
 title: Metadata Linkage
+guides: [Metadata, Services]
 ---
 # Metadata Linkage ★★★★★
 

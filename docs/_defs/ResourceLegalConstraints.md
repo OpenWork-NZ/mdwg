@@ -4,6 +4,7 @@ type: element
 section: Constraints
 rank: 60
 title: Resource Legal Constraints
+guides: [Metadata]
 ---
 # Resource Legal Constraints ★★★★★
 

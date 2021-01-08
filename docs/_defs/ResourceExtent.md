@@ -4,6 +4,7 @@ type: section
 section: Extents
 rank: 60
 title: Resource Extent
+guides: [Metadata, Services]
 ---
 # Resource Extent ★★★★
 * To quickly determine the general location of features included in a cited spatial resource, it is useful that extent information, geographic, vertical and temporal, are documented in the metadata.*

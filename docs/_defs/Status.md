@@ -4,6 +4,7 @@ type: element
 section: Data Identification
 rank: 50
 title: Resource Status
+guides: [Metadata, Services]
 ---
 # Resource Status ★★★★
 *In order to quickly find, categorise and evaluate the fitness of a resource to our needs it is useful to include in our metadata a high-level description of the progress status of the resource our metadata describes.*

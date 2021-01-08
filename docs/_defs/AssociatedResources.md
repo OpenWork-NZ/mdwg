@@ -4,6 +4,7 @@ type: element
 section: Data Identification
 rank: 95
 title: Associated Resource
+guides: [Metadata, Services]
 ---
 # Associated Resource ★★★
 *Geospatial data and service often are part of a larger collection of resources. Geospatial practitioners need to be provided linkages to these associated resources of which a given resource is a part. There are many types of associated resources, spatial and non-spatial. Associated resources can also provide a useful path for discovery.*

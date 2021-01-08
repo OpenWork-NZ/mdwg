@@ -4,6 +4,7 @@ type: element
 section: Metadata Info
 rank: 50
 title: Metadata Default Locale
+guides: [Metadata, Services]
 ---
 # Metadata Default Locale ★★★★
 *Metadata may be captured in different languages in different locations. For users, it is important that the language of the metadata be known. MD_Metadata.defaultLocale provide a way to record the primary language of the metadata.*

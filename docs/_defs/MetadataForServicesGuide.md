@@ -4,6 +4,7 @@ rank: 20
 type: page
 section: Guidance
 title: Metadata For Services Best Practices
+guides: [Services]
 ---
 
 # ICSM ISO19115-1 Metadata for Services Best Practices

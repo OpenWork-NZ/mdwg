@@ -17,6 +17,7 @@ header-includes:
  - \setlist[itemize,8]{label=$\bullet$}
  - \setlist[itemize,9]{label=$\bullet$}
  - \renewlist{itemize}{itemize}{9}
+guides: [Metadata, Services]
 ---
 #  Distribution Info ★★★★★
 *Commonly the most important purpose of a catalogue is to provide information by which one can access the resources described.  In ISO19115-1 the distrubutionInfo package contains and provides this information describing both online and offline access methods, contacts, and instructions.*

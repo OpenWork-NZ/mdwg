@@ -4,6 +4,7 @@ type: class
 section: class
 rank: 50
 title: MD_Identification
+guides: [Metadata, Services]
 ---
 #  Class (abstract) - MD_Identification
 *When capturing information on a spatial resource, it is important to identify and categorise information as pertaining to the data or service resource and to distinguish this information from that which applies to the metadata itself. MD_Identification provide an abstract package, the properties of which can be expressed for data (MD_DataIdentification) or service SV_ServiceIdentification) resources.*

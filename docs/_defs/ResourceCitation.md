@@ -4,6 +4,7 @@ type: element
 section: Resource Citation
 rank: 30
 title: Resource Citation
+guides: [Metadata, Services]
 ---
 # Resource Citation ★★★★★
 *Some of the most basic needs of users of a resource is citation information. This basic information includes title, edition, identifier, dates, responsible parties, etc. In ISO 19115-1 we capture this information in MD_identification.citation.*

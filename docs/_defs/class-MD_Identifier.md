@@ -4,6 +4,7 @@ type: class
 section: class
 rank: 50
 title: MD_Identifier
+guides: [Metadata]
 ---
 # class - MD_Identifier
 

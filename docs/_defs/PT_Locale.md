@@ -4,6 +4,7 @@ type: class
 section: class
 rank: 50
 title: PT_Locale
+guides: [Metadata]
 ---
 #  class - PT_Locale
 

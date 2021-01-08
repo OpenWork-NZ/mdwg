@@ -4,6 +4,7 @@ type: element
 section: Metadata Info
 rank: 40
 title: Metadata Responsible Party
+guides: [Metadata, Services]
 ---
 # Metadata Responsible Party ★★★★★
 *A contact for the person responsible for a metadata record is useful to current and future users and managers of the resource and catalogue.*

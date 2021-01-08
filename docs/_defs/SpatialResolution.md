@@ -4,6 +4,7 @@ type: element
 section: Data Identification
 rank: 70
 title: Spatial Resolution
+guides: [Metadata, Services]
 ---
 # Spatial Resolution ★★★★★
 *To be useful for its given purpose geospatial data is recorded at an appropriate level of generalisation. This helps reduce overhead and can give a more useful product for the scale it is designed to be used. Too much data can be as much a problem as too little. Providing users with this information allows better judgement as to the fitness of the resource to their purpose.*

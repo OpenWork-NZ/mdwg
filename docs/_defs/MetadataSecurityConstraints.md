@@ -4,6 +4,7 @@ type: element
 section: Metadata Info
 rank: 70
 title: Metadata Security Constraints
+guides: [Metadata, Services]
 ---
 # Metadata Security Constraints ★★
 *The presence (or absence) of security restrictions on a metadata record may be important to document. Potential users need to be informed of any restrictions and responsibilities that apply to the use of such metadata.*

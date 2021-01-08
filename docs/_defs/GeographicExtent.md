@@ -4,6 +4,7 @@ type: element
 section: Extents
 rank: 10
 title: Geographic Extent
+guides: [Metadata, Services]
 ---
 # Geographic Extent ★★★★
 

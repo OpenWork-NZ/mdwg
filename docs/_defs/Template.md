@@ -4,6 +4,7 @@ rank: 30
 type: page
 section: Guidance
 title: Template
+guides: [Metadata]
 ---
 # {Element or Package Title}  ★★★★★ 
 {stars indicate level of ICSM importance / priority}

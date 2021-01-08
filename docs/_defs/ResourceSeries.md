@@ -4,6 +4,7 @@ type: element
 section: Resource Citation
 rank: 60
 title: Resource Series
+guides: [Metadata, Services]
 ---
 #  Resource Series ★★★
 *Very often, resources identified in a catalogue are part of a larger body of work. When this is the case it is useful to document such a relation in the metadata.  The resource metadata element **series** is designed for this purpose.*

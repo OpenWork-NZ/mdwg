@@ -4,6 +4,7 @@ type: class
 section: class
 rank: 50
 title: CI_Citation
+guides: [Metadata]
 ---
 # class - CI_Citation
 

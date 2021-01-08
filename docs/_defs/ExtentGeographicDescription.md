@@ -4,6 +4,7 @@ type: element
 section: Extents
 rank: 30
 title: Extent Geographic Description
+guides: [Metadata, Services]
 ---
 # Extent Geographic Description ★★★★
 *To quickly determine the general location of spatial features included in a cited resource, it is useful that the extent information contains a verbal description of the geographic extent using common (to your community) place names.*

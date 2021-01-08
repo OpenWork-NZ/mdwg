@@ -4,6 +4,7 @@ type: element
 section: Metadata Info
 rank: 30
 title: Metadata Date Info
+guides: [Metadata, Services]
 ---
 # Metadata Date Info ★★★★★
 *In order to manage metadata and harvesting mechanism as giving updates to users it is useful to include in our metadata temporal information relating to metadata creation, publication, revision, etc.*

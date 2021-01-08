@@ -4,6 +4,7 @@ type: element
 section: Data Identification
 rank: 70
 title: Spatial Representation Type
+guides: [Services]
 ---
 # Spatial Representation Type ★★★★
 *In order to quickly find, categorise and evaluate the fitness of a resource to our needs it is useful to include in our metadata a high-level description of the type or format of spatial data the resource contains.*

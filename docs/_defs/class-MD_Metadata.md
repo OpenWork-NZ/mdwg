@@ -4,6 +4,7 @@ type: section
 section: Metadata Info
 rank: 10
 title: Metadata Info
+guides: [Metadata, Services]
 ---
 # class - MD_Metadata
 

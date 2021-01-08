@@ -4,6 +4,7 @@ type: element
 section: Resource Citation
 rank: 50
 title: Resource Responsible Party
+guides: [Metadata, Services]
 ---
 # Resource Responsible Party ★★★★★
 *Contact information for the parties responsible for various aspects of a resource is useful to users and managers of the resource and improves the ability of these parties to communicate. Some of the most basic users needs of a cited resource are to know who to contact for more information for information about different aspects of the resource. In ISO 19115-1 we capture this information in MD_identification.citation.*

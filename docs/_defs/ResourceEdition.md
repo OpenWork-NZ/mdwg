@@ -4,6 +4,7 @@ type: element
 section: Resource Citation
 rank: 40
 title: Resource Edition
+guides: [Metadata, Services]
 ---
 # Resource Edition ★★★★
 *For resources that change over time, it is important to users and resource managers that the edition changes be tracked in the metadata. This informs the user if they have the particular edition they need for their purpose.*

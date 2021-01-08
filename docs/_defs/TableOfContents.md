@@ -4,6 +4,7 @@ rank: 20
 type: page
 section: Guidance
 title: Table of Contents
+guides: [Metadata]
 ---
 #  ICSM Metadata Best Practice - Table of Contents
 

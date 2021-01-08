@@ -4,6 +4,7 @@ rank: 10
 type: page
 section: Guidance
 title: Metadata Best Practice Guide
+guides: [Metadata]
 ---
 
 # ICSM ISO19115-1 Metadata Best Practice Guide

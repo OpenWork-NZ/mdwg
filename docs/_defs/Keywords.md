@@ -4,6 +4,7 @@ type: section
 section: Keywords
 rank: 40
 title: Keywords
+guides: [Metadata]
 ---
 # Keywords ★★★★★
 *Keywords are the important ideas and topics that summarise and define what your resource is about. In most search engines, these are indexed and typically normalised to resemble the base word in order to capture variations. Keywords are useful in discovering and organising resources.*

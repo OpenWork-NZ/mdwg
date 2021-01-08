@@ -4,6 +4,7 @@ type: element
 section: Data Identification
 rank: 60
 title: Resource Format
+guides: [Metadata]
 ---
 # Resource Format ★★★
 *Information about how a cited spatial resource is kept on the host system can be useful to individuals such as subject matter specialist and data managers. General audiences will be more interested in the [distribution format](./DistributionInfo)*.

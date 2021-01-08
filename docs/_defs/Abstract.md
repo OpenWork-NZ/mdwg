@@ -4,6 +4,7 @@ type: element
 section: Data Identification
 rank: 10
 title: Abstract
+guides: [Metadata, Services]
 ---
 # Abstract ★★★★★
 *In order to quickly find, categorise and evaluate the fitness of a resource to our needs it is useful to include in our metadata a human-readable narrative description of the resource. This is often the most important tool for users for first-pass evaluation.*

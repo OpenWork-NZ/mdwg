@@ -4,6 +4,7 @@ rank: 40
 type: element
 section: Service Metadata
 title: Service Standard
+guides: [Services]
 ---
 # Service Standard ★★★ 
 

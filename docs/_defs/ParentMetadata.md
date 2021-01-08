@@ -4,6 +4,7 @@ type: element
 section: Metadata Info
 rank: 90
 title: Parent Metadata
+guides: [Metadata]
 ---
 #  Parent Metadata ★★
 *When a metadata record inherits information from a parent record, it is important to capture sufficient information so that this parent record can be found an the hierarchy preserved.*

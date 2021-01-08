@@ -4,6 +4,7 @@ type: class
 section: class
 rank: 50
 title: MD_Scope
+guides: [Metadata]
 ---
 #  Class MD_Scope
 

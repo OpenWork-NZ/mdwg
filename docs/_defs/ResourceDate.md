@@ -3,7 +3,8 @@ layout: page
 type: element
 section: Resource Citation
 rank: 30
-title: Resource Reference Date 
+title: Resource Reference Date
+guides: [Metadata, Services]
 ---
 # Resource Reference Date ★★★★★
 *To manage resource and notification systems such as giving updates to users it is useful to include in our metadata temporal information relating to resource creation, publication, revision, etc.*
