@@ -5,6 +5,8 @@ type: page
 section: Guidance
 title: Table of Contents
 guides: [Metadata]
+save_guide: Metadata
+header: ICSM ISO19115-1 Metadata Best Practice Guide
 ---
 #  ICSM Metadata Best Practice - Table of Contents
 

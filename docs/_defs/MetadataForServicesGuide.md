@@ -5,6 +5,8 @@ type: page
 section: Guidance
 title: Metadata For Services Best Practices
 guides: [Services]
+save_guide: Services
+header: ICSM ISO19115-1 Metadata for Services Best Practices
 ---
 
 # ICSM ISO19115-1 Metadata for Services Best Practices

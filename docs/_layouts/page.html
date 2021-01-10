@@ -71,7 +71,8 @@
   </header>
 
   <aside>
-    {% for guide in page.guides %}<details {% if page.guides|size == 1 %}open{% endif %}>
+    {% for guide in page.guides %}
+    <details {% if page.guides|size == 1 %}open{% endif %} id="{{guide|slugify}}">
       <summary>{{ guide }}</summary>
       {% if page.section != "Guidance" %}
         <h2>Guidance</h2>
@@ -107,5 +108,14 @@
   <main>
     {{ content }}
   </main>
+
+  <script>
+    var _ = localStorage;
+    {% if page.save_guide %}_.guide = "{{ page.saved_guide|slugify }}";{% endif %}
+    {% if page.header %}_.title = "{{ page.header }}";{% endif %}
+
+    if (_.title) document.querySelector("header h1 a").innerText = _.title;
+    if (_.guide) document.getElementById(_.guide).open = true;
+  </script>
 </body>
 </html>
