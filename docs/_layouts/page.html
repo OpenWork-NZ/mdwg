@@ -71,7 +71,7 @@
   </header>
 
   <aside>
-    {% for guide in page.guides %}<details>
+    {% for guide in page.guides %}<details {% if page.guides|size == 1 %}open{% endif %}>
       <summary>{{ guide }}</summary>
       {% if page.section != "Guidance" %}
         <h2>Guidance</h2>
