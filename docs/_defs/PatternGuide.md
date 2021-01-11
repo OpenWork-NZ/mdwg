@@ -50,6 +50,18 @@ This section captures the thinking of the MDWG behind the use of this element. T
 
 Outstanding issues are also captured in this section. This is a living document and we only get to the level of agreement that we can.  Capturing these outstanding differences and lack of understanding, allows us to know where to start on the next bit of work.
 
+#### Metadata
+Every definition file starts with a metadata section, surrounded by lines containing triple dashes (`---`). The fields in this section are:
+
+* `layout: page` - Tells the static site generator ([Jekyll](https://jekyllrb.com/)) how to render the definition to a webpage.
+* `rank` - Adjusts the order of pages in the sidebar.
+* `type` - Navigation to pages of type `section` & `class` are present on all pages.
+* `section` - Navigation to pages in the same section (unless they're of `type: section`) is generated. Navigation to pages in `section: Guide` is present on all pages.
+* `title` - Sets the text for any links to this page, the browser tab, and any bookmarks to it.
+* `guides` - lists all guides of which this page is a part. Collapsible navigation to other pages in that section, as described above, is generated. The value should be surrounded by square brackets (`[` & `]`) & be comma (`,`) seperated.
+* `save_guide` - Runs some JavaScript to future MDWG pages to autoexpand the navigation for a particular guide.
+* `header` - Replaces the header text on this MDWG page, and any future ones the reader visits until they encounter another page with this set.
+
 #### ICSM Best Practice Recommendations
 
 Finally, we come to the recommendations. These are statements capture the what, why, who, when and how MDWG recommend this element be used. They provide an in-context summary of the MDWG guidance and the reasoning behind it.
