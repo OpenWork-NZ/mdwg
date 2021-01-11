@@ -4,7 +4,7 @@ rank: 10
 type: page
 section: Guidance
 title: Metadata Best Practice Guide
-guides: [Metadata]
+guides: [Metadata, Services]
 save_guide: Metadata
 header: ICSM ISO19115-1 Metadata Best Practice Guide
 ---
