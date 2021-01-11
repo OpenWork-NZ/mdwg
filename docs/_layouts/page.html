@@ -67,7 +67,7 @@
 <body>
   <header>
   <h1><a href="https://www.icsm.gov.au/"><img src="/mdwg/images/logo.png" alt="ICSM" /></a>
-    <a href="/mdwg/">ISO19115-1 Metadata Best Practice Guide</a></h1>
+    <a href="/mdwg/" id="title">ISO19115-1 Metadata Best Practice Guide</a></h1>
   </header>
 
   <aside>
@@ -114,7 +114,7 @@
     {% if page.save_guide %}_.guide = "{{ page.saved_guide|slugify }}";{% endif %}
     {% if page.header %}_.title = "{{ page.header }}";{% endif %}
 
-    if (_.title) document.querySelector("header h1 a").innerText = _.title;
+    if (_.title) document.getElementById("title").innerText = _.title;
     if (_.guide) document.getElementById(_.guide).open = true;
   </script>
 </body>
