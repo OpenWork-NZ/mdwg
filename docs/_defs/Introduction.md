@@ -2,7 +2,7 @@
 layout: page
 rank: 10
 type: section
-section: Guidance
+section: Introduction
 title: Metadata Best Practice Guide
 guides: [Metadata, Services]
 save_guide: Metadata
