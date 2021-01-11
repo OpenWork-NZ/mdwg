@@ -112,7 +112,7 @@
 
   <script>
     var _ = localStorage;
-    {% if page.save_guide %}_.guide = "{{ page.saved_guide|slugify }}";{% endif %}
+    {% if page.save_guide %}_.guide = "{{ page.save_guide|slugify }}";{% endif %}
     {% if page.header %}_.title = "{{ page.header }}";{% endif %}
 
     if (_.title) document.getElementById("title").innerText = _.title;
