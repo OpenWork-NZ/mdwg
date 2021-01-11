@@ -1,7 +1,7 @@
 ---
 layout: page
 rank: 10
-type: page
+type: section
 section: Guidance
 title: Metadata Best Practice Guide
 guides: [Metadata, Services]
