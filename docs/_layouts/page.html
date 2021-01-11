@@ -98,12 +98,12 @@
       {% endif %}{% endfor %}</ul>
     </details>{% endfor %}
 
-    {% if page.section != "class" %}<details>
+    <details>
       <summary>Classes</summary>
       <ul>{% for def in defs %}{% if def.type == "class" %}
         <li><a href="{{ def.url | relative_url }}">{{ def.title }}</a></li>
       {% endif %}{% endfor %}</ul>
-    </details>{% endif %}
+    </details>
   </aside>
 
   <main>
