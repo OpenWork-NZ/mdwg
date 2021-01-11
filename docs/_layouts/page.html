@@ -74,7 +74,7 @@
   <aside>
     {% for guide in page.guides %}
     <details id="{{guide|slugify}}">
-      <summary>{{ guide }}</summary>
+      <summary>{% if guide == "Metadata" %}Datasets{% else %}{{ guide }}{% endif %} Metadata</summary>
       {% if page.section != "Guidance" %}
         <h2>Guidance</h2>
         {% assign defs = site.defs|sort:"rank" %}
