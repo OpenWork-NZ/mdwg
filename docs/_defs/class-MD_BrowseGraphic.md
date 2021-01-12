@@ -4,7 +4,7 @@ type: class
 section: class
 rank: 50
 title: MD_BrowseGraphic
-guides: [Metadata]
+guides: [Metadata, Services]
 ---
 # Class - MD_BrowseGraphic
 

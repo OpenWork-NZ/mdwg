@@ -4,7 +4,7 @@ type: class
 section: class
 rank: 50
 title: MD_SecurityConstraints
-guides: [Metadata]
+guides: [Metadata, Services]
 ---
 #  Class - MD_SecurityConstraints
 When constraints information *([MD_Constraints](./class-MD_Constraints))* concern security issues they should be captured using the class *MD_SecurityConstraints*.
