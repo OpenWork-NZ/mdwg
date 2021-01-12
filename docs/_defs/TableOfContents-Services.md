@@ -1,11 +1,11 @@
 ---
 layout: page
-rank: 20
-type: page
-section: Sections
+rank: 5
+type: section
+section: Table of Contents
 title: Table of Contents - Services
 guides: [Services]
-save_guide: Metadata
+save_guide: Services
 header: ICSM ISO19115-1 Metadata Best Practice Guide
 ---
 #  ICSM Metadata Services Best Practice - Table of Contents
