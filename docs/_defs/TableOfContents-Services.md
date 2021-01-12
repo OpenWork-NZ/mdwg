@@ -22,18 +22,21 @@ Elements with specific guidance for Services are in **_Bold Italic_**
 - [Template](./Template)
 
 ### Metadata for Metadata
-- [Metadata Info](./class-MD_Metadata )  
+- Package - [Metadata Info](./class-MD_Metadata )  
   - [Metadata Identifier](./MetadataIdentifier)  *Mandatory.*
   - [Metadata Linkage](./MetadataLinkage)  *Highly Recommended.*
   - [Metadata Date](./MetadataDate)  *Highly Recommended.*
   - [Metadata Responsible Party](./MetadataContact)  *Mandatory.*
   - [Metadata Default Locale](./MetadataLocale)  *Highly Recommended.*
+  - **_[MetadataScope](./MetadataScope)_** *Mandatory.* For Service metadata, Resource Scope = *Service*
   - [Metadata Legal Constraints](./MetadataLegalConstraints) *Recommended.*
   - [Metadata Security Constraints](./MetadataSecurityConstraints) *Recommended.*
   - [Metadata Standard](./MetadataStandard) *Highly Recommended.*
-  - **_[MetadataScope](./MetadataScope)_** *Mandatory.* For Service metadata, Resource Scope = *Service*
+
+  
 ### Metadata for Service Resources
 - Package - [Service Identification Information](./ServiceIdentification)
+    - [Resource Default locale](./ResourceLocale)
     - [Abstract](./Abstract)  *Mandatory.*
     - [Purpose](./Purpose)  *Highly Recommended.*
     - [Status](./Status)  *Highly Recommended.*
@@ -65,40 +68,43 @@ Elements with specific guidance for Services are in **_Bold Italic_**
       - repeatability  *Mandatory*
   - [Associated Resource](./AssociatedResources)   class - MD_AssociatedResource
   - [BrowseGraphic](./BrowseGraphic)  Class - MD_BrowseGraphic  - Perhaps a logo for the service or oganisation 
-  - **Package - CI_Citation [Service Citation](./ResourceCitation) Sub-elements** 
-    - [Title](./ResourceTitle) *Mandatory.*
-    - [Identifier (uri)](./ResourceIdentifier) *Highly Recommended.*
-    - [Date (creation)](./ResourceDate) *Highly Recommended.*
-    - [Date (revision)](./ResourceDate) *Highly Recommended.* If applicable
-    - [Date (issued)](./ResourceDate) *Highly Recommended.*
-    - [Edition](./ResourceEdition) *Recommended.* If applicable
-    - [Series](./ResourceSeries) *Recommended.* If applicable
-    - [Cited Responsible party (author, creator, contributor, publisher)](./ResourceResponsibleParty) *Highly Recommended.*
-    - **_[OnlineResource](./class-CI_OnlineResource)_**  Should provide the landing page for the service
-  - **_Package - [Keywords](./Keywords)_** *Mandatory.* Package - MD_Keywords  including:  
-    - **Service Keywords** *Mandatory.* for service metadata
-    - ABS Field of Research
-    - Other keywords
-  - Package - [Maintenance](./Maintenance) -  MD_MaintenanceInformation   
-    - Frequency of update - of the service
-    - scope for maintenance
-  - Package - [Resource Constraints](./class-MD_Constraints)   Consider what "Service Constraints" guidance is needed e.g.:
-    - Use Limitations
-    - Legal and Reference for Legal
-    - Security and Reference for Security
-    - Releasability
-    - Other Constraints
-  - Package -[Extents](./ResourceExtent)  Package -  EX_Extent
-    - [GeoExtent](./GeographicExtent) class - EX_GeographicExtent
-       - [geographic description](./ExtentGeographicDescription)
-       - [bounding box](./ExtentBoundingBox)
-    - [vertical extent](./VerticalExtent) class - EX_VerticalExtent
-    - [temporal extent](./TemporalExtents) class - EX_TemporalExtent
-  - Package - [ReferenceSystemInfo](./SpatialReferenceSystem)   Package - MD_ReferenceSystem
-  - **_Package -[Distribution Information](./DistributionInfo)_**   Package - MD_Distribution - Option for service endpoint location
-    - Format - What the Online resource provides e.g. API, Webmap
-    - Distributor - could contain information about who hosts the service
-    - Online Resource - *Highly Recommended* when using  *distributionInfo* for a service. The URL of the service
+- Package - [Service Citation](./ResourceCitation) 
+  - [Title](./ResourceTitle) *Mandatory.*
+  - [Resource Identifier (uri)](./ResourceIdentifier) *Highly Recommended.*
+  - [Resource Date](./ResourceDate) *Highly Recommended.*
+  - [Resource Edition](./ResourceEdition) *Recommended.* If applicable
+  - [Series](./ResourceSeries) *Recommended.* If applicable
+  - [Cited Responsible party (author, creator, contributor, publisher)](./ResourceResponsibleParty) *Highly Recommended.*
+  - **_[OnlineResource](./class-CI_OnlineResource)_**  Should provide the landing page for the service
+- **_Package - [Keywords](./Keywords)_** *Mandatory.* Package - MD_Keywords  including:  
+  - **Service Keywords** *Mandatory.* for service metadata
+  - ABS Field of Research
+  - Other keywords
+- Package - [Maintenance](./Maintenance) -  MD_MaintenanceInformation   
+  - Frequency of update - of the service
+  - scope for maintenance
+  - Package - Resource Constraint Information
+	- [Resource Constraints](./ResourceOtherConstraints) - Includes:
+	  - UseLimitations
+	  - Releasibility
+	  - OtherConstraints
+	- [Resource Legal Constraints](./ResourceLegalConstraints) - Includes
+	  - Legal constraints
+	  - Reference for legal
+	- [Resource Security Constraints](./ResourceSecurityConstraints) Includes
+	  - Security constraints
+	  - Reference for security
+- Package - [Extents](./ResourceExtent)  
+  - [GeoExtent](./GeographicExtent)
+	- [Extent Geographic Description](./ExtentGeographicDescription)
+	- [Extent Bounding Box](./ExtentBoundingBox)
+  - [Extent Vertical](./VerticalExtent)
+  - [Extent Temporal](./TemporalExtents) 
+- Package - [ReferenceSystemInfo](./SpatialReferenceSystem)   Package - MD_ReferenceSystem
+- **_Package -[Distribution Information](./DistributionInfo)_**   Package - MD_Distribution - Option for service endpoint location
+  - Format - What the Online resource provides e.g. API, Webmap
+  - Distributor - could contain information about who hosts the service
+  - Online Resource - *Highly Recommended* when using  *distributionInfo* for a service. The URL of the service
 
 ### Classes 
 - [CI_Citation](./class-CI_Citation)

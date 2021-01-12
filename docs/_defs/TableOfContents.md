@@ -15,24 +15,25 @@ header: ICSM ISO19115-1 Metadata Best Practice Guide
 - [Pattern guide](./PatternGuide)
 - [Template](./Template)
 
-### Metadata Info
-- [Class - MD_Metadata](./class-MD_Metadata)
-- [Metadata Identifier](./MetadataIdentifier)
-- [Metadata Linkage](./MetadataLinkage)
-- [Metadata Date](./MetadataDate)
-- [Metadata Responsible Party](./MetadataContact)
-- [Metadata Default Locale](./MetadataLocale)
-- [Resource Scope](./MetadataScope)
-- [Metadata Legal Constraints](./MetadataLegalConstraints) - Includes:
-  - Legal constraints
-  - Reference for legal
-- [Metadata Security Constraints](./MetadataSecurityConstraints) - Includes:
-  - Security constraints
-  - Reference for security
-- [Parent Metadata](./ParentMetadata)
+### Metadata for Metadata
+- Package - [Metadata Info](./class-MD_Metadata)
+  - [Metadata Identifier](./MetadataIdentifier)
+  - [Metadata Linkage](./MetadataLinkage)
+  - [Metadata Date](./MetadataDate)
+  - [Metadata Responsible Party](./MetadataContact)
+  - [Metadata Default Locale](./MetadataLocale)
+  - [Resource Scope](./MetadataScope)
+  - [Metadata Legal Constraints](./MetadataLegalConstraints) - Includes:
+	- Legal constraints
+	- Reference for legal
+  - [Metadata Security Constraints](./MetadataSecurityConstraints) - Includes:
+	- Security constraints
+	- Reference for security
+  - [Metadata Standard](./MetadataStandard) 
+  - [Parent Metadata](./ParentMetadata)
 
-### Data Resource Metadata
-- Package [Identification Information](./class-MD_DataIdentification)
+### Metadata for Data Resource 
+- Package - [Identification Information](./class-MD_DataIdentification)
   - [Resource Default locale](./ResourceLocale)
   - [Abstract](./Abstract)
   - [Purpose](./Purpose)
@@ -52,14 +53,14 @@ header: ICSM ISO19115-1 Metadata Best Practice Guide
   - [Resource Edition](./ResourceEdition)
   - [Series](./ResourceSeries)
   - [Resource Cited Responsible Party](./ResourceResponsibleParty)
-- Package [Keywords](./Keywords) - Including:
+- Package - [Keywords](./Keywords) - Including:
 	- ABS Field of Researce
 	- AGIFT Keyword
 	- Other keywords
-- Package [Maintenance](./Maintenance) - Includes:
+- Package - [Maintenance](./Maintenance) - Includes:
   - Frequency of Updates
   - Scope for Maintenance
-- Package Resource Constraint Information
+- Package - Resource Constraint Information
   - [Resource Constraints](./ResourceOtherConstraints) - Includes:
 	- UseLimitations
 	- Releasibility
@@ -76,13 +77,13 @@ header: ICSM ISO19115-1 Metadata Best Practice Guide
 	- [Extent Bounding Box](./ExtentBoundingBox)
   - [Extent Vertical](./VerticalExtent)
   - [Extent Temporal](./TemporalExtents) 
-- Package Lineage
+- Package - Lineage
   - [Resource Lineage](./ResourceLineage) - Includes:
     - Statement
     - Source
-- Package ReferenceSystemInfo
+- Package - ReferenceSystemInfo
   - [Spatial Reference System](./SpatialReferenceSystem)
-- Package Distribution Information
+- Package - Distribution Information
   - [DistributionInfo](./DistributionInfo) Includes
     - Format
     - Distributor
