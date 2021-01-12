@@ -73,7 +73,7 @@ New elements specific to Service Metadata are highlighted in **Bold**
 
 Elements with specific guidance for Services are in **_Bold Italic_**
 
-- **Metadata for Metadata**
+- **Metadata Info**
   - [Metadata for Metadata](./class-MD_Metadata )  
     - [Metadata Identifier](./MetadataIdentifier)  *Mandatory.*
     - [Metadata Linkage](./MetadataLinkage)  *Highly Recommended.*
@@ -85,7 +85,7 @@ Elements with specific guidance for Services are in **_Bold Italic_**
     - [Metadata Standard](./MetadataStandard) *Highly Recommended.*
     - **_[MetadataScope](./MetadataScope)_** *Mandatory.* For Service metadata, Resource Scope = *Service*
 - **General Identification Metadata Applicable to Services**
-  - [Metadata for Resources](./class-MD_Identification)    
+  - [Metadata for Service Resources](./SV_ServiceIdentification)    
     - [Abstract](./Abstract)  *Mandatory.*
     - [Purpose](./Purpose)  *Highly Recommended.*
     - [Status](./Status)  *Highly Recommended.*
