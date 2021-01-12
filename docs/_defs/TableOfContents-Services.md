@@ -1,8 +1,8 @@
 ---
 layout: page
 rank: 5
-type: page
-section: section
+type: section
+section: Table of Contents
 title: Table of Contents - Services
 guides: [Services]
 save_guide: Services
