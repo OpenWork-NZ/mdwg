@@ -1,8 +1,8 @@
 ---
 layout: page
-rank: 20
-type: page
-section: Guidance
+rank: 5
+type: section
+section: Table of Contents
 title: Table of Contents
 guides: [Metadata]
 save_guide: Metadata
