@@ -9,6 +9,20 @@ guides: [Metadata]
 # Resource Lineage ★★★★
 *Every spatial resource has a history and was built upon other work. Lineage documentation specifies a resource's source data, transformations, and input/output specifications. Such information is inherently causal, communicating the purpose, theory and meaning embodied in a resource.*
 
+| | |
+| --- | --- |
+| **Element Name** | *citation* |
+| **Parent** | *[MD_Metadata.identificationInfo>MD_Identification](./class-MD_Identification)* |
+| **Class/Type** | *CI_Citation* |
+| **Governance** | *Common ICSM, Agency, Domain* |
+| **Purpose** | *Discovery, Identification* |
+| **Audience** | machine resource - ⭑ ⭑ ⭑ |
+| | general - ⭑ ⭑ ⭑ ⭑ ⭑ |
+| | resource manager - ⭑ ⭑ ⭑ ⭑ |
+| | specialist - ⭑ ⭑ ⭑ |
+| **Metadata type** | *descriptive* |
+| **ICSM Level of Agreement** | ⭑ ⭑ ⭑ ⭑ |
+
 - **Path** -  *MD_Metadata.resourceLineage>LI_Lineage*
 - **Governance** -  *Agency, Domain*
 - **Purpose -** *Resource use*

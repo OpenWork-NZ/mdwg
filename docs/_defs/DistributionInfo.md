@@ -22,6 +22,20 @@ guides: [Metadata, Services]
 #  Distribution Info ★★★★★
 *Commonly the most important purpose of a catalogue is to provide information by which one can access the resources described.  In ISO19115-1 the distrubutionInfo package contains and provides this information describing both online and offline access methods, contacts, and instructions.*
 
+| | |
+| --- | --- |
+| **Element Name** | *citation* |
+| **Parent** | *[MD_Metadata.identificationInfo>MD_Identification](./class-MD_Identification)* |
+| **Class/Type** | *CI_Citation* |
+| **Governance** | *Common ICSM, Agency, Domain* |
+| **Purpose** | *Discovery, Identification* |
+| **Audience** | machine resource - ⭑ ⭑ ⭑ |
+| | general - ⭑ ⭑ ⭑ ⭑ ⭑ |
+| | resource manager - ⭑ ⭑ ⭑ ⭑ |
+| | specialist - ⭑ ⭑ ⭑ |
+| **Metadata type** | *descriptive* |
+| **ICSM Level of Agreement** | ⭑ ⭑ ⭑ ⭑ |
+
 - **Path** -  *MD_Metadata.distributionInfo*
 - **Governance** -  *Agency*
 - **Purpose -** *Resource access*

@@ -15,7 +15,7 @@ header: ICSM ISO19115-1 Metadata Best Practice Guide
 - [Pattern guide](./PatternGuide)
 - [Template](./Template)
 
-### Metadata for Metadata
+### Metadata Info
 - [Class - MD_Metadata](./class-MD_Metadata)
 - [Metadata Identifier](./MetadataIdentifier)
 - [Metadata Linkage](./MetadataLinkage)
@@ -31,7 +31,7 @@ header: ICSM ISO19115-1 Metadata Best Practice Guide
   - Reference for security
 - [Parent Metadata](./ParentMetadata)
 
-### Metadata for Data Resources
+### Data Resource Metadata
 - Package [Identification Information](./class-MD_DataIdentification)
   - [Resource Default locale](./ResourceLocale)
   - [Abstract](./Abstract)
@@ -45,37 +45,37 @@ header: ICSM ISO19115-1 Metadata Best Practice Guide
   - [AssociatedResource](./AssociatedResources)
   - [Format](./ResourceFormat)
   - [Browse Graphic](./BrowseGraphic)
-  - Package - [Resource  Citation](./ResourceCitation)
-    - [Resource Title](./ResourceTitle)
-    - [Resource Identifier](./ResourceIdentifier)
-    - [Resource Date](./ResourceDate)
-    - [Resource Edition](./ResourceEdition)
-    - [Series](./ResourceSeries)
-    - [Resource Cited Responsible Party](./ResourceResponsibleParty)
-  - Package [Keywords](./Keywords) - Including:
-      - ABS Field of Researce
-      - AGIFT Keyword
-      - Other keywords
-  - Package [Maintenance](./Maintenance) - Includes:
-    - Frequency of Updates
-    - Scope for Maintenance
-  - Package Resource Constraint Information
-    - [Resource Constraints](./ResourceOtherConstraints) - Includes:
-      - UseLimitations
-      - Releasibility
-      - OtherConstraints
-    - [Resource Legal Constraints](./ResourceLegalConstraints) - Includes
-      - Legal constraints
-      - Reference for legal
-    - [Resource Security Constraints](./ResourceSecurityConstraints) Includes
-      - Security constraints
-      - Reference for security
-  - Package - [Extent](./ResourceExtent)
-    - [GeoExtent](./GeographicExtent)
-      - [Extent Geographic Description](./ExtentGeographicDescription)
-      - [Extent Bounding Box](./ExtentBoundingBox)
-    - [Extent Vertical](./VerticalExtent)
-    - [Extent Temporal](./TemporalExtents) 
+- Package - [Resource  Citation](./ResourceCitation)
+  - [Resource Title](./ResourceTitle)
+  - [Resource Identifier](./ResourceIdentifier)
+  - [Resource Date](./ResourceDate)
+  - [Resource Edition](./ResourceEdition)
+  - [Series](./ResourceSeries)
+  - [Resource Cited Responsible Party](./ResourceResponsibleParty)
+- Package [Keywords](./Keywords) - Including:
+	- ABS Field of Researce
+	- AGIFT Keyword
+	- Other keywords
+- Package [Maintenance](./Maintenance) - Includes:
+  - Frequency of Updates
+  - Scope for Maintenance
+- Package Resource Constraint Information
+  - [Resource Constraints](./ResourceOtherConstraints) - Includes:
+	- UseLimitations
+	- Releasibility
+	- OtherConstraints
+  - [Resource Legal Constraints](./ResourceLegalConstraints) - Includes
+	- Legal constraints
+	- Reference for legal
+  - [Resource Security Constraints](./ResourceSecurityConstraints) Includes
+	- Security constraints
+	- Reference for security
+- Package - [Extent](./ResourceExtent)
+  - [GeoExtent](./GeographicExtent)
+	- [Extent Geographic Description](./ExtentGeographicDescription)
+	- [Extent Bounding Box](./ExtentBoundingBox)
+  - [Extent Vertical](./VerticalExtent)
+  - [Extent Temporal](./TemporalExtents) 
 - Package Lineage
   - [Resource Lineage](./ResourceLineage) - Includes:
     - Statement

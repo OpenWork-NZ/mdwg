@@ -9,6 +9,20 @@ guides: [Metadata, Services]
 # Resource Maintenance ★★★★
 *A great deal of geospatial data and service exist as living changing resources. It is often the timeliness that these cycles provide that make these resources so valuable.  These update and maintenance schedules are important to document and share so that those who wish to use such resources know how to arrange their work flows to best suit.*
 
+| | |
+| --- | --- |
+| **Element Name** | *citation* |
+| **Parent** | *[MD_Metadata.identificationInfo>MD_Identification](./class-MD_Identification)* |
+| **Class/Type** | *CI_Citation* |
+| **Governance** | *Common ICSM, Agency, Domain* |
+| **Purpose** | *Discovery, Identification* |
+| **Audience** | machine resource - ⭑ ⭑ ⭑ |
+| | general - ⭑ ⭑ ⭑ ⭑ ⭑ |
+| | resource manager - ⭑ ⭑ ⭑ ⭑ |
+| | specialist - ⭑ ⭑ ⭑ |
+| **Metadata type** | *descriptive* |
+| **ICSM Level of Agreement** | ⭑ ⭑ ⭑ ⭑ |
+
 - **Path** -  *MD_Metadata.identificationInfo>MD_DataIdentification.resourceMaintenance*
 - **Governance** -  *Agency*
 - **Purpose -** *Resource use*

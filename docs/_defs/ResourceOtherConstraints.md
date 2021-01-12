@@ -4,7 +4,7 @@ type: section
 section: Constraints
 rank: 60
 title: Resource Constraints
-guides: [Metadata]
+guides: [Metadata, Services]
 ---
 # Resource Other Constraints ★★★★
 *The presence (or at times absence) of constraints (other than those of [legal](./ResourceLegalConstraints) of [security](./ResourceSecurityConstraints) nature) on a spatial resource is important to document. Potential users need to be informed of rights, restrictions and responsibilities that apply to the use of such resources. These include *use limitations* and *releasability* constraint information.*
