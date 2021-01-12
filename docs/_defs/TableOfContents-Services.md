@@ -35,7 +35,7 @@ Elements with specific guidance for Services are in **_Bold Italic_**
 
   
 ### Metadata for Service Resources
-- Package - [Service Identification Information](./ServiceIdentification)
+- Package - [Resource Identification](./ServiceIdentification)
     - [Resource Default locale](./ResourceLocale)
     - [Abstract](./Abstract)  *Mandatory.*
     - [Purpose](./Purpose)  *Highly Recommended.*

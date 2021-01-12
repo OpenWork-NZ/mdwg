@@ -1,8 +1,8 @@
 ---
 layout: page
-rank: 40
+rank: 87
 type: element
-section: Service Metadata
+section: Resource Identification
 title: Coupled Resource
 guides: [Services]
 ---

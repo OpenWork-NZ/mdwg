@@ -22,7 +22,7 @@ header: ICSM ISO19115-1 Metadata Best Practice Guide
   - [Metadata Date](./MetadataDate)
   - [Metadata Responsible Party](./MetadataContact)
   - [Metadata Default Locale](./MetadataLocale)
-  - [Resource Scope](./MetadataScope)
+  - [Metadata Scope](./MetadataScope)
   - [Metadata Legal Constraints](./MetadataLegalConstraints) - Includes:
 	- Legal constraints
 	- Reference for legal
@@ -33,7 +33,7 @@ header: ICSM ISO19115-1 Metadata Best Practice Guide
   - [Parent Metadata](./ParentMetadata)
 
 ### Metadata for Data Resource 
-- Package - [Identification Information](./class-MD_DataIdentification)
+- Package - [Resource Identification](./DataIdentification)
   - [Resource Default locale](./ResourceLocale)
   - [Abstract](./Abstract)
   - [Purpose](./Purpose)
@@ -41,7 +41,7 @@ header: ICSM ISO19115-1 Metadata Best Practice Guide
   - [Topic Category](./TopicCategory)
   - [Spatial Resolution](./SpatialResolution)
   - [Resource Point of Contact](./ResourcePointOfContact)
-  - [Additional docs](./AdditionalDocs)
+  - [Additional Documentation](./AdditionalDocs)
   - [Spatial Representation Type](./SpatialRepresentationType)
   - [AssociatedResource](./AssociatedResources)
   - [Format](./ResourceFormat)

@@ -1,8 +1,8 @@
 ---
 layout: page
 type: element
-section: Data Identification
-rank: 50
+section: Resource Identification
+rank: 30
 title: Resource Status
 guides: [Metadata, Services]
 ---

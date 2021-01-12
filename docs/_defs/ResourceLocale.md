@@ -1,8 +1,8 @@
 ---
 layout: page
 type: element
-section: Data Identification
-rank: 40
+section: Resource Identification
+rank: 5
 title: Resource Default Locale
 guides: [Metadata]
 ---

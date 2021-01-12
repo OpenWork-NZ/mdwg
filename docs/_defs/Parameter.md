@@ -1,8 +1,8 @@
 ---
 layout: page
-rank: 40
+rank: 89
 type: element
-section: Service Metadata
+section: Resource Identification
 title: Parameter
 guides: [Services]
 ---

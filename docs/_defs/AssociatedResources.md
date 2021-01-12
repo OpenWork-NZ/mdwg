@@ -1,8 +1,8 @@
 ---
 layout: page
 type: element
-section: Data Identification
-rank: 95
+section: Resource Identification
+rank: 85
 title: Associated Resource
 guides: [Metadata, Services]
 ---

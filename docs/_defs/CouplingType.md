@@ -1,6 +1,6 @@
 ---
 layout: page
-rank: 40
+rank: 86
 type: element
 section: Service Metadata
 title: Coupling Type

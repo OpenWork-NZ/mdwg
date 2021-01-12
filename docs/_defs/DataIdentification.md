@@ -1,23 +1,27 @@
 ---
 layout: page
 type: section
-section: Data Identification
+section: Resource Identification
 rank: 20
 title: Data Identification
+guides: [Metadata]
 ---
 #  Data Identification ★★★★
 *When capturing information on a spatial resource, it is important to identify and categorise information as pertaining to the data resource and to distinguish these information from that which applies to the metadata itself or service resources. MD_DataIdentification extends the abstract class MD_Identification to document a spatial data resource.*
 
-- **Path** -  *MD_Metadata.identificationInfo>MD_DataIdentification*
-- **Governance** -  *ISO*
-- **Purpose -** *Discovery, Use*
-- **Audience -** 
-- machine resource - ⭑ ⭑ ⭑ ⭑
-- general - ⭑ ⭑
-- resource manager - ⭑ ⭑ ⭑ ⭑
-- specialist - ⭑ ⭑
-- **Metadata Type -** *structural*
-- *ICSM Level of Agreement* - ⭑ ⭑
+|  |  |
+| --- | --- |
+| **Element Name** | *MD_DataIdentification* |
+| **Parent** |  *[MD_Metadata.identificationInfo](./class-MD_Identification)* |
+| **Class/Type** | *class-MD_DataIdentification* |
+| **Governance** |  *Common ICSM* |
+| **Purpose** | *Discovery, Use* |
+| **Audience** | machine resource - ⭑ ⭑ ⭑ ⭑ |
+|  | general - ⭑ ⭑ ⭑ |
+|  | resource manager - ⭑ ⭑ ⭑ ⭑ |
+|  | specialist - ⭑ ⭑ ⭑ |
+| **Metadata type** | *structural* |
+| **ICSM Level of Agreement** | ⭑ ⭑ |
 
 ## Definition -
 
@@ -35,7 +39,15 @@ At least one [1..\*] [MD_Identification](http://wiki.esipfed.org/index.php/MD_Id
 It is a child of 
 - MD_Metadata.identificationInfo
 
-#### Recommended Sub-Elements 
+## Discussion
+
+Identification information about a resource is of high importance to document as this information strongly impacts on the ability of a user to asses the resource fitness to use. MD_DataIdentification instantiates the abstract class [MD_Identification](./class-MD_Identification)  for use with data resources.
+
+## ICSM Best Practice Recommendations
+
+Therefore - to clearly understand what resource a metadata record is describing, there should be one and only one [1..1] MD_Identification package in a metadata record. For dataset metadata, this must be expressed as an MD_DataIdentification instance. The Data Indentifaction package contains several sub-packages and sub-elements. To ease the common use of such metadata, it is important that the use of these sub-packages and sub-elements be standardised.
+
+### Recommended Sub-Elements 
 
 The following provides additional guidance to [MD_Identification](./class-MD_Identification) element recommendations.
 
@@ -67,14 +79,6 @@ In addition to all the attributes of [MD_Identification](./class-MD_Identificati
 - **[otherLocale -](./ResourceLocale)** *(class - [PT_Locale](./PT_Locale))* [0..\*] 
 - **environmentDescription -** *(type - charStr)* [0..1] description of the resource in the producer's processing environment, including items such as the software, the computer operating system, file name, and the dataset size
 - **supplementalInformation -** *(type - charStr)*[0..1] any other descriptive information about the resource
-
-## Discussion
-
-Identification information about a resource is of high importance to document as this information strongly impacts on the ability of a user to asses the resource fitness to use. MD_DataIdentification instantiates the abstract class [MD_Identification](./class-MD_Identification)  for use with data resources.
-
-## ICSM Best Practice Recommendations
-
-Therefore - to clearly understand what resource a metadata record is describing, there should be one and only one [1..1] MD_Identification package in a metadata record. For dataset metadata, this must be expressed as an MD_DataIdentification instance. The Data Indentifaction package contains several sub-packages and sub-elements. To ease the common use of such metadata, it is important that the use of these sub-packages and sub-elements be standardised.
 
 ## Related Classes
 

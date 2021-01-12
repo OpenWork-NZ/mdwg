@@ -1,8 +1,8 @@
 ---
 layout: page
 type: element
-section: Data Identification
-rank: 60
+section: Resource Identification
+rank: 90
 title: Resource Format
 guides: [Metadata]
 ---
