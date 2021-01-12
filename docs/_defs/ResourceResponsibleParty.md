@@ -2,7 +2,7 @@
 layout: page
 type: element
 section: Resource Citation
-rank: 50
+rank: 60
 title: Resource Responsible Party
 guides: [Metadata, Services]
 ---

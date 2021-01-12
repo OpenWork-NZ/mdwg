@@ -24,29 +24,17 @@ guides: [Metadata, Services]
 
 | | |
 | --- | --- |
-| **Element Name** | *citation* |
-| **Parent** | *[MD_Metadata.identificationInfo>MD_Identification](./class-MD_Identification)* |
-| **Class/Type** | *CI_Citation* |
+| **Element Name** | *distributionInfo* |
+| **Parent** | *MD_Metadata* |
+| **Class/Type** | *MD_Distribution* |
 | **Governance** | *Common ICSM, Agency, Domain* |
-| **Purpose** | *Discovery, Identification* |
+| **Purpose** | *Discovery, Identification, Access* |
 | **Audience** | machine resource - ⭑ ⭑ ⭑ |
 | | general - ⭑ ⭑ ⭑ ⭑ ⭑ |
 | | resource manager - ⭑ ⭑ ⭑ ⭑ |
 | | specialist - ⭑ ⭑ ⭑ |
-| **Metadata type** | *descriptive* |
-| **ICSM Level of Agreement** | ⭑ ⭑ ⭑ ⭑ |
-
-- **Path** -  *MD_Metadata.distributionInfo*
-- **Governance** -  *Agency*
-- **Purpose -** *Resource access*
-- **Audience -** 
-  - machine resource - ⭑⭑⭑
-  - general - ⭑⭑⭑
-  - resource manager - ⭑⭑⭑ 
-  - specialist - ⭑⭑⭑⭑⭑
-- **Metadata type -** *administrative*
-- *ICSM Level of Agreement -* ⭑⭑⭑
-
+| **Metadata type** | *administrative* |
+| **ICSM Level of Agreement** | ⭑ ⭑ ⭑ |
 
 ## Definition 
 **information about the distributor of and options for obtaining the resource**
@@ -54,27 +42,6 @@ guides: [Metadata, Services]
 ### ISO Obligation -
 
 - There should be zero to many [0..\*] *distributionInfo* packages for the cited resource in the  *[MD_Metadata](./class-MD_Metadata)* package of class *[MD_Distribution](http://wiki.esipfed.org/index.php/MD_Distribution)* in a metadata record.
-
-### ICSM Best Practice
-
-  - The *distributionInfo* package should be populated in all metadata records unless it obviously has no resource to be distributed, e.g. metadata for a series where resources are accessed via the children.
-
-#### ICSM Recommended Sub-Elements
-
-- **description -** *(type - charStr)*[0..1] (highly recommended when more than one distributionInfo package is present) a brief description of a set of distribution options 
-- **distributor -** *(class - [MD_Distributor](http://wiki.esipfed.org/index.php/MD_Distributor))* [0..*] Name, contact information, and role of the organisation from which this distribution of this cited resource may be obtained.
-  - **distributorContact -** *(class - [CI_Responsibility](./class-CI_Responsibility))* [0..*] (Highly recommended - CI_RoleCode should be *distributor*) party from whom the resource may be obtained. This list need not be exhaustive
-  - **distributionOrderProcess -** *(class - [MD_StandardOrderProcess](http://wiki.esipfed.org/index.php/MD_StandardOrderProcess))* [0..*] (recommended when useful)  provides information about how the resource may be obtained, and related instructions and fee information
-- **transferOptions -** *(class - [MD_DigitalTransferOptions](http://wiki.esipfed.org/index.php/MD_DigitalTransferOptions))* [0..*] technical means and media by which a resource is obtained from the distributor
-  - **onLine -** *(class - [CI_OnlineResource](./class-CI_OnlineResource))* [0..*]   information about online sources from which the resource can be obtained. > TODO Link to CI_OnlineResource discusion
-    - **linkage -** *(type - charStr)* [1..1] (required for each online resource) address for on-line access using a URL/URI or similar addressing scheme
-    -  **protocol -** *(type - charStr)*[0..1] (optional) to document the connection type used.
-    - **applicationProfile -** *(type - charStr)*[0..1] (optional) may be useful when the application of this distribution is limited.  The name of an application profile that can be used with the online resource
-  - **offline -** *(class - [MD_Medium](http://wiki.esipfed.org/index.php/MD_Medium))* [0..*] information about offline media on which the resource can be obtained > TODO Link to MD_Medium discusion
-  - **distributionFormat -** *(class - [MD_Format](http://wiki.esipfed.org/index.php/MD_Format))* [0..*] The name and version of the specification for the data format by which a distribution of this cited resource is provided
-    - **formatSpecificationCitation -** *(class - [CI_Citation](./class-CI_Citation))* [1..1]   citation/URL of the specification for the format 
-      - **title -** *(type - charStr)*[1..1] name of the data format in which the resource is distributed
-      - **edition -** *(type - charStr)*[0..1] version of the distribution format used
 
 
 ## Discussion
@@ -87,7 +54,7 @@ This format element describes the format of the data for a particular distributi
 
 ## ICSM Best Practice Recommendations
 
-Therefore - this package should contain at least the minimum information necessary to contact the party responsible for this distribution of the resource. We have identified three primary sub-elements to recommend:
+Therefore - The *distributionInfo* package should be populated in all metadata records unless it obviously has no resource to be distributed, e.g. metadata for a series where resources are accessed via the children. This package should contain at least the minimum information necessary to contact the party responsible for this distribution of the resource. We have identified three primary sub-elements to recommend:
 
 - *Distributor*
 - *Online resource*
@@ -100,6 +67,23 @@ It is often unclear as to what qualifies as a different distribute and what is s
 Provide as many distribution options as is useful.  Capture of rarely used options or those with only minor differences, unless one wants to encourage their use, is at the descretion of an agency. Do not overload a distribution entry with two many options. If a distribution gets too complex because of too many otions available, consider creating multiple distributions.
 It is recommended that the format details are specific for the distribution. If two different version of the same format are available they be documented as two different formats.
 When using a common distribution service that provides all data in a set number of formats, consider using `MD_Distribution.distributor>MD_Distributor.distributorFormat`.
+
+### ICSM Recommended Sub-Elements
+
+- **description -** *(type - charStr)*[0..1] (highly recommended when more than one distributionInfo package is present) a brief description of a set of distribution options 
+- **distributor -** *(class - [MD_Distributor](http://wiki.esipfed.org/index.php/MD_Distributor))* [0..*] Name, contact information, and role of the organisation from which this distribution of this cited resource may be obtained.
+  - **distributorContact -** *(class - [CI_Responsibility](./class-CI_Responsibility))* [0..*] (Highly recommended - CI_RoleCode should be *distributor*) party from whom the resource may be obtained. This list need not be exhaustive
+  - **distributionOrderProcess -** *(class - [MD_StandardOrderProcess](http://wiki.esipfed.org/index.php/MD_StandardOrderProcess))* [0..*] (recommended when useful)  provides information about how the resource may be obtained, and related instructions and fee information
+- **transferOptions -** *(class - [MD_DigitalTransferOptions](http://wiki.esipfed.org/index.php/MD_DigitalTransferOptions))* [0..*] technical means and media by which a resource is obtained from the distributor
+  - **onLine -** *(class - [CI_OnlineResource](./class-CI_OnlineResource))* [0..*]   information about online sources from which the resource can be obtained. > TODO Link to CI_OnlineResource discusion
+	- **linkage -** *(type - charStr)* [1..1] (required for each online resource) address for on-line access using a URL/URI or similar addressing scheme
+	-  **protocol -** *(type - charStr)*[0..1] (optional) to document the connection type used.
+	- **applicationProfile -** *(type - charStr)*[0..1] (optional) may be useful when the application of this distribution is limited.  The name of an application profile that can be used with the online resource
+  - **offline -** *(class - [MD_Medium](http://wiki.esipfed.org/index.php/MD_Medium))* [0..*] information about offline media on which the resource can be obtained > TODO Link to MD_Medium discusion
+  - **distributionFormat -** *(class - [MD_Format](http://wiki.esipfed.org/index.php/MD_Format))* [0..*] The name and version of the specification for the data format by which a distribution of this cited resource is provided
+	- **formatSpecificationCitation -** *(class - [CI_Citation](./class-CI_Citation))* [1..1]   citation/URL of the specification for the format 
+	  - **title -** *(type - charStr)*[1..1] name of the data format in which the resource is distributed
+	  - **edition -** *(type - charStr)*[0..1] version of the distribution format used
 
 ### Offline distribution support
 

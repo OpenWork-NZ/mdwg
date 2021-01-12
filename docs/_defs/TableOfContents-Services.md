@@ -75,7 +75,7 @@ Elements with specific guidance for Services are in **_Bold Italic_**
   - [Resource Edition](./ResourceEdition) *Recommended.* If applicable
   - [Series](./ResourceSeries) *Recommended.* If applicable
   - [Cited Responsible party (author, creator, contributor, publisher)](./ResourceResponsibleParty) *Highly Recommended.*
-  - **_[OnlineResource](./class-CI_OnlineResource)_**  Should provide the landing page for the service
+  - **_[OnlineResource](./OnlineResource)_**  Should provide the URL for the service
 - **_Package - [Keywords](./Keywords)_** *Mandatory.* Package - MD_Keywords  including:  
   - **Service Keywords** *Mandatory.* for service metadata
   - ABS Field of Research
