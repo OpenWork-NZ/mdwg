@@ -10,6 +10,12 @@ header: ICSM ISO19115-1 Metadata Best Practice Guide
 ---
 #  ICSM Metadata Services Best Practice - Table of Contents
 
+When creating metadata for services, most of the data resource metadata best practice guidance applies. But there are notable differences. Most of these differences are contained in the *IdentificationInfo* section
+
+New elements specific to Service Metadata are highlighted in **Bold**
+
+Elements with specific guidance for Services are in **_Bold Italic_**
+
 ### Guidance
 - [Introduction](./MetadataForServicesGuide)
 - [Pattern guide](./PatternGuide)
@@ -27,7 +33,7 @@ header: ICSM ISO19115-1 Metadata Best Practice Guide
   - [Metadata Standard](./MetadataStandard) *Highly Recommended.*
   - **_[MetadataScope](./MetadataScope)_** *Mandatory.* For Service metadata, Resource Scope = *Service*
 ### Metadata for Service Resources
-- Package - [Service Identification Information](./SV_ServiceIdentification)
+- Package - [Service Identification Information](./ServiceIdentification)
     - [Abstract](./Abstract)  *Mandatory.*
     - [Purpose](./Purpose)  *Highly Recommended.*
     - [Status](./Status)  *Highly Recommended.*

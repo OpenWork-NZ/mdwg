@@ -30,9 +30,6 @@ guides: [Metadata, Services]
 ### ISO Obligation
 - There can be zero to many [0..\*] *metadataScope* entries for the cited resource in the  *[MD_Metadata](./class-MD_Metadata)* package of class *[MD_MetadataScope](http://wiki.esipfed.org/index.php/MD_MetadataScope)* for the metadata record.
 
-### ICSM Best Practice Recommendations
-Therefore - at least one instance of this element should be populated in all metadata records.
-
 ## Discussion
 
 MetadataScope contains information that describes the scope of the resource that this metadata record documents. The standard allows multiple scopes per metadata record, but we have no examples to date to illustrate this use. Current thought is that ICSM recommendation would be the one and only one entry for `metadataScope`.
@@ -56,11 +53,13 @@ Typically, the subject will be represented using keywords, key phrases, or class
 
 Therefore - in order to provide top level categorisation of entries in a catalogue, it is recommended that `metadataScope` be populated.  The default value of `MD_MetadataScope.resourceScope` should be *dataset*. When the value of `resourceScope` is other than dataset, `MD_MetadataScope.name` must be populated.
 
+For Service metadata, the value of Resource Scope must be **Service**.
+
 ### Recommended Sub-Elements
 
 From class - *[MD_MetadataScope](http://wiki.esipfed.org/index.php/MD_MetadataScope)*
 
-- **resourceScope -** *(codelist - MD_ScopeCode)* [1..1] Mandatory when using `MD_MetadataScope`. Default value "dataset". see [MD_Scope](./class-MD_Scope#md_scopecode-codelist) for more value options
+- **resourceScope -** *(codelist - MD_ScopeCode)* [1..1] Mandatory when using `MD_MetadataScope`. Default value "dataset". For Service metadata, the value \ must be "service". See [MD_Scope](./class-MD_Scope#md_scopecode-codelist) for more value options
 - **name -** *(type - charStr)* [0..1] description of the scope.  Mandatory if resourceScope is not equal to "dataset"
 
 ### Crosswalk considerations
