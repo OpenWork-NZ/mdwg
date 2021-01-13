@@ -74,7 +74,7 @@
   <aside>
     {% assign defs = site.defs|sort:"rank" %}
     <ul>{% for def in defs %}{% if def.section == "Guidance" and def.save_guide %}
-      <li><a href="{{ def.url|relative_url }}">{{ def.title }}</a></li>
+      <li><a href="{{ def.url|relative_url }}"><strong>{{ def.title }}</strong></a></li>
     {% endif %}{% endfor %}</ul>
 
     <h2>Guidance</h2>
