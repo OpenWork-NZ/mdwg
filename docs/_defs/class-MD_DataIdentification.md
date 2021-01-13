@@ -3,7 +3,7 @@ layout: page
 type: class
 section: class
 rank: 20
-title: Data Identification
+title: MD_DataIdentification
 guides: [Metadata]
 ---
 #  Class - MD_DataIdentification
