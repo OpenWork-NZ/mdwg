@@ -72,17 +72,15 @@
   </header>
 
   <aside>
+    <h2>Guidance</h2>
+    {% assign defs = site.defs|sort:"rank" %}
+    <ul>{% for def in defs %}{% if def.section == "Guidance" %}
+      <li><a href="{{ def.url | relative_url }}">{{ def.title }}</a></li>
+    {% endif %}{% endfor %}</ul>
+    
     {% for guide in page.guides %}
     <details id="{{guide|slugify}}">
       <summary>{% if guide == "Metadata" %}Datasets{% else %}{{ guide }}{% endif %} Metadata</summary>
-      {% if page.section != "Guidance" %}
-        <h2>Guidance</h2>
-        {% assign defs = site.defs|sort:"rank" %}
-        <ul>{% for def in defs %}
-         {% if def.section == "Guidance" and def.guides contains guide %}
-          <li><a href="{{ def.url | relative_url }}">{{ def.title }}</a></li>
-        {% endif %}{% endfor %}</ul>
-      {% endif %}
 
       <h2>Sections</h2>
       {% assign defs = site.defs|sort:"rank" %}
@@ -98,6 +96,8 @@
       {% endif %}{% endfor %}</ul>
     </details>{% endfor %}
 
+    <hr />
+    
     <details>
       <summary>Classes</summary>
       <ul>{% for def in defs %}{% if def.type == "class" %}
