@@ -31,7 +31,7 @@ This document was compiled by [OpenWork Ltd (OWL)](http://openwork.nz) on behalf
 
 ### Contributors
 
-- Lead Author: Byron Cochrane - OpenWorks Ltd
+- Lead Author: Byron Cochrane - OpenWork Ltd
 - Irina Bastrakova - Geoscience Australia
 - Shanti Rowlison - Australia Government Dept of Defense
 - Jenny Mahuika - Terrestrial Ecosystem Research Network (TERN)
