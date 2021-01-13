@@ -78,7 +78,7 @@
     {% endif %}{% endfor %}</ul>
 
     <h2>Guidance</h2>
-    <ul>{% for def in defs %}{% if def.section == "Guidance"  and not def.save_guide %}
+    <ul>{% for def in defs %}{% if def.section == "Guidance"  and def.save_guide == nil %}
       <li><a href="{{ def.url | relative_url }}">{{ def.title }}</a></li>
     {% endif %}{% endfor %}</ul>
     
