@@ -92,7 +92,7 @@
         <li><a href="{{ def.url | relative_url }}">{{ def.title }}</a></li>
       {% endif %}{% endfor %}</ul>
 
-      {% if page.section != "Guide" %}
+      {% if page.section != "Guidance" %}
         <h2>{{ page.section }}</h2>
         <ul>{% for def in defs %}
          {% if def.section == page.section and def.guides contains guide %}
