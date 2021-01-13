@@ -83,17 +83,17 @@ Elements with specific guidance for Services are in **_Bold Italic_**
 - Package - [Maintenance](./Maintenance) -  MD_MaintenanceInformation   
   - Frequency of update - of the service
   - scope for maintenance
-  - Package - Resource Constraint Information
-	- [Resource Constraints](./ResourceOtherConstraints) - Includes:
-	  - UseLimitations
-	  - Releasibility
-	  - OtherConstraints
-	- [Resource Legal Constraints](./ResourceLegalConstraints) - Includes
-	  - Legal constraints
-	  - Reference for legal
-	- [Resource Security Constraints](./ResourceSecurityConstraints) Includes
-	  - Security constraints
-	  - Reference for security
+- Package - Resource Constraint Information
+  - [Resource Constraints](./ResourceOtherConstraints) - Includes:
+	- UseLimitations
+	- Releasibility
+	- OtherConstraints
+  - [Resource Legal Constraints](./ResourceLegalConstraints) - Includes
+	- Legal constraints
+	- Reference for legal
+  - [Resource Security Constraints](./ResourceSecurityConstraints) Includes
+	- Security constraints
+	- Reference for security
 - Package - [Extents](./ResourceExtent)  
   - [GeoExtent](./GeographicExtent)
 	- [Extent Geographic Description](./ExtentGeographicDescription)

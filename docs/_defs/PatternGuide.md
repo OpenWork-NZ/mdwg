@@ -4,7 +4,7 @@ rank: 20
 type: page
 section: Guidance
 title: Pattern Guide
-guides: [Metadata]
+guides: [Metadata, Services]
 ---
 # Pattern Guide
 
