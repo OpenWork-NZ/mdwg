@@ -16,10 +16,11 @@
       position: relative; /* For positioning the watermark */
     }
 
-    h1, h2, h3, h4, h5, h6, details summary {
+    h1, h2, h3, h4, h5, h6, details.section > summary {
       font-family: merriweather,Georgia,Times New Roman,DejaVu Serif,serif;
       color: #001b44cc;
     }
+    
     h1, h2 {text-align: center}
     aside h2 {text-align: left}
     h1 {color: black}
@@ -83,25 +84,23 @@
     {% endif %}{% endfor %}</ul>
     
     {% for guide in page.guides %}
-    <details id="{{guide|slugify}}">
+    <details id="{{guide|slugify}}" class="section">
       <summary>{% if guide == "Metadata" %}Datasets{% else %}{{ guide }}{% endif %} Metadata</summary>
 
-      <h2>Sections</h2>
-      {% assign defs = site.defs|sort:"rank" %}
-      <ul>{% for def in defs %}
+      {% for def in defs %}
        {% if def.type == "section" and def.guides contains guide %}
-        <li><details {% if def.section == page.section %}open{% endif %}>
+        <details {% if def.section == page.section %}open{% endif %}>
           <summary><a href="{{ def.url | relative_url }}">{{ def.title }}</a></summary>
           <ul>{% for def2 in defs %}{% if def2.type != "section" and def2.guides contains guide %}
             <li><a href="{{ def2.url|relative_url }}">{{ def2.title }}</a></li>
           {% endif %}{% endfor %}</ul>
-        </details></li>
-      {% endif %}{% endfor %}</ul>
+        </details>
+      {% endif %}{% endfor %}
     </details>{% endfor %}
 
     <hr />
     
-    <details>
+    <details class="section">
       <summary>Classes</summary>
       <ul>{% for def in site.defs %}{% if def.type == "class" %}
         <li><a href="{{ def.url | relative_url }}">{{ def.title }}</a></li>
