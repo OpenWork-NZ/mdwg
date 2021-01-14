@@ -2,7 +2,7 @@
 layout: page
 type: element
 section: Resource Identification
-rank: 90
+rank: 97
 title: Resource Format
 guides: [Metadata]
 ---

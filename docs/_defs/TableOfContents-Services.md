@@ -28,7 +28,7 @@ Elements with specific guidance for Services are in **_Bold Italic_**
   - [Metadata Date](./MetadataDate)  *Highly Recommended.*
   - [Metadata Responsible Party](./MetadataContact)  *Mandatory.*
   - [Metadata Default Locale](./MetadataLocale)  *Highly Recommended.*
-  - **_[MetadataScope](./MetadataScope)_** *Mandatory.* For Service metadata, Resource Scope = *Service*
+  - **_[Metadata Scope](./MetadataScope)_** *Mandatory.* For Service metadata, Resource Scope = *Service*
   - [Metadata Legal Constraints](./MetadataLegalConstraints) *Recommended.*
   - [Metadata Security Constraints](./MetadataSecurityConstraints) *Recommended.*
   - [Metadata Standard](./MetadataStandard) *Highly Recommended.*
@@ -45,29 +45,29 @@ Elements with specific guidance for Services are in **_Bold Italic_**
     - [Resource Point of Contact  role = 'pointOfContact'](./ResourcePointOfContact) *Highly Recommended.*
     - [Additional Docs](./AdditionalDocs)  *Recommended.* If any
     - [Spatial Representation Type](./SpatialRepresentationType)  *Recommended.*
-  - **[serviceType](./ServiceType)**  *Mandatory.* Plus at least one of:
-  - **[serviceTypeVersion](./ServiceTypeVersion)**
-  - **[profile](./ServiceProfile)**  CI_Citation
-  - **[serviceStandard](./ServiceStandard)**  CI_Citation
-  - **[couplingType](./CouplingType)** *Highly Recommended.* Options = `tight`, `loose`, `mixed`
-  - **[coupledResource](./CoupledResource)** *Highly Recommended* when *CouplingType* is `tight`. Includes:  
+  - **[Service Type](./ServiceType)**  *Mandatory.* Plus at least one of:
+  - **[Service Type Version](./ServiceTypeVersion)**
+  - **[Profile](./ServiceProfile)**  CI_Citation
+  - **[Service Standard](./ServiceStandard)**  CI_Citation
+  - **[Coupling Type](./CouplingType)** *Highly Recommended.* Options = `tight`, `loose`, `mixed`
+  - **[Coupled Resource](./CoupledResource)** *Highly Recommended* when *CouplingType* is `tight`. Includes:  
     - ScopedName - *Mandatory*
     - ResourceReference - includes:
       - Title - *Mandatory*
       - OnlineResource - *Highly Recommended.* Metadata URL for related data
-  - **[ContainsOperations](./ContainsOperations)** class - SV_ContainsOperation   Contains:
+  - **[Contains Operations](./ContainsOperations)** class - SV_ContainsOperation   Contains:
     - operationName  *Mandatory*
     - distributedComputingPlatform  codelist - DCPList, *Mandatory*
     - operationDescription  *Highly Recommended*
     - connectPoint  class - CI_OnlineResource *Mandatory*
-    - **[parameter](./Parameter)** class - SV_Parameter
+    - **[Parameter](./Parameter)** class - SV_Parameter
       - name  *Madatory*
       - direction  *Mandatory*
       - description *Recommended*
       - optionality  *Mandatory*
       - repeatability  *Mandatory*
   - [Associated Resource](./AssociatedResources)   class - MD_AssociatedResource
-  - [BrowseGraphic](./BrowseGraphic)  Class - MD_BrowseGraphic  - Perhaps a logo for the service or oganisation 
+  - [Browse Graphic](./BrowseGraphic)  Class - MD_BrowseGraphic  - Perhaps a logo for the service or oganisation 
 - Package - [Service Citation](./ResourceCitation) 
   - [Title](./ResourceTitle) *Mandatory.*
   - [Resource Identifier (uri)](./ResourceIdentifier) *Highly Recommended.*

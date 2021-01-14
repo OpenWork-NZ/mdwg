@@ -4,7 +4,7 @@ type: element
 section: Resource Identification
 rank: 5
 title: Resource Default Locale
-guides: [Metadata]
+guides: [Metadata, Services]
 ---
 #  Resource Default Locale ★★★★
 *Most spatial resources contain some textual information written in particular languages. For users it is important that the language of the resource be shared. Default Locale provide a way to record the primary language of the metadata.*
