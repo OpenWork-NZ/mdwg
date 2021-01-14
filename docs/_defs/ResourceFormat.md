@@ -9,15 +9,19 @@ guides: [Metadata]
 # Resource Format ★★★
 *Information about how a cited spatial resource is kept on the host system can be useful to individuals such as subject matter specialist and data managers. General audiences will be more interested in the [distribution format](./DistributionInfo)*.
 
-- **Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.resourceFormat*
-- **Governance** - *Agency*
-- **Audience -**
- - machine resource - ⭑⭑⭑⭑
- - general - ⭑
- - data manager - ⭑⭑⭑⭑⭑
- - specialist - ⭑⭑⭑
-- **Metadata type -** *administrative*
-- *ICSM Level of Agreement -* ⭑⭑⭑
+| | |
+| --- | --- |
+| **Element Name** | *resourceFormat* |
+| **Parent** | *[MD_Metadata.identificationInfo>MD_Identification](./class-MD_Identification)* |
+| **Class/Type** | *MD_Format* |
+| **Governance** | *Agency* |
+| **Purpose** | *Discovery, Usage* |
+| **Audience** | machine resource - ⭑ ⭑ ⭑ ⭑ |
+| | general - ⭑ ⭑ |
+| | resource manager - ⭑ ⭑ ⭑ ⭑|
+| | specialist - ⭑ ⭑ ⭑ ⭑ |
+| **Metadata type** | *administrative* |
+| **ICSM Level of Agreement** | ⭑ ⭑ ⭑ |
 
 ## Definition
 **Description of the computer language construct that specifies the representation of the data objects in a record, file, message, storage device, or transmission channel**
@@ -25,17 +29,6 @@ guides: [Metadata]
 ### ISO Obligation
 
 There may be zero or many [0..\*] *resourceFormats* for the cited resource in the *[MD_DataIdentification](./class-MD_DataIdentification)* package of class *MD_Format* desrcibed in a metadata record.
-
-### ICSM Best Practice
-
-This element should be populated in all metadata records with information about the format in which the resource is stored and managed within the agency, This is not about the format in which the resource is distributed which often differs.
-
-#### Recommended Sub-Elements
-
-From class - *[MD_Format](http://wiki.esipfed.org/index.php/MD_Format)*
-
-* **formatSpecificationCitation -** *(class - [CI_Citation](./class-CI_Citation))* citation/URL of the specification for the format
-* **medium -** *(class - [MD_Medium](http://wiki.esipfed.org/index.php/MD_Medium))* medium used by the format
 
 ## Discussion
 
@@ -56,6 +49,14 @@ Therefore - it is recommended that format information about a resource be captur
 
 It is not recommended, except in the case of service information metadata, that this element be used to hold distribution format information. That is better conveyed in a *distributionFormat* element under [MD_Distribution](./DistributionInfo).
 
+This element should be populated in all metadata records with information about the format in which the resource is stored and managed within the agency, This is not about the format in which the resource is distributed which often differs.
+
+### Recommended Sub-Elements
+
+From class - *[MD_Format](http://wiki.esipfed.org/index.php/MD_Format)*
+
+* **formatSpecificationCitation -** *(class - [CI_Citation](./class-CI_Citation))* citation/URL of the specification for the format
+* **medium -** *(class - [MD_Medium](http://wiki.esipfed.org/index.php/MD_Medium))* medium used by the format
 
 ### Crosswalk considerations
 
