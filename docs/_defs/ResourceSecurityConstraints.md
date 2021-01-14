@@ -4,7 +4,7 @@ type: element
 section: Constraints
 rank: 70
 title: Resource Security Constraints
-guides: [Metadata]
+guides: [Metadata, Services]
 ---
 # Resource Security Constraints ★★★★★
 *When constraints ([MD_Constraints](./class-MD_Constraints.html)) on a spatial resource [MD_Identification] concern security it is important to document these. Potential users need to be informed of the presence or absence of concerns about security that apply to the use of such resources.*
