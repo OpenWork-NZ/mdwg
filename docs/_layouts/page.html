@@ -88,16 +88,15 @@
 
       <h2>Sections</h2>
       {% assign defs = site.defs|sort:"rank" %}
-      <dl>{% for def in defs %}
+      <ul>{% for def in defs %}
        {% if def.type == "section" and def.guides contains guide %}
-        <dt><a href="{{ def.url | relative_url }}">{{ def.title }}</a></dt>
-        <dd><details {% if def.section == page.section %}open{% endif %}>
-          <summary>{{ def.title }}</summary>
+        <li><details {% if def.section == page.section %}open{% endif %}>
+          <summary><a href="{{ def.url | relative_url }}">{{ def.title }}</a></summary>
           <ul>{% for def2 in defs %}{% if def.type != "section" and def.guides contains guide %}
             <li><a href="{{ def.url|relative_url }}">{{ def.title }}</a></li>
           {% endif %}{% endfor %}</ul>
-        </details></dd>
-      {% endif %}{% endfor %}</dl>
+        </details></li>
+      {% endif %}{% endfor %}</ul>
     </details>{% endfor %}
 
     <hr />
