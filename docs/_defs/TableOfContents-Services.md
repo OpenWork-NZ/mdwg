@@ -6,7 +6,7 @@ section: Table of Contents
 title: Table of Contents - Services
 guides: [Services]
 save_guide: Services
-header: ICSM ISO19115-1 Metadata Best Practice Guide
+header: ICSM ISO19115-1 Metadata for Services Best Practice
 ---
 #  ICSM Metadata Services Best Practice - Table of Contents
 
