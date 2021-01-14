@@ -4,7 +4,7 @@ type: class
 section: class
 rank: 50
 title: MD_LegalConstraints
-guides: [Metadata]
+guides: [Metadata, Services]
 ---
 #  Class - MD_LegalConstraints
 *When constraint ([MD_Constraints](./class-MD_Constraints)) are of a legal nature they should be captured using the class **MD_LegalConstrints**.*

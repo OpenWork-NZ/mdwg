@@ -2,7 +2,7 @@
 layout: page
 type: element
 section: Resource Citation
-rank: 60
+rank: 50
 title: Resource Series
 guides: [Metadata, Services]
 ---

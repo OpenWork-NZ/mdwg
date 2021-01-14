@@ -4,11 +4,12 @@ rank: 40
 type: element
 section: Metadata Info
 title: Metadata Standard
-guides: [Services]
+guides: [Metadata, Services]
 ---
 # Metadata Standard  ★★★★★ 
 
 *Metadata records are captured to a particular standard. In our case that standard is ISO 19115-1. When exchanging metadata, it is importatant to know what standard the metadata uses in order to understand what it contains.*
+
 |  |  |
 | --- | --- |
 | **Element Name** | *serviceTypeVersion* |

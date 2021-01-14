@@ -1,8 +1,8 @@
 ---
 layout: page
-rank: 40
+rank: 83
 type: element
-section: Service Metadata
+section: Resource Identification
 title: Service Profile
 guides: [Services]
 ---

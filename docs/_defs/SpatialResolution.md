@@ -1,8 +1,8 @@
 ---
 layout: page
 type: element
-section: Data Identification
-rank: 70
+section: Resource Identification
+rank: 50
 title: Spatial Resolution
 guides: [Metadata, Services]
 ---

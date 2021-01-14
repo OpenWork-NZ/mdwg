@@ -4,34 +4,31 @@ type: element
 section: Metadata Info
 rank: 90
 title: Parent Metadata
-guides: [Metadata]
+guides: [Metadata, Services]
 ---
 #  Parent Metadata ★★
 *When a metadata record inherits information from a parent record, it is important to capture sufficient information so that this parent record can be found an the hierarchy preserved.*
 
-- **Path** - *MD_Metadata.parentMetadata*
-- **Governance** -  *Agency, Domain*
-- **Purpose -** *discovery, data management*
-- **Audience -**
-  - machine resource - ⭑⭑⭑
-  - general - ⭑⭑⭑
-  - data manager - ⭑⭑⭑⭑⭑
-  - specialist - ⭑⭑⭑⭑
-- **Metadata type -** *discovery, administrative*
-- *ICSM Level of Agreement* - ⭑⭑
+| | |
+| --- | --- |
+| **Element Name** | *parentMetadata* |
+| **Parent** | *[MD_Metadata](./class-MD_Metadata)* |
+| **Class/Type** | *[CI_Citation](./class-CI_Citation)* |
+| **Governance** | *Agency, Domain* |
+| **Purpose** | *Discovery, Data Management* |
+| **Audience** | machine resource - ⭑ ⭑ ⭑ |
+| | general - ⭑ ⭑ ⭑ |
+| | resource manager - ⭑ ⭑ ⭑ ⭑ ⭑ |
+| | specialist - ⭑ ⭑ ⭑ ⭑ |
+| **Metadata type** | *dicovery, administrative* |
+| **ICSM Level of Agreement** | ⭑ ⭑ ⭑ |
+
 
 ## Definition
 **Citation to a parent metadata record, to enable construction of hierarchical relations.**
 
 ### ISO Obligation
 - There may be zero or one [0..1] *MD_Metadata.parentMetadata* entries for the cited resource in the  *[MD_Metadata](./class-MD_Metadata)* package of class *[CI_Citation](https://./class-CI_Citation)* in a metadata record.
-
-### ICSM Best Practice
-- The element `parentMetadata` may be populated to sufficient level to allow discovery if the metadata has a child relationship to another metadata record. Before doing so consider if other elements such as 'AssociatedResource' which has more flexiblitiy, is a more appropriate way to capture this information.
-
-#### Recommended Sub-Elements
-
-Follow the general guidance for [CI_Citation](./class-CI_Citation)
 
 ## Discussion
 There currently exists very little guidance for what qualifies as a parent metadata and when this element should be used. This could work well for feature level metadata where the parent is a dataset and the child a feature. Or a map series where the series is the parent and the tiles the children. Does the parent child hierarchical relation exist between the resources or the metadata records? (One metadata record could inherit attributes from a parent without such a relation between the resources being documented.)
@@ -44,7 +41,11 @@ If we include this as a recommended element, the MDWG should provide some guidan
 
 
 ## ICSM Best Practice Recommendations
-TBD - insufficient clarity exist as to what qualifies a metadata record as "parent". Use cases need to be defined to illustrate yet to be determined good practice for parentMetadata.
+- The element `parentMetadata` may be populated to sufficient level to allow discovery if the metadata has a child relationship to another metadata record. Before doing so consider if other elements such as 'AssociatedResource' which has more flexiblitiy, is a more appropriate way to capture this information.
+
+### Recommended Sub-Elements
+
+Follow the general guidance for [CI_Citation](./class-CI_Citation)
 
 ### Crosswalk considerations
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-type: element
+type: section
 section: Resource Citation
 rank: 30
 title: Resource Citation

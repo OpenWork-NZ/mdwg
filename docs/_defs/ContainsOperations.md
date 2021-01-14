@@ -1,8 +1,8 @@
 ---
 layout: page
-rank: 40
+rank: 88
 type: element
-section: Service Metadata
+section: Resource Identification
 title: Contains Operations
 guides: [Services]
 ---

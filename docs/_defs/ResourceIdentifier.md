@@ -44,11 +44,13 @@ In the case where a resource may have multiple identifiers, additional instances
 
 Therefore - it is recommended that this element be populated, preferably once, but more often if there are multiple identifier systems for the same resource. In the case of multiple identifiers, the `description` element must be populated in such situations to distinguish the meaning of the different identifiers. `Code` must be populated in all records and it is recommended that `codeSpace` be populated as well.
 
-Common practice has been to populate this field that is the same as or resolves to the metadata record itself. In this case, the metadata can be said to be the landing page for the resource. 
+Common practice for Dataset metadata has been to populate this field that so that it is the same as or resolves to the metadata record itself. In this case, the metadata can be said to be the landing page for the resource. 
 
 If the metadata record is for a resource that contains more than one dataset, a best practice way to document that in the metadata needs be developed. This case may better be addressed through related metadata records.
 
 Development of URI naming conventions to describe how the reference to the resource and the reference to metadata for that resource would be useful. This would allow easy discovery of not only the data from the metadata but solve the often more difficult problem of discovery of the metadata for a given dataset.
+
+For Service metadata, the URL (which is itself a Uniform Resource Identifier) for the Service itself is commonly used as the Resource Identifier. 
 
 ### Recommended Sub-Elements
 
@@ -60,7 +62,7 @@ Follow the general guidance for **[MD_Identifier](./class-MD_Identifier)** with 
 
 ## Also Consider
 
-- **[onlineResource -](./DistributionInfo)** (MD_Distribution.transferOptions>MD_DigitalTransferOptions.online) is used to provide online linkage to the resource.
+- **[onlineResource -](./DistributionInfo)** (MD_Distribution.transferOptions>MD_DigitalTransferOptions.online) is used to provide online linkage to the resource. Reccommended for Service metadata.
 - **[MetadataIdentifier -](./MetadataIdentifier)** is the preferred element to be used to provide linkage to the metadata record.
 - **[Resource Citation](./ResourceCitation)** - parent to this element.
 

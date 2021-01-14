@@ -1,8 +1,8 @@
 ---
 layout: page
 type: element
-section: Data Identification
-rank: 30
+section: Resource Identification
+rank: 60
 title: Resource Point of Contact
 guides: [Metadata, Services]
 ---

@@ -2,7 +2,7 @@
 layout: page
 type: section
 section: Extents
-rank: 60
+rank: 65
 title: Resource Extent
 guides: [Metadata, Services]
 ---

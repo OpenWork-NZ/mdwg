@@ -4,37 +4,31 @@ type: element
 section: Metadata Info
 rank: 50
 title: Metadata Scope
-guides: [Metadata]
+guides: [Metadata, Services]
 ---
 #  Metadata Scope ★★★★
 *In order to quickly find, categorise and evaluate the fitness of a resource to our needs it is useful to include in our metadata a high level description of the scope of the resource our metadata is describing.*
 
-- **Path** - *MD_Metadata.metadataScope*
-- **Governance** -  *Common ICSM*
-- **Purpose -** *discovery*
-- **Audience -**
-  - machine resource - ⭑⭑⭑
-  - general - ⭑⭑⭑⭑
-  - data manager - ⭑⭑⭑⭑
-  - specialist - ⭑⭑⭑
-- **Metadata type -** *descriptiive*
-- *ICSM Level of Agreement* - ⭑⭑⭑
+| | |
+| --- | --- |
+| **Element Name** | *metadataScope* |
+| **Parent** | *[MD_Metadata](./class-MD_Metadata)* |
+| **Class/Type** | *[MD_MetadataScope](http://wiki.esipfed.org/index.php/MD_MetadataScope)* |
+| **Governance** | *Common ICSM* |
+| **Purpose** | *Discovery, Data Management* |
+| **Audience** | machine resource - ⭑ ⭑ ⭑ |
+| | general - ⭑ ⭑ ⭑ ⭑ |
+| | resource manager - ⭑ ⭑ ⭑ ⭑ |
+| | specialist - ⭑ ⭑ ⭑ |
+| **Metadata type** | *descriptiive* |
+| **ICSM Level of Agreement** | ⭑ ⭑ ⭑ |
+
 
 ## Definition
 **A resource code identifying the type of resource, e.g. service, a collection, an application which the metadata describes**
 
 ### ISO Obligation
 - There can be zero to many [0..\*] *metadataScope* entries for the cited resource in the  *[MD_Metadata](./class-MD_Metadata)* package of class *[MD_MetadataScope](http://wiki.esipfed.org/index.php/MD_MetadataScope)* for the metadata record.
-
-### ICSM Best Practice Recommendations
-Therefore - at least one instance of this element should be populated in all metadata records.
-
-### Recommended Sub-Elements
-
-From class - *[MD_MetadataScope](http://wiki.esipfed.org/index.php/MD_MetadataScope)*
-
-- **resourceScope -** *(codelist - MD_ScopeCode)* [1..1] Mandatory when using `MD_MetadataScope`. Default value "dataset". see [MD_Scope](./class-MD_Scope#md_scopecode-codelist) for more value options
-- **name -** *(type - charStr)* [0..1] description of the scope.  Mandatory if resourceScope is not equal to "dataset"
 
 ## Discussion
 
@@ -55,9 +49,18 @@ The values in the MD_ScopeCode list are intentionally general and details of the
 Typically, the subject will be represented using keywords, key phrases, or classification codes. Recommended best practice is to use a controlled vocabulary.
 
 
-## Recommendations
+## ICSM Best Practice Recommendations
 
 Therefore - in order to provide top level categorisation of entries in a catalogue, it is recommended that `metadataScope` be populated.  The default value of `MD_MetadataScope.resourceScope` should be *dataset*. When the value of `resourceScope` is other than dataset, `MD_MetadataScope.name` must be populated.
+
+For Service metadata, the value of Resource Scope must be **Service**.
+
+### Recommended Sub-Elements
+
+From class - *[MD_MetadataScope](http://wiki.esipfed.org/index.php/MD_MetadataScope)*
+
+- **resourceScope -** *(codelist - MD_ScopeCode)* [1..1] Mandatory when using `MD_MetadataScope`. Default value "dataset". For Service metadata, the value \ must be "service". See [MD_Scope](./class-MD_Scope#md_scopecode-codelist) for more value options
+- **name -** *(type - charStr)* [0..1] description of the scope.  Mandatory if resourceScope is not equal to "dataset"
 
 ### Crosswalk considerations
 

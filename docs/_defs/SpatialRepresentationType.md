@@ -1,8 +1,8 @@
 ---
 layout: page
 type: element
-section: Data Identification
-rank: 70
+section: Resource Identification
+rank: 75
 title: Spatial Representation Type
 guides: [Services]
 ---

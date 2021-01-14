@@ -4,21 +4,25 @@ type: section
 section: Keywords
 rank: 40
 title: Keywords
-guides: [Metadata]
+guides: [Metadata, Services]
 ---
 # Keywords ★★★★★
 *Keywords are the important ideas and topics that summarise and define what your resource is about. In most search engines, these are indexed and typically normalised to resemble the base word in order to capture variations. Keywords are useful in discovering and organising resources.*
 
-- **Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.descriptiveKeywords*
-- **Governance** - *Common ICSM, Agency, Domain*
-- **Primary use -** *Discovery, Data management*
-- **Audience -**
-  - machine resource - ⭑⭑⭑⭑⭑
-  - general - ⭑⭑⭑⭑⭑
-  - data manager - ⭑⭑⭑⭑⭑
-  - specialist - ⭑⭑⭑⭑⭑
-- **Metadata type -** *descriptive*
-- *ICSM Level of Agreement* - ⭑⭑⭑
+| | |
+| --- | --- |
+| **Element Name** | *descriptiveKeywords* |
+| **Parent** | *[MD_Metadata.identificationInfo>MD_Identification](./class-MD_Identification)* |
+| **Class/Type** | *CI_Citation* |
+| **Governance** | *Common ICSM, Agency, Domain* |
+| **Purpose** | *Discovery, Data management** |
+| **Audience** | machine resource - ⭑ ⭑ ⭑ ⭑ ⭑ |
+| | general - ⭑ ⭑ ⭑ ⭑ ⭑ |
+| | resource manager - ⭑ ⭑ ⭑ ⭑ ⭑ |
+| | specialist - ⭑ ⭑ ⭑ ⭑ ⭑ |
+| **Metadata type** | *descriptive* |
+| **ICSM Level of Agreement** | ⭑ ⭑ ⭑ |
+
 
 ## Definition -
 **Words or phrases describing the resource to be indexed and searched.**
@@ -85,7 +89,7 @@ What is important to capture beside the mandatory title element in the citation 
 > **Tech issue needs fix - GN Thesaurus builder**
 References the old KeywordTypeCode list
 
-## Recommendations
+## ICSM Best Practice Recommendations
 
 Therefore - it is highly recommended that the metadata for spatial resources contains as many keywords as needed to provide ease of discovery and improved data management practices. Capture keywords for multiple audiences, general, domain or agency specific to aid the different users of the resource. However, excessive use of keywords that target minor aspects of a resource should be avoided. Consider providing a limit to the number of keywords used and focus on those of most importance.
 
@@ -95,6 +99,7 @@ In addition, while free text keywords are allowed, it is recommended that well m
 
 The new `keywordClass` package should be explored to allow the greater use of semantic principles in search and data management.
 
+When the resource described is a service, one instance of `MD_Keyword` should refer to the service taxonomy defined in ISO 19119.
 
 ### Crosswalk considerations
 

@@ -1,51 +1,52 @@
 ---
 layout: page
 type: element
-section: Data Identification
-rank: 40
+section: Resource Identification
+rank: 5
 title: Resource Default Locale
-guides: [Metadata]
+guides: [Metadata, Services]
 ---
 #  Resource Default Locale ★★★★
 *Most spatial resources contain some textual information written in particular languages. For users it is important that the language of the resource be shared. Default Locale provide a way to record the primary language of the metadata.*
 
-**Path** - *MD_Metadata.identificationInfo>MD_DataIdentification.defaultLocale*
-- **Governance** -  *Common ICSM*
-- **Purpose -** *discovery, data management*
-- **Audience -**
-  - machine resource - ⭑⭑
-  - general - ⭑⭑⭑⭑⭑
-  - data manager - ⭑⭑⭑
-  - specialist - ⭑⭑⭑
-- **Metadata type -** *descripive*
-- *ICSM Level of Agreement* - ⭑⭑⭑
+| | |
+| --- | --- |
+| **Element Name** | *defaultLocale* |
+| **Parent** | *[MD_Metadata.identificationInfo>MD_Identification](./class-MD_Identification)* |
+| **Class/Type** | *PT_Locale* |
+| **Governance** | *Common ICSM* |
+| **Purpose** | *Discovery, Data Management* |
+| **Audience** | machine resource - ⭑ ⭑ |
+| | general - ⭑ ⭑ ⭑ ⭑ ⭑|
+| | resource manager - ⭑ ⭑ ⭑ ⭑|
+| | specialist - ⭑ ⭑ ⭑ ⭑ |
+| **Metadata type** | *descriptive* |
+| **ICSM Level of Agreement** | ⭑ ⭑ ⭑ |
 
 ## Definition
 **Designation of the language used within the cited resource.**
 
 ### ISO Obligation
 - There may be only one [0..1] *defaultLocale* entries for the resource in the metadata  *[MD_DataIdentification](./class-MD_DataIdentification)* package. This must be of class *[PT_Locale](./PT_Locale)*.
-
-### ICSM Best Practice Recommendations
-- The default language in our region is English and it is recommended to be used as the language in metadata records using the 3 letter code "eng".
-
-#### Recommended Sub-Elements
-
-- Follow the general guidance for *[class - PT_Locale](./PT_Locale)*
-
-#### Recommended Sibling Elements
-
-- **otherLocale -** *[class - PT_Locale]* [0..\*] when a resource has information in additional languages
-  - Follow the general guidance for [class - PT_Locale](./PT_Locale)
-
+-
 ## Discussion
 
 There may be only one default locale for a resource identified in a metadata record.
 The element "otherLocale" can be use to provide information about alternatively used localised character strings
 
-## Recommendations
+## ICSM Best Practice Recommendations
 
 Therefore - in order to meet ICSM good practice, in metadata for data resources, one default language of the resource should be captured if the resource contains language elements, and its character set encoding in `MD_DataInformation.defaultLocale`. For the users in our region, English should be the default value for `language` using the ISO 639-2, 3-alphabetic digits code "eng" and the character encoding should be *UTF8*. If the resource contains multiple languages, capture the dominant one in `defaultLocale` and populate the sibling element `otherLocale` with  information describing these additional languages in the same manner.
+
+### Recommended Sub-Elements
+
+- Follow the general guidance for *[class - PT_Locale](./PT_Locale)*
+
+### Recommended Sibling Elements
+
+- **otherLocale -** *[class - PT_Locale]* [0..\*] when a resource has information in additional languages
+ - Follow the general guidance for [class - PT_Locale](./PT_Locale)
+
 
 ### Crosswalk considerations
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 type: element
-section: Data Identification
+section: Resource Identification
 rank: 20
 title: Purpose
 guides: [Metadata, Services]
