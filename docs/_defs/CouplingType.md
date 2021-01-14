@@ -2,7 +2,7 @@
 layout: page
 rank: 86
 type: element
-section: Service Metadata
+section: Resource Identification
 title: Coupling Type
 guides: [Services]
 ---

@@ -1,7 +1,7 @@
 ---
 layout: page
 type: section
-section: Service Metadata
+section: Resource Identification
 rank: 20
 title: Service Identification
 guides: [Services]
