@@ -27,8 +27,9 @@ guides: [Metadata, Services]
 **Designation of the language used within the cited resource.**
 
 ### ISO Obligation
+
 - There may be only one [0..1] *defaultLocale* entries for the resource in the metadata  *[MD_DataIdentification](./class-MD_DataIdentification)* package. This must be of class *[PT_Locale](./PT_Locale)*.
--
+
 ## Discussion
 
 There may be only one default locale for a resource identified in a metadata record.
