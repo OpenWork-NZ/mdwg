@@ -25,7 +25,7 @@ guides: [Metadata, Services]
 | **ICSM Level of Agreement** | ⭑ ⭑ ⭑ |
 
 ## Definition
-**The information about the reference systems that define the system use to describe spatial position descriptions in a resource.**
+**Information about the framework reference systems used to precisely measure locations on the surface of the Earth as coordinates values.**
 
 ### ISO Obligation
 
@@ -33,37 +33,40 @@ guides: [Metadata, Services]
 
 ## Discussion  
 
-In order to common understand of location in geospatial resource, standardised spatial reference systems are used. A spatial reference helps describe where features are located in the real world. Different spatial reference systems are used for different purposes. (The terms spatial reference and coordinate system used interchangeably although they are slightly different.) People and machines that use spatial resources need to be provided in the metadata the details of the spatial reference systems used by the resource in order to conduct meaningful analysis and to combine this resource with others.
+Note - The terms spatial reference and coordinate system used interchangeably. 
 
-To adequately describe a resource, there may be the need to include multiple SRS in the metadata. Usually, each of these would be of a different type (referenceSystemType).
+Geospatial resources require standardised spatial reference systems to provide a common, precise and decodable system for communicating real-world locations. Different spatial reference systems serve different purposes. People and machines that use spatial resources need to be provided in the metadata the details of the spatial reference systems used by the resource to conduct meaningful analysis and combine this resource with others.
+ 
+To adequately describe a resource, there may be the need to include multiple SRS in the metadata. Usually, each would be of a different type (referenceSystemType).
+ 
+ **Dynamic (Earth Centric) Datums**
+A CRS contains two different elements - the datum and the coordinate system. The datum defines how the CRS is related to the Earth (position of the origin, the scale and the orientation of coordinate axis). The coordinate system describes how to express coordinate values. Datums may be static (tied to a plate on the Earth's crust), or dynamic (Earth-centric). With static datums, such as GDA94, coordinates do not change with time.
 
-**Dynamic (Earth Centric) Datums**
-Real world coordinates do change over time due to movements of the Earth's crust. These changes are significant and need be accounted for when combining data from different time periods. For Australia continental drift accounts for up to 70mm per year or 1.8 metres over the past 26 years.
-When the SRS is Earth centered as is the case with WGS 84, in order to understand position relative to object catured in the same SRS but at a different date, the *Coordinate Epoch* (time of posisiton information capture) must be recorded. A method of capturing this information within the ISO 19115-1 standard is under development. A best practice way of doing so in the interim is as follows:
-* Create an additional Instance of *spatialReferenceInfo* of *referenceSystemType -* *temporal*. The Description should read *Coordinate Epoch*. The *code* value should be the year in decimal degrees of at least 2 decimal places for the value of the coordinate reference frame within which the data is captured. 
-    For instance, if the data is captured using a GNSS device, the Coordinate Epoch may be the date at which the Coordinates were captured dependent on the methodology used. If the data is digitised from imagery, the Coordinate Epoch would be the same as that of the source imagery. The user must take care to determine the true coordinate system of their source data or method  including its coordinate epoch.
+Real-world coordinates change over time due to movements in the Earth's crust. Modern Earth-centric datums, such as WGS84, account for these movements. These changes are significant and need to be accounted for when combining data captured at different times. For example, in Australia, continental drift accounts for up to 70mm per year or 1.8 metres over the past 26 years.
+
+Therefore, when the SRS is dynamic, it is necessary to capture the coordinate observation's date (*Coordinate Epoch*) to understand coordinate values correctly. 
+
+*Coordinate Epoch* values should be the year in decimal degrees of at least two decimal places for the value of the coordinate reference frame of the data captured. The *Coordinate Epoch* value depends on the methodology used. For instance, the Coordinate Epoch may be the date of coordinates capture for data captured using a GNSS device. On the other hand, for data digitised from imagery, the *Coordinate Epoch* value would be the date of the source imagery. Therefore, users must take care in determining the coordinate epoch of their source data or method.
+
 
 ## ICSM Best Practice Recommendations
 
-Therefore - To ensure the usability of your spatial resource, it is important to include the Spatial Reference System used by this resource in its metadata. Doing so will allow the proper use and analysis to occur. 
-
-At a minimum the reference system type, the code and the codespace must be captured. In addition the Coordinate Epoch should be captured so changes in coordinate positions due to movements in the earth's crust can be accounted for. Until ISO 19115-1 support the capture of Coordinate Epoch directly, the creation of a separate instance of MD_Reference system should be created of type *temporal* with the decimal year to at least to places of the coordinate epoch as *code* and "Coordinate Epoch - Horizontal" or "Coordinate Epoch - Vertical" as *description.
-
-To date the European Petroleum Survey Group (EPSG) holds the most complete and common register of SRS. It is recommended that this source be used as codespace (and authority?) for SRS information in the metadata.
-
-> **NOTE -** There should be at least two instances of referenceSystemInfo for every resource that contains spatial information referenced to a datum. The first will provide reference to the spatial reference system used by the resource. The second will contain a **Coordinate Epoch**. This will be of *referenceSystemType* **Temporal** with a *description* of **Coordinate Epoch**. The value of the *code* will be the date of the the Coordinate Epoch in Decimal Year to least two places.
-
-### Recommended Sub-Classes
-
-* **referenceSystemType -** (*codelist - [MD_ReferenceSystemTypeCode](http://wiki.esipfed.org/index.php/ISO_19115-3_Codelists#MD_ReferenceSystemTypeCode)*) 0 to 1 - to describe the type of system used. This value should be 
-* **referenceSystemIdentifier -** *(class - [MD_Identifier](./class-MD_Identifier))* mandatory - identifier, codespace and authority information for reference system
-   * *code -* (type - charStr) mandatory - alphanumeric value identifying an instance in the namespace, e.g. '4283', '4326' . For Coordinate Epoch this code is the date in decimal year up to two decimal places
-   * *codespace -* (type - charStr) strongly recommended (except for *coordinate epoch*) - Identifier or namespace in which the code is valid, e.g. EPSG
-   * *version -* (type - charStr) optional - use if needed to distinguish a code
-   * *description -* (type - charStr) optional - Common language description of the reference system, e.g. 'WGS84 - World Geodetic System 1984, used in GPS', 'NZTM'. For Coodinate Epoch this value should be "Decimal Year"
-   * *authority -* (class - [CI_Citation](./class-CI_Citation)) optional (GA, ABARES - conditional?) - Information about the party responsible for the spatial or temporal reference system used in this cited resource.
-* **description -** Should read `Coordinate Epoch` when *referenceSystemInfo* instance is describing the *Coordinate Epoch*. Otherwise this field is optional
-
+Therefore, a record must include metadata about the Spatial Reference System used by this resource. Doing so will allow the proper use, reuse and analysis to occur. In addition, users need to know whether the CRS is dynamic or static. The minimum recommendation is to capture the reference system type and code (including codespace). When the datum is dynamic, record Coordinate Epoch to account for changes in coordinate positions due to movements in the earth's crust. 
+ 
+ The European Petroleum Survey Group (EPSG) currently holds the most complete and frequently used register of SRSs. Therefore, we recommend using EPSG and the EPSG codespace for SRS information in the metadata.
+ 
+ > **NOTE -** 
+ 
+ ### Recommended Sub-Classes
+ * **referenceSystemIdentifier -** *(class - [MD_Identifier](./class-MD_Identifier))* mandatory - identifier, codespace and authority information for reference system
+   * *code -* (type - charStr) mandatory - alphanumeric value identifying an instance in the namespace, e.g. '4283', '4326' . 
+   * *codespace -* (type - charStr) [0..1] strongly recommended  - Identifier or namespace in which the code is valid, e.g. EPSG
+   * *version -* (type - charStr) [0..1] optional - use if needed to distinguish a code
+   * *description -* (type - charStr) [0..1]  optional - Common language description of the reference system, e.g. 'WGS84 - World Geodetic System 1984, used in GPS', 'NZTM'. For Coodinate Epoch this value should be "Decimal Year"
+   * *authority -* (class - [CI_Citation](./class-CI_Citation)) [0..1] optional (GA, ABARES - conditional?) - Information about the party responsible for the spatial or temporal reference system used in this cited resource.
+* **coordinateEpoch-** (class DataEpoch)[0..1] optional. Must be populated if the SRS datum is dynamic. The DataEpoch is the date in decimal year up to two decimal places.
+ * **referenceSystemType -** (*codelist - [MD_ReferenceSystemTypeCode](http://wiki.esipfed.org/index.php/ISO_19115-3_Codelists#MD_ReferenceSystemTypeCode)*) [0 .. 1] strongly recommended - to describe the type of system used. 
+ 
 ### Related Codelists
 
 **MD_ReferenceSystemTypeCode**
@@ -109,20 +112,26 @@ There are 28 options to choose from in the reference system type code list (MD_R
 - **[Spatial representation information](http://wiki.esipfed.org/index.php/ISO_Spatial_Representation)** *(class - [MD_SpatialRepresentation](http://wiki.esipfed.org/index.php/MD_SpatialRepresentation))* Not discussed by MDWG. Contains detailed information about digital mechanisms used to represent spatial information. Particularly useful for gridded data.
 
 ## Outstanding Issues
+ 
+ > **Dynamic (Earth Centric) Datums** 
+This guidance pertains to the recently released Amendment 2:2020 version of ISO19115-1 based metadata. As of this writing, no ISO19115-3 xml implementations are available. This work is dependent on the development of ISO19111 xml schemas currently underway. Until such efforts are complete refer to previous guidance for populating Spatial Reference System metadata. 
 
-> **Dynamic (Earth Centric) Datums** 
-The latest amendment to ISO 19115-1 includes support for Coordinate Epoch capture as a sibling element to *ReferenceSystemIdentifier*. This guidance will be updated accordingly following the publication and adoption of these modifications
-
-> **Authority**
-Authority has been indicated as a conditional field by ABARES and GA.  But little guidance exist on the use of this element in this context. Should authority be about the owner of the registry (e.g. EPSG) or the provider of the SRS (LINZ in the case of NZTM)?
-
-> **MD_ReferenceSystemTypeCode**
-This is a long and confusing list. Should we recommend a shortly one?
-
-
+>**crs**
+With the latest amendment came a new element, *crs*. This element references the class *CRS* from ISO19111. This element provides greater flexibility and additional details about reference frames. But until work is complete on an xml implementation of ISO19111, its use is not recommended.
+ 
+ > **Authority**
+ ABARES and GA marked *Authority* as a conditional field. But little guidance exists on the use of this element in this context. Should *Authority* be about the owner of the registry (e.g. EPSG) or the provider of the SRS (LINZ in the case of NZTM)?
+ 
+ > **MD_ReferenceSystemTypeCode**
+ The codelist *MD_ReferenceSystemTypeCode* is a long and confusing list of types that are not necessarily exclusive or distinguished by the same reasoning. Reconsideration of its use is recommended, particularly in light of the availability of the element *crs.datum.oclAsType* inherited from ISO19111. 
+ 
 ## Crosswalk considerations
 
 <details>
+
+### ISO19115-3 and ISO139
+
+Fully forward compatible with previous versions
 
 ### Dublin core / CKAN / data.gov.au
 
@@ -145,28 +154,14 @@ Maps to the aggregate element `Coverage/Spatial`
 ### XML
 
 ```
-<mdb:MD_Metadata>
-....
-  <mdb:referenceSystemInfo>
-      <mrs:MD_ReferenceSystem>
-         <mrs:referenceSystemIdentifier>
-            <mcc:MD_Identifier>
-               <mcc:code>
-                  <gco:CharacterString>WGS 1984</gco:CharacterString>
-               </mcc:code>
-            </mcc:MD_Identifier>
-         </mrs:referenceSystemIdentifier>
-      </mrs:MD_ReferenceSystem>
-  </mdb:referenceSystemInfo>
-....
-</mdb:MD_Metadata>
+  TBC when available
 ```
 
 ### UML diagrams
 
 Recommended elements highlighted in yellow
 
-![SpatRefSys](../images/SpatialReferenceSystemUML.png)
+![SpatRefSys](../images/SpatialReferenceSystemUML2.png)
 
 </details>
 
