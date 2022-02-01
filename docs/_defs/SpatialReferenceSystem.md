@@ -55,7 +55,7 @@ Therefore, a record must include metadata about the Spatial Reference System use
  
  The European Petroleum Survey Group (EPSG) currently holds the most complete and frequently used register of SRSs. Therefore, we recommend using EPSG and the EPSG codespace for SRS information in the metadata.
  
- > **NOTE -** 
+ > **NOTE -** Authoritative hosting of the SRS registries is under review. This function may move to OGC, ISO in the near future.
  
  ### Recommended Sub-Classes
  * **referenceSystemIdentifier -** *(class - [MD_Identifier](./class-MD_Identifier))* mandatory - identifier, codespace and authority information for reference system
