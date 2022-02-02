@@ -57,7 +57,7 @@ Therefore, a record must include metadata about the Spatial Reference System use
  
  > **NOTE -** Authoritative hosting of the SRS registries is under review. This function may move to OGC, ISO in the near future.
  
- ### Recommended Sub-Classes
+### Recommended Sub-Classes
  * **referenceSystemIdentifier -** *(class - [MD_Identifier](./class-MD_Identifier))* mandatory - identifier, codespace and authority information for reference system
    * *code -* (type - charStr) mandatory - alphanumeric value identifying an instance in the namespace, e.g. '4283', '4326' . 
    * *codespace -* (type - charStr) [0..1] strongly recommended  - Identifier or namespace in which the code is valid, e.g. EPSG
