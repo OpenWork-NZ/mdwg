@@ -33,8 +33,6 @@ guides: [Metadata, Services]
 
 ## Discussion  
 
-Note - The terms Spatial Reference System and Coordinate Reference System are used interchangeably. 
-
 Geospatial resources require standardised spatial reference systems to provide a common, precise and decodable system for communicating real-world locations. Different spatial reference systems serve different purposes. People and machines that use spatial resources need to be provided in the metadata the details of the spatial reference systems used by the resource to conduct meaningful analysis and combine this resource with others.
  
 To adequately describe a resource, there may be the need to include multiple SRS in the metadata. Usually, each would be of a different type (referenceSystemType).
